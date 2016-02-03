@@ -1,0 +1,50 @@
+{
+  "nodes": [],
+  "links": [
+    {
+      "source": "ogdenville-network:SEL_421_1",
+      "target": "ogdenville-yard:Ogdenville-BRK-14",
+      "relation": "snet:hasBreakerConnections"
+    },
+    {
+      "source": "ogdenville-network:SEL_421_1",
+      "target": "ogdenville-yard:Ogdenville-BRK-42",
+      "relation": "snet:hasBreakerConnections"
+    },
+    {
+      "source": "ogdenville-network:SEL_421_2",
+      "target": "ogdenville-yard:Ogdenville-BRK-14",
+      "relation": "snet:hasBreakerConnections"
+    },
+    {
+      "source": "ogdenville-network:SEL_421_2",
+      "target": "ogdenville-yard:Ogdenville-BRK-42",
+      "relation": "snet:hasBreakerConnections"
+    },
+    {
+      "source": "ogdenville-network:SEL_421_2",
+      "target": "ogdenville-yard:Ogdenville-BRK-23",
+      "relation": "snet:hasBreakerConnections"
+    },
+    {
+      "source": "ogdenville-network:SEL_421_2",
+      "target": "ogdenville-yard:Ogdenville-BRK-56",
+      "relation": "snet:hasBreakerConnections"
+    },
+    {
+      "source": "ogdenville-network:SEL_451_1",
+      "target": "ogdenville-yard:Ogdenville-BRK-56",
+      "relation": "snet:hasBreakerConnections"
+    },
+    {
+      "source": "ogdenville-network:SEL_451_1",
+      "target": "ogdenville-yard:Ogdenville-BRK-62",
+      "relation": "snet:hasBreakerConnections"
+    },
+    {
+      "source": "ogdenville-network:SEL_451_1",
+      "target": "ogdenville-yard:Ogdenville-BRK-23",
+      "relation": "snet:hasBreakerConnections"
+    }
+  ]
+}

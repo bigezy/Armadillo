@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+ copyright (c) 2015, Gabriel A. Weaver, Information Trust Institute
+   at the University of Illinois, Urbana-Champaign.
+
+  This file is part of the Cyber-Physical Topology Language for
+    the Power domain.
+
+  This ontology is available under the Creative Commons 
+  Attribution-ShareAlike License.  Details about this license
+  are available at the following URL:
+
+  http://creativecommons.org/licenses/by-sa/3.0/legalcode 
+ -->
+<rdf:RDF
+    xmlns:dc="http://purl.org/dc/elements/1.1/"
+    xmlns:owl="http://www.w3.org/2002/07/owl#"
+    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+    xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+    xmlns:snet="http://cptl-c.org/power/2015/07/substation_network/"
+    xmlns:syard="http://cptl-c.org/power/2015/07/substation_yard/">
+  
+  <owl:Ontology rdf:about="http://cptl-c.org/power/2015/07/substation_network">
+    <dc:title>Substation Network</dc:title>
+    <dc:description>An ontology to describe components of a substation 
+      network.</dc:description>
+  </owl:Ontology>
+
+  <owl:Class rdf:about="http://cptl-c.org/power/2015/07/substation_network/RTU">
+    <rdfs:subClassOf rdf:resource="http://cptl-c.org/core/2014/07/core/Asset"/>
+    <rdfs:label xml:lang="en">RTU</rdfs:label>
+    <rdfs:comment>A remote terminal unit (RTU) is a
+    microprocessor-controlled electronic device that interfaces
+    objects in the physical world to a SCADA ssytem by transmitting
+    telemetry data to a master
+    system. (http://en.wikipedia.org/wiki/Remote_Terminal_Unit)</rdfs:comment>
+  </owl:Class>
+
+  <owl:Class rdf:about="http://cptl-c.org/power/2015/07/substation_network/Switch">
+    <rdfs:subClassOf rdf:resource="http://cptl-c.org/enterprise/2015/07/enterprise_network/Switch"/>
+    <rdfs:label xml:lang="en">Switch</rdfs:label>
+    <rdfs:comment>A network switch (also called switching hub,
+    bridging hub, officially MAC bridge[1]) is a computer networking
+    device that connects devices together on a computer network, by
+    using packet switching to receive, process and forward data to the
+    destination device. Unlike less advanced network hubs, a network
+    switch forwards data only to one or multiple devices that need to
+    receive it, rather than broadcasting the same data out of each of
+    its ports. (http://en.wikipedia.org/wiki/Network_switch)</rdfs:comment>
+  </owl:Class>
+
+  <!-- Relays -->
+  <owl:Class rdf:about="http://cptl-c.org/power/2015/07/substation_network/Relay">
+    <rdfs:subClassOf rdf:resource="http://cptl-c.org/core/2014/07/core/Asset"/>
+    <rdfs:label xml:lang="en">Relay</rdfs:label>
+    <rdfs:comment>A device designed to trip a circuit breaker when a fault
+    is detected. (http://en.wikipedia.org/wiki/Protective_relay)</rdfs:comment>
+  </owl:Class>
+
+  <owl:Class rdf:about="http://cptl-c.org/power/2015/07/substation_network/DistanceRelay">
+    <rdfs:subClassOf rdf:resource="snet:Relay"/>
+    <rdfs:label xml:lang="en">Distance Relay</rdfs:label>
+    <rdfs:comment>The most common form of protection on high voltage transmission
+    systems is distance relay protection.  Power lines have set impedance per kilometre and using 
+    this value and comparing voltage and current the distance to a fault can be determined. 
+    (http://en.wikipedia.org/wiki/Protective_relay#Distance_relay)</rdfs:comment>
+  </owl:Class>
+
+  <owl:Class rdf:about="http://cptl-c.org/power/2015/07/substation_network/OvercurrentRelay">
+    <rdfs:subClassOf rdf:resource="snet:Relay"/>
+    <rdfs:label xml:lang="en">Overcurrent Relay</rdfs:label>
+    <rdfs:comment>A digital over current relay is a protective relay
+    which operates when the load current exceeds a pickup value
+    (http://en.wikipedia.org/wiki/Protective_relay#Over_current_relay)</rdfs:comment>
+  </owl:Class>
+
+  <owl:Class rdf:about="http://cptl-c.org/power/2015/07/substation_network/ReversePowerRelay">
+    <rdfs:subClassOf rdf:resource="snet:Relay"/>
+    <rdfs:label xml:lang="en">Reverse Power Relay</rdfs:label>
+    <rdfs:comment> A reverse power relay is a directional power relay
+    that is used to monitor the power from a generator running in
+    parallel with another generator or the utility. The function of
+    the reverse power relay is to prevent a reverse power condition in
+    which power flows from the bus bar into the generator. This
+    condition can occur when there is a failure in the prime mover
+    such as an engine or a turbine which drives the
+    generator. (http://www.electrotechnik.net/2009/06/reverse-power-relay-function-and.html)</rdfs:comment>
+  </owl:Class>
+  
+  <!-- Relations -->
+  <owl:ObjectProperty rdf:about="http://cptl-c.org/power/2015/07/substation_network/hasBreakerConnections">
+    <rdfs:subClassOf rdf:resource="http://cptl-c.org/core/2014/07/core/hasLink"/>
+    <rdfs:label xml:lang="en">Has Breaker Connections</rdfs:label>
+        <rdfs:comment>Connections from a relay to a breaker consist of (1) high-side voltage (2) low-side voltage,
+        (3) a current loop, (4) breaker status, and (5) a breaker control line.</rdfs:comment>
+	<rdfs:domain rdf:resource="snet:Relay"/>
+	<rdfs:range rdf:resource="syard:Breaker"/>
+  </owl:ObjectProperty>
+
+</rdf:RDF>

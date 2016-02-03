@@ -1,0 +1,260 @@
+: Saved
+:
+ASA Version 8.2(5)
+!
+hostname haverbrook
+domain-name lab.iti.illinois.edu
+enable password 59aEyzoNUgynX12Z encrypted
+passwd 2KFQnbNIdI.2KYOU encrypted
+names
+!
+interface Ethernet0/0
+ nameif inside
+ security-level 100
+ ip address 10.32.1.1 255.255.255.0
+interface Ethernet0/1
+ nameif outside
+ security-level 0
+ ip address 10.1.1.2 255.255.255.0
+!
+interface Ethernet0/2
+!
+interface Ethernet0/3
+!
+interface Ethernet0/4
+!
+interface Ethernet0/5
+!
+interface Ethernet0/6
+!
+interface Ethernet0/7
+!
+interface Vlan1
+!
+interface Vlan2
+!
+ftp mode passive
+dns server-group DefaultDNS
+ domain-name lab.iti.illinois.edu
+object-group network EMS_SERVERS
+ network-object host 72.36.82.195
+object-group network FTP_SERVER
+ network-object host 72.36.82.194
+object-group network EMS_FEP
+ network-object host 72.36.82.194
+object-group network HAVERBROOK
+ network-object host 10.32.1.250
+object-group network HAV_421
+ network-object host 10.32.1.201
+object-group service FTP_DATA tcp
+ port-object eq ftp-data
+ port-object eq ftp
+ port-object eq nfs
+object-group service HTTP tcp
+ port-object eq www
+ port-object eq https
+object-group service SCADA tcp
+ port-object eq 7000
+ port-object eq www
+object-group service ICCP_DATA tcp
+ port-object eq 102
+ port-object eq 8080
+object-group network PEER_UTILS
+ network-object host 192.17.102.102
+ network-object host 192.17.102.103
+ network-object host 192.17.102.104
+object-group network VENDOR_ACCESS
+ network-object host 70.32.128.22
+ network-object host 70.32.128.74
+ network-object host 70.32.128.171
+object-group network DIST
+ group-object HAVERBROOK
+ group-object HAV_421
+object-group network JUMP_HOST
+ network-object host 10.39.1.22
+access-list FromINSIDE remark ***** BEGIN FromINSIDE ACL *****
+access-list FromINSIDE remark allow access to EMS_FEP
+access-list FromINSIDE extended permit tcp object-group DIST object-group FTP_SERVER object-group FTP_DATA
+access-list FromINSIDE extended permit tcp object-group DIST object-group EMS_FEP object-group ICCP_DATA
+access-list FromINSIDE extended deny ip any any
+access-list FromINSIDE remark ***** END FromINSIDE ACL *****
+access-list FromOUTSIDE remark ***** BEGIN FromOUTSIDE ACL *****
+access-list FromOUTSIDE remark allow Peer Utilities Access to Substations via ICCP
+access-list FromOUTSIDE extended permit tcp object-group PEER_UTILS object-group DIST object-group ICCP_DATA
+access-list FromOUTSIDE remark allow Google (Vendor) access to RTU
+access-list FromOUTSIDE extended permit tcp object-group VENDOR_ACCESS object-group DIST eq ssh
+access-list FromOUTSIDE extended permit tcp object-group JUMP_HOST object-group DIST eq ssh
+access-list FromOUTSIDE extended deny ip any any
+access-list FromOUTSIDE remark ***** END FromOUTSIDE ACL *****
+pager lines 24
+logging asdm informational
+mtu inside 1500
+mtu outside 1500
+icmp unreachable rate-limit 1 burst-size 1
+icmp permit any inside
+icmp permit any outside
+no asdm history enable
+arp timeout 14400
+access-group FromOUTSIDE in interface outside
+access-group FromINSIDE in interface inside
+route outside 0.0.0.0 0.0.0.0 10.1.1.1 1
+timeout xlate 3:00:00
+timeout conn 1:00:00 half-closed 0:10:00 udp 0:02:00 icmp 0:00:02
+timeout sunrpc 0:10:00 h323 0:05:00 h225 1:00:00 mgcp 0:05:00 mgcp-pat 0:05:00
+timeout sip 0:30:00 sip_media 0:02:00 sip-invite 0:03:00 sip-disconnect 0:02:00
+timeout sip-provisional-media 0:02:00 uauth 0:05:00 absolute
+timeout tcp-proxy-reassembly 0:01:00
+timeout floating-conn 0:00:00
+dynamic-access-policy-record DfltAccessPolicy
+aaa authentication ssh console LOCAL
+http server enable
+http 0.0.0.0 0.0.0.0 outside
+http 10.32.1.0 255.255.255.0 inside
+no snmp-server location
+no snmp-server contact
+snmp-server enable traps snmp authentication linkup linkdown coldstart
+crypto ipsec transform-set ESP-DES-SHA esp-des esp-sha-hmac
+crypto ipsec security-association lifetime seconds 28800
+crypto ipsec security-association lifetime kilobytes 4608000
+crypto isakmp policy 10
+ authentication crack
+ encryption aes-256
+ hash sha
+ group 2
+ lifetime 86400
+crypto isakmp policy 20
+ authentication rsa-sig
+ encryption aes-256
+ hash sha
+ group 2
+ lifetime 86400
+crypto isakmp policy 30
+ authentication pre-share
+ encryption aes-256
+ hash sha
+ group 2
+ lifetime 86400
+crypto isakmp policy 40
+ authentication crack
+ encryption aes-192
+ hash sha
+ group 2
+ lifetime 86400
+crypto isakmp policy 50
+ authentication rsa-sig
+ encryption aes-192
+ hash sha
+ group 2
+ lifetime 86400
+crypto isakmp policy 60
+ authentication pre-share
+ encryption aes-192
+ hash sha
+ group 2
+ lifetime 86400
+crypto isakmp policy 70
+ authentication crack
+ encryption aes
+ hash sha
+ group 2
+ lifetime 86400
+crypto isakmp policy 80
+ authentication rsa-sig
+ encryption aes
+ hash sha
+ group 2
+ lifetime 86400
+crypto isakmp policy 90
+ authentication pre-share
+ encryption aes
+ hash sha
+ group 2
+ lifetime 86400
+crypto isakmp policy 100
+ authentication crack
+ encryption 3des
+ hash sha
+ group 2
+ lifetime 86400
+crypto isakmp policy 110
+ authentication rsa-sig
+ encryption 3des
+ hash sha
+ group 2
+ lifetime 86400
+crypto isakmp policy 120
+ authentication pre-share
+ encryption 3des
+ hash sha
+ group 2
+ lifetime 86400
+crypto isakmp policy 130
+ authentication crack
+ encryption des
+ hash sha
+ group 2
+ lifetime 86400
+crypto isakmp policy 140
+ authentication rsa-sig
+ encryption des
+ hash sha
+ group 2
+ lifetime 86400
+crypto isakmp policy 150
+ authentication pre-share
+ encryption des
+ hash sha
+ group 2
+ lifetime 86400
+telnet timeout 5
+ssh 10.32.1.0 255.255.255.0 inside
+ssh 0.0.0.0 0.0.0.0 outside
+ssh timeout 60
+console timeout 0
+management-access inside
+dhcpd auto_config outside
+!
+dhcpd address 10.32.1.11-10.32.1.42 inside
+!
+
+threat-detection basic-threat
+threat-detection statistics access-list
+no threat-detection statistics tcp-intercept
+webvpn
+username ciscouser password ggnOnaW6ZYpUKZSZ encrypted
+tunnel-group 192.168.80.19 type ipsec-l2l
+tunnel-group 192.168.80.19 ipsec-attributes
+ pre-shared-key *****
+!
+class-map inspection_default
+ match default-inspection-traffic
+!
+!
+policy-map type inspect dns preset_dns_map
+ parameters
+  message-length maximum client auto
+  message-length maximum 512
+policy-map global_policy
+ class inspection_default
+  inspect dns preset_dns_map
+  inspect ftp
+  inspect h323 h225
+  inspect h323 ras
+  inspect rsh
+  inspect rtsp
+  inspect esmtp
+  inspect sqlnet
+  inspect skinny
+  inspect sunrpc
+  inspect xdmcp
+  inspect sip
+  inspect netbios
+  inspect tftp
+  inspect ip-options
+  inspect icmp
+!
+service-policy global_policy global
+prompt hostname context
+no call-home reporting anonymous
+Cryptochecksum:85586ccfb56eb37afab89cb36e616977
+: end

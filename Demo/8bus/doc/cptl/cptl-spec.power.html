@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head
+xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+xmlns:foaf="http://xmlns.com/foaf/0.1/"
+xmlns:vs="http://www.w3.org/2003/06/sw-vocab-status/ns#"
+xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+xmlns:owl="http://www.w3.org/2002/07/owl#"
+xmlns:dct="http://purl.org/dc/terms/"
+xmlns:dc="http://purl.org/dc/elements/1.1/">
+  <title>CPTL Power Vocabulary Specification</title>
+  <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+  <link href="http://xmlns.com/xmlns-style.css" rel="stylesheet"  type="text/css" />
+  <link href="../css/w3c-style.css" rel="stylesheet"  type="text/css" />
+  <link href="http://xmlns.com/foaf/spec/index.rdf" rel="alternate"  type="application/rdf+xml" />
+</head>
+<body>
+  <h1>CPTL Power Vocabulary Specification 0.1<br /></h1>
+
+  <h2>Namespace Document 20 May 2015</h2>
+  
+  <dl>
+    <dt>This version:</dt>
+    <ul>
+      <li><dd>http://cptl-c.org/power/2015/05/substation_yard/
+	  (<a href="ontologies/power/201505-syard.rdf">rdf</a>)</dd></li>
+      <li><dd>http://cptl-c.org/power/2015/05/substation_network/
+	  (<a href="ontologies/power/201505-snet.rdf">rdf</a>)</dd></li>
+    </ul>
+    
+    <dt>Authors:</dt>
+    <dd><a href="mailto:gweaver@illinois.edu">Gabe Weaver</a></dd>
+
+    <dt>Contributors:</dt>
+
+    <dd>Members of the CPTL mailing list 
+    and the wider <a href="http://www.w3.org/2001/sw/interest/">RDF
+    and Semantic Web developer community</a>.</dd>
+  </dl>
+
+  <p class="copyright">Copyright &#169; 2014-2015 Gabe Weaver</p>
+
+  <p>This work is licensed under a <a  rel="license" href= 
+  "http://creativecommons.org/licenses/by-sa/3.0/legalcode">Creative Commons Attribution-ShareAlike License</a>. 
+  This copyright applies to the <em>CPTL Power Vocabulary Specification</em> and accompanying documentation in RDF or JSON. Regarding underlying technology, CPTL uses W3C's <a href="http://www.w3.org/RDF/">RDF</a> technology, an open Web standard that can be freely used by anyone.</p>
+
+  <hr />
+
+
+<h2 id="sec-status">Abstract</h2>
+
+<p>
+This specification describes an extension to the CPTL Vocabulary for
+the bulk electric system.  The extension is defined as a dictionary of
+named properties and classes using W3C's RDF technology.  We note that
+the format and scope of this specification is based directly off of
+the <a href="http://xmlns.com/foaf/spec/">FOAF Vocabulary
+Specification</a>.
+</p>
+
+  <!-- What is it?-->
+  <p>
+    The Cyber Physical Topology Language (CPTL) is a project whose
+    main objective is to provide a human-readable, machine-actionable
+    language for practitioners and researchers to communicate
+    information about <em>cyber-physical systems</em> across different
+    domains (e.g. electrical power, enterprise networks, smart
+    cities).  The etymology of the word system (σύστημα) means
+    an <em>organized whole; body</em> and as such, graphs a natural
+    way to formally represent different assets and relations among
+    them within a <em>cyber-physical system</em>.  More information
+    about the CPTL Vocabulary in general may be found in the
+    <a href="cptl-spec.shtml">CPTL Vocabulary Spec</a>.
+   <p>
+
+   <!-- Vocabulary, Views -->
+   <p>The CPTL Power Vocabulary defines terms that may be employed to
+     construct several different <em>views</em> or semantic graphs, on
+     the electrical power grid.</p>
+
+   <!-- Document Primitives -->
+   <ul>
+     <li><em>substation network</em>:  Devices and connections among
+       devices found in an electrical substation network.  These
+       include <a href="#snet:Relay">relays</a> of different types.</li>
+     <li><em>substation yard</em>: Components and connections among
+       components found in a substation yard.  These include but are
+       not limited to
+       <a href="#syard:Breaker">breakers</a> as well as
+       <a href="#syard:Transformer">transformers</a>.</li>
+   </ul>
+
+  <div class="status">
+    <h2>Status of This Document</h2>
+
+    <p>CPTL has been evolving since 2014 and will continue to evolve.</p>
+
+  <a id="sec-glance"></a>
+  <h2 id="glance">CPTL Power at a glance</h2>
+    <p>Main CPTL terms, grouped in broad categories.</p>
+<ul>
+
+ <h2>Classes & Properties</h2>
+ <h3>Substation Network</h3>
+ <div class="specterm classterm" id="#snet:DistanceRelay" about="http://cptl-c.org/power/2015/05/substation_network/DistanceRelay" typeof="owl:Class">
+<h4>
+<a id="snet:DistanceRelay"></a>Class: snet:DistanceRelay</h4>
+<em>DistanceRelay</em> - The most common form of protection on high voltage transmission
+    systems is distance relay protection.  Power lines have set impedance per kilometre and using 
+    this value and comparing voltage and current the distance to a fault can be determined. 
+    (http://en.wikipedia.org/wiki/Protective_relay#Distance_relay)<br>
+</div><div class="specterm classterm" id="#snet:OvercurrentRelay" about="http://cptl-c.org/power/2015/05/substation_network/OvercurrentRelay" typeof="owl:Class">
+<h4>
+<a id="snet:OvercurrentRelay"></a>Class: snet:OvercurrentRelay</h4>
+<em>OvercurrentRelay</em> - A digital over current relay is a protective relay
+    which operates when the load current exceeds a pickup value
+    (http://en.wikipedia.org/wiki/Protective_relay#Over_current_relay)<br>
+</div><div class="specterm classterm" id="#snet:RTU" about="http://cptl-c.org/power/2015/05/substation_network/RTU" typeof="owl:Class">
+<h4>
+<a id="snet:RTU"></a>Class: snet:RTU</h4>
+<em>RTU</em> - A remote terminal unit (RTU) is a
+    microprocessor-controlled electronic device that interfaces
+    objects in the physical world to a SCADA ssytem by transmitting
+    telemetry data to a master
+    system. (http://en.wikipedia.org/wiki/Remote_Terminal_Unit)<br>
+</div><div class="specterm classterm" id="#snet:Relay" about="http://cptl-c.org/power/2015/05/substation_network/Relay" typeof="owl:Class">
+<h4>
+<a id="snet:Relay"></a>Class: snet:Relay</h4>
+<em>Relay</em> - A device designed to trip a circuit breaker when a fault
+    is detected. (http://en.wikipedia.org/wiki/Protective_relay)<br>
+</div><div class="specterm classterm" id="#snet:ReversePowerRelay" about="http://cptl-c.org/power/2015/05/substation_network/ReversePowerRelay" typeof="owl:Class">
+<h4>
+<a id="snet:ReversePowerRelay"></a>Class: snet:ReversePowerRelay</h4>
+<em>ReversePowerRelay</em> -  A reverse power relay is a directional power relay
+    that is used to monitor the power from a generator running in
+    parallel with another generator or the utility. The function of
+    the reverse power relay is to prevent a reverse power condition in
+    which power flows from the bus bar into the generator. This
+    condition can occur when there is a failure in the prime mover
+    such as an engine or a turbine which drives the
+    generator. (http://www.electrotechnik.net/2009/06/reverse-power-relay-function-and.html)<br>
+</div><div class="specterm classterm" id="#snet:Switch" about="http://cptl-c.org/power/2015/05/substation_network/Switch" typeof="owl:Class">
+<h4>
+<a id="snet:Switch"></a>Class: snet:Switch</h4>
+<em>Switch</em> - A network switch (also called switching hub,
+    bridging hub, officially MAC bridge[1]) is a computer networking
+    device that connects devices together on a computer network, by
+    using packet switching to receive, process and forward data to the
+    destination device. Unlike less advanced network hubs, a network
+    switch forwards data only to one or multiple devices that need to
+    receive it, rather than broadcasting the same data out of each of
+    its ports. (http://en.wikipedia.org/wiki/Network_switch)<br>
+</div><br xmlns:owl="http://www.w3.org/2002/07/owl#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"><div class="specterm propertyterm" id="#snet:hasBreakerConnections" about="http://cptl-c.org/power/2015/05/substation_network/hasBreakerConnections" typeof="owl:ObjectProperty">
+<h4>
+<a id="snet:hasBreakerConnections"></a>Property: snet:hasBreakerConnections</h4>
+<em>hasBreakerConnections</em> - Connections from a relay to a breaker consist of (1) high-side voltage (2) low-side voltage,
+        (3) a current loop, (4) breaker status, and (5) a breaker control line.<br><table>
+<tr>
+<th>Status:</th>
+<td><span property="vs:status">dev</span></td>
+</tr>
+<tr>
+<th>Domain:</th>
+<td>having this property implies being a
+	    <span rel="rdfs:domain" href=""></span>
+</td>
+</tr>
+</table>
+</div>
+
+
+ <h3>Substation Yard</h3>
+ <div class="specterm classterm" id="#syard:Breaker" about="http://cptl-c.org/power/2015/05/substation_yard/Breaker" typeof="owl:Class">
+<h4>
+<a id="syard:Breaker"></a>Class: syard:Breaker</h4>
+<em>Breaker</em> - A breaker is an automatically operated electrical
+    switch designed to protect an electrical circuit from damage
+    caused by overload or short circuit
+    (http://en.wikipedia.org/wiki/Circuit_breaker).<br>
+</div><div class="specterm classterm" id="#syard:Bus" about="http://cptl-c.org/power/2015/05/substation_yard/Bus" typeof="owl:Class">
+<h4>
+<a id="syard:Bus"></a>Class: syard:Bus</h4>
+<em>Bus</em> - A busbar is a strip or bar of conductive material
+      designed to conduct a substantial current of electricity
+      (http://en.wikipedia.org/wiki/Busbar).<br>
+</div><div class="specterm classterm" id="#syard:Generator" about="http://cptl-c.org/power/2015/05/substation_yard/Generator" typeof="owl:Class">
+<h4>
+<a id="syard:Generator"></a>Class: syard:Generator</h4>
+<em>Generator</em> - A generator is a device that converts mechanical
+    energy to electrical energy for use in an external circuit.
+    Generators provide nearly all of the power for electric power
+    grids
+    (http://en.wikipedia.org/wiki/Electric_generator).<br>
+</div><div class="specterm classterm" id="#syard:Node" about="http://cptl-c.org/power/2015/05/substation_yard/Node" typeof="owl:Class">
+<h4>
+<a id="syard:Node"></a>Class: syard:Node</h4>
+<em>Node</em> - Not sure whether this really belongs here or in an ontology
+      for node-breaker diagrams.<br>
+</div><div class="specterm classterm" id="#syard:SubstationYardComponent" about="http://cptl-c.org/power/2015/05/substation_yard/SubstationYardComponent" typeof="owl:Class">
+<h4>
+<a id="syard:SubstationYardComponent"></a>Class: syard:SubstationYardComponent</h4>
+<em>SubstationYardComponent</em> - Any piece of switching, protection, or control
+    equipment in a substation yard.  This may also include 
+    other assets such as a fence or substation house.
+    (http://en.wikipedia.org/wiki/Electrical_substation)<br>
+</div><div class="specterm classterm" id="#syard:Transformer" about="http://cptl-c.org/power/2015/05/substation_yard/Transformer" typeof="owl:Class">
+<h4>
+<a id="syard:Transformer"></a>Class: syard:Transformer</h4>
+<em>Transformer</em> - A transformer is an electrical device that transfers
+    energy between two or more circuits through electromagnetic
+    induction
+    (http://en.wikipedia.org/wiki/Transformer).<br>
+</div><br xmlns:owl="http://www.w3.org/2002/07/owl#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"><div class="specterm propertyterm" id="#syard:hasLine" about="http://cptl-c.org/power/2015/05/substation_yard/hasLine" typeof="owl:ObjectProperty">
+<h4>
+<a id="syard:hasLine"></a>Property: syard:hasLine</h4>
+<em>hasLine</em> - An electrical power line between two substation yard 
+      components.<br><table>
+<tr>
+<th>Status:</th>
+<td><span property="vs:status">dev</span></td>
+</tr>
+<tr>
+<th>Domain:</th>
+<td>having this property implies being a
+	    <span rel="rdfs:domain" href=""></span>
+</td>
+</tr>
+</table>
+</div>
+ 
+
+</body>
+</html>
+
+

@@ -1,0 +1,1601 @@
+server: waiting for connections...handle new connection
+server: got connection from 1
+max 1025
+rc value 0
+New connection from 127.0.0.1:57936
+file size 118346
+read 118346 bytes from file 
+enter packServerMessage Object:  Field: Value: 
+size calc 1
+enter packServerMessage Object:  Field: Value: 
+size calc 1
+test send file 0
+Luis::Running Initial Socca Analysis...Starting CYPSA Analysis...
+Reading uiuc_testbed_connectivity...
+Done!
+Augmenting uiuc_testbed_network with power contingencies...
+IP Address= 10.10.11.102 doesn't exist!
+IP Address= 10.10.11.103 doesn't exist!
+IP Address= 10.10.11.104 doesn't exist!
+IP Address= 10.10.11.112 doesn't exist!
+IP Address= 10.10.11.115 doesn't exist!
+IP Address= 10.10.11.14 doesn't exist!
+in send message
+enter packServerMessage Object:  Field: Value: 
+size calc 1
+bufferSize message size 54
+enter packServerMessage Object:  Field: Value: 
+size calc 1
+bytes sent 54
+exit send message
+************** OPEN RELAY BY IP ****************
+in send message
+enter packServerMessage Object:10.10.11.41  Field: Value: 
+size calc 1
+bufferSize message size 76
+enter packServerMessage Object:10.10.11.41  Field: Value: 
+size calc 1
+bytes sent 76
+exit send message
+************** GET PERFORMANCE INDEX *********************
+sizeof int64 8
+	Number of characters in string list 17
+		TotalSize Calculated: 44
+	objsize 44
+sizeof int64 8
+	Number of characters in string list 12
+		TotalSize Calculated: 34
+	fldsize 34
+	GetData payloadsize 80
+payload1 00680692
+sizeof int64 8
+	Number of characters in string list 17
+		strings in list: 1
+		characters in string: 17
+		TotalSize Calculated: 44
+payload2 006806BE
+sizeof int64 8
+	Number of characters in string list 12
+		strings in list: 1
+		characters in string: 12
+		TotalSize Calculated: 34
+payload3 006806E0
+send get data objsize:17  fldsize:0
+enter packServerMessage Object:  Field: Value: 
+size calc 1
+enter packServerMessage Object:  Field: Value: 
+size calc 1
+		 SEND bytes left 0
+in send message
+enter packServerMessage Object:  Field: Value: 
+size calc 1
+bufferSize message size 54
+enter packServerMessage Object:  Field: Value: 
+size calc 1
+bytes sent 54
+exit send message
+read data
+recv bytes 10
+key h:222 n:-8704
+framesize h:150 n:0
+	read 140  
+
+======================unpack client message
+	key 222
+	size 150
+	type 4
+	source 1
+	version 0
+	object id size 0
+	field id size 0
+	value id size 0
+	computer name id size 0
+	build date size 0
+	client id size 4
+	client payload size 0
+	client payload size 106
+	frame isn't null	frame.->payloadSize isn't null	passed malloc	assigning new payload======================
+*got send data
+**action type 0
+	stringstoread  1
+bytesize 8
+diff 44  bytesize 44
+size1 44
+	stringstoread  1
+bytesize 8
+diff 34  bytesize 34
+size2 34
+	stringstoread  1
+bytesize 8
+diff 26  bytesize 26
+value 0  3.766018, mydataobj[0]=PWCaseInformation, mydatafld[0]=OverloadRank,PIDO: PWCaseInformation, PIDF: OverloadRank
+Updated performance index 10.10.11.41: value=3.766018; actualValue=3.766018************** OPEN RELAY BY IP ****************
+in send message
+enter packServerMessage Object:10.10.11.51  Field: Value: 
+size calc 1
+bufferSize message size 76
+enter packServerMessage Object:10.10.11.51  Field: Value: 
+size calc 1
+bytes sent 76
+exit send message
+************** GET PERFORMANCE INDEX *********************
+sizeof int64 8
+	Number of characters in string list 17
+		TotalSize Calculated: 44
+	objsize 44
+sizeof int64 8
+	Number of characters in string list 12
+		TotalSize Calculated: 34
+	fldsize 34
+	GetData payloadsize 80
+payload1 00680692
+sizeof int64 8
+	Number of characters in string list 17
+		strings in list: 1
+		characters in string: 17
+		TotalSize Calculated: 44
+payload2 006806BE
+sizeof int64 8
+	Number of characters in string list 12
+		strings in list: 1
+		characters in string: 12
+		TotalSize Calculated: 34
+payload3 006806E0
+send get data objsize:17  fldsize:0
+enter packServerMessage Object:  Field: Value: 
+size calc 1
+enter packServerMessage Object:  Field: Value: 
+size calc 1
+		 SEND bytes left 0
+in send message
+enter packServerMessage Object:  Field: Value: 
+size calc 1
+bufferSize message size 54
+enter packServerMessage Object:  Field: Value: 
+size calc 1
+bytes sent 54
+exit send message
+read data
+recv bytes 10
+key h:222 n:-8704
+framesize h:150 n:0
+	read 140  
+
+======================unpack client message
+	key 222
+	size 150
+	type 4
+	source 1
+	version 0
+	object id size 0
+	field id size 0
+	value id size 0
+	computer name id size 0
+	build date size 0
+	client id size 4
+	client payload size 0
+	client payload size 106
+	frame isn't null	frame.->payloadSize isn't null	passed malloc	assigning new payload======================
+*got send data
+**action type 0
+	stringstoread  1
+bytesize 8
+diff 44  bytesize 44
+size1 44
+	stringstoread  1
+bytesize 8
+diff 34  bytesize 34
+size2 34
+	stringstoread  1
+bytesize 8
+diff 26  bytesize 26
+value 0  3.766018, mydataobj[0]=PWCaseInformation, mydatafld[0]=OverloadRank,PIDO: PWCaseInformation, PIDF: OverloadRank
+Updated performance index 10.10.11.51: value=3.766018; actualValue=3.766018************** OPEN RELAY BY IP ****************
+in send message
+enter packServerMessage Object:10.10.11.61  Field: Value: 
+size calc 1
+bufferSize message size 76
+enter packServerMessage Object:10.10.11.61  Field: Value: 
+size calc 1
+bytes sent 76
+exit send message
+************** GET PERFORMANCE INDEX *********************
+sizeof int64 8
+	Number of characters in string list 17
+		TotalSize Calculated: 44
+	objsize 44
+sizeof int64 8
+	Number of characters in string list 12
+		TotalSize Calculated: 34
+	fldsize 34
+	GetData payloadsize 80
+payload1 00680692
+sizeof int64 8
+	Number of characters in string list 17
+		strings in list: 1
+		characters in string: 17
+		TotalSize Calculated: 44
+payload2 006806BE
+sizeof int64 8
+	Number of characters in string list 12
+		strings in list: 1
+		characters in string: 12
+		TotalSize Calculated: 34
+payload3 006806E0
+send get data objsize:17  fldsize:0
+enter packServerMessage Object:  Field: Value: 
+size calc 1
+enter packServerMessage Object:  Field: Value: 
+size calc 1
+		 SEND bytes left 0
+in send message
+enter packServerMessage Object:  Field: Value: 
+size calc 1
+bufferSize message size 54
+enter packServerMessage Object:  Field: Value: 
+size calc 1
+bytes sent 54
+exit send message
+read data
+recv bytes 10
+key h:222 n:-8704
+framesize h:150 n:0
+	read 140  
+
+======================unpack client message
+	key 222
+	size 150
+	type 4
+	source 1
+	version 0
+	object id size 0
+	field id size 0
+	value id size 0
+	computer name id size 0
+	build date size 0
+	client id size 4
+	client payload size 0
+	client payload size 106
+	frame isn't null	frame.->payloadSize isn't null	passed malloc	assigning new payload======================
+*got send data
+**action type 0
+	stringstoread  1
+bytesize 8
+diff 44  bytesize 44
+size1 44
+	stringstoread  1
+bytesize 8
+diff 34  bytesize 34
+size2 34
+	stringstoread  1
+bytesize 8
+diff 26  bytesize 26
+value 0  3.766018, mydataobj[0]=PWCaseInformation, mydatafld[0]=OverloadRank,PIDO: PWCaseInformation, PIDF: OverloadRank
+Updated performance index 10.10.11.61: value=3.766018; actualValue=3.766018************** OPEN RELAY BY IP ****************
+in send message
+enter packServerMessage Object:10.10.11.72  Field: Value: 
+size calc 1
+bufferSize message size 76
+enter packServerMessage Object:10.10.11.72  Field: Value: 
+size calc 1
+bytes sent 76
+exit send message
+************** GET PERFORMANCE INDEX *********************
+sizeof int64 8
+	Number of characters in string list 17
+		TotalSize Calculated: 44
+	objsize 44
+sizeof int64 8
+	Number of characters in string list 12
+		TotalSize Calculated: 34
+	fldsize 34
+	GetData payloadsize 80
+payload1 00680692
+sizeof int64 8
+	Number of characters in string list 17
+		strings in list: 1
+		characters in string: 17
+		TotalSize Calculated: 44
+payload2 006806BE
+sizeof int64 8
+	Number of characters in string list 12
+		strings in list: 1
+		characters in string: 12
+		TotalSize Calculated: 34
+payload3 006806E0
+send get data objsize:17  fldsize:0
+enter packServerMessage Object:  Field: Value: 
+size calc 1
+enter packServerMessage Object:  Field: Value: 
+size calc 1
+		 SEND bytes left 0
+in send message
+enter packServerMessage Object:  Field: Value: 
+size calc 1
+bufferSize message size 54
+enter packServerMessage Object:  Field: Value: 
+size calc 1
+bytes sent 54
+exit send message
+read data
+recv bytes 10
+key h:222 n:-8704
+framesize h:150 n:0
+	read 140  
+
+======================unpack client message
+	key 222
+	size 150
+	type 4
+	source 1
+	version 0
+	object id size 0
+	field id size 0
+	value id size 0
+	computer name id size 0
+	build date size 0
+	client id size 4
+	client payload size 0
+	client payload size 106
+	frame isn't null	frame.->payloadSize isn't null	passed malloc	assigning new payload======================
+*got send data
+**action type 0
+	stringstoread  1
+bytesize 8
+diff 44  bytesize 44
+size1 44
+	stringstoread  1
+bytesize 8
+diff 34  bytesize 34
+size2 34
+	stringstoread  1
+bytesize 8
+diff 26  bytesize 26
+value 0  3.766018, mydataobj[0]=PWCaseInformation, mydatafld[0]=OverloadRank,PIDO: PWCaseInformation, PIDF: OverloadRank
+Updated performance index 10.10.11.72: value=3.766018; actualValue=3.766018************** OPEN RELAY BY IP ****************
+in send message
+enter packServerMessage Object:10.10.11.81  Field: Value: 
+size calc 1
+bufferSize message size 76
+enter packServerMessage Object:10.10.11.81  Field: Value: 
+size calc 1
+bytes sent 76
+exit send message
+************** GET PERFORMANCE INDEX *********************
+sizeof int64 8
+	Number of characters in string list 17
+		TotalSize Calculated: 44
+	objsize 44
+sizeof int64 8
+	Number of characters in string list 12
+		TotalSize Calculated: 34
+	fldsize 34
+	GetData payloadsize 80
+payload1 00680692
+sizeof int64 8
+	Number of characters in string list 17
+		strings in list: 1
+		characters in string: 17
+		TotalSize Calculated: 44
+payload2 006806BE
+sizeof int64 8
+	Number of characters in string list 12
+		strings in list: 1
+		characters in string: 12
+		TotalSize Calculated: 34
+payload3 006806E0
+send get data objsize:17  fldsize:0
+enter packServerMessage Object:  Field: Value: 
+size calc 1
+enter packServerMessage Object:  Field: Value: 
+size calc 1
+		 SEND bytes left 0
+in send message
+enter packServerMessage Object:  Field: Value: 
+size calc 1
+bufferSize message size 54
+enter packServerMessage Object:  Field: Value: 
+size calc 1
+bytes sent 54
+exit send message
+read data
+recv bytes 10
+key h:222 n:-8704
+framesize h:150 n:0
+	read 140  
+
+======================unpack client message
+	key 222
+	size 150
+	type 4
+	source 1
+	version 0
+	object id size 0
+	field id size 0
+	value id size 0
+	computer name id size 0
+	build date size 0
+	client id size 4
+	client payload size 0
+	client payload size 106
+	frame isn't null	frame.->payloadSize isn't null	passed malloc	assigning new payload======================
+*got send data
+**action type 0
+	stringstoread  1
+bytesize 8
+diff 44  bytesize 44
+size1 44
+	stringstoread  1
+bytesize 8
+diff 34  bytesize 34
+size2 34
+	stringstoread  1
+bytesize 8
+diff 26  bytesize 26
+value 0  3.766018, mydataobj[0]=PWCaseInformation, mydatafld[0]=OverloadRank,PIDO: PWCaseInformation, PIDF: OverloadRank
+Updated performance index 10.10.11.81: value=3.766018; actualValue=3.766018************** OPEN RELAY BY IP ****************
+in send message
+enter packServerMessage Object:10.10.11.82  Field: Value: 
+size calc 1
+bufferSize message size 76
+enter packServerMessage Object:10.10.11.82  Field: Value: 
+size calc 1
+bytes sent 76
+exit send message
+************** GET PERFORMANCE INDEX *********************
+sizeof int64 8
+	Number of characters in string list 17
+		TotalSize Calculated: 44
+	objsize 44
+sizeof int64 8
+	Number of characters in string list 12
+		TotalSize Calculated: 34
+	fldsize 34
+	GetData payloadsize 80
+payload1 00680692
+sizeof int64 8
+	Number of characters in string list 17
+		strings in list: 1
+		characters in string: 17
+		TotalSize Calculated: 44
+payload2 006806BE
+sizeof int64 8
+	Number of characters in string list 12
+		strings in list: 1
+		characters in string: 12
+		TotalSize Calculated: 34
+payload3 006806E0
+send get data objsize:17  fldsize:0
+enter packServerMessage Object:  Field: Value: 
+size calc 1
+enter packServerMessage Object:  Field: Value: 
+size calc 1
+		 SEND bytes left 0
+in send message
+enter packServerMessage Object:  Field: Value: 
+size calc 1
+bufferSize message size 54
+enter packServerMessage Object:  Field: Value: 
+size calc 1
+bytes sent 54
+exit send message
+read data
+recv bytes 10
+key h:222 n:-8704
+framesize h:150 n:0
+	read 140  
+
+======================unpack client message
+	key 222
+	size 150
+	type 4
+	source 1
+	version 0
+	object id size 0
+	field id size 0
+	value id size 0
+	computer name id size 0
+	build date size 0
+	client id size 4
+	client payload size 0
+	client payload size 106
+	frame isn't null	frame.->payloadSize isn't null	passed malloc	assigning new payload======================
+*got send data
+**action type 0
+	stringstoread  1
+bytesize 8
+diff 44  bytesize 44
+size1 44
+	stringstoread  1
+bytesize 8
+diff 34  bytesize 34
+size2 34
+	stringstoread  1
+bytesize 8
+diff 26  bytesize 26
+value 0  3.766018, mydataobj[0]=PWCaseInformation, mydatafld[0]=OverloadRank,PIDO: PWCaseInformation, PIDF: OverloadRank
+Updated performance index 10.10.11.82: value=3.766018; actualValue=3.766018IP Address=  doesn't exist!
+Done!
+Creating path ranking list...
+done reading config file...
+Made it after for loops!!
+Creating pw_analysis_attack_graph...
+Done!
+Attack Path Rankings (total ranks = 1134):
+	1. 10898(10.10.12.200) -> 11060(10.10.11.51), 
+				  sec. index= 0.392752	2. 10898(10.10.12.200) -> 11062(10.10.11.61), 
+				  sec. index= 0.392752	3. 10898(10.10.12.200) -> 11066(10.10.11.81), 
+				  sec. index= 0.392752	4. 11262(10.10.37.71) -> 11060(10.10.11.51), 
+				  sec. index= 0.392752	5. 11262(10.10.37.71) -> 11062(10.10.11.61), 
+				  sec. index= 0.392752	6. 11262(10.10.37.71) -> 11066(10.10.11.81), 
+				  sec. index= 0.392752	7. 11260(10.10.37.31) -> 11060(10.10.11.51), 
+				  sec. index= 0.392752	8. 11260(10.10.37.31) -> 11062(10.10.11.61), 
+				  sec. index= 0.392752	9. 11260(10.10.37.31) -> 11066(10.10.11.81), 
+				  sec. index= 0.392752	10. 10896(10.10.11.200) -> 11060(10.10.11.51), 
+				  sec. index= 0.392752	11. 10896(10.10.11.200) -> 11062(10.10.11.61), 
+				  sec. index= 0.392752	12. 10896(10.10.11.200) -> 11066(10.10.11.81), 
+				  sec. index= 0.392752	13. 11182(10.10.24.141) -> 11060(10.10.11.51), 
+				  sec. index= 0.392752	14. 11182(10.10.24.141) -> 11062(10.10.11.61), 
+				  sec. index= 0.392752	15. 11182(10.10.24.141) -> 11066(10.10.11.81), 
+				  sec. index= 0.392752	16. 11180(10.10.24.131) -> 11060(10.10.11.51), 
+				  sec. index= 0.392752	17. 11180(10.10.24.131) -> 11062(10.10.11.61), 
+				  sec. index= 0.392752	18. 11180(10.10.24.131) -> 11066(10.10.11.81), 
+				  sec. index= 0.392752	19. 11186(10.10.24.41) -> 11060(10.10.11.51), 
+				  sec. index= 0.392752	20. 11186(10.10.24.41) -> 11062(10.10.11.61), 
+				  sec. index= 0.392752	21. 11186(10.10.24.41) -> 11066(10.10.11.81), 
+				  sec. index= 0.392752	22. 11184(10.10.24.21) -> 11060(10.10.11.51), 
+				  sec. index= 0.392752	23. 11184(10.10.24.21) -> 11062(10.10.11.61), 
+				  sec. index= 0.392752	24. 11184(10.10.24.21) -> 11066(10.10.11.81), 
+				  sec. index= 0.392752	25. 11188(10.10.24.42) -> 11060(10.10.11.51), 
+				  sec. index= 0.392752	26. 11188(10.10.24.42) -> 11062(10.10.11.61), 
+				  sec. index= 0.392752	27. 11188(10.10.24.42) -> 11066(10.10.11.81), 
+				  sec. index= 0.392752	28. 11060(10.10.11.51) -> 11062(10.10.11.61), 
+				  sec. index= 0.392752	29. 11060(10.10.11.51) -> 11066(10.10.11.81), 
+				  sec. index= 0.392752	30. 11062(10.10.11.61) -> 11060(10.10.11.51), 
+				  sec. index= 0.392752	31. 11062(10.10.11.61) -> 11066(10.10.11.81), 
+				  sec. index= 0.392752	32. 11136(10.10.20.21) -> 11060(10.10.11.51), 
+				  sec. index= 0.392752	33. 11136(10.10.20.21) -> 11062(10.10.11.61), 
+				  sec. index= 0.392752	34. 11136(10.10.20.21) -> 11066(10.10.11.81), 
+				  sec. index= 0.392752	35. 11134(10.10.20.121) -> 11060(10.10.11.51), 
+				  sec. index= 0.392752	36. 11134(10.10.20.121) -> 11062(10.10.11.61), 
+				  sec. index= 0.392752	37. 11134(10.10.20.121) -> 11066(10.10.11.81), 
+				  sec. index= 0.392752	38. 11132(10.10.20.11) -> 11060(10.10.11.51), 
+				  sec. index= 0.392752	39. 11132(10.10.20.11) -> 11062(10.10.11.61), 
+				  sec. index= 0.392752	40. 11132(10.10.20.11) -> 11066(10.10.11.81), 
+				  sec. index= 0.392752	41. 11130(10.10.20.112) -> 11060(10.10.11.51), 
+				  sec. index= 0.392752	42. 11130(10.10.20.112) -> 11062(10.10.11.61), 
+				  sec. index= 0.392752	43. 11130(10.10.20.112) -> 11066(10.10.11.81), 
+				  sec. index= 0.392752	44. 11138(10.10.21.161) -> 11060(10.10.11.51), 
+				  sec. index= 0.392752	45. 11138(10.10.21.161) -> 11062(10.10.11.61), 
+				  sec. index= 0.392752	46. 11138(10.10.21.161) -> 11066(10.10.11.81), 
+				  sec. index= 0.392752	47. 11272(10.10.39.14) -> 11060(10.10.11.51), 
+				  sec. index= 0.392752	48. 11272(10.10.39.14) -> 11062(10.10.11.61), 
+				  sec. index= 0.392752	49. 11272(10.10.39.14) -> 11066(10.10.11.81), 
+				  sec. index= 0.392752	50. 11268(10.10.39.12) -> 11060(10.10.11.51), 
+				  sec. index= 0.392752	51. 11268(10.10.39.12) -> 11062(10.10.11.61), 
+				  sec. index= 0.392752	52. 11268(10.10.39.12) -> 11066(10.10.11.81), 
+				  sec. index= 0.392752	53. 11266(10.10.39.11) -> 11060(10.10.11.51), 
+				  sec. index= 0.392752	54. 11266(10.10.39.11) -> 11062(10.10.11.61), 
+				  sec. index= 0.392752	55. 11266(10.10.39.11) -> 11066(10.10.11.81), 
+				  sec. index= 0.392752	56. 11344(10.10.7.81) -> 11060(10.10.11.51), 
+				  sec. index= 0.392752	57. 11344(10.10.7.81) -> 11062(10.10.11.61), 
+				  sec. index= 0.392752	58. 11344(10.10.7.81) -> 11066(10.10.11.81), 
+				  sec. index= 0.392752	59. 11346(10.10.7.82) -> 11060(10.10.11.51), 
+				  sec. index= 0.392752	60. 11346(10.10.7.82) -> 11062(10.10.11.61), 
+				  sec. index= 0.392752	61. 11346(10.10.7.82) -> 11066(10.10.11.81), 
+				  sec. index= 0.392752	62. 10798(10.10.3.200) -> 11060(10.10.11.51), 
+				  sec. index= 0.392752	63. 10798(10.10.3.200) -> 11062(10.10.11.61), 
+				  sec. index= 0.392752	64. 10798(10.10.3.200) -> 11066(10.10.11.81), 
+				  sec. index= 0.392752	65. 11342(10.10.7.71) -> 11060(10.10.11.51), 
+				  sec. index= 0.392752	66. 11342(10.10.7.71) -> 11062(10.10.11.61), 
+				  sec. index= 0.392752	67. 11342(10.10.7.71) -> 11066(10.10.11.81), 
+				  sec. index= 0.392752	68. 11226(10.10.31.21) -> 11060(10.10.11.51), 
+				  sec. index= 0.392752	69. 11226(10.10.31.21) -> 11062(10.10.11.61), 
+				  sec. index= 0.392752	70. 11226(10.10.31.21) -> 11066(10.10.11.81), 
+				  sec. index= 0.392752	71. 11264(10.10.37.81) -> 11060(10.10.11.51), 
+				  sec. index= 0.392752	72. 11264(10.10.37.81) -> 11062(10.10.11.61), 
+				  sec. index= 0.392752	73. 11264(10.10.37.81) -> 11066(10.10.11.81), 
+				  sec. index= 0.392752	74. 11222(10.10.31.13) -> 11060(10.10.11.51), 
+				  sec. index= 0.392752	75. 11222(10.10.31.13) -> 11062(10.10.11.61), 
+				  sec. index= 0.392752	76. 11222(10.10.31.13) -> 11066(10.10.11.81), 
+				  sec. index= 0.392752	77. 10792(10.10.2.200) -> 11060(10.10.11.51), 
+				  sec. index= 0.392752	78. 10792(10.10.2.200) -> 11062(10.10.11.61), 
+				  sec. index= 0.392752	79. 10792(10.10.2.200) -> 11066(10.10.11.81), 
+				  sec. index= 0.392752	80. 11220(10.10.31.12) -> 11060(10.10.11.51), 
+				  sec. index= 0.392752	81. 11220(10.10.31.12) -> 11062(10.10.11.61), 
+				  sec. index= 0.392752	82. 11220(10.10.31.12) -> 11066(10.10.11.81), 
+				  sec. index= 0.392752	83. 10836(10.10.7.200) -> 11060(10.10.11.51), 
+				  sec. index= 0.392752	84. 10836(10.10.7.200) -> 11062(10.10.11.61), 
+				  sec. index= 0.392752	85. 10836(10.10.7.200) -> 11066(10.10.11.81), 
+				  sec. index= 0.392752	86. 10938(10.10.28.200) -> 11060(10.10.11.51), 
+				  sec. index= 0.392752	87. 10938(10.10.28.200) -> 11062(10.10.11.61), 
+				  sec. index= 0.392752	88. 10938(10.10.28.200) -> 11066(10.10.11.81), 
+				  sec. index= 0.392752	89. 10830(10.10.4.200) -> 11060(10.10.11.51), 
+				  sec. index= 0.392752	90. 10830(10.10.4.200) -> 11062(10.10.11.61), 
+				  sec. index= 0.392752	91. 10830(10.10.4.200) -> 11066(10.10.11.81), 
+				  sec. index= 0.392752	92. 10832(10.10.6.200) -> 11060(10.10.11.51), 
+				  sec. index= 0.392752	93. 10832(10.10.6.200) -> 11062(10.10.11.61), 
+				  sec. index= 0.392752	94. 10832(10.10.6.200) -> 11066(10.10.11.81), 
+				  sec. index= 0.392752	95. 10934(10.10.42.210) -> 11060(10.10.11.51), 
+				  sec. index= 0.392752	96. 10934(10.10.42.210) -> 11062(10.10.11.61), 
+				  sec. index= 0.392752	97. 10934(10.10.42.210) -> 11066(10.10.11.81), 
+				  sec. index= 0.392752	98. 10936(10.10.27.200) -> 11060(10.10.11.51), 
+				  sec. index= 0.392752	99. 10936(10.10.27.200) -> 11062(10.10.11.61), 
+				  sec. index= 0.392752	100. 10936(10.10.27.200) -> 11066(10.10.11.81), 
+				  sec. index= 0.392752	101. 10930(10.10.36.200) -> 11060(10.10.11.51), 
+				  sec. index= 0.392752	102. 10930(10.10.36.200) -> 11062(10.10.11.61), 
+				  sec. index= 0.392752	103. 10930(10.10.36.200) -> 11066(10.10.11.81), 
+				  sec. index= 0.392752	104. 10932(10.10.41.62) -> 11060(10.10.11.51), 
+				  sec. index= 0.392752	105. 10932(10.10.41.62) -> 11062(10.10.11.61), 
+				  sec. index= 0.392752	106. 10932(10.10.41.62) -> 11066(10.10.11.81), 
+				  sec. index= 0.392752	107. 11046(10.10.1.31) -> 11060(10.10.11.51), 
+				  sec. index= 0.392752	108. 11046(10.10.1.31) -> 11062(10.10.11.61), 
+				  sec. index= 0.392752	109. 11046(10.10.1.31) -> 11066(10.10.11.81), 
+				  sec. index= 0.392752	110. 11044(10.10.1.21) -> 11060(10.10.11.51), 
+				  sec. index= 0.392752	111. 11044(10.10.1.21) -> 11062(10.10.11.61), 
+				  sec. index= 0.392752	112. 11044(10.10.1.21) -> 11066(10.10.11.81), 
+				  sec. index= 0.392752	113. 11048(10.10.1.41) -> 11060(10.10.11.51), 
+				  sec. index= 0.392752	114. 11048(10.10.1.41) -> 11062(10.10.11.61), 
+				  sec. index= 0.392752	115. 11048(10.10.1.41) -> 11066(10.10.11.81), 
+				  sec. index= 0.392752	116. 11168(10.10.23.34) -> 11060(10.10.11.51), 
+				  sec. index= 0.392752	117. 11168(10.10.23.34) -> 11062(10.10.11.61), 
+				  sec. index= 0.392752	118. 11168(10.10.23.34) -> 11066(10.10.11.81), 
+				  sec. index= 0.392752	119. 11164(10.10.23.32) -> 11060(10.10.11.51), 
+				  sec. index= 0.392752	120. 11164(10.10.23.32) -> 11062(10.10.11.61), 
+				  sec. index= 0.392752	121. 11164(10.10.23.32) -> 11066(10.10.11.81), 
+				  sec. index= 0.392752	122. 11166(10.10.23.33) -> 11060(10.10.11.51), 
+				  sec. index= 0.392752	123. 11166(10.10.23.33) -> 11062(10.10.11.61), 
+				  sec. index= 0.392752	124. 11166(10.10.23.33) -> 11066(10.10.11.81), 
+				  sec. index= 0.392752	125. 11160(10.10.23.131) -> 11060(10.10.11.51), 
+				  sec. index= 0.392752	126. 11160(10.10.23.131) -> 11062(10.10.11.61), 
+				  sec. index= 0.392752	127. 11160(10.10.23.131) -> 11066(10.10.11.81), 
+				  sec. index= 0.392752	128. 11162(10.10.23.31) -> 11060(10.10.11.51), 
+				  sec. index= 0.392752	129. 11162(10.10.23.31) -> 11062(10.10.11.61), 
+				  sec. index= 0.392752	130. 11162(10.10.23.31) -> 11066(10.10.11.81), 
+				  sec. index= 0.392752	131. 11308(10.10.41.25) -> 11060(10.10.11.51), 
+				  sec. index= 0.392752	132. 11308(10.10.41.25) -> 11062(10.10.11.61), 
+				  sec. index= 0.392752	133. 11308(10.10.41.25) -> 11066(10.10.11.81), 
+				  sec. index= 0.392752	134. 11300(10.10.41.21) -> 11060(10.10.11.51), 
+				  sec. index= 0.392752	135. 11300(10.10.41.21) -> 11062(10.10.11.61), 
+				  sec. index= 0.392752	136. 11300(10.10.41.21) -> 11066(10.10.11.81), 
+				  sec. index= 0.392752	137. 11302(10.10.41.22) -> 11060(10.10.11.51), 
+				  sec. index= 0.392752	138. 11302(10.10.41.22) -> 11062(10.10.11.61), 
+				  sec. index= 0.392752	139. 11302(10.10.41.22) -> 11066(10.10.11.81), 
+				  sec. index= 0.392752	140. 11304(10.10.41.23) -> 11060(10.10.11.51), 
+				  sec. index= 0.392752	141. 11304(10.10.41.23) -> 11062(10.10.11.61), 
+				  sec. index= 0.392752	142. 11304(10.10.41.23) -> 11066(10.10.11.81), 
+				  sec. index= 0.392752	143. 11306(10.10.41.24) -> 11060(10.10.11.51), 
+				  sec. index= 0.392752	144. 11306(10.10.41.24) -> 11062(10.10.11.61), 
+				  sec. index= 0.392752	145. 11306(10.10.41.24) -> 11066(10.10.11.81), 
+				  sec. index= 0.392752	146. 10666(10.10.1.200) -> 11060(10.10.11.51), 
+				  sec. index= 0.392752	147. 10666(10.10.1.200) -> 11062(10.10.11.61), 
+				  sec. index= 0.392752	148. 10666(10.10.1.200) -> 11066(10.10.11.81), 
+				  sec. index= 0.392752	149. 11276(10.10.39.16) -> 11060(10.10.11.51), 
+				  sec. index= 0.392752	150. 11276(10.10.39.16) -> 11062(10.10.11.61), 
+				  sec. index= 0.392752	151. 11276(10.10.39.16) -> 11066(10.10.11.81), 
+				  sec. index= 0.392752	152. 11270(10.10.39.13) -> 11060(10.10.11.51), 
+				  sec. index= 0.392752	153. 11270(10.10.39.13) -> 11062(10.10.11.61), 
+				  sec. index= 0.392752	154. 11270(10.10.39.13) -> 11066(10.10.11.81), 
+				  sec. index= 0.392752	155. 11288(10.10.39.34) -> 11060(10.10.11.51), 
+				  sec. index= 0.392752	156. 11288(10.10.39.34) -> 11062(10.10.11.61), 
+				  sec. index= 0.392752	157. 11288(10.10.39.34) -> 11066(10.10.11.81), 
+				  sec. index= 0.392752	158. 11280(10.10.39.23) -> 11060(10.10.11.51), 
+				  sec. index= 0.392752	159. 11280(10.10.39.23) -> 11062(10.10.11.61), 
+				  sec. index= 0.392752	160. 11280(10.10.39.23) -> 11066(10.10.11.81), 
+				  sec. index= 0.392752	161. 11282(10.10.39.31) -> 11060(10.10.11.51), 
+				  sec. index= 0.392752	162. 11282(10.10.39.31) -> 11062(10.10.11.61), 
+				  sec. index= 0.392752	163. 11282(10.10.39.31) -> 11066(10.10.11.81), 
+				  sec. index= 0.392752	164. 11286(10.10.39.33) -> 11060(10.10.11.51), 
+				  sec. index= 0.392752	165. 11286(10.10.39.33) -> 11062(10.10.11.61), 
+				  sec. index= 0.392752	166. 11286(10.10.39.33) -> 11066(10.10.11.81), 
+				  sec. index= 0.392752	167. 11120(10.10.18.11) -> 11060(10.10.11.51), 
+				  sec. index= 0.392752	168. 11120(10.10.18.11) -> 11062(10.10.11.61), 
+				  sec. index= 0.392752	169. 11120(10.10.18.11) -> 11066(10.10.11.81), 
+				  sec. index= 0.392752	170. 11122(10.10.18.21) -> 11060(10.10.11.51), 
+				  sec. index= 0.392752	171. 11122(10.10.18.21) -> 11062(10.10.11.61), 
+				  sec. index= 0.392752	172. 11122(10.10.18.21) -> 11066(10.10.11.81), 
+				  sec. index= 0.392752	173. 11088(10.10.13.11) -> 11060(10.10.11.51), 
+				  sec. index= 0.392752	174. 11088(10.10.13.11) -> 11062(10.10.11.61), 
+				  sec. index= 0.392752	175. 11088(10.10.13.11) -> 11066(10.10.11.81), 
+				  sec. index= 0.392752	176. 11124(10.10.2.31) -> 11060(10.10.11.51), 
+				  sec. index= 0.392752	177. 11124(10.10.2.31) -> 11062(10.10.11.61), 
+				  sec. index= 0.392752	178. 11124(10.10.2.31) -> 11066(10.10.11.81), 
+				  sec. index= 0.392752	179. 11126(10.10.2.41) -> 11060(10.10.11.51), 
+				  sec. index= 0.392752	180. 11126(10.10.2.41) -> 11062(10.10.11.61), 
+				  sec. index= 0.392752	181. 11126(10.10.2.41) -> 11066(10.10.11.81), 
+				  sec. index= 0.392752	182. 11128(10.10.20.111) -> 11060(10.10.11.51), 
+				  sec. index= 0.392752	183. 11128(10.10.20.111) -> 11062(10.10.11.61), 
+				  sec. index= 0.392752	184. 11128(10.10.20.111) -> 11066(10.10.11.81), 
+				  sec. index= 0.392752	185. 11082(10.10.12.81) -> 11060(10.10.11.51), 
+				  sec. index= 0.392752	186. 11082(10.10.12.81) -> 11062(10.10.11.61), 
+				  sec. index= 0.392752	187. 11082(10.10.12.81) -> 11066(10.10.11.81), 
+				  sec. index= 0.392752	188. 11080(10.10.12.41) -> 11060(10.10.11.51), 
+				  sec. index= 0.392752	189. 11080(10.10.12.41) -> 11062(10.10.11.61), 
+				  sec. index= 0.392752	190. 11080(10.10.12.41) -> 11066(10.10.11.81), 
+				  sec. index= 0.392752	191. 11086(10.10.12.91) -> 11060(10.10.11.51), 
+				  sec. index= 0.392752	192. 11086(10.10.12.91) -> 11062(10.10.11.61), 
+				  sec. index= 0.392752	193. 11086(10.10.12.91) -> 11066(10.10.11.81), 
+				  sec. index= 0.392752	194. 11084(10.10.12.82) -> 11060(10.10.11.51), 
+				  sec. index= 0.392752	195. 11084(10.10.12.82) -> 11062(10.10.11.61), 
+				  sec. index= 0.392752	196. 11084(10.10.12.82) -> 11066(10.10.11.81), 
+				  sec. index= 0.392752	197. 10904(10.10.15.200) -> 11060(10.10.11.51), 
+				  sec. index= 0.392752	198. 10904(10.10.15.200) -> 11062(10.10.11.61), 
+				  sec. index= 0.392752	199. 10904(10.10.15.200) -> 11066(10.10.11.81), 
+				  sec. index= 0.392752	200. 10906(10.10.16.200) -> 11060(10.10.11.51), 
+				  sec. index= 0.392752	201. 10906(10.10.16.200) -> 11062(10.10.11.61), 
+				  sec. index= 0.392752	202. 10906(10.10.16.200) -> 11066(10.10.11.81), 
+				  sec. index= 0.392752	203. 10900(10.10.13.200) -> 11060(10.10.11.51), 
+				  sec. index= 0.392752	204. 10900(10.10.13.200) -> 11062(10.10.11.61), 
+				  sec. index= 0.392752	205. 10900(10.10.13.200) -> 11066(10.10.11.81), 
+				  sec. index= 0.392752	206. 10902(10.10.14.200) -> 11060(10.10.11.51), 
+				  sec. index= 0.392752	207. 10902(10.10.14.200) -> 11062(10.10.11.61), 
+				  sec. index= 0.392752	208. 10902(10.10.14.200) -> 11066(10.10.11.81), 
+				  sec. index= 0.392752	209. 10908(10.10.17.200) -> 11060(10.10.11.51), 
+				  sec. index= 0.392752	210. 10908(10.10.17.200) -> 11062(10.10.11.61), 
+				  sec. index= 0.392752	211. 10908(10.10.17.200) -> 11066(10.10.11.81), 
+				  sec. index= 0.392752	212. 11154(10.10.23.11) -> 11060(10.10.11.51), 
+				  sec. index= 0.392752	213. 11154(10.10.23.11) -> 11062(10.10.11.61), 
+				  sec. index= 0.392752	214. 11154(10.10.23.11) -> 11066(10.10.11.81), 
+				  sec. index= 0.392752	215. 11156(10.10.23.121) -> 11060(10.10.11.51), 
+				  sec. index= 0.392752	216. 11156(10.10.23.121) -> 11062(10.10.11.61), 
+				  sec. index= 0.392752	217. 11156(10.10.23.121) -> 11066(10.10.11.81), 
+				  sec. index= 0.392752	218. 11150(10.10.21.51) -> 11060(10.10.11.51), 
+				  sec. index= 0.392752	219. 11150(10.10.21.51) -> 11062(10.10.11.61), 
+				  sec. index= 0.392752	220. 11150(10.10.21.51) -> 11066(10.10.11.81), 
+				  sec. index= 0.392752	221. 11152(10.10.21.52) -> 11060(10.10.11.51), 
+				  sec. index= 0.392752	222. 11152(10.10.21.52) -> 11062(10.10.11.61), 
+				  sec. index= 0.392752	223. 11152(10.10.21.52) -> 11066(10.10.11.81), 
+				  sec. index= 0.392752	224. 11158(10.10.23.12) -> 11060(10.10.11.51), 
+				  sec. index= 0.392752	225. 11158(10.10.23.12) -> 11062(10.10.11.61), 
+				  sec. index= 0.392752	226. 11158(10.10.23.12) -> 11066(10.10.11.81), 
+				  sec. index= 0.392752	227. 11238(10.10.31.33) -> 11060(10.10.11.51), 
+				  sec. index= 0.392752	228. 11238(10.10.31.33) -> 11062(10.10.11.61), 
+				  sec. index= 0.392752	229. 11238(10.10.31.33) -> 11066(10.10.11.81), 
+				  sec. index= 0.392752	230. 11330(10.10.7.102) -> 11060(10.10.11.51), 
+				  sec. index= 0.392752	231. 11330(10.10.7.102) -> 11062(10.10.11.61), 
+				  sec. index= 0.392752	232. 11330(10.10.7.102) -> 11066(10.10.11.81), 
+				  sec. index= 0.392752	233. 11332(10.10.7.103) -> 11060(10.10.11.51), 
+				  sec. index= 0.392752	234. 11332(10.10.7.103) -> 11062(10.10.11.61), 
+				  sec. index= 0.392752	235. 11332(10.10.7.103) -> 11066(10.10.11.81), 
+				  sec. index= 0.392752	236. 11334(10.10.7.104) -> 11060(10.10.11.51), 
+				  sec. index= 0.392752	237. 11334(10.10.7.104) -> 11062(10.10.11.61), 
+				  sec. index= 0.392752	238. 11334(10.10.7.104) -> 11066(10.10.11.81), 
+				  sec. index= 0.392752	239. 11336(10.10.7.11) -> 11060(10.10.11.51), 
+				  sec. index= 0.392752	240. 11336(10.10.7.11) -> 11062(10.10.11.61), 
+				  sec. index= 0.392752	241. 11336(10.10.7.11) -> 11066(10.10.11.81), 
+				  sec. index= 0.392752	242. 11230(10.10.31.23) -> 11060(10.10.11.51), 
+				  sec. index= 0.392752	243. 11230(10.10.31.23) -> 11062(10.10.11.61), 
+				  sec. index= 0.392752	244. 11230(10.10.31.23) -> 11066(10.10.11.81), 
+				  sec. index= 0.392752	245. 11338(10.10.7.21) -> 11060(10.10.11.51), 
+				  sec. index= 0.392752	246. 11338(10.10.7.21) -> 11062(10.10.11.61), 
+				  sec. index= 0.392752	247. 11338(10.10.7.21) -> 11066(10.10.11.81), 
+				  sec. index= 0.392752	248. 11232(10.10.31.24) -> 11060(10.10.11.51), 
+				  sec. index= 0.392752	249. 11232(10.10.31.24) -> 11062(10.10.11.61), 
+				  sec. index= 0.392752	250. 11232(10.10.31.24) -> 11066(10.10.11.81), 
+				  sec. index= 0.392752	251. 11234(10.10.31.31) -> 11060(10.10.11.51), 
+				  sec. index= 0.392752	252. 11234(10.10.31.31) -> 11062(10.10.11.61), 
+				  sec. index= 0.392752	253. 11234(10.10.31.31) -> 11066(10.10.11.81), 
+				  sec. index= 0.392752	254. 11236(10.10.31.32) -> 11060(10.10.11.51), 
+				  sec. index= 0.392752	255. 11236(10.10.31.32) -> 11062(10.10.11.61), 
+				  sec. index= 0.392752	256. 11236(10.10.31.32) -> 11066(10.10.11.81), 
+				  sec. index= 0.392752	257. 11248(10.10.31.52) -> 11060(10.10.11.51), 
+				  sec. index= 0.392752	258. 11248(10.10.31.52) -> 11062(10.10.11.61), 
+				  sec. index= 0.392752	259. 11248(10.10.31.52) -> 11066(10.10.11.81), 
+				  sec. index= 0.392752	260. 11244(10.10.31.42) -> 11060(10.10.11.51), 
+				  sec. index= 0.392752	261. 11244(10.10.31.42) -> 11062(10.10.11.61), 
+				  sec. index= 0.392752	262. 11244(10.10.31.42) -> 11066(10.10.11.81), 
+				  sec. index= 0.392752	263. 11246(10.10.31.51) -> 11060(10.10.11.51), 
+				  sec. index= 0.392752	264. 11246(10.10.31.51) -> 11062(10.10.11.61), 
+				  sec. index= 0.392752	265. 11246(10.10.31.51) -> 11066(10.10.11.81), 
+				  sec. index= 0.392752	266. 11240(10.10.31.34) -> 11060(10.10.11.51), 
+				  sec. index= 0.392752	267. 11240(10.10.31.34) -> 11062(10.10.11.61), 
+				  sec. index= 0.392752	268. 11240(10.10.31.34) -> 11066(10.10.11.81), 
+				  sec. index= 0.392752	269. 11242(10.10.31.41) -> 11060(10.10.11.51), 
+				  sec. index= 0.392752	270. 11242(10.10.31.41) -> 11062(10.10.11.61), 
+				  sec. index= 0.392752	271. 11242(10.10.31.41) -> 11066(10.10.11.81), 
+				  sec. index= 0.392752	272. 10826(10.10.37.200) -> 11060(10.10.11.51), 
+				  sec. index= 0.392752	273. 10826(10.10.37.200) -> 11062(10.10.11.61), 
+				  sec. index= 0.392752	274. 10826(10.10.37.200) -> 11066(10.10.11.81), 
+				  sec. index= 0.392752	275. 10824(10.10.26.200) -> 11060(10.10.11.51), 
+				  sec. index= 0.392752	276. 10824(10.10.26.200) -> 11062(10.10.11.61), 
+				  sec. index= 0.392752	277. 10824(10.10.26.200) -> 11066(10.10.11.81), 
+				  sec. index= 0.392752	278. 10828(10.10.34.200) -> 11060(10.10.11.51), 
+				  sec. index= 0.392752	279. 10828(10.10.34.200) -> 11062(10.10.11.61), 
+				  sec. index= 0.392752	280. 10828(10.10.34.200) -> 11066(10.10.11.81), 
+				  sec. index= 0.392752	281. 11050(10.10.1.51) -> 11060(10.10.11.51), 
+				  sec. index= 0.392752	282. 11050(10.10.1.51) -> 11062(10.10.11.61), 
+				  sec. index= 0.392752	283. 11050(10.10.1.51) -> 11066(10.10.11.81), 
+				  sec. index= 0.392752	284. 11052(10.10.1.52) -> 11060(10.10.11.51), 
+				  sec. index= 0.392752	285. 11052(10.10.1.52) -> 11062(10.10.11.61), 
+				  sec. index= 0.392752	286. 11052(10.10.1.52) -> 11066(10.10.11.81), 
+				  sec. index= 0.392752	287. 11054(10.10.1.53) -> 11060(10.10.11.51), 
+				  sec. index= 0.392752	288. 11054(10.10.1.53) -> 11062(10.10.11.61), 
+				  sec. index= 0.392752	289. 11054(10.10.1.53) -> 11066(10.10.11.81), 
+				  sec. index= 0.392752	290. 11056(10.10.10.31) -> 11060(10.10.11.51), 
+				  sec. index= 0.392752	291. 11056(10.10.10.31) -> 11062(10.10.11.61), 
+				  sec. index= 0.392752	292. 11056(10.10.10.31) -> 11066(10.10.11.81), 
+				  sec. index= 0.392752	293. 11058(10.10.11.41) -> 11060(10.10.11.51), 
+				  sec. index= 0.392752	294. 11058(10.10.11.41) -> 11062(10.10.11.61), 
+				  sec. index= 0.392752	295. 11058(10.10.11.41) -> 11066(10.10.11.81), 
+				  sec. index= 0.392752	296. 11118(10.10.17.53) -> 11060(10.10.11.51), 
+				  sec. index= 0.392752	297. 11118(10.10.17.53) -> 11062(10.10.11.61), 
+				  sec. index= 0.392752	298. 11118(10.10.17.53) -> 11066(10.10.11.81), 
+				  sec. index= 0.392752	299. 11110(10.10.17.11) -> 11060(10.10.11.51), 
+				  sec. index= 0.392752	300. 11110(10.10.17.11) -> 11062(10.10.11.61), 
+				  sec. index= 0.392752	301. 11110(10.10.17.11) -> 11066(10.10.11.81), 
+				  sec. index= 0.392752	302. 11112(10.10.17.21) -> 11060(10.10.11.51), 
+				  sec. index= 0.392752	303. 11112(10.10.17.21) -> 11062(10.10.11.61), 
+				  sec. index= 0.392752	304. 11112(10.10.17.21) -> 11066(10.10.11.81), 
+				  sec. index= 0.392752	305. 11114(10.10.17.51) -> 11060(10.10.11.51), 
+				  sec. index= 0.392752	306. 11114(10.10.17.51) -> 11062(10.10.11.61), 
+				  sec. index= 0.392752	307. 11114(10.10.17.51) -> 11066(10.10.11.81), 
+				  sec. index= 0.392752	308. 11116(10.10.17.52) -> 11060(10.10.11.51), 
+				  sec. index= 0.392752	309. 11116(10.10.17.52) -> 11062(10.10.11.61), 
+				  sec. index= 0.392752	310. 11116(10.10.17.52) -> 11066(10.10.11.81), 
+				  sec. index= 0.392752	311. 11200(10.10.26.81) -> 11060(10.10.11.51), 
+				  sec. index= 0.392752	312. 11200(10.10.26.81) -> 11062(10.10.11.61), 
+				  sec. index= 0.392752	313. 11200(10.10.26.81) -> 11066(10.10.11.81), 
+				  sec. index= 0.392752	314. 11202(10.10.26.82) -> 11060(10.10.11.51), 
+				  sec. index= 0.392752	315. 11202(10.10.26.82) -> 11062(10.10.11.61), 
+				  sec. index= 0.392752	316. 11202(10.10.26.82) -> 11066(10.10.11.81), 
+				  sec. index= 0.392752	317. 11204(10.10.3.11) -> 11060(10.10.11.51), 
+				  sec. index= 0.392752	318. 11204(10.10.3.11) -> 11062(10.10.11.61), 
+				  sec. index= 0.392752	319. 11204(10.10.3.11) -> 11066(10.10.11.81), 
+				  sec. index= 0.392752	320. 11206(10.10.3.12) -> 11060(10.10.11.51), 
+				  sec. index= 0.392752	321. 11206(10.10.3.12) -> 11062(10.10.11.61), 
+				  sec. index= 0.392752	322. 11206(10.10.3.12) -> 11066(10.10.11.81), 
+				  sec. index= 0.392752	323. 11208(10.10.3.21) -> 11060(10.10.11.51), 
+				  sec. index= 0.392752	324. 11208(10.10.3.21) -> 11062(10.10.11.61), 
+				  sec. index= 0.392752	325. 11208(10.10.3.21) -> 11066(10.10.11.81), 
+				  sec. index= 0.392752	326. 11292(10.10.41.12) -> 11060(10.10.11.51), 
+				  sec. index= 0.392752	327. 11292(10.10.41.12) -> 11062(10.10.11.61), 
+				  sec. index= 0.392752	328. 11292(10.10.41.12) -> 11066(10.10.11.81), 
+				  sec. index= 0.392752	329. 11296(10.10.41.14) -> 11060(10.10.11.51), 
+				  sec. index= 0.392752	330. 11296(10.10.41.14) -> 11062(10.10.11.61), 
+				  sec. index= 0.392752	331. 11296(10.10.41.14) -> 11066(10.10.11.81), 
+				  sec. index= 0.392752	332. 10864(10.10.9.200) -> 11060(10.10.11.51), 
+				  sec. index= 0.392752	333. 10864(10.10.9.200) -> 11062(10.10.11.61), 
+				  sec. index= 0.392752	334. 10864(10.10.9.200) -> 11066(10.10.11.81), 
+				  sec. index= 0.392752	335. 11094(10.10.13.51) -> 11060(10.10.11.51), 
+				  sec. index= 0.392752	336. 11094(10.10.13.51) -> 11062(10.10.11.61), 
+				  sec. index= 0.392752	337. 11094(10.10.13.51) -> 11066(10.10.11.81), 
+				  sec. index= 0.392752	338. 11096(10.10.13.52) -> 11060(10.10.11.51), 
+				  sec. index= 0.392752	339. 11096(10.10.13.52) -> 11062(10.10.11.61), 
+				  sec. index= 0.392752	340. 11096(10.10.13.52) -> 11066(10.10.11.81), 
+				  sec. index= 0.392752	341. 11090(10.10.13.21) -> 11060(10.10.11.51), 
+				  sec. index= 0.392752	342. 11090(10.10.13.21) -> 11062(10.10.11.61), 
+				  sec. index= 0.392752	343. 11090(10.10.13.21) -> 11066(10.10.11.81), 
+				  sec. index= 0.392752	344. 11092(10.10.13.22) -> 11060(10.10.11.51), 
+				  sec. index= 0.392752	345. 11092(10.10.13.22) -> 11062(10.10.11.61), 
+				  sec. index= 0.392752	346. 11092(10.10.13.22) -> 11066(10.10.11.81), 
+				  sec. index= 0.392752	347. 11098(10.10.14.21) -> 11060(10.10.11.51), 
+				  sec. index= 0.392752	348. 11098(10.10.14.21) -> 11062(10.10.11.61), 
+				  sec. index= 0.392752	349. 11098(10.10.14.21) -> 11066(10.10.11.81), 
+				  sec. index= 0.392752	350. 10916(10.10.22.200) -> 11060(10.10.11.51), 
+				  sec. index= 0.392752	351. 10916(10.10.22.200) -> 11062(10.10.11.61), 
+				  sec. index= 0.392752	352. 10916(10.10.22.200) -> 11066(10.10.11.81), 
+				  sec. index= 0.392752	353. 10914(10.10.21.200) -> 11060(10.10.11.51), 
+				  sec. index= 0.392752	354. 10914(10.10.21.200) -> 11062(10.10.11.61), 
+				  sec. index= 0.392752	355. 10914(10.10.21.200) -> 11066(10.10.11.81), 
+				  sec. index= 0.392752	356. 10912(10.10.20.200) -> 11060(10.10.11.51), 
+				  sec. index= 0.392752	357. 10912(10.10.20.200) -> 11062(10.10.11.61), 
+				  sec. index= 0.392752	358. 10912(10.10.20.200) -> 11066(10.10.11.81), 
+				  sec. index= 0.392752	359. 10910(10.10.19.200) -> 11060(10.10.11.51), 
+				  sec. index= 0.392752	360. 10910(10.10.19.200) -> 11062(10.10.11.61), 
+				  sec. index= 0.392752	361. 10910(10.10.19.200) -> 11066(10.10.11.81), 
+				  sec. index= 0.392752	362. 10918(10.10.23.200) -> 11060(10.10.11.51), 
+				  sec. index= 0.392752	363. 10918(10.10.23.200) -> 11062(10.10.11.61), 
+				  sec. index= 0.392752	364. 10918(10.10.23.200) -> 11066(10.10.11.81), 
+				  sec. index= 0.392752	365. 11146(10.10.21.41) -> 11060(10.10.11.51), 
+				  sec. index= 0.392752	366. 11146(10.10.21.41) -> 11062(10.10.11.61), 
+				  sec. index= 0.392752	367. 11146(10.10.21.41) -> 11066(10.10.11.81), 
+				  sec. index= 0.392752	368. 11068(10.10.11.82) -> 11060(10.10.11.51), 
+				  sec. index= 0.392752	369. 11068(10.10.11.82) -> 11062(10.10.11.61), 
+				  sec. index= 0.392752	370. 11068(10.10.11.82) -> 11066(10.10.11.81), 
+				  sec. index= 0.392752	371. 11144(10.10.21.32) -> 11060(10.10.11.51), 
+				  sec. index= 0.392752	372. 11144(10.10.21.32) -> 11062(10.10.11.61), 
+				  sec. index= 0.392752	373. 11144(10.10.21.32) -> 11066(10.10.11.81), 
+				  sec. index= 0.392752	374. 11142(10.10.21.31) -> 11060(10.10.11.51), 
+				  sec. index= 0.392752	375. 11142(10.10.21.31) -> 11062(10.10.11.61), 
+				  sec. index= 0.392752	376. 11142(10.10.21.31) -> 11066(10.10.11.81), 
+				  sec. index= 0.392752	377. 11140(10.10.21.21) -> 11060(10.10.11.51), 
+				  sec. index= 0.392752	378. 11140(10.10.21.21) -> 11062(10.10.11.61), 
+				  sec. index= 0.392752	379. 11140(10.10.21.21) -> 11066(10.10.11.81), 
+				  sec. index= 0.392752	380. 11064(10.10.11.72) -> 11060(10.10.11.51), 
+				  sec. index= 0.392752	381. 11064(10.10.11.72) -> 11062(10.10.11.61), 
+				  sec. index= 0.392752	382. 11064(10.10.11.72) -> 11066(10.10.11.81), 
+				  sec. index= 0.392752	383. 11148(10.10.21.42) -> 11060(10.10.11.51), 
+				  sec. index= 0.392752	384. 11148(10.10.21.42) -> 11062(10.10.11.61), 
+				  sec. index= 0.392752	385. 11148(10.10.21.42) -> 11066(10.10.11.81), 
+				  sec. index= 0.392752	386. 11066(10.10.11.81) -> 11060(10.10.11.51), 
+				  sec. index= 0.392752	387. 11066(10.10.11.81) -> 11062(10.10.11.61), 
+				  sec. index= 0.392752	388. 11322(10.10.41.51) -> 11060(10.10.11.51), 
+				  sec. index= 0.392752	389. 11322(10.10.41.51) -> 11062(10.10.11.61), 
+				  sec. index= 0.392752	390. 11322(10.10.41.51) -> 11066(10.10.11.81), 
+				  sec. index= 0.392752	391. 11320(10.10.41.46) -> 11060(10.10.11.51), 
+				  sec. index= 0.392752	392. 11320(10.10.41.46) -> 11062(10.10.11.61), 
+				  sec. index= 0.392752	393. 11320(10.10.41.46) -> 11066(10.10.11.81), 
+				  sec. index= 0.392752	394. 11326(10.10.41.61) -> 11060(10.10.11.51), 
+				  sec. index= 0.392752	395. 11326(10.10.41.61) -> 11062(10.10.11.61), 
+				  sec. index= 0.392752	396. 11326(10.10.41.61) -> 11066(10.10.11.81), 
+				  sec. index= 0.392752	397. 11328(10.10.7.101) -> 11060(10.10.11.51), 
+				  sec. index= 0.392752	398. 11328(10.10.7.101) -> 11062(10.10.11.61), 
+				  sec. index= 0.392752	399. 11328(10.10.7.101) -> 11066(10.10.11.81), 
+				  sec. index= 0.392752	400. 11298(10.10.41.15) -> 11060(10.10.11.51), 
+				  sec. index= 0.392752	401. 11298(10.10.41.15) -> 11062(10.10.11.61), 
+				  sec. index= 0.392752	402. 11298(10.10.41.15) -> 11066(10.10.11.81), 
+				  sec. index= 0.392752	403. 11290(10.10.41.11) -> 11060(10.10.11.51), 
+				  sec. index= 0.392752	404. 11290(10.10.41.11) -> 11062(10.10.11.61), 
+				  sec. index= 0.392752	405. 11290(10.10.41.11) -> 11066(10.10.11.81), 
+				  sec. index= 0.392752	406. 11258(10.10.37.21) -> 11060(10.10.11.51), 
+				  sec. index= 0.392752	407. 11258(10.10.37.21) -> 11062(10.10.11.61), 
+				  sec. index= 0.392752	408. 11258(10.10.37.21) -> 11066(10.10.11.81), 
+				  sec. index= 0.392752	409. 11256(10.10.36.11) -> 11060(10.10.11.51), 
+				  sec. index= 0.392752	410. 11256(10.10.36.11) -> 11062(10.10.11.61), 
+				  sec. index= 0.392752	411. 11256(10.10.36.11) -> 11066(10.10.11.81), 
+				  sec. index= 0.392752	412. 11254(10.10.32.22) -> 11060(10.10.11.51), 
+				  sec. index= 0.392752	413. 11254(10.10.32.22) -> 11062(10.10.11.61), 
+				  sec. index= 0.392752	414. 11254(10.10.32.22) -> 11066(10.10.11.81), 
+				  sec. index= 0.392752	415. 11252(10.10.32.13) -> 11060(10.10.11.51), 
+				  sec. index= 0.392752	416. 11252(10.10.32.13) -> 11062(10.10.11.61), 
+				  sec. index= 0.392752	417. 11252(10.10.32.13) -> 11066(10.10.11.81), 
+				  sec. index= 0.392752	418. 11250(10.10.31.53) -> 11060(10.10.11.51), 
+				  sec. index= 0.392752	419. 11250(10.10.31.53) -> 11062(10.10.11.61), 
+				  sec. index= 0.392752	420. 11250(10.10.31.53) -> 11066(10.10.11.81), 
+				  sec. index= 0.392752	421. 11294(10.10.41.13) -> 11060(10.10.11.51), 
+				  sec. index= 0.392752	422. 11294(10.10.41.13) -> 11062(10.10.11.61), 
+				  sec. index= 0.392752	423. 11294(10.10.41.13) -> 11066(10.10.11.81), 
+				  sec. index= 0.392752	424. 11190(10.10.26.41) -> 11060(10.10.11.51), 
+				  sec. index= 0.392752	425. 11190(10.10.26.41) -> 11062(10.10.11.61), 
+				  sec. index= 0.392752	426. 11190(10.10.26.41) -> 11066(10.10.11.81), 
+				  sec. index= 0.392752	427. 11192(10.10.26.51) -> 11060(10.10.11.51), 
+				  sec. index= 0.392752	428. 11192(10.10.26.51) -> 11062(10.10.11.61), 
+				  sec. index= 0.392752	429. 11192(10.10.26.51) -> 11066(10.10.11.81), 
+				  sec. index= 0.392752	430. 11194(10.10.26.61) -> 11060(10.10.11.51), 
+				  sec. index= 0.392752	431. 11194(10.10.26.61) -> 11062(10.10.11.61), 
+				  sec. index= 0.392752	432. 11194(10.10.26.61) -> 11066(10.10.11.81), 
+				  sec. index= 0.392752	433. 11196(10.10.26.71) -> 11060(10.10.11.51), 
+				  sec. index= 0.392752	434. 11196(10.10.26.71) -> 11062(10.10.11.61), 
+				  sec. index= 0.392752	435. 11196(10.10.26.71) -> 11066(10.10.11.81), 
+				  sec. index= 0.392752	436. 11198(10.10.26.72) -> 11060(10.10.11.51), 
+				  sec. index= 0.392752	437. 11198(10.10.26.72) -> 11062(10.10.11.61), 
+				  sec. index= 0.392752	438. 11198(10.10.26.72) -> 11066(10.10.11.81), 
+				  sec. index= 0.392752	439. 11324(10.10.41.52) -> 11060(10.10.11.51), 
+				  sec. index= 0.392752	440. 11324(10.10.41.52) -> 11062(10.10.11.61), 
+				  sec. index= 0.392752	441. 11324(10.10.41.52) -> 11066(10.10.11.81), 
+				  sec. index= 0.392752	442. 11278(10.10.39.22) -> 11060(10.10.11.51), 
+				  sec. index= 0.392752	443. 11278(10.10.39.22) -> 11062(10.10.11.61), 
+				  sec. index= 0.392752	444. 11278(10.10.39.22) -> 11066(10.10.11.81), 
+				  sec. index= 0.392752	445. 11284(10.10.39.32) -> 11060(10.10.11.51), 
+				  sec. index= 0.392752	446. 11284(10.10.39.32) -> 11062(10.10.11.61), 
+				  sec. index= 0.392752	447. 11284(10.10.39.32) -> 11066(10.10.11.81), 
+				  sec. index= 0.392752	448. 11108(10.10.15.42) -> 11060(10.10.11.51), 
+				  sec. index= 0.392752	449. 11108(10.10.15.42) -> 11062(10.10.11.61), 
+				  sec. index= 0.392752	450. 11108(10.10.15.42) -> 11066(10.10.11.81), 
+				  sec. index= 0.392752	451. 11100(10.10.14.22) -> 11060(10.10.11.51), 
+				  sec. index= 0.392752	452. 11100(10.10.14.22) -> 11062(10.10.11.61), 
+				  sec. index= 0.392752	453. 11100(10.10.14.22) -> 11066(10.10.11.81), 
+				  sec. index= 0.392752	454. 11106(10.10.15.41) -> 11060(10.10.11.51), 
+				  sec. index= 0.392752	455. 11106(10.10.15.41) -> 11062(10.10.11.61), 
+				  sec. index= 0.392752	456. 11106(10.10.15.41) -> 11066(10.10.11.81), 
+				  sec. index= 0.392752	457. 11104(10.10.15.31) -> 11060(10.10.11.51), 
+				  sec. index= 0.392752	458. 11104(10.10.15.31) -> 11062(10.10.11.61), 
+				  sec. index= 0.392752	459. 11104(10.10.15.31) -> 11066(10.10.11.81), 
+				  sec. index= 0.392752	460. 11102(10.10.15.11) -> 11060(10.10.11.51), 
+				  sec. index= 0.392752	461. 11102(10.10.15.11) -> 11062(10.10.11.61), 
+				  sec. index= 0.392752	462. 11102(10.10.15.11) -> 11066(10.10.11.81), 
+				  sec. index= 0.392752	463. 11340(10.10.7.41) -> 11060(10.10.11.51), 
+				  sec. index= 0.392752	464. 11340(10.10.7.41) -> 11062(10.10.11.61), 
+				  sec. index= 0.392752	465. 11340(10.10.7.41) -> 11066(10.10.11.81), 
+				  sec. index= 0.392752	466. 11228(10.10.31.22) -> 11060(10.10.11.51), 
+				  sec. index= 0.392752	467. 11228(10.10.31.22) -> 11062(10.10.11.61), 
+				  sec. index= 0.392752	468. 11228(10.10.31.22) -> 11066(10.10.11.81), 
+				  sec. index= 0.392752	469. 11224(10.10.31.14) -> 11060(10.10.11.51), 
+				  sec. index= 0.392752	470. 11224(10.10.31.14) -> 11062(10.10.11.61), 
+				  sec. index= 0.392752	471. 11224(10.10.31.14) -> 11066(10.10.11.81), 
+				  sec. index= 0.392752	472. 11212(10.10.3.32) -> 11060(10.10.11.51), 
+				  sec. index= 0.392752	473. 11212(10.10.3.32) -> 11062(10.10.11.61), 
+				  sec. index= 0.392752	474. 11212(10.10.3.32) -> 11066(10.10.11.81), 
+				  sec. index= 0.392752	475. 11210(10.10.3.31) -> 11060(10.10.11.51), 
+				  sec. index= 0.392752	476. 11210(10.10.3.31) -> 11062(10.10.11.61), 
+				  sec. index= 0.392752	477. 11210(10.10.3.31) -> 11066(10.10.11.81), 
+				  sec. index= 0.392752	478. 10780(10.10.30.200) -> 11060(10.10.11.51), 
+				  sec. index= 0.392752	479. 10780(10.10.30.200) -> 11062(10.10.11.61), 
+				  sec. index= 0.392752	480. 10780(10.10.30.200) -> 11066(10.10.11.81), 
+				  sec. index= 0.392752	481. 11216(10.10.30.22) -> 11060(10.10.11.51), 
+				  sec. index= 0.392752	482. 11216(10.10.30.22) -> 11062(10.10.11.61), 
+				  sec. index= 0.392752	483. 11216(10.10.30.22) -> 11066(10.10.11.81), 
+				  sec. index= 0.392752	484. 11214(10.10.30.13) -> 11060(10.10.11.51), 
+				  sec. index= 0.392752	485. 11214(10.10.30.13) -> 11062(10.10.11.61), 
+				  sec. index= 0.392752	486. 11214(10.10.30.13) -> 11066(10.10.11.81), 
+				  sec. index= 0.392752	487. 11218(10.10.31.11) -> 11060(10.10.11.51), 
+				  sec. index= 0.392752	488. 11218(10.10.31.11) -> 11062(10.10.11.61), 
+				  sec. index= 0.392752	489. 11218(10.10.31.11) -> 11066(10.10.11.81), 
+				  sec. index= 0.392752	490. 11356(10.10.50.200) -> 11060(10.10.11.51), 
+				  sec. index= 0.392752	491. 11356(10.10.50.200) -> 11062(10.10.11.61), 
+				  sec. index= 0.392752	492. 11356(10.10.50.200) -> 11066(10.10.11.81), 
+				  sec. index= 0.392752	493. 10850(10.10.8.200) -> 11060(10.10.11.51), 
+				  sec. index= 0.392752	494. 10850(10.10.8.200) -> 11062(10.10.11.61), 
+				  sec. index= 0.392752	495. 10850(10.10.8.200) -> 11066(10.10.11.81), 
+				  sec. index= 0.392752	496. 10922(10.10.25.200) -> 11060(10.10.11.51), 
+				  sec. index= 0.392752	497. 10922(10.10.25.200) -> 11062(10.10.11.61), 
+				  sec. index= 0.392752	498. 10922(10.10.25.200) -> 11066(10.10.11.81), 
+				  sec. index= 0.392752	499. 10920(10.10.24.200) -> 11060(10.10.11.51), 
+				  sec. index= 0.392752	500. 10920(10.10.24.200) -> 11062(10.10.11.61), 
+				  sec. index= 0.392752	501. 10920(10.10.24.200) -> 11066(10.10.11.81), 
+				  sec. index= 0.392752	502. 10926(10.10.29.200) -> 11060(10.10.11.51), 
+				  sec. index= 0.392752	503. 10926(10.10.29.200) -> 11062(10.10.11.61), 
+				  sec. index= 0.392752	504. 10926(10.10.29.200) -> 11066(10.10.11.81), 
+				  sec. index= 0.392752	505. 10924(10.10.26.133) -> 11060(10.10.11.51), 
+				  sec. index= 0.392752	506. 10924(10.10.26.133) -> 11062(10.10.11.61), 
+				  sec. index= 0.392752	507. 10924(10.10.26.133) -> 11066(10.10.11.81), 
+				  sec. index= 0.392752	508. 10928(10.10.31.200) -> 11060(10.10.11.51), 
+				  sec. index= 0.392752	509. 10928(10.10.31.200) -> 11062(10.10.11.61), 
+				  sec. index= 0.392752	510. 10928(10.10.31.200) -> 11066(10.10.11.81), 
+				  sec. index= 0.392752	511. 10872(10.10.10.200) -> 11060(10.10.11.51), 
+				  sec. index= 0.392752	512. 10872(10.10.10.200) -> 11062(10.10.11.61), 
+				  sec. index= 0.392752	513. 10872(10.10.10.200) -> 11066(10.10.11.81), 
+				  sec. index= 0.392752	514. 11172(10.10.24.102) -> 11060(10.10.11.51), 
+				  sec. index= 0.392752	515. 11172(10.10.24.102) -> 11062(10.10.11.61), 
+				  sec. index= 0.392752	516. 11172(10.10.24.102) -> 11066(10.10.11.81), 
+				  sec. index= 0.392752	517. 11078(10.10.12.21) -> 11060(10.10.11.51), 
+				  sec. index= 0.392752	518. 11078(10.10.12.21) -> 11062(10.10.11.61), 
+				  sec. index= 0.392752	519. 11078(10.10.12.21) -> 11066(10.10.11.81), 
+				  sec. index= 0.392752	520. 11170(10.10.24.101) -> 11060(10.10.11.51), 
+				  sec. index= 0.392752	521. 11170(10.10.24.101) -> 11062(10.10.11.61), 
+				  sec. index= 0.392752	522. 11170(10.10.24.101) -> 11066(10.10.11.81), 
+				  sec. index= 0.392752	523. 11176(10.10.24.112) -> 11060(10.10.11.51), 
+				  sec. index= 0.392752	524. 11176(10.10.24.112) -> 11062(10.10.11.61), 
+				  sec. index= 0.392752	525. 11176(10.10.24.112) -> 11066(10.10.11.81), 
+				  sec. index= 0.392752	526. 11174(10.10.24.111) -> 11060(10.10.11.51), 
+				  sec. index= 0.392752	527. 11174(10.10.24.111) -> 11062(10.10.11.61), 
+				  sec. index= 0.392752	528. 11174(10.10.24.111) -> 11066(10.10.11.81), 
+				  sec. index= 0.392752	529. 11072(10.10.12.102) -> 11060(10.10.11.51), 
+				  sec. index= 0.392752	530. 11072(10.10.12.102) -> 11062(10.10.11.61), 
+				  sec. index= 0.392752	531. 11072(10.10.12.102) -> 11066(10.10.11.81), 
+				  sec. index= 0.392752	532. 11070(10.10.12.101) -> 11060(10.10.11.51), 
+				  sec. index= 0.392752	533. 11070(10.10.12.101) -> 11062(10.10.11.61), 
+				  sec. index= 0.392752	534. 11070(10.10.12.101) -> 11066(10.10.11.81), 
+				  sec. index= 0.392752	535. 11178(10.10.24.11) -> 11060(10.10.11.51), 
+				  sec. index= 0.392752	536. 11178(10.10.24.11) -> 11062(10.10.11.61), 
+				  sec. index= 0.392752	537. 11178(10.10.24.11) -> 11066(10.10.11.81), 
+				  sec. index= 0.392752	538. 11076(10.10.12.11) -> 11060(10.10.11.51), 
+				  sec. index= 0.392752	539. 11076(10.10.12.11) -> 11062(10.10.11.61), 
+				  sec. index= 0.392752	540. 11076(10.10.12.11) -> 11066(10.10.11.81), 
+				  sec. index= 0.392752	541. 11074(10.10.12.111) -> 11060(10.10.11.51), 
+				  sec. index= 0.392752	542. 11074(10.10.12.111) -> 11062(10.10.11.61), 
+				  sec. index= 0.392752	543. 11074(10.10.12.111) -> 11066(10.10.11.81), 
+				  sec. index= 0.392752	544. 11318(10.10.41.45) -> 11060(10.10.11.51), 
+				  sec. index= 0.392752	545. 11318(10.10.41.45) -> 11062(10.10.11.61), 
+				  sec. index= 0.392752	546. 11318(10.10.41.45) -> 11066(10.10.11.81), 
+				  sec. index= 0.392752	547. 11316(10.10.41.44) -> 11060(10.10.11.51), 
+				  sec. index= 0.392752	548. 11316(10.10.41.44) -> 11062(10.10.11.61), 
+				  sec. index= 0.392752	549. 11316(10.10.41.44) -> 11066(10.10.11.81), 
+				  sec. index= 0.392752	550. 11314(10.10.41.43) -> 11060(10.10.11.51), 
+				  sec. index= 0.392752	551. 11314(10.10.41.43) -> 11062(10.10.11.61), 
+				  sec. index= 0.392752	552. 11314(10.10.41.43) -> 11066(10.10.11.81), 
+				  sec. index= 0.392752	553. 11312(10.10.41.42) -> 11060(10.10.11.51), 
+				  sec. index= 0.392752	554. 11312(10.10.41.42) -> 11062(10.10.11.61), 
+				  sec. index= 0.392752	555. 11312(10.10.41.42) -> 11066(10.10.11.81), 
+				  sec. index= 0.392752	556. 11310(10.10.41.41) -> 11060(10.10.11.51), 
+				  sec. index= 0.392752	557. 11310(10.10.41.41) -> 11062(10.10.11.61), 
+				  sec. index= 0.392752	558. 11310(10.10.41.41) -> 11066(10.10.11.81), 
+				  sec. index= 0.392752	559. 11274(10.10.39.15) -> 11060(10.10.11.51), 
+				  sec. index= 0.392752	560. 11274(10.10.39.15) -> 11062(10.10.11.61), 
+				  sec. index= 0.392752	561. 11274(10.10.39.15) -> 11066(10.10.11.81), 
+				  sec. index= 0.392752	562. 10778(10.10.32.200) -> 11060(10.10.11.51), 
+				  sec. index= 0.392752	563. 10778(10.10.32.200) -> 11062(10.10.11.61), 
+				  sec. index= 0.392752	564. 10778(10.10.32.200) -> 11066(10.10.11.81), 
+				  sec. index= 0.392752	565. 10898(10.10.12.200) -> 11068(10.10.11.82), 
+				  sec. index= 0.342465	566. 10898(10.10.12.200) -> 11064(10.10.11.72), 
+				  sec. index= 0.342465	567. 10898(10.10.12.200) -> 11058(10.10.11.41), 
+				  sec. index= 0.342465	568. 11262(10.10.37.71) -> 11068(10.10.11.82), 
+				  sec. index= 0.342465	569. 11262(10.10.37.71) -> 11064(10.10.11.72), 
+				  sec. index= 0.342465	570. 11262(10.10.37.71) -> 11058(10.10.11.41), 
+				  sec. index= 0.342465	571. 11260(10.10.37.31) -> 11068(10.10.11.82), 
+				  sec. index= 0.342465	572. 11260(10.10.37.31) -> 11064(10.10.11.72), 
+				  sec. index= 0.342465	573. 11260(10.10.37.31) -> 11058(10.10.11.41), 
+				  sec. index= 0.342465	574. 10896(10.10.11.200) -> 11068(10.10.11.82), 
+				  sec. index= 0.342465	575. 10896(10.10.11.200) -> 11064(10.10.11.72), 
+				  sec. index= 0.342465	576. 10896(10.10.11.200) -> 11058(10.10.11.41), 
+				  sec. index= 0.342465	577. 11182(10.10.24.141) -> 11068(10.10.11.82), 
+				  sec. index= 0.342465	578. 11182(10.10.24.141) -> 11064(10.10.11.72), 
+				  sec. index= 0.342465	579. 11182(10.10.24.141) -> 11058(10.10.11.41), 
+				  sec. index= 0.342465	580. 11180(10.10.24.131) -> 11068(10.10.11.82), 
+				  sec. index= 0.342465	581. 11180(10.10.24.131) -> 11064(10.10.11.72), 
+				  sec. index= 0.342465	582. 11180(10.10.24.131) -> 11058(10.10.11.41), 
+				  sec. index= 0.342465	583. 11186(10.10.24.41) -> 11068(10.10.11.82), 
+				  sec. index= 0.342465	584. 11186(10.10.24.41) -> 11064(10.10.11.72), 
+				  sec. index= 0.342465	585. 11186(10.10.24.41) -> 11058(10.10.11.41), 
+				  sec. index= 0.342465	586. 11184(10.10.24.21) -> 11068(10.10.11.82), 
+				  sec. index= 0.342465	587. 11184(10.10.24.21) -> 11064(10.10.11.72), 
+				  sec. index= 0.342465	588. 11184(10.10.24.21) -> 11058(10.10.11.41), 
+				  sec. index= 0.342465	589. 11188(10.10.24.42) -> 11068(10.10.11.82), 
+				  sec. index= 0.342465	590. 11188(10.10.24.42) -> 11064(10.10.11.72), 
+				  sec. index= 0.342465	591. 11188(10.10.24.42) -> 11058(10.10.11.41), 
+				  sec. index= 0.342465	592. 11060(10.10.11.51) -> 11068(10.10.11.82), 
+				  sec. index= 0.342465	593. 11060(10.10.11.51) -> 11064(10.10.11.72), 
+				  sec. index= 0.342465	594. 11060(10.10.11.51) -> 11058(10.10.11.41), 
+				  sec. index= 0.342465	595. 11062(10.10.11.61) -> 11068(10.10.11.82), 
+				  sec. index= 0.342465	596. 11062(10.10.11.61) -> 11064(10.10.11.72), 
+				  sec. index= 0.342465	597. 11062(10.10.11.61) -> 11058(10.10.11.41), 
+				  sec. index= 0.342465	598. 11136(10.10.20.21) -> 11068(10.10.11.82), 
+				  sec. index= 0.342465	599. 11136(10.10.20.21) -> 11064(10.10.11.72), 
+				  sec. index= 0.342465	600. 11136(10.10.20.21) -> 11058(10.10.11.41), 
+				  sec. index= 0.342465	601. 11134(10.10.20.121) -> 11068(10.10.11.82), 
+				  sec. index= 0.342465	602. 11134(10.10.20.121) -> 11064(10.10.11.72), 
+				  sec. index= 0.342465	603. 11134(10.10.20.121) -> 11058(10.10.11.41), 
+				  sec. index= 0.342465	604. 11132(10.10.20.11) -> 11068(10.10.11.82), 
+				  sec. index= 0.342465	605. 11132(10.10.20.11) -> 11064(10.10.11.72), 
+				  sec. index= 0.342465	606. 11132(10.10.20.11) -> 11058(10.10.11.41), 
+				  sec. index= 0.342465	607. 11130(10.10.20.112) -> 11068(10.10.11.82), 
+				  sec. index= 0.342465	608. 11130(10.10.20.112) -> 11064(10.10.11.72), 
+				  sec. index= 0.342465	609. 11130(10.10.20.112) -> 11058(10.10.11.41), 
+				  sec. index= 0.342465	610. 11138(10.10.21.161) -> 11068(10.10.11.82), 
+				  sec. index= 0.342465	611. 11138(10.10.21.161) -> 11064(10.10.11.72), 
+				  sec. index= 0.342465	612. 11138(10.10.21.161) -> 11058(10.10.11.41), 
+				  sec. index= 0.342465	613. 11272(10.10.39.14) -> 11068(10.10.11.82), 
+				  sec. index= 0.342465	614. 11272(10.10.39.14) -> 11064(10.10.11.72), 
+				  sec. index= 0.342465	615. 11272(10.10.39.14) -> 11058(10.10.11.41), 
+				  sec. index= 0.342465	616. 11268(10.10.39.12) -> 11068(10.10.11.82), 
+				  sec. index= 0.342465	617. 11268(10.10.39.12) -> 11064(10.10.11.72), 
+				  sec. index= 0.342465	618. 11268(10.10.39.12) -> 11058(10.10.11.41), 
+				  sec. index= 0.342465	619. 11266(10.10.39.11) -> 11068(10.10.11.82), 
+				  sec. index= 0.342465	620. 11266(10.10.39.11) -> 11064(10.10.11.72), 
+				  sec. index= 0.342465	621. 11266(10.10.39.11) -> 11058(10.10.11.41), 
+				  sec. index= 0.342465	622. 11344(10.10.7.81) -> 11068(10.10.11.82), 
+				  sec. index= 0.342465	623. 11344(10.10.7.81) -> 11064(10.10.11.72), 
+				  sec. index= 0.342465	624. 11344(10.10.7.81) -> 11058(10.10.11.41), 
+				  sec. index= 0.342465	625. 11346(10.10.7.82) -> 11068(10.10.11.82), 
+				  sec. index= 0.342465	626. 11346(10.10.7.82) -> 11064(10.10.11.72), 
+				  sec. index= 0.342465	627. 11346(10.10.7.82) -> 11058(10.10.11.41), 
+				  sec. index= 0.342465	628. 10798(10.10.3.200) -> 11068(10.10.11.82), 
+				  sec. index= 0.342465	629. 10798(10.10.3.200) -> 11064(10.10.11.72), 
+				  sec. index= 0.342465	630. 10798(10.10.3.200) -> 11058(10.10.11.41), 
+				  sec. index= 0.342465	631. 11342(10.10.7.71) -> 11068(10.10.11.82), 
+				  sec. index= 0.342465	632. 11342(10.10.7.71) -> 11064(10.10.11.72), 
+				  sec. index= 0.342465	633. 11342(10.10.7.71) -> 11058(10.10.11.41), 
+				  sec. index= 0.342465	634. 11226(10.10.31.21) -> 11068(10.10.11.82), 
+				  sec. index= 0.342465	635. 11226(10.10.31.21) -> 11064(10.10.11.72), 
+				  sec. index= 0.342465	636. 11226(10.10.31.21) -> 11058(10.10.11.41), 
+				  sec. index= 0.342465	637. 11264(10.10.37.81) -> 11068(10.10.11.82), 
+				  sec. index= 0.342465	638. 11264(10.10.37.81) -> 11064(10.10.11.72), 
+				  sec. index= 0.342465	639. 11264(10.10.37.81) -> 11058(10.10.11.41), 
+				  sec. index= 0.342465	640. 11222(10.10.31.13) -> 11068(10.10.11.82), 
+				  sec. index= 0.342465	641. 11222(10.10.31.13) -> 11064(10.10.11.72), 
+				  sec. index= 0.342465	642. 11222(10.10.31.13) -> 11058(10.10.11.41), 
+				  sec. index= 0.342465	643. 10792(10.10.2.200) -> 11068(10.10.11.82), 
+				  sec. index= 0.342465	644. 10792(10.10.2.200) -> 11064(10.10.11.72), 
+				  sec. index= 0.342465	645. 10792(10.10.2.200) -> 11058(10.10.11.41), 
+				  sec. index= 0.342465	646. 11220(10.10.31.12) -> 11068(10.10.11.82), 
+				  sec. index= 0.342465	647. 11220(10.10.31.12) -> 11064(10.10.11.72), 
+				  sec. index= 0.342465	648. 11220(10.10.31.12) -> 11058(10.10.11.41), 
+				  sec. index= 0.342465	649. 10836(10.10.7.200) -> 11068(10.10.11.82), 
+				  sec. index= 0.342465	650. 10836(10.10.7.200) -> 11064(10.10.11.72), 
+				  sec. index= 0.342465	651. 10836(10.10.7.200) -> 11058(10.10.11.41), 
+				  sec. index= 0.342465	652. 10938(10.10.28.200) -> 11068(10.10.11.82), 
+				  sec. index= 0.342465	653. 10938(10.10.28.200) -> 11064(10.10.11.72), 
+				  sec. index= 0.342465	654. 10938(10.10.28.200) -> 11058(10.10.11.41), 
+				  sec. index= 0.342465	655. 10830(10.10.4.200) -> 11068(10.10.11.82), 
+				  sec. index= 0.342465	656. 10830(10.10.4.200) -> 11064(10.10.11.72), 
+				  sec. index= 0.342465	657. 10830(10.10.4.200) -> 11058(10.10.11.41), 
+				  sec. index= 0.342465	658. 10832(10.10.6.200) -> 11068(10.10.11.82), 
+				  sec. index= 0.342465	659. 10832(10.10.6.200) -> 11064(10.10.11.72), 
+				  sec. index= 0.342465	660. 10832(10.10.6.200) -> 11058(10.10.11.41), 
+				  sec. index= 0.342465	661. 10934(10.10.42.210) -> 11068(10.10.11.82), 
+				  sec. index= 0.342465	662. 10934(10.10.42.210) -> 11064(10.10.11.72), 
+				  sec. index= 0.342465	663. 10934(10.10.42.210) -> 11058(10.10.11.41), 
+				  sec. index= 0.342465	664. 10936(10.10.27.200) -> 11068(10.10.11.82), 
+				  sec. index= 0.342465	665. 10936(10.10.27.200) -> 11064(10.10.11.72), 
+				  sec. index= 0.342465	666. 10936(10.10.27.200) -> 11058(10.10.11.41), 
+				  sec. index= 0.342465	667. 10930(10.10.36.200) -> 11068(10.10.11.82), 
+				  sec. index= 0.342465	668. 10930(10.10.36.200) -> 11064(10.10.11.72), 
+				  sec. index= 0.342465	669. 10930(10.10.36.200) -> 11058(10.10.11.41), 
+				  sec. index= 0.342465	670. 10932(10.10.41.62) -> 11068(10.10.11.82), 
+				  sec. index= 0.342465	671. 10932(10.10.41.62) -> 11064(10.10.11.72), 
+				  sec. index= 0.342465	672. 10932(10.10.41.62) -> 11058(10.10.11.41), 
+				  sec. index= 0.342465	673. 11046(10.10.1.31) -> 11068(10.10.11.82), 
+				  sec. index= 0.342465	674. 11046(10.10.1.31) -> 11064(10.10.11.72), 
+				  sec. index= 0.342465	675. 11046(10.10.1.31) -> 11058(10.10.11.41), 
+				  sec. index= 0.342465	676. 11044(10.10.1.21) -> 11068(10.10.11.82), 
+				  sec. index= 0.342465	677. 11044(10.10.1.21) -> 11064(10.10.11.72), 
+				  sec. index= 0.342465	678. 11044(10.10.1.21) -> 11058(10.10.11.41), 
+				  sec. index= 0.342465	679. 11048(10.10.1.41) -> 11068(10.10.11.82), 
+				  sec. index= 0.342465	680. 11048(10.10.1.41) -> 11064(10.10.11.72), 
+				  sec. index= 0.342465	681. 11048(10.10.1.41) -> 11058(10.10.11.41), 
+				  sec. index= 0.342465	682. 11168(10.10.23.34) -> 11068(10.10.11.82), 
+				  sec. index= 0.342465	683. 11168(10.10.23.34) -> 11064(10.10.11.72), 
+				  sec. index= 0.342465	684. 11168(10.10.23.34) -> 11058(10.10.11.41), 
+				  sec. index= 0.342465	685. 11164(10.10.23.32) -> 11068(10.10.11.82), 
+				  sec. index= 0.342465	686. 11164(10.10.23.32) -> 11064(10.10.11.72), 
+				  sec. index= 0.342465	687. 11164(10.10.23.32) -> 11058(10.10.11.41), 
+				  sec. index= 0.342465	688. 11166(10.10.23.33) -> 11068(10.10.11.82), 
+				  sec. index= 0.342465	689. 11166(10.10.23.33) -> 11064(10.10.11.72), 
+				  sec. index= 0.342465	690. 11166(10.10.23.33) -> 11058(10.10.11.41), 
+				  sec. index= 0.342465	691. 11160(10.10.23.131) -> 11068(10.10.11.82), 
+				  sec. index= 0.342465	692. 11160(10.10.23.131) -> 11064(10.10.11.72), 
+				  sec. index= 0.342465	693. 11160(10.10.23.131) -> 11058(10.10.11.41), 
+				  sec. index= 0.342465	694. 11162(10.10.23.31) -> 11068(10.10.11.82), 
+				  sec. index= 0.342465	695. 11162(10.10.23.31) -> 11064(10.10.11.72), 
+				  sec. index= 0.342465	696. 11162(10.10.23.31) -> 11058(10.10.11.41), 
+				  sec. index= 0.342465	697. 11308(10.10.41.25) -> 11068(10.10.11.82), 
+				  sec. index= 0.342465	698. 11308(10.10.41.25) -> 11064(10.10.11.72), 
+				  sec. index= 0.342465	699. 11308(10.10.41.25) -> 11058(10.10.11.41), 
+				  sec. index= 0.342465	700. 11300(10.10.41.21) -> 11068(10.10.11.82), 
+				  sec. index= 0.342465	701. 11300(10.10.41.21) -> 11064(10.10.11.72), 
+				  sec. index= 0.342465	702. 11300(10.10.41.21) -> 11058(10.10.11.41), 
+				  sec. index= 0.342465	703. 11302(10.10.41.22) -> 11068(10.10.11.82), 
+				  sec. index= 0.342465	704. 11302(10.10.41.22) -> 11064(10.10.11.72), 
+				  sec. index= 0.342465	705. 11302(10.10.41.22) -> 11058(10.10.11.41), 
+				  sec. index= 0.342465	706. 11304(10.10.41.23) -> 11068(10.10.11.82), 
+				  sec. index= 0.342465	707. 11304(10.10.41.23) -> 11064(10.10.11.72), 
+				  sec. index= 0.342465	708. 11304(10.10.41.23) -> 11058(10.10.11.41), 
+				  sec. index= 0.342465	709. 11306(10.10.41.24) -> 11068(10.10.11.82), 
+				  sec. index= 0.342465	710. 11306(10.10.41.24) -> 11064(10.10.11.72), 
+				  sec. index= 0.342465	711. 11306(10.10.41.24) -> 11058(10.10.11.41), 
+				  sec. index= 0.342465	712. 10666(10.10.1.200) -> 11068(10.10.11.82), 
+				  sec. index= 0.342465	713. 10666(10.10.1.200) -> 11064(10.10.11.72), 
+				  sec. index= 0.342465	714. 10666(10.10.1.200) -> 11058(10.10.11.41), 
+				  sec. index= 0.342465	715. 11276(10.10.39.16) -> 11068(10.10.11.82), 
+				  sec. index= 0.342465	716. 11276(10.10.39.16) -> 11064(10.10.11.72), 
+				  sec. index= 0.342465	717. 11276(10.10.39.16) -> 11058(10.10.11.41), 
+				  sec. index= 0.342465	718. 11270(10.10.39.13) -> 11068(10.10.11.82), 
+				  sec. index= 0.342465	719. 11270(10.10.39.13) -> 11064(10.10.11.72), 
+				  sec. index= 0.342465	720. 11270(10.10.39.13) -> 11058(10.10.11.41), 
+				  sec. index= 0.342465	721. 11288(10.10.39.34) -> 11068(10.10.11.82), 
+				  sec. index= 0.342465	722. 11288(10.10.39.34) -> 11064(10.10.11.72), 
+				  sec. index= 0.342465	723. 11288(10.10.39.34) -> 11058(10.10.11.41), 
+				  sec. index= 0.342465	724. 11280(10.10.39.23) -> 11068(10.10.11.82), 
+				  sec. index= 0.342465	725. 11280(10.10.39.23) -> 11064(10.10.11.72), 
+				  sec. index= 0.342465	726. 11280(10.10.39.23) -> 11058(10.10.11.41), 
+				  sec. index= 0.342465	727. 11282(10.10.39.31) -> 11068(10.10.11.82), 
+				  sec. index= 0.342465	728. 11282(10.10.39.31) -> 11064(10.10.11.72), 
+				  sec. index= 0.342465	729. 11282(10.10.39.31) -> 11058(10.10.11.41), 
+				  sec. index= 0.342465	730. 11286(10.10.39.33) -> 11068(10.10.11.82), 
+				  sec. index= 0.342465	731. 11286(10.10.39.33) -> 11064(10.10.11.72), 
+				  sec. index= 0.342465	732. 11286(10.10.39.33) -> 11058(10.10.11.41), 
+				  sec. index= 0.342465	733. 11120(10.10.18.11) -> 11068(10.10.11.82), 
+				  sec. index= 0.342465	734. 11120(10.10.18.11) -> 11064(10.10.11.72), 
+				  sec. index= 0.342465	735. 11120(10.10.18.11) -> 11058(10.10.11.41), 
+				  sec. index= 0.342465	736. 11122(10.10.18.21) -> 11068(10.10.11.82), 
+				  sec. index= 0.342465	737. 11122(10.10.18.21) -> 11064(10.10.11.72), 
+				  sec. index= 0.342465	738. 11122(10.10.18.21) -> 11058(10.10.11.41), 
+				  sec. index= 0.342465	739. 11088(10.10.13.11) -> 11068(10.10.11.82), 
+				  sec. index= 0.342465	740. 11088(10.10.13.11) -> 11064(10.10.11.72), 
+				  sec. index= 0.342465	741. 11088(10.10.13.11) -> 11058(10.10.11.41), 
+				  sec. index= 0.342465	742. 11124(10.10.2.31) -> 11068(10.10.11.82), 
+				  sec. index= 0.342465	743. 11124(10.10.2.31) -> 11064(10.10.11.72), 
+				  sec. index= 0.342465	744. 11124(10.10.2.31) -> 11058(10.10.11.41), 
+				  sec. index= 0.342465	745. 11126(10.10.2.41) -> 11068(10.10.11.82), 
+				  sec. index= 0.342465	746. 11126(10.10.2.41) -> 11064(10.10.11.72), 
+				  sec. index= 0.342465	747. 11126(10.10.2.41) -> 11058(10.10.11.41), 
+				  sec. index= 0.342465	748. 11128(10.10.20.111) -> 11068(10.10.11.82), 
+				  sec. index= 0.342465	749. 11128(10.10.20.111) -> 11064(10.10.11.72), 
+				  sec. index= 0.342465	750. 11128(10.10.20.111) -> 11058(10.10.11.41), 
+				  sec. index= 0.342465	751. 11082(10.10.12.81) -> 11068(10.10.11.82), 
+				  sec. index= 0.342465	752. 11082(10.10.12.81) -> 11064(10.10.11.72), 
+				  sec. index= 0.342465	753. 11082(10.10.12.81) -> 11058(10.10.11.41), 
+				  sec. index= 0.342465	754. 11080(10.10.12.41) -> 11068(10.10.11.82), 
+				  sec. index= 0.342465	755. 11080(10.10.12.41) -> 11064(10.10.11.72), 
+				  sec. index= 0.342465	756. 11080(10.10.12.41) -> 11058(10.10.11.41), 
+				  sec. index= 0.342465	757. 11086(10.10.12.91) -> 11068(10.10.11.82), 
+				  sec. index= 0.342465	758. 11086(10.10.12.91) -> 11064(10.10.11.72), 
+				  sec. index= 0.342465	759. 11086(10.10.12.91) -> 11058(10.10.11.41), 
+				  sec. index= 0.342465	760. 11084(10.10.12.82) -> 11068(10.10.11.82), 
+				  sec. index= 0.342465	761. 11084(10.10.12.82) -> 11064(10.10.11.72), 
+				  sec. index= 0.342465	762. 11084(10.10.12.82) -> 11058(10.10.11.41), 
+				  sec. index= 0.342465	763. 10904(10.10.15.200) -> 11068(10.10.11.82), 
+				  sec. index= 0.342465	764. 10904(10.10.15.200) -> 11064(10.10.11.72), 
+				  sec. index= 0.342465	765. 10904(10.10.15.200) -> 11058(10.10.11.41), 
+				  sec. index= 0.342465	766. 10906(10.10.16.200) -> 11068(10.10.11.82), 
+				  sec. index= 0.342465	767. 10906(10.10.16.200) -> 11064(10.10.11.72), 
+				  sec. index= 0.342465	768. 10906(10.10.16.200) -> 11058(10.10.11.41), 
+				  sec. index= 0.342465	769. 10900(10.10.13.200) -> 11068(10.10.11.82), 
+				  sec. index= 0.342465	770. 10900(10.10.13.200) -> 11064(10.10.11.72), 
+				  sec. index= 0.342465	771. 10900(10.10.13.200) -> 11058(10.10.11.41), 
+				  sec. index= 0.342465	772. 10902(10.10.14.200) -> 11068(10.10.11.82), 
+				  sec. index= 0.342465	773. 10902(10.10.14.200) -> 11064(10.10.11.72), 
+				  sec. index= 0.342465	774. 10902(10.10.14.200) -> 11058(10.10.11.41), 
+				  sec. index= 0.342465	775. 10908(10.10.17.200) -> 11068(10.10.11.82), 
+				  sec. index= 0.342465	776. 10908(10.10.17.200) -> 11064(10.10.11.72), 
+				  sec. index= 0.342465	777. 10908(10.10.17.200) -> 11058(10.10.11.41), 
+				  sec. index= 0.342465	778. 11154(10.10.23.11) -> 11068(10.10.11.82), 
+				  sec. index= 0.342465	779. 11154(10.10.23.11) -> 11064(10.10.11.72), 
+				  sec. index= 0.342465	780. 11154(10.10.23.11) -> 11058(10.10.11.41), 
+				  sec. index= 0.342465	781. 11156(10.10.23.121) -> 11068(10.10.11.82), 
+				  sec. index= 0.342465	782. 11156(10.10.23.121) -> 11064(10.10.11.72), 
+				  sec. index= 0.342465	783. 11156(10.10.23.121) -> 11058(10.10.11.41), 
+				  sec. index= 0.342465	784. 11150(10.10.21.51) -> 11068(10.10.11.82), 
+				  sec. index= 0.342465	785. 11150(10.10.21.51) -> 11064(10.10.11.72), 
+				  sec. index= 0.342465	786. 11150(10.10.21.51) -> 11058(10.10.11.41), 
+				  sec. index= 0.342465	787. 11152(10.10.21.52) -> 11068(10.10.11.82), 
+				  sec. index= 0.342465	788. 11152(10.10.21.52) -> 11064(10.10.11.72), 
+				  sec. index= 0.342465	789. 11152(10.10.21.52) -> 11058(10.10.11.41), 
+				  sec. index= 0.342465	790. 11158(10.10.23.12) -> 11068(10.10.11.82), 
+				  sec. index= 0.342465	791. 11158(10.10.23.12) -> 11064(10.10.11.72), 
+				  sec. index= 0.342465	792. 11158(10.10.23.12) -> 11058(10.10.11.41), 
+				  sec. index= 0.342465	793. 11238(10.10.31.33) -> 11068(10.10.11.82), 
+				  sec. index= 0.342465	794. 11238(10.10.31.33) -> 11064(10.10.11.72), 
+				  sec. index= 0.342465	795. 11238(10.10.31.33) -> 11058(10.10.11.41), 
+				  sec. index= 0.342465	796. 11330(10.10.7.102) -> 11068(10.10.11.82), 
+				  sec. index= 0.342465	797. 11330(10.10.7.102) -> 11064(10.10.11.72), 
+				  sec. index= 0.342465	798. 11330(10.10.7.102) -> 11058(10.10.11.41), 
+				  sec. index= 0.342465	799. 11332(10.10.7.103) -> 11068(10.10.11.82), 
+				  sec. index= 0.342465	800. 11332(10.10.7.103) -> 11064(10.10.11.72), 
+				  sec. index= 0.342465	801. 11332(10.10.7.103) -> 11058(10.10.11.41), 
+				  sec. index= 0.342465	802. 11334(10.10.7.104) -> 11068(10.10.11.82), 
+				  sec. index= 0.342465	803. 11334(10.10.7.104) -> 11064(10.10.11.72), 
+				  sec. index= 0.342465	804. 11334(10.10.7.104) -> 11058(10.10.11.41), 
+				  sec. index= 0.342465	805. 11336(10.10.7.11) -> 11068(10.10.11.82), 
+				  sec. index= 0.342465	806. 11336(10.10.7.11) -> 11064(10.10.11.72), 
+				  sec. index= 0.342465	807. 11336(10.10.7.11) -> 11058(10.10.11.41), 
+				  sec. index= 0.342465	808. 11230(10.10.31.23) -> 11068(10.10.11.82), 
+				  sec. index= 0.342465	809. 11230(10.10.31.23) -> 11064(10.10.11.72), 
+				  sec. index= 0.342465	810. 11230(10.10.31.23) -> 11058(10.10.11.41), 
+				  sec. index= 0.342465	811. 11338(10.10.7.21) -> 11068(10.10.11.82), 
+				  sec. index= 0.342465	812. 11338(10.10.7.21) -> 11064(10.10.11.72), 
+				  sec. index= 0.342465	813. 11338(10.10.7.21) -> 11058(10.10.11.41), 
+				  sec. index= 0.342465	814. 11232(10.10.31.24) -> 11068(10.10.11.82), 
+				  sec. index= 0.342465	815. 11232(10.10.31.24) -> 11064(10.10.11.72), 
+				  sec. index= 0.342465	816. 11232(10.10.31.24) -> 11058(10.10.11.41), 
+				  sec. index= 0.342465	817. 11234(10.10.31.31) -> 11068(10.10.11.82), 
+				  sec. index= 0.342465	818. 11234(10.10.31.31) -> 11064(10.10.11.72), 
+				  sec. index= 0.342465	819. 11234(10.10.31.31) -> 11058(10.10.11.41), 
+				  sec. index= 0.342465	820. 11236(10.10.31.32) -> 11068(10.10.11.82), 
+				  sec. index= 0.342465	821. 11236(10.10.31.32) -> 11064(10.10.11.72), 
+				  sec. index= 0.342465	822. 11236(10.10.31.32) -> 11058(10.10.11.41), 
+				  sec. index= 0.342465	823. 11248(10.10.31.52) -> 11068(10.10.11.82), 
+				  sec. index= 0.342465	824. 11248(10.10.31.52) -> 11064(10.10.11.72), 
+				  sec. index= 0.342465	825. 11248(10.10.31.52) -> 11058(10.10.11.41), 
+				  sec. index= 0.342465	826. 11244(10.10.31.42) -> 11068(10.10.11.82), 
+				  sec. index= 0.342465	827. 11244(10.10.31.42) -> 11064(10.10.11.72), 
+				  sec. index= 0.342465	828. 11244(10.10.31.42) -> 11058(10.10.11.41), 
+				  sec. index= 0.342465	829. 11246(10.10.31.51) -> 11068(10.10.11.82), 
+				  sec. index= 0.342465	830. 11246(10.10.31.51) -> 11064(10.10.11.72), 
+				  sec. index= 0.342465	831. 11246(10.10.31.51) -> 11058(10.10.11.41), 
+				  sec. index= 0.342465	832. 11240(10.10.31.34) -> 11068(10.10.11.82), 
+				  sec. index= 0.342465	833. 11240(10.10.31.34) -> 11064(10.10.11.72), 
+				  sec. index= 0.342465	834. 11240(10.10.31.34) -> 11058(10.10.11.41), 
+				  sec. index= 0.342465	835. 11242(10.10.31.41) -> 11068(10.10.11.82), 
+				  sec. index= 0.342465	836. 11242(10.10.31.41) -> 11064(10.10.11.72), 
+				  sec. index= 0.342465	837. 11242(10.10.31.41) -> 11058(10.10.11.41), 
+				  sec. index= 0.342465	838. 10826(10.10.37.200) -> 11068(10.10.11.82), 
+				  sec. index= 0.342465	839. 10826(10.10.37.200) -> 11064(10.10.11.72), 
+				  sec. index= 0.342465	840. 10826(10.10.37.200) -> 11058(10.10.11.41), 
+				  sec. index= 0.342465	841. 10824(10.10.26.200) -> 11068(10.10.11.82), 
+				  sec. index= 0.342465	842. 10824(10.10.26.200) -> 11064(10.10.11.72), 
+				  sec. index= 0.342465	843. 10824(10.10.26.200) -> 11058(10.10.11.41), 
+				  sec. index= 0.342465	844. 10828(10.10.34.200) -> 11068(10.10.11.82), 
+				  sec. index= 0.342465	845. 10828(10.10.34.200) -> 11064(10.10.11.72), 
+				  sec. index= 0.342465	846. 10828(10.10.34.200) -> 11058(10.10.11.41), 
+				  sec. index= 0.342465	847. 11050(10.10.1.51) -> 11068(10.10.11.82), 
+				  sec. index= 0.342465	848. 11050(10.10.1.51) -> 11064(10.10.11.72), 
+				  sec. index= 0.342465	849. 11050(10.10.1.51) -> 11058(10.10.11.41), 
+				  sec. index= 0.342465	850. 11052(10.10.1.52) -> 11068(10.10.11.82), 
+				  sec. index= 0.342465	851. 11052(10.10.1.52) -> 11064(10.10.11.72), 
+				  sec. index= 0.342465	852. 11052(10.10.1.52) -> 11058(10.10.11.41), 
+				  sec. index= 0.342465	853. 11054(10.10.1.53) -> 11068(10.10.11.82), 
+				  sec. index= 0.342465	854. 11054(10.10.1.53) -> 11064(10.10.11.72), 
+				  sec. index= 0.342465	855. 11054(10.10.1.53) -> 11058(10.10.11.41), 
+				  sec. index= 0.342465	856. 11056(10.10.10.31) -> 11068(10.10.11.82), 
+				  sec. index= 0.342465	857. 11056(10.10.10.31) -> 11064(10.10.11.72), 
+				  sec. index= 0.342465	858. 11056(10.10.10.31) -> 11058(10.10.11.41), 
+				  sec. index= 0.342465	859. 11058(10.10.11.41) -> 11068(10.10.11.82), 
+				  sec. index= 0.342465	860. 11058(10.10.11.41) -> 11064(10.10.11.72), 
+				  sec. index= 0.342465	861. 11118(10.10.17.53) -> 11068(10.10.11.82), 
+				  sec. index= 0.342465	862. 11118(10.10.17.53) -> 11064(10.10.11.72), 
+				  sec. index= 0.342465	863. 11118(10.10.17.53) -> 11058(10.10.11.41), 
+				  sec. index= 0.342465	864. 11110(10.10.17.11) -> 11068(10.10.11.82), 
+				  sec. index= 0.342465	865. 11110(10.10.17.11) -> 11064(10.10.11.72), 
+				  sec. index= 0.342465	866. 11110(10.10.17.11) -> 11058(10.10.11.41), 
+				  sec. index= 0.342465	867. 11112(10.10.17.21) -> 11068(10.10.11.82), 
+				  sec. index= 0.342465	868. 11112(10.10.17.21) -> 11064(10.10.11.72), 
+				  sec. index= 0.342465	869. 11112(10.10.17.21) -> 11058(10.10.11.41), 
+				  sec. index= 0.342465	870. 11114(10.10.17.51) -> 11068(10.10.11.82), 
+				  sec. index= 0.342465	871. 11114(10.10.17.51) -> 11064(10.10.11.72), 
+				  sec. index= 0.342465	872. 11114(10.10.17.51) -> 11058(10.10.11.41), 
+				  sec. index= 0.342465	873. 11116(10.10.17.52) -> 11068(10.10.11.82), 
+				  sec. index= 0.342465	874. 11116(10.10.17.52) -> 11064(10.10.11.72), 
+				  sec. index= 0.342465	875. 11116(10.10.17.52) -> 11058(10.10.11.41), 
+				  sec. index= 0.342465	876. 11200(10.10.26.81) -> 11068(10.10.11.82), 
+				  sec. index= 0.342465	877. 11200(10.10.26.81) -> 11064(10.10.11.72), 
+				  sec. index= 0.342465	878. 11200(10.10.26.81) -> 11058(10.10.11.41), 
+				  sec. index= 0.342465	879. 11202(10.10.26.82) -> 11068(10.10.11.82), 
+				  sec. index= 0.342465	880. 11202(10.10.26.82) -> 11064(10.10.11.72), 
+				  sec. index= 0.342465	881. 11202(10.10.26.82) -> 11058(10.10.11.41), 
+				  sec. index= 0.342465	882. 11204(10.10.3.11) -> 11068(10.10.11.82), 
+				  sec. index= 0.342465	883. 11204(10.10.3.11) -> 11064(10.10.11.72), 
+				  sec. index= 0.342465	884. 11204(10.10.3.11) -> 11058(10.10.11.41), 
+				  sec. index= 0.342465	885. 11206(10.10.3.12) -> 11068(10.10.11.82), 
+				  sec. index= 0.342465	886. 11206(10.10.3.12) -> 11064(10.10.11.72), 
+				  sec. index= 0.342465	887. 11206(10.10.3.12) -> 11058(10.10.11.41), 
+				  sec. index= 0.342465	888. 11208(10.10.3.21) -> 11068(10.10.11.82), 
+				  sec. index= 0.342465	889. 11208(10.10.3.21) -> 11064(10.10.11.72), 
+				  sec. index= 0.342465	890. 11208(10.10.3.21) -> 11058(10.10.11.41), 
+				  sec. index= 0.342465	891. 11292(10.10.41.12) -> 11068(10.10.11.82), 
+				  sec. index= 0.342465	892. 11292(10.10.41.12) -> 11064(10.10.11.72), 
+				  sec. index= 0.342465	893. 11292(10.10.41.12) -> 11058(10.10.11.41), 
+				  sec. index= 0.342465	894. 11296(10.10.41.14) -> 11068(10.10.11.82), 
+				  sec. index= 0.342465	895. 11296(10.10.41.14) -> 11064(10.10.11.72), 
+				  sec. index= 0.342465	896. 11296(10.10.41.14) -> 11058(10.10.11.41), 
+				  sec. index= 0.342465	897. 10864(10.10.9.200) -> 11068(10.10.11.82), 
+				  sec. index= 0.342465	898. 10864(10.10.9.200) -> 11064(10.10.11.72), 
+				  sec. index= 0.342465	899. 10864(10.10.9.200) -> 11058(10.10.11.41), 
+				  sec. index= 0.342465	900. 11094(10.10.13.51) -> 11068(10.10.11.82), 
+				  sec. index= 0.342465	901. 11094(10.10.13.51) -> 11064(10.10.11.72), 
+				  sec. index= 0.342465	902. 11094(10.10.13.51) -> 11058(10.10.11.41), 
+				  sec. index= 0.342465	903. 11096(10.10.13.52) -> 11068(10.10.11.82), 
+				  sec. index= 0.342465	904. 11096(10.10.13.52) -> 11064(10.10.11.72), 
+				  sec. index= 0.342465	905. 11096(10.10.13.52) -> 11058(10.10.11.41), 
+				  sec. index= 0.342465	906. 11090(10.10.13.21) -> 11068(10.10.11.82), 
+				  sec. index= 0.342465	907. 11090(10.10.13.21) -> 11064(10.10.11.72), 
+				  sec. index= 0.342465	908. 11090(10.10.13.21) -> 11058(10.10.11.41), 
+				  sec. index= 0.342465	909. 11092(10.10.13.22) -> 11068(10.10.11.82), 
+				  sec. index= 0.342465	910. 11092(10.10.13.22) -> 11064(10.10.11.72), 
+				  sec. index= 0.342465	911. 11092(10.10.13.22) -> 11058(10.10.11.41), 
+				  sec. index= 0.342465	912. 11098(10.10.14.21) -> 11068(10.10.11.82), 
+				  sec. index= 0.342465	913. 11098(10.10.14.21) -> 11064(10.10.11.72), 
+				  sec. index= 0.342465	914. 11098(10.10.14.21) -> 11058(10.10.11.41), 
+				  sec. index= 0.342465	915. 10916(10.10.22.200) -> 11068(10.10.11.82), 
+				  sec. index= 0.342465	916. 10916(10.10.22.200) -> 11064(10.10.11.72), 
+				  sec. index= 0.342465	917. 10916(10.10.22.200) -> 11058(10.10.11.41), 
+				  sec. index= 0.342465	918. 10914(10.10.21.200) -> 11068(10.10.11.82), 
+				  sec. index= 0.342465	919. 10914(10.10.21.200) -> 11064(10.10.11.72), 
+				  sec. index= 0.342465	920. 10914(10.10.21.200) -> 11058(10.10.11.41), 
+				  sec. index= 0.342465	921. 10912(10.10.20.200) -> 11068(10.10.11.82), 
+				  sec. index= 0.342465	922. 10912(10.10.20.200) -> 11064(10.10.11.72), 
+				  sec. index= 0.342465	923. 10912(10.10.20.200) -> 11058(10.10.11.41), 
+				  sec. index= 0.342465	924. 10910(10.10.19.200) -> 11068(10.10.11.82), 
+				  sec. index= 0.342465	925. 10910(10.10.19.200) -> 11064(10.10.11.72), 
+				  sec. index= 0.342465	926. 10910(10.10.19.200) -> 11058(10.10.11.41), 
+				  sec. index= 0.342465	927. 10918(10.10.23.200) -> 11068(10.10.11.82), 
+				  sec. index= 0.342465	928. 10918(10.10.23.200) -> 11064(10.10.11.72), 
+				  sec. index= 0.342465	929. 10918(10.10.23.200) -> 11058(10.10.11.41), 
+				  sec. index= 0.342465	930. 11146(10.10.21.41) -> 11068(10.10.11.82), 
+				  sec. index= 0.342465	931. 11146(10.10.21.41) -> 11064(10.10.11.72), 
+				  sec. index= 0.342465	932. 11146(10.10.21.41) -> 11058(10.10.11.41), 
+				  sec. index= 0.342465	933. 11068(10.10.11.82) -> 11064(10.10.11.72), 
+				  sec. index= 0.342465	934. 11068(10.10.11.82) -> 11058(10.10.11.41), 
+				  sec. index= 0.342465	935. 11144(10.10.21.32) -> 11068(10.10.11.82), 
+				  sec. index= 0.342465	936. 11144(10.10.21.32) -> 11064(10.10.11.72), 
+				  sec. index= 0.342465	937. 11144(10.10.21.32) -> 11058(10.10.11.41), 
+				  sec. index= 0.342465	938. 11142(10.10.21.31) -> 11068(10.10.11.82), 
+				  sec. index= 0.342465	939. 11142(10.10.21.31) -> 11064(10.10.11.72), 
+				  sec. index= 0.342465	940. 11142(10.10.21.31) -> 11058(10.10.11.41), 
+				  sec. index= 0.342465	941. 11140(10.10.21.21) -> 11068(10.10.11.82), 
+				  sec. index= 0.342465	942. 11140(10.10.21.21) -> 11064(10.10.11.72), 
+				  sec. index= 0.342465	943. 11140(10.10.21.21) -> 11058(10.10.11.41), 
+				  sec. index= 0.342465	944. 11064(10.10.11.72) -> 11068(10.10.11.82), 
+				  sec. index= 0.342465	945. 11064(10.10.11.72) -> 11058(10.10.11.41), 
+				  sec. index= 0.342465	946. 11148(10.10.21.42) -> 11068(10.10.11.82), 
+				  sec. index= 0.342465	947. 11148(10.10.21.42) -> 11064(10.10.11.72), 
+				  sec. index= 0.342465	948. 11148(10.10.21.42) -> 11058(10.10.11.41), 
+				  sec. index= 0.342465	949. 11066(10.10.11.81) -> 11068(10.10.11.82), 
+				  sec. index= 0.342465	950. 11066(10.10.11.81) -> 11064(10.10.11.72), 
+				  sec. index= 0.342465	951. 11066(10.10.11.81) -> 11058(10.10.11.41), 
+				  sec. index= 0.342465	952. 11322(10.10.41.51) -> 11068(10.10.11.82), 
+				  sec. index= 0.342465	953. 11322(10.10.41.51) -> 11064(10.10.11.72), 
+				  sec. index= 0.342465	954. 11322(10.10.41.51) -> 11058(10.10.11.41), 
+				  sec. index= 0.342465	955. 11320(10.10.41.46) -> 11068(10.10.11.82), 
+				  sec. index= 0.342465	956. 11320(10.10.41.46) -> 11064(10.10.11.72), 
+				  sec. index= 0.342465	957. 11320(10.10.41.46) -> 11058(10.10.11.41), 
+				  sec. index= 0.342465	958. 11326(10.10.41.61) -> 11068(10.10.11.82), 
+				  sec. index= 0.342465	959. 11326(10.10.41.61) -> 11064(10.10.11.72), 
+				  sec. index= 0.342465	960. 11326(10.10.41.61) -> 11058(10.10.11.41), 
+				  sec. index= 0.342465	961. 11328(10.10.7.101) -> 11068(10.10.11.82), 
+				  sec. index= 0.342465	962. 11328(10.10.7.101) -> 11064(10.10.11.72), 
+				  sec. index= 0.342465	963. 11328(10.10.7.101) -> 11058(10.10.11.41), 
+				  sec. index= 0.342465	964. 11298(10.10.41.15) -> 11068(10.10.11.82), 
+				  sec. index= 0.342465	965. 11298(10.10.41.15) -> 11064(10.10.11.72), 
+				  sec. index= 0.342465	966. 11298(10.10.41.15) -> 11058(10.10.11.41), 
+				  sec. index= 0.342465	967. 11290(10.10.41.11) -> 11068(10.10.11.82), 
+				  sec. index= 0.342465	968. 11290(10.10.41.11) -> 11064(10.10.11.72), 
+				  sec. index= 0.342465	969. 11290(10.10.41.11) -> 11058(10.10.11.41), 
+				  sec. index= 0.342465	970. 11394(N/A) -> 11068(10.10.11.82), 
+				  sec. index= 0.342465	971. 11394(N/A) -> 11060(10.10.11.51), 
+				  sec. index= 0.342465	972. 11394(N/A) -> 11062(10.10.11.61), 
+				  sec. index= 0.342465	973. 11394(N/A) -> 11064(10.10.11.72), 
+				  sec. index= 0.342465	974. 11394(N/A) -> 11066(10.10.11.81), 
+				  sec. index= 0.342465	975. 11394(N/A) -> 11058(10.10.11.41), 
+				  sec. index= 0.342465	976. 11258(10.10.37.21) -> 11068(10.10.11.82), 
+				  sec. index= 0.342465	977. 11258(10.10.37.21) -> 11064(10.10.11.72), 
+				  sec. index= 0.342465	978. 11258(10.10.37.21) -> 11058(10.10.11.41), 
+				  sec. index= 0.342465	979. 11256(10.10.36.11) -> 11068(10.10.11.82), 
+				  sec. index= 0.342465	980. 11256(10.10.36.11) -> 11064(10.10.11.72), 
+				  sec. index= 0.342465	981. 11256(10.10.36.11) -> 11058(10.10.11.41), 
+				  sec. index= 0.342465	982. 11254(10.10.32.22) -> 11068(10.10.11.82), 
+				  sec. index= 0.342465	983. 11254(10.10.32.22) -> 11064(10.10.11.72), 
+				  sec. index= 0.342465	984. 11254(10.10.32.22) -> 11058(10.10.11.41), 
+				  sec. index= 0.342465	985. 11252(10.10.32.13) -> 11068(10.10.11.82), 
+				  sec. index= 0.342465	986. 11252(10.10.32.13) -> 11064(10.10.11.72), 
+				  sec. index= 0.342465	987. 11252(10.10.32.13) -> 11058(10.10.11.41), 
+				  sec. index= 0.342465	988. 11250(10.10.31.53) -> 11068(10.10.11.82), 
+				  sec. index= 0.342465	989. 11250(10.10.31.53) -> 11064(10.10.11.72), 
+				  sec. index= 0.342465	990. 11250(10.10.31.53) -> 11058(10.10.11.41), 
+				  sec. index= 0.342465	991. 11294(10.10.41.13) -> 11068(10.10.11.82), 
+				  sec. index= 0.342465	992. 11294(10.10.41.13) -> 11064(10.10.11.72), 
+				  sec. index= 0.342465	993. 11294(10.10.41.13) -> 11058(10.10.11.41), 
+				  sec. index= 0.342465	994. 11190(10.10.26.41) -> 11068(10.10.11.82), 
+				  sec. index= 0.342465	995. 11190(10.10.26.41) -> 11064(10.10.11.72), 
+				  sec. index= 0.342465	996. 11190(10.10.26.41) -> 11058(10.10.11.41), 
+				  sec. index= 0.342465	997. 11192(10.10.26.51) -> 11068(10.10.11.82), 
+				  sec. index= 0.342465	998. 11192(10.10.26.51) -> 11064(10.10.11.72), 
+				  sec. index= 0.342465	999. 11192(10.10.26.51) -> 11058(10.10.11.41), 
+				  sec. index= 0.342465	1000. 11194(10.10.26.61) -> 11068(10.10.11.82), 
+				  sec. index= 0.342465	1001. 11194(10.10.26.61) -> 11064(10.10.11.72), 
+				  sec. index= 0.342465	1002. 11194(10.10.26.61) -> 11058(10.10.11.41), 
+				  sec. index= 0.342465	1003. 11196(10.10.26.71) -> 11068(10.10.11.82), 
+				  sec. index= 0.342465	1004. 11196(10.10.26.71) -> 11064(10.10.11.72), 
+				  sec. index= 0.342465	1005. 11196(10.10.26.71) -> 11058(10.10.11.41), 
+				  sec. index= 0.342465	1006. 11198(10.10.26.72) -> 11068(10.10.11.82), 
+				  sec. index= 0.342465	1007. 11198(10.10.26.72) -> 11064(10.10.11.72), 
+				  sec. index= 0.342465	1008. 11198(10.10.26.72) -> 11058(10.10.11.41), 
+				  sec. index= 0.342465	1009. 11324(10.10.41.52) -> 11068(10.10.11.82), 
+				  sec. index= 0.342465	1010. 11324(10.10.41.52) -> 11064(10.10.11.72), 
+				  sec. index= 0.342465	1011. 11324(10.10.41.52) -> 11058(10.10.11.41), 
+				  sec. index= 0.342465	1012. 11278(10.10.39.22) -> 11068(10.10.11.82), 
+				  sec. index= 0.342465	1013. 11278(10.10.39.22) -> 11064(10.10.11.72), 
+				  sec. index= 0.342465	1014. 11278(10.10.39.22) -> 11058(10.10.11.41), 
+				  sec. index= 0.342465	1015. 11284(10.10.39.32) -> 11068(10.10.11.82), 
+				  sec. index= 0.342465	1016. 11284(10.10.39.32) -> 11064(10.10.11.72), 
+				  sec. index= 0.342465	1017. 11284(10.10.39.32) -> 11058(10.10.11.41), 
+				  sec. index= 0.342465	1018. 11108(10.10.15.42) -> 11068(10.10.11.82), 
+				  sec. index= 0.342465	1019. 11108(10.10.15.42) -> 11064(10.10.11.72), 
+				  sec. index= 0.342465	1020. 11108(10.10.15.42) -> 11058(10.10.11.41), 
+				  sec. index= 0.342465	1021. 11100(10.10.14.22) -> 11068(10.10.11.82), 
+				  sec. index= 0.342465	1022. 11100(10.10.14.22) -> 11064(10.10.11.72), 
+				  sec. index= 0.342465	1023. 11100(10.10.14.22) -> 11058(10.10.11.41), 
+				  sec. index= 0.342465	1024. 11106(10.10.15.41) -> 11068(10.10.11.82), 
+				  sec. index= 0.342465	1025. 11106(10.10.15.41) -> 11064(10.10.11.72), 
+				  sec. index= 0.342465	1026. 11106(10.10.15.41) -> 11058(10.10.11.41), 
+				  sec. index= 0.342465	1027. 11104(10.10.15.31) -> 11068(10.10.11.82), 
+				  sec. index= 0.342465	1028. 11104(10.10.15.31) -> 11064(10.10.11.72), 
+				  sec. index= 0.342465	1029. 11104(10.10.15.31) -> 11058(10.10.11.41), 
+				  sec. index= 0.342465	1030. 11102(10.10.15.11) -> 11068(10.10.11.82), 
+				  sec. index= 0.342465	1031. 11102(10.10.15.11) -> 11064(10.10.11.72), 
+				  sec. index= 0.342465	1032. 11102(10.10.15.11) -> 11058(10.10.11.41), 
+				  sec. index= 0.342465	1033. 11340(10.10.7.41) -> 11068(10.10.11.82), 
+				  sec. index= 0.342465	1034. 11340(10.10.7.41) -> 11064(10.10.11.72), 
+				  sec. index= 0.342465	1035. 11340(10.10.7.41) -> 11058(10.10.11.41), 
+				  sec. index= 0.342465	1036. 11228(10.10.31.22) -> 11068(10.10.11.82), 
+				  sec. index= 0.342465	1037. 11228(10.10.31.22) -> 11064(10.10.11.72), 
+				  sec. index= 0.342465	1038. 11228(10.10.31.22) -> 11058(10.10.11.41), 
+				  sec. index= 0.342465	1039. 11224(10.10.31.14) -> 11068(10.10.11.82), 
+				  sec. index= 0.342465	1040. 11224(10.10.31.14) -> 11064(10.10.11.72), 
+				  sec. index= 0.342465	1041. 11224(10.10.31.14) -> 11058(10.10.11.41), 
+				  sec. index= 0.342465	1042. 11212(10.10.3.32) -> 11068(10.10.11.82), 
+				  sec. index= 0.342465	1043. 11212(10.10.3.32) -> 11064(10.10.11.72), 
+				  sec. index= 0.342465	1044. 11212(10.10.3.32) -> 11058(10.10.11.41), 
+				  sec. index= 0.342465	1045. 11210(10.10.3.31) -> 11068(10.10.11.82), 
+				  sec. index= 0.342465	1046. 11210(10.10.3.31) -> 11064(10.10.11.72), 
+				  sec. index= 0.342465	1047. 11210(10.10.3.31) -> 11058(10.10.11.41), 
+				  sec. index= 0.342465	1048. 10780(10.10.30.200) -> 11068(10.10.11.82), 
+				  sec. index= 0.342465	1049. 10780(10.10.30.200) -> 11064(10.10.11.72), 
+				  sec. index= 0.342465	1050. 10780(10.10.30.200) -> 11058(10.10.11.41), 
+				  sec. index= 0.342465	1051. 11216(10.10.30.22) -> 11068(10.10.11.82), 
+				  sec. index= 0.342465	1052. 11216(10.10.30.22) -> 11064(10.10.11.72), 
+				  sec. index= 0.342465	1053. 11216(10.10.30.22) -> 11058(10.10.11.41), 
+				  sec. index= 0.342465	1054. 11214(10.10.30.13) -> 11068(10.10.11.82), 
+				  sec. index= 0.342465	1055. 11214(10.10.30.13) -> 11064(10.10.11.72), 
+				  sec. index= 0.342465	1056. 11214(10.10.30.13) -> 11058(10.10.11.41), 
+				  sec. index= 0.342465	1057. 11218(10.10.31.11) -> 11068(10.10.11.82), 
+				  sec. index= 0.342465	1058. 11218(10.10.31.11) -> 11064(10.10.11.72), 
+				  sec. index= 0.342465	1059. 11218(10.10.31.11) -> 11058(10.10.11.41), 
+				  sec. index= 0.342465	1060. 11356(10.10.50.200) -> 11068(10.10.11.82), 
+				  sec. index= 0.342465	1061. 11356(10.10.50.200) -> 11064(10.10.11.72), 
+				  sec. index= 0.342465	1062. 11356(10.10.50.200) -> 11058(10.10.11.41), 
+				  sec. index= 0.342465	1063. 10850(10.10.8.200) -> 11068(10.10.11.82), 
+				  sec. index= 0.342465	1064. 10850(10.10.8.200) -> 11064(10.10.11.72), 
+				  sec. index= 0.342465	1065. 10850(10.10.8.200) -> 11058(10.10.11.41), 
+				  sec. index= 0.342465	1066. 10922(10.10.25.200) -> 11068(10.10.11.82), 
+				  sec. index= 0.342465	1067. 10922(10.10.25.200) -> 11064(10.10.11.72), 
+				  sec. index= 0.342465	1068. 10922(10.10.25.200) -> 11058(10.10.11.41), 
+				  sec. index= 0.342465	1069. 10920(10.10.24.200) -> 11068(10.10.11.82), 
+				  sec. index= 0.342465	1070. 10920(10.10.24.200) -> 11064(10.10.11.72), 
+				  sec. index= 0.342465	1071. 10920(10.10.24.200) -> 11058(10.10.11.41), 
+				  sec. index= 0.342465	1072. 10926(10.10.29.200) -> 11068(10.10.11.82), 
+				  sec. index= 0.342465	1073. 10926(10.10.29.200) -> 11064(10.10.11.72), 
+				  sec. index= 0.342465	1074. 10926(10.10.29.200) -> 11058(10.10.11.41), 
+				  sec. index= 0.342465	1075. 10924(10.10.26.133) -> 11068(10.10.11.82), 
+				  sec. index= 0.342465	1076. 10924(10.10.26.133) -> 11064(10.10.11.72), 
+				  sec. index= 0.342465	1077. 10924(10.10

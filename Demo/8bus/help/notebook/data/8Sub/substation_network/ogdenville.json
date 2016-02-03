@@ -1,0 +1,68 @@
+{
+    "nodes":
+    [
+	{"name":"ogdenville-network:SEL_3620",
+	 "rdfs:type":"sel:3620",
+	 "enet:IPAddress":"?"},
+
+	{"name":"ogdenville-network:SEL_421_1",
+	 "rdfs:type":"sel:421",
+	 "enet:IPAddress":"172.34.1.101"},
+
+	{"name":"ogdenville-network:SEL_421_2",
+	 "rdfs:type":"sel:421",
+	 "enet:IPAddress":"172.34.1.102"},
+
+	{"name":"ogdenville-network:SEL_451_1",
+	 "rdfs:type":"sel:451",
+	 "enet:IPAddress":"172.34.2.101"},
+
+	{"name":"ogdenville-network:SEL_451_2",
+	 "rdfs:type":"sel:451",
+	 "enet:IPAddress":"172.34.2.102"},
+
+	{"name":"ogdenville-network:SEL_451_3",
+	 "rdfs:type":"sel:451",
+	 "enet:IPAddress":"172.34.2.103"},
+
+	{"name":"cyprus-creek-network:SEL_421_6",
+	 "rdfs:type":"sel:421",
+	 "enet:IPAddress":"172.31.1.106"},
+
+	{"name":"north-haverbrook-network:DistanceRelay_1",
+	 "rdfs:type":"snet:DistanceRelay",
+	 "enet:IPAddress":"?"}
+	
+    ],
+    
+    "links":
+    [
+	{"source":"ogdenville-network:SEL_3620",
+	 "target":"ogdenville-network:SEL_421_1",
+	 "relation":"cptlc:hasLink" },
+
+	{"source":"ogdenville-network:SEL_3620",
+	 "target":"ogdenville-network:SEL_421_2",
+	 "relation":"cptlc:hasLink" },
+
+	{"source":"ogdenville-network:SEL_3620",
+	 "target":"ogdenville-network:SEL_451_1",
+	 "relation":"cptlc:hasLink" },
+
+	{"source":"ogdenville-network:SEL_3620",
+	 "target":"ogdenville-network:SEL_451_2",
+	 "relation":"cptlc:hasLink" },
+
+	{"source":"ogdenville-network:SEL_3620",
+	 "target":"ogdenville-network:SEL_451_3",
+	 "relation":"cptlc:hasLink" },
+	
+	{"source":"ogdenville-network:SEL_421_1",
+	 "target":"cyprus-creek-network:SEL_421_6",
+	 "relation":"cptlc:hasLink" },
+
+	{"source":"ogdenville-network:SEL_421_2",
+	 "target":"north-haverbrook-network:DistanceRelay_1",
+	 "relation":"cptlc:hasLink" }
+    ]
+}  

@@ -1,0 +1,51 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<!--
+  copyright (c) 2015, Gabriel A. Weaver
+
+  This file is part of the Cyber-Physical Topology Language for the
+    Power domain.
+
+  This code is free software:  you can redistribute it and/or modify it
+    under the terms of the GNU General Public License as published by the
+    Free Software Foundation, either version 3 of the License, or 
+    (at your option) any later version.
+
+  The Cyber-Physical Topology Language (CPTL):  Electrical Power 
+    is distributed in the hope that it will be useful, but 
+    WITHOUT ANY WARRANTY; without even the implied warranty of 
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU
+    General Public License for more details.
+
+  You should have received a copy of the GNU General Public License
+    along with this program.  If not, see http://www.gnu.org/licenses/    
+-->
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <title>CPTL JS Test Suite</title>
+    <link rel="stylesheet" type="text/css" href="../../../css/jsUnitStyle.css">
+    <script type="text/javascript" src="../../../app/jsUnitCore.js"></script>
+    <script type="text/javascript">
+
+      function coreSuite() {
+        var result = new JsUnitTestSuite();
+        result.addTestPage("cptl-js/cptl/test/force_directed_graph_tests.html");      
+        result.addTestPage("cptl-js/cptl/test/graph_tests.html");
+        result.addTestPage("cptl-js/cptl/test/hierarchy_tree_tests.html");
+        result.addTestPage("cptl-js/cptl/test/hierarchy_tree_view_tests.html");      
+        result.addTestPage("cptl-js/cptl/test/viewutils_tests.html");            
+        return result;
+      }
+
+      function suite() {
+        var newsuite = new JsUnitTestSuite();
+        newsuite.addTestSuite(coreSuite());
+        return newsuite;
+      }
+    </script>
+</head>
+<body>
+  <h1>CPTL JS Test Suite</h1>
+</body>
+<p>This page contains a suite of tests for testing CPTL JavaScript.</p>
+</html>

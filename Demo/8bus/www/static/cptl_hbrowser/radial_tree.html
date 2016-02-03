@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<meta charset="utf-8"/>
+<!--
+  copyright (c) 2015-2016, Gabriel A. Weaver, Information Trust Institute
+    at the University of Illinois, Urbana-Champaign.
+
+  This file is part of the Cyber-Physical Topology Language for the
+    Power domain.
+
+  This code is free software:  you can redistribute it and/or modify it
+    under the terms of the GNU General Public License as published by the
+    Free Software Foundation, either version 3 of the License, or 
+    (at your option) any later version.
+
+  The Cyber-Physical Topology Language (CPTL):  Electrical Power 
+    is distributed in the hope that it will be useful, but 
+    WITHOUT ANY WARRANTY; without even the implied warranty of 
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU
+    General Public License for more details.
+
+  You should have received a copy of the GNU General Public License
+    along with this program.  If not, see http://www.gnu.org/licenses/
+
+
+MODIFIED BASED ON CODE UNDER FOLLOwING LICENSE:
+Copyright (c) 2010-2015, Michael Bostock
+All rights reserved.
+
+Redistribution and use in source and binary forms, with or without
+modification, are permitted provided that the following conditions are met:
+
+* Redistributions of source code must retain the above copyright notice, this
+  list of conditions and the following disclaimer.
+
+* Redistributions in binary form must reproduce the above copyright notice,
+  this list of conditions and the following disclaimer in the documentation
+  and/or other materials provided with the distribution.
+
+* The name Michael Bostock may not be used to endorse or promote products
+  derived from this software without specific prior written permission.
+
+THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS"
+AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE
+IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE
+DISCLAIMED. IN NO EVENT SHALL MICHAEL BOSTOCK BE LIABLE FOR ANY DIRECT,
+INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING,
+BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE,
+DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY
+OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING
+NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE,
+EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
+-->
+  <style>
+    .node circle {
+     fill: #fff;
+     stroke: steelblue;
+     stroke-width: 1.5px;
+    }
+
+    .node {
+     font: 10px sans-serif;
+    }
+
+    .link {
+     fill: none;
+     stroke: #ccc;
+     stroke-width: 1.5px;
+    }
+  </style>
+  <body>
+    <script src="../js/cptl_hbrowser_js/buckets/buckets.js"></script>
+    <script src="../js/cptl_hbrowser_js/cptl/graph.js"></script>
+    <script src="../js/cptl_hbrowser_js/cptl/hierarchy-tree.js"></script>    
+    <script src="../js/cptl_hbrowser_js/cptl/hierarchy-tree-view.js"></script>
+    <script src="../js/cptl_hbrowser_js/cptl/operations-workbench.js"></script>
+    <script src="../js/cptl_hbrowser_js/d3/d3.v3.min.js"></script>
+    <script src="../js/cptl_hbrowser_js/tree-model/TreeModel.js"></script>      
+    <script>
+
+      
+    /*
+     * Data Loading:  Load all the data necessary for the master application.
+     */
+    function load_json_into_localstorage(json_data_path, storage_key) {
+      d3.json(json_data_path, function(error, json_data) {
+        if (error) {
+          console.log("Failed to open JSON data at " + json_data_path);
+          throw(error);
+        }
+
+        localStorage.setItem( storage_key, JSON.stringify(json_data) );
+      });
+    }
+
+    var data_root = "../cptl_data_models/cypsa_8sub/data/";
+    load_json_into_localstorage( data_root + "graph/graph.domain-names.json", "json_graph_data" );
+    load_json_into_localstorage( data_root + "hierarchy_tree/domain-names/hierarchy_tree.json", "json_tree_data" );
+    load_json_into_localstorage( data_root + "icons/icon_dict.json", "icon_dict_data" );
+    load_json_into_localstorage( data_root + "hierarchy_tree/domain-names/views.json", "views_data" );
+    
+    /*
+     * View Initialization
+     */
+    var view_name = "default";
+    var view = new buckets.Set();
+    var views_data_str = localStorage.getItem("views_data");
+    var views_data = JSON.parse( views_data_str );
+
+    var current_view_list = views_data["current"];
+    for ( var i = 0; i < current_view_list.length; i++) {
+      var view_str = current_view_list[i];
+      view.add(view_str);			 
+    }			
+    
+    /*
+     * Load the necessary data into local storage
+     */
+    json_graph_data_str = localStorage.getItem("json_graph_data");
+    json_graph_data = JSON.parse(json_graph_data_str);
+    
+    json_tree_data_str = localStorage.getItem("json_tree_data");
+    json_tree_data = JSON.parse(json_tree_data_str);
+    
+    /*
+     * A navigational aid 
+    */
+    function expand(htv, view, name) {
+      var new_view = htv.view_expand(view, name);
+      localStorage.setItem("view", new_view.toArray());
+    }
+
+    function contract(htv, view, name) {
+      var new_view = htv.view_contract(view, name);
+      localStorage.setItem("view", new_view.toArray());
+    }
+    
+    htv = new HierarchyTreeView();
+    htv.initialize(json_graph_data, json_tree_data);
+
+    /*
+     * The radial tree visualization
+    */
+    var diameter = 1000;
+
+    var margin = {top: 0, right: 0, bottom: 0, left: 0},
+    width = diameter,
+    height = diameter;
+
+    var i = 0,
+    duration = 350,
+    root;
+    
+    var tree = d3.layout.tree()
+    .size([360, diameter / 2 - 80])
+    .separation(function(a, b) { return (a.parent == b.parent ? 1 : 10) / a.depth; });
+
+    var diagonal = d3.svg.diagonal.radial()
+    .projection(function(d) { return [d.y, d.x / 180 * Math.PI]; });
+
+    var svg = d3.select("body").append("svg")
+    .attr("width", width )
+    .attr("height", height )
+    .append("g")
+    .attr("transform", "translate(" + diameter / 2 + "," + diameter / 2 + ")");
+
+    root = json_tree_data;
+    root.x0 = height / 2;
+    root.y0 = 0;
+
+    /*
+     * Set initial configuration of visualization
+    */
+    update(root);
+
+    //-- Toggle the root children closed
+    d3.select(self.frameElement).style("height", "800px");
+    var root_children = root.children; //[0].children;
+    root_children.forEach( function(d) { collapse(d); update(d); } );
+
+    function update(source) {
+
+      // Compute the new tree layout.
+      var nodes = tree.nodes(root),
+      links = tree.links(nodes);
+
+      // Normalize for fixed-depth.
+      nodes.forEach(function(d) { d.y = d.depth * 80; });
+
+      // Update the nodes…
+      var node = svg.selectAll("g.node")
+        .data(nodes, function(d) { return d.id || (d.id = ++i); });
+
+      // Enter any new nodes at the parent's previous position.
+      var nodeEnter = node.enter().append("g")
+        .attr("class", "node")
+        .attr("enet-hasDomainNameValue", function(d) { return d.path; })
+        .on("click", click);
+
+      nodeEnter.append("circle")
+        .attr("r", 1e-6)
+        .style("fill", function(d) { return d._children ? "lightsteelblue" : "#fff"; });
+
+      nodeEnter.append("text")
+        .attr("x", 10)
+        .attr("dy", ".35em")
+        .attr("text-anchor", "start")
+        .text(function(d) { return d.name; })
+        .style("fill-opacity", 1e-6);
+
+      // Transition nodes to their new position.
+      var nodeUpdate = node.transition()
+        .duration(duration)
+        .attr("transform", function(d) { return "rotate(" + (d.x - 90) + ")translate(" + d.y + ")"; })
+
+      nodeUpdate.select("circle")
+        .attr("r", 4.5)
+        .style("fill", function(d) { return d._children ? "lightsteelblue" : "#fff"; });
+
+      nodeUpdate.select("text")
+        .style("fill-opacity", 1)
+        .attr("transform", function(d) { return d.x < 180 ? "translate(0)" : "rotate(180)translate(-" + (d.name.length + 50)  + ")"; });
+						  
+      // TODO: appropriate transform
+      var nodeExit = node.exit().transition()
+        .duration(duration)
+        .remove();
+						  
+        nodeExit.select("circle")
+	.attr("r", 1e-6);
+
+	nodeExit.select("text")
+	.style("fill-opacity", 1e-6);
+
+	// Update the links…
+	var link = svg.selectAll("path.link")
+	  .data(links, function(d) { return d.target.id; });
+
+	// Enter any new links at the parent's previous position.
+	link.enter().insert("path", "g")
+	  .attr("class", "link")
+	  .attr("d", function(d) {
+	    var o = {x: source.x0, y: source.y0};
+	    return diagonal({source: o, target: o});
+	  });
+
+	// Transition links to their new position.
+	link.transition()
+	  .duration(duration)
+	  .attr("d", diagonal);
+
+	// Transition exiting nodes to the parent's new position.
+	link.exit().transition()
+	  .duration(duration)
+	  .attr("d", function(d) {
+	    var o = {x: source.x, y: source.y};
+	    return diagonal({source: o, target: o});
+	  })
+	  .remove();
+
+	// Stash the old positions for transition.
+	nodes.forEach(function(d) {
+	  d.x0 = d.x;
+          d.y0 = d.y;
+        });
+   } // function update
+
+   // Toggle children on click.
+  function click(d) {
+    if (d.children) {
+      // Collapse
+      d._children = d.children;
+      contract( htv, view, d.path );      // d.children must not be null
+      d.children = null;
+    } else {
+      // Expand
+      d.children = d._children;
+      expand( htv, view, d.path );	// d.children must not be null    
+      d._children = null;
+    }
+    update(d);						      
+  } // function click
+
+  // Collapse nodes
+  function collapse(d) {
+    if (d.children) {
+      d._children = d.children;
+      d._children.forEach(collapse);
+      d.children = null;
+    }
+  } // function collapse
+
+  </script>
+</body>

@@ -1,0 +1,136 @@
+.highlight {
+    background-color: #ccc;
+}
+body {
+  font-family: 'Open Sans', sans-serif;
+  background: #f9f9f9;
+}
+a {
+  text-decoration: none;
+  color: rgba(105, 105, 105, 0.88);
+  transition: color .3s ease;
+}
+a:hover {
+  color: #fc6e51;
+}
+
+.nav ul {
+  margin: 0;
+  padding: 0;
+}
+.nav li {
+  list-style: none;
+  margin: 0;
+}
+
+.btn-navbar {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+.btn-navbar li {
+  float: left;
+  margin: 0 5px;
+}
+.btn-navbar li:first-child {
+  margin-left: 0;
+}
+
+.btn {
+  display: inline-block;
+  padding: 6px 14px;
+  background: #f2f2f2;
+  border-radius: 3px;
+  font-size: 0.8125em;
+  color: #b9bcbc;
+  transition: background .3s ease, color .3s ease;
+}
+.btn:hover {
+  background: #e5e5e5;
+  color: #929797;
+}
+.btn.btn-primary {
+  background: #a1d36e;
+  color: #fff;
+}
+.btn.btn-primary:hover, .btn.btn-primary.active {
+  background: #94cd5a;
+}
+.btn.btn-secondary {
+  background: #6ad1dd;
+  color: #fff;
+}
+.btn.btn-secondary:hover, .btn.btn-secondary.active {
+  background: #55cbd8;
+}
+.btn.btn-tertiary {
+  background: #fc6e51;
+  color: #fff;
+}
+.btn.btn-tertiary:hover, .btn.btn-tertiary.active {
+  background: #fc5938;
+}
+.btn.btn-quaternary {
+  background: #48cfad;
+  color: #fff;
+}
+.btn.btn-quaternary:hover, .btn.btn-quaternary.active {
+  background: #35c9a4;
+}
+.btn.btn-white {
+  background: #fff;
+}
+.btn.btn-white:hover {
+  background: #fafafa;
+}
+.btn.btn-grey {
+  background: #dddddd;
+}
+.btn.btn-grey:hover {
+  background: #cccccc;
+}
+.btn.btn-large {
+  padding: 12px 28px;
+}
+.btn.btn-caps {
+  text-transform: uppercase;
+}
+.btn.btn-block {
+  display: block;
+  width: 100%;
+  text-align: center;
+}
+
+.btn-group {
+  position: relative;
+  display: inline-block;
+  margin: 10px 0;
+}
+.btn-group:before {
+  content: attr(data-grouptype);
+  color: #999;
+  display: block;
+  font-size: 0.8125em;
+  width: 19px;
+  height: 19px;
+  padding: 5px;
+  border-radius: 50%;
+  background: #fff;
+  position: absolute;
+  left: 50%;
+  top: 6px;
+  margin-left: -18px;
+}
+.btn-group a + a {
+  margin-left: 5px;
+}
+
+.btn-navbar .btn {
+  font-size: 0.6875em;
+}
+.btn-navbar .active {
+  background: #6ad1dd;
+  color: #fff;
+}
+.btn-navbar .active:hover {
+  background: #55cbd8;
+}

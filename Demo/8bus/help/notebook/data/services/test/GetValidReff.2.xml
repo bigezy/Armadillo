@@ -1,0 +1,14 @@
+<cypsa:GetValidReff>
+  <request>
+    <requestName>GetValidReff</requestName>
+    <requestUrn>urn:cypsa:8bus:ogdenville</requestUrn>
+    <level>2</level>
+  </request>
+  <reply>
+    <reff>
+      <urn>urn:cypsa:8bus:ogdenville.node-breaker.manual-1</urn>
+      <urn>urn:cypsa:8bus:ogdenville.node-breaker.powerworld-1</urn>      
+      <urn>urn:cypsa:8bus:ogdenville.network.manual-1</urn>
+    </reff>
+  </reply>
+</cypsa:GetValidReff>

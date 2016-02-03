@@ -1,0 +1,84 @@
+<html>
+  <head>
+    <title>CyPSA Use Cases</title>
+    <link type="text/css" rel="stylesheet" href="css/episteme.css"/>
+  </head>
+  <body>
+    <div id="wrapper">
+      <div id="navigation">
+	<a href="index.html">home page</a> |
+	<a href="use-cases.html">use cases</a> |
+	<a href="install.html">install</a> |
+	<a href="framework/index.html">framework</a> |
+	<a href="publications.html">publications</a>
+      </div>
+
+      <h2>CyPSA Use Cases (Notebook)</h2>
+      <p>The following is a discussion based upon
+      an <a href="http://blog.market8.net/b2b-web-design-and-inbound-marketing-blog/how-to-make-useful-website-wireframes-tutorial">article</a>
+      on how to write effective use cases.  This document is a work in
+      progress.</p>
+      
+      <h3>Who is the customer?</h3>
+      <p>In this case, the customer is a utility.  A variety of
+      practitioners within the utility will use the CyPSA tool and
+	these include but are not limited to the following:</p>
+      <ul>
+	<li>IT System Administrator</li>
+	<li>Power Engineer</li>
+	<li>Visiting Auditor</li>
+      </ul>
+
+      <h2>What Problem are we trying to solve?</h2>
+      <p>CyPSA seeks to organize and gain insight into the diverse
+      sets of data that a critical infrastructure provider must
+      manage.  Specifically CyPSA inventories, manages, and analyzes
+      assets and relations among those assets.  A variety of
+      interfaces are provided.</p>
+
+      <h3>Assets</h3>
+
+      <p><em>Inventory Assets and Relations:</em> CyPSA inventories
+      <b>assets</b> (both cyber and physical).  This may include the
+      cataloguing of assets through a common interface.  Data sources
+      used to generate a catalogue of assets include PowerWorld,
+      NPView, NMap Scans, and device configurations.  Depending upon
+      the <b>role</b> of the person using the tool the types of assets
+      accessed as well as the data sources through which asset
+	information is accessed may vary.</p>
+
+      <p>CyPSA allows practitioners to catalogue <b>relations</b>
+      among assets and these may either be manually or programatically
+	generated.  </p>
+For example, some
+	common relations among assets include the following:</p>
+      <ul>
+	<li>Topological Network Data: Which devices and assets are
+	connected and how?  Data sources for this kind of information
+	include NMap scans, NPView topologies (via Firewall rule
+	analysis).</li>
+	<li>Security Metrics Outputs:  The output of various security
+	metrics such as overall exposure.  This may include the
+	Badger as well as the CyPSA engine.</li>
+      </ul>
+      
+      (<a href="use_cases/inventory_assets.html">Inventory Use
+      Cases</a>)</p>
+
+
+      <p><em>Configure Assets:</em>  CyPSA may eventually include the
+      ability to configure assets including relays and switches.  For
+      example, a system administrator would be able to configure and
+	alter the state of a relay via the CyPSA interface.</p>
+
+      <p><em>Annotate Assets:</em> CyPSA also allows practitioners to
+      manually and programatically annotate assets.  Sources of
+      information with which to annotate assets include provenance
+      metadata regarding the data source from which the asset was
+      loaded, vulnerability information from vulnerability databases,
+	configuration information, and the output oa an analysis in
+      general.</p>
+      
+    </div>
+  </body>
+</html>

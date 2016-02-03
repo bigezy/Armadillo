@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<!DOCTYPE VCReport [
+<!ELEMENT VCReport ((NetCenter|HostCenter|NmapAnalysis)*, Endpoint*)>
+<!ATTLIST VCReport type CDATA #REQUIRED>
+<!ELEMENT NetCenter (Network,Intensity*)>
+<!ELEMENT HostCenter (Host,Intensity*)>
+<!ELEMENT Endpoint EMPTY>
+<!ATTLIST Endpoint IPAddress CDATA #REQUIRED>
+<!ATTLIST Endpoint depth CDATA #REQUIRED>
+<!ATTLIST Endpoint width CDATA #REQUIRED>
+<!ELEMENT Network EMPTY>
+<!ATTLIST Network netAddress CDATA #REQUIRED>
+<!ELEMENT Host EMPTY>
+<!ATTLIST Host IPAddress CDATA #REQUIRED>
+<!ELEMENT Intensity EMPTY>
+<!ATTLIST Intensity depth CDATA #REQUIRED>
+<!ATTLIST Intensity width CDATA #REQUIRED>
+<!ELEMENT Description (#PCDATA)>
+<!ELEMENT NmapAnalysis (Path*)>
+<!ATTLIST NmapAnalysis sourceNode CDATA #REQUIRED>
+<!ATTLIST NmapAnalysis sourceNodeId CDATA #REQUIRED>
+<!ATTLIST NmapAnalysis destinationNode CDATA #REQUIRED>
+<!ATTLIST NmapAnalysis destinationNodeId CDATA #REQUIRED>
+<!ATTLIST NmapAnalysis timeTaken CDATA #IMPLIED>
+<!ELEMENT Path (Node*)>
+<!ATTLIST Path attackNode CDATA #REQUIRED>
+<!ATTLIST Path nodeId CDATA #REQUIRED>
+<!ATTLIST Path cost CDATA #REQUIRED>
+<!ELEMENT Node EMPTY>
+<!ATTLIST Node IPAddress CDATA #REQUIRED>
+<!ATTLIST Node nodeId CDATA #REQUIRED>
+<!ATTLIST Node vulnID CDATA #REQUIRED>
+]>
+<VCReport type="vuln">
+    <NmapAnalysis sourceNode="10.31.1.201" sourceNodeId="1998" destinationNode="10.31.1.102" destinationNodeId="2014">
+        <Path attackNode="10.31.1.201" nodeId="1998" cost="7.952">
+            <Node IPAddress="10.31.1.201" nodeId="1998" vulnID="CVE-2015-7845"/>
+            <Node IPAddress="10.31.1.102" nodeId="2014" vulnID="CVE-2015-2907"/>
+        </Path>
+    </NmapAnalysis>
+    <NmapAnalysis sourceNode="10.31.1.201" sourceNodeId="1998" destinationNode="10.31.1.103" destinationNodeId="2016">
+        <Path attackNode="10.31.1.201" nodeId="1998" cost="7.952">
+            <Node IPAddress="10.31.1.201" nodeId="1998" vulnID="CVE-2015-7845"/>
+            <Node IPAddress="10.31.1.103" nodeId="2016" vulnID="CVE-2015-4195"/>
+        </Path>
+    </NmapAnalysis>
+    <NmapAnalysis sourceNode="10.31.1.201" sourceNodeId="1998" destinationNode="10.31.1.105" destinationNodeId="2020">
+        <Path attackNode="10.31.1.201" nodeId="1998" cost="7.952">
+            <Node IPAddress="10.31.1.201" nodeId="1998" vulnID="CVE-2015-7845"/>
+            <Node IPAddress="10.31.1.105" nodeId="2020" vulnID="CVE-2015-2906"/>
+        </Path>
+    </NmapAnalysis>
+    <NmapAnalysis sourceNode="10.31.1.201" sourceNodeId="1998" destinationNode="10.31.1.104" destinationNodeId="2018">
+        <Path attackNode="10.31.1.201" nodeId="1998" cost="7.952">
+            <Node IPAddress="10.31.1.201" nodeId="1998" vulnID="CVE-2015-7845"/>
+            <Node IPAddress="10.31.1.104" nodeId="2018" vulnID="CVE-2015-4195"/>
+        </Path>
+    </NmapAnalysis>
+    <NmapAnalysis sourceNode="10.31.1.201" sourceNodeId="1998" destinationNode="10.31.1.101" destinationNodeId="2012">
+        <Path attackNode="10.31.1.201" nodeId="1998" cost="7.952">
+            <Node IPAddress="10.31.1.201" nodeId="1998" vulnID="CVE-2015-7845"/>
+            <Node IPAddress="10.31.1.101" nodeId="2012" vulnID="CVE-2015-4195"/>
+        </Path>
+    </NmapAnalysis>
+</VCReport>

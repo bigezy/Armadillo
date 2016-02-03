@@ -1,0 +1,167 @@
+<cypsa:GetAssetInventory>
+  <request>
+    <requestName>GetAssetInventory</requestName>
+  </request>
+  <reply>
+      
+    <Assets xmlns="http://cypsa.org/xmlns/asi"
+	    xmlns:dc="http://purl.org/dc/elements/1.1"
+	    asiversion="0.5">
+
+      <assetgroup projid="8sub:capital-city" type="cptlp:substation">
+	<groupname xml:lang="eng">Capital City</groupname>
+	<work projid="8sub:node-breaker" xml:lang="eng">
+	  <title xml:lang="eng">Node Breaker</title>
+	</work>
+	<work projid="8sub:network" xml:lang="eng">
+	  <title xml:lang="eng">Substation Network</title>
+	</work>	
+      </assetgroup>
+      
+      <assetgroup projid="8sub:control-center" type="cptlp:control-center">
+	<groupname xml:lang="eng">Control Center</groupname>
+	<work projid="8sub:network" xml:lang="eng">
+	  <title xml:lang="eng">Network</title>
+	</work>	
+      </assetgroup>
+
+      <assetgroup projid="8sub:cyprus-creek" type="cptlp:substation">
+	<groupname xml:lang="eng">Cyprus Creek</groupname>
+	<work projid="8sub:node-breaker" xml:lang="eng">
+	  <title xml:lang="eng">Node Breaker</title>
+	</work>
+	<work projid="8sub:network" xml:lang="eng">
+	  <title xml:lang="eng">Substation Network</title>
+	</work>	
+      </assetgroup>
+
+      <assetgroup projid="8sub:haverbrook" type="cptlp:substation">
+	<groupname xml:lang="eng">Haverbrook</groupname>
+	<work projid="8sub:node-breaker" xml:lang="eng">
+	  <title xml:lang="eng">Node Breaker</title>
+	</work>
+	<work projid="8sub:network" xml:lang="eng">
+	  <title xml:lang="eng">Substation Network</title>
+	</work>	
+      </assetgroup>
+
+      <assetgroup projid="8sub:north-haverbrook" type="cptlp:substation">
+	<groupname xml:lang="eng">North Haverbrook</groupname>
+	<work projid="8sub:node-breaker" xml:lang="eng">
+	  <title xml:lang="eng">Node Breaker</title>
+	</work>
+	<work projid="8sub:network" xml:lang="eng">
+	  <title xml:lang="eng">Substation Network</title>
+	</work>	
+      </assetgroup>
+            
+      <assetgroup projid="8sub:ogdenville" type="cptlp:substation">
+	<groupname xml:lang="eng">Ogdenville</groupname>
+	<work projid="8sub:node-breaker" xml:lang="eng">
+	  <title xml:lang="eng">Node Breaker</title>
+	  <edition projid="8sub:manual-1">
+	    <label xml:lang="eng">Manually Generated Node Breaker Model</label>
+	    <dc:date>2014-10-4</dc:date>
+	    <online docname="8sub/substation_yard/ogdenville.json">
+	      <validate schema="https://github.com/ITI/cptl-power/blob/master/src/grammars/json/substation_yard.grammar"/>
+	    </online>
+	  </edition>
+	  <edition projid="8sub:powerworld-1">
+	    <label xml:lang="eng">PowerWorld Generated Node Breaker Model</label>
+	    <dc:date>2014-10-4</dc:date>
+	  </edition>
+	</work>
+	<work projid="8sub:network" xml:lang="eng">
+	  <title xml:lang="eng">Substation Network</title>
+
+	  <edition projid="8sub:manual-1">
+	    <label xml:lang="eng">Manually Generated Substation Network</label>
+	    <dc:date>2014-10-4</dc:date>
+	    <online docname="8sub/substation_network/ogdenville.json">
+	      <validate schema="https://github.com/ITI/cptl-power/blob/master/src/grammars/json/substation_network.grammar"/>
+	    </online>
+	  </edition>
+
+	  <edition projid="8sub:nmap-1">
+	    <label xml:lang="eng">Substation Network Generated from NMap Scan</label>
+	    <dc:date>2014-10-31</dc:date>
+	  </edition>
+
+	  <edition projid="8sub:npview-1">
+	    <label xml:lang="eng">Substation Network Generated from NPView</label>
+	    <dc:date>2014-10-31</dc:date>
+	  </edition>
+	  
+	  <edition projid="8sub:network-reputation-1">
+	    <label xml:lang="eng">Substation Network with Streaming Reputation Information</label>
+	    <online service="http://service.badger.org/endpoint/GetGraphStream">
+	      <request>
+		<param name="urn">urn:cypsa:8bus:ogdenville.network</param>
+		<param name="attributes">enet:IP,badger:state</param>
+              </request>
+            </online>		    
+	  </edition>
+	  
+	</work>
+	<work projid="8sub:interconnect" xml:lang="eng">
+	  <title xml:lang="eng">Breaker-Relay Interconnect</title>
+	  <edition projid="8sub:manual-1">
+	    <label xml:lang="eng">Manually-Created Interconnect</label>
+	    <online docname="8sub/substation_network-yard/ogdenville.json">
+	      <validate schema="DO THIS"/>
+	    </online>
+	  </edition>
+	  <edition projid="8sub:relayconfigs">
+	    <label xml:lang="eng">Interconnect generated from relay configurations</label>
+	  </edition>
+	</work>
+	<work projid="8sub:network-node-breaker">
+	  <title xml:lang="eng">Network, Node-Breaker Model</title>
+	  <edition projid="8sub:dynamic-1">
+	    <label xml:lang="eng">Dynamically-Generated Network, Node Breaker Model</label>
+	    <online service="GetGraphJoin">
+	      <request>
+		<param name="urn1">urn:cypsa:8bus:ogdenville.network.network-reputation-1</param>
+		<param name="urn2">urn:cypsa:8bus:ogdenville.node-breaker.powerworld-1</param>
+		<param name="interconnect">urn:cypsa:8bus:ogdenville.interconnect.manual-1</param>
+              </request>
+	    </online>
+	  </edition>
+	</work>
+      </assetgroup>
+
+      <assetgroup projid="8sub:paris" type="cptlp:substation">
+	<groupname xml:lang="eng">Paris</groupname>
+	<work projid="8sub:node-breaker" xml:lang="eng">
+	  <title xml:lang="eng">Node Breaker</title>
+	</work>
+	<work projid="8sub:network" xml:lang="eng">
+	  <title xml:lang="eng">Substation Network</title>
+	</work>	
+      </assetgroup>
+
+      <assetgroup projid="8sub:shelbyville" type="cptlp:substation">
+	<groupname xml:lang="eng">Shelbyville</groupname>
+	<work projid="8sub:node-breaker" xml:lang="eng">
+	  <title xml:lang="eng">Node Breaker</title>
+	</work>
+	<work projid="8sub:network" xml:lang="eng">
+	  <title xml:lang="eng">Substation Network</title>
+	</work>	
+      </assetgroup>
+
+      <assetgroup projid="8sub:springfield" type="cptlp:substation">
+	<groupname xml:lang="eng">Springfield</groupname>
+	<work projid="8sub:node-breaker" xml:lang="eng">
+	  <title xml:lang="eng">Node Breaker</title>
+	</work>
+	<work projid="8sub:network" xml:lang="eng">
+	  <title xml:lang="eng">Substation Network</title>
+	</work>	
+      </assetgroup>
+      
+    </Assets>
+
+    
+  </reply>
+</cypsa:GetAssetInventory>

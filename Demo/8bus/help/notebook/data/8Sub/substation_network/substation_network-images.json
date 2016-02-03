@@ -1,0 +1,14 @@
+{
+    "ogdenville":
+	{
+	    "ogdenville-network:SEL_421_1":
+	    [
+	      "images/substation_network/device1.png",
+	      "images/substation_network/device2.png"
+	    ],
+	    "ogdenville-network:SEL_3620":
+	    [
+	      "images/substation_network/devicesw.png"
+            ]		
+	}
+}

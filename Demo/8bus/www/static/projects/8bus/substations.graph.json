@@ -1,0 +1,2145 @@
+{
+    "links": [
+        {
+            "relation": "cptlc:hasLink", 
+            "source": "cypress-creek-network:SEL_421_1", 
+            "target": "paris-network:SEL_421_2"
+        }, 
+        {
+            "relation": "cptlc:hasLink", 
+            "source": "haverbrook-network:ReversePowerRelay_1", 
+            "target": "haverbrook-network:OvercurrentRelay_2"
+        }, 
+        {
+            "relation": "cptlc:hasLink", 
+            "source": "haverbrook-network:DistanceRelay_3", 
+            "target": "haverbrook-network:ReversePowerRelay_1"
+        }, 
+        {
+            "relation": "snet:hasBreakerConnections", 
+            "source": "haverbrook-network:ReversePowerRelay_1", 
+            "target": "haverbrook-yard:Haverbrook$BRK$3335"
+        }, 
+        {
+            "relation": "cptlc:hasLink", 
+            "source": "springfield-network:DistanceRelay_2", 
+            "target": "paris-network:SEL_421_3"
+        }, 
+        {
+            "relation": "syard:hasLine", 
+            "source": "paris-yard:Paris$ND$50", 
+            "target": "paris-yard:Paris$BRK$5051"
+        }, 
+        {
+            "relation": "syard:hasLine", 
+            "source": "paris-yard:Paris$BRK$5051", 
+            "target": "paris-yard:Paris$ND$51"
+        }, 
+        {
+            "relation": "cptlc:hasLink", 
+            "source": "shelbyville-network:SEL_421_3", 
+            "target": "paris-network:SEL_421_1"
+        }, 
+        {
+            "relation": "cptlc:hasLink", 
+            "source": "paris-network:SEL_3620", 
+            "target": "paris-network:SEL_421_2"
+        }, 
+        {
+            "relation": "cptlc:hasLink", 
+            "source": "paris-network:SEL_421_2", 
+            "target": "cypress-creek-network:SEL_421_1"
+        }, 
+        {
+            "relation": "syard:hasLine", 
+            "source": "paris-yard:Paris$ND$50", 
+            "target": "paris-yard:Paris$BRK$5052"
+        }, 
+        {
+            "relation": "syard:hasLine", 
+            "source": "paris-yard:Paris$BRK$5052", 
+            "target": "paris-yard:Paris$ND$52"
+        }, 
+        {
+            "relation": "cptlc:hasLink", 
+            "source": "springfield-network:DistanceRelay_2", 
+            "target": "springfield-network:OvercurrentRelay_2"
+        }, 
+        {
+            "relation": "snet:hasBreakerConnections", 
+            "source": "springfield-network:DistanceRelay_2", 
+            "target": "springfield-yard:Springfield$BRK$4142"
+        }, 
+        {
+            "relation": "cptlc:hasLink", 
+            "source": "springfield-network:DistanceRelay_1", 
+            "target": "springfield-network:DistanceRelay_2"
+        }, 
+        {
+            "relation": "cptlc:hasLink", 
+            "source": "cypress-creek-network:SEL_3620", 
+            "target": "cypress-creek-network:SEL_421_1"
+        }, 
+        {
+            "relation": "cptlc:hasLink", 
+            "source": "shelbyville-network:SEL_3620", 
+            "target": "shelbyville-network:SEL_421_3"
+        }, 
+        {
+            "relation": "syard:hasLine", 
+            "source": "paris-yard:Paris$BRK$4850", 
+            "target": "paris-yard:Paris$ND$48"
+        }, 
+        {
+            "relation": "syard:hasLine", 
+            "source": "paris-yard:Paris$ND$50", 
+            "target": "paris-yard:Paris$BRK$4850"
+        }, 
+        {
+            "relation": "syard:hasLine", 
+            "source": "haverbrook-yard:Haverbrook-UN-Gen4", 
+            "target": "haverbrook-yard:Haverbrook$ND$33"
+        }, 
+        {
+            "relation": "syard:hasLine", 
+            "source": "haverbrook-yard:Haverbrook$ND$33", 
+            "target": "haverbrook-yard:Haverbrook$BRK$3335"
+        }, 
+        {
+            "relation": "cptlc:hasLink", 
+            "source": "springfield-network:DistanceRelay_3", 
+            "target": "springfield-network:OvercurrentRelay_5"
+        }, 
+        {
+            "relation": "cptlc:hasLink", 
+            "source": "springfield-network:OvercurrentRelay_4", 
+            "target": "springfield-network:DistanceRelay_3"
+        }, 
+        {
+            "relation": "snet:hasBreakerConnections", 
+            "source": "springfield-network:DistanceRelay_3", 
+            "target": "springfield-yard:Springfield$BRK$3941"
+        }, 
+        {
+            "relation": "cptlc:hasLink", 
+            "source": "springfield-network:DistanceRelay_3", 
+            "target": "haverbrook-network:DistanceRelay_1"
+        }, 
+        {
+            "relation": "cptlc:hasLink", 
+            "source": "haverbrook-network:DistanceRelay_1", 
+            "target": "springfield-network:DistanceRelay_3"
+        }, 
+        {
+            "relation": "cptlc:hasLink", 
+            "source": "haverbrook-network:DistanceRelay_2", 
+            "target": "springfield-network:DistanceRelay_3"
+        }, 
+        {
+            "relation": "syard:hasLine", 
+            "source": "haverbrook-yard:Haverbrook$ND$36", 
+            "target": "cypress-creek-yard:CyprusCreek$ND$18"
+        }, 
+        {
+            "relation": "syard:hasLine", 
+            "source": "cypress-creek-yard:CyprusCreek$ND$18", 
+            "target": "haverbrook-yard:Haverbrook$ND$36"
+        }, 
+        {
+            "relation": "syard:hasLine", 
+            "source": "haverbrook-yard:Haverbrook$BRK$3635", 
+            "target": "haverbrook-yard:Haverbrook$ND$36"
+        }, 
+        {
+            "relation": "syard:hasLine", 
+            "source": "springfield-yard:Springfield$ND$39", 
+            "target": "haverbrook-yard:Haverbrook$ND$37"
+        }, 
+        {
+            "relation": "syard:hasLine", 
+            "source": "haverbrook-yard:Haverbrook$ND$37", 
+            "target": "springfield-yard:Springfield$ND$39"
+        }, 
+        {
+            "relation": "syard:hasLine", 
+            "source": "haverbrook-yard:Haverbrook$BRK$3735", 
+            "target": "haverbrook-yard:Haverbrook$ND$37"
+        }, 
+        {
+            "relation": "cptlc:hasLink", 
+            "source": "odgenville-network:SEL_3620", 
+            "target": "odgenville-network:SEL_421_2"
+        }, 
+        {
+            "relation": "cptlc:hasLink", 
+            "source": "odgenville-network:SEL_421_2", 
+            "target": "north-haverbrook-network:DistanceRelay_1"
+        }, 
+        {
+            "relation": "cptlc:hasLink", 
+            "source": "north-haverbrook-network:DistanceRelay_1", 
+            "target": "odgenville-network:SEL_421_2"
+        }, 
+        {
+            "relation": "syard:hasLine", 
+            "source": "haverbrook-yard:Haverbrook$BRK$3435", 
+            "target": "haverbrook-yard:Haverbrook$ND$34"
+        }, 
+        {
+            "relation": "syard:hasLine", 
+            "source": "haverbrook-yard:Haverbrook$ND$35", 
+            "target": "haverbrook-yard:Haverbrook$BRK$3635"
+        }, 
+        {
+            "relation": "syard:hasLine", 
+            "source": "haverbrook-yard:Haverbrook$ND$35", 
+            "target": "haverbrook-yard:Haverbrook$BRK$3435"
+        }, 
+        {
+            "relation": "syard:hasLine", 
+            "source": "haverbrook-yard:Haverbrook$ND$35", 
+            "target": "haverbrook-yard:Haverbrook$BRK$3835"
+        }, 
+        {
+            "relation": "syard:hasLine", 
+            "source": "haverbrook-yard:Haverbrook$BRK$3335", 
+            "target": "haverbrook-yard:Haverbrook$ND$35"
+        }, 
+        {
+            "relation": "syard:hasLine", 
+            "source": "haverbrook-yard:Haverbrook$ND$35", 
+            "target": "haverbrook-yard:Haverbrook$BRK$3735"
+        }, 
+        {
+            "relation": "syard:hasLine", 
+            "source": "odgenville-yard:Ogdenville$ND$2", 
+            "target": "odgenville-yard:Ogdenville$BRK$62"
+        }, 
+        {
+            "relation": "syard:hasLine", 
+            "source": "odgenville-yard:Ogdenville$BRK$23", 
+            "target": "odgenville-yard:Ogdenville$ND$2"
+        }, 
+        {
+            "relation": "syard:hasLine", 
+            "source": "odgenville-yard:Ogdenville$ND$2", 
+            "target": "odgenville-yard:Ogdenville$BRK$42"
+        }, 
+        {
+            "relation": "syard:hasLine", 
+            "source": "odgenville-yard:Ogdenville$BRK$12", 
+            "target": "odgenville-yard:Ogdenville$ND$2"
+        }, 
+        {
+            "relation": "syard:hasLine", 
+            "source": "odgenville-yard:Ogdenville$ND$2", 
+            "target": "odgenville-yard:Ogdenville$BRK$25"
+        }, 
+        {
+            "relation": "syard:hasLine", 
+            "source": "shelbyville-yard:Shelbyville$ND$31", 
+            "target": "shelbyville-yard:Shelbyville$BRK$2931"
+        }, 
+        {
+            "relation": "syard:hasLine", 
+            "source": "shelbyville-yard:Shelbyville$BRK$2931", 
+            "target": "shelbyville-yard:Shelbyville$ND$29"
+        }, 
+        {
+            "relation": "snet:hasBreakerConnections", 
+            "source": "shelbyville-network:SEL_451_6", 
+            "target": "shelbyville-yard:Shelbyville$BRK$2931"
+        }, 
+        {
+            "relation": "syard:hasLine", 
+            "source": "north-haverbrook-yard:NorthHaverbrook$ND$59", 
+            "target": "north-haverbrook-yard:NorthHaverbrook$BRK$910"
+        }, 
+        {
+            "relation": "syard:hasLine", 
+            "source": "north-haverbrook-yard:NorthHaverbrook$BRK$913", 
+            "target": "north-haverbrook-yard:NorthHaverbrook$ND$59"
+        }, 
+        {
+            "relation": "syard:hasLine", 
+            "source": "north-haverbrook-yard:NorthHaverbrook$ND$59", 
+            "target": "north-haverbrook-yard:NorthHaverbrook$BRK$89"
+        }, 
+        {
+            "relation": "snet:hasBreakerConnections", 
+            "source": "odgenville-network:SEL_451_3", 
+            "target": "odgenville-yard:Ogdenville$BRK$62"
+        }, 
+        {
+            "relation": "syard:hasLine", 
+            "source": "odgenville-yard:Ogdenville$ND$6", 
+            "target": "odgenville-yard:Ogdenville$BRK$62"
+        }, 
+        {
+            "relation": "snet:hasBreakerConnections", 
+            "source": "north-haverbrook-network:OvercurrentRelay_2", 
+            "target": "north-haverbrook-yard:NorthHaverbrook$BRK$910"
+        }, 
+        {
+            "relation": "cptlc:hasLink", 
+            "source": "north-haverbrook-network:DistanceRelay_1", 
+            "target": "north-haverbrook-network:OvercurrentRelay_2"
+        }, 
+        {
+            "relation": "cptlc:hasLink", 
+            "source": "north-haverbrook-network:OvercurrentRelay_2", 
+            "target": "north-haverbrook-network:OvercurrentRelay_3"
+        }, 
+        {
+            "relation": "syard:hasLine", 
+            "source": "haverbrook-yard:Haverbrook$BRK$3835", 
+            "target": "haverbrook-yard:Haverbrook$ND$38"
+        }, 
+        {
+            "relation": "syard:hasLine", 
+            "source": "springfield-yard:Springfield$ND$40", 
+            "target": "haverbrook-yard:Haverbrook$ND$38"
+        }, 
+        {
+            "relation": "syard:hasLine", 
+            "source": "haverbrook-yard:Haverbrook$ND$38", 
+            "target": "springfield-yard:Springfield$ND$40"
+        }, 
+        {
+            "relation": "syard:hasLine", 
+            "source": "springfield-yard:Springfield-UN-Gen5", 
+            "target": "springfield-yard:Springfield$ND$43"
+        }, 
+        {
+            "relation": "snet:hasBreakerConnections", 
+            "source": "north-haverbrook-network:OvercurrentRelay_7", 
+            "target": "north-haverbrook-yard:NorthHaverbrook$BRK$1112"
+        }, 
+        {
+            "relation": "syard:hasLine", 
+            "source": "north-haverbrook-yard:NorthHaverbrook$BRK$1112", 
+            "target": "north-haverbrook-yard:NorthHaverbrook$ND$11"
+        }, 
+        {
+            "relation": "syard:hasLine", 
+            "source": "north-haverbrook-yard:NorthHaverbrook$ND$12", 
+            "target": "north-haverbrook-yard:NorthHaverbrook$BRK$1112"
+        }, 
+        {
+            "relation": "snet:hasBreakerConnections", 
+            "source": "north-haverbrook-network:DistanceRelay_3", 
+            "target": "north-haverbrook-yard:NorthHaverbrook$BRK$1112"
+        }, 
+        {
+            "relation": "snet:hasBreakerConnections", 
+            "source": "haverbrook-network:OvercurrentRelay_4", 
+            "target": "haverbrook-yard:Haverbrook$BRK$3735"
+        }, 
+        {
+            "relation": "snet:hasBreakerConnections", 
+            "source": "haverbrook-network:DistanceRelay_1", 
+            "target": "haverbrook-yard:Haverbrook$BRK$3735"
+        }, 
+        {
+            "relation": "cptlc:hasLink", 
+            "source": "north-haverbrook-network:OvercurrentRelay_3", 
+            "target": "north-haverbrook-network:OvercurrentRelay_4"
+        }, 
+        {
+            "relation": "snet:hasBreakerConnections", 
+            "source": "north-haverbrook-network:OvercurrentRelay_3", 
+            "target": "north-haverbrook-yard:NorthHaverbrook$BRK$913"
+        }, 
+        {
+            "relation": "snet:hasBreakerConnections", 
+            "source": "capital-city-network:OvercurrentRelay_2", 
+            "target": "capital-city-yard:CapitalCity$BRK$4647"
+        }, 
+        {
+            "relation": "cptlc:hasLink", 
+            "source": "capital-city-network:DistanceRelay_1", 
+            "target": "capital-city-network:OvercurrentRelay_2"
+        }, 
+        {
+            "relation": "cptlc:hasLink", 
+            "source": "north-haverbrook-network:OvercurrentRelay_5", 
+            "target": "north-haverbrook-network:OvercurrentRelay_6"
+        }, 
+        {
+            "relation": "snet:hasBreakerConnections", 
+            "source": "north-haverbrook-network:OvercurrentRelay_6", 
+            "target": "north-haverbrook-yard:NorthHaverbrook$BRK$1413"
+        }, 
+        {
+            "relation": "cptlc:hasLink", 
+            "source": "north-haverbrook-network:OvercurrentRelay_6", 
+            "target": "north-haverbrook-network:DistanceRelay_2"
+        }, 
+        {
+            "relation": "snet:hasBreakerConnections", 
+            "source": "north-haverbrook-network:DistanceRelay_1", 
+            "target": "north-haverbrook-yard:NorthHaverbrook$BRK$78"
+        }, 
+        {
+            "relation": "cptlc:hasLink", 
+            "source": "north-haverbrook-network:OvercurrentRelay_1", 
+            "target": "north-haverbrook-network:DistanceRelay_1"
+        }, 
+        {
+            "relation": "cptlc:hasLink", 
+            "source": "springfield-network:ReversePowerRelay_1", 
+            "target": "springfield-network:OvercurrentRelay_3"
+        }, 
+        {
+            "relation": "cptlc:hasLink", 
+            "source": "springfield-network:OvercurrentRelay_2", 
+            "target": "springfield-network:ReversePowerRelay_1"
+        }, 
+        {
+            "relation": "snet:hasBreakerConnections", 
+            "source": "springfield-network:ReversePowerRelay_1", 
+            "target": "springfield-yard:Springfield$BRK$4341"
+        }, 
+        {
+            "relation": "cptlc:hasLink", 
+            "source": "springfield-network:OvercurrentRelay_1", 
+            "target": "springfield-network:DistanceRelay_1"
+        }, 
+        {
+            "relation": "cptlc:hasLink", 
+            "source": "springfield-network:DistanceRelay_1", 
+            "target": "haverbrook-network:DistanceRelay_3"
+        }, 
+        {
+            "relation": "cptlc:hasLink", 
+            "source": "haverbrook-network:DistanceRelay_3", 
+            "target": "springfield-network:DistanceRelay_1"
+        }, 
+        {
+            "relation": "snet:hasBreakerConnections", 
+            "source": "springfield-network:DistanceRelay_1", 
+            "target": "springfield-yard:Springfield$BRK$4041"
+        }, 
+        {
+            "relation": "cptlc:hasLink", 
+            "source": "north-haverbrook-network:OvercurrentRelay_4", 
+            "target": "north-haverbrook-network:OvercurrentRelay_5"
+        }, 
+        {
+            "relation": "snet:hasBreakerConnections", 
+            "source": "north-haverbrook-network:OvercurrentRelay_4", 
+            "target": "north-haverbrook-yard:NorthHaverbrook$BRK$89"
+        }, 
+        {
+            "relation": "cptlc:hasLink", 
+            "source": "north-haverbrook-network:OvercurrentRelay_7", 
+            "target": "north-haverbrook-network:DistanceRelay_3"
+        }, 
+        {
+            "relation": "cptlc:hasLink", 
+            "source": "north-haverbrook-network:DistanceRelay_2", 
+            "target": "north-haverbrook-network:OvercurrentRelay_7"
+        }, 
+        {
+            "relation": "snet:hasBreakerConnections", 
+            "source": "north-haverbrook-network:OvercurrentRelay_5", 
+            "target": "north-haverbrook-yard:NorthHaverbrook$BRK$812"
+        }, 
+        {
+            "relation": "syard:hasLine", 
+            "source": "north-haverbrook-yard:NorthHaverbrook$ND$8", 
+            "target": "north-haverbrook-yard:NorthHaverbrook$BRK$89"
+        }, 
+        {
+            "relation": "syard:hasLine", 
+            "source": "north-haverbrook-yard:NorthHaverbrook$BRK$89", 
+            "target": "north-haverbrook-yard:NorthHaverbrook$ND$8"
+        }, 
+        {
+            "relation": "cptlc:hasLink", 
+            "source": "north-haverbrook-network:DistanceRelay_3", 
+            "target": "cypress-creek-network:SEL_421_3"
+        }, 
+        {
+            "relation": "cptlc:hasLink", 
+            "source": "cypress-creek-network:SEL_421_3", 
+            "target": "north-haverbrook-network:DistanceRelay_3"
+        }, 
+        {
+            "relation": "snet:hasBreakerConnections", 
+            "source": "odgenville-network:SEL_451_1", 
+            "target": "odgenville-yard:Ogdenville$BRK$14"
+        }, 
+        {
+            "relation": "cptlc:hasLink", 
+            "source": "odgenville-network:SEL_3620", 
+            "target": "odgenville-network:SEL_451_1"
+        }, 
+        {
+            "relation": "cptlc:hasLink", 
+            "source": "paris-network:SEL_3620", 
+            "target": "paris-network:SEL_451_4"
+        }, 
+        {
+            "relation": "snet:hasBreakerConnections", 
+            "source": "paris-network:SEL_451_4", 
+            "target": "paris-yard:Paris$BRK$5051"
+        }, 
+        {
+            "relation": "snet:hasBreakerConnections", 
+            "source": "odgenville-network:SEL_451_1", 
+            "target": "odgenville-yard:Ogdenville$BRK$12"
+        }, 
+        {
+            "relation": "snet:hasBreakerConnections", 
+            "source": "odgenville-network:SEL_451_2", 
+            "target": "odgenville-yard:Ogdenville$BRK$34"
+        }, 
+        {
+            "relation": "syard:hasLine", 
+            "source": "odgenville-yard:Ogdenville$BRK$34", 
+            "target": "odgenville-yard:Ogdenville$ND$3"
+        }, 
+        {
+            "relation": "cptlc:hasLink", 
+            "source": "paris-network:SEL_3620", 
+            "target": "paris-network:SEL_451_1"
+        }, 
+        {
+            "relation": "snet:hasBreakerConnections", 
+            "source": "paris-network:SEL_451_1", 
+            "target": "paris-yard:Paris$BRK$5052"
+        }, 
+        {
+            "relation": "syard:hasLine", 
+            "source": "odgenville-yard:Ogdenville$ND$4", 
+            "target": "odgenville-yard:Ogdenville$BRK$34"
+        }, 
+        {
+            "relation": "snet:hasBreakerConnections", 
+            "source": "haverbrook-network:OvercurrentRelay_2", 
+            "target": "haverbrook-yard:Haverbrook$BRK$3435"
+        }, 
+        {
+            "relation": "cptlc:hasLink", 
+            "source": "haverbrook-network:OvercurrentRelay_2", 
+            "target": "haverbrook-network:DistanceRelay_2"
+        }, 
+        {
+            "relation": "cptlc:hasLink", 
+            "source": "haverbrook-network:DistanceRelay_2", 
+            "target": "haverbrook-network:OvercurrentRelay_3"
+        }, 
+        {
+            "relation": "snet:hasBreakerConnections", 
+            "source": "haverbrook-network:OvercurrentRelay_3", 
+            "target": "haverbrook-yard:Haverbrook$BRK$3635"
+        }, 
+        {
+            "relation": "cptlc:hasLink", 
+            "source": "haverbrook-network:Switch_1", 
+            "target": "haverbrook-network:OvercurrentRelay_1"
+        }, 
+        {
+            "relation": "cptlc:hasLink", 
+            "source": "haverbrook-network:OvercurrentRelay_1", 
+            "target": "haverbrook-network:OvercurrentRelay_4"
+        }, 
+        {
+            "relation": "snet:hasBreakerConnections", 
+            "source": "haverbrook-network:OvercurrentRelay_1", 
+            "target": "haverbrook-yard:Haverbrook$BRK$3335"
+        }, 
+        {
+            "relation": "snet:hasBreakerConnections", 
+            "source": "springfield-network:OvercurrentRelay_4", 
+            "target": "springfield-yard:Springfield$BRK$4441"
+        }, 
+        {
+            "relation": "syard:hasLine", 
+            "source": "springfield-yard:Springfield$BRK$4441", 
+            "target": "springfield-yard:Springfield$ND$44"
+        }, 
+        {
+            "relation": "syard:hasLine", 
+            "source": "springfield-yard:Springfield$ND$41", 
+            "target": "springfield-yard:Springfield$BRK$4441"
+        }, 
+        {
+            "relation": "snet:hasBreakerConnections", 
+            "source": "paris-network:SEL_451_2", 
+            "target": "paris-yard:Paris$BRK$4950"
+        }, 
+        {
+            "relation": "cptlc:hasLink", 
+            "source": "haverbrook-network:DistanceRelay_3", 
+            "target": "haverbrook-network:OvercurrentRelay_4"
+        }, 
+        {
+            "relation": "cptlc:hasLink", 
+            "source": "haverbrook-network:OvercurrentRelay_4", 
+            "target": "haverbrook-network:OvercurrentRelay_5"
+        }, 
+        {
+            "relation": "snet:hasBreakerConnections", 
+            "source": "cypress-creek-network:SEL_451_5", 
+            "target": "cypress-creek-yard:CyprusCreek$BRK$2125"
+        }, 
+        {
+            "relation": "snet:hasBreakerConnections", 
+            "source": "cypress-creek-network:SEL_451_5", 
+            "target": "cypress-creek-yard:CyprusCreek$BRK$2225"
+        }, 
+        {
+            "relation": "cptlc:hasLink", 
+            "source": "cypress-creek-network:SEL_3620", 
+            "target": "cypress-creek-network:SEL_451_5"
+        }, 
+        {
+            "relation": "cptlc:hasLink", 
+            "source": "haverbrook-network:OvercurrentRelay_5", 
+            "target": "haverbrook-network:DistanceRelay_3"
+        }, 
+        {
+            "relation": "snet:hasBreakerConnections", 
+            "source": "haverbrook-network:OvercurrentRelay_5", 
+            "target": "haverbrook-yard:Haverbrook$BRK$3835"
+        }, 
+        {
+            "relation": "syard:hasLine", 
+            "source": "shelbyville-yard:Shelbyville$BRK$2729", 
+            "target": "shelbyville-yard:Shelbyville$ND$27"
+        }, 
+        {
+            "relation": "snet:hasBreakerConnections", 
+            "source": "cypress-creek-network:SEL_451_2", 
+            "target": "cypress-creek-yard:CyprusCreek$BRK$1815"
+        }, 
+        {
+            "relation": "snet:hasBreakerConnections", 
+            "source": "cypress-creek-network:SEL_451_2", 
+            "target": "cypress-creek-yard:CyprusCreek$BRK$1615"
+        }, 
+        {
+            "relation": "cptlc:hasLink", 
+            "source": "cypress-creek-network:SEL_3620", 
+            "target": "cypress-creek-network:SEL_451_2"
+        }, 
+        {
+            "relation": "snet:hasBreakerConnections", 
+            "source": "cypress-creek-network:SEL_451_2", 
+            "target": "cypress-creek-yard:CyprusCreek$BRK$1715"
+        }, 
+        {
+            "relation": "snet:hasBreakerConnections", 
+            "source": "cypress-creek-network:SEL_451_2", 
+            "target": "cypress-creek-yard:CyprusCreek$BRK$1519"
+        }, 
+        {
+            "relation": "snet:hasBreakerConnections", 
+            "source": "cypress-creek-network:SEL_451_3", 
+            "target": "cypress-creek-yard:CyprusCreek$BRK$1925"
+        }, 
+        {
+            "relation": "snet:hasBreakerConnections", 
+            "source": "cypress-creek-network:SEL_451_3", 
+            "target": "cypress-creek-yard:CyprusCreek$BRK$1719"
+        }, 
+        {
+            "relation": "snet:hasBreakerConnections", 
+            "source": "cypress-creek-network:SEL_451_3", 
+            "target": "cypress-creek-yard:CyprusCreek$BRK$2019"
+        }, 
+        {
+            "relation": "cptlc:hasLink", 
+            "source": "cypress-creek-network:SEL_3620", 
+            "target": "cypress-creek-network:SEL_451_3"
+        }, 
+        {
+            "relation": "snet:hasBreakerConnections", 
+            "source": "springfield-network:OvercurrentRelay_1", 
+            "target": "springfield-yard:Springfield$BRK$4041"
+        }, 
+        {
+            "relation": "cptlc:hasLink", 
+            "source": "springfield-network:Switch_1", 
+            "target": "springfield-network:OvercurrentRelay_1"
+        }, 
+        {
+            "relation": "cptlc:hasLink", 
+            "source": "springfield-network:OvercurrentRelay_3", 
+            "target": "springfield-network:OvercurrentRelay_4"
+        }, 
+        {
+            "relation": "snet:hasBreakerConnections", 
+            "source": "springfield-network:OvercurrentRelay_3", 
+            "target": "springfield-yard:Springfield$BRK$4341"
+        }, 
+        {
+            "relation": "snet:hasBreakerConnections", 
+            "source": "shelbyville-network:SEL_451_2", 
+            "target": "shelbyville-yard:Shelbyville$BRK$2928"
+        }, 
+        {
+            "relation": "cptlc:hasLink", 
+            "source": "shelbyville-network:SEL_3620", 
+            "target": "shelbyville-network:SEL_451_2"
+        }, 
+        {
+            "relation": "syard:hasLine", 
+            "source": "shelbyville-yard:Shelbyville$ND$26", 
+            "target": "north-haverbrook-yard:NorthHaverbrook$ND$14"
+        }, 
+        {
+            "relation": "syard:hasLine", 
+            "source": "north-haverbrook-yard:NorthHaverbrook$ND$14", 
+            "target": "shelbyville-yard:Shelbyville$ND$26"
+        }, 
+        {
+            "relation": "syard:hasLine", 
+            "source": "shelbyville-yard:Shelbyville$BRK$2629", 
+            "target": "shelbyville-yard:Shelbyville$ND$26"
+        }, 
+        {
+            "relation": "syard:hasLine", 
+            "source": "north-haverbrook-yard:NorthHaverbrook$BRK$1413", 
+            "target": "north-haverbrook-yard:NorthHaverbrook$ND$14"
+        }, 
+        {
+            "relation": "cptlc:hasLink", 
+            "source": "paris-network:SEL_3620", 
+            "target": "paris-network:SEL_421_1"
+        }, 
+        {
+            "relation": "cptlc:hasLink", 
+            "source": "paris-network:SEL_421_1", 
+            "target": "shelbyville-network:SEL_421_3"
+        }, 
+        {
+            "relation": "cptlc:hasLink", 
+            "source": "paris-network:SEL_3620", 
+            "target": "paris-network:SEL_421_3"
+        }, 
+        {
+            "relation": "syard:hasLine", 
+            "source": "shelbyville-yard:Shelbyville$ND$29", 
+            "target": "shelbyville-yard:Shelbyville$BRK$2928"
+        }, 
+        {
+            "relation": "syard:hasLine", 
+            "source": "shelbyville-yard:Shelbyville$ND$29", 
+            "target": "shelbyville-yard:Shelbyville$BRK$2629"
+        }, 
+        {
+            "relation": "syard:hasLine", 
+            "source": "shelbyville-yard:Shelbyville$ND$29", 
+            "target": "shelbyville-yard:Shelbyville$BRK$2729"
+        }, 
+        {
+            "relation": "cptlc:hasLink", 
+            "source": "paris-network:SEL_421_3", 
+            "target": "springfield-network:DistanceRelay_2"
+        }, 
+        {
+            "relation": "syard:hasLine", 
+            "source": "shelbyville-yard:Shelbyville$ND$28", 
+            "target": "cypress-creek-yard:CyprusCreek$ND$22"
+        }, 
+        {
+            "relation": "syard:hasLine", 
+            "source": "cypress-creek-yard:CyprusCreek$ND$22", 
+            "target": "shelbyville-yard:Shelbyville$ND$28"
+        }, 
+        {
+            "relation": "syard:hasLine", 
+            "source": "shelbyville-yard:Shelbyville$BRK$2928", 
+            "target": "shelbyville-yard:Shelbyville$ND$28"
+        }, 
+        {
+            "relation": "syard:hasLine", 
+            "source": "north-haverbrook-yard:NorthHaverbrook$BRK$910", 
+            "target": "north-haverbrook-yard:NorthHaverbrook$ND$10"
+        }, 
+        {
+            "relation": "syard:hasLine", 
+            "source": "north-haverbrook-yard:NorthHaverbrook$ND$12", 
+            "target": "north-haverbrook-yard:NorthHaverbrook$BRK$1213"
+        }, 
+        {
+            "relation": "syard:hasLine", 
+            "source": "north-haverbrook-yard:NorthHaverbrook$BRK$1213", 
+            "target": "north-haverbrook-yard:NorthHaverbrook$ND$13"
+        }, 
+        {
+            "relation": "snet:hasBreakerConnections", 
+            "source": "springfield-network:OvercurrentRelay_2", 
+            "target": "springfield-yard:Springfield$BRK$4142"
+        }, 
+        {
+            "relation": "syard:hasLine", 
+            "source": "cypress-creek-yard:CyprusCreek$ND$21", 
+            "target": "north-haverbrook-yard:NorthHaverbrook$ND$11"
+        }, 
+        {
+            "relation": "syard:hasLine", 
+            "source": "north-haverbrook-yard:NorthHaverbrook$ND$11", 
+            "target": "cypress-creek-yard:CyprusCreek$ND$21"
+        }, 
+        {
+            "relation": "snet:hasBreakerConnections", 
+            "source": "springfield-network:OvercurrentRelay_5", 
+            "target": "springfield-yard:Springfield$BRK$3941"
+        }, 
+        {
+            "relation": "syard:hasLine", 
+            "source": "paris-yard:Paris$ND$49", 
+            "target": "paris-yard:Paris$BRK$4950"
+        }, 
+        {
+            "relation": "syard:hasLine", 
+            "source": "paris-yard:Paris$BRK$4950", 
+            "target": "paris-yard:Paris$ND$50"
+        }, 
+        {
+            "relation": "syard:hasLine", 
+            "source": "springfield-yard:Springfield$ND$41", 
+            "target": "springfield-yard:Springfield$BRK$4142"
+        }, 
+        {
+            "relation": "syard:hasLine", 
+            "source": "springfield-yard:Springfield$ND$41", 
+            "target": "springfield-yard:Springfield$BRK$4041"
+        }, 
+        {
+            "relation": "syard:hasLine", 
+            "source": "springfield-yard:Springfield$BRK$4341", 
+            "target": "springfield-yard:Springfield$ND$41"
+        }, 
+        {
+            "relation": "syard:hasLine", 
+            "source": "springfield-yard:Springfield$ND$41", 
+            "target": "springfield-yard:Springfield$BRK$3941"
+        }, 
+        {
+            "relation": "syard:hasLine", 
+            "source": "springfield-yard:Springfield$BRK$4041", 
+            "target": "springfield-yard:Springfield$ND$40"
+        }, 
+        {
+            "relation": "syard:hasLine", 
+            "source": "springfield-yard:Springfield$ND$43", 
+            "target": "springfield-yard:Springfield$BRK$4341"
+        }, 
+        {
+            "relation": "syard:hasLine", 
+            "source": "north-haverbrook-yard:NorthHaverbrook$BRK$812", 
+            "target": "north-haverbrook-yard:NorthHaverbrook$ND$12"
+        }, 
+        {
+            "relation": "syard:hasLine", 
+            "source": "springfield-yard:Springfield$ND$42", 
+            "target": "paris-yard:Paris$ND$51"
+        }, 
+        {
+            "relation": "syard:hasLine", 
+            "source": "paris-yard:Paris$ND$51", 
+            "target": "springfield-yard:Springfield$ND$42"
+        }, 
+        {
+            "relation": "syard:hasLine", 
+            "source": "springfield-yard:Springfield$BRK$4142", 
+            "target": "springfield-yard:Springfield$ND$42"
+        }, 
+        {
+            "relation": "syard:hasLine", 
+            "source": "north-haverbrook-yard:NorthHaverbrook$ND$13", 
+            "target": "north-haverbrook-yard:NorthHaverbrook$BRK$1413"
+        }, 
+        {
+            "relation": "syard:hasLine", 
+            "source": "north-haverbrook-yard:NorthHaverbrook$ND$13", 
+            "target": "north-haverbrook-yard:NorthHaverbrook$BRK$913"
+        }, 
+        {
+            "relation": "syard:hasLine", 
+            "source": "odgenville-yard:Ogdenville-UN-Gen1", 
+            "target": "odgenville-yard:Ogdenville$ND$1"
+        }, 
+        {
+            "relation": "snet:hasBreakerConnections", 
+            "source": "shelbyville-network:SEL_451_5", 
+            "target": "shelbyville-yard:Shelbyville$BRK$2729"
+        }, 
+        {
+            "relation": "syard:hasLine", 
+            "source": "odgenville-yard:Ogdenville$ND$4", 
+            "target": "odgenville-yard:Ogdenville$BRK$14"
+        }, 
+        {
+            "relation": "syard:hasLine", 
+            "source": "odgenville-yard:Ogdenville$BRK$42", 
+            "target": "odgenville-yard:Ogdenville$ND$4"
+        }, 
+        {
+            "relation": "syard:hasLine", 
+            "source": "odgenville-yard:Ogdenville$ND$5", 
+            "target": "odgenville-yard:Ogdenville$BRK$56"
+        }, 
+        {
+            "relation": "syard:hasLine", 
+            "source": "odgenville-yard:Ogdenville$BRK$25", 
+            "target": "odgenville-yard:Ogdenville$ND$5"
+        }, 
+        {
+            "relation": "syard:hasLine", 
+            "source": "cypress-creek-yard:CyprusCreek$ND$17", 
+            "target": "odgenville-yard:Ogdenville$ND$6"
+        }, 
+        {
+            "relation": "syard:hasLine", 
+            "source": "odgenville-yard:Ogdenville$BRK$56", 
+            "target": "odgenville-yard:Ogdenville$ND$6"
+        }, 
+        {
+            "relation": "cptlc:hasLink", 
+            "source": "odgenville-network:SEL_421_1", 
+            "target": "cypress-creek-network:SEL_421_6"
+        }, 
+        {
+            "relation": "cptlc:hasLink", 
+            "source": "cypress-creek-network:SEL_421_6", 
+            "target": "odgenville-network:SEL_421_1"
+        }, 
+        {
+            "relation": "cptlc:hasLink", 
+            "source": "odgenville-network:SEL_3620", 
+            "target": "odgenville-network:SEL_421_1"
+        }, 
+        {
+            "relation": "syard:hasLine", 
+            "source": "odgenville-yard:Ogdenville$ND$1", 
+            "target": "odgenville-yard:Ogdenville$BRK$14"
+        }, 
+        {
+            "relation": "syard:hasLine", 
+            "source": "odgenville-yard:Ogdenville$ND$1", 
+            "target": "odgenville-yard:Ogdenville$BRK$12"
+        }, 
+        {
+            "relation": "syard:hasLine", 
+            "source": "springfield-yard:Springfield$BRK$3941", 
+            "target": "springfield-yard:Springfield$ND$39"
+        }, 
+        {
+            "relation": "syard:hasLine", 
+            "source": "odgenville-yard:Ogdenville$ND$3", 
+            "target": "odgenville-yard:Ogdenville$BRK$23"
+        }, 
+        {
+            "relation": "syard:hasLine", 
+            "source": "north-haverbrook-yard:NorthHaverbrook$ND$7", 
+            "target": "odgenville-yard:Ogdenville$ND$3"
+        }, 
+        {
+            "relation": "snet:hasBreakerConnections", 
+            "source": "haverbrook-network:DistanceRelay_3", 
+            "target": "haverbrook-yard:Haverbrook$BRK$3835"
+        }, 
+        {
+            "relation": "cptlc:hasLink", 
+            "source": "cypress-creek-network:SEL_3620", 
+            "target": "cypress-creek-network:SEL_421_4"
+        }, 
+        {
+            "relation": "cptlc:hasLink", 
+            "source": "cypress-creek-network:SEL_3620", 
+            "target": "cypress-creek-network:SEL_451_4"
+        }, 
+        {
+            "relation": "cptlc:hasLink", 
+            "source": "cypress-creek-network:SEL_3620", 
+            "target": "cypress-creek-network:SEL_421_5"
+        }, 
+        {
+            "relation": "cptlc:hasLink", 
+            "source": "cypress-creek-network:SEL_3620", 
+            "target": "cypress-creek-network:SEL_421_7"
+        }, 
+        {
+            "relation": "cptlc:hasLink", 
+            "source": "cypress-creek-network:SEL_3620", 
+            "target": "cypress-creek-network:SEL_421_6"
+        }, 
+        {
+            "relation": "cptlc:hasLink", 
+            "source": "cypress-creek-network:SEL_3620", 
+            "target": "cypress-creek-network:SEL_451_1"
+        }, 
+        {
+            "relation": "cptlc:hasLink", 
+            "source": "cypress-creek-network:SEL_3620", 
+            "target": "cypress-creek-network:SEL_421_3"
+        }, 
+        {
+            "relation": "cptlc:hasLink", 
+            "source": "cypress-creek-network:SEL_3620", 
+            "target": "cypress-creek-network:SEL_421_2"
+        }, 
+        {
+            "relation": "cptlc:hasLink", 
+            "source": "north-haverbrook-network:DistanceRelay_2", 
+            "target": "shelbyville-network:SEL_421_1"
+        }, 
+        {
+            "relation": "cptlc:hasLink", 
+            "source": "shelbyville-network:SEL_421_1", 
+            "target": "north-haverbrook-network:DistanceRelay_2"
+        }, 
+        {
+            "relation": "cptlc:hasLink", 
+            "source": "paris-network:SEL_3620", 
+            "target": "paris-network:SEL_451_3"
+        }, 
+        {
+            "relation": "snet:hasBreakerConnections", 
+            "source": "north-haverbrook-network:DistanceRelay_2", 
+            "target": "north-haverbrook-yard:NorthHaverbrook$BRK$1413"
+        }, 
+        {
+            "relation": "snet:hasBreakerConnections", 
+            "source": "paris-network:SEL_451_3", 
+            "target": "paris-yard:Paris$BRK$4850"
+        }, 
+        {
+            "relation": "cptlc:hasLink", 
+            "source": "odgenville-network:SEL_3620", 
+            "target": "odgenville-network:SEL_451_3"
+        }, 
+        {
+            "relation": "cptlc:hasLink", 
+            "source": "odgenville-network:SEL_3620", 
+            "target": "odgenville-network:SEL_451_2"
+        }, 
+        {
+            "relation": "syard:hasLine", 
+            "source": "capital-city-yard:CapitalCity$BRK$4647", 
+            "target": "capital-city-yard:CapitalCity$ND$47"
+        }, 
+        {
+            "relation": "syard:hasLine", 
+            "source": "capital-city-yard:CapitalCity$ND$46", 
+            "target": "capital-city-yard:CapitalCity$BRK$4647"
+        }, 
+        {
+            "relation": "cptlc:hasLink", 
+            "source": "north-haverbrook-network:Switch_1", 
+            "target": "north-haverbrook-network:OvercurrentRelay_1"
+        }, 
+        {
+            "relation": "syard:hasLine", 
+            "source": "cypress-creek-yard:CyprusCreek$BRK$2325", 
+            "target": "cypress-creek-yard:CyprusCreek$ND$23"
+        }, 
+        {
+            "relation": "syard:hasLine", 
+            "source": "north-haverbrook-yard:NorthHaverbrook$ND$7", 
+            "target": "north-haverbrook-yard:NorthHaverbrook$BRK$78"
+        }, 
+        {
+            "relation": "syard:hasLine", 
+            "source": "cypress-creek-yard:CyprusCreek$BRK$2225", 
+            "target": "cypress-creek-yard:CyprusCreek$ND$22"
+        }, 
+        {
+            "relation": "syard:hasLine", 
+            "source": "cypress-creek-yard:CyprusCreek$BRK$2125", 
+            "target": "cypress-creek-yard:CyprusCreek$ND$21"
+        }, 
+        {
+            "relation": "syard:hasLine", 
+            "source": "cypress-creek-yard:CyprusCreek$ND$20", 
+            "target": "cypress-creek-yard:CyprusCreek-UN-Gen2"
+        }, 
+        {
+            "relation": "syard:hasLine", 
+            "source": "cypress-creek-yard:CyprusCreek$BRK$2019", 
+            "target": "cypress-creek-yard:CyprusCreek$ND$20"
+        }, 
+        {
+            "relation": "cptlc:hasLink", 
+            "source": "paris-network:SEL_3620", 
+            "target": "paris-network:SEL_451_2"
+        }, 
+        {
+            "relation": "syard:hasLine", 
+            "source": "cypress-creek-yard:CyprusCreek$ND$25", 
+            "target": "cypress-creek-yard:CyprusCreek$BRK$2125"
+        }, 
+        {
+            "relation": "syard:hasLine", 
+            "source": "cypress-creek-yard:CyprusCreek$ND$25", 
+            "target": "cypress-creek-yard:CyprusCreek$BRK$2325"
+        }, 
+        {
+            "relation": "syard:hasLine", 
+            "source": "cypress-creek-yard:CyprusCreek$ND$25", 
+            "target": "cypress-creek-yard:CyprusCreek$BRK$2225"
+        }, 
+        {
+            "relation": "syard:hasLine", 
+            "source": "cypress-creek-yard:CyprusCreek$BRK$1925", 
+            "target": "cypress-creek-yard:CyprusCreek$ND$25"
+        }, 
+        {
+            "relation": "syard:hasLine", 
+            "source": "cypress-creek-yard:CyprusCreek$ND$25", 
+            "target": "cypress-creek-yard:CyprusCreek$BRK$2425"
+        }, 
+        {
+            "relation": "syard:hasLine", 
+            "source": "shelbyville-yard:Shelbyville$BRK$3132", 
+            "target": "shelbyville-yard:Shelbyville$ND$31"
+        }, 
+        {
+            "relation": "syard:hasLine", 
+            "source": "shelbyville-yard:Shelbyville$ND$32", 
+            "target": "shelbyville-yard:Shelbyville$BRK$3132"
+        }, 
+        {
+            "relation": "snet:hasBreakerConnections", 
+            "source": "shelbyville-network:SEL_451_3", 
+            "target": "shelbyville-yard:Shelbyville$BRK$3132"
+        }, 
+        {
+            "relation": "syard:hasLine", 
+            "source": "north-haverbrook-yard:NorthHaverbrook$ND$8", 
+            "target": "north-haverbrook-yard:NorthHaverbrook$BRK$812"
+        }, 
+        {
+            "relation": "syard:hasLine", 
+            "source": "north-haverbrook-yard:NorthHaverbrook$BRK$78", 
+            "target": "north-haverbrook-yard:NorthHaverbrook$ND$8"
+        }, 
+        {
+            "relation": "snet:hasBreakerConnections", 
+            "source": "cypress-creek-network:SEL_451_4", 
+            "target": "cypress-creek-yard:CyprusCreek$BRK$2325"
+        }, 
+        {
+            "relation": "cptlc:hasLink", 
+            "source": "haverbrook-network:DistanceRelay_2", 
+            "target": "cypress-creek-network:SEL_421_5"
+        }, 
+        {
+            "relation": "cptlc:hasLink", 
+            "source": "cypress-creek-network:SEL_421_5", 
+            "target": "haverbrook-network:DistanceRelay_2"
+        }, 
+        {
+            "relation": "cptlc:hasLink", 
+            "source": "shelbyville-network:SEL_421_2", 
+            "target": "cypress-creek-network:SEL_421_4"
+        }, 
+        {
+            "relation": "cptlc:hasLink", 
+            "source": "cypress-creek-network:SEL_421_4", 
+            "target": "shelbyville-network:SEL_421_2"
+        }, 
+        {
+            "relation": "cptlc:hasLink", 
+            "source": "capital-city-network:DistanceRelay_1", 
+            "target": "cypress-creek-network:SEL_421_7"
+        }, 
+        {
+            "relation": "cptlc:hasLink", 
+            "source": "cypress-creek-network:SEL_421_7", 
+            "target": "capital-city-network:DistanceRelay_1"
+        }, 
+        {
+            "relation": "snet:hasBreakerConnections", 
+            "source": "odgenville-network:SEL_451_2", 
+            "target": "odgenville-yard:Ogdenville$BRK$14"
+        }, 
+        {
+            "relation": "snet:hasBreakerConnections", 
+            "source": "odgenville-network:SEL_451_2", 
+            "target": "odgenville-yard:Ogdenville$BRK$23"
+        }, 
+        {
+            "relation": "snet:hasBreakerConnections", 
+            "source": "odgenville-network:SEL_451_2", 
+            "target": "odgenville-yard:Ogdenville$BRK$12"
+        }, 
+        {
+            "relation": "snet:hasBreakerConnections", 
+            "source": "odgenville-network:SEL_451_2", 
+            "target": "odgenville-yard:Ogdenville$BRK$42"
+        }, 
+        {
+            "relation": "syard:hasLine", 
+            "source": "paris-yard:Paris$ND$48", 
+            "target": "cypress-creek-yard:CyprusCreek$ND$24"
+        }, 
+        {
+            "relation": "syard:hasLine", 
+            "source": "cypress-creek-yard:CyprusCreek$ND$24", 
+            "target": "paris-yard:Paris$ND$48"
+        }, 
+        {
+            "relation": "syard:hasLine", 
+            "source": "shelbyville-yard:Shelbyville$ND$31", 
+            "target": "shelbyville-yard:Shelbyville$BRK$3031"
+        }, 
+        {
+            "relation": "syard:hasLine", 
+            "source": "shelbyville-yard:Shelbyville$BRK$3031", 
+            "target": "shelbyville-yard:Shelbyville$ND$30"
+        }, 
+        {
+            "relation": "snet:hasBreakerConnections", 
+            "source": "shelbyville-network:SEL_451_4", 
+            "target": "shelbyville-yard:Shelbyville$BRK$3031"
+        }, 
+        {
+            "relation": "syard:hasLine", 
+            "source": "cypress-creek-yard:CyprusCreek$BRK$2425", 
+            "target": "cypress-creek-yard:CyprusCreek$ND$24"
+        }, 
+        {
+            "relation": "snet:hasBreakerConnections", 
+            "source": "cypress-creek-network:SEL_451_1", 
+            "target": "cypress-creek-yard:CyprusCreek$BRK$2425"
+        }, 
+        {
+            "relation": "snet:hasBreakerConnections", 
+            "source": "odgenville-network:SEL_451_3", 
+            "target": "odgenville-yard:Ogdenville$BRK$56"
+        }, 
+        {
+            "relation": "syard:hasLine", 
+            "source": "cypress-creek-yard:CyprusCreek$BRK$1715", 
+            "target": "cypress-creek-yard:CyprusCreek$ND$17"
+        }, 
+        {
+            "relation": "syard:hasLine", 
+            "source": "cypress-creek-yard:CyprusCreek$ND$15", 
+            "target": "cypress-creek-yard:CyprusCreek$BRK$1715"
+        }, 
+        {
+            "relation": "syard:hasLine", 
+            "source": "capital-city-yard:CapitalCity$BRK$4546", 
+            "target": "capital-city-yard:CapitalCity$ND$46"
+        }, 
+        {
+            "relation": "snet:hasBreakerConnections", 
+            "source": "odgenville-network:SEL_451_3", 
+            "target": "odgenville-yard:Ogdenville$BRK$25"
+        }, 
+        {
+            "relation": "cptlc:hasLink", 
+            "source": "shelbyville-network:SEL_3620", 
+            "target": "shelbyville-network:SEL_451_1"
+        }, 
+        {
+            "relation": "cptlc:hasLink", 
+            "source": "shelbyville-network:SEL_3620", 
+            "target": "shelbyville-network:SEL_451_3"
+        }, 
+        {
+            "relation": "cptlc:hasLink", 
+            "source": "shelbyville-network:SEL_3620", 
+            "target": "shelbyville-network:SEL_421_1"
+        }, 
+        {
+            "relation": "cptlc:hasLink", 
+            "source": "shelbyville-network:SEL_3620", 
+            "target": "shelbyville-network:SEL_451_4"
+        }, 
+        {
+            "relation": "cptlc:hasLink", 
+            "source": "shelbyville-network:SEL_3620", 
+            "target": "shelbyville-network:SEL_451_6"
+        }, 
+        {
+            "relation": "cptlc:hasLink", 
+            "source": "shelbyville-network:SEL_3620", 
+            "target": "shelbyville-network:SEL_451_5"
+        }, 
+        {
+            "relation": "cptlc:hasLink", 
+            "source": "shelbyville-network:SEL_3620", 
+            "target": "shelbyville-network:SEL_421_2"
+        }, 
+        {
+            "relation": "syard:hasLine", 
+            "source": "cypress-creek-yard:CyprusCreek$ND$19", 
+            "target": "cypress-creek-yard:CyprusCreek$BRK$2019"
+        }, 
+        {
+            "relation": "syard:hasLine", 
+            "source": "cypress-creek-yard:CyprusCreek$ND$16", 
+            "target": "cypress-creek-yard:CyprusCreek$BRK$1615"
+        }, 
+        {
+            "relation": "syard:hasLine", 
+            "source": "cypress-creek-yard:CyprusCreek$BRK$1615", 
+            "target": "cypress-creek-yard:CyprusCreek$ND$15"
+        }, 
+        {
+            "relation": "syard:hasLine", 
+            "source": "capital-city-yard:CapitalCity$ND$45", 
+            "target": "capital-city-yard:CapitalCity$BRK$4546"
+        }, 
+        {
+            "relation": "syard:hasLine", 
+            "source": "capital-city-yard:CapitalCity$ND$45", 
+            "target": "cypress-creek-yard:CyprusCreek$TX$4545"
+        }, 
+        {
+            "relation": "snet:hasBreakerConnections", 
+            "source": "shelbyville-network:SEL_451_1", 
+            "target": "shelbyville-yard:Shelbyville$BRK$2629"
+        }, 
+        {
+            "relation": "syard:hasLine", 
+            "source": "cypress-creek-yard:CyprusCreek$ND$15", 
+            "target": "cypress-creek-yard:CyprusCreek$BRK$1815"
+        }, 
+        {
+            "relation": "syard:hasLine", 
+            "source": "cypress-creek-yard:CyprusCreek$BRK$1815", 
+            "target": "cypress-creek-yard:CyprusCreek$ND$18"
+        }, 
+        {
+            "relation": "syard:hasLine", 
+            "source": "shelbyville-yard:Shelbyville$ND$30", 
+            "target": "shelbyville-yard:Shelbyville-UN-Gen3"
+        }, 
+        {
+            "relation": "syard:hasLine", 
+            "source": "cypress-creek-yard:CyprusCreek$ND$15", 
+            "target": "cypress-creek-yard:CyprusCreek$BRK$1519"
+        }, 
+        {
+            "relation": "syard:hasLine", 
+            "source": "cypress-creek-yard:CyprusCreek$ND$19", 
+            "target": "cypress-creek-yard:CyprusCreek$BRK$1519"
+        }, 
+        {
+            "relation": "snet:hasBreakerConnections", 
+            "source": "north-haverbrook-network:OvercurrentRelay_1", 
+            "target": "north-haverbrook-yard:NorthHaverbrook$BRK$78"
+        }, 
+        {
+            "relation": "snet:hasBreakerConnections", 
+            "source": "capital-city-network:OvercurrentRelay_1", 
+            "target": "capital-city-yard:CapitalCity$BRK$4546"
+        }, 
+        {
+            "relation": "cptlc:hasLink", 
+            "source": "capital-city-network:OvercurrentRelay_1", 
+            "target": "capital-city-network:DistanceRelay_1"
+        }, 
+        {
+            "relation": "cptlc:hasLink", 
+            "source": "capital-city-network:Switch_1", 
+            "target": "capital-city-network:OvercurrentRelay_1"
+        }, 
+        {
+            "relation": "syard:hasLine", 
+            "source": "cypress-creek-yard:CyprusCreek$TX$4545", 
+            "target": "cypress-creek-yard:CyprusCreek$ND$16"
+        }, 
+        {
+            "relation": "syard:hasLine", 
+            "source": "cypress-creek-yard:CyprusCreek$ND$17", 
+            "target": "cypress-creek-yard:CyprusCreek$BRK$1719"
+        }, 
+        {
+            "relation": "snet:hasBreakerConnections", 
+            "source": "haverbrook-network:DistanceRelay_2", 
+            "target": "haverbrook-yard:Haverbrook$BRK$3635"
+        }, 
+        {
+            "relation": "syard:hasLine", 
+            "source": "cypress-creek-yard:CyprusCreek$BRK$1719", 
+            "target": "cypress-creek-yard:CyprusCreek$ND$19"
+        }, 
+        {
+            "relation": "snet:hasBreakerConnections", 
+            "source": "capital-city-network:DistanceRelay_1", 
+            "target": "capital-city-yard:CapitalCity$BRK$4546"
+        }
+    ], 
+    "multigraph": true, 
+    "nodes": [
+        {
+            "name": "springfield-yard:Springfield$BRK$3941", 
+            "rdfs:type": "syard:Breaker"
+        }, 
+        {
+            "name": "odgenville-yard:Ogdenville$BRK$62", 
+            "rdfs:type": "syard:Breaker"
+        }, 
+        {
+            "enet:hasIPValue": "10.33.1.102", 
+            "name": "north-haverbrook-network:OvercurrentRelay_2", 
+            "rdfs:type": "snet:OvercurrentRelay"
+        }, 
+        {
+            "enet:hasIPValue": "10.33.1.103", 
+            "name": "north-haverbrook-network:OvercurrentRelay_3", 
+            "rdfs:type": "snet:OvercurrentRelay"
+        }, 
+        {
+            "enet:hasIPValue": "10.33.1.101", 
+            "name": "north-haverbrook-network:OvercurrentRelay_1", 
+            "rdfs:type": "snet:OvercurrentRelay"
+        }, 
+        {
+            "enet:hasIPValue": "10.33.1.106", 
+            "name": "north-haverbrook-network:OvercurrentRelay_6", 
+            "rdfs:type": "snet:OvercurrentRelay"
+        }, 
+        {
+            "enet:hasIPValue": "10.33.1.107", 
+            "name": "north-haverbrook-network:OvercurrentRelay_7", 
+            "rdfs:type": "snet:OvercurrentRelay"
+        }, 
+        {
+            "enet:hasIPValue": "10.33.1.104", 
+            "name": "north-haverbrook-network:OvercurrentRelay_4", 
+            "rdfs:type": "snet:OvercurrentRelay"
+        }, 
+        {
+            "enet:hasIPValue": "10.33.1.105", 
+            "name": "north-haverbrook-network:OvercurrentRelay_5", 
+            "rdfs:type": "snet:OvercurrentRelay"
+        }, 
+        {
+            "enet:hasIPValue": "10.36.1.101", 
+            "name": "shelbyville-network:SEL_451_1", 
+            "rdfs:type": "snet:OvercurrentRelay"
+        }, 
+        {
+            "name": "shelbyville-yard:Shelbyville$ND$27", 
+            "rdfs:type": "syard:Node"
+        }, 
+        {
+            "name": "shelbyville-yard:Shelbyville$ND$26", 
+            "rdfs:type": "syard:Node"
+        }, 
+        {
+            "name": "shelbyville-yard:Shelbyville$ND$29", 
+            "rdfs:type": "syard:Bus"
+        }, 
+        {
+            "name": "shelbyville-yard:Shelbyville$ND$28", 
+            "rdfs:type": "syard:Node"
+        }, 
+        {
+            "name": "paris-yard:Paris$ND$52", 
+            "rdfs:type": "syard:Node"
+        }, 
+        {
+            "name": "paris-yard:Paris$ND$50", 
+            "rdfs:type": "syard:Bus"
+        }, 
+        {
+            "name": "paris-yard:Paris$ND$51", 
+            "rdfs:type": "syard:Node"
+        }, 
+        {
+            "name": "north-haverbrook-yard:NorthHaverbrook$ND$7", 
+            "rdfs:type": "syard:Node"
+        }, 
+        {
+            "enet:hasIPValue": "192.168.3.200", 
+            "name": "north-haverbrook-network:Switch_1", 
+            "rdfs:type": "snet:Switch"
+        }, 
+        {
+            "name": "shelbyville-yard:Shelbyville$BRK$3132", 
+            "rdfs:type": "syard:Breaker"
+        }, 
+        {
+            "name": "north-haverbrook-yard:NorthHaverbrook$ND$8", 
+            "rdfs:type": "syard:Bus"
+        }, 
+        {
+            "enet:hasIPValue": "10.31.1.205", 
+            "name": "cypress-creek-network:SEL_421_5", 
+            "rdfs:type": "snet:DistanceRelay"
+        }, 
+        {
+            "enet:hasIPValue": "10.31.1.204", 
+            "name": "cypress-creek-network:SEL_421_4", 
+            "rdfs:type": "snet:DistanceRelay"
+        }, 
+        {
+            "enet:hasIPValue": "10.31.1.207", 
+            "name": "cypress-creek-network:SEL_421_7", 
+            "rdfs:type": "snet:DistanceRelay"
+        }, 
+        {
+            "enet:hasIPValue": "10.31.1.206", 
+            "name": "cypress-creek-network:SEL_421_6", 
+            "rdfs:type": "snet:DistanceRelay"
+        }, 
+        {
+            "name": "cypress-creek-network:SEL_421_1", 
+            "rdfs:type": "snet:DistanceRelay"
+        }, 
+        {
+            "enet:hasIPValue": "10.31.1.203", 
+            "name": "cypress-creek-network:SEL_421_3", 
+            "rdfs:type": "snet:DistanceRelay"
+        }, 
+        {
+            "enet:hasIPValue": "10.31.1.202", 
+            "name": "cypress-creek-network:SEL_421_2", 
+            "rdfs:type": "snet:DistanceRelay"
+        }, 
+        {
+            "enet:hasIPValue": "10.35.1.202", 
+            "name": "paris-network:SEL_421_2", 
+            "rdfs:type": "snet:DistanceRelay"
+        }, 
+        {
+            "enet:hasIPValue": "10.35.1.203", 
+            "name": "paris-network:SEL_421_3", 
+            "rdfs:type": "snet:DistanceRelay"
+        }, 
+        {
+            "enet:hasIPValue": "10.35.1.201", 
+            "name": "paris-network:SEL_421_1", 
+            "rdfs:type": "snet:DistanceRelay"
+        }, 
+        {
+            "name": "cypress-creek-yard:CyprusCreek-UN-Gen2", 
+            "rdfs:type": "cptlc:Asset"
+        }, 
+        {
+            "name": "odgenville-yard:Ogdenville$BRK$14", 
+            "rdfs:type": "syard:Breaker"
+        }, 
+        {
+            "name": "cypress-creek-yard:CyprusCreek$BRK$1615", 
+            "rdfs:type": "syard:Breaker"
+        }, 
+        {
+            "name": "springfield-yard:Springfield$ND$39", 
+            "rdfs:type": "syard:Node"
+        }, 
+        {
+            "enet:hasIPValue": "10.35.1.104", 
+            "name": "paris-network:SEL_451_4", 
+            "rdfs:type": "snet:OvercurrentRelay"
+        }, 
+        {
+            "enet:hasIPValue": "10.35.1.103", 
+            "name": "paris-network:SEL_451_3", 
+            "rdfs:type": "snet:OvercurrentRelay"
+        }, 
+        {
+            "enet:hasIPValue": "10.35.1.102", 
+            "name": "paris-network:SEL_451_2", 
+            "rdfs:type": "snet:OvercurrentRelay"
+        }, 
+        {
+            "enet:hasIPValue": "10.35.1.101", 
+            "name": "paris-network:SEL_451_1", 
+            "rdfs:type": "snet:OvercurrentRelay"
+        }, 
+        {
+            "enet:hasIPValue": "192.168.8.200", 
+            "name": "springfield-network:Switch_1", 
+            "rdfs:type": "snet:Switch"
+        }, 
+        {
+            "name": "haverbrook-yard:Haverbrook$BRK$3635", 
+            "rdfs:type": "syard:Breaker"
+        }, 
+        {
+            "name": "haverbrook-yard:Haverbrook$BRK$3335", 
+            "rdfs:type": "syard:Breaker"
+        }, 
+        {
+            "name": "cypress-creek-yard:CyprusCreek$TX$4545", 
+            "rdfs:type": "syard:Transformer"
+        }, 
+        {
+            "name": "capital-city-yard:CapitalCity$BRK$4546", 
+            "rdfs:type": "syard:Breaker"
+        }, 
+        {
+            "name": "north-haverbrook-yard:NorthHaverbrook$BRK$1213", 
+            "rdfs:type": "syard:Breaker"
+        }, 
+        {
+            "name": "north-haverbrook-yard:NorthHaverbrook$ND$59", 
+            "rdfs:type": "syard:Bus"
+        }, 
+        {
+            "name": "springfield-yard:Springfield-UN-Gen5", 
+            "rdfs:type": "syard:Generator"
+        }, 
+        {
+            "name": "haverbrook-yard:Haverbrook$BRK$3735", 
+            "rdfs:type": "syard:Breaker"
+        }, 
+        {
+            "name": "odgenville-yard:Ogdenville$BRK$34", 
+            "rdfs:type": "syard:Breaker"
+        }, 
+        {
+            "enet:hasIPValue": "10.31.1.104", 
+            "name": "cypress-creek-network:SEL_451_4", 
+            "rdfs:type": "snet:OvercurrentRelay"
+        }, 
+        {
+            "enet:hasIPValue": "10.31.1.105", 
+            "name": "cypress-creek-network:SEL_451_5", 
+            "rdfs:type": "snet:OvercurrentRelay"
+        }, 
+        {
+            "enet:hasIPValue": "10.31.1.101", 
+            "name": "cypress-creek-network:SEL_451_1", 
+            "rdfs:type": "snet:OvercurrentRelay"
+        }, 
+        {
+            "enet:hasIPValue": "10.31.1.102", 
+            "name": "cypress-creek-network:SEL_451_2", 
+            "rdfs:type": "snet:OvercurrentRelay"
+        }, 
+        {
+            "enet:hasIPValue": "10.31.1.103", 
+            "name": "cypress-creek-network:SEL_451_3", 
+            "rdfs:type": "snet:OvercurrentRelay"
+        }, 
+        {
+            "enet:hasIPValue": "10.38.1.101", 
+            "name": "springfield-network:OvercurrentRelay_1", 
+            "rdfs:type": "snet:OvercurrentRelay"
+        }, 
+        {
+            "enet:hasIPValue": "10.38.1.103", 
+            "name": "springfield-network:OvercurrentRelay_3", 
+            "rdfs:type": "snet:OvercurrentRelay"
+        }, 
+        {
+            "enet:hasIPValue": "10.38.1.102", 
+            "name": "springfield-network:OvercurrentRelay_2", 
+            "rdfs:type": "snet:OvercurrentRelay"
+        }, 
+        {
+            "enet:hasIPValue": "10.38.1.105", 
+            "name": "springfield-network:OvercurrentRelay_5", 
+            "rdfs:type": "snet:OvercurrentRelay"
+        }, 
+        {
+            "enet:hasIPValue": "10.38.1.104", 
+            "name": "springfield-network:OvercurrentRelay_4", 
+            "rdfs:type": "snet:OvercurrentRelay"
+        }, 
+        {
+            "name": "springfield-yard:Springfield$ND$41", 
+            "rdfs:type": "syard:Bus"
+        }, 
+        {
+            "name": "springfield-yard:Springfield$ND$40", 
+            "rdfs:type": "syard:Node"
+        }, 
+        {
+            "name": "springfield-yard:Springfield$ND$43", 
+            "rdfs:type": "syard:Node"
+        }, 
+        {
+            "name": "springfield-yard:Springfield$ND$42", 
+            "rdfs:type": "syard:Node"
+        }, 
+        {
+            "name": "springfield-yard:Springfield$ND$44", 
+            "rdfs:type": "syard:Node"
+        }, 
+        {
+            "name": "haverbrook-yard:Haverbrook$BRK$3835", 
+            "rdfs:type": "syard:Breaker"
+        }, 
+        {
+            "name": "capital-city-yard:CapitalCity$BRK$4647", 
+            "rdfs:type": "syard:Breaker"
+        }, 
+        {
+            "name": "cypress-creek-yard:CyprusCreek$ND$23", 
+            "rdfs:type": "syard:Node"
+        }, 
+        {
+            "name": "cypress-creek-yard:CyprusCreek$ND$22", 
+            "rdfs:type": "syard:Node"
+        }, 
+        {
+            "name": "cypress-creek-yard:CyprusCreek$ND$21", 
+            "rdfs:type": "syard:Node"
+        }, 
+        {
+            "name": "cypress-creek-yard:CyprusCreek$ND$20", 
+            "rdfs:type": "syard:Node"
+        }, 
+        {
+            "name": "cypress-creek-yard:CyprusCreek$ND$25", 
+            "rdfs:type": "syard:Bus"
+        }, 
+        {
+            "name": "cypress-creek-yard:CyprusCreek$ND$24", 
+            "rdfs:type": "syard:Node"
+        }, 
+        {
+            "name": "haverbrook-yard:Haverbrook$ND$35", 
+            "rdfs:type": "syard:Bus"
+        }, 
+        {
+            "name": "capital-city-yard:CapitalCity$ND$47", 
+            "rdfs:type": "syard:Node"
+        }, 
+        {
+            "name": "north-haverbrook-yard:NorthHaverbrook$BRK$913", 
+            "rdfs:type": "syard:Breaker"
+        }, 
+        {
+            "name": "north-haverbrook-yard:NorthHaverbrook$BRK$910", 
+            "rdfs:type": "syard:Breaker"
+        }, 
+        {
+            "name": "cypress-creek-yard:CyprusCreek$BRK$2425", 
+            "rdfs:type": "syard:Breaker"
+        }, 
+        {
+            "name": "shelbyville-yard:Shelbyville$BRK$2928", 
+            "rdfs:type": "syard:Breaker"
+        }, 
+        {
+            "name": "odgenville-yard:Ogdenville$BRK$56", 
+            "rdfs:type": "syard:Breaker"
+        }, 
+        {
+            "name": "capital-city-yard:CapitalCity$ND$46", 
+            "rdfs:type": "syard:Bus"
+        }, 
+        {
+            "name": "capital-city-yard:CapitalCity$ND$45", 
+            "rdfs:type": "syard:Node"
+        }, 
+        {
+            "name": "cypress-creek-yard:CyprusCreek$BRK$1815", 
+            "rdfs:type": "syard:Breaker"
+        }, 
+        {
+            "name": "shelbyville-yard:Shelbyville$ND$30", 
+            "rdfs:type": "syard:Node"
+        }, 
+        {
+            "name": "shelbyville-yard:Shelbyville$ND$31", 
+            "rdfs:type": "syard:Bus"
+        }, 
+        {
+            "name": "shelbyville-yard:Shelbyville$ND$32", 
+            "rdfs:type": "syard:Node"
+        }, 
+        {
+            "name": "springfield-yard:Springfield$BRK$4142", 
+            "rdfs:type": "syard:Breaker"
+        }, 
+        {
+            "name": "cypress-creek-yard:CyprusCreek$BRK$1925", 
+            "rdfs:type": "syard:Breaker"
+        }, 
+        {
+            "name": "cypress-creek-yard:CyprusCreek$BRK$2225", 
+            "rdfs:type": "syard:Breaker"
+        }, 
+        {
+            "name": "shelbyville-yard:Shelbyville$BRK$2931", 
+            "rdfs:type": "syard:Breaker"
+        }, 
+        {
+            "enet:hasIPValue": "192.168.5.200", 
+            "name": "paris-network:SEL_3620", 
+            "rdfs:type": "snet:Switch"
+        }, 
+        {
+            "name": "haverbrook-yard:Haverbrook-UN-Gen4", 
+            "rdfs:type": "syard:Generator"
+        }, 
+        {
+            "name": "north-haverbrook-yard:NorthHaverbrook$BRK$89", 
+            "rdfs:type": "syard:Breaker"
+        }, 
+        {
+            "name": "haverbrook-network:OvercurrentRelay_2", 
+            "rdfs:type": "snet:OvercurrentRelay"
+        }, 
+        {
+            "name": "haverbrook-network:OvercurrentRelay_3", 
+            "rdfs:type": "snet:OvercurrentRelay"
+        }, 
+        {
+            "name": "haverbrook-network:OvercurrentRelay_1", 
+            "rdfs:type": "snet:OvercurrentRelay"
+        }, 
+        {
+            "name": "haverbrook-network:OvercurrentRelay_4", 
+            "rdfs:type": "snet:OvercurrentRelay"
+        }, 
+        {
+            "name": "haverbrook-network:OvercurrentRelay_5", 
+            "rdfs:type": "snet:OvercurrentRelay"
+        }, 
+        {
+            "name": "north-haverbrook-yard:NorthHaverbrook$ND$14", 
+            "rdfs:type": "syard:Node"
+        }, 
+        {
+            "name": "north-haverbrook-yard:NorthHaverbrook$ND$10", 
+            "rdfs:type": "syard:Node"
+        }, 
+        {
+            "name": "north-haverbrook-yard:NorthHaverbrook$ND$11", 
+            "rdfs:type": "syard:Node"
+        }, 
+        {
+            "name": "north-haverbrook-yard:NorthHaverbrook$ND$12", 
+            "rdfs:type": "syard:Bus"
+        }, 
+        {
+            "name": "north-haverbrook-yard:NorthHaverbrook$ND$13", 
+            "rdfs:type": "syard:Bus"
+        }, 
+        {
+            "name": "shelbyville-yard:Shelbyville$BRK$2729", 
+            "rdfs:type": "syard:Breaker"
+        }, 
+        {
+            "enet:hasIPValue": "192.168.4.200", 
+            "name": "odgenville-network:SEL_3620", 
+            "rdfs:type": "snet:Switch"
+        }, 
+        {
+            "name": "cypress-creek-yard:CyprusCreek$BRK$2325", 
+            "rdfs:type": "syard:Breaker"
+        }, 
+        {
+            "name": "paris-yard:Paris$BRK$5052", 
+            "rdfs:type": "syard:Breaker"
+        }, 
+        {
+            "name": "paris-yard:Paris$BRK$5051", 
+            "rdfs:type": "syard:Breaker"
+        }, 
+        {
+            "enet:hasIPValue": "10.34.1.102", 
+            "name": "odgenville-network:SEL_451_2", 
+            "rdfs:type": "snet:OvercurrentRelay"
+        }, 
+        {
+            "name": "paris-yard:Paris$ND$48", 
+            "rdfs:type": "syard:Node"
+        }, 
+        {
+            "enet:hasIPValue": "10.34.1.101", 
+            "name": "odgenville-network:SEL_451_1", 
+            "rdfs:type": "snet:OvercurrentRelay"
+        }, 
+        {
+            "name": "cypress-creek-yard:CyprusCreek$BRK$2125", 
+            "rdfs:type": "syard:Breaker"
+        }, 
+        {
+            "name": "springfield-yard:Springfield$BRK$4041", 
+            "rdfs:type": "syard:Breaker"
+        }, 
+        {
+            "name": "north-haverbrook-yard:NorthHaverbrook$BRK$812", 
+            "rdfs:type": "syard:Breaker"
+        }, 
+        {
+            "name": "shelbyville-yard:Shelbyville$BRK$3031", 
+            "rdfs:type": "syard:Breaker"
+        }, 
+        {
+            "name": "cypress-creek-yard:CyprusCreek$BRK$2019", 
+            "rdfs:type": "syard:Breaker"
+        }, 
+        {
+            "enet:hasIPValue": "10.36.1.103", 
+            "name": "shelbyville-network:SEL_451_3", 
+            "rdfs:type": "snet:OvercurrentRelay"
+        }, 
+        {
+            "enet:hasIPValue": "10.36.1.102", 
+            "name": "shelbyville-network:SEL_451_2", 
+            "rdfs:type": "snet:OvercurrentRelay"
+        }, 
+        {
+            "name": "springfield-yard:Springfield$BRK$4441", 
+            "rdfs:type": "syard:Breaker"
+        }, 
+        {
+            "enet:hasIPValue": "10.36.1.106", 
+            "name": "shelbyville-network:SEL_451_6", 
+            "rdfs:type": "snet:OvercurrentRelay"
+        }, 
+        {
+            "enet:hasIPValue": "10.36.1.105", 
+            "name": "shelbyville-network:SEL_451_5", 
+            "rdfs:type": "snet:OvercurrentRelay"
+        }, 
+        {
+            "enet:hasIPValue": "10.36.1.104", 
+            "name": "shelbyville-network:SEL_451_4", 
+            "rdfs:type": "snet:OvercurrentRelay"
+        }, 
+        {
+            "enet:hasIPValue": "10.37.1.102", 
+            "name": "capital-city-network:OvercurrentRelay_2", 
+            "rdfs:type": "snet:OvercurrentRelay"
+        }, 
+        {
+            "enet:hasIPValue": "10.37.1.101", 
+            "name": "capital-city-network:OvercurrentRelay_1", 
+            "rdfs:type": "snet:OvercurrentRelay"
+        }, 
+        {
+            "name": "cypress-creek-yard:CyprusCreek$BRK$1519", 
+            "rdfs:type": "syard:Breaker"
+        }, 
+        {
+            "name": "odgenville-yard:Ogdenville$BRK$25", 
+            "rdfs:type": "syard:Breaker"
+        }, 
+        {
+            "name": "odgenville-yard:Ogdenville$BRK$23", 
+            "rdfs:type": "syard:Breaker"
+        }, 
+        {
+            "name": "capital-city-network:DistanceRelay_1", 
+            "rdfs:type": "snet:DistanceRelay"
+        }, 
+        {
+            "name": "haverbrook-network:ReversePowerRelay_1", 
+            "rdfs:type": "snet:ReversePowerRelay"
+        }, 
+        {
+            "name": "springfield-network:DistanceRelay_2", 
+            "rdfs:type": "snet:DistanceRelay"
+        }, 
+        {
+            "name": "haverbrook-yard:Haverbrook$ND$33", 
+            "rdfs:type": "syard:Node"
+        }, 
+        {
+            "name": "north-haverbrook-network:DistanceRelay_2", 
+            "rdfs:type": "snet:DistanceRelay"
+        }, 
+        {
+            "name": "haverbrook-yard:Haverbrook$ND$36", 
+            "rdfs:type": "syard:Node"
+        }, 
+        {
+            "name": "haverbrook-yard:Haverbrook$ND$37", 
+            "rdfs:type": "syard:Node"
+        }, 
+        {
+            "name": "haverbrook-yard:Haverbrook$ND$34", 
+            "rdfs:type": "syard:Node"
+        }, 
+        {
+            "name": "paris-yard:Paris$BRK$4950", 
+            "rdfs:type": "syard:Breaker"
+        }, 
+        {
+            "name": "haverbrook-yard:Haverbrook$ND$38", 
+            "rdfs:type": "syard:Node"
+        }, 
+        {
+            "name": "north-haverbrook-yard:NorthHaverbrook$BRK$1112", 
+            "rdfs:type": "syard:Breaker"
+        }, 
+        {
+            "name": "north-haverbrook-network:DistanceRelay_1", 
+            "rdfs:type": "snet:DistanceRelay"
+        }, 
+        {
+            "name": "springfield-network:DistanceRelay_1", 
+            "rdfs:type": "snet:DistanceRelay"
+        }, 
+        {
+            "name": "north-haverbrook-network:DistanceRelay_3", 
+            "rdfs:type": "snet:DistanceRelay"
+        }, 
+        {
+            "name": "springfield-network:DistanceRelay_3", 
+            "rdfs:type": "snet:DistanceRelay"
+        }, 
+        {
+            "enet:hasIPValue": "10.34.1.202", 
+            "name": "odgenville-network:SEL_421_2", 
+            "rdfs:type": "snet:DistanceRelay"
+        }, 
+        {
+            "name": "odgenville-network:SEL_421_1", 
+            "rdfs:type": "snet:DistanceRelay"
+        }, 
+        {
+            "name": "springfield-network:ReversePowerRelay_1", 
+            "rdfs:type": "snet:ReversePowerRelay"
+        }, 
+        {
+            "name": "paris-yard:Paris$ND$49", 
+            "rdfs:type": "syard:Node"
+        }, 
+        {
+            "name": "odgenville-yard:Ogdenville-UN-Gen1", 
+            "rdfs:type": "syard:Generator"
+        }, 
+        {
+            "enet:hasIPValue": "10.34.1.103", 
+            "name": "odgenville-network:SEL_451_3", 
+            "rdfs:type": "snet:OvercurrentRelay"
+        }, 
+        {
+            "name": "odgenville-yard:Ogdenville$ND$4", 
+            "rdfs:type": "syard:Bus"
+        }, 
+        {
+            "name": "odgenville-yard:Ogdenville$ND$5", 
+            "rdfs:type": "syard:Bus"
+        }, 
+        {
+            "name": "odgenville-yard:Ogdenville$ND$6", 
+            "rdfs:type": "syard:Node"
+        }, 
+        {
+            "name": "odgenville-yard:Ogdenville$ND$1", 
+            "rdfs:type": "syard:Node"
+        }, 
+        {
+            "name": "odgenville-yard:Ogdenville$ND$2", 
+            "rdfs:type": "syard:Bus"
+        }, 
+        {
+            "name": "odgenville-yard:Ogdenville$ND$3", 
+            "rdfs:type": "syard:Node"
+        }, 
+        {
+            "enet:hasIPValue": "192.168.1.200", 
+            "name": "cypress-creek-network:SEL_3620", 
+            "rdfs:type": "snet:Switch"
+        }, 
+        {
+            "name": "odgenville-yard:Ogdenville$BRK$42", 
+            "rdfs:type": "syard:Breaker"
+        }, 
+        {
+            "enet:hasIPValue": "192.168.2.200", 
+            "name": "haverbrook-network:Switch_1", 
+            "rdfs:type": "snet:Switch"
+        }, 
+        {
+            "name": "north-haverbrook-yard:NorthHaverbrook$BRK$78", 
+            "rdfs:type": "syard:Breaker"
+        }, 
+        {
+            "name": "paris-yard:Paris$BRK$4850", 
+            "rdfs:type": "syard:Breaker"
+        }, 
+        {
+            "name": "cypress-creek-yard:CyprusCreek$BRK$1719", 
+            "rdfs:type": "syard:Breaker"
+        }, 
+        {
+            "name": "cypress-creek-yard:CyprusCreek$BRK$1715", 
+            "rdfs:type": "syard:Breaker"
+        }, 
+        {
+            "enet:hasIPValue": "192.168.6.200", 
+            "name": "shelbyville-network:SEL_3620", 
+            "rdfs:type": "snet:Switch"
+        }, 
+        {
+            "name": "haverbrook-yard:Haverbrook$BRK$3435", 
+            "rdfs:type": "syard:Breaker"
+        }, 
+        {
+            "name": "shelbyville-yard:Shelbyville-UN-Gen3", 
+            "rdfs:type": "syard:Generator"
+        }, 
+        {
+            "name": "cypress-creek-yard:CyprusCreek$ND$16", 
+            "rdfs:type": "syard:Node"
+        }, 
+        {
+            "name": "cypress-creek-yard:CyprusCreek$ND$17", 
+            "rdfs:type": "syard:Node"
+        }, 
+        {
+            "name": "north-haverbrook-yard:NorthHaverbrook$BRK$1413", 
+            "rdfs:type": "syard:Breaker"
+        }, 
+        {
+            "name": "cypress-creek-yard:CyprusCreek$ND$15", 
+            "rdfs:type": "syard:Bus"
+        }, 
+        {
+            "enet:hasIPValue": "192.168.7.200", 
+            "name": "capital-city-network:Switch_1", 
+            "rdfs:type": "snet:Switch"
+        }, 
+        {
+            "name": "shelbyville-yard:Shelbyville$BRK$2629", 
+            "rdfs:type": "syard:Breaker"
+        }, 
+        {
+            "name": "cypress-creek-yard:CyprusCreek$ND$18", 
+            "rdfs:type": "syard:Node"
+        }, 
+        {
+            "name": "cypress-creek-yard:CyprusCreek$ND$19", 
+            "rdfs:type": "syard:Bus"
+        }, 
+        {
+            "name": "odgenville-yard:Ogdenville$BRK$12", 
+            "rdfs:type": "syard:Breaker"
+        }, 
+        {
+            "name": "shelbyville-network:SEL_421_2", 
+            "rdfs:type": "snet:DistanceRelay"
+        }, 
+        {
+            "name": "shelbyville-network:SEL_421_3", 
+            "rdfs:type": "snet:DistanceRelay"
+        }, 
+        {
+            "enet:hasIPValue": "10.36.1.201", 
+            "name": "shelbyville-network:SEL_421_1", 
+            "rdfs:type": "snet:DistanceRelay"
+        }, 
+        {
+            "enet:hasIPValue": "10.32.1.201", 
+            "name": "haverbrook-network:DistanceRelay_1", 
+            "rdfs:type": "snet:DistanceRelay"
+        }, 
+        {
+            "name": "haverbrook-network:DistanceRelay_3", 
+            "rdfs:type": "snet:DistanceRelay"
+        }, 
+        {
+            "name": "haverbrook-network:DistanceRelay_2", 
+            "rdfs:type": "snet:DistanceRelay"
+        }, 
+        {
+            "name": "springfield-yard:Springfield$BRK$4341", 
+            "rdfs:type": "syard:Breaker"
+        }
+    ]
+}

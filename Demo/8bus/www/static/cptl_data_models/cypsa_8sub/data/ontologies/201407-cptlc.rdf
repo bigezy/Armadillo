@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+ copyright (c) 2015, Gabriel A. Weaver, Information Trust Institute
+   at the University of Illinois, Urbana-Champaign.
+
+  This file is part of the Cyber-Physical Topology Language for
+    the Power domain.
+
+  This ontology is available under the Creative Commons 
+  Attribution-ShareAlike License.  Details about this license
+  are available at the following URL:
+
+  http://creativecommons.org/licenses/by-sa/3.0/legalcode  
+ -->
+<rdf:RDF
+    xmlns:cptlc="http://cptl-c.org/core/2014/07/core/"
+    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+    xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+    xmlns:owl="http://www.w3.org/2002/07/owl#"
+    xmlns:dc="http://purl.org/dc/elements/1.1/"
+    xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+    
+    <owl:Ontology rdf:about="http://cptl-c.org/core/2014/07/core">
+      <dc:title>The Core Cyber-Physical Topology Language (CPTL) Ontology</dc:title>
+      <dc:description>Basic concepts and relations within cyber-physical systems</dc:description>
+    </owl:Ontology>
+
+    <owl:Class rdf:about="http://cptl-c.org/core/2014/07/core/Asset">
+      <rdfs:label xml:lang="en">Asset</rdfs:label>
+      <rdfs:comment>A cyber or physical asset to be tracked within CPTL.  The
+	notion of asset is quite general and ranges from network devices to
+	software/hardware to buildings or rooms.</rdfs:comment>
+    </owl:Class>
+
+    <owl:Class rdf:about="http://cptl-c.org/core/2014/07/core/Path">
+      <rdfs:label xml:lang="en">Path</rdfs:label>
+      <rdfs:comment>A path specifies a location of some asset within a
+      system.</rdfs:comment>
+    </owl:Class>
+    
+    <owl:ObjectProperty rdf:about="http://cptl-c.org/core/2014/07/core/hasLink">
+      <rdfs:label xml:lang="en">Has Link</rdfs:label>
+      <rdfs:comment>Used to indicate a relation between two assets.</rdfs:comment>
+    </owl:ObjectProperty>
+
+</rdf:RDF>

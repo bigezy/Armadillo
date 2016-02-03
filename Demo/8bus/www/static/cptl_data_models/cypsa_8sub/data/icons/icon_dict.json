@@ -1,0 +1,15 @@
+{
+    "cptlc:Substation": "icons/img/substation.png",
+    "snet:DistanceRelay": "icons/img/substation_network/SEL/SEL-451.png",
+    "snet:OvercurrentRelay": "icons/img/substation_network/SEL/SEL-451.png",
+    "snet:SubstationNetwork": "icons/img/substation_network/substation_network.png",
+    "snet:Switch": "icons/img/substation_network/SEL/SEL-3620.png",
+    "syard:Breaker": "icons/img/substation_yard/breaker.png",
+    "syard:Bus": "icons/img/substation_yard/bus.png",
+    "syard:Generator":"icons/img/substation_yard/generator.png",
+    "syard:Node": "icons/img/substation_yard/node.png",
+    "syard:Transformer": "icons/img/substation_yard/transformer.png",
+    "syard:SubstationYard": "icons/img/substation_yard/substation_yard.png",
+    "enet:Network":"icons/img/enterprise_network/network.png",
+    "enet:hasIPAddressValue": "icons/img/enterprise_network/network_jack.png"
+}

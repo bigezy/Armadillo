@@ -1,0 +1,509 @@
+{
+    "children": [
+        {
+            "children": [
+                {
+                    "children": [
+                        {
+                            "children": [
+                                {
+                                    "name": "201", 
+                                    "path": "10.38.1.201", 
+                                    "rdfs:type": "enet:hasIPAddressValue"
+                                }, 
+                                {
+                                    "name": "203", 
+                                    "path": "10.38.1.203", 
+                                    "rdfs:type": "enet:hasIPAddressValue"
+                                }, 
+                                {
+                                    "name": "202", 
+                                    "path": "10.38.1.202", 
+                                    "rdfs:type": "enet:hasIPAddressValue"
+                                }, 
+                                {
+                                    "name": "102", 
+                                    "path": "10.38.1.102", 
+                                    "rdfs:type": "enet:hasIPAddressValue"
+                                }, 
+                                {
+                                    "name": "103", 
+                                    "path": "10.38.1.103", 
+                                    "rdfs:type": "enet:hasIPAddressValue"
+                                }, 
+                                {
+                                    "name": "101", 
+                                    "path": "10.38.1.101", 
+                                    "rdfs:type": "enet:hasIPAddressValue"
+                                }, 
+                                {
+                                    "name": "104", 
+                                    "path": "10.38.1.104", 
+                                    "rdfs:type": "enet:hasIPAddressValue"
+                                }, 
+                                {
+                                    "name": "105", 
+                                    "path": "10.38.1.105", 
+                                    "rdfs:type": "enet:hasIPAddressValue"
+                                }
+                            ], 
+                            "name": "1", 
+                            "path": "10.38.1", 
+                            "rdfs:type": "enet:Network"
+                        }
+                    ], 
+                    "name": "38", 
+                    "path": "10.38", 
+                    "rdfs:type": "enet:Network"
+                }, 
+                {
+                    "children": [
+                        {
+                            "children": [
+                                {
+                                    "name": "201", 
+                                    "path": "10.33.1.201", 
+                                    "rdfs:type": "enet:hasIPAddressValue"
+                                }, 
+                                {
+                                    "name": "203", 
+                                    "path": "10.33.1.203", 
+                                    "rdfs:type": "enet:hasIPAddressValue"
+                                }, 
+                                {
+                                    "name": "202", 
+                                    "path": "10.33.1.202", 
+                                    "rdfs:type": "enet:hasIPAddressValue"
+                                }, 
+                                {
+                                    "name": "102", 
+                                    "path": "10.33.1.102", 
+                                    "rdfs:type": "enet:hasIPAddressValue"
+                                }, 
+                                {
+                                    "name": "103", 
+                                    "path": "10.33.1.103", 
+                                    "rdfs:type": "enet:hasIPAddressValue"
+                                }, 
+                                {
+                                    "name": "101", 
+                                    "path": "10.33.1.101", 
+                                    "rdfs:type": "enet:hasIPAddressValue"
+                                }, 
+                                {
+                                    "name": "106", 
+                                    "path": "10.33.1.106", 
+                                    "rdfs:type": "enet:hasIPAddressValue"
+                                }, 
+                                {
+                                    "name": "107", 
+                                    "path": "10.33.1.107", 
+                                    "rdfs:type": "enet:hasIPAddressValue"
+                                }, 
+                                {
+                                    "name": "104", 
+                                    "path": "10.33.1.104", 
+                                    "rdfs:type": "enet:hasIPAddressValue"
+                                }, 
+                                {
+                                    "name": "105", 
+                                    "path": "10.33.1.105", 
+                                    "rdfs:type": "enet:hasIPAddressValue"
+                                }
+                            ], 
+                            "name": "1", 
+                            "path": "10.33.1", 
+                            "rdfs:type": "enet:Network"
+                        }
+                    ], 
+                    "name": "33", 
+                    "path": "10.33", 
+                    "rdfs:type": "enet:Network"
+                }, 
+                {
+                    "children": [
+                        {
+                            "children": [
+                                {
+                                    "name": "201", 
+                                    "path": "10.32.1.201", 
+                                    "rdfs:type": "enet:hasIPAddressValue"
+                                }
+                            ], 
+                            "name": "1", 
+                            "path": "10.32.1", 
+                            "rdfs:type": "enet:Network"
+                        }
+                    ], 
+                    "name": "32", 
+                    "path": "10.32", 
+                    "rdfs:type": "enet:Network"
+                }, 
+                {
+                    "children": [
+                        {
+                            "children": [
+                                {
+                                    "name": "201", 
+                                    "path": "10.31.1.201", 
+                                    "rdfs:type": "enet:hasIPAddressValue"
+                                }, 
+                                {
+                                    "name": "203", 
+                                    "path": "10.31.1.203", 
+                                    "rdfs:type": "enet:hasIPAddressValue"
+                                }, 
+                                {
+                                    "name": "202", 
+                                    "path": "10.31.1.202", 
+                                    "rdfs:type": "enet:hasIPAddressValue"
+                                }, 
+                                {
+                                    "name": "205", 
+                                    "path": "10.31.1.205", 
+                                    "rdfs:type": "enet:hasIPAddressValue"
+                                }, 
+                                {
+                                    "name": "204", 
+                                    "path": "10.31.1.204", 
+                                    "rdfs:type": "enet:hasIPAddressValue"
+                                }, 
+                                {
+                                    "name": "207", 
+                                    "path": "10.31.1.207", 
+                                    "rdfs:type": "enet:hasIPAddressValue"
+                                }, 
+                                {
+                                    "name": "206", 
+                                    "path": "10.31.1.206", 
+                                    "rdfs:type": "enet:hasIPAddressValue"
+                                }, 
+                                {
+                                    "name": "102", 
+                                    "path": "10.31.1.102", 
+                                    "rdfs:type": "enet:hasIPAddressValue"
+                                }, 
+                                {
+                                    "name": "103", 
+                                    "path": "10.31.1.103", 
+                                    "rdfs:type": "enet:hasIPAddressValue"
+                                }, 
+                                {
+                                    "name": "101", 
+                                    "path": "10.31.1.101", 
+                                    "rdfs:type": "enet:hasIPAddressValue"
+                                }, 
+                                {
+                                    "name": "104", 
+                                    "path": "10.31.1.104", 
+                                    "rdfs:type": "enet:hasIPAddressValue"
+                                }, 
+                                {
+                                    "name": "105", 
+                                    "path": "10.31.1.105", 
+                                    "rdfs:type": "enet:hasIPAddressValue"
+                                }
+                            ], 
+                            "name": "1", 
+                            "path": "10.31.1", 
+                            "rdfs:type": "enet:Network"
+                        }
+                    ], 
+                    "name": "31", 
+                    "path": "10.31", 
+                    "rdfs:type": "enet:Network"
+                }, 
+                {
+                    "children": [
+                        {
+                            "children": [
+                                {
+                                    "name": "201", 
+                                    "path": "10.37.1.201", 
+                                    "rdfs:type": "enet:hasIPAddressValue"
+                                }, 
+                                {
+                                    "name": "102", 
+                                    "path": "10.37.1.102", 
+                                    "rdfs:type": "enet:hasIPAddressValue"
+                                }, 
+                                {
+                                    "name": "101", 
+                                    "path": "10.37.1.101", 
+                                    "rdfs:type": "enet:hasIPAddressValue"
+                                }
+                            ], 
+                            "name": "1", 
+                            "path": "10.37.1", 
+                            "rdfs:type": "enet:Network"
+                        }
+                    ], 
+                    "name": "37", 
+                    "path": "10.37", 
+                    "rdfs:type": "enet:Network"
+                }, 
+                {
+                    "children": [
+                        {
+                            "children": [
+                                {
+                                    "name": "201", 
+                                    "path": "10.36.1.201", 
+                                    "rdfs:type": "enet:hasIPAddressValue"
+                                }, 
+                                {
+                                    "name": "203", 
+                                    "path": "10.36.1.203", 
+                                    "rdfs:type": "enet:hasIPAddressValue"
+                                }, 
+                                {
+                                    "name": "202", 
+                                    "path": "10.36.1.202", 
+                                    "rdfs:type": "enet:hasIPAddressValue"
+                                }, 
+                                {
+                                    "name": "102", 
+                                    "path": "10.36.1.102", 
+                                    "rdfs:type": "enet:hasIPAddressValue"
+                                }, 
+                                {
+                                    "name": "103", 
+                                    "path": "10.36.1.103", 
+                                    "rdfs:type": "enet:hasIPAddressValue"
+                                }, 
+                                {
+                                    "name": "101", 
+                                    "path": "10.36.1.101", 
+                                    "rdfs:type": "enet:hasIPAddressValue"
+                                }, 
+                                {
+                                    "name": "106", 
+                                    "path": "10.36.1.106", 
+                                    "rdfs:type": "enet:hasIPAddressValue"
+                                }, 
+                                {
+                                    "name": "104", 
+                                    "path": "10.36.1.104", 
+                                    "rdfs:type": "enet:hasIPAddressValue"
+                                }, 
+                                {
+                                    "name": "105", 
+                                    "path": "10.36.1.105", 
+                                    "rdfs:type": "enet:hasIPAddressValue"
+                                }
+                            ], 
+                            "name": "1", 
+                            "path": "10.36.1", 
+                            "rdfs:type": "enet:Network"
+                        }
+                    ], 
+                    "name": "36", 
+                    "path": "10.36", 
+                    "rdfs:type": "enet:Network"
+                }, 
+                {
+                    "children": [
+                        {
+                            "children": [
+                                {
+                                    "name": "201", 
+                                    "path": "10.35.1.201", 
+                                    "rdfs:type": "enet:hasIPAddressValue"
+                                }, 
+                                {
+                                    "name": "203", 
+                                    "path": "10.35.1.203", 
+                                    "rdfs:type": "enet:hasIPAddressValue"
+                                }, 
+                                {
+                                    "name": "202", 
+                                    "path": "10.35.1.202", 
+                                    "rdfs:type": "enet:hasIPAddressValue"
+                                }, 
+                                {
+                                    "name": "102", 
+                                    "path": "10.35.1.102", 
+                                    "rdfs:type": "enet:hasIPAddressValue"
+                                }, 
+                                {
+                                    "name": "103", 
+                                    "path": "10.35.1.103", 
+                                    "rdfs:type": "enet:hasIPAddressValue"
+                                }, 
+                                {
+                                    "name": "101", 
+                                    "path": "10.35.1.101", 
+                                    "rdfs:type": "enet:hasIPAddressValue"
+                                }, 
+                                {
+                                    "name": "104", 
+                                    "path": "10.35.1.104", 
+                                    "rdfs:type": "enet:hasIPAddressValue"
+                                }
+                            ], 
+                            "name": "1", 
+                            "path": "10.35.1", 
+                            "rdfs:type": "enet:Network"
+                        }
+                    ], 
+                    "name": "35", 
+                    "path": "10.35", 
+                    "rdfs:type": "enet:Network"
+                }, 
+                {
+                    "children": [
+                        {
+                            "children": [
+                                {
+                                    "name": "201", 
+                                    "path": "10.34.1.201", 
+                                    "rdfs:type": "enet:hasIPAddressValue"
+                                }, 
+                                {
+                                    "name": "102", 
+                                    "path": "10.34.1.102", 
+                                    "rdfs:type": "enet:hasIPAddressValue"
+                                }, 
+                                {
+                                    "name": "202", 
+                                    "path": "10.34.1.202", 
+                                    "rdfs:type": "enet:hasIPAddressValue"
+                                }, 
+                                {
+                                    "name": "101", 
+                                    "path": "10.34.1.101", 
+                                    "rdfs:type": "enet:hasIPAddressValue"
+                                }, 
+                                {
+                                    "name": "103", 
+                                    "path": "10.34.1.103", 
+                                    "rdfs:type": "enet:hasIPAddressValue"
+                                }
+                            ], 
+                            "name": "1", 
+                            "path": "10.34.1", 
+                            "rdfs:type": "enet:Network"
+                        }
+                    ], 
+                    "name": "34", 
+                    "path": "10.34", 
+                    "rdfs:type": "enet:Network"
+                }
+            ], 
+            "name": "10", 
+            "path": "10", 
+            "rdfs:type": "enet:Network"
+        }, 
+        {
+            "children": [
+                {
+                    "children": [
+                        {
+                            "children": [
+                                {
+                                    "name": "200", 
+                                    "path": "192.168.1.200", 
+                                    "rdfs:type": "enet:hasIPAddressValue"
+                                }
+                            ], 
+                            "name": "1", 
+                            "path": "192.168.1", 
+                            "rdfs:type": "enet:Network"
+                        }, 
+                        {
+                            "children": [
+                                {
+                                    "name": "200", 
+                                    "path": "192.168.3.200", 
+                                    "rdfs:type": "enet:hasIPAddressValue"
+                                }
+                            ], 
+                            "name": "3", 
+                            "path": "192.168.3", 
+                            "rdfs:type": "enet:Network"
+                        }, 
+                        {
+                            "children": [
+                                {
+                                    "name": "200", 
+                                    "path": "192.168.2.200", 
+                                    "rdfs:type": "enet:hasIPAddressValue"
+                                }
+                            ], 
+                            "name": "2", 
+                            "path": "192.168.2", 
+                            "rdfs:type": "enet:Network"
+                        }, 
+                        {
+                            "children": [
+                                {
+                                    "name": "200", 
+                                    "path": "192.168.5.200", 
+                                    "rdfs:type": "enet:hasIPAddressValue"
+                                }
+                            ], 
+                            "name": "5", 
+                            "path": "192.168.5", 
+                            "rdfs:type": "enet:Network"
+                        }, 
+                        {
+                            "children": [
+                                {
+                                    "name": "200", 
+                                    "path": "192.168.4.200", 
+                                    "rdfs:type": "enet:hasIPAddressValue"
+                                }
+                            ], 
+                            "name": "4", 
+                            "path": "192.168.4", 
+                            "rdfs:type": "enet:Network"
+                        }, 
+                        {
+                            "children": [
+                                {
+                                    "name": "200", 
+                                    "path": "192.168.7.200", 
+                                    "rdfs:type": "enet:hasIPAddressValue"
+                                }
+                            ], 
+                            "name": "7", 
+                            "path": "192.168.7", 
+                            "rdfs:type": "enet:Network"
+                        }, 
+                        {
+                            "children": [
+                                {
+                                    "name": "200", 
+                                    "path": "192.168.6.200", 
+                                    "rdfs:type": "enet:hasIPAddressValue"
+                                }
+                            ], 
+                            "name": "6", 
+                            "path": "192.168.6", 
+                            "rdfs:type": "enet:Network"
+                        }, 
+                        {
+                            "children": [
+                                {
+                                    "name": "200", 
+                                    "path": "192.168.8.200", 
+                                    "rdfs:type": "enet:hasIPAddressValue"
+                                }
+                            ], 
+                            "name": "8", 
+                            "path": "192.168.8", 
+                            "rdfs:type": "enet:Network"
+                        }
+                    ], 
+                    "name": "168", 
+                    "path": "192.168", 
+                    "rdfs:type": "enet:Network"
+                }
+            ], 
+            "name": "192", 
+            "path": "192", 
+            "rdfs:type": "enet:Network"
+        }
+    ], 
+    "name": "root"
+}

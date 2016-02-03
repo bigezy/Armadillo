@@ -1,0 +1,528 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<!DOCTYPE VCReport [
+<!ELEMENT VCReport ((NetCenter|HostCenter|NmapAnalysis)*, Endpoint*)>
+<!ATTLIST VCReport type CDATA #REQUIRED>
+<!ELEMENT NetCenter (Network,Intensity*)>
+<!ELEMENT HostCenter (Host,Intensity*)>
+<!ELEMENT Endpoint EMPTY>
+<!ATTLIST Endpoint IPAddress CDATA #REQUIRED>
+<!ATTLIST Endpoint depth CDATA #REQUIRED>
+<!ATTLIST Endpoint width CDATA #REQUIRED>
+<!ELEMENT Network EMPTY>
+<!ATTLIST Network netAddress CDATA #REQUIRED>
+<!ELEMENT Host EMPTY>
+<!ATTLIST Host IPAddress CDATA #REQUIRED>
+<!ELEMENT Intensity EMPTY>
+<!ATTLIST Intensity depth CDATA #REQUIRED>
+<!ATTLIST Intensity width CDATA #REQUIRED>
+<!ELEMENT Description (#PCDATA)>
+<!ELEMENT NmapAnalysis (Path*)>
+<!ATTLIST NmapAnalysis sourceNode CDATA #REQUIRED>
+<!ATTLIST NmapAnalysis sourceNodeId CDATA #REQUIRED>
+<!ATTLIST NmapAnalysis destinationNode CDATA #REQUIRED>
+<!ATTLIST NmapAnalysis destinationNodeId CDATA #REQUIRED>
+<!ATTLIST NmapAnalysis timeTaken CDATA #IMPLIED>
+<!ELEMENT Path (Node*)>
+<!ATTLIST Path attackNode CDATA #REQUIRED>
+<!ATTLIST Path nodeId CDATA #REQUIRED>
+<!ATTLIST Path cost CDATA #REQUIRED>
+<!ELEMENT Node EMPTY>
+<!ATTLIST Node IPAddress CDATA #REQUIRED>
+<!ATTLIST Node nodeId CDATA #REQUIRED>
+<!ATTLIST Node vulnID CDATA #REQUIRED>
+]>
+<VCReport type="vuln">
+    <NmapAnalysis sourceNode="70.32.128.22" sourceNodeId="4290" destinationNode="10.31.1.101" destinationNodeId="4398">
+        <Path attackNode="70.32.128.22" nodeId="4290" cost="17.1776">
+            <Node IPAddress="70.32.128.22" nodeId="4290" vulnID="None"/>
+            <Node IPAddress="10.31.1.250" nodeId="4382" vulnID="CVE-2013-4581"/>
+            <Node IPAddress="10.31.1.101" nodeId="4398" vulnID="CVE-2014-4749"/>
+        </Path>
+    </NmapAnalysis>
+    <NmapAnalysis sourceNode="70.32.128.22" sourceNodeId="4290" destinationNode="10.31.1.104" destinationNodeId="4404">
+        <Path attackNode="70.32.128.22" nodeId="4290" cost="18.5856">
+            <Node IPAddress="70.32.128.22" nodeId="4290" vulnID="None"/>
+            <Node IPAddress="10.31.1.250" nodeId="4382" vulnID="CVE-2013-4581"/>
+            <Node IPAddress="10.31.1.104" nodeId="4404" vulnID="CVE-2014-2198"/>
+        </Path>
+    </NmapAnalysis>
+    <NmapAnalysis sourceNode="70.32.128.22" sourceNodeId="4290" destinationNode="10.31.1.105" destinationNodeId="4406">
+        <Path attackNode="70.32.128.22" nodeId="4290" cost="18.5856">
+            <Node IPAddress="70.32.128.22" nodeId="4290" vulnID="None"/>
+            <Node IPAddress="10.31.1.250" nodeId="4382" vulnID="CVE-2013-4581"/>
+            <Node IPAddress="10.31.1.105" nodeId="4406" vulnID="CVE-2014-6603"/>
+        </Path>
+    </NmapAnalysis>
+    <NmapAnalysis sourceNode="70.32.128.22" sourceNodeId="4290" destinationNode="10.31.1.102" destinationNodeId="4400">
+        <Path attackNode="70.32.128.22" nodeId="4290" cost="16.5408">
+            <Node IPAddress="70.32.128.22" nodeId="4290" vulnID="None"/>
+            <Node IPAddress="10.31.1.250" nodeId="4382" vulnID="CVE-2013-4581"/>
+            <Node IPAddress="10.31.1.102" nodeId="4400" vulnID="CVE-2013-4490"/>
+        </Path>
+    </NmapAnalysis>
+    <NmapAnalysis sourceNode="70.32.128.22" sourceNodeId="4290" destinationNode="10.31.1.103" destinationNodeId="4402">
+        <Path attackNode="70.32.128.22" nodeId="4290" cost="18.5856">
+            <Node IPAddress="70.32.128.22" nodeId="4290" vulnID="None"/>
+            <Node IPAddress="10.31.1.250" nodeId="4382" vulnID="CVE-2013-4581"/>
+            <Node IPAddress="10.31.1.103" nodeId="4402" vulnID="CVE-2015-0667"/>
+        </Path>
+    </NmapAnalysis>
+    <NmapAnalysis sourceNode="10.31.1.250" sourceNodeId="4382" destinationNode="10.31.1.104" destinationNodeId="4404">
+        <Path attackNode="10.31.1.250" nodeId="4382" cost="9.9968">
+            <Node IPAddress="10.31.1.250" nodeId="4382" vulnID="CVE-2015-0924"/>
+            <Node IPAddress="10.31.1.104" nodeId="4404" vulnID="CVE-2014-2198"/>
+        </Path>
+    </NmapAnalysis>
+    <NmapAnalysis sourceNode="10.31.1.250" sourceNodeId="4382" destinationNode="10.31.1.101" destinationNodeId="4398">
+        <Path attackNode="10.31.1.250" nodeId="4382" cost="8.5888">
+            <Node IPAddress="10.31.1.250" nodeId="4382" vulnID="CVE-2015-0924"/>
+            <Node IPAddress="10.31.1.101" nodeId="4398" vulnID="CVE-2014-4749"/>
+        </Path>
+    </NmapAnalysis>
+    <NmapAnalysis sourceNode="10.31.1.250" sourceNodeId="4382" destinationNode="10.31.1.105" destinationNodeId="4406">
+        <Path attackNode="10.31.1.250" nodeId="4382" cost="9.9968">
+            <Node IPAddress="10.31.1.250" nodeId="4382" vulnID="CVE-2015-0924"/>
+            <Node IPAddress="10.31.1.105" nodeId="4406" vulnID="CVE-2014-6603"/>
+        </Path>
+    </NmapAnalysis>
+    <NmapAnalysis sourceNode="10.31.1.250" sourceNodeId="4382" destinationNode="10.31.1.102" destinationNodeId="4400">
+        <Path attackNode="10.31.1.250" nodeId="4382" cost="7.952">
+            <Node IPAddress="10.31.1.250" nodeId="4382" vulnID="CVE-2015-0924"/>
+            <Node IPAddress="10.31.1.102" nodeId="4400" vulnID="CVE-2013-4490"/>
+        </Path>
+    </NmapAnalysis>
+    <NmapAnalysis sourceNode="10.31.1.250" sourceNodeId="4382" destinationNode="10.31.1.103" destinationNodeId="4402">
+        <Path attackNode="10.31.1.250" nodeId="4382" cost="9.9968">
+            <Node IPAddress="10.31.1.250" nodeId="4382" vulnID="CVE-2015-0924"/>
+            <Node IPAddress="10.31.1.103" nodeId="4402" vulnID="CVE-2015-0667"/>
+        </Path>
+    </NmapAnalysis>
+    <NmapAnalysis sourceNode="10.31.1.202" sourceNodeId="4386" destinationNode="10.31.1.101" destinationNodeId="4398">
+        <Path attackNode="10.31.1.202" nodeId="4386" cost="8.5888">
+            <Node IPAddress="10.31.1.202" nodeId="4386" vulnID="CVE-2014-3348"/>
+            <Node IPAddress="10.31.1.101" nodeId="4398" vulnID="CVE-2014-4749"/>
+        </Path>
+    </NmapAnalysis>
+    <NmapAnalysis sourceNode="10.31.1.202" sourceNodeId="4386" destinationNode="10.31.1.104" destinationNodeId="4404">
+        <Path attackNode="10.31.1.202" nodeId="4386" cost="9.9968">
+            <Node IPAddress="10.31.1.202" nodeId="4386" vulnID="CVE-2014-3348"/>
+            <Node IPAddress="10.31.1.104" nodeId="4404" vulnID="CVE-2014-2198"/>
+        </Path>
+    </NmapAnalysis>
+    <NmapAnalysis sourceNode="10.31.1.202" sourceNodeId="4386" destinationNode="10.31.1.105" destinationNodeId="4406">
+        <Path attackNode="10.31.1.202" nodeId="4386" cost="9.9968">
+            <Node IPAddress="10.31.1.202" nodeId="4386" vulnID="CVE-2014-3348"/>
+            <Node IPAddress="10.31.1.105" nodeId="4406" vulnID="CVE-2014-6603"/>
+        </Path>
+    </NmapAnalysis>
+    <NmapAnalysis sourceNode="10.31.1.202" sourceNodeId="4386" destinationNode="10.31.1.102" destinationNodeId="4400">
+        <Path attackNode="10.31.1.202" nodeId="4386" cost="7.952">
+            <Node IPAddress="10.31.1.202" nodeId="4386" vulnID="CVE-2014-3348"/>
+            <Node IPAddress="10.31.1.102" nodeId="4400" vulnID="CVE-2013-4490"/>
+        </Path>
+    </NmapAnalysis>
+    <NmapAnalysis sourceNode="10.31.1.202" sourceNodeId="4386" destinationNode="10.31.1.103" destinationNodeId="4402">
+        <Path attackNode="10.31.1.202" nodeId="4386" cost="9.9968">
+            <Node IPAddress="10.31.1.202" nodeId="4386" vulnID="CVE-2014-3348"/>
+            <Node IPAddress="10.31.1.103" nodeId="4402" vulnID="CVE-2015-0667"/>
+        </Path>
+    </NmapAnalysis>
+    <NmapAnalysis sourceNode="10.31.1.201" sourceNodeId="4384" destinationNode="10.31.1.104" destinationNodeId="4404">
+        <Path attackNode="10.31.1.201" nodeId="4384" cost="9.9968">
+            <Node IPAddress="10.31.1.201" nodeId="4384" vulnID="CVE-2013-4490"/>
+            <Node IPAddress="10.31.1.104" nodeId="4404" vulnID="CVE-2014-2198"/>
+        </Path>
+    </NmapAnalysis>
+    <NmapAnalysis sourceNode="10.31.1.201" sourceNodeId="4384" destinationNode="10.31.1.101" destinationNodeId="4398">
+        <Path attackNode="10.31.1.201" nodeId="4384" cost="8.5888">
+            <Node IPAddress="10.31.1.201" nodeId="4384" vulnID="CVE-2013-4490"/>
+            <Node IPAddress="10.31.1.101" nodeId="4398" vulnID="CVE-2014-4749"/>
+        </Path>
+    </NmapAnalysis>
+    <NmapAnalysis sourceNode="10.31.1.201" sourceNodeId="4384" destinationNode="10.31.1.105" destinationNodeId="4406">
+        <Path attackNode="10.31.1.201" nodeId="4384" cost="9.9968">
+            <Node IPAddress="10.31.1.201" nodeId="4384" vulnID="CVE-2013-4490"/>
+            <Node IPAddress="10.31.1.105" nodeId="4406" vulnID="CVE-2014-8529"/>
+        </Path>
+    </NmapAnalysis>
+    <NmapAnalysis sourceNode="10.31.1.201" sourceNodeId="4384" destinationNode="10.31.1.102" destinationNodeId="4400">
+        <Path attackNode="10.31.1.201" nodeId="4384" cost="7.952">
+            <Node IPAddress="10.31.1.201" nodeId="4384" vulnID="CVE-2013-4490"/>
+            <Node IPAddress="10.31.1.102" nodeId="4400" vulnID="CVE-2013-4490"/>
+        </Path>
+    </NmapAnalysis>
+    <NmapAnalysis sourceNode="10.31.1.201" sourceNodeId="4384" destinationNode="10.31.1.103" destinationNodeId="4402">
+        <Path attackNode="10.31.1.201" nodeId="4384" cost="9.9968">
+            <Node IPAddress="10.31.1.201" nodeId="4384" vulnID="CVE-2013-4490"/>
+            <Node IPAddress="10.31.1.103" nodeId="4402" vulnID="CVE-2015-0667"/>
+        </Path>
+    </NmapAnalysis>
+    <NmapAnalysis sourceNode="10.31.1.105" sourceNodeId="4406" destinationNode="10.31.1.101" destinationNodeId="4398">
+        <Path attackNode="10.31.1.105" nodeId="4406" cost="8.5888">
+            <Node IPAddress="10.31.1.105" nodeId="4406" vulnID="CVE-2014-8529"/>
+            <Node IPAddress="10.31.1.101" nodeId="4398" vulnID="CVE-2014-4749"/>
+        </Path>
+    </NmapAnalysis>
+    <NmapAnalysis sourceNode="10.31.1.105" sourceNodeId="4406" destinationNode="10.31.1.104" destinationNodeId="4404">
+        <Path attackNode="10.31.1.105" nodeId="4406" cost="9.9968">
+            <Node IPAddress="10.31.1.105" nodeId="4406" vulnID="CVE-2014-8529"/>
+            <Node IPAddress="10.31.1.104" nodeId="4404" vulnID="CVE-2014-2198"/>
+        </Path>
+    </NmapAnalysis>
+    <NmapAnalysis sourceNode="10.31.1.105" sourceNodeId="4406" destinationNode="10.31.1.102" destinationNodeId="4400">
+        <Path attackNode="10.31.1.105" nodeId="4406" cost="7.952">
+            <Node IPAddress="10.31.1.105" nodeId="4406" vulnID="CVE-2014-8529"/>
+            <Node IPAddress="10.31.1.102" nodeId="4400" vulnID="CVE-2013-4490"/>
+        </Path>
+    </NmapAnalysis>
+    <NmapAnalysis sourceNode="10.31.1.105" sourceNodeId="4406" destinationNode="10.31.1.103" destinationNodeId="4402">
+        <Path attackNode="10.31.1.105" nodeId="4406" cost="9.9968">
+            <Node IPAddress="10.31.1.105" nodeId="4406" vulnID="CVE-2014-8529"/>
+            <Node IPAddress="10.31.1.103" nodeId="4402" vulnID="CVE-2015-0667"/>
+        </Path>
+    </NmapAnalysis>
+    <NmapAnalysis sourceNode="10.31.1.104" sourceNodeId="4404" destinationNode="10.31.1.101" destinationNodeId="4398">
+        <Path attackNode="10.31.1.104" nodeId="4404" cost="8.5888">
+            <Node IPAddress="10.31.1.104" nodeId="4404" vulnID="CVE-2014-8779"/>
+            <Node IPAddress="10.31.1.101" nodeId="4398" vulnID="CVE-2014-4749"/>
+        </Path>
+    </NmapAnalysis>
+    <NmapAnalysis sourceNode="10.31.1.104" sourceNodeId="4404" destinationNode="10.31.1.105" destinationNodeId="4406">
+        <Path attackNode="10.31.1.104" nodeId="4404" cost="9.9968">
+            <Node IPAddress="10.31.1.104" nodeId="4404" vulnID="CVE-2014-8779"/>
+            <Node IPAddress="10.31.1.105" nodeId="4406" vulnID="CVE-2014-6603"/>
+        </Path>
+    </NmapAnalysis>
+    <NmapAnalysis sourceNode="10.31.1.104" sourceNodeId="4404" destinationNode="10.31.1.102" destinationNodeId="4400">
+        <Path attackNode="10.31.1.104" nodeId="4404" cost="7.952">
+            <Node IPAddress="10.31.1.104" nodeId="4404" vulnID="CVE-2014-8779"/>
+            <Node IPAddress="10.31.1.102" nodeId="4400" vulnID="CVE-2013-4490"/>
+        </Path>
+    </NmapAnalysis>
+    <NmapAnalysis sourceNode="10.31.1.104" sourceNodeId="4404" destinationNode="10.31.1.103" destinationNodeId="4402">
+        <Path attackNode="10.31.1.104" nodeId="4404" cost="9.9968">
+            <Node IPAddress="10.31.1.104" nodeId="4404" vulnID="CVE-2014-8779"/>
+            <Node IPAddress="10.31.1.103" nodeId="4402" vulnID="CVE-2015-0667"/>
+        </Path>
+    </NmapAnalysis>
+    <NmapAnalysis sourceNode="10.31.1.102" sourceNodeId="4400" destinationNode="10.31.1.101" destinationNodeId="4398">
+        <Path attackNode="10.31.1.102" nodeId="4400" cost="8.5888">
+            <Node IPAddress="10.31.1.102" nodeId="4400" vulnID="CVE-2014-4749"/>
+            <Node IPAddress="10.31.1.101" nodeId="4398" vulnID="CVE-2014-4749"/>
+        </Path>
+    </NmapAnalysis>
+    <NmapAnalysis sourceNode="10.31.1.102" sourceNodeId="4400" destinationNode="10.31.1.104" destinationNodeId="4404">
+        <Path attackNode="10.31.1.102" nodeId="4400" cost="9.9968">
+            <Node IPAddress="10.31.1.102" nodeId="4400" vulnID="CVE-2014-4749"/>
+            <Node IPAddress="10.31.1.104" nodeId="4404" vulnID="CVE-2014-2198"/>
+        </Path>
+    </NmapAnalysis>
+    <NmapAnalysis sourceNode="10.31.1.102" sourceNodeId="4400" destinationNode="10.31.1.105" destinationNodeId="4406">
+        <Path attackNode="10.31.1.102" nodeId="4400" cost="9.9968">
+            <Node IPAddress="10.31.1.102" nodeId="4400" vulnID="CVE-2014-4749"/>
+            <Node IPAddress="10.31.1.105" nodeId="4406" vulnID="CVE-2014-6603"/>
+        </Path>
+    </NmapAnalysis>
+    <NmapAnalysis sourceNode="10.31.1.102" sourceNodeId="4400" destinationNode="10.31.1.103" destinationNodeId="4402">
+        <Path attackNode="10.31.1.102" nodeId="4400" cost="9.9968">
+            <Node IPAddress="10.31.1.102" nodeId="4400" vulnID="CVE-2014-4749"/>
+            <Node IPAddress="10.31.1.103" nodeId="4402" vulnID="CVE-2015-0667"/>
+        </Path>
+    </NmapAnalysis>
+    <NmapAnalysis sourceNode="10.31.1.103" sourceNodeId="4402" destinationNode="10.31.1.101" destinationNodeId="4398">
+        <Path attackNode="10.31.1.103" nodeId="4402" cost="8.5888">
+            <Node IPAddress="10.31.1.103" nodeId="4402" vulnID="CVE-2014-7299"/>
+            <Node IPAddress="10.31.1.101" nodeId="4398" vulnID="CVE-2014-4749"/>
+        </Path>
+    </NmapAnalysis>
+    <NmapAnalysis sourceNode="10.31.1.103" sourceNodeId="4402" destinationNode="10.31.1.104" destinationNodeId="4404">
+        <Path attackNode="10.31.1.103" nodeId="4402" cost="9.9968">
+            <Node IPAddress="10.31.1.103" nodeId="4402" vulnID="CVE-2014-7299"/>
+            <Node IPAddress="10.31.1.104" nodeId="4404" vulnID="CVE-2014-2198"/>
+        </Path>
+    </NmapAnalysis>
+    <NmapAnalysis sourceNode="10.31.1.103" sourceNodeId="4402" destinationNode="10.31.1.105" destinationNodeId="4406">
+        <Path attackNode="10.31.1.103" nodeId="4402" cost="9.9968">
+            <Node IPAddress="10.31.1.103" nodeId="4402" vulnID="CVE-2014-7299"/>
+            <Node IPAddress="10.31.1.105" nodeId="4406" vulnID="CVE-2014-6603"/>
+        </Path>
+    </NmapAnalysis>
+    <NmapAnalysis sourceNode="10.31.1.103" sourceNodeId="4402" destinationNode="10.31.1.102" destinationNodeId="4400">
+        <Path attackNode="10.31.1.103" nodeId="4402" cost="7.952">
+            <Node IPAddress="10.31.1.103" nodeId="4402" vulnID="CVE-2014-7299"/>
+            <Node IPAddress="10.31.1.102" nodeId="4400" vulnID="CVE-2013-4490"/>
+        </Path>
+    </NmapAnalysis>
+    <NmapAnalysis sourceNode="10.39.1.22" sourceNodeId="4282" destinationNode="10.31.1.104" destinationNodeId="4404">
+        <Path attackNode="10.39.1.22" nodeId="4282" cost="18.5856">
+            <Node IPAddress="10.39.1.22" nodeId="4282" vulnID="None"/>
+            <Node IPAddress="10.31.1.250" nodeId="4382" vulnID="CVE-2013-4581"/>
+            <Node IPAddress="10.31.1.104" nodeId="4404" vulnID="CVE-2014-2198"/>
+        </Path>
+    </NmapAnalysis>
+    <NmapAnalysis sourceNode="10.39.1.22" sourceNodeId="4282" destinationNode="10.31.1.105" destinationNodeId="4406">
+        <Path attackNode="10.39.1.22" nodeId="4282" cost="18.5856">
+            <Node IPAddress="10.39.1.22" nodeId="4282" vulnID="None"/>
+            <Node IPAddress="10.31.1.250" nodeId="4382" vulnID="CVE-2013-4581"/>
+            <Node IPAddress="10.31.1.105" nodeId="4406" vulnID="CVE-2014-6603"/>
+        </Path>
+    </NmapAnalysis>
+    <NmapAnalysis sourceNode="10.39.1.22" sourceNodeId="4282" destinationNode="10.31.1.102" destinationNodeId="4400">
+        <Path attackNode="10.39.1.22" nodeId="4282" cost="16.5408">
+            <Node IPAddress="10.39.1.22" nodeId="4282" vulnID="None"/>
+            <Node IPAddress="10.31.1.250" nodeId="4382" vulnID="CVE-2013-4581"/>
+            <Node IPAddress="10.31.1.102" nodeId="4400" vulnID="CVE-2013-4490"/>
+        </Path>
+    </NmapAnalysis>
+    <NmapAnalysis sourceNode="10.39.1.22" sourceNodeId="4282" destinationNode="10.31.1.103" destinationNodeId="4402">
+        <Path attackNode="10.39.1.22" nodeId="4282" cost="18.5856">
+            <Node IPAddress="10.39.1.22" nodeId="4282" vulnID="None"/>
+            <Node IPAddress="10.31.1.250" nodeId="4382" vulnID="CVE-2013-4581"/>
+            <Node IPAddress="10.31.1.103" nodeId="4402" vulnID="CVE-2015-0667"/>
+        </Path>
+    </NmapAnalysis>
+    <NmapAnalysis sourceNode="10.31.1.203" sourceNodeId="4388" destinationNode="10.31.1.101" destinationNodeId="4398">
+        <Path attackNode="10.31.1.203" nodeId="4388" cost="8.5888">
+            <Node IPAddress="10.31.1.203" nodeId="4388" vulnID="CVE-2013-1191"/>
+            <Node IPAddress="10.31.1.101" nodeId="4398" vulnID="CVE-2014-4749"/>
+        </Path>
+    </NmapAnalysis>
+    <NmapAnalysis sourceNode="10.31.1.203" sourceNodeId="4388" destinationNode="10.31.1.104" destinationNodeId="4404">
+        <Path attackNode="10.31.1.203" nodeId="4388" cost="9.9968">
+            <Node IPAddress="10.31.1.203" nodeId="4388" vulnID="CVE-2013-1191"/>
+            <Node IPAddress="10.31.1.104" nodeId="4404" vulnID="CVE-2014-2198"/>
+        </Path>
+    </NmapAnalysis>
+    <NmapAnalysis sourceNode="10.31.1.203" sourceNodeId="4388" destinationNode="10.31.1.105" destinationNodeId="4406">
+        <Path attackNode="10.31.1.203" nodeId="4388" cost="9.9968">
+            <Node IPAddress="10.31.1.203" nodeId="4388" vulnID="CVE-2013-1191"/>
+            <Node IPAddress="10.31.1.105" nodeId="4406" vulnID="CVE-2014-6603"/>
+        </Path>
+    </NmapAnalysis>
+    <NmapAnalysis sourceNode="10.31.1.203" sourceNodeId="4388" destinationNode="10.31.1.102" destinationNodeId="4400">
+        <Path attackNode="10.31.1.203" nodeId="4388" cost="7.952">
+            <Node IPAddress="10.31.1.203" nodeId="4388" vulnID="CVE-2013-1191"/>
+            <Node IPAddress="10.31.1.102" nodeId="4400" vulnID="CVE-2013-4490"/>
+        </Path>
+    </NmapAnalysis>
+    <NmapAnalysis sourceNode="10.31.1.203" sourceNodeId="4388" destinationNode="10.31.1.103" destinationNodeId="4402">
+        <Path attackNode="10.31.1.203" nodeId="4388" cost="9.9968">
+            <Node IPAddress="10.31.1.203" nodeId="4388" vulnID="CVE-2013-1191"/>
+            <Node IPAddress="10.31.1.103" nodeId="4402" vulnID="CVE-2015-0667"/>
+        </Path>
+    </NmapAnalysis>
+    <NmapAnalysis sourceNode="70.32.128.171" sourceNodeId="4294" destinationNode="10.31.1.101" destinationNodeId="4398">
+        <Path attackNode="70.32.128.171" nodeId="4294" cost="17.1776">
+            <Node IPAddress="70.32.128.171" nodeId="4294" vulnID="None"/>
+            <Node IPAddress="10.31.1.250" nodeId="4382" vulnID="CVE-2013-4581"/>
+            <Node IPAddress="10.31.1.101" nodeId="4398" vulnID="CVE-2014-4749"/>
+        </Path>
+    </NmapAnalysis>
+    <NmapAnalysis sourceNode="70.32.128.171" sourceNodeId="4294" destinationNode="10.31.1.104" destinationNodeId="4404">
+        <Path attackNode="70.32.128.171" nodeId="4294" cost="18.5856">
+            <Node IPAddress="70.32.128.171" nodeId="4294" vulnID="None"/>
+            <Node IPAddress="10.31.1.250" nodeId="4382" vulnID="CVE-2013-4581"/>
+            <Node IPAddress="10.31.1.104" nodeId="4404" vulnID="CVE-2014-2198"/>
+        </Path>
+    </NmapAnalysis>
+    <NmapAnalysis sourceNode="70.32.128.171" sourceNodeId="4294" destinationNode="10.31.1.105" destinationNodeId="4406">
+        <Path attackNode="70.32.128.171" nodeId="4294" cost="18.5856">
+            <Node IPAddress="70.32.128.171" nodeId="4294" vulnID="None"/>
+            <Node IPAddress="10.31.1.250" nodeId="4382" vulnID="CVE-2013-4581"/>
+            <Node IPAddress="10.31.1.105" nodeId="4406" vulnID="CVE-2014-6603"/>
+        </Path>
+    </NmapAnalysis>
+    <NmapAnalysis sourceNode="70.32.128.171" sourceNodeId="4294" destinationNode="10.31.1.102" destinationNodeId="4400">
+        <Path attackNode="70.32.128.171" nodeId="4294" cost="16.5408">
+            <Node IPAddress="70.32.128.171" nodeId="4294" vulnID="None"/>
+            <Node IPAddress="10.31.1.250" nodeId="4382" vulnID="CVE-2013-4581"/>
+            <Node IPAddress="10.31.1.102" nodeId="4400" vulnID="CVE-2013-4490"/>
+        </Path>
+    </NmapAnalysis>
+    <NmapAnalysis sourceNode="70.32.128.171" sourceNodeId="4294" destinationNode="10.31.1.103" destinationNodeId="4402">
+        <Path attackNode="70.32.128.171" nodeId="4294" cost="18.5856">
+            <Node IPAddress="70.32.128.171" nodeId="4294" vulnID="None"/>
+            <Node IPAddress="10.31.1.250" nodeId="4382" vulnID="CVE-2013-4581"/>
+            <Node IPAddress="10.31.1.103" nodeId="4402" vulnID="CVE-2015-0667"/>
+        </Path>
+    </NmapAnalysis>
+    <NmapAnalysis sourceNode="70.32.128.74" sourceNodeId="4292" destinationNode="10.31.1.101" destinationNodeId="4398">
+        <Path attackNode="70.32.128.74" nodeId="4292" cost="17.1776">
+            <Node IPAddress="70.32.128.74" nodeId="4292" vulnID="None"/>
+            <Node IPAddress="10.31.1.250" nodeId="4382" vulnID="CVE-2013-4581"/>
+            <Node IPAddress="10.31.1.101" nodeId="4398" vulnID="CVE-2014-4749"/>
+        </Path>
+    </NmapAnalysis>
+    <NmapAnalysis sourceNode="70.32.128.74" sourceNodeId="4292" destinationNode="10.31.1.104" destinationNodeId="4404">
+        <Path attackNode="70.32.128.74" nodeId="4292" cost="18.5856">
+            <Node IPAddress="70.32.128.74" nodeId="4292" vulnID="None"/>
+            <Node IPAddress="10.31.1.250" nodeId="4382" vulnID="CVE-2013-4581"/>
+            <Node IPAddress="10.31.1.104" nodeId="4404" vulnID="CVE-2014-2198"/>
+        </Path>
+    </NmapAnalysis>
+    <NmapAnalysis sourceNode="70.32.128.74" sourceNodeId="4292" destinationNode="10.31.1.105" destinationNodeId="4406">
+        <Path attackNode="70.32.128.74" nodeId="4292" cost="18.5856">
+            <Node IPAddress="70.32.128.74" nodeId="4292" vulnID="None"/>
+            <Node IPAddress="10.31.1.250" nodeId="4382" vulnID="CVE-2013-4581"/>
+            <Node IPAddress="10.31.1.105" nodeId="4406" vulnID="CVE-2014-6603"/>
+        </Path>
+    </NmapAnalysis>
+    <NmapAnalysis sourceNode="70.32.128.74" sourceNodeId="4292" destinationNode="10.31.1.102" destinationNodeId="4400">
+        <Path attackNode="70.32.128.74" nodeId="4292" cost="16.5408">
+            <Node IPAddress="70.32.128.74" nodeId="4292" vulnID="None"/>
+            <Node IPAddress="10.31.1.250" nodeId="4382" vulnID="CVE-2013-4581"/>
+            <Node IPAddress="10.31.1.102" nodeId="4400" vulnID="CVE-2013-4490"/>
+        </Path>
+    </NmapAnalysis>
+    <NmapAnalysis sourceNode="70.32.128.74" sourceNodeId="4292" destinationNode="10.31.1.103" destinationNodeId="4402">
+        <Path attackNode="70.32.128.74" nodeId="4292" cost="18.5856">
+            <Node IPAddress="70.32.128.74" nodeId="4292" vulnID="None"/>
+            <Node IPAddress="10.31.1.250" nodeId="4382" vulnID="CVE-2013-4581"/>
+            <Node IPAddress="10.31.1.103" nodeId="4402" vulnID="CVE-2015-0667"/>
+        </Path>
+    </NmapAnalysis>
+    <NmapAnalysis sourceNode="10.31.1.206" sourceNodeId="4394" destinationNode="10.31.1.101" destinationNodeId="4398">
+        <Path attackNode="10.31.1.206" nodeId="4394" cost="8.5888">
+            <Node IPAddress="10.31.1.206" nodeId="4394" vulnID="CVE-2014-0960"/>
+            <Node IPAddress="10.31.1.101" nodeId="4398" vulnID="CVE-2014-4749"/>
+        </Path>
+    </NmapAnalysis>
+    <NmapAnalysis sourceNode="10.31.1.206" sourceNodeId="4394" destinationNode="10.31.1.104" destinationNodeId="4404">
+        <Path attackNode="10.31.1.206" nodeId="4394" cost="9.9968">
+            <Node IPAddress="10.31.1.206" nodeId="4394" vulnID="CVE-2014-0960"/>
+            <Node IPAddress="10.31.1.104" nodeId="4404" vulnID="CVE-2014-2198"/>
+        </Path>
+    </NmapAnalysis>
+    <NmapAnalysis sourceNode="10.31.1.206" sourceNodeId="4394" destinationNode="10.31.1.105" destinationNodeId="4406">
+        <Path attackNode="10.31.1.206" nodeId="4394" cost="9.9968">
+            <Node IPAddress="10.31.1.206" nodeId="4394" vulnID="CVE-2014-0960"/>
+            <Node IPAddress="10.31.1.105" nodeId="4406" vulnID="CVE-2014-6603"/>
+        </Path>
+    </NmapAnalysis>
+    <NmapAnalysis sourceNode="10.31.1.206" sourceNodeId="4394" destinationNode="10.31.1.102" destinationNodeId="4400">
+        <Path attackNode="10.31.1.206" nodeId="4394" cost="7.952">
+            <Node IPAddress="10.31.1.206" nodeId="4394" vulnID="CVE-2014-0960"/>
+            <Node IPAddress="10.31.1.102" nodeId="4400" vulnID="CVE-2013-4490"/>
+        </Path>
+    </NmapAnalysis>
+    <NmapAnalysis sourceNode="10.31.1.206" sourceNodeId="4394" destinationNode="10.31.1.103" destinationNodeId="4402">
+        <Path attackNode="10.31.1.206" nodeId="4394" cost="9.9968">
+            <Node IPAddress="10.31.1.206" nodeId="4394" vulnID="CVE-2014-0960"/>
+            <Node IPAddress="10.31.1.103" nodeId="4402" vulnID="CVE-2015-0667"/>
+        </Path>
+    </NmapAnalysis>
+    <NmapAnalysis sourceNode="10.31.1.101" sourceNodeId="4398" destinationNode="10.31.1.104" destinationNodeId="4404">
+        <Path attackNode="10.31.1.101" nodeId="4398" cost="9.9968">
+            <Node IPAddress="10.31.1.101" nodeId="4398" vulnID="CVE-2014-8529"/>
+            <Node IPAddress="10.31.1.104" nodeId="4404" vulnID="CVE-2014-2198"/>
+        </Path>
+    </NmapAnalysis>
+    <NmapAnalysis sourceNode="10.31.1.101" sourceNodeId="4398" destinationNode="10.31.1.105" destinationNodeId="4406">
+        <Path attackNode="10.31.1.101" nodeId="4398" cost="9.9968">
+            <Node IPAddress="10.31.1.101" nodeId="4398" vulnID="CVE-2014-8529"/>
+            <Node IPAddress="10.31.1.105" nodeId="4406" vulnID="CVE-2014-8529"/>
+        </Path>
+    </NmapAnalysis>
+    <NmapAnalysis sourceNode="10.31.1.101" sourceNodeId="4398" destinationNode="10.31.1.102" destinationNodeId="4400">
+        <Path attackNode="10.31.1.101" nodeId="4398" cost="7.952">
+            <Node IPAddress="10.31.1.101" nodeId="4398" vulnID="CVE-2014-8529"/>
+            <Node IPAddress="10.31.1.102" nodeId="4400" vulnID="CVE-2013-4490"/>
+        </Path>
+    </NmapAnalysis>
+    <NmapAnalysis sourceNode="10.31.1.101" sourceNodeId="4398" destinationNode="10.31.1.103" destinationNodeId="4402">
+        <Path attackNode="10.31.1.101" nodeId="4398" cost="9.9968">
+            <Node IPAddress="10.31.1.101" nodeId="4398" vulnID="CVE-2014-8529"/>
+            <Node IPAddress="10.31.1.103" nodeId="4402" vulnID="CVE-2015-0667"/>
+        </Path>
+    </NmapAnalysis>
+    <NmapAnalysis sourceNode="10.31.1.204" sourceNodeId="4390" destinationNode="10.31.1.101" destinationNodeId="4398">
+        <Path attackNode="10.31.1.204" nodeId="4390" cost="8.5888">
+            <Node IPAddress="10.31.1.204" nodeId="4390" vulnID="CVE-2013-4490"/>
+            <Node IPAddress="10.31.1.101" nodeId="4398" vulnID="CVE-2014-4749"/>
+        </Path>
+    </NmapAnalysis>
+    <NmapAnalysis sourceNode="10.31.1.204" sourceNodeId="4390" destinationNode="10.31.1.104" destinationNodeId="4404">
+        <Path attackNode="10.31.1.204" nodeId="4390" cost="9.9968">
+            <Node IPAddress="10.31.1.204" nodeId="4390" vulnID="CVE-2013-4490"/>
+            <Node IPAddress="10.31.1.104" nodeId="4404" vulnID="CVE-2014-2198"/>
+        </Path>
+    </NmapAnalysis>
+    <NmapAnalysis sourceNode="10.31.1.204" sourceNodeId="4390" destinationNode="10.31.1.105" destinationNodeId="4406">
+        <Path attackNode="10.31.1.204" nodeId="4390" cost="9.9968">
+            <Node IPAddress="10.31.1.204" nodeId="4390" vulnID="CVE-2013-4490"/>
+            <Node IPAddress="10.31.1.105" nodeId="4406" vulnID="CVE-2014-6603"/>
+        </Path>
+    </NmapAnalysis>
+    <NmapAnalysis sourceNode="10.31.1.204" sourceNodeId="4390" destinationNode="10.31.1.102" destinationNodeId="4400">
+        <Path attackNode="10.31.1.204" nodeId="4390" cost="7.952">
+            <Node IPAddress="10.31.1.204" nodeId="4390" vulnID="CVE-2013-4490"/>
+            <Node IPAddress="10.31.1.102" nodeId="4400" vulnID="CVE-2013-4490"/>
+        </Path>
+    </NmapAnalysis>
+    <NmapAnalysis sourceNode="10.31.1.204" sourceNodeId="4390" destinationNode="10.31.1.103" destinationNodeId="4402">
+        <Path attackNode="10.31.1.204" nodeId="4390" cost="9.9968">
+            <Node IPAddress="10.31.1.204" nodeId="4390" vulnID="CVE-2013-4490"/>
+            <Node IPAddress="10.31.1.103" nodeId="4402" vulnID="CVE-2015-0667"/>
+        </Path>
+    </NmapAnalysis>
+    <NmapAnalysis sourceNode="10.31.1.205" sourceNodeId="4392" destinationNode="10.31.1.101" destinationNodeId="4398">
+        <Path attackNode="10.31.1.205" nodeId="4392" cost="8.5888">
+            <Node IPAddress="10.31.1.205" nodeId="4392" vulnID="CVE-2014-6501"/>
+            <Node IPAddress="10.31.1.101" nodeId="4398" vulnID="CVE-2014-4749"/>
+        </Path>
+    </NmapAnalysis>
+    <NmapAnalysis sourceNode="10.31.1.205" sourceNodeId="4392" destinationNode="10.31.1.104" destinationNodeId="4404">
+        <Path attackNode="10.31.1.205" nodeId="4392" cost="9.9968">
+            <Node IPAddress="10.31.1.205" nodeId="4392" vulnID="CVE-2014-6501"/>
+            <Node IPAddress="10.31.1.104" nodeId="4404" vulnID="CVE-2014-2198"/>
+        </Path>
+    </NmapAnalysis>
+    <NmapAnalysis sourceNode="10.31.1.205" sourceNodeId="4392" destinationNode="10.31.1.105" destinationNodeId="4406">
+        <Path attackNode="10.31.1.205" nodeId="4392" cost="9.9968">
+            <Node IPAddress="10.31.1.205" nodeId="4392" vulnID="CVE-2014-6501"/>
+            <Node IPAddress="10.31.1.105" nodeId="4406" vulnID="CVE-2014-6603"/>
+        </Path>
+    </NmapAnalysis>
+    <NmapAnalysis sourceNode="10.31.1.205" sourceNodeId="4392" destinationNode="10.31.1.102" destinationNodeId="4400">
+        <Path attackNode="10.31.1.205" nodeId="4392" cost="7.952">
+            <Node IPAddress="10.31.1.205" nodeId="4392" vulnID="CVE-2014-6501"/>
+            <Node IPAddress="10.31.1.102" nodeId="4400" vulnID="CVE-2013-4490"/>
+        </Path>
+    </NmapAnalysis>
+    <NmapAnalysis sourceNode="10.31.1.205" sourceNodeId="4392" destinationNode="10.31.1.103" destinationNodeId="4402">
+        <Path attackNode="10.31.1.205" nodeId="4392" cost="9.9968">
+            <Node IPAddress="10.31.1.205" nodeId="4392" vulnID="CVE-2014-6501"/>
+            <Node IPAddress="10.31.1.103" nodeId="4402" vulnID="CVE-2015-0667"/>
+        </Path>
+    </NmapAnalysis>
+    <NmapAnalysis sourceNode="10.31.1.207" sourceNodeId="4396" destinationNode="10.31.1.101" destinationNodeId="4398">
+        <Path attackNode="10.31.1.207" nodeId="4396" cost="8.5888">
+            <Node IPAddress="10.31.1.207" nodeId="4396" vulnID="None"/>
+            <Node IPAddress="10.31.1.101" nodeId="4398" vulnID="CVE-2014-4749"/>
+        </Path>
+    </NmapAnalysis>
+    <NmapAnalysis sourceNode="10.31.1.207" sourceNodeId="4396" destinationNode="10.31.1.104" destinationNodeId="4404">
+        <Path attackNode="10.31.1.207" nodeId="4396" cost="9.9968">
+            <Node IPAddress="10.31.1.207" nodeId="4396" vulnID="None"/>
+            <Node IPAddress="10.31.1.104" nodeId="4404" vulnID="CVE-2014-2198"/>
+        </Path>
+    </NmapAnalysis>
+    <NmapAnalysis sourceNode="10.31.1.207" sourceNodeId="4396" destinationNode="10.31.1.105" destinationNodeId="4406">
+        <Path attackNode="10.31.1.207" nodeId="4396" cost="9.9968">
+            <Node IPAddress="10.31.1.207" nodeId="4396" vulnID="None"/>
+            <Node IPAddress="10.31.1.105" nodeId="4406" vulnID="CVE-2014-6603"/>
+        </Path>
+    </NmapAnalysis>
+    <NmapAnalysis sourceNode="10.31.1.207" sourceNodeId="4396" destinationNode="10.31.1.102" destinationNodeId="4400">
+        <Path attackNode="10.31.1.207" nodeId="4396" cost="7.952">
+            <Node IPAddress="10.31.1.207" nodeId="4396" vulnID="None"/>
+            <Node IPAddress="10.31.1.102" nodeId="4400" vulnID="CVE-2013-4490"/>
+        </Path>
+    </NmapAnalysis>
+    <NmapAnalysis sourceNode="10.31.1.207" sourceNodeId="4396" destinationNode="10.31.1.103" destinationNodeId="4402">
+        <Path attackNode="10.31.1.207" nodeId="4396" cost="9.9968">
+            <Node IPAddress="10.31.1.207" nodeId="4396" vulnID="None"/>
+            <Node IPAddress="10.31.1.103" nodeId="4402" vulnID="CVE-2015-0667"/>
+        </Path>
+    </NmapAnalysis>
+</VCReport>

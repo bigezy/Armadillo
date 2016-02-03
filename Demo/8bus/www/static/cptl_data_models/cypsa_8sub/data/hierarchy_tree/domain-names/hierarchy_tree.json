@@ -1,0 +1,1074 @@
+{
+    "children": [
+        {
+            "children": [
+                {
+                    "children": [
+                        {
+                            "children": [
+                                {
+                                    "name": "Odgenville$BRK$12", 
+                                    "path": "Odgenville$BRK$12.yard.odgenville.8sub.cypsa.projects.cptl-c.org", 
+                                    "rdfs:type": "syard:Breaker"
+                                }, 
+                                {
+                                    "name": "Odgenville$ND$5", 
+                                    "path": "Odgenville$ND$5.yard.odgenville.8sub.cypsa.projects.cptl-c.org", 
+                                    "rdfs:type": "syard:Bus"
+                                }, 
+                                {
+                                    "name": "Odgenville$ND$6", 
+                                    "path": "Odgenville$ND$6.yard.odgenville.8sub.cypsa.projects.cptl-c.org", 
+                                    "rdfs:type": "syard:Node"
+                                }, 
+                                {
+                                    "name": "Odgenville$BRK$23", 
+                                    "path": "Odgenville$BRK$23.yard.odgenville.8sub.cypsa.projects.cptl-c.org", 
+                                    "rdfs:type": "syard:Breaker"
+                                }, 
+                                {
+                                    "name": "Odgenville$ND$1", 
+                                    "path": "Odgenville$ND$1.yard.odgenville.8sub.cypsa.projects.cptl-c.org", 
+                                    "rdfs:type": "syard:Node"
+                                }, 
+                                {
+                                    "name": "Odgenville$BRK$14", 
+                                    "path": "Odgenville$BRK$14.yard.odgenville.8sub.cypsa.projects.cptl-c.org", 
+                                    "rdfs:type": "syard:Breaker"
+                                }, 
+                                {
+                                    "name": "Odgenville$ND$3", 
+                                    "path": "Odgenville$ND$3.yard.odgenville.8sub.cypsa.projects.cptl-c.org", 
+                                    "rdfs:type": "syard:Node"
+                                }, 
+                                {
+                                    "name": "Odgenville$BRK$56", 
+                                    "path": "Odgenville$BRK$56.yard.odgenville.8sub.cypsa.projects.cptl-c.org", 
+                                    "rdfs:type": "syard:Breaker"
+                                }, 
+                                {
+                                    "name": "Odgenville$ND$4", 
+                                    "path": "Odgenville$ND$4.yard.odgenville.8sub.cypsa.projects.cptl-c.org", 
+                                    "rdfs:type": "syard:Bus"
+                                }, 
+                                {
+                                    "name": "Odgenville$BRK$34", 
+                                    "path": "Odgenville$BRK$34.yard.odgenville.8sub.cypsa.projects.cptl-c.org", 
+                                    "rdfs:type": "syard:Breaker"
+                                }, 
+                                {
+                                    "name": "Odgenville$ND$2", 
+                                    "path": "Odgenville$ND$2.yard.odgenville.8sub.cypsa.projects.cptl-c.org", 
+                                    "rdfs:type": "syard:Bus"
+                                }, 
+                                {
+                                    "name": "Odgenville$BRK$42", 
+                                    "path": "Odgenville$BRK$42.yard.odgenville.8sub.cypsa.projects.cptl-c.org", 
+                                    "rdfs:type": "syard:Breaker"
+                                }, 
+                                {
+                                    "name": "Odgenville$BRK$62", 
+                                    "path": "Odgenville$BRK$62.yard.odgenville.8sub.cypsa.projects.cptl-c.org", 
+                                    "rdfs:type": "syard:Breaker"
+                                }, 
+                                {
+                                    "name": "Odgenville$BRK$25", 
+                                    "path": "Odgenville$BRK$25.yard.odgenville.8sub.cypsa.projects.cptl-c.org", 
+                                    "rdfs:type": "syard:Breaker"
+                                }, 
+                                {
+                                    "name": "Odgenville-UN-Gen1", 
+                                    "path": "Odgenville-UN-Gen1.yard.odgenville.8sub.cypsa.projects.cptl-c.org", 
+                                    "rdfs:type": "syard:Generator"
+                                }
+                            ], 
+                            "name": "yard", 
+                            "path": "yard.odgenville.8sub.cypsa.projects.cptl-c.org", 
+                            "rdfs:type": "syard:SubstationYard"
+                        }, 
+                        {
+                            "children": [
+                                {
+                                    "name": "SEL_421_2", 
+                                    "path": "SEL_421_2.network.odgenville.8sub.cypsa.projects.cptl-c.org", 
+                                    "rdfs:type": "snet:DistanceRelay"
+                                }, 
+                                {
+                                    "name": "SEL_421_1", 
+                                    "path": "SEL_421_1.network.odgenville.8sub.cypsa.projects.cptl-c.org", 
+                                    "rdfs:type": "snet:DistanceRelay"
+                                }, 
+                                {
+                                    "name": "SEL_3620", 
+                                    "path": "SEL_3620.network.odgenville.8sub.cypsa.projects.cptl-c.org", 
+                                    "rdfs:type": "snet:Switch"
+                                }, 
+                                {
+                                    "name": "SEL_451_3", 
+                                    "path": "SEL_451_3.network.odgenville.8sub.cypsa.projects.cptl-c.org", 
+                                    "rdfs:type": "snet:OvercurrentRelay"
+                                }, 
+                                {
+                                    "name": "SEL_451_2", 
+                                    "path": "SEL_451_2.network.odgenville.8sub.cypsa.projects.cptl-c.org", 
+                                    "rdfs:type": "snet:OvercurrentRelay"
+                                }, 
+                                {
+                                    "name": "SEL_451_1", 
+                                    "path": "SEL_451_1.network.odgenville.8sub.cypsa.projects.cptl-c.org", 
+                                    "rdfs:type": "snet:OvercurrentRelay"
+                                }
+                            ], 
+                            "name": "network", 
+                            "path": "network.odgenville.8sub.cypsa.projects.cptl-c.org", 
+                            "rdfs:type": "snet:SubstationNetwork"
+                        }
+                    ], 
+                    "name": "odgenville", 
+                    "path": "odgenville.8sub.cypsa.projects.cptl-c.org", 
+                    "rdfs:type": "cptlc:Substation"
+                }, 
+                {
+                    "children": [
+                        {
+                            "children": [
+                                {
+                                    "name": "Paris$ND$48", 
+                                    "path": "Paris$ND$48.yard.paris.8sub.cypsa.projects.cptl-c.org", 
+                                    "rdfs:type": "syard:Node"
+                                }, 
+                                {
+                                    "name": "Paris$ND$49", 
+                                    "path": "Paris$ND$49.yard.paris.8sub.cypsa.projects.cptl-c.org", 
+                                    "rdfs:type": "syard:Node"
+                                }, 
+                                {
+                                    "name": "Paris$BRK$5052", 
+                                    "path": "Paris$BRK$5052.yard.paris.8sub.cypsa.projects.cptl-c.org", 
+                                    "rdfs:type": "syard:Breaker"
+                                }, 
+                                {
+                                    "name": "Paris$BRK$4950", 
+                                    "path": "Paris$BRK$4950.yard.paris.8sub.cypsa.projects.cptl-c.org", 
+                                    "rdfs:type": "syard:Breaker"
+                                }, 
+                                {
+                                    "name": "Paris$ND$52", 
+                                    "path": "Paris$ND$52.yard.paris.8sub.cypsa.projects.cptl-c.org", 
+                                    "rdfs:type": "syard:Node"
+                                }, 
+                                {
+                                    "name": "Paris$ND$51", 
+                                    "path": "Paris$ND$51.yard.paris.8sub.cypsa.projects.cptl-c.org", 
+                                    "rdfs:type": "syard:Node"
+                                }, 
+                                {
+                                    "name": "Paris$ND$50", 
+                                    "path": "Paris$ND$50.yard.paris.8sub.cypsa.projects.cptl-c.org", 
+                                    "rdfs:type": "syard:Bus"
+                                }, 
+                                {
+                                    "name": "Paris$BRK$4850", 
+                                    "path": "Paris$BRK$4850.yard.paris.8sub.cypsa.projects.cptl-c.org", 
+                                    "rdfs:type": "syard:Breaker"
+                                }, 
+                                {
+                                    "name": "Paris$BRK$5051", 
+                                    "path": "Paris$BRK$5051.yard.paris.8sub.cypsa.projects.cptl-c.org", 
+                                    "rdfs:type": "syard:Breaker"
+                                }
+                            ], 
+                            "name": "yard", 
+                            "path": "yard.paris.8sub.cypsa.projects.cptl-c.org", 
+                            "rdfs:type": "syard:SubstationYard"
+                        }, 
+                        {
+                            "children": [
+                                {
+                                    "name": "SEL_421_2", 
+                                    "path": "SEL_421_2.network.paris.8sub.cypsa.projects.cptl-c.org", 
+                                    "rdfs:type": "snet:DistanceRelay"
+                                }, 
+                                {
+                                    "name": "SEL_421_3", 
+                                    "path": "SEL_421_3.network.paris.8sub.cypsa.projects.cptl-c.org", 
+                                    "rdfs:type": "snet:DistanceRelay"
+                                }, 
+                                {
+                                    "name": "SEL_421_1", 
+                                    "path": "SEL_421_1.network.paris.8sub.cypsa.projects.cptl-c.org", 
+                                    "rdfs:type": "snet:DistanceRelay"
+                                }, 
+                                {
+                                    "name": "SEL_3620", 
+                                    "path": "SEL_3620.network.paris.8sub.cypsa.projects.cptl-c.org", 
+                                    "rdfs:type": "snet:Switch"
+                                }, 
+                                {
+                                    "name": "SEL_451_3", 
+                                    "path": "SEL_451_3.network.paris.8sub.cypsa.projects.cptl-c.org", 
+                                    "rdfs:type": "snet:OvercurrentRelay"
+                                }, 
+                                {
+                                    "name": "SEL_451_2", 
+                                    "path": "SEL_451_2.network.paris.8sub.cypsa.projects.cptl-c.org", 
+                                    "rdfs:type": "snet:OvercurrentRelay"
+                                }, 
+                                {
+                                    "name": "SEL_451_1", 
+                                    "path": "SEL_451_1.network.paris.8sub.cypsa.projects.cptl-c.org", 
+                                    "rdfs:type": "snet:OvercurrentRelay"
+                                }, 
+                                {
+                                    "name": "SEL_451_4", 
+                                    "path": "SEL_451_4.network.paris.8sub.cypsa.projects.cptl-c.org", 
+                                    "rdfs:type": "snet:OvercurrentRelay"
+                                }
+                            ], 
+                            "name": "network", 
+                            "path": "network.paris.8sub.cypsa.projects.cptl-c.org", 
+                            "rdfs:type": "snet:SubstationNetwork"
+                        }
+                    ], 
+                    "name": "paris", 
+                    "path": "paris.8sub.cypsa.projects.cptl-c.org", 
+                    "rdfs:type": "cptlc:Substation"
+                }, 
+                {
+                    "children": [
+                        {
+                            "children": [
+                                {
+                                    "name": "Cypress Creek$ND$17", 
+                                    "path": "Cypress Creek$ND$17.yard.cypress-creek.8sub.cypsa.projects.cptl-c.org", 
+                                    "rdfs:type": "syard:Node"
+                                }, 
+                                {
+                                    "name": "Cypress Creek$ND$16", 
+                                    "path": "Cypress Creek$ND$16.yard.cypress-creek.8sub.cypsa.projects.cptl-c.org", 
+                                    "rdfs:type": "syard:Node"
+                                }, 
+                                {
+                                    "name": "Cypress Creek$ND$15", 
+                                    "path": "Cypress Creek$ND$15.yard.cypress-creek.8sub.cypsa.projects.cptl-c.org", 
+                                    "rdfs:type": "syard:Bus"
+                                }, 
+                                {
+                                    "name": "Cypress Creek$BRK$2425", 
+                                    "path": "Cypress Creek$BRK$2425.yard.cypress-creek.8sub.cypsa.projects.cptl-c.org", 
+                                    "rdfs:type": "syard:Breaker"
+                                }, 
+                                {
+                                    "name": "Cypress Creek$ND$19", 
+                                    "path": "Cypress Creek$ND$19.yard.cypress-creek.8sub.cypsa.projects.cptl-c.org", 
+                                    "rdfs:type": "syard:Bus"
+                                }, 
+                                {
+                                    "name": "Cypress Creek$ND$18", 
+                                    "path": "Cypress Creek$ND$18.yard.cypress-creek.8sub.cypsa.projects.cptl-c.org", 
+                                    "rdfs:type": "syard:Node"
+                                }, 
+                                {
+                                    "name": "Cypress Creek$BRK$1519", 
+                                    "path": "Cypress Creek$BRK$1519.yard.cypress-creek.8sub.cypsa.projects.cptl-c.org", 
+                                    "rdfs:type": "syard:Breaker"
+                                }, 
+                                {
+                                    "name": "Cypress Creek$BRK$2325", 
+                                    "path": "Cypress Creek$BRK$2325.yard.cypress-creek.8sub.cypsa.projects.cptl-c.org", 
+                                    "rdfs:type": "syard:Breaker"
+                                }, 
+                                {
+                                    "name": "Cypress Creek$BRK$2019", 
+                                    "path": "Cypress Creek$BRK$2019.yard.cypress-creek.8sub.cypsa.projects.cptl-c.org", 
+                                    "rdfs:type": "syard:Breaker"
+                                }, 
+                                {
+                                    "name": "Cypress Creek$BRK$1925", 
+                                    "path": "Cypress Creek$BRK$1925.yard.cypress-creek.8sub.cypsa.projects.cptl-c.org", 
+                                    "rdfs:type": "syard:Breaker"
+                                }, 
+                                {
+                                    "name": "Cypress Creek$BRK$1719", 
+                                    "path": "Cypress Creek$BRK$1719.yard.cypress-creek.8sub.cypsa.projects.cptl-c.org", 
+                                    "rdfs:type": "syard:Breaker"
+                                }, 
+                                {
+                                    "name": "Cypress Creek$TX$4545", 
+                                    "path": "Cypress Creek$TX$4545.yard.cypress-creek.8sub.cypsa.projects.cptl-c.org", 
+                                    "rdfs:type": "syard:Transformer"
+                                }, 
+                                {
+                                    "name": "Cypress Creek$BRK$1715", 
+                                    "path": "Cypress Creek$BRK$1715.yard.cypress-creek.8sub.cypsa.projects.cptl-c.org", 
+                                    "rdfs:type": "syard:Breaker"
+                                }, 
+                                {
+                                    "name": "Cypress Creek$ND$24", 
+                                    "path": "Cypress Creek$ND$24.yard.cypress-creek.8sub.cypsa.projects.cptl-c.org", 
+                                    "rdfs:type": "syard:Node"
+                                }, 
+                                {
+                                    "name": "Cypress Creek$ND$25", 
+                                    "path": "Cypress Creek$ND$25.yard.cypress-creek.8sub.cypsa.projects.cptl-c.org", 
+                                    "rdfs:type": "syard:Bus"
+                                }, 
+                                {
+                                    "name": "Cypress Creek$ND$22", 
+                                    "path": "Cypress Creek$ND$22.yard.cypress-creek.8sub.cypsa.projects.cptl-c.org", 
+                                    "rdfs:type": "syard:Node"
+                                }, 
+                                {
+                                    "name": "Cypress Creek$ND$23", 
+                                    "path": "Cypress Creek$ND$23.yard.cypress-creek.8sub.cypsa.projects.cptl-c.org", 
+                                    "rdfs:type": "syard:Node"
+                                }, 
+                                {
+                                    "name": "Cypress Creek$ND$20", 
+                                    "path": "Cypress Creek$ND$20.yard.cypress-creek.8sub.cypsa.projects.cptl-c.org", 
+                                    "rdfs:type": "syard:Node"
+                                }, 
+                                {
+                                    "name": "Cypress Creek$ND$21", 
+                                    "path": "Cypress Creek$ND$21.yard.cypress-creek.8sub.cypsa.projects.cptl-c.org", 
+                                    "rdfs:type": "syard:Node"
+                                }, 
+                                {
+                                    "name": "Cypress Creek$BRK$2225", 
+                                    "path": "Cypress Creek$BRK$2225.yard.cypress-creek.8sub.cypsa.projects.cptl-c.org", 
+                                    "rdfs:type": "syard:Breaker"
+                                }, 
+                                {
+                                    "name": "Cypress Creek$BRK$1615", 
+                                    "path": "Cypress Creek$BRK$1615.yard.cypress-creek.8sub.cypsa.projects.cptl-c.org", 
+                                    "rdfs:type": "syard:Breaker"
+                                }, 
+                                {
+                                    "name": "Cypress Creek$BRK$2125", 
+                                    "path": "Cypress Creek$BRK$2125.yard.cypress-creek.8sub.cypsa.projects.cptl-c.org", 
+                                    "rdfs:type": "syard:Breaker"
+                                }, 
+                                {
+                                    "name": "Cypress Creek$BRK$1815", 
+                                    "path": "Cypress Creek$BRK$1815.yard.cypress-creek.8sub.cypsa.projects.cptl-c.org", 
+                                    "rdfs:type": "syard:Breaker"
+                                }, 
+                                {
+                                    "name": "Cypress Creek-UN-Gen2", 
+                                    "path": "Cypress Creek-UN-Gen2.yard.cypress-creek.8sub.cypsa.projects.cptl-c.org", 
+                                    "rdfs:type": "syard:Generator"
+                                }
+                            ], 
+                            "name": "yard", 
+                            "path": "yard.cypress-creek.8sub.cypsa.projects.cptl-c.org", 
+                            "rdfs:type": "syard:SubstationYard"
+                        }, 
+                        {
+                            "children": [
+                                {
+                                    "name": "SEL_421_2", 
+                                    "path": "SEL_421_2.network.cypress-creek.8sub.cypsa.projects.cptl-c.org", 
+                                    "rdfs:type": "snet:DistanceRelay"
+                                }, 
+                                {
+                                    "name": "SEL_421_3", 
+                                    "path": "SEL_421_3.network.cypress-creek.8sub.cypsa.projects.cptl-c.org", 
+                                    "rdfs:type": "snet:DistanceRelay"
+                                }, 
+                                {
+                                    "name": "SEL_421_1", 
+                                    "path": "SEL_421_1.network.cypress-creek.8sub.cypsa.projects.cptl-c.org", 
+                                    "rdfs:type": "snet:DistanceRelay"
+                                }, 
+                                {
+                                    "name": "SEL_421_6", 
+                                    "path": "SEL_421_6.network.cypress-creek.8sub.cypsa.projects.cptl-c.org", 
+                                    "rdfs:type": "snet:DistanceRelay"
+                                }, 
+                                {
+                                    "name": "SEL_421_7", 
+                                    "path": "SEL_421_7.network.cypress-creek.8sub.cypsa.projects.cptl-c.org", 
+                                    "rdfs:type": "snet:DistanceRelay"
+                                }, 
+                                {
+                                    "name": "SEL_421_4", 
+                                    "path": "SEL_421_4.network.cypress-creek.8sub.cypsa.projects.cptl-c.org", 
+                                    "rdfs:type": "snet:DistanceRelay"
+                                }, 
+                                {
+                                    "name": "SEL_421_5", 
+                                    "path": "SEL_421_5.network.cypress-creek.8sub.cypsa.projects.cptl-c.org", 
+                                    "rdfs:type": "snet:DistanceRelay"
+                                }, 
+                                {
+                                    "name": "SEL_3620", 
+                                    "path": "SEL_3620.network.cypress-creek.8sub.cypsa.projects.cptl-c.org", 
+                                    "rdfs:type": "snet:Switch"
+                                }, 
+                                {
+                                    "name": "SEL_451_3", 
+                                    "path": "SEL_451_3.network.cypress-creek.8sub.cypsa.projects.cptl-c.org", 
+                                    "rdfs:type": "snet:OvercurrentRelay"
+                                }, 
+                                {
+                                    "name": "SEL_451_2", 
+                                    "path": "SEL_451_2.network.cypress-creek.8sub.cypsa.projects.cptl-c.org", 
+                                    "rdfs:type": "snet:OvercurrentRelay"
+                                }, 
+                                {
+                                    "name": "SEL_451_1", 
+                                    "path": "SEL_451_1.network.cypress-creek.8sub.cypsa.projects.cptl-c.org", 
+                                    "rdfs:type": "snet:OvercurrentRelay"
+                                }, 
+                                {
+                                    "name": "SEL_451_5", 
+                                    "path": "SEL_451_5.network.cypress-creek.8sub.cypsa.projects.cptl-c.org", 
+                                    "rdfs:type": "snet:OvercurrentRelay"
+                                }, 
+                                {
+                                    "name": "SEL_451_4", 
+                                    "path": "SEL_451_4.network.cypress-creek.8sub.cypsa.projects.cptl-c.org", 
+                                    "rdfs:type": "snet:OvercurrentRelay"
+                                }
+                            ], 
+                            "name": "network", 
+                            "path": "network.cypress-creek.8sub.cypsa.projects.cptl-c.org", 
+                            "rdfs:type": "snet:SubstationNetwork"
+                        }
+                    ], 
+                    "name": "cypress-creek", 
+                    "path": "cypress-creek.8sub.cypsa.projects.cptl-c.org", 
+                    "rdfs:type": "cptlc:Substation"
+                }, 
+                {
+                    "children": [
+                        {
+                            "children": [
+                                {
+                                    "name": "Haverbrook$ND$38", 
+                                    "path": "Haverbrook$ND$38.yard.haverbrook.8sub.cypsa.projects.cptl-c.org", 
+                                    "rdfs:type": "syard:Node"
+                                }, 
+                                {
+                                    "name": "Haverbrook$BRK$3635", 
+                                    "path": "Haverbrook$BRK$3635.yard.haverbrook.8sub.cypsa.projects.cptl-c.org", 
+                                    "rdfs:type": "syard:Breaker"
+                                }, 
+                                {
+                                    "name": "Haverbrook$ND$36", 
+                                    "path": "Haverbrook$ND$36.yard.haverbrook.8sub.cypsa.projects.cptl-c.org", 
+                                    "rdfs:type": "syard:Node"
+                                }, 
+                                {
+                                    "name": "Haverbrook$BRK$3335", 
+                                    "path": "Haverbrook$BRK$3335.yard.haverbrook.8sub.cypsa.projects.cptl-c.org", 
+                                    "rdfs:type": "syard:Breaker"
+                                }, 
+                                {
+                                    "name": "Haverbrook$BRK$3835", 
+                                    "path": "Haverbrook$BRK$3835.yard.haverbrook.8sub.cypsa.projects.cptl-c.org", 
+                                    "rdfs:type": "syard:Breaker"
+                                }, 
+                                {
+                                    "name": "Haverbrook$ND$37", 
+                                    "path": "Haverbrook$ND$37.yard.haverbrook.8sub.cypsa.projects.cptl-c.org", 
+                                    "rdfs:type": "syard:Node"
+                                }, 
+                                {
+                                    "name": "Haverbrook$ND$34", 
+                                    "path": "Haverbrook$ND$34.yard.haverbrook.8sub.cypsa.projects.cptl-c.org", 
+                                    "rdfs:type": "syard:Node"
+                                }, 
+                                {
+                                    "name": "Haverbrook$BRK$3735", 
+                                    "path": "Haverbrook$BRK$3735.yard.haverbrook.8sub.cypsa.projects.cptl-c.org", 
+                                    "rdfs:type": "syard:Breaker"
+                                }, 
+                                {
+                                    "name": "Haverbrook-UN-Gen4", 
+                                    "path": "Haverbrook-UN-Gen4.yard.haverbrook.8sub.cypsa.projects.cptl-c.org", 
+                                    "rdfs:type": "syard:Generator"
+                                }, 
+                                {
+                                    "name": "Haverbrook$ND$33", 
+                                    "path": "Haverbrook$ND$33.yard.haverbrook.8sub.cypsa.projects.cptl-c.org", 
+                                    "rdfs:type": "syard:Node"
+                                }, 
+                                {
+                                    "name": "Haverbrook$BRK$3435", 
+                                    "path": "Haverbrook$BRK$3435.yard.haverbrook.8sub.cypsa.projects.cptl-c.org", 
+                                    "rdfs:type": "syard:Breaker"
+                                }, 
+                                {
+                                    "name": "Haverbrook$ND$35", 
+                                    "path": "Haverbrook$ND$35.yard.haverbrook.8sub.cypsa.projects.cptl-c.org", 
+                                    "rdfs:type": "syard:Bus"
+                                }
+                            ], 
+                            "name": "yard", 
+                            "path": "yard.haverbrook.8sub.cypsa.projects.cptl-c.org", 
+                            "rdfs:type": "syard:SubstationYard"
+                        }, 
+                        {
+                            "children": [
+                                {
+                                    "name": "Switch_1", 
+                                    "path": "Switch_1.network.haverbrook.8sub.cypsa.projects.cptl-c.org", 
+                                    "rdfs:type": "snet:Switch"
+                                }, 
+                                {
+                                    "name": "DistanceRelay_2", 
+                                    "path": "DistanceRelay_2.network.haverbrook.8sub.cypsa.projects.cptl-c.org", 
+                                    "rdfs:type": "snet:DistanceRelay"
+                                }, 
+                                {
+                                    "name": "DistanceRelay_3", 
+                                    "path": "DistanceRelay_3.network.haverbrook.8sub.cypsa.projects.cptl-c.org", 
+                                    "rdfs:type": "snet:DistanceRelay"
+                                }, 
+                                {
+                                    "name": "DistanceRelay_1", 
+                                    "path": "DistanceRelay_1.network.haverbrook.8sub.cypsa.projects.cptl-c.org", 
+                                    "rdfs:type": "snet:DistanceRelay"
+                                }, 
+                                {
+                                    "name": "ReversePowerRelay_1", 
+                                    "path": "ReversePowerRelay_1.network.haverbrook.8sub.cypsa.projects.cptl-c.org", 
+                                    "rdfs:type": "snet:ReversePowerRelay"
+                                }, 
+                                {
+                                    "name": "OvercurrentRelay_5", 
+                                    "path": "OvercurrentRelay_5.network.haverbrook.8sub.cypsa.projects.cptl-c.org", 
+                                    "rdfs:type": "snet:OvercurrentRelay"
+                                }, 
+                                {
+                                    "name": "OvercurrentRelay_4", 
+                                    "path": "OvercurrentRelay_4.network.haverbrook.8sub.cypsa.projects.cptl-c.org", 
+                                    "rdfs:type": "snet:OvercurrentRelay"
+                                }, 
+                                {
+                                    "name": "OvercurrentRelay_3", 
+                                    "path": "OvercurrentRelay_3.network.haverbrook.8sub.cypsa.projects.cptl-c.org", 
+                                    "rdfs:type": "snet:OvercurrentRelay"
+                                }, 
+                                {
+                                    "name": "OvercurrentRelay_2", 
+                                    "path": "OvercurrentRelay_2.network.haverbrook.8sub.cypsa.projects.cptl-c.org", 
+                                    "rdfs:type": "snet:OvercurrentRelay"
+                                }, 
+                                {
+                                    "name": "OvercurrentRelay_1", 
+                                    "path": "OvercurrentRelay_1.network.haverbrook.8sub.cypsa.projects.cptl-c.org", 
+                                    "rdfs:type": "snet:OvercurrentRelay"
+                                }
+                            ], 
+                            "name": "network", 
+                            "path": "network.haverbrook.8sub.cypsa.projects.cptl-c.org", 
+                            "rdfs:type": "snet:SubstationNetwork"
+                        }
+                    ], 
+                    "name": "haverbrook", 
+                    "path": "haverbrook.8sub.cypsa.projects.cptl-c.org", 
+                    "rdfs:type": "cptlc:Substation"
+                }, 
+                {
+                    "children": [
+                        {
+                            "children": [
+                                {
+                                    "name": "Capital City$ND$45", 
+                                    "path": "Capital City$ND$45.yard.capital-city.8sub.cypsa.projects.cptl-c.org", 
+                                    "rdfs:type": "syard:Node"
+                                }, 
+                                {
+                                    "name": "Capital City$BRK$4546", 
+                                    "path": "Capital City$BRK$4546.yard.capital-city.8sub.cypsa.projects.cptl-c.org", 
+                                    "rdfs:type": "syard:Breaker"
+                                }, 
+                                {
+                                    "name": "Capital City$ND$47", 
+                                    "path": "Capital City$ND$47.yard.capital-city.8sub.cypsa.projects.cptl-c.org", 
+                                    "rdfs:type": "syard:Node"
+                                }, 
+                                {
+                                    "name": "Capital City$BRK$4647", 
+                                    "path": "Capital City$BRK$4647.yard.capital-city.8sub.cypsa.projects.cptl-c.org", 
+                                    "rdfs:type": "syard:Breaker"
+                                }, 
+                                {
+                                    "name": "Capital City$ND$46", 
+                                    "path": "Capital City$ND$46.yard.capital-city.8sub.cypsa.projects.cptl-c.org", 
+                                    "rdfs:type": "syard:Bus"
+                                }
+                            ], 
+                            "name": "yard", 
+                            "path": "yard.capital-city.8sub.cypsa.projects.cptl-c.org", 
+                            "rdfs:type": "syard:SubstationYard"
+                        }, 
+                        {
+                            "children": [
+                                {
+                                    "name": "Switch_1", 
+                                    "path": "Switch_1.network.capital-city.8sub.cypsa.projects.cptl-c.org", 
+                                    "rdfs:type": "snet:Switch"
+                                }, 
+                                {
+                                    "name": "DistanceRelay_1", 
+                                    "path": "DistanceRelay_1.network.capital-city.8sub.cypsa.projects.cptl-c.org", 
+                                    "rdfs:type": "snet:DistanceRelay"
+                                }, 
+                                {
+                                    "name": "OvercurrentRelay_2", 
+                                    "path": "OvercurrentRelay_2.network.capital-city.8sub.cypsa.projects.cptl-c.org", 
+                                    "rdfs:type": "snet:OvercurrentRelay"
+                                }, 
+                                {
+                                    "name": "OvercurrentRelay_1", 
+                                    "path": "OvercurrentRelay_1.network.capital-city.8sub.cypsa.projects.cptl-c.org", 
+                                    "rdfs:type": "snet:OvercurrentRelay"
+                                }
+                            ], 
+                            "name": "network", 
+                            "path": "network.capital-city.8sub.cypsa.projects.cptl-c.org", 
+                            "rdfs:type": "snet:SubstationNetwork"
+                        }
+                    ], 
+                    "name": "capital-city", 
+                    "path": "capital-city.8sub.cypsa.projects.cptl-c.org", 
+                    "rdfs:type": "cptlc:Substation"
+                }, 
+                {
+                    "children": [
+                        {
+                            "children": [
+                                {
+                                    "name": "North Haverbrook$BRK$913", 
+                                    "path": "North Haverbrook$BRK$913.yard.north-haverbrook.8sub.cypsa.projects.cptl-c.org", 
+                                    "rdfs:type": "syard:Breaker"
+                                }, 
+                                {
+                                    "name": "North Haverbrook$BRK$910", 
+                                    "path": "North Haverbrook$BRK$910.yard.north-haverbrook.8sub.cypsa.projects.cptl-c.org", 
+                                    "rdfs:type": "syard:Breaker"
+                                }, 
+                                {
+                                    "name": "North Haverbrook$BRK$812", 
+                                    "path": "North Haverbrook$BRK$812.yard.north-haverbrook.8sub.cypsa.projects.cptl-c.org", 
+                                    "rdfs:type": "syard:Breaker"
+                                }, 
+                                {
+                                    "name": "North Haverbrook$BRK$89", 
+                                    "path": "North Haverbrook$BRK$89.yard.north-haverbrook.8sub.cypsa.projects.cptl-c.org", 
+                                    "rdfs:type": "syard:Breaker"
+                                }, 
+                                {
+                                    "name": "North Haverbrook$ND$7", 
+                                    "path": "North Haverbrook$ND$7.yard.north-haverbrook.8sub.cypsa.projects.cptl-c.org", 
+                                    "rdfs:type": "syard:Node"
+                                }, 
+                                {
+                                    "name": "North Haverbrook$ND$8", 
+                                    "path": "North Haverbrook$ND$8.yard.north-haverbrook.8sub.cypsa.projects.cptl-c.org", 
+                                    "rdfs:type": "syard:Bus"
+                                }, 
+                                {
+                                    "name": "North Haverbrook$BRK$78", 
+                                    "path": "North Haverbrook$BRK$78.yard.north-haverbrook.8sub.cypsa.projects.cptl-c.org", 
+                                    "rdfs:type": "syard:Breaker"
+                                }, 
+                                {
+                                    "name": "North Haverbrook$BRK$1413", 
+                                    "path": "North Haverbrook$BRK$1413.yard.north-haverbrook.8sub.cypsa.projects.cptl-c.org", 
+                                    "rdfs:type": "syard:Breaker"
+                                }, 
+                                {
+                                    "name": "North Haverbrook$BRK$1213", 
+                                    "path": "North Haverbrook$BRK$1213.yard.north-haverbrook.8sub.cypsa.projects.cptl-c.org", 
+                                    "rdfs:type": "syard:Breaker"
+                                }, 
+                                {
+                                    "name": "North Haverbrook$ND$14", 
+                                    "path": "North Haverbrook$ND$14.yard.north-haverbrook.8sub.cypsa.projects.cptl-c.org", 
+                                    "rdfs:type": "syard:Node"
+                                }, 
+                                {
+                                    "name": "North Haverbrook$ND$11", 
+                                    "path": "North Haverbrook$ND$11.yard.north-haverbrook.8sub.cypsa.projects.cptl-c.org", 
+                                    "rdfs:type": "syard:Node"
+                                }, 
+                                {
+                                    "name": "North Haverbrook$ND$10", 
+                                    "path": "North Haverbrook$ND$10.yard.north-haverbrook.8sub.cypsa.projects.cptl-c.org", 
+                                    "rdfs:type": "syard:Node"
+                                }, 
+                                {
+                                    "name": "North Haverbrook$ND$13", 
+                                    "path": "North Haverbrook$ND$13.yard.north-haverbrook.8sub.cypsa.projects.cptl-c.org", 
+                                    "rdfs:type": "syard:Bus"
+                                }, 
+                                {
+                                    "name": "North Haverbrook$ND$12", 
+                                    "path": "North Haverbrook$ND$12.yard.north-haverbrook.8sub.cypsa.projects.cptl-c.org", 
+                                    "rdfs:type": "syard:Bus"
+                                }, 
+                                {
+                                    "name": "North Haverbrook$ND$59", 
+                                    "path": "North Haverbrook$ND$59.yard.north-haverbrook.8sub.cypsa.projects.cptl-c.org", 
+                                    "rdfs:type": "syard:Bus"
+                                }, 
+                                {
+                                    "name": "North Haverbrook$BRK$1112", 
+                                    "path": "North Haverbrook$BRK$1112.yard.north-haverbrook.8sub.cypsa.projects.cptl-c.org", 
+                                    "rdfs:type": "syard:Breaker"
+                                }
+                            ], 
+                            "name": "yard", 
+                            "path": "yard.north-haverbrook.8sub.cypsa.projects.cptl-c.org", 
+                            "rdfs:type": "syard:SubstationYard"
+                        }, 
+                        {
+                            "children": [
+                                {
+                                    "name": "DistanceRelay_2", 
+                                    "path": "DistanceRelay_2.network.north-haverbrook.8sub.cypsa.projects.cptl-c.org", 
+                                    "rdfs:type": "snet:DistanceRelay"
+                                }, 
+                                {
+                                    "name": "Switch_1", 
+                                    "path": "Switch_1.network.north-haverbrook.8sub.cypsa.projects.cptl-c.org", 
+                                    "rdfs:type": "snet:Switch"
+                                }, 
+                                {
+                                    "name": "DistanceRelay_3", 
+                                    "path": "DistanceRelay_3.network.north-haverbrook.8sub.cypsa.projects.cptl-c.org", 
+                                    "rdfs:type": "snet:DistanceRelay"
+                                }, 
+                                {
+                                    "name": "DistanceRelay_1", 
+                                    "path": "DistanceRelay_1.network.north-haverbrook.8sub.cypsa.projects.cptl-c.org", 
+                                    "rdfs:type": "snet:DistanceRelay"
+                                }, 
+                                {
+                                    "name": "OvercurrentRelay_7", 
+                                    "path": "OvercurrentRelay_7.network.north-haverbrook.8sub.cypsa.projects.cptl-c.org", 
+                                    "rdfs:type": "snet:OvercurrentRelay"
+                                }, 
+                                {
+                                    "name": "OvercurrentRelay_6", 
+                                    "path": "OvercurrentRelay_6.network.north-haverbrook.8sub.cypsa.projects.cptl-c.org", 
+                                    "rdfs:type": "snet:OvercurrentRelay"
+                                }, 
+                                {
+                                    "name": "OvercurrentRelay_5", 
+                                    "path": "OvercurrentRelay_5.network.north-haverbrook.8sub.cypsa.projects.cptl-c.org", 
+                                    "rdfs:type": "snet:OvercurrentRelay"
+                                }, 
+                                {
+                                    "name": "OvercurrentRelay_4", 
+                                    "path": "OvercurrentRelay_4.network.north-haverbrook.8sub.cypsa.projects.cptl-c.org", 
+                                    "rdfs:type": "snet:OvercurrentRelay"
+                                }, 
+                                {
+                                    "name": "OvercurrentRelay_3", 
+                                    "path": "OvercurrentRelay_3.network.north-haverbrook.8sub.cypsa.projects.cptl-c.org", 
+                                    "rdfs:type": "snet:OvercurrentRelay"
+                                }, 
+                                {
+                                    "name": "OvercurrentRelay_2", 
+                                    "path": "OvercurrentRelay_2.network.north-haverbrook.8sub.cypsa.projects.cptl-c.org", 
+                                    "rdfs:type": "snet:OvercurrentRelay"
+                                }, 
+                                {
+                                    "name": "OvercurrentRelay_1", 
+                                    "path": "OvercurrentRelay_1.network.north-haverbrook.8sub.cypsa.projects.cptl-c.org", 
+                                    "rdfs:type": "snet:OvercurrentRelay"
+                                }
+                            ], 
+                            "name": "network", 
+                            "path": "network.north-haverbrook.8sub.cypsa.projects.cptl-c.org", 
+                            "rdfs:type": "snet:SubstationNetwork"
+                        }
+                    ], 
+                    "name": "north-haverbrook", 
+                    "path": "north-haverbrook.8sub.cypsa.projects.cptl-c.org", 
+                    "rdfs:type": "cptlc:Substation"
+                }, 
+                {
+                    "children": [
+                        {
+                            "children": [
+                                {
+                                    "name": "Shelbyville$BRK$3031", 
+                                    "path": "Shelbyville$BRK$3031.yard.shelbyville.8sub.cypsa.projects.cptl-c.org", 
+                                    "rdfs:type": "syard:Breaker"
+                                }, 
+                                {
+                                    "name": "Shelbyville$BRK$2931", 
+                                    "path": "Shelbyville$BRK$2931.yard.shelbyville.8sub.cypsa.projects.cptl-c.org", 
+                                    "rdfs:type": "syard:Breaker"
+                                }, 
+                                {
+                                    "name": "Shelbyville$BRK$2928", 
+                                    "path": "Shelbyville$BRK$2928.yard.shelbyville.8sub.cypsa.projects.cptl-c.org", 
+                                    "rdfs:type": "syard:Breaker"
+                                }, 
+                                {
+                                    "name": "Shelbyville$BRK$2629", 
+                                    "path": "Shelbyville$BRK$2629.yard.shelbyville.8sub.cypsa.projects.cptl-c.org", 
+                                    "rdfs:type": "syard:Breaker"
+                                }, 
+                                {
+                                    "name": "Shelbyville$BRK$2729", 
+                                    "path": "Shelbyville$BRK$2729.yard.shelbyville.8sub.cypsa.projects.cptl-c.org", 
+                                    "rdfs:type": "syard:Breaker"
+                                }, 
+                                {
+                                    "name": "Shelbyville$BRK$3132", 
+                                    "path": "Shelbyville$BRK$3132.yard.shelbyville.8sub.cypsa.projects.cptl-c.org", 
+                                    "rdfs:type": "syard:Breaker"
+                                }, 
+                                {
+                                    "name": "Shelbyville-UN-Gen3", 
+                                    "path": "Shelbyville-UN-Gen3.yard.shelbyville.8sub.cypsa.projects.cptl-c.org", 
+                                    "rdfs:type": "syard:Generator"
+                                }, 
+                                {
+                                    "name": "Shelbyville$ND$28", 
+                                    "path": "Shelbyville$ND$28.yard.shelbyville.8sub.cypsa.projects.cptl-c.org", 
+                                    "rdfs:type": "syard:Node"
+                                }, 
+                                {
+                                    "name": "Shelbyville$ND$29", 
+                                    "path": "Shelbyville$ND$29.yard.shelbyville.8sub.cypsa.projects.cptl-c.org", 
+                                    "rdfs:type": "syard:Bus"
+                                }, 
+                                {
+                                    "name": "Shelbyville$ND$26", 
+                                    "path": "Shelbyville$ND$26.yard.shelbyville.8sub.cypsa.projects.cptl-c.org", 
+                                    "rdfs:type": "syard:Node"
+                                }, 
+                                {
+                                    "name": "Shelbyville$ND$27", 
+                                    "path": "Shelbyville$ND$27.yard.shelbyville.8sub.cypsa.projects.cptl-c.org", 
+                                    "rdfs:type": "syard:Node"
+                                }, 
+                                {
+                                    "name": "Shelbyville$ND$31", 
+                                    "path": "Shelbyville$ND$31.yard.shelbyville.8sub.cypsa.projects.cptl-c.org", 
+                                    "rdfs:type": "syard:Bus"
+                                }, 
+                                {
+                                    "name": "Shelbyville$ND$30", 
+                                    "path": "Shelbyville$ND$30.yard.shelbyville.8sub.cypsa.projects.cptl-c.org", 
+                                    "rdfs:type": "syard:Node"
+                                }, 
+                                {
+                                    "name": "Shelbyville$ND$32", 
+                                    "path": "Shelbyville$ND$32.yard.shelbyville.8sub.cypsa.projects.cptl-c.org", 
+                                    "rdfs:type": "syard:Node"
+                                }
+                            ], 
+                            "name": "yard", 
+                            "path": "yard.shelbyville.8sub.cypsa.projects.cptl-c.org", 
+                            "rdfs:type": "syard:SubstationYard"
+                        }, 
+                        {
+                            "children": [
+                                {
+                                    "name": "SEL_421_2", 
+                                    "path": "SEL_421_2.network.shelbyville.8sub.cypsa.projects.cptl-c.org", 
+                                    "rdfs:type": "snet:DistanceRelay"
+                                }, 
+                                {
+                                    "name": "SEL_421_3", 
+                                    "path": "SEL_421_3.network.shelbyville.8sub.cypsa.projects.cptl-c.org", 
+                                    "rdfs:type": "snet:DistanceRelay"
+                                }, 
+                                {
+                                    "name": "SEL_421_1", 
+                                    "path": "SEL_421_1.network.shelbyville.8sub.cypsa.projects.cptl-c.org", 
+                                    "rdfs:type": "snet:DistanceRelay"
+                                }, 
+                                {
+                                    "name": "SEL_3620", 
+                                    "path": "SEL_3620.network.shelbyville.8sub.cypsa.projects.cptl-c.org", 
+                                    "rdfs:type": "snet:Switch"
+                                }, 
+                                {
+                                    "name": "SEL_451_3", 
+                                    "path": "SEL_451_3.network.shelbyville.8sub.cypsa.projects.cptl-c.org", 
+                                    "rdfs:type": "snet:OvercurrentRelay"
+                                }, 
+                                {
+                                    "name": "SEL_451_2", 
+                                    "path": "SEL_451_2.network.shelbyville.8sub.cypsa.projects.cptl-c.org", 
+                                    "rdfs:type": "snet:OvercurrentRelay"
+                                }, 
+                                {
+                                    "name": "SEL_451_1", 
+                                    "path": "SEL_451_1.network.shelbyville.8sub.cypsa.projects.cptl-c.org", 
+                                    "rdfs:type": "snet:OvercurrentRelay"
+                                }, 
+                                {
+                                    "name": "SEL_451_6", 
+                                    "path": "SEL_451_6.network.shelbyville.8sub.cypsa.projects.cptl-c.org", 
+                                    "rdfs:type": "snet:OvercurrentRelay"
+                                }, 
+                                {
+                                    "name": "SEL_451_5", 
+                                    "path": "SEL_451_5.network.shelbyville.8sub.cypsa.projects.cptl-c.org", 
+                                    "rdfs:type": "snet:OvercurrentRelay"
+                                }, 
+                                {
+                                    "name": "SEL_451_4", 
+                                    "path": "SEL_451_4.network.shelbyville.8sub.cypsa.projects.cptl-c.org", 
+                                    "rdfs:type": "snet:OvercurrentRelay"
+                                }
+                            ], 
+                            "name": "network", 
+                            "path": "network.shelbyville.8sub.cypsa.projects.cptl-c.org", 
+                            "rdfs:type": "snet:SubstationNetwork"
+                        }
+                    ], 
+                    "name": "shelbyville", 
+                    "path": "shelbyville.8sub.cypsa.projects.cptl-c.org", 
+                    "rdfs:type": "cptlc:Substation"
+                }, 
+                {
+                    "children": [
+                        {
+                            "children": [
+                                {
+                                    "name": "Springfield$ND$41", 
+                                    "path": "Springfield$ND$41.yard.springfield.8sub.cypsa.projects.cptl-c.org", 
+                                    "rdfs:type": "syard:Bus"
+                                }, 
+                                {
+                                    "name": "Springfield-UN-Gen5", 
+                                    "path": "Springfield-UN-Gen5.yard.springfield.8sub.cypsa.projects.cptl-c.org", 
+                                    "rdfs:type": "syard:Generator"
+                                }, 
+                                {
+                                    "name": "Springfield$ND$42", 
+                                    "path": "Springfield$ND$42.yard.springfield.8sub.cypsa.projects.cptl-c.org", 
+                                    "rdfs:type": "syard:Node"
+                                }, 
+                                {
+                                    "name": "Springfield$ND$43", 
+                                    "path": "Springfield$ND$43.yard.springfield.8sub.cypsa.projects.cptl-c.org", 
+                                    "rdfs:type": "syard:Node"
+                                }, 
+                                {
+                                    "name": "Springfield$ND$40", 
+                                    "path": "Springfield$ND$40.yard.springfield.8sub.cypsa.projects.cptl-c.org", 
+                                    "rdfs:type": "syard:Node"
+                                }, 
+                                {
+                                    "name": "Springfield$BRK$4441", 
+                                    "path": "Springfield$BRK$4441.yard.springfield.8sub.cypsa.projects.cptl-c.org", 
+                                    "rdfs:type": "syard:Breaker"
+                                }, 
+                                {
+                                    "name": "Springfield$BRK$4341", 
+                                    "path": "Springfield$BRK$4341.yard.springfield.8sub.cypsa.projects.cptl-c.org", 
+                                    "rdfs:type": "syard:Breaker"
+                                }, 
+                                {
+                                    "name": "Springfield$ND$44", 
+                                    "path": "Springfield$ND$44.yard.springfield.8sub.cypsa.projects.cptl-c.org", 
+                                    "rdfs:type": "syard:Node"
+                                }, 
+                                {
+                                    "name": "Springfield$BRK$4041", 
+                                    "path": "Springfield$BRK$4041.yard.springfield.8sub.cypsa.projects.cptl-c.org", 
+                                    "rdfs:type": "syard:Breaker"
+                                }, 
+                                {
+                                    "name": "Springfield$ND$39", 
+                                    "path": "Springfield$ND$39.yard.springfield.8sub.cypsa.projects.cptl-c.org", 
+                                    "rdfs:type": "syard:Node"
+                                }, 
+                                {
+                                    "name": "Springfield$BRK$4142", 
+                                    "path": "Springfield$BRK$4142.yard.springfield.8sub.cypsa.projects.cptl-c.org", 
+                                    "rdfs:type": "syard:Breaker"
+                                }, 
+                                {
+                                    "name": "Springfield$BRK$3941", 
+                                    "path": "Springfield$BRK$3941.yard.springfield.8sub.cypsa.projects.cptl-c.org", 
+                                    "rdfs:type": "syard:Breaker"
+                                }
+                            ], 
+                            "name": "yard", 
+                            "path": "yard.springfield.8sub.cypsa.projects.cptl-c.org", 
+                            "rdfs:type": "syard:SubstationYard"
+                        }, 
+                        {
+                            "children": [
+                                {
+                                    "name": "Switch_1", 
+                                    "path": "Switch_1.network.springfield.8sub.cypsa.projects.cptl-c.org", 
+                                    "rdfs:type": "snet:Switch"
+                                }, 
+                                {
+                                    "name": "DistanceRelay_2", 
+                                    "path": "DistanceRelay_2.network.springfield.8sub.cypsa.projects.cptl-c.org", 
+                                    "rdfs:type": "snet:DistanceRelay"
+                                }, 
+                                {
+                                    "name": "DistanceRelay_3", 
+                                    "path": "DistanceRelay_3.network.springfield.8sub.cypsa.projects.cptl-c.org", 
+                                    "rdfs:type": "snet:DistanceRelay"
+                                }, 
+                                {
+                                    "name": "DistanceRelay_1", 
+                                    "path": "DistanceRelay_1.network.springfield.8sub.cypsa.projects.cptl-c.org", 
+                                    "rdfs:type": "snet:DistanceRelay"
+                                }, 
+                                {
+                                    "name": "ReversePowerRelay_1", 
+                                    "path": "ReversePowerRelay_1.network.springfield.8sub.cypsa.projects.cptl-c.org", 
+                                    "rdfs:type": "snet:ReversePowerRelay"
+                                }, 
+                                {
+                                    "name": "OvercurrentRelay_5", 
+                                    "path": "OvercurrentRelay_5.network.springfield.8sub.cypsa.projects.cptl-c.org", 
+                                    "rdfs:type": "snet:OvercurrentRelay"
+                                }, 
+                                {
+                                    "name": "OvercurrentRelay_4", 
+                                    "path": "OvercurrentRelay_4.network.springfield.8sub.cypsa.projects.cptl-c.org", 
+                                    "rdfs:type": "snet:OvercurrentRelay"
+                                }, 
+                                {
+                                    "name": "OvercurrentRelay_3", 
+                                    "path": "OvercurrentRelay_3.network.springfield.8sub.cypsa.projects.cptl-c.org", 
+                                    "rdfs:type": "snet:OvercurrentRelay"
+                                }, 
+                                {
+                                    "name": "OvercurrentRelay_2", 
+                                    "path": "OvercurrentRelay_2.network.springfield.8sub.cypsa.projects.cptl-c.org", 
+                                    "rdfs:type": "snet:OvercurrentRelay"
+                                }, 
+                                {
+                                    "name": "OvercurrentRelay_1", 
+                                    "path": "OvercurrentRelay_1.network.springfield.8sub.cypsa.projects.cptl-c.org", 
+                                    "rdfs:type": "snet:OvercurrentRelay"
+                                }
+                            ], 
+                            "name": "network", 
+                            "path": "network.springfield.8sub.cypsa.projects.cptl-c.org", 
+                            "rdfs:type": "snet:SubstationNetwork"
+                        }
+                    ], 
+                    "name": "springfield", 
+                    "path": "springfield.8sub.cypsa.projects.cptl-c.org", 
+                    "rdfs:type": "cptlc:Substation"
+                }
+            ], 
+            "name": "org.cptl-c.projects.cypsa.8sub", 
+            "path": "8sub.cypsa.projects.cptl-c.org"
+        }
+    ], 
+    "name": "root"
+}

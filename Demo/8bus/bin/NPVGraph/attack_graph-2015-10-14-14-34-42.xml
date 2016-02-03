@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<!DOCTYPE VCReport [
+<!ELEMENT VCReport ((NetCenter|HostCenter|NmapAnalysis)*, Endpoint*)>
+<!ATTLIST VCReport type CDATA #REQUIRED>
+<!ELEMENT NetCenter (Network,Intensity*)>
+<!ELEMENT HostCenter (Host,Intensity*)>
+<!ELEMENT Endpoint EMPTY>
+<!ATTLIST Endpoint IPAddress CDATA #REQUIRED>
+<!ATTLIST Endpoint depth CDATA #REQUIRED>
+<!ATTLIST Endpoint width CDATA #REQUIRED>
+<!ELEMENT Network EMPTY>
+<!ATTLIST Network netAddress CDATA #REQUIRED>
+<!ELEMENT Host EMPTY>
+<!ATTLIST Host IPAddress CDATA #REQUIRED>
+<!ELEMENT Intensity EMPTY>
+<!ATTLIST Intensity depth CDATA #REQUIRED>
+<!ATTLIST Intensity width CDATA #REQUIRED>
+<!ELEMENT Description (#PCDATA)>
+<!ELEMENT NmapAnalysis (Path*)>
+<!ATTLIST NmapAnalysis sourceNode CDATA #REQUIRED>
+<!ATTLIST NmapAnalysis sourceNodeId CDATA #REQUIRED>
+<!ATTLIST NmapAnalysis destinationNode CDATA #REQUIRED>
+<!ATTLIST NmapAnalysis destinationNodeId CDATA #REQUIRED>
+<!ATTLIST NmapAnalysis timeTaken CDATA #IMPLIED>
+<!ELEMENT Path (Node*)>
+<!ATTLIST Path attackNode CDATA #REQUIRED>
+<!ATTLIST Path nodeId CDATA #REQUIRED>
+<!ATTLIST Path cost CDATA #REQUIRED>
+<!ELEMENT Node EMPTY>
+<!ATTLIST Node IPAddress CDATA #REQUIRED>
+<!ATTLIST Node nodeId CDATA #REQUIRED>
+<!ATTLIST Node vulnID CDATA #REQUIRED>
+]>
+<VCReport type="vuln">
+</VCReport>

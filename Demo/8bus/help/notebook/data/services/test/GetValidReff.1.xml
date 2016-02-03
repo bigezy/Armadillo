@@ -1,0 +1,20 @@
+<cypsa:GetValidReff>
+  <request>
+    <requestName>GetValidReff</requestName>
+    <requestUrn>urn:cypsa:8bus</requestUrn>
+    <level>1</level>
+  </request>
+  <reply>
+    <reff>
+      <urn>urn:cypsa:8bus:capital-city</urn>
+      <urn>urn:cypsa:8bus:control-center</urn>
+      <urn>urn:cypsa:8bus:cyprus-creek</urn>
+      <urn>urn:cypsa:8bus:haverbrook</urn>
+      <urn>urn:cypsa:8bus:north-haverbrook</urn>
+      <urn>urn:cypsa:8bus:ogdenville</urn>
+      <urn>urn:cypsa:8bus:paris</urn>
+      <urn>urn:cypsa:8bus:shelbyville</urn>
+      <urn>urn:cypsa:8bus:springfield</urn>      
+    </reff>
+  </reply>
+</cypsa:GetValidReff>

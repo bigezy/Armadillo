@@ -1,0 +1,779 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head
+xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+xmlns:foaf="http://xmlns.com/foaf/0.1/"
+xmlns:vs="http://www.w3.org/2003/06/sw-vocab-status/ns#"
+xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+xmlns:owl="http://www.w3.org/2002/07/owl#"
+xmlns:dct="http://purl.org/dc/terms/"
+xmlns:dc="http://purl.org/dc/elements/1.1/">
+  <title>CPTL Vocabulary Specification</title>
+  <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+  <link href="http://xmlns.com/xmlns-style.css" rel="stylesheet"  type="text/css" />
+  <link href="../css/w3c-style.css" rel="stylesheet"  type="text/css" />
+  <link href="http://xmlns.com/foaf/spec/index.rdf" rel="alternate"  type="application/rdf+xml" />
+</head>
+<body>
+  <h1>CPTL Vocabulary Specification 0.1<br /></h1>
+
+  <h2>Namespace Document 20 May 2015</h2>
+  
+  <dl>
+    <dt>This version:</dt>
+    <ul>
+      <li><dd>http://cptl-c.org/core/2014/07/core/
+	  (<a href="ontologies/201407-cptlc.rdf">rdf</a>)</dd></li>
+      <li><dd>http://cptl-c.org/enterprise/2015/07/enterprise_network/
+	  (<a href="ontologies/201505-enet.rdf">rdf</a>)</dd></li>
+      <li><dd>http://cptl-c.org/device/2015/05/fs/
+	  (<a href="ontologies/201505-devfs.rdf">rdf</a>)</dd></li>
+      <li><dd>http://cptl-c.org/device/2015/05/os/
+	  (<a href="ontologies/201505-devos.rdf">rdf</a>)</dd></li>
+    </ul>
+    
+    <!--<dt>Latest version:</dt>
+    <dd><a href="http://cptl-c.org/spec/">http://cptl-c.org/spec/</a> (<a href="index.rdf">rdf</a>)</dd>
+
+    <dt>Previous version:</dt>
+    <dd>No previous version.</dd>
+    -->
+    <dt>Authors:</dt>
+    <dd><a href="mailto:gweaver@illinois.edu">Gabe Weaver</a></dd>
+
+    <dt>Contributors:</dt>
+
+    <dd>Members of the CPTL mailing list 
+    and the wider <a href="http://www.w3.org/2001/sw/interest/">RDF
+    and Semantic Web developer community</a>.</dd>
+  </dl>
+
+  <p class="copyright">Copyright &#169; 2014-2015 Gabe Weaver</p>
+
+  <p>This work is licensed under a <a  rel="license" href= 
+  "http://creativecommons.org/licenses/by-sa/3.0/legalcode">Creative Commons Attribution-ShareAlike License</a>. 
+  This copyright applies to the <em>CPTL Vocabulary Specification</em> and accompanying documentation in RDF or JSON. Regarding underlying technology, CPTL uses W3C's <a href="http://www.w3.org/RDF/">RDF</a> technology, an open Web standard that can be freely used by anyone.</p>
+
+  <hr />
+
+
+<h2 id="sec-status">Abstract</h2>
+
+<p>
+This specification describes the CPTL language, defined as a dictionary of named properties and classes using W3C's RDF technology.  We note that the format and scope of specification is based directly off of the <a href="http://xmlns.com/foaf/spec/">FOAF Vocabulary Specification</a>.  
+</p>
+
+  <!-- What is it?-->
+  <p>
+    The Cyber Physical Topology Language (CPTL) is a project whose
+    main objective is to provide a human-readable, machine-actionable
+    language for practitioners and researchers to communicate
+    information about <em>cyber-physical systems</em> across different
+    domains (e.g. electrical power, enterprise networks, smart
+    cities).  The etymology of the word system (σύστημα) means
+    an <em>organized whole; body</em> and as such, graphs a natural
+    way to formally represent different assets and relations among
+    them within a <em>cyber-physical system</em>.  
+   <p>
+
+   <!-- Vocabulary, Views -->
+   <p>The CPTL Vocabulary defines terms that may be employed to
+     construct several different <em>views</em> or semantic graphs, on
+     a cyber-physical system.  In order to facilitate a holistic
+     understanding of how components of CPS interact, the CPTL
+     Vocabulary tries to provide a more efficient means to communicate
+     different perspectives of the same system. At the very least, the
+     CPTL Vocabulary provides practitioners and researchers with a
+     language to communicate inventories of assets and their
+     connections.  The intent is to provide an efficient mechanism to
+     communicate information about CPS (at the 'right' level of
+     abstraction) to produce datasets for scientists, and data sources
+     for information sharing requirements of auditing and government
+     agencies.</p>
+
+   <p>Currently, there are several different kinds of assets and
+     relations supported the CPTL vocabulary.  The concepts defined
+     in the ontologies listed below are used to create different
+     semantic graphs (documented within the appropriate ontologies)
+     that represent a way to model a given system.</p>
+
+   <!-- Document Primitives -->
+   <ul>
+     <li><em>core</em>:  Basic primitives found in different
+     expressions throughout CPS.  These include the notion
+     of <a href="#cptlc:Asset">Asset</a> as well
+     as <a href="#cptlc:Path">paths</a> for example.</li>
+     <li><em>file system</em>: Terms and relations that provide
+       specifics about a given filesystem such
+       as <a href="#devfs:Directory">Directory</a> and filesystem
+       hierarchy relations (e.g. <a href="#devfs:hasLinkTo">sym
+	 links</a>).</li>
+     <li><em>operating system</em>: Terms and relations typically
+     covered in an OS course such as <a href="#devos:Process">Process</a>,
+       <a href="#devos:hasIPC">IPC</a>, and user account/privilege constructs</li>
+     <li><em>network</em>:  Terms and relations described in a
+     networking course that includes network devices such
+     as <a href="#enet:Switch">Switches</a>, as well as protocol-specific
+     information such as <a href="#enet:IPAddress">IP
+	 address</a>.</li>
+   </ul>
+
+  <div class="status">
+    <h2>Status of This Document</h2>
+
+    <p>CPTL has been evolving since 2014 and will continue to evolve.</p>
+
+  <a id="sec-glance"></a>
+  <h2 id="glance">CPTL at a glance</h2>
+    <p>Main CPTL terms, grouped in broad categories.</p>
+    
+<ul>
+
+ <h2>Classes & Properties</h2>
+ <h3>Core</h3>
+ <div class="specterm classterm" id="#cptlc:Asset" about="http://cptl-c.org/core/2014/07/core/Asset" typeof="owl:Class">
+<h4>
+<a id="cptlc:Asset"></a>Class: cptlc:Asset</h4>
+<em>Asset</em> - A cyber or physical asset to be tracked within CPTL.  The
+	notion of asset is quite general and ranges from network devices to
+	software/hardware to buildings or rooms.<br>
+</div><div class="specterm classterm" id="#cptlc:Path" about="http://cptl-c.org/core/2014/07/core/Path" typeof="owl:Class">
+<h4>
+<a id="cptlc:Path"></a>Class: cptlc:Path</h4>
+<em>Path</em> - A path specifies a location of some asset within a
+      system.<br>
+</div><br xmlns:owl="http://www.w3.org/2002/07/owl#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"><div class="specterm propertyterm" id="#cptlc:hasLink" about="http://cptl-c.org/core/2014/07/core/hasLink" typeof="owl:ObjectProperty">
+<h4>
+<a id="cptlc:hasLink"></a>Property: cptlc:hasLink</h4>
+<em>hasLink</em> - Used to indicate a relation between two assets.<br><table><tr>
+<th>Status:</th>
+<td><span property="vs:status">dev</span></td>
+</tr></table>
+</div>
+
+
+ <h3>Device Operating System</h3>
+ <div class="specterm classterm" id="#devos:Device" about="http://cptl-c.org/device/2015/05/os/Device" typeof="owl:Class">
+<h4>
+<a id="devos:Device"></a>Class: devos:Device</h4>
+<em>Device</em> - In computing, an input device is a peripheral (piece
+    of computer hardware equipment) used to provide data and control
+    signals to an information processing system such as a computer or
+    other information appliance. Examples of input devices include
+    keyboards, mice, scanners, digital cameras and joysticks.
+    (http://en.wikipedia.org/wiki/Input_device)<br>
+</div><div class="specterm classterm" id="#devos:DevicePath" about="http://cptl-c.org/device/2015/05/os/DevicePath" typeof="owl:Class">
+<h4>
+<a id="devos:DevicePath"></a>Class: devos:DevicePath</h4>
+<em>DevicePath</em> - <br>
+</div><div class="specterm classterm" id="#devos:File" about="http://cptl-c.org/device/2015/05/os/File" typeof="owl:Class">
+<h4>
+<a id="devos:File"></a>Class: devos:File</h4>
+<em>File</em> - A computer file is a resource for storing
+    information, which is available to a computer program and is
+    usually based on some kind of durable storage.
+    (http://en.wikipedia.org/wiki/Computer_file)<br>
+</div><div class="specterm classterm" id="#devos:GID" about="http://cptl-c.org/device/2015/05/os/GID" typeof="owl:Class">
+<h4>
+<a id="devos:GID"></a>Class: devos:GID</h4>
+<em>GID</em> - <br>
+</div><div class="specterm classterm" id="#devos:PID" about="http://cptl-c.org/device/2015/05/os/PID" typeof="owl:Class">
+<h4>
+<a id="devos:PID"></a>Class: devos:PID</h4>
+<em>PID</em> - <br>
+</div><div class="specterm classterm" id="#devos:Process" about="http://cptl-c.org/device/2015/05/os/Process" typeof="owl:Class">
+<h4>
+<a id="devos:Process"></a>Class: devos:Process</h4>
+<em>Process</em> - In computing, a process is an instance of a computer
+    program that is being executed.  It contains the program code and
+    its current activity.  Depending on the operating system (OS), a
+    process may be made up of multiple threads of execution that
+    execute instructions
+    concurrently. (http://en.wikipedia.org/wiki/Process (computing))<br>
+</div><div class="specterm classterm" id="#devos:SID" about="http://cptl-c.org/device/2015/05/os/SID" typeof="owl:Class">
+<h4>
+<a id="devos:SID"></a>Class: devos:SID</h4>
+<em>SID</em> - <br>
+</div><div class="specterm classterm" id="#devos:UID" about="http://cptl-c.org/device/2015/05/os/UID" typeof="owl:Class">
+<h4>
+<a id="devos:UID"></a>Class: devos:UID</h4>
+<em>UID</em> - <br>
+</div><div class="specterm classterm" id="#devos:Username" about="http://cptl-c.org/device/2015/05/os/Username" typeof="owl:Class">
+<h4>
+<a id="devos:Username"></a>Class: devos:Username</h4>
+<em>Username</em> - <br>
+</div><br xmlns:owl="http://www.w3.org/2002/07/owl#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"><div class="specterm propertyterm" id="#devos:accessesFile" about="http://cptl-c.org/device/2015/05/os/accessesFile" typeof="owl:ObjectProperty">
+<h4>
+<a id="devos:accessesFile"></a>Property: devos:accessesFile</h4>
+<em>accessesFile</em> - A relation to capture file accesses by a process.<br><table>
+<tr>
+<th>Status:</th>
+<td><span property="vs:status">dev</span></td>
+</tr>
+<tr>
+<th>Domain:</th>
+<td>having this property implies being a
+	    <span rel="rdfs:domain" href=""></span>
+</td>
+</tr>
+</table>
+</div><div class="specterm propertyterm" id="#devos:closesFile" about="http://cptl-c.org/device/2015/05/os/closesFile" typeof="owl:ObjectProperty">
+<h4>
+<a id="devos:closesFile"></a>Property: devos:closesFile</h4>
+<em>closesFile</em> - A process closes a file.<br><table><tr>
+<th>Status:</th>
+<td><span property="vs:status">dev</span></td>
+</tr></table>
+</div><div class="specterm propertyterm" id="#devos:createsFile" about="http://cptl-c.org/device/2015/05/os/createsFile" typeof="owl:ObjectProperty">
+<h4>
+<a id="devos:createsFile"></a>Property: devos:createsFile</h4>
+<em>createsFile</em> - A process creates a file.<br><table><tr>
+<th>Status:</th>
+<td><span property="vs:status">dev</span></td>
+</tr></table>
+</div><div class="specterm propertyterm" id="#devos:executesFile" about="http://cptl-c.org/device/2015/05/os/executesFile" typeof="owl:ObjectProperty">
+<h4>
+<a id="devos:executesFile"></a>Property: devos:executesFile</h4>
+<em>executesFile</em> - A process executes a file.<br><table><tr>
+<th>Status:</th>
+<td><span property="vs:status">dev</span></td>
+</tr></table>
+</div><div class="specterm propertyterm" id="#devos:hasCPUUsage" about="http://cptl-c.org/device/2015/05/os/hasCPUUsage" typeof="owl:DatatypeProperty">
+<h4>
+<a id="devos:hasCPUUsage"></a>Property: devos:hasCPUUsage</h4>
+<em>hasCPUUsage</em> - This provides the percentage of CPU consumed by a
+    process.<br><table>
+<tr>
+<th>Status:</th>
+<td><span property="vs:status">dev</span></td>
+</tr>
+<tr>
+<th>Domain:</th>
+<td>having this property implies being a
+	    <span rel="rdfs:domain" href=""></span>
+</td>
+</tr>
+</table>
+</div><div class="specterm propertyterm" id="#devos:hasChildProcess" about="http://cptl-c.org/device/2015/05/os/hasChildProcess" typeof="owl:ObjectProperty">
+<h4>
+<a id="devos:hasChildProcess"></a>Property: devos:hasChildProcess</h4>
+<em>hasChildProcess</em> - The child process associated with the process<br><table>
+<tr>
+<th>Status:</th>
+<td><span property="vs:status">dev</span></td>
+</tr>
+<tr>
+<th>Domain:</th>
+<td>having this property implies being a
+	    <span rel="rdfs:domain" href=""></span>
+</td>
+</tr>
+</table>
+</div><div class="specterm propertyterm" id="#devos:hasCommand" about="http://cptl-c.org/device/2015/05/os/hasCommand" typeof="owl:ObjectProperty">
+<h4>
+<a id="devos:hasCommand"></a>Property: devos:hasCommand</h4>
+<em>hasCommand</em> - The command invoked to start the process<br><table>
+<tr>
+<th>Status:</th>
+<td><span property="vs:status">dev</span></td>
+</tr>
+<tr>
+<th>Domain:</th>
+<td>having this property implies being a
+	    <span rel="rdfs:domain" href=""></span>
+</td>
+</tr>
+</table>
+</div><div class="specterm propertyterm" id="#devos:hasCommandValue" about="http://cptl-c.org/device/2015/05/os/hasCommandValue" typeof="owl:DatatypeProperty">
+<h4>
+<a id="devos:hasCommandValue"></a>Property: devos:hasCommandValue</h4>
+<em>hasCommandValue</em> - <br><table>
+<tr>
+<th>Status:</th>
+<td><span property="vs:status">dev</span></td>
+</tr>
+<tr>
+<th>Domain:</th>
+<td>having this property implies being a
+	    <span rel="rdfs:domain" href=""></span>
+</td>
+</tr>
+</table>
+</div><div class="specterm propertyterm" id="#devos:hasCommunicationFlow" about="http://cptl-c.org/device/2015/05/os/hasCommunicationFlow" typeof="owl:ObjectProperty">
+<h4>
+<a id="devos:hasCommunicationFlow"></a>Property: devos:hasCommunicationFlow</h4>
+<em>hasCommunicationFlow</em> - A general communications flow betwen two processes,
+    whether on the same host or not.<br><table>
+<tr>
+<th>Status:</th>
+<td><span property="vs:status">dev</span></td>
+</tr>
+<tr>
+<th>Domain:</th>
+<td>having this property implies being a
+	    <span rel="rdfs:domain" href=""></span>
+</td>
+</tr>
+</table>
+</div><div class="specterm propertyterm" id="#devos:hasGIDValue" about="http://cptl-c.org/device/2015/05/os/hasGIDValue" typeof="owl:DatatypeProperty">
+<h4>
+<a id="devos:hasGIDValue"></a>Property: devos:hasGIDValue</h4>
+<em>hasGIDValue</em> - <br><table>
+<tr>
+<th>Status:</th>
+<td><span property="vs:status">dev</span></td>
+</tr>
+<tr>
+<th>Domain:</th>
+<td>having this property implies being a
+	    <span rel="rdfs:domain" href=""></span>
+</td>
+</tr>
+</table>
+</div><div class="specterm propertyterm" id="#devos:hasIPC" about="http://cptl-c.org/device/2015/05/os/hasIPC" typeof="owl:ObjectProperty">
+<h4>
+<a id="devos:hasIPC"></a>Property: devos:hasIPC</h4>
+<em>hasIPC</em> - In computer science, inter-process communication
+    (IPC) is the activity of sharing data across multiple and commonly
+    specialized processes using communication protocols.
+    (http://en.wikipedia.org/wiki/Inter-process_communication) <br><table>
+<tr>
+<th>Status:</th>
+<td><span property="vs:status">dev</span></td>
+</tr>
+<tr>
+<th>Domain:</th>
+<td>having this property implies being a
+	    <span rel="rdfs:domain" href=""></span>
+</td>
+</tr>
+</table>
+</div><div class="specterm propertyterm" id="#devos:hasMemoryUsage" about="http://cptl-c.org/device/2015/05/os/hasMemoryUsage" typeof="owl:DatatypeProperty">
+<h4>
+<a id="devos:hasMemoryUsage"></a>Property: devos:hasMemoryUsage</h4>
+<em>hasMemoryUsage</em> - This provides the information on physical or virtual
+    memory usage.  This property needs to be throught through more
+    clearly.<br><table>
+<tr>
+<th>Status:</th>
+<td><span property="vs:status">dev</span></td>
+</tr>
+<tr>
+<th>Domain:</th>
+<td>having this property implies being a
+	    <span rel="rdfs:domain" href=""></span>
+</td>
+</tr>
+</table>
+</div><div class="specterm propertyterm" id="#devos:hasPIDValue" about="http://cptl-c.org/device/2015/05/os/hasPIDValue" typeof="owl:DatatypeProperty">
+<h4>
+<a id="devos:hasPIDValue"></a>Property: devos:hasPIDValue</h4>
+<em>hasPIDValue</em> - <br><table>
+<tr>
+<th>Status:</th>
+<td><span property="vs:status">dev</span></td>
+</tr>
+<tr>
+<th>Domain:</th>
+<td>having this property implies being a
+	    <span rel="rdfs:domain" href=""></span>
+</td>
+</tr>
+</table>
+</div><div class="specterm propertyterm" id="#devos:hasParentProcess" about="http://cptl-c.org/device/2015/05/os/hasParentProcess" typeof="owl:ObjectProperty">
+<h4>
+<a id="devos:hasParentProcess"></a>Property: devos:hasParentProcess</h4>
+<em>hasParentProcess</em> - The parent process associated with the process<br><table>
+<tr>
+<th>Status:</th>
+<td><span property="vs:status">dev</span></td>
+</tr>
+<tr>
+<th>Domain:</th>
+<td>having this property implies being a
+	    <span rel="rdfs:domain" href=""></span>
+</td>
+</tr>
+</table>
+</div><div class="specterm propertyterm" id="#devos:hasPrivilegeValue" about="http://cptl-c.org/device/2015/05/os/hasPrivilegeValue" typeof="owl:DatatypeProperty">
+<h4>
+<a id="devos:hasPrivilegeValue"></a>Property: devos:hasPrivilegeValue</h4>
+<em>hasPrivilegeValue</em> - <br><table>
+<tr>
+<th>Status:</th>
+<td><span property="vs:status">dev</span></td>
+</tr>
+<tr>
+<th>Domain:</th>
+<td>having this property implies being a
+	    <span rel="rdfs:domain" href=""></span>
+</td>
+</tr>
+</table>
+</div><div class="specterm propertyterm" id="#devos:hasSIDValue" about="http://cptl-c.org/device/2015/05/os/hasSIDValue" typeof="owl:DatatypeProperty">
+<h4>
+<a id="devos:hasSIDValue"></a>Property: devos:hasSIDValue</h4>
+<em>hasSIDValue</em> - <br><table>
+<tr>
+<th>Status:</th>
+<td><span property="vs:status">dev</span></td>
+</tr>
+<tr>
+<th>Domain:</th>
+<td>having this property implies being a
+	    <span rel="rdfs:domain" href=""></span>
+</td>
+</tr>
+</table>
+</div><div class="specterm propertyterm" id="#devos:hasUIDValue" about="http://cptl-c.org/device/2015/05/os/hasUIDValue" typeof="owl:DatatypeProperty">
+<h4>
+<a id="devos:hasUIDValue"></a>Property: devos:hasUIDValue</h4>
+<em>hasUIDValue</em> - <br><table>
+<tr>
+<th>Status:</th>
+<td><span property="vs:status">dev</span></td>
+</tr>
+<tr>
+<th>Domain:</th>
+<td>having this property implies being a
+	    <span rel="rdfs:domain" href=""></span>
+</td>
+</tr>
+</table>
+</div><div class="specterm propertyterm" id="#devos:hasUsername" about="http://cptl-c.org/device/2015/05/os/hasUsername" typeof="owl:ObjectProperty">
+<h4>
+<a id="devos:hasUsername"></a>Property: devos:hasUsername</h4>
+<em>hasUsername</em> - The username associated with the process<br><table>
+<tr>
+<th>Status:</th>
+<td><span property="vs:status">dev</span></td>
+</tr>
+<tr>
+<th>Domain:</th>
+<td>having this property implies being a
+	    <span rel="rdfs:domain" href=""></span>
+</td>
+</tr>
+</table>
+</div><div class="specterm propertyterm" id="#devos:hasUsernameValue" about="http://cptl-c.org/device/2015/05/os/hasUsernameValue" typeof="owl:DatatypeProperty">
+<h4>
+<a id="devos:hasUsernameValue"></a>Property: devos:hasUsernameValue</h4>
+<em>hasUsernameValue</em> - <br><table>
+<tr>
+<th>Status:</th>
+<td><span property="vs:status">dev</span></td>
+</tr>
+<tr>
+<th>Domain:</th>
+<td>having this property implies being a
+	    <span rel="rdfs:domain" href=""></span>
+</td>
+</tr>
+</table>
+</div><div class="specterm propertyterm" id="#devos:isProcessOwner" about="http://cptl-c.org/device/2015/05/os/isProcessOwner" typeof="owl:ObjectProperty">
+<h4>
+<a id="devos:isProcessOwner"></a>Property: devos:isProcessOwner</h4>
+<em>isProcessOwner</em> - A relation to capture the process owner.<br><table>
+<tr>
+<th>Status:</th>
+<td><span property="vs:status">dev</span></td>
+</tr>
+<tr>
+<th>Domain:</th>
+<td>having this property implies being a
+	    <span rel="rdfs:domain" href=""></span>
+</td>
+</tr>
+</table>
+</div><div class="specterm propertyterm" id="#devos:opensFile" about="http://cptl-c.org/device/2015/05/os/opensFile" typeof="owl:ObjectProperty">
+<h4>
+<a id="devos:opensFile"></a>Property: devos:opensFile</h4>
+<em>opensFile</em> - A process opens a file.<br><table><tr>
+<th>Status:</th>
+<td><span property="vs:status">dev</span></td>
+</tr></table>
+</div><div class="specterm propertyterm" id="#devos:readsFile" about="http://cptl-c.org/device/2015/05/os/readsFile" typeof="owl:ObjectProperty">
+<h4>
+<a id="devos:readsFile"></a>Property: devos:readsFile</h4>
+<em>readsFile</em> - A process reads a file.<br><table><tr>
+<th>Status:</th>
+<td><span property="vs:status">dev</span></td>
+</tr></table>
+</div><div class="specterm propertyterm" id="#devos:writesFile" about="http://cptl-c.org/device/2015/05/os/writesFile" typeof="owl:ObjectProperty">
+<h4>
+<a id="devos:writesFile"></a>Property: devos:writesFile</h4>
+<em>writesFile</em> - A process writes a file.<br><table><tr>
+<th>Status:</th>
+<td><span property="vs:status">dev</span></td>
+</tr></table>
+</div>
+ 
+
+ <h3>Device File System</h3>
+ <div class="specterm classterm" id="#devfs:Directory" about="http://cptl-c.org/device/2015/05/fs/Directory" typeof="owl:Class">
+<h4>
+<a id="devfs:Directory"></a>Class: devfs:Directory</h4>
+<em>Directory</em> - In computing, a directory is a file system
+    cataloging structure which contains references to other computer
+    files, and possibly other
+    directories. (http://en.wikipedia.org/wiki/Directory_(computing))<br>
+</div><div class="specterm classterm" id="#devfs:File" about="http://cptl-c.org/device/2015/05/fs/File" typeof="owl:Class">
+<h4>
+<a id="devfs:File"></a>Class: devfs:File</h4>
+<em>File</em> - A computer file is a resource for storing
+    information, which is available to a computer program and is
+    usually based on some kind of durable storage. A file is "durable"
+    in the sense that it remains available for other programs to use
+    after the program that created it has finished executing. Computer
+    files can be considered as the modern counterpart of paper
+    documents which traditionally are kept in office and library
+    files, and this is the source of the
+    term. (http://en.wikipedia.org/wiki/Computer_file)<br>
+</div><div class="specterm classterm" id="#devfs:FilePath" about="http://cptl-c.org/device/2015/05/fs/FilePath" typeof="owl:Class">
+<h4>
+<a id="devfs:FilePath"></a>Class: devfs:FilePath</h4>
+<em>FilePath</em> - A path, the general form of the name of a file or
+    directory, specifies a unique location in a file system. A path
+    points to a file system location by following the directory tree
+    hierarchy expressed in a string of characters in which path
+    components, separated by a delimiting character, represent each
+    directory. (http://en.wikipedia.org/wiki/Path_(computing))<br>
+</div><br xmlns:owl="http://www.w3.org/2002/07/owl#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"><div class="specterm propertyterm" id="#devfs:canRead" about="http://cptl-c.org/device/2015/05/fs/canRead" typeof="owl:ObjectProperty">
+<h4>
+<a id="devfs:canRead"></a>Property: devfs:canRead</h4>
+<em>canRead</em> - Denotes that a user account has permission to read from a
+    file.  Currently, we use the FOAF ontology to denote a user account, although
+    these accounts may be local to a machine, not online.<br><table>
+<tr>
+<th>Status:</th>
+<td><span property="vs:status">dev</span></td>
+</tr>
+<tr>
+<th>Domain:</th>
+<td>having this property implies being a
+	    <span rel="rdfs:domain" href=""></span>
+</td>
+</tr>
+</table>
+</div><div class="specterm propertyterm" id="#devfs:canRead" about="http://cptl-c.org/device/2015/05/fs/canRead" typeof="owl:ObjectProperty">
+<h4>
+<a id="devfs:canRead"></a>Property: devfs:canRead</h4>
+<em>canRead</em> - Denotes that a user account has permission to execute a 
+    file.  Currently, we use the FOAF ontology to denote a user account, although
+    these accounts may be local to a machine, not online.<br><table>
+<tr>
+<th>Status:</th>
+<td><span property="vs:status">dev</span></td>
+</tr>
+<tr>
+<th>Domain:</th>
+<td>having this property implies being a
+	    <span rel="rdfs:domain" href=""></span>
+</td>
+</tr>
+</table>
+</div><div class="specterm propertyterm" id="#devfs:canWrite" about="http://cptl-c.org/device/2015/05/fs/canWrite" typeof="owl:ObjectProperty">
+<h4>
+<a id="devfs:canWrite"></a>Property: devfs:canWrite</h4>
+<em>canWrite</em> - Denotes that a user account has permission to write
+    to a file.  Currently, we use the FOAF ontology to denote a user
+    account, although these accounts may be local to a machine, not
+    online.<br><table>
+<tr>
+<th>Status:</th>
+<td><span property="vs:status">dev</span></td>
+</tr>
+<tr>
+<th>Domain:</th>
+<td>having this property implies being a
+	    <span rel="rdfs:domain" href=""></span>
+</td>
+</tr>
+</table>
+</div><div class="specterm propertyterm" id="#devfs:hasLinkTo" about="http://cptl-c.org/device/2015/05/fs/hasLinkTo" typeof="owl:ObjectProperty">
+<h4>
+<a id="devfs:hasLinkTo"></a>Property: devfs:hasLinkTo</h4>
+<em>hasLinkTo</em> - Denotes that a file path resolves to another file path via a symlink, alias, or shortcut.<br><table>
+<tr>
+<th>Status:</th>
+<td><span property="vs:status">dev</span></td>
+</tr>
+<tr>
+<th>Domain:</th>
+<td>having this property implies being a
+	    <span rel="rdfs:domain" href=""></span>
+</td>
+</tr>
+</table>
+</div><div class="specterm propertyterm" id="#devfs:inDirectory" about="http://cptl-c.org/device/2015/05/fs/inDirectory" typeof="owl:ObjectProperty">
+<h4>
+<a id="devfs:inDirectory"></a>Property: devfs:inDirectory</h4>
+<em>inDirectory</em> - Denotes that a file is contained within a directory.<br><table>
+<tr>
+<th>Status:</th>
+<td><span property="vs:status">dev</span></td>
+</tr>
+<tr>
+<th>Domain:</th>
+<td>having this property implies being a
+	    <span rel="rdfs:domain" href=""></span>
+</td>
+</tr>
+</table>
+</div>
+
+
+ <h3>Enterprise Network</h3>
+ <div class="specterm classterm" id="#enet:Firewall" about="http://cptl-c.org/enterprise/2015/07/enterprise_network/Firewall" typeof="owl:Class">
+<h4>
+<a id="enet:Firewall"></a>Class: enet:Firewall</h4>
+<em>Firewall</em> - In computing, a firewall is a network security
+      system that controls the incoming and outgoing network traffic
+      based on an applied rule set. A firewall establishes a barrier
+      between a trusted, secure internal network and another network
+      (e.g., the Internet) that is assumed not to be secure and
+      trusted. (http://en.wikipedia.org/wiki/Firewall(computing))<br>
+</div><div class="specterm classterm" id="#enet:Host" about="http://cptl-c.org/enterprise/2015/07/enterprise_network/Host" typeof="owl:Class">
+<h4>
+<a id="enet:Host"></a>Class: enet:Host</h4>
+<em>Host</em> - A network host is a computer or other device
+      connected to a computer network. (http://en.wikipedia.org/wiki/Host_(network))<br>
+</div><div class="specterm classterm" id="#enet:IPAddress" about="http://cptl-c.org/enterprise/2015/07/enterprise_network/IPAddress" typeof="owl:Class">
+<h4>
+<a id="enet:IPAddress"></a>Class: enet:IPAddress</h4>
+<em>IPAddress</em> - An Internet Protocol address (IP address) is a
+      numerical label assigned to each device (e.g., computer,
+      printer) participating in a computer network that uses the
+      Internet Protocol for communication. An IP address serves two
+      principal functions: host or network interface identification
+      and location addressing. (http://en.wikipedia.org/wiki/IP_address)
+      <br>
+</div><div class="specterm classterm" id="#enet:IPv4Address" about="http://cptl-c.org/enterprise/2015/07/enterprise_network/IPv4Address" typeof="owl:Class">
+<h4>
+<a id="enet:IPv4Address"></a>Class: enet:IPv4Address</h4>
+<em>IPv4Address</em> - <br>
+</div><div class="specterm classterm" id="#enet:IPv6Address" about="http://cptl-c.org/enterprise/2015/07/enterprise_network/IPv6Address" typeof="owl:Class">
+<h4>
+<a id="enet:IPv6Address"></a>Class: enet:IPv6Address</h4>
+<em>IPv6Address</em> - <br>
+</div><div class="specterm classterm" id="#enet:Network" about="http://cptl-c.org/enterprise/2015/07/enterprise_network/Network" typeof="owl:Class">
+<h4>
+<a id="enet:Network"></a>Class: enet:Network</h4>
+<em>Network</em> - A computer network or data network is a
+      telecommunications network which allows computers to exchange
+      data. In computer networks, networked computing devices pass
+      data to each other along data connections (network
+      links). (http://en.wikipedia.org/wiki/Computer_network)<br>
+</div><div class="specterm classterm" id="#enet:Port" about="http://cptl-c.org/enterprise/2015/07/enterprise_network/Port" typeof="owl:Class">
+<h4>
+<a id="enet:Port"></a>Class: enet:Port</h4>
+<em>Port</em> - A port is a software construct serving as a communications endpoint in a computer's host operating system. A port is always associated with an IP address of a host and the protocol type of the communication. It completes the destination or origination address of a communications session. A port is identified for each address and protocol by a 16-bit number, commonly known as the port number. (http://en.wikipedia.org/wiki/Port_(computer_networking))<br>
+</div><div class="specterm classterm" id="#enet:Switch" about="http://cptl-c.org/enterprise/2015/07/enterprise_network/Switch" typeof="owl:Class">
+<h4>
+<a id="enet:Switch"></a>Class: enet:Switch</h4>
+<em>Switch</em> - A network switch (also called switching hub,
+    bridging hub, officially MAC bridge[1]) is a computer networking
+    device that connects devices together on a computer network, by
+    using packet switching to receive, process and forward data to the
+    destination device. Unlike less advanced network hubs, a network
+    switch forwards data only to one or multiple devices that need to
+    receive it, rather than broadcasting the same data out of each of
+    its ports. (http://en.wikipedia.org/wiki/Network_switch)<br>
+</div><br xmlns:owl="http://www.w3.org/2002/07/owl#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"><div class="specterm propertyterm" id="#enet:hasIPAddress" about="http://cptl-c.org/enterprise/2015/07/enterprise_network/hasIPAddress" typeof="owl:ObjectProperty">
+<h4>
+<a id="enet:hasIPAddress"></a>Property: enet:hasIPAddress</h4>
+<em>hasIPAddress</em> - An IPv4 or IPv6 value associated with an Asset.<br><table>
+<tr>
+<th>Status:</th>
+<td><span property="vs:status">dev</span></td>
+</tr>
+<tr>
+<th>Domain:</th>
+<td>having this property implies being a
+	    <span rel="rdfs:domain" href=""></span>
+</td>
+</tr>
+</table>
+</div><div class="specterm propertyterm" id="#enet:hasIPAddressValue" about="http://cptl-c.org/enterprise/2015/07/enterprise_network/hasIPAddressValue" typeof="owl:DatatypeProperty">
+<h4>
+<a id="enet:hasIPAddressValue"></a>Property: enet:hasIPAddressValue</h4>
+<em>hasIPAddressValue</em> - An IPv4 or IPv6 value associated with a devices.<br><table>
+<tr>
+<th>Status:</th>
+<td><span property="vs:status">dev</span></td>
+</tr>
+<tr>
+<th>Domain:</th>
+<td>having this property implies being a
+	    <span rel="rdfs:domain" href=""></span>
+</td>
+</tr>
+</table>
+</div><div class="specterm propertyterm" id="#enet:hasIPv4AddressValue" about="http://cptl-c.org/enterprise/2015/07/enterprise_network/hasIPv4AddressValue" typeof="owl:DatatypeProperty">
+<h4>
+<a id="enet:hasIPv4AddressValue"></a>Property: enet:hasIPv4AddressValue</h4>
+<em>hasIPv4AddressValue</em> - An IPv4 value associated with a devices.<br><table>
+<tr>
+<th>Status:</th>
+<td><span property="vs:status">dev</span></td>
+</tr>
+<tr>
+<th>Domain:</th>
+<td>having this property implies being a
+	    <span rel="rdfs:domain" href=""></span>
+</td>
+</tr>
+</table>
+</div><div class="specterm propertyterm" id="#enet:hasIPv6AddressValue" about="http://cptl-c.org/enterprise/2015/07/enterprise_network/hasIPv6AddressValue" typeof="owl:DatatypeProperty">
+<h4>
+<a id="enet:hasIPv6AddressValue"></a>Property: enet:hasIPv6AddressValue</h4>
+<em>hasIPv6AddressValue</em> - An IPv6 value associated with a devices.<br><table>
+<tr>
+<th>Status:</th>
+<td><span property="vs:status">dev</span></td>
+</tr>
+<tr>
+<th>Domain:</th>
+<td>having this property implies being a
+	    <span rel="rdfs:domain" href=""></span>
+</td>
+</tr>
+</table>
+</div><div class="specterm propertyterm" id="#enet:hasPort" about="http://cptl-c.org/enterprise/2015/07/enterprise_network/hasPort" typeof="owl:ObjectProperty">
+<h4>
+<a id="enet:hasPort"></a>Property: enet:hasPort</h4>
+<em>hasPort</em> - A port associated with an asset<br><table>
+<tr>
+<th>Status:</th>
+<td><span property="vs:status">dev</span></td>
+</tr>
+<tr>
+<th>Domain:</th>
+<td>having this property implies being a
+	    <span rel="rdfs:domain" href=""></span>
+</td>
+</tr>
+</table>
+</div><div class="specterm propertyterm" id="#enet:hasPortValue" about="http://cptl-c.org/enterprise/2015/07/enterprise_network/hasPortValue" typeof="owl:DatatypeProperty">
+<h4>
+<a id="enet:hasPortValue"></a>Property: enet:hasPortValue</h4>
+<em>hasPortValue</em> - A port associated with an asset<br><table>
+<tr>
+<th>Status:</th>
+<td><span property="vs:status">dev</span></td>
+</tr>
+<tr>
+<th>Domain:</th>
+<td>having this property implies being a
+	    <span rel="rdfs:domain" href=""></span>
+</td>
+</tr>
+</table>
+</div>
+
+
+
+</body>
+</html>
+
+

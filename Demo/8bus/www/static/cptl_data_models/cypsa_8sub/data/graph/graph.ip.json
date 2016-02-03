@@ -1,0 +1,2364 @@
+{
+    "links": [
+        {
+            "relation": "snet:hasBreakerConnections", 
+            "source": "10.34.1.102", 
+            "target": "Odgenville$BRK$12.yard.odgenville.8sub.cypsa.projects.cptl-c.org"
+        }, 
+        {
+            "relation": "syard:hasLine", 
+            "source": "Odgenville$BRK$12.yard.odgenville.8sub.cypsa.projects.cptl-c.org", 
+            "target": "Odgenville$ND$2.yard.odgenville.8sub.cypsa.projects.cptl-c.org"
+        }, 
+        {
+            "relation": "snet:hasBreakerConnections", 
+            "source": "10.34.1.101", 
+            "target": "Odgenville$BRK$12.yard.odgenville.8sub.cypsa.projects.cptl-c.org"
+        }, 
+        {
+            "relation": "syard:hasLine", 
+            "source": "Odgenville$ND$1.yard.odgenville.8sub.cypsa.projects.cptl-c.org", 
+            "target": "Odgenville$BRK$12.yard.odgenville.8sub.cypsa.projects.cptl-c.org"
+        }, 
+        {
+            "relation": "cptlc:hasLink", 
+            "source": "192.168.6.200", 
+            "target": "10.36.1.105"
+        }, 
+        {
+            "relation": "snet:hasBreakerConnections", 
+            "source": "10.36.1.105", 
+            "target": "Shelbyville$BRK$2729.yard.shelbyville.8sub.cypsa.projects.cptl-c.org"
+        }, 
+        {
+            "relation": "syard:hasLine", 
+            "source": "Haverbrook$ND$38.yard.haverbrook.8sub.cypsa.projects.cptl-c.org", 
+            "target": "Springfield$ND$40.yard.springfield.8sub.cypsa.projects.cptl-c.org"
+        }, 
+        {
+            "relation": "syard:hasLine", 
+            "source": "Paris$ND$51.yard.paris.8sub.cypsa.projects.cptl-c.org", 
+            "target": "Springfield$ND$42.yard.springfield.8sub.cypsa.projects.cptl-c.org"
+        }, 
+        {
+            "relation": "snet:hasBreakerConnections", 
+            "source": "10.38.1.202", 
+            "target": "Springfield$BRK$4142.yard.springfield.8sub.cypsa.projects.cptl-c.org"
+        }, 
+        {
+            "relation": "snet:hasBreakerConnections", 
+            "source": "10.38.1.102", 
+            "target": "Springfield$BRK$4142.yard.springfield.8sub.cypsa.projects.cptl-c.org"
+        }, 
+        {
+            "relation": "cptlc:hasLink", 
+            "source": "DistanceRelay_3.network.haverbrook.8sub.cypsa.projects.cptl-c.org", 
+            "target": "10.38.1.201"
+        }, 
+        {
+            "relation": "cptlc:hasLink", 
+            "source": "10.38.1.201", 
+            "target": "DistanceRelay_3.network.haverbrook.8sub.cypsa.projects.cptl-c.org"
+        }, 
+        {
+            "relation": "cptlc:hasLink", 
+            "source": "10.38.1.201", 
+            "target": "10.38.1.202"
+        }, 
+        {
+            "relation": "snet:hasBreakerConnections", 
+            "source": "10.38.1.201", 
+            "target": "Springfield$BRK$4041.yard.springfield.8sub.cypsa.projects.cptl-c.org"
+        }, 
+        {
+            "relation": "cptlc:hasLink", 
+            "source": "10.38.1.101", 
+            "target": "10.38.1.201"
+        }, 
+        {
+            "relation": "snet:hasBreakerConnections", 
+            "source": "10.38.1.203", 
+            "target": "Springfield$BRK$3941.yard.springfield.8sub.cypsa.projects.cptl-c.org"
+        }, 
+        {
+            "relation": "snet:hasBreakerConnections", 
+            "source": "10.38.1.105", 
+            "target": "Springfield$BRK$3941.yard.springfield.8sub.cypsa.projects.cptl-c.org"
+        }, 
+        {
+            "relation": "snet:hasBreakerConnections", 
+            "source": "10.35.1.104", 
+            "target": "Paris$BRK$5051.yard.paris.8sub.cypsa.projects.cptl-c.org"
+        }, 
+        {
+            "relation": "cptlc:hasLink", 
+            "source": "192.168.5.200", 
+            "target": "10.35.1.104"
+        }, 
+        {
+            "relation": "syard:hasLine", 
+            "source": "Haverbrook$BRK$3835.yard.haverbrook.8sub.cypsa.projects.cptl-c.org", 
+            "target": "Haverbrook$ND$38.yard.haverbrook.8sub.cypsa.projects.cptl-c.org"
+        }, 
+        {
+            "relation": "snet:hasBreakerConnections", 
+            "source": "10.38.1.104", 
+            "target": "Springfield$BRK$4441.yard.springfield.8sub.cypsa.projects.cptl-c.org"
+        }, 
+        {
+            "relation": "snet:hasBreakerConnections", 
+            "source": "10.38.1.103", 
+            "target": "Springfield$BRK$4341.yard.springfield.8sub.cypsa.projects.cptl-c.org"
+        }, 
+        {
+            "relation": "snet:hasBreakerConnections", 
+            "source": "ReversePowerRelay_1.network.springfield.8sub.cypsa.projects.cptl-c.org", 
+            "target": "Springfield$BRK$4341.yard.springfield.8sub.cypsa.projects.cptl-c.org"
+        }, 
+        {
+            "relation": "cptlc:hasLink", 
+            "source": "192.168.5.200", 
+            "target": "10.35.1.103"
+        }, 
+        {
+            "relation": "snet:hasBreakerConnections", 
+            "source": "10.35.1.103", 
+            "target": "Paris$BRK$4850.yard.paris.8sub.cypsa.projects.cptl-c.org"
+        }, 
+        {
+            "relation": "cptlc:hasLink", 
+            "source": "192.168.5.200", 
+            "target": "10.35.1.102"
+        }, 
+        {
+            "relation": "snet:hasBreakerConnections", 
+            "source": "10.35.1.102", 
+            "target": "Paris$BRK$4950.yard.paris.8sub.cypsa.projects.cptl-c.org"
+        }, 
+        {
+            "relation": "snet:hasBreakerConnections", 
+            "source": "10.35.1.101", 
+            "target": "Paris$BRK$5052.yard.paris.8sub.cypsa.projects.cptl-c.org"
+        }, 
+        {
+            "relation": "cptlc:hasLink", 
+            "source": "192.168.5.200", 
+            "target": "10.35.1.101"
+        }, 
+        {
+            "relation": "snet:hasBreakerConnections", 
+            "source": "10.33.1.102", 
+            "target": "North Haverbrook$BRK$910.yard.north-haverbrook.8sub.cypsa.projects.cptl-c.org"
+        }, 
+        {
+            "relation": "snet:hasBreakerConnections", 
+            "source": "10.38.1.101", 
+            "target": "Springfield$BRK$4041.yard.springfield.8sub.cypsa.projects.cptl-c.org"
+        }, 
+        {
+            "relation": "snet:hasBreakerConnections", 
+            "source": "10.37.1.102", 
+            "target": "Capital City$BRK$4647.yard.capital-city.8sub.cypsa.projects.cptl-c.org"
+        }, 
+        {
+            "relation": "cptlc:hasLink", 
+            "source": "DistanceRelay_1.network.capital-city.8sub.cypsa.projects.cptl-c.org", 
+            "target": "10.37.1.102"
+        }, 
+        {
+            "relation": "cptlc:hasLink", 
+            "source": "192.168.7.200", 
+            "target": "10.37.1.101"
+        }, 
+        {
+            "relation": "snet:hasBreakerConnections", 
+            "source": "10.37.1.101", 
+            "target": "Capital City$BRK$4546.yard.capital-city.8sub.cypsa.projects.cptl-c.org"
+        }, 
+        {
+            "relation": "cptlc:hasLink", 
+            "source": "10.37.1.101", 
+            "target": "DistanceRelay_1.network.capital-city.8sub.cypsa.projects.cptl-c.org"
+        }, 
+        {
+            "relation": "snet:hasBreakerConnections", 
+            "source": "OvercurrentRelay_1.network.haverbrook.8sub.cypsa.projects.cptl-c.org", 
+            "target": "Haverbrook$BRK$3335.yard.haverbrook.8sub.cypsa.projects.cptl-c.org"
+        }, 
+        {
+            "relation": "syard:hasLine", 
+            "source": "Haverbrook$ND$33.yard.haverbrook.8sub.cypsa.projects.cptl-c.org", 
+            "target": "Haverbrook$BRK$3335.yard.haverbrook.8sub.cypsa.projects.cptl-c.org"
+        }, 
+        {
+            "relation": "syard:hasLine", 
+            "source": "Haverbrook$BRK$3335.yard.haverbrook.8sub.cypsa.projects.cptl-c.org", 
+            "target": "Haverbrook$ND$35.yard.haverbrook.8sub.cypsa.projects.cptl-c.org"
+        }, 
+        {
+            "relation": "snet:hasBreakerConnections", 
+            "source": "ReversePowerRelay_1.network.haverbrook.8sub.cypsa.projects.cptl-c.org", 
+            "target": "Haverbrook$BRK$3335.yard.haverbrook.8sub.cypsa.projects.cptl-c.org"
+        }, 
+        {
+            "relation": "cptlc:hasLink", 
+            "source": "192.168.8.200", 
+            "target": "10.38.1.101"
+        }, 
+        {
+            "relation": "syard:hasLine", 
+            "source": "Haverbrook$ND$37.yard.haverbrook.8sub.cypsa.projects.cptl-c.org", 
+            "target": "Springfield$ND$39.yard.springfield.8sub.cypsa.projects.cptl-c.org"
+        }, 
+        {
+            "relation": "syard:hasLine", 
+            "source": "Haverbrook$BRK$3735.yard.haverbrook.8sub.cypsa.projects.cptl-c.org", 
+            "target": "Haverbrook$ND$37.yard.haverbrook.8sub.cypsa.projects.cptl-c.org"
+        }, 
+        {
+            "relation": "snet:hasBreakerConnections", 
+            "source": "DistanceRelay_3.network.haverbrook.8sub.cypsa.projects.cptl-c.org", 
+            "target": "Haverbrook$BRK$3835.yard.haverbrook.8sub.cypsa.projects.cptl-c.org"
+        }, 
+        {
+            "relation": "snet:hasBreakerConnections", 
+            "source": "OvercurrentRelay_5.network.haverbrook.8sub.cypsa.projects.cptl-c.org", 
+            "target": "Haverbrook$BRK$3835.yard.haverbrook.8sub.cypsa.projects.cptl-c.org"
+        }, 
+        {
+            "relation": "syard:hasLine", 
+            "source": "Haverbrook$ND$35.yard.haverbrook.8sub.cypsa.projects.cptl-c.org", 
+            "target": "Haverbrook$BRK$3835.yard.haverbrook.8sub.cypsa.projects.cptl-c.org"
+        }, 
+        {
+            "relation": "snet:hasBreakerConnections", 
+            "source": "10.33.1.104", 
+            "target": "North Haverbrook$BRK$89.yard.north-haverbrook.8sub.cypsa.projects.cptl-c.org"
+        }, 
+        {
+            "relation": "syard:hasLine", 
+            "source": "Shelbyville$ND$31.yard.shelbyville.8sub.cypsa.projects.cptl-c.org", 
+            "target": "Shelbyville$BRK$2931.yard.shelbyville.8sub.cypsa.projects.cptl-c.org"
+        }, 
+        {
+            "relation": "snet:hasBreakerConnections", 
+            "source": "10.36.1.106", 
+            "target": "Shelbyville$BRK$2931.yard.shelbyville.8sub.cypsa.projects.cptl-c.org"
+        }, 
+        {
+            "relation": "syard:hasLine", 
+            "source": "Shelbyville$BRK$2931.yard.shelbyville.8sub.cypsa.projects.cptl-c.org", 
+            "target": "Shelbyville$ND$29.yard.shelbyville.8sub.cypsa.projects.cptl-c.org"
+        }, 
+        {
+            "relation": "syard:hasLine", 
+            "source": "Odgenville$BRK$56.yard.odgenville.8sub.cypsa.projects.cptl-c.org", 
+            "target": "Odgenville$ND$6.yard.odgenville.8sub.cypsa.projects.cptl-c.org"
+        }, 
+        {
+            "relation": "syard:hasLine", 
+            "source": "Cypress Creek$ND$17.yard.cypress-creek.8sub.cypsa.projects.cptl-c.org", 
+            "target": "Odgenville$ND$6.yard.odgenville.8sub.cypsa.projects.cptl-c.org"
+        }, 
+        {
+            "relation": "syard:hasLine", 
+            "source": "Odgenville$ND$6.yard.odgenville.8sub.cypsa.projects.cptl-c.org", 
+            "target": "Odgenville$BRK$62.yard.odgenville.8sub.cypsa.projects.cptl-c.org"
+        }, 
+        {
+            "relation": "syard:hasLine", 
+            "source": "NorthHaverbrook$ND$8.yard.north-haverbrook.8sub.cypsa.projects.cptl-c.org", 
+            "target": "NorthHaverbrook$BRK$812.yard.north-haverbrook.8sub.cypsa.projects.cptl-c.org"
+        }, 
+        {
+            "relation": "syard:hasLine", 
+            "source": "NorthHaverbrook$BRK$812.yard.north-haverbrook.8sub.cypsa.projects.cptl-c.org", 
+            "target": "NorthHaverbrook$ND$12.yard.north-haverbrook.8sub.cypsa.projects.cptl-c.org"
+        }, 
+        {
+            "relation": "syard:hasLine", 
+            "source": "Odgenville$ND$5.yard.odgenville.8sub.cypsa.projects.cptl-c.org", 
+            "target": "Odgenville$BRK$56.yard.odgenville.8sub.cypsa.projects.cptl-c.org"
+        }, 
+        {
+            "relation": "syard:hasLine", 
+            "source": "Odgenville$BRK$25.yard.odgenville.8sub.cypsa.projects.cptl-c.org", 
+            "target": "Odgenville$ND$5.yard.odgenville.8sub.cypsa.projects.cptl-c.org"
+        }, 
+        {
+            "relation": "cptlc:hasLink", 
+            "source": "DistanceRelay_3.network.haverbrook.8sub.cypsa.projects.cptl-c.org", 
+            "target": "ReversePowerRelay_1.network.haverbrook.8sub.cypsa.projects.cptl-c.org"
+        }, 
+        {
+            "relation": "cptlc:hasLink", 
+            "source": "ReversePowerRelay_1.network.haverbrook.8sub.cypsa.projects.cptl-c.org", 
+            "target": "OvercurrentRelay_2.network.haverbrook.8sub.cypsa.projects.cptl-c.org"
+        }, 
+        {
+            "relation": "syard:hasLine", 
+            "source": "Cypress Creek$ND$17.yard.cypress-creek.8sub.cypsa.projects.cptl-c.org", 
+            "target": "Cypress Creek$BRK$1719.yard.cypress-creek.8sub.cypsa.projects.cptl-c.org"
+        }, 
+        {
+            "relation": "snet:hasBreakerConnections", 
+            "source": "10.31.1.103", 
+            "target": "Cypress Creek$BRK$1719.yard.cypress-creek.8sub.cypsa.projects.cptl-c.org"
+        }, 
+        {
+            "relation": "syard:hasLine", 
+            "source": "Cypress Creek$BRK$1719.yard.cypress-creek.8sub.cypsa.projects.cptl-c.org", 
+            "target": "Cypress Creek$ND$19.yard.cypress-creek.8sub.cypsa.projects.cptl-c.org"
+        }, 
+        {
+            "relation": "snet:hasBreakerConnections", 
+            "source": "OvercurrentRelay_2.network.haverbrook.8sub.cypsa.projects.cptl-c.org", 
+            "target": "Haverbrook$BRK$3435.yard.haverbrook.8sub.cypsa.projects.cptl-c.org"
+        }, 
+        {
+            "relation": "syard:hasLine", 
+            "source": "Haverbrook$BRK$3435.yard.haverbrook.8sub.cypsa.projects.cptl-c.org", 
+            "target": "Haverbrook$ND$34.yard.haverbrook.8sub.cypsa.projects.cptl-c.org"
+        }, 
+        {
+            "relation": "syard:hasLine", 
+            "source": "Haverbrook$ND$35.yard.haverbrook.8sub.cypsa.projects.cptl-c.org", 
+            "target": "Haverbrook$BRK$3435.yard.haverbrook.8sub.cypsa.projects.cptl-c.org"
+        }, 
+        {
+            "relation": "cptlc:hasLink", 
+            "source": "10.33.1.102", 
+            "target": "10.33.1.103"
+        }, 
+        {
+            "relation": "syard:hasLine", 
+            "source": "Springfield-UN-Gen5.yard.springfield.8sub.cypsa.projects.cptl-c.org", 
+            "target": "Springfield$ND$43.yard.springfield.8sub.cypsa.projects.cptl-c.org"
+        }, 
+        {
+            "relation": "cptlc:hasLink", 
+            "source": "10.33.1.103", 
+            "target": "10.33.1.104"
+        }, 
+        {
+            "relation": "snet:hasBreakerConnections", 
+            "source": "10.33.1.103", 
+            "target": "North Haverbrook$BRK$913.yard.north-haverbrook.8sub.cypsa.projects.cptl-c.org"
+        }, 
+        {
+            "relation": "syard:hasLine", 
+            "source": "Cypress Creek$BRK$2019.yard.cypress-creek.8sub.cypsa.projects.cptl-c.org", 
+            "target": "Cypress Creek$ND$20.yard.cypress-creek.8sub.cypsa.projects.cptl-c.org"
+        }, 
+        {
+            "relation": "snet:hasBreakerConnections", 
+            "source": "10.31.1.103", 
+            "target": "Cypress Creek$BRK$2019.yard.cypress-creek.8sub.cypsa.projects.cptl-c.org"
+        }, 
+        {
+            "relation": "syard:hasLine", 
+            "source": "Cypress Creek$ND$19.yard.cypress-creek.8sub.cypsa.projects.cptl-c.org", 
+            "target": "Cypress Creek$BRK$2019.yard.cypress-creek.8sub.cypsa.projects.cptl-c.org"
+        }, 
+        {
+            "relation": "cptlc:hasLink", 
+            "source": "192.168.1.200", 
+            "target": "10.31.1.101"
+        }, 
+        {
+            "relation": "snet:hasBreakerConnections", 
+            "source": "10.31.1.101", 
+            "target": "Cypress Creek$BRK$2425.yard.cypress-creek.8sub.cypsa.projects.cptl-c.org"
+        }, 
+        {
+            "relation": "cptlc:hasLink", 
+            "source": "192.168.5.200", 
+            "target": "10.35.1.202"
+        }, 
+        {
+            "relation": "cptlc:hasLink", 
+            "source": "192.168.5.200", 
+            "target": "SEL_421_3.network.paris.8sub.cypsa.projects.cptl-c.org"
+        }, 
+        {
+            "relation": "cptlc:hasLink", 
+            "source": "192.168.5.200", 
+            "target": "SEL_421_1.network.paris.8sub.cypsa.projects.cptl-c.org"
+        }, 
+        {
+            "relation": "syard:hasLine", 
+            "source": "NorthHaverbrook$ND$12.yard.north-haverbrook.8sub.cypsa.projects.cptl-c.org", 
+            "target": "NorthHaverbrook$BRK$1213.yard.north-haverbrook.8sub.cypsa.projects.cptl-c.org"
+        }, 
+        {
+            "relation": "syard:hasLine", 
+            "source": "NorthHaverbrook$BRK$1213.yard.north-haverbrook.8sub.cypsa.projects.cptl-c.org", 
+            "target": "NorthHaverbrook$ND$13.yard.north-haverbrook.8sub.cypsa.projects.cptl-c.org"
+        }, 
+        {
+            "relation": "syard:hasLine", 
+            "source": "Haverbrook-UN-Gen4.yard.haverbrook.8sub.cypsa.projects.cptl-c.org", 
+            "target": "Haverbrook$ND$33.yard.haverbrook.8sub.cypsa.projects.cptl-c.org"
+        }, 
+        {
+            "relation": "cptlc:hasLink", 
+            "source": "10.33.1.101", 
+            "target": "DistanceRelay_1.network.north-haverbrook.8sub.cypsa.projects.cptl-c.org"
+        }, 
+        {
+            "relation": "snet:hasBreakerConnections", 
+            "source": "10.33.1.101", 
+            "target": "North Haverbrook$BRK$78.yard.north-haverbrook.8sub.cypsa.projects.cptl-c.org"
+        }, 
+        {
+            "relation": "cptlc:hasLink", 
+            "source": "192.168.3.200", 
+            "target": "10.33.1.101"
+        }, 
+        {
+            "relation": "snet:hasBreakerConnections", 
+            "source": "10.33.1.107", 
+            "target": "North Haverbrook$BRK$1112.yard.north-haverbrook.8sub.cypsa.projects.cptl-c.org"
+        }, 
+        {
+            "relation": "cptlc:hasLink", 
+            "source": "DistanceRelay_2.network.north-haverbrook.8sub.cypsa.projects.cptl-c.org", 
+            "target": "10.33.1.107"
+        }, 
+        {
+            "relation": "cptlc:hasLink", 
+            "source": "10.33.1.107", 
+            "target": "10.33.1.203"
+        }, 
+        {
+            "relation": "syard:hasLine", 
+            "source": "Cypress Creek$BRK$1715.yard.cypress-creek.8sub.cypsa.projects.cptl-c.org", 
+            "target": "Cypress Creek$ND$17.yard.cypress-creek.8sub.cypsa.projects.cptl-c.org"
+        }, 
+        {
+            "relation": "snet:hasBreakerConnections", 
+            "source": "10.31.1.102", 
+            "target": "Cypress Creek$BRK$1715.yard.cypress-creek.8sub.cypsa.projects.cptl-c.org"
+        }, 
+        {
+            "relation": "syard:hasLine", 
+            "source": "Cypress Creek$ND$15.yard.cypress-creek.8sub.cypsa.projects.cptl-c.org", 
+            "target": "Cypress Creek$BRK$1715.yard.cypress-creek.8sub.cypsa.projects.cptl-c.org"
+        }, 
+        {
+            "relation": "snet:hasBreakerConnections", 
+            "source": "10.33.1.105", 
+            "target": "North Haverbrook$BRK$812.yard.north-haverbrook.8sub.cypsa.projects.cptl-c.org"
+        }, 
+        {
+            "relation": "cptlc:hasLink", 
+            "source": "10.33.1.104", 
+            "target": "10.33.1.105"
+        }, 
+        {
+            "relation": "cptlc:hasLink", 
+            "source": "10.33.1.105", 
+            "target": "10.33.1.106"
+        }, 
+        {
+            "relation": "syard:hasLine", 
+            "source": "NorthHaverbrook$ND$8.yard.north-haverbrook.8sub.cypsa.projects.cptl-c.org", 
+            "target": "NorthHaverbrook$BRK$89.yard.north-haverbrook.8sub.cypsa.projects.cptl-c.org"
+        }, 
+        {
+            "relation": "syard:hasLine", 
+            "source": "NorthHaverbrook$BRK$89.yard.north-haverbrook.8sub.cypsa.projects.cptl-c.org", 
+            "target": "NorthHaverbrook$ND$8.yard.north-haverbrook.8sub.cypsa.projects.cptl-c.org"
+        }, 
+        {
+            "relation": "syard:hasLine", 
+            "source": "NorthHaverbrook$ND$59.yard.north-haverbrook.8sub.cypsa.projects.cptl-c.org", 
+            "target": "NorthHaverbrook$BRK$89.yard.north-haverbrook.8sub.cypsa.projects.cptl-c.org"
+        }, 
+        {
+            "relation": "cptlc:hasLink", 
+            "source": "10.38.1.104", 
+            "target": "10.38.1.203"
+        }, 
+        {
+            "relation": "cptlc:hasLink", 
+            "source": "DistanceRelay_2.network.haverbrook.8sub.cypsa.projects.cptl-c.org", 
+            "target": "10.38.1.203"
+        }, 
+        {
+            "relation": "cptlc:hasLink", 
+            "source": "10.38.1.203", 
+            "target": "10.38.1.105"
+        }, 
+        {
+            "relation": "cptlc:hasLink", 
+            "source": "DistanceRelay_1.network.haverbrook.8sub.cypsa.projects.cptl-c.org", 
+            "target": "10.38.1.203"
+        }, 
+        {
+            "relation": "cptlc:hasLink", 
+            "source": "10.38.1.203", 
+            "target": "DistanceRelay_1.network.haverbrook.8sub.cypsa.projects.cptl-c.org"
+        }, 
+        {
+            "relation": "syard:hasLine", 
+            "source": "Cypress Creek$ND$19.yard.cypress-creek.8sub.cypsa.projects.cptl-c.org", 
+            "target": "Cypress Creek$BRK$1519.yard.cypress-creek.8sub.cypsa.projects.cptl-c.org"
+        }, 
+        {
+            "relation": "syard:hasLine", 
+            "source": "Cypress Creek$ND$15.yard.cypress-creek.8sub.cypsa.projects.cptl-c.org", 
+            "target": "Cypress Creek$BRK$1519.yard.cypress-creek.8sub.cypsa.projects.cptl-c.org"
+        }, 
+        {
+            "relation": "snet:hasBreakerConnections", 
+            "source": "10.31.1.102", 
+            "target": "Cypress Creek$BRK$1519.yard.cypress-creek.8sub.cypsa.projects.cptl-c.org"
+        }, 
+        {
+            "relation": "cptlc:hasLink", 
+            "source": "OvercurrentRelay_2.network.haverbrook.8sub.cypsa.projects.cptl-c.org", 
+            "target": "DistanceRelay_2.network.haverbrook.8sub.cypsa.projects.cptl-c.org"
+        }, 
+        {
+            "relation": "cptlc:hasLink", 
+            "source": "DistanceRelay_2.network.haverbrook.8sub.cypsa.projects.cptl-c.org", 
+            "target": "OvercurrentRelay_3.network.haverbrook.8sub.cypsa.projects.cptl-c.org"
+        }, 
+        {
+            "relation": "snet:hasBreakerConnections", 
+            "source": "OvercurrentRelay_3.network.haverbrook.8sub.cypsa.projects.cptl-c.org", 
+            "target": "Haverbrook$BRK$3635.yard.haverbrook.8sub.cypsa.projects.cptl-c.org"
+        }, 
+        {
+            "relation": "cptlc:hasLink", 
+            "source": "OvercurrentRelay_1.network.haverbrook.8sub.cypsa.projects.cptl-c.org", 
+            "target": "OvercurrentRelay_4.network.haverbrook.8sub.cypsa.projects.cptl-c.org"
+        }, 
+        {
+            "relation": "cptlc:hasLink", 
+            "source": "192.168.2.200", 
+            "target": "OvercurrentRelay_1.network.haverbrook.8sub.cypsa.projects.cptl-c.org"
+        }, 
+        {
+            "relation": "syard:hasLine", 
+            "source": "Cypress Creek$BRK$1925.yard.cypress-creek.8sub.cypsa.projects.cptl-c.org", 
+            "target": "Cypress Creek$ND$25.yard.cypress-creek.8sub.cypsa.projects.cptl-c.org"
+        }, 
+        {
+            "relation": "snet:hasBreakerConnections", 
+            "source": "10.31.1.103", 
+            "target": "Cypress Creek$BRK$1925.yard.cypress-creek.8sub.cypsa.projects.cptl-c.org"
+        }, 
+        {
+            "relation": "cptlc:hasLink", 
+            "source": "DistanceRelay_3.network.haverbrook.8sub.cypsa.projects.cptl-c.org", 
+            "target": "OvercurrentRelay_4.network.haverbrook.8sub.cypsa.projects.cptl-c.org"
+        }, 
+        {
+            "relation": "snet:hasBreakerConnections", 
+            "source": "OvercurrentRelay_4.network.haverbrook.8sub.cypsa.projects.cptl-c.org", 
+            "target": "Haverbrook$BRK$3735.yard.haverbrook.8sub.cypsa.projects.cptl-c.org"
+        }, 
+        {
+            "relation": "cptlc:hasLink", 
+            "source": "OvercurrentRelay_4.network.haverbrook.8sub.cypsa.projects.cptl-c.org", 
+            "target": "OvercurrentRelay_5.network.haverbrook.8sub.cypsa.projects.cptl-c.org"
+        }, 
+        {
+            "relation": "syard:hasLine", 
+            "source": "Haverbrook$ND$35.yard.haverbrook.8sub.cypsa.projects.cptl-c.org", 
+            "target": "Haverbrook$BRK$3635.yard.haverbrook.8sub.cypsa.projects.cptl-c.org"
+        }, 
+        {
+            "relation": "syard:hasLine", 
+            "source": "Haverbrook$ND$35.yard.haverbrook.8sub.cypsa.projects.cptl-c.org", 
+            "target": "Haverbrook$BRK$3735.yard.haverbrook.8sub.cypsa.projects.cptl-c.org"
+        }, 
+        {
+            "relation": "cptlc:hasLink", 
+            "source": "OvercurrentRelay_5.network.haverbrook.8sub.cypsa.projects.cptl-c.org", 
+            "target": "DistanceRelay_3.network.haverbrook.8sub.cypsa.projects.cptl-c.org"
+        }, 
+        {
+            "relation": "syard:hasLine", 
+            "source": "Springfield$ND$39.yard.springfield.8sub.cypsa.projects.cptl-c.org", 
+            "target": "Haverbrook$ND$37.yard.haverbrook.8sub.cypsa.projects.cptl-c.org"
+        }, 
+        {
+            "relation": "snet:hasBreakerConnections", 
+            "source": "DistanceRelay_1.network.capital-city.8sub.cypsa.projects.cptl-c.org", 
+            "target": "Capital City$BRK$4546.yard.capital-city.8sub.cypsa.projects.cptl-c.org"
+        }, 
+        {
+            "relation": "syard:hasLine", 
+            "source": "NorthHaverbrook$BRK$1112.yard.north-haverbrook.8sub.cypsa.projects.cptl-c.org", 
+            "target": "NorthHaverbrook$ND$11.yard.north-haverbrook.8sub.cypsa.projects.cptl-c.org"
+        }, 
+        {
+            "relation": "syard:hasLine", 
+            "source": "NorthHaverbrook$ND$12.yard.north-haverbrook.8sub.cypsa.projects.cptl-c.org", 
+            "target": "NorthHaverbrook$BRK$1112.yard.north-haverbrook.8sub.cypsa.projects.cptl-c.org"
+        }, 
+        {
+            "relation": "syard:hasLine", 
+            "source": "Haverbrook$ND$36.yard.haverbrook.8sub.cypsa.projects.cptl-c.org", 
+            "target": "Cypress Creek$ND$18.yard.cypress-creek.8sub.cypsa.projects.cptl-c.org"
+        }, 
+        {
+            "relation": "syard:hasLine", 
+            "source": "Cypress Creek$ND$18.yard.cypress-creek.8sub.cypsa.projects.cptl-c.org", 
+            "target": "Haverbrook$ND$36.yard.haverbrook.8sub.cypsa.projects.cptl-c.org"
+        }, 
+        {
+            "relation": "syard:hasLine", 
+            "source": "Haverbrook$BRK$3635.yard.haverbrook.8sub.cypsa.projects.cptl-c.org", 
+            "target": "Haverbrook$ND$36.yard.haverbrook.8sub.cypsa.projects.cptl-c.org"
+        }, 
+        {
+            "relation": "snet:hasBreakerConnections", 
+            "source": "DistanceRelay_1.network.haverbrook.8sub.cypsa.projects.cptl-c.org", 
+            "target": "Haverbrook$BRK$3735.yard.haverbrook.8sub.cypsa.projects.cptl-c.org"
+        }, 
+        {
+            "relation": "syard:hasLine", 
+            "source": "NorthHaverbrook$ND$13.yard.north-haverbrook.8sub.cypsa.projects.cptl-c.org", 
+            "target": "NorthHaverbrook$BRK$913.yard.north-haverbrook.8sub.cypsa.projects.cptl-c.org"
+        }, 
+        {
+            "relation": "syard:hasLine", 
+            "source": "NorthHaverbrook$BRK$913.yard.north-haverbrook.8sub.cypsa.projects.cptl-c.org", 
+            "target": "NorthHaverbrook$ND$59.yard.north-haverbrook.8sub.cypsa.projects.cptl-c.org"
+        }, 
+        {
+            "relation": "cptlc:hasLink", 
+            "source": "DistanceRelay_1.network.north-haverbrook.8sub.cypsa.projects.cptl-c.org", 
+            "target": "10.34.1.202"
+        }, 
+        {
+            "relation": "cptlc:hasLink", 
+            "source": "10.34.1.202", 
+            "target": "DistanceRelay_1.network.north-haverbrook.8sub.cypsa.projects.cptl-c.org"
+        }, 
+        {
+            "relation": "snet:hasBreakerConnections", 
+            "source": "DistanceRelay_1.network.north-haverbrook.8sub.cypsa.projects.cptl-c.org", 
+            "target": "North Haverbrook$BRK$78.yard.north-haverbrook.8sub.cypsa.projects.cptl-c.org"
+        }, 
+        {
+            "relation": "cptlc:hasLink", 
+            "source": "DistanceRelay_1.network.north-haverbrook.8sub.cypsa.projects.cptl-c.org", 
+            "target": "10.33.1.102"
+        }, 
+        {
+            "relation": "snet:hasBreakerConnections", 
+            "source": "10.34.1.102", 
+            "target": "Odgenville$BRK$42.yard.odgenville.8sub.cypsa.projects.cptl-c.org"
+        }, 
+        {
+            "relation": "syard:hasLine", 
+            "source": "Odgenville$BRK$42.yard.odgenville.8sub.cypsa.projects.cptl-c.org", 
+            "target": "Odgenville$ND$4.yard.odgenville.8sub.cypsa.projects.cptl-c.org"
+        }, 
+        {
+            "relation": "syard:hasLine", 
+            "source": "Odgenville$ND$2.yard.odgenville.8sub.cypsa.projects.cptl-c.org", 
+            "target": "Odgenville$BRK$42.yard.odgenville.8sub.cypsa.projects.cptl-c.org"
+        }, 
+        {
+            "relation": "snet:hasBreakerConnections", 
+            "source": "10.33.1.203", 
+            "target": "North Haverbrook$BRK$1112.yard.north-haverbrook.8sub.cypsa.projects.cptl-c.org"
+        }, 
+        {
+            "relation": "cptlc:hasLink", 
+            "source": "SEL_421_3.network.cypress-creek.8sub.cypsa.projects.cptl-c.org", 
+            "target": "10.33.1.203"
+        }, 
+        {
+            "relation": "cptlc:hasLink", 
+            "source": "10.33.1.203", 
+            "target": "SEL_421_3.network.cypress-creek.8sub.cypsa.projects.cptl-c.org"
+        }, 
+        {
+            "relation": "syard:hasLine", 
+            "source": "Shelbyville$BRK$2729.yard.shelbyville.8sub.cypsa.projects.cptl-c.org", 
+            "target": "Shelbyville$ND$27.yard.shelbyville.8sub.cypsa.projects.cptl-c.org"
+        }, 
+        {
+            "relation": "syard:hasLine", 
+            "source": "Shelbyville$BRK$2629.yard.shelbyville.8sub.cypsa.projects.cptl-c.org", 
+            "target": "Shelbyville$ND$26.yard.shelbyville.8sub.cypsa.projects.cptl-c.org"
+        }, 
+        {
+            "relation": "syard:hasLine", 
+            "source": "Shelbyville$ND$26.yard.shelbyville.8sub.cypsa.projects.cptl-c.org", 
+            "target": "NorthHaverbrook$ND$14.yard.north-haverbrook.8sub.cypsa.projects.cptl-c.org"
+        }, 
+        {
+            "relation": "syard:hasLine", 
+            "source": "NorthHaverbrook$ND$14.yard.north-haverbrook.8sub.cypsa.projects.cptl-c.org", 
+            "target": "Shelbyville$ND$26.yard.shelbyville.8sub.cypsa.projects.cptl-c.org"
+        }, 
+        {
+            "relation": "cptlc:hasLink", 
+            "source": "DistanceRelay_2.network.north-haverbrook.8sub.cypsa.projects.cptl-c.org", 
+            "target": "10.36.1.201"
+        }, 
+        {
+            "relation": "cptlc:hasLink", 
+            "source": "10.36.1.201", 
+            "target": "DistanceRelay_2.network.north-haverbrook.8sub.cypsa.projects.cptl-c.org"
+        }, 
+        {
+            "relation": "snet:hasBreakerConnections", 
+            "source": "DistanceRelay_2.network.north-haverbrook.8sub.cypsa.projects.cptl-c.org", 
+            "target": "North Haverbrook$BRK$1413.yard.north-haverbrook.8sub.cypsa.projects.cptl-c.org"
+        }, 
+        {
+            "relation": "cptlc:hasLink", 
+            "source": "10.33.1.106", 
+            "target": "DistanceRelay_2.network.north-haverbrook.8sub.cypsa.projects.cptl-c.org"
+        }, 
+        {
+            "relation": "syard:hasLine", 
+            "source": "NorthHaverbrook$BRK$1413.yard.north-haverbrook.8sub.cypsa.projects.cptl-c.org", 
+            "target": "NorthHaverbrook$ND$14.yard.north-haverbrook.8sub.cypsa.projects.cptl-c.org"
+        }, 
+        {
+            "relation": "syard:hasLine", 
+            "source": "Paris$BRK$5051.yard.paris.8sub.cypsa.projects.cptl-c.org", 
+            "target": "Paris$ND$51.yard.paris.8sub.cypsa.projects.cptl-c.org"
+        }, 
+        {
+            "relation": "snet:hasBreakerConnections", 
+            "source": "10.31.1.104", 
+            "target": "Cypress Creek$BRK$2325.yard.cypress-creek.8sub.cypsa.projects.cptl-c.org"
+        }, 
+        {
+            "relation": "cptlc:hasLink", 
+            "source": "192.168.1.200", 
+            "target": "10.31.1.104"
+        }, 
+        {
+            "relation": "cptlc:hasLink", 
+            "source": "192.168.1.200", 
+            "target": "10.31.1.105"
+        }, 
+        {
+            "relation": "snet:hasBreakerConnections", 
+            "source": "10.31.1.105", 
+            "target": "Cypress Creek$BRK$2225.yard.cypress-creek.8sub.cypsa.projects.cptl-c.org"
+        }, 
+        {
+            "relation": "snet:hasBreakerConnections", 
+            "source": "10.31.1.105", 
+            "target": "Cypress Creek$BRK$2125.yard.cypress-creek.8sub.cypsa.projects.cptl-c.org"
+        }, 
+        {
+            "relation": "syard:hasLine", 
+            "source": "Springfield$ND$41.yard.springfield.8sub.cypsa.projects.cptl-c.org", 
+            "target": "Springfield$BRK$4441.yard.springfield.8sub.cypsa.projects.cptl-c.org"
+        }, 
+        {
+            "relation": "syard:hasLine", 
+            "source": "Springfield$BRK$4441.yard.springfield.8sub.cypsa.projects.cptl-c.org", 
+            "target": "Springfield$ND$44.yard.springfield.8sub.cypsa.projects.cptl-c.org"
+        }, 
+        {
+            "relation": "syard:hasLine", 
+            "source": "Cypress Creek$ND$16.yard.cypress-creek.8sub.cypsa.projects.cptl-c.org", 
+            "target": "Cypress Creek$BRK$1615.yard.cypress-creek.8sub.cypsa.projects.cptl-c.org"
+        }, 
+        {
+            "relation": "snet:hasBreakerConnections", 
+            "source": "10.31.1.102", 
+            "target": "Cypress Creek$BRK$1615.yard.cypress-creek.8sub.cypsa.projects.cptl-c.org"
+        }, 
+        {
+            "relation": "syard:hasLine", 
+            "source": "Cypress Creek$BRK$1615.yard.cypress-creek.8sub.cypsa.projects.cptl-c.org", 
+            "target": "Cypress Creek$ND$15.yard.cypress-creek.8sub.cypsa.projects.cptl-c.org"
+        }, 
+        {
+            "relation": "syard:hasLine", 
+            "source": "Shelbyville$ND$29.yard.shelbyville.8sub.cypsa.projects.cptl-c.org", 
+            "target": "Shelbyville$BRK$2629.yard.shelbyville.8sub.cypsa.projects.cptl-c.org"
+        }, 
+        {
+            "relation": "syard:hasLine", 
+            "source": "Shelbyville$ND$29.yard.shelbyville.8sub.cypsa.projects.cptl-c.org", 
+            "target": "Shelbyville$BRK$2928.yard.shelbyville.8sub.cypsa.projects.cptl-c.org"
+        }, 
+        {
+            "relation": "syard:hasLine", 
+            "source": "Shelbyville$ND$29.yard.shelbyville.8sub.cypsa.projects.cptl-c.org", 
+            "target": "Shelbyville$BRK$2729.yard.shelbyville.8sub.cypsa.projects.cptl-c.org"
+        }, 
+        {
+            "relation": "cptlc:hasLink", 
+            "source": "192.168.1.200", 
+            "target": "10.31.1.103"
+        }, 
+        {
+            "relation": "syard:hasLine", 
+            "source": "Cypress Creek$ND$22.yard.cypress-creek.8sub.cypsa.projects.cptl-c.org", 
+            "target": "Shelbyville$ND$28.yard.shelbyville.8sub.cypsa.projects.cptl-c.org"
+        }, 
+        {
+            "relation": "syard:hasLine", 
+            "source": "Shelbyville$ND$28.yard.shelbyville.8sub.cypsa.projects.cptl-c.org", 
+            "target": "Cypress Creek$ND$22.yard.cypress-creek.8sub.cypsa.projects.cptl-c.org"
+        }, 
+        {
+            "relation": "syard:hasLine", 
+            "source": "Shelbyville$BRK$2928.yard.shelbyville.8sub.cypsa.projects.cptl-c.org", 
+            "target": "Shelbyville$ND$28.yard.shelbyville.8sub.cypsa.projects.cptl-c.org"
+        }, 
+        {
+            "relation": "syard:hasLine", 
+            "source": "Springfield$ND$40.yard.springfield.8sub.cypsa.projects.cptl-c.org", 
+            "target": "Haverbrook$ND$38.yard.haverbrook.8sub.cypsa.projects.cptl-c.org"
+        }, 
+        {
+            "relation": "syard:hasLine", 
+            "source": "Cypress Creek$BRK$2325.yard.cypress-creek.8sub.cypsa.projects.cptl-c.org", 
+            "target": "Cypress Creek$ND$23.yard.cypress-creek.8sub.cypsa.projects.cptl-c.org"
+        }, 
+        {
+            "relation": "syard:hasLine", 
+            "source": "Cypress Creek$TX$4545.yard.cypress-creek.8sub.cypsa.projects.cptl-c.org", 
+            "target": "Cypress Creek$ND$16.yard.cypress-creek.8sub.cypsa.projects.cptl-c.org"
+        }, 
+        {
+            "relation": "syard:hasLine", 
+            "source": "Cypress Creek$ND$15.yard.cypress-creek.8sub.cypsa.projects.cptl-c.org", 
+            "target": "Cypress Creek$BRK$1815.yard.cypress-creek.8sub.cypsa.projects.cptl-c.org"
+        }, 
+        {
+            "relation": "syard:hasLine", 
+            "source": "NorthHaverbrook$ND$13.yard.north-haverbrook.8sub.cypsa.projects.cptl-c.org", 
+            "target": "NorthHaverbrook$BRK$1413.yard.north-haverbrook.8sub.cypsa.projects.cptl-c.org"
+        }, 
+        {
+            "relation": "syard:hasLine", 
+            "source": "Paris$BRK$5052.yard.paris.8sub.cypsa.projects.cptl-c.org", 
+            "target": "Paris$ND$52.yard.paris.8sub.cypsa.projects.cptl-c.org"
+        }, 
+        {
+            "relation": "cptlc:hasLink", 
+            "source": "10.38.1.103", 
+            "target": "10.38.1.104"
+        }, 
+        {
+            "relation": "cptlc:hasLink", 
+            "source": "ReversePowerRelay_1.network.springfield.8sub.cypsa.projects.cptl-c.org", 
+            "target": "10.38.1.103"
+        }, 
+        {
+            "relation": "cptlc:hasLink", 
+            "source": "10.38.1.102", 
+            "target": "ReversePowerRelay_1.network.springfield.8sub.cypsa.projects.cptl-c.org"
+        }, 
+        {
+            "relation": "cptlc:hasLink", 
+            "source": "10.38.1.202", 
+            "target": "10.38.1.102"
+        }, 
+        {
+            "relation": "syard:hasLine", 
+            "source": "Cypress Creek$BRK$2125.yard.cypress-creek.8sub.cypsa.projects.cptl-c.org", 
+            "target": "Cypress Creek$ND$21.yard.cypress-creek.8sub.cypsa.projects.cptl-c.org"
+        }, 
+        {
+            "relation": "snet:hasBreakerConnections", 
+            "source": "10.36.1.102", 
+            "target": "Shelbyville$BRK$2928.yard.shelbyville.8sub.cypsa.projects.cptl-c.org"
+        }, 
+        {
+            "relation": "cptlc:hasLink", 
+            "source": "192.168.4.200", 
+            "target": "10.34.1.202"
+        }, 
+        {
+            "relation": "syard:hasLine", 
+            "source": "NorthHaverbrook$ND$7.yard.north-haverbrook.8sub.cypsa.projects.cptl-c.org", 
+            "target": "Odgenville$ND$3.yard.odgenville.8sub.cypsa.projects.cptl-c.org"
+        }, 
+        {
+            "relation": "syard:hasLine", 
+            "source": "NorthHaverbrook$ND$7.yard.north-haverbrook.8sub.cypsa.projects.cptl-c.org", 
+            "target": "NorthHaverbrook$BRK$78.yard.north-haverbrook.8sub.cypsa.projects.cptl-c.org"
+        }, 
+        {
+            "relation": "cptlc:hasLink", 
+            "source": "192.168.4.200", 
+            "target": "10.34.1.201"
+        }, 
+        {
+            "relation": "cptlc:hasLink", 
+            "source": "SEL_421_6.network.cypress-creek.8sub.cypsa.projects.cptl-c.org", 
+            "target": "10.34.1.201"
+        }, 
+        {
+            "relation": "cptlc:hasLink", 
+            "source": "10.34.1.201", 
+            "target": "SEL_421_6.network.cypress-creek.8sub.cypsa.projects.cptl-c.org"
+        }, 
+        {
+            "relation": "cptlc:hasLink", 
+            "source": "192.168.4.200", 
+            "target": "10.34.1.102"
+        }, 
+        {
+            "relation": "snet:hasBreakerConnections", 
+            "source": "10.34.1.102", 
+            "target": "Odgenville$BRK$14.yard.odgenville.8sub.cypsa.projects.cptl-c.org"
+        }, 
+        {
+            "relation": "snet:hasBreakerConnections", 
+            "source": "10.34.1.102", 
+            "target": "Odgenville$BRK$23.yard.odgenville.8sub.cypsa.projects.cptl-c.org"
+        }, 
+        {
+            "relation": "snet:hasBreakerConnections", 
+            "source": "10.34.1.102", 
+            "target": "Odgenville$BRK$34.yard.odgenville.8sub.cypsa.projects.cptl-c.org"
+        }, 
+        {
+            "relation": "cptlc:hasLink", 
+            "source": "192.168.4.200", 
+            "target": "10.34.1.103"
+        }, 
+        {
+            "relation": "snet:hasBreakerConnections", 
+            "source": "10.34.1.103", 
+            "target": "Odgenville$BRK$56.yard.odgenville.8sub.cypsa.projects.cptl-c.org"
+        }, 
+        {
+            "relation": "snet:hasBreakerConnections", 
+            "source": "10.34.1.103", 
+            "target": "Odgenville$BRK$25.yard.odgenville.8sub.cypsa.projects.cptl-c.org"
+        }, 
+        {
+            "relation": "snet:hasBreakerConnections", 
+            "source": "10.34.1.103", 
+            "target": "Odgenville$BRK$62.yard.odgenville.8sub.cypsa.projects.cptl-c.org"
+        }, 
+        {
+            "relation": "cptlc:hasLink", 
+            "source": "192.168.4.200", 
+            "target": "10.34.1.101"
+        }, 
+        {
+            "relation": "syard:hasLine", 
+            "source": "Paris$ND$50.yard.paris.8sub.cypsa.projects.cptl-c.org", 
+            "target": "Paris$BRK$5052.yard.paris.8sub.cypsa.projects.cptl-c.org"
+        }, 
+        {
+            "relation": "cptlc:hasLink", 
+            "source": "192.168.1.200", 
+            "target": "SEL_421_1.network.cypress-creek.8sub.cypsa.projects.cptl-c.org"
+        }, 
+        {
+            "relation": "cptlc:hasLink", 
+            "source": "192.168.1.200", 
+            "target": "SEL_421_3.network.cypress-creek.8sub.cypsa.projects.cptl-c.org"
+        }, 
+        {
+            "relation": "cptlc:hasLink", 
+            "source": "192.168.1.200", 
+            "target": "10.31.1.202"
+        }, 
+        {
+            "relation": "cptlc:hasLink", 
+            "source": "192.168.1.200", 
+            "target": "SEL_421_4.network.cypress-creek.8sub.cypsa.projects.cptl-c.org"
+        }, 
+        {
+            "relation": "cptlc:hasLink", 
+            "source": "192.168.1.200", 
+            "target": "10.31.1.102"
+        }, 
+        {
+            "relation": "cptlc:hasLink", 
+            "source": "192.168.1.200", 
+            "target": "SEL_421_5.network.cypress-creek.8sub.cypsa.projects.cptl-c.org"
+        }, 
+        {
+            "relation": "cptlc:hasLink", 
+            "source": "192.168.1.200", 
+            "target": "10.31.1.207"
+        }, 
+        {
+            "relation": "cptlc:hasLink", 
+            "source": "192.168.1.200", 
+            "target": "SEL_421_6.network.cypress-creek.8sub.cypsa.projects.cptl-c.org"
+        }, 
+        {
+            "relation": "cptlc:hasLink", 
+            "source": "192.168.6.200", 
+            "target": "10.36.1.104"
+        }, 
+        {
+            "relation": "snet:hasBreakerConnections", 
+            "source": "10.36.1.104", 
+            "target": "Shelbyville$BRK$3031.yard.shelbyville.8sub.cypsa.projects.cptl-c.org"
+        }, 
+        {
+            "relation": "snet:hasBreakerConnections", 
+            "source": "10.33.1.106", 
+            "target": "North Haverbrook$BRK$1413.yard.north-haverbrook.8sub.cypsa.projects.cptl-c.org"
+        }, 
+        {
+            "relation": "syard:hasLine", 
+            "source": "Springfield$ND$43.yard.springfield.8sub.cypsa.projects.cptl-c.org", 
+            "target": "Springfield$BRK$4341.yard.springfield.8sub.cypsa.projects.cptl-c.org"
+        }, 
+        {
+            "relation": "syard:hasLine", 
+            "source": "CapitalCity$ND$46.yard.capital-city.8sub.cypsa.projects.cptl-c.org", 
+            "target": "CapitalCity$BRK$4647.yard.capital-city.8sub.cypsa.projects.cptl-c.org"
+        }, 
+        {
+            "relation": "syard:hasLine", 
+            "source": "CapitalCity$BRK$4647.yard.capital-city.8sub.cypsa.projects.cptl-c.org", 
+            "target": "CapitalCity$ND$47.yard.capital-city.8sub.cypsa.projects.cptl-c.org"
+        }, 
+        {
+            "relation": "syard:hasLine", 
+            "source": "Shelbyville$ND$31.yard.shelbyville.8sub.cypsa.projects.cptl-c.org", 
+            "target": "Shelbyville$BRK$3031.yard.shelbyville.8sub.cypsa.projects.cptl-c.org"
+        }, 
+        {
+            "relation": "syard:hasLine", 
+            "source": "Shelbyville$BRK$3031.yard.shelbyville.8sub.cypsa.projects.cptl-c.org", 
+            "target": "Shelbyville$ND$30.yard.shelbyville.8sub.cypsa.projects.cptl-c.org"
+        }, 
+        {
+            "relation": "syard:hasLine", 
+            "source": "Odgenville$ND$4.yard.odgenville.8sub.cypsa.projects.cptl-c.org", 
+            "target": "Odgenville$BRK$14.yard.odgenville.8sub.cypsa.projects.cptl-c.org"
+        }, 
+        {
+            "relation": "snet:hasBreakerConnections", 
+            "source": "10.34.1.101", 
+            "target": "Odgenville$BRK$14.yard.odgenville.8sub.cypsa.projects.cptl-c.org"
+        }, 
+        {
+            "relation": "syard:hasLine", 
+            "source": "Odgenville$ND$1.yard.odgenville.8sub.cypsa.projects.cptl-c.org", 
+            "target": "Odgenville$BRK$14.yard.odgenville.8sub.cypsa.projects.cptl-c.org"
+        }, 
+        {
+            "relation": "syard:hasLine", 
+            "source": "Springfield$BRK$4041.yard.springfield.8sub.cypsa.projects.cptl-c.org", 
+            "target": "Springfield$ND$40.yard.springfield.8sub.cypsa.projects.cptl-c.org"
+        }, 
+        {
+            "relation": "syard:hasLine", 
+            "source": "Cypress Creek$ND$21.yard.cypress-creek.8sub.cypsa.projects.cptl-c.org", 
+            "target": "NorthHaverbrook$ND$11.yard.north-haverbrook.8sub.cypsa.projects.cptl-c.org"
+        }, 
+        {
+            "relation": "syard:hasLine", 
+            "source": "NorthHaverbrook$ND$11.yard.north-haverbrook.8sub.cypsa.projects.cptl-c.org", 
+            "target": "Cypress Creek$ND$21.yard.cypress-creek.8sub.cypsa.projects.cptl-c.org"
+        }, 
+        {
+            "relation": "cptlc:hasLink", 
+            "source": "SEL_421_3.network.paris.8sub.cypsa.projects.cptl-c.org", 
+            "target": "10.38.1.202"
+        }, 
+        {
+            "relation": "cptlc:hasLink", 
+            "source": "10.38.1.202", 
+            "target": "SEL_421_3.network.paris.8sub.cypsa.projects.cptl-c.org"
+        }, 
+        {
+            "relation": "syard:hasLine", 
+            "source": "Cypress Creek$BRK$2225.yard.cypress-creek.8sub.cypsa.projects.cptl-c.org", 
+            "target": "Cypress Creek$ND$22.yard.cypress-creek.8sub.cypsa.projects.cptl-c.org"
+        }, 
+        {
+            "relation": "syard:hasLine", 
+            "source": "Shelbyville$BRK$3132.yard.shelbyville.8sub.cypsa.projects.cptl-c.org", 
+            "target": "Shelbyville$ND$31.yard.shelbyville.8sub.cypsa.projects.cptl-c.org"
+        }, 
+        {
+            "relation": "syard:hasLine", 
+            "source": "Shelbyville$ND$32.yard.shelbyville.8sub.cypsa.projects.cptl-c.org", 
+            "target": "Shelbyville$BRK$3132.yard.shelbyville.8sub.cypsa.projects.cptl-c.org"
+        }, 
+        {
+            "relation": "snet:hasBreakerConnections", 
+            "source": "10.36.1.103", 
+            "target": "Shelbyville$BRK$3132.yard.shelbyville.8sub.cypsa.projects.cptl-c.org"
+        }, 
+        {
+            "relation": "syard:hasLine", 
+            "source": "Cypress Creek$ND$20.yard.cypress-creek.8sub.cypsa.projects.cptl-c.org", 
+            "target": "Cypress Creek-UN-Gen2.yard.cypress-creek.8sub.cypsa.projects.cptl-c.org"
+        }, 
+        {
+            "relation": "syard:hasLine", 
+            "source": "CapitalCity$ND$45.yard.capital-city.8sub.cypsa.projects.cptl-c.org", 
+            "target": "Cypress Creek$TX$4545.yard.cypress-creek.8sub.cypsa.projects.cptl-c.org"
+        }, 
+        {
+            "relation": "syard:hasLine", 
+            "source": "NorthHaverbrook$BRK$78.yard.north-haverbrook.8sub.cypsa.projects.cptl-c.org", 
+            "target": "NorthHaverbrook$ND$8.yard.north-haverbrook.8sub.cypsa.projects.cptl-c.org"
+        }, 
+        {
+            "relation": "syard:hasLine", 
+            "source": "Cypress Creek$BRK$1815.yard.cypress-creek.8sub.cypsa.projects.cptl-c.org", 
+            "target": "Cypress Creek$ND$18.yard.cypress-creek.8sub.cypsa.projects.cptl-c.org"
+        }, 
+        {
+            "relation": "snet:hasBreakerConnections", 
+            "source": "10.31.1.102", 
+            "target": "Cypress Creek$BRK$1815.yard.cypress-creek.8sub.cypsa.projects.cptl-c.org"
+        }, 
+        {
+            "relation": "syard:hasLine", 
+            "source": "Paris$BRK$4950.yard.paris.8sub.cypsa.projects.cptl-c.org", 
+            "target": "Paris$ND$50.yard.paris.8sub.cypsa.projects.cptl-c.org"
+        }, 
+        {
+            "relation": "syard:hasLine", 
+            "source": "Paris$ND$49.yard.paris.8sub.cypsa.projects.cptl-c.org", 
+            "target": "Paris$BRK$4950.yard.paris.8sub.cypsa.projects.cptl-c.org"
+        }, 
+        {
+            "relation": "syard:hasLine", 
+            "source": "Paris$ND$50.yard.paris.8sub.cypsa.projects.cptl-c.org", 
+            "target": "Paris$BRK$5051.yard.paris.8sub.cypsa.projects.cptl-c.org"
+        }, 
+        {
+            "relation": "cptlc:hasLink", 
+            "source": "SEL_421_5.network.cypress-creek.8sub.cypsa.projects.cptl-c.org", 
+            "target": "DistanceRelay_2.network.haverbrook.8sub.cypsa.projects.cptl-c.org"
+        }, 
+        {
+            "relation": "cptlc:hasLink", 
+            "source": "DistanceRelay_2.network.haverbrook.8sub.cypsa.projects.cptl-c.org", 
+            "target": "SEL_421_5.network.cypress-creek.8sub.cypsa.projects.cptl-c.org"
+        }, 
+        {
+            "relation": "syard:hasLine", 
+            "source": "Cypress Creek$ND$25.yard.cypress-creek.8sub.cypsa.projects.cptl-c.org", 
+            "target": "Cypress Creek$BRK$2325.yard.cypress-creek.8sub.cypsa.projects.cptl-c.org"
+        }, 
+        {
+            "relation": "syard:hasLine", 
+            "source": "Cypress Creek$ND$25.yard.cypress-creek.8sub.cypsa.projects.cptl-c.org", 
+            "target": "Cypress Creek$BRK$2225.yard.cypress-creek.8sub.cypsa.projects.cptl-c.org"
+        }, 
+        {
+            "relation": "syard:hasLine", 
+            "source": "Cypress Creek$ND$25.yard.cypress-creek.8sub.cypsa.projects.cptl-c.org", 
+            "target": "Cypress Creek$BRK$2425.yard.cypress-creek.8sub.cypsa.projects.cptl-c.org"
+        }, 
+        {
+            "relation": "syard:hasLine", 
+            "source": "Springfield$ND$41.yard.springfield.8sub.cypsa.projects.cptl-c.org", 
+            "target": "Springfield$BRK$3941.yard.springfield.8sub.cypsa.projects.cptl-c.org"
+        }, 
+        {
+            "relation": "syard:hasLine", 
+            "source": "Springfield$BRK$3941.yard.springfield.8sub.cypsa.projects.cptl-c.org", 
+            "target": "Springfield$ND$39.yard.springfield.8sub.cypsa.projects.cptl-c.org"
+        }, 
+        {
+            "relation": "syard:hasLine", 
+            "source": "Springfield$ND$41.yard.springfield.8sub.cypsa.projects.cptl-c.org", 
+            "target": "Springfield$BRK$4041.yard.springfield.8sub.cypsa.projects.cptl-c.org"
+        }, 
+        {
+            "relation": "syard:hasLine", 
+            "source": "Springfield$BRK$4341.yard.springfield.8sub.cypsa.projects.cptl-c.org", 
+            "target": "Springfield$ND$41.yard.springfield.8sub.cypsa.projects.cptl-c.org"
+        }, 
+        {
+            "relation": "cptlc:hasLink", 
+            "source": "SEL_421_1.network.cypress-creek.8sub.cypsa.projects.cptl-c.org", 
+            "target": "10.35.1.202"
+        }, 
+        {
+            "relation": "cptlc:hasLink", 
+            "source": "10.35.1.202", 
+            "target": "SEL_421_1.network.cypress-creek.8sub.cypsa.projects.cptl-c.org"
+        }, 
+        {
+            "relation": "syard:hasLine", 
+            "source": "Springfield$ND$41.yard.springfield.8sub.cypsa.projects.cptl-c.org", 
+            "target": "Springfield$BRK$4142.yard.springfield.8sub.cypsa.projects.cptl-c.org"
+        }, 
+        {
+            "relation": "syard:hasLine", 
+            "source": "Springfield$BRK$4142.yard.springfield.8sub.cypsa.projects.cptl-c.org", 
+            "target": "Springfield$ND$42.yard.springfield.8sub.cypsa.projects.cptl-c.org"
+        }, 
+        {
+            "relation": "syard:hasLine", 
+            "source": "Springfield$ND$42.yard.springfield.8sub.cypsa.projects.cptl-c.org", 
+            "target": "Paris$ND$51.yard.paris.8sub.cypsa.projects.cptl-c.org"
+        }, 
+        {
+            "relation": "syard:hasLine", 
+            "source": "Cypress Creek$ND$24.yard.cypress-creek.8sub.cypsa.projects.cptl-c.org", 
+            "target": "Paris$ND$48.yard.paris.8sub.cypsa.projects.cptl-c.org"
+        }, 
+        {
+            "relation": "syard:hasLine", 
+            "source": "Paris$ND$48.yard.paris.8sub.cypsa.projects.cptl-c.org", 
+            "target": "Cypress Creek$ND$24.yard.cypress-creek.8sub.cypsa.projects.cptl-c.org"
+        }, 
+        {
+            "relation": "syard:hasLine", 
+            "source": "Paris$BRK$4850.yard.paris.8sub.cypsa.projects.cptl-c.org", 
+            "target": "Paris$ND$48.yard.paris.8sub.cypsa.projects.cptl-c.org"
+        }, 
+        {
+            "relation": "cptlc:hasLink", 
+            "source": "SEL_421_4.network.cypress-creek.8sub.cypsa.projects.cptl-c.org", 
+            "target": "10.36.1.202"
+        }, 
+        {
+            "relation": "cptlc:hasLink", 
+            "source": "10.36.1.202", 
+            "target": "SEL_421_4.network.cypress-creek.8sub.cypsa.projects.cptl-c.org"
+        }, 
+        {
+            "relation": "syard:hasLine", 
+            "source": "NorthHaverbrook$BRK$910.yard.north-haverbrook.8sub.cypsa.projects.cptl-c.org", 
+            "target": "NorthHaverbrook$ND$10.yard.north-haverbrook.8sub.cypsa.projects.cptl-c.org"
+        }, 
+        {
+            "relation": "syard:hasLine", 
+            "source": "Paris$ND$50.yard.paris.8sub.cypsa.projects.cptl-c.org", 
+            "target": "Paris$BRK$4850.yard.paris.8sub.cypsa.projects.cptl-c.org"
+        }, 
+        {
+            "relation": "syard:hasLine", 
+            "source": "NorthHaverbrook$ND$59.yard.north-haverbrook.8sub.cypsa.projects.cptl-c.org", 
+            "target": "NorthHaverbrook$BRK$910.yard.north-haverbrook.8sub.cypsa.projects.cptl-c.org"
+        }, 
+        {
+            "relation": "cptlc:hasLink", 
+            "source": "10.31.1.207", 
+            "target": "DistanceRelay_1.network.capital-city.8sub.cypsa.projects.cptl-c.org"
+        }, 
+        {
+            "relation": "cptlc:hasLink", 
+            "source": "DistanceRelay_1.network.capital-city.8sub.cypsa.projects.cptl-c.org", 
+            "target": "10.31.1.207"
+        }, 
+        {
+            "relation": "syard:hasLine", 
+            "source": "Odgenville$ND$4.yard.odgenville.8sub.cypsa.projects.cptl-c.org", 
+            "target": "Odgenville$BRK$34.yard.odgenville.8sub.cypsa.projects.cptl-c.org"
+        }, 
+        {
+            "relation": "syard:hasLine", 
+            "source": "CapitalCity$BRK$4546.yard.capital-city.8sub.cypsa.projects.cptl-c.org", 
+            "target": "CapitalCity$ND$46.yard.capital-city.8sub.cypsa.projects.cptl-c.org"
+        }, 
+        {
+            "relation": "syard:hasLine", 
+            "source": "CapitalCity$ND$45.yard.capital-city.8sub.cypsa.projects.cptl-c.org", 
+            "target": "CapitalCity$BRK$4546.yard.capital-city.8sub.cypsa.projects.cptl-c.org"
+        }, 
+        {
+            "relation": "cptlc:hasLink", 
+            "source": "192.168.6.200", 
+            "target": "10.36.1.101"
+        }, 
+        {
+            "relation": "cptlc:hasLink", 
+            "source": "192.168.6.200", 
+            "target": "10.36.1.202"
+        }, 
+        {
+            "relation": "cptlc:hasLink", 
+            "source": "192.168.6.200", 
+            "target": "10.36.1.103"
+        }, 
+        {
+            "relation": "cptlc:hasLink", 
+            "source": "192.168.6.200", 
+            "target": "10.36.1.203"
+        }, 
+        {
+            "relation": "cptlc:hasLink", 
+            "source": "192.168.6.200", 
+            "target": "10.36.1.201"
+        }, 
+        {
+            "relation": "cptlc:hasLink", 
+            "source": "192.168.6.200", 
+            "target": "10.36.1.106"
+        }, 
+        {
+            "relation": "cptlc:hasLink", 
+            "source": "192.168.6.200", 
+            "target": "10.36.1.102"
+        }, 
+        {
+            "relation": "syard:hasLine", 
+            "source": "Odgenville$BRK$23.yard.odgenville.8sub.cypsa.projects.cptl-c.org", 
+            "target": "Odgenville$ND$2.yard.odgenville.8sub.cypsa.projects.cptl-c.org"
+        }, 
+        {
+            "relation": "syard:hasLine", 
+            "source": "Odgenville$ND$3.yard.odgenville.8sub.cypsa.projects.cptl-c.org", 
+            "target": "Odgenville$BRK$23.yard.odgenville.8sub.cypsa.projects.cptl-c.org"
+        }, 
+        {
+            "relation": "syard:hasLine", 
+            "source": "Cypress Creek$BRK$2425.yard.cypress-creek.8sub.cypsa.projects.cptl-c.org", 
+            "target": "Cypress Creek$ND$24.yard.cypress-creek.8sub.cypsa.projects.cptl-c.org"
+        }, 
+        {
+            "relation": "snet:hasBreakerConnections", 
+            "source": "DistanceRelay_2.network.haverbrook.8sub.cypsa.projects.cptl-c.org", 
+            "target": "Haverbrook$BRK$3635.yard.haverbrook.8sub.cypsa.projects.cptl-c.org"
+        }, 
+        {
+            "relation": "syard:hasLine", 
+            "source": "Odgenville$ND$2.yard.odgenville.8sub.cypsa.projects.cptl-c.org", 
+            "target": "Odgenville$BRK$25.yard.odgenville.8sub.cypsa.projects.cptl-c.org"
+        }, 
+        {
+            "relation": "syard:hasLine", 
+            "source": "Shelbyville$ND$30.yard.shelbyville.8sub.cypsa.projects.cptl-c.org", 
+            "target": "Shelbyville-UN-Gen3.yard.shelbyville.8sub.cypsa.projects.cptl-c.org"
+        }, 
+        {
+            "relation": "syard:hasLine", 
+            "source": "Odgenville$ND$2.yard.odgenville.8sub.cypsa.projects.cptl-c.org", 
+            "target": "Odgenville$BRK$62.yard.odgenville.8sub.cypsa.projects.cptl-c.org"
+        }, 
+        {
+            "relation": "syard:hasLine", 
+            "source": "Odgenville-UN-Gen1.yard.odgenville.8sub.cypsa.projects.cptl-c.org", 
+            "target": "Odgenville$ND$1.yard.odgenville.8sub.cypsa.projects.cptl-c.org"
+        }, 
+        {
+            "relation": "syard:hasLine", 
+            "source": "Odgenville$BRK$34.yard.odgenville.8sub.cypsa.projects.cptl-c.org", 
+            "target": "Odgenville$ND$3.yard.odgenville.8sub.cypsa.projects.cptl-c.org"
+        }, 
+        {
+            "relation": "cptlc:hasLink", 
+            "source": "SEL_421_1.network.paris.8sub.cypsa.projects.cptl-c.org", 
+            "target": "10.36.1.203"
+        }, 
+        {
+            "relation": "cptlc:hasLink", 
+            "source": "10.36.1.203", 
+            "target": "SEL_421_1.network.paris.8sub.cypsa.projects.cptl-c.org"
+        }, 
+        {
+            "relation": "snet:hasBreakerConnections", 
+            "source": "10.36.1.101", 
+            "target": "Shelbyville$BRK$2629.yard.shelbyville.8sub.cypsa.projects.cptl-c.org"
+        }
+    ], 
+    "multigraph": true, 
+    "nodes": [
+        {
+            "enet:hasDomainNameValue": "Cypress Creek$BRK$1719.yard.cypress-creek.8sub.cypsa.projects.cptl-c.org", 
+            "name": "Cypress Creek$BRK$1719.yard.cypress-creek.8sub.cypsa.projects.cptl-c.org", 
+            "rdfs:type": "syard:Breaker"
+        }, 
+        {
+            "enet:hasDomainNameValue": "OvercurrentRelay_2.network.north-haverbrook.8sub.cypsa.projects.cptl-c.org", 
+            "enet:hasIPAddressValue": "10.33.1.102", 
+            "name": "10.33.1.102", 
+            "rdfs:type": "snet:OvercurrentRelay"
+        }, 
+        {
+            "enet:hasDomainNameValue": "OvercurrentRelay_3.network.north-haverbrook.8sub.cypsa.projects.cptl-c.org", 
+            "enet:hasIPAddressValue": "10.33.1.103", 
+            "name": "10.33.1.103", 
+            "rdfs:type": "snet:OvercurrentRelay"
+        }, 
+        {
+            "enet:hasDomainNameValue": "OvercurrentRelay_1.network.north-haverbrook.8sub.cypsa.projects.cptl-c.org", 
+            "enet:hasIPAddressValue": "10.33.1.101", 
+            "name": "10.33.1.101", 
+            "rdfs:type": "snet:OvercurrentRelay"
+        }, 
+        {
+            "enet:hasDomainNameValue": "OvercurrentRelay_6.network.north-haverbrook.8sub.cypsa.projects.cptl-c.org", 
+            "enet:hasIPAddressValue": "10.33.1.106", 
+            "name": "10.33.1.106", 
+            "rdfs:type": "snet:OvercurrentRelay"
+        }, 
+        {
+            "enet:hasDomainNameValue": "OvercurrentRelay_7.network.north-haverbrook.8sub.cypsa.projects.cptl-c.org", 
+            "enet:hasIPAddressValue": "10.33.1.107", 
+            "name": "10.33.1.107", 
+            "rdfs:type": "snet:OvercurrentRelay"
+        }, 
+        {
+            "enet:hasDomainNameValue": "Cypress Creek$BRK$1715.yard.cypress-creek.8sub.cypsa.projects.cptl-c.org", 
+            "name": "Cypress Creek$BRK$1715.yard.cypress-creek.8sub.cypsa.projects.cptl-c.org", 
+            "rdfs:type": "syard:Breaker"
+        }, 
+        {
+            "enet:hasDomainNameValue": "OvercurrentRelay_5.network.north-haverbrook.8sub.cypsa.projects.cptl-c.org", 
+            "enet:hasIPAddressValue": "10.33.1.105", 
+            "name": "10.33.1.105", 
+            "rdfs:type": "snet:OvercurrentRelay"
+        }, 
+        {
+            "enet:hasDomainNameValue": "Cypress Creek$BRK$1925.yard.cypress-creek.8sub.cypsa.projects.cptl-c.org", 
+            "name": "Cypress Creek$BRK$1925.yard.cypress-creek.8sub.cypsa.projects.cptl-c.org", 
+            "rdfs:type": "syard:Breaker"
+        }, 
+        {
+            "enet:hasDomainNameValue": "Shelbyville$ND$27.yard.shelbyville.8sub.cypsa.projects.cptl-c.org", 
+            "name": "Shelbyville$ND$27.yard.shelbyville.8sub.cypsa.projects.cptl-c.org", 
+            "rdfs:type": "syard:Node"
+        }, 
+        {
+            "enet:hasDomainNameValue": "Shelbyville$ND$26.yard.shelbyville.8sub.cypsa.projects.cptl-c.org", 
+            "name": "Shelbyville$ND$26.yard.shelbyville.8sub.cypsa.projects.cptl-c.org", 
+            "rdfs:type": "syard:Node"
+        }, 
+        {
+            "enet:hasDomainNameValue": "Shelbyville$ND$29.yard.shelbyville.8sub.cypsa.projects.cptl-c.org", 
+            "name": "Shelbyville$ND$29.yard.shelbyville.8sub.cypsa.projects.cptl-c.org", 
+            "rdfs:type": "syard:Bus"
+        }, 
+        {
+            "enet:hasDomainNameValue": "Shelbyville$ND$28.yard.shelbyville.8sub.cypsa.projects.cptl-c.org", 
+            "name": "Shelbyville$ND$28.yard.shelbyville.8sub.cypsa.projects.cptl-c.org", 
+            "rdfs:type": "syard:Node"
+        }, 
+        {
+            "enet:hasDomainNameValue": "Paris$ND$52.yard.paris.8sub.cypsa.projects.cptl-c.org", 
+            "name": "Paris$ND$52.yard.paris.8sub.cypsa.projects.cptl-c.org", 
+            "rdfs:type": "syard:Node"
+        }, 
+        {
+            "enet:hasDomainNameValue": "Shelbyville$BRK$2928.yard.shelbyville.8sub.cypsa.projects.cptl-c.org", 
+            "name": "Shelbyville$BRK$2928.yard.shelbyville.8sub.cypsa.projects.cptl-c.org", 
+            "rdfs:type": "syard:Breaker"
+        }, 
+        {
+            "enet:hasDomainNameValue": "Paris$ND$51.yard.paris.8sub.cypsa.projects.cptl-c.org", 
+            "name": "Paris$ND$51.yard.paris.8sub.cypsa.projects.cptl-c.org", 
+            "rdfs:type": "syard:Node"
+        }, 
+        {
+            "enet:hasDomainNameValue": "NorthHaverbrook$ND$7.yard.north-haverbrook.8sub.cypsa.projects.cptl-c.org", 
+            "name": "NorthHaverbrook$ND$7.yard.north-haverbrook.8sub.cypsa.projects.cptl-c.org", 
+            "rdfs:type": "syard:Node"
+        }, 
+        {
+            "enet:hasDomainNameValue": "Switch_1.network.north-haverbrook.8sub.cypsa.projects.cptl-c.org", 
+            "enet:hasIPAddressValue": "192.168.3.200", 
+            "name": "192.168.3.200", 
+            "rdfs:type": "snet:Switch"
+        }, 
+        {
+            "enet:hasDomainNameValue": "Shelbyville$BRK$3132.yard.shelbyville.8sub.cypsa.projects.cptl-c.org", 
+            "name": "Shelbyville$BRK$3132.yard.shelbyville.8sub.cypsa.projects.cptl-c.org", 
+            "rdfs:type": "syard:Breaker"
+        }, 
+        {
+            "enet:hasDomainNameValue": "Cypress Creek$TX$4545.yard.cypress-creek.8sub.cypsa.projects.cptl-c.org", 
+            "name": "Cypress Creek$TX$4545.yard.cypress-creek.8sub.cypsa.projects.cptl-c.org", 
+            "rdfs:type": "syard:Transformer"
+        }, 
+        {
+            "enet:hasDomainNameValue": "NorthHaverbrook$ND$8.yard.north-haverbrook.8sub.cypsa.projects.cptl-c.org", 
+            "name": "NorthHaverbrook$ND$8.yard.north-haverbrook.8sub.cypsa.projects.cptl-c.org", 
+            "rdfs:type": "syard:Bus"
+        }, 
+        {
+            "enet:hasDomainNameValue": "North Haverbrook$BRK$812.yard.north-haverbrook.8sub.cypsa.projects.cptl-c.org", 
+            "name": "North Haverbrook$BRK$812.yard.north-haverbrook.8sub.cypsa.projects.cptl-c.org", 
+            "rdfs:type": "cptlc:Asset"
+        }, 
+        {
+            "enet:hasDomainNameValue": "Cypress Creek$BRK$1815.yard.cypress-creek.8sub.cypsa.projects.cptl-c.org", 
+            "name": "Cypress Creek$BRK$1815.yard.cypress-creek.8sub.cypsa.projects.cptl-c.org", 
+            "rdfs:type": "syard:Breaker"
+        }, 
+        {
+            "enet:hasDomainNameValue": "SEL_421_5.network.cypress-creek.8sub.cypsa.projects.cptl-c.org", 
+            "name": "SEL_421_5.network.cypress-creek.8sub.cypsa.projects.cptl-c.org", 
+            "rdfs:type": "snet:DistanceRelay"
+        }, 
+        {
+            "enet:hasDomainNameValue": "ReversePowerRelay_1.network.springfield.8sub.cypsa.projects.cptl-c.org", 
+            "name": "ReversePowerRelay_1.network.springfield.8sub.cypsa.projects.cptl-c.org", 
+            "rdfs:type": "snet:ReversePowerRelay"
+        }, 
+        {
+            "enet:hasDomainNameValue": "SEL_421_7.network.cypress-creek.8sub.cypsa.projects.cptl-c.org", 
+            "enet:hasIPAddressValue": "10.31.1.207", 
+            "name": "10.31.1.207", 
+            "rdfs:type": "snet:DistanceRelay"
+        }, 
+        {
+            "enet:hasDomainNameValue": "SEL_421_6.network.cypress-creek.8sub.cypsa.projects.cptl-c.org", 
+            "name": "SEL_421_6.network.cypress-creek.8sub.cypsa.projects.cptl-c.org", 
+            "rdfs:type": "snet:DistanceRelay"
+        }, 
+        {
+            "enet:hasDomainNameValue": "SEL_421_1.network.cypress-creek.8sub.cypsa.projects.cptl-c.org", 
+            "name": "SEL_421_1.network.cypress-creek.8sub.cypsa.projects.cptl-c.org", 
+            "rdfs:type": "snet:DistanceRelay"
+        }, 
+        {
+            "enet:hasDomainNameValue": "SEL_421_3.network.cypress-creek.8sub.cypsa.projects.cptl-c.org", 
+            "name": "SEL_421_3.network.cypress-creek.8sub.cypsa.projects.cptl-c.org", 
+            "rdfs:type": "snet:DistanceRelay"
+        }, 
+        {
+            "enet:hasDomainNameValue": "SEL_421_2.network.cypress-creek.8sub.cypsa.projects.cptl-c.org", 
+            "enet:hasIPAddressValue": "10.31.1.202", 
+            "name": "10.31.1.202", 
+            "rdfs:type": "snet:DistanceRelay"
+        }, 
+        {
+            "enet:hasDomainNameValue": "Haverbrook$BRK$3435.yard.haverbrook.8sub.cypsa.projects.cptl-c.org", 
+            "name": "Haverbrook$BRK$3435.yard.haverbrook.8sub.cypsa.projects.cptl-c.org", 
+            "rdfs:type": "syard:Breaker"
+        }, 
+        {
+            "enet:hasDomainNameValue": "SEL_421_3.network.paris.8sub.cypsa.projects.cptl-c.org", 
+            "name": "SEL_421_3.network.paris.8sub.cypsa.projects.cptl-c.org", 
+            "rdfs:type": "snet:DistanceRelay"
+        }, 
+        {
+            "enet:hasDomainNameValue": "SEL_421_1.network.paris.8sub.cypsa.projects.cptl-c.org", 
+            "name": "SEL_421_1.network.paris.8sub.cypsa.projects.cptl-c.org", 
+            "rdfs:type": "snet:DistanceRelay"
+        }, 
+        {
+            "enet:hasDomainNameValue": "Odgenville$BRK$62.yard.odgenville.8sub.cypsa.projects.cptl-c.org", 
+            "name": "Odgenville$BRK$62.yard.odgenville.8sub.cypsa.projects.cptl-c.org", 
+            "rdfs:type": "syard:Breaker"
+        }, 
+        {
+            "enet:hasDomainNameValue": "OvercurrentRelay_4.network.north-haverbrook.8sub.cypsa.projects.cptl-c.org", 
+            "enet:hasIPAddressValue": "10.33.1.104", 
+            "name": "10.33.1.104", 
+            "rdfs:type": "snet:OvercurrentRelay"
+        }, 
+        {
+            "enet:hasDomainNameValue": "Springfield$ND$39.yard.springfield.8sub.cypsa.projects.cptl-c.org", 
+            "name": "Springfield$ND$39.yard.springfield.8sub.cypsa.projects.cptl-c.org", 
+            "rdfs:type": "syard:Node"
+        }, 
+        {
+            "enet:hasDomainNameValue": "SEL_451_4.network.paris.8sub.cypsa.projects.cptl-c.org", 
+            "enet:hasIPAddressValue": "10.35.1.104", 
+            "name": "10.35.1.104", 
+            "rdfs:type": "snet:OvercurrentRelay"
+        }, 
+        {
+            "enet:hasDomainNameValue": "SEL_451_3.network.paris.8sub.cypsa.projects.cptl-c.org", 
+            "enet:hasIPAddressValue": "10.35.1.103", 
+            "name": "10.35.1.103", 
+            "rdfs:type": "snet:OvercurrentRelay"
+        }, 
+        {
+            "enet:hasDomainNameValue": "SEL_451_2.network.paris.8sub.cypsa.projects.cptl-c.org", 
+            "enet:hasIPAddressValue": "10.35.1.102", 
+            "name": "10.35.1.102", 
+            "rdfs:type": "snet:OvercurrentRelay"
+        }, 
+        {
+            "enet:hasDomainNameValue": "SEL_451_1.network.paris.8sub.cypsa.projects.cptl-c.org", 
+            "enet:hasIPAddressValue": "10.35.1.101", 
+            "name": "10.35.1.101", 
+            "rdfs:type": "snet:OvercurrentRelay"
+        }, 
+        {
+            "enet:hasDomainNameValue": "Cypress Creek$ND$25.yard.cypress-creek.8sub.cypsa.projects.cptl-c.org", 
+            "name": "Cypress Creek$ND$25.yard.cypress-creek.8sub.cypsa.projects.cptl-c.org", 
+            "rdfs:type": "syard:Bus"
+        }, 
+        {
+            "enet:hasDomainNameValue": "Switch_1.network.springfield.8sub.cypsa.projects.cptl-c.org", 
+            "enet:hasIPAddressValue": "192.168.8.200", 
+            "name": "192.168.8.200", 
+            "rdfs:type": "snet:Switch"
+        }, 
+        {
+            "enet:hasDomainNameValue": "Haverbrook$BRK$3635.yard.haverbrook.8sub.cypsa.projects.cptl-c.org", 
+            "name": "Haverbrook$BRK$3635.yard.haverbrook.8sub.cypsa.projects.cptl-c.org", 
+            "rdfs:type": "syard:Breaker"
+        }, 
+        {
+            "enet:hasDomainNameValue": "CapitalCity$BRK$4546.yard.capital-city.8sub.cypsa.projects.cptl-c.org", 
+            "name": "CapitalCity$BRK$4546.yard.capital-city.8sub.cypsa.projects.cptl-c.org", 
+            "rdfs:type": "syard:Breaker"
+        }, 
+        {
+            "enet:hasDomainNameValue": "NorthHaverbrook$BRK$1213.yard.north-haverbrook.8sub.cypsa.projects.cptl-c.org", 
+            "name": "NorthHaverbrook$BRK$1213.yard.north-haverbrook.8sub.cypsa.projects.cptl-c.org", 
+            "rdfs:type": "syard:Breaker"
+        }, 
+        {
+            "enet:hasDomainNameValue": "North Haverbrook$BRK$89.yard.north-haverbrook.8sub.cypsa.projects.cptl-c.org", 
+            "name": "North Haverbrook$BRK$89.yard.north-haverbrook.8sub.cypsa.projects.cptl-c.org", 
+            "rdfs:type": "cptlc:Asset"
+        }, 
+        {
+            "enet:hasDomainNameValue": "NorthHaverbrook$ND$59.yard.north-haverbrook.8sub.cypsa.projects.cptl-c.org", 
+            "name": "NorthHaverbrook$ND$59.yard.north-haverbrook.8sub.cypsa.projects.cptl-c.org", 
+            "rdfs:type": "syard:Bus"
+        }, 
+        {
+            "enet:hasDomainNameValue": "Springfield-UN-Gen5.yard.springfield.8sub.cypsa.projects.cptl-c.org", 
+            "name": "Springfield-UN-Gen5.yard.springfield.8sub.cypsa.projects.cptl-c.org", 
+            "rdfs:type": "syard:Generator"
+        }, 
+        {
+            "enet:hasDomainNameValue": "Haverbrook$BRK$3735.yard.haverbrook.8sub.cypsa.projects.cptl-c.org", 
+            "name": "Haverbrook$BRK$3735.yard.haverbrook.8sub.cypsa.projects.cptl-c.org", 
+            "rdfs:type": "syard:Breaker"
+        }, 
+        {
+            "enet:hasDomainNameValue": "Odgenville$BRK$42.yard.odgenville.8sub.cypsa.projects.cptl-c.org", 
+            "name": "Odgenville$BRK$42.yard.odgenville.8sub.cypsa.projects.cptl-c.org", 
+            "rdfs:type": "syard:Breaker"
+        }, 
+        {
+            "enet:hasDomainNameValue": "SEL_451_4.network.cypress-creek.8sub.cypsa.projects.cptl-c.org", 
+            "enet:hasIPAddressValue": "10.31.1.104", 
+            "name": "10.31.1.104", 
+            "rdfs:type": "snet:OvercurrentRelay"
+        }, 
+        {
+            "enet:hasDomainNameValue": "SEL_451_5.network.cypress-creek.8sub.cypsa.projects.cptl-c.org", 
+            "enet:hasIPAddressValue": "10.31.1.105", 
+            "name": "10.31.1.105", 
+            "rdfs:type": "snet:OvercurrentRelay"
+        }, 
+        {
+            "enet:hasDomainNameValue": "SEL_451_1.network.cypress-creek.8sub.cypsa.projects.cptl-c.org", 
+            "enet:hasIPAddressValue": "10.31.1.101", 
+            "name": "10.31.1.101", 
+            "rdfs:type": "snet:OvercurrentRelay"
+        }, 
+        {
+            "enet:hasDomainNameValue": "SEL_451_2.network.cypress-creek.8sub.cypsa.projects.cptl-c.org", 
+            "enet:hasIPAddressValue": "10.31.1.102", 
+            "name": "10.31.1.102", 
+            "rdfs:type": "snet:OvercurrentRelay"
+        }, 
+        {
+            "enet:hasDomainNameValue": "SEL_451_3.network.cypress-creek.8sub.cypsa.projects.cptl-c.org", 
+            "enet:hasIPAddressValue": "10.31.1.103", 
+            "name": "10.31.1.103", 
+            "rdfs:type": "snet:OvercurrentRelay"
+        }, 
+        {
+            "enet:hasDomainNameValue": "OvercurrentRelay_1.network.springfield.8sub.cypsa.projects.cptl-c.org", 
+            "enet:hasIPAddressValue": "10.38.1.101", 
+            "name": "10.38.1.101", 
+            "rdfs:type": "snet:OvercurrentRelay"
+        }, 
+        {
+            "enet:hasDomainNameValue": "OvercurrentRelay_3.network.springfield.8sub.cypsa.projects.cptl-c.org", 
+            "enet:hasIPAddressValue": "10.38.1.103", 
+            "name": "10.38.1.103", 
+            "rdfs:type": "snet:OvercurrentRelay"
+        }, 
+        {
+            "enet:hasDomainNameValue": "OvercurrentRelay_2.network.springfield.8sub.cypsa.projects.cptl-c.org", 
+            "enet:hasIPAddressValue": "10.38.1.102", 
+            "name": "10.38.1.102", 
+            "rdfs:type": "snet:OvercurrentRelay"
+        }, 
+        {
+            "enet:hasDomainNameValue": "OvercurrentRelay_5.network.springfield.8sub.cypsa.projects.cptl-c.org", 
+            "enet:hasIPAddressValue": "10.38.1.105", 
+            "name": "10.38.1.105", 
+            "rdfs:type": "snet:OvercurrentRelay"
+        }, 
+        {
+            "enet:hasDomainNameValue": "OvercurrentRelay_4.network.springfield.8sub.cypsa.projects.cptl-c.org", 
+            "enet:hasIPAddressValue": "10.38.1.104", 
+            "name": "10.38.1.104", 
+            "rdfs:type": "snet:OvercurrentRelay"
+        }, 
+        {
+            "enet:hasDomainNameValue": "Springfield$ND$41.yard.springfield.8sub.cypsa.projects.cptl-c.org", 
+            "name": "Springfield$ND$41.yard.springfield.8sub.cypsa.projects.cptl-c.org", 
+            "rdfs:type": "syard:Bus"
+        }, 
+        {
+            "enet:hasDomainNameValue": "Springfield$ND$40.yard.springfield.8sub.cypsa.projects.cptl-c.org", 
+            "name": "Springfield$ND$40.yard.springfield.8sub.cypsa.projects.cptl-c.org", 
+            "rdfs:type": "syard:Node"
+        }, 
+        {
+            "enet:hasDomainNameValue": "Springfield$ND$43.yard.springfield.8sub.cypsa.projects.cptl-c.org", 
+            "name": "Springfield$ND$43.yard.springfield.8sub.cypsa.projects.cptl-c.org", 
+            "rdfs:type": "syard:Node"
+        }, 
+        {
+            "enet:hasDomainNameValue": "Springfield$ND$42.yard.springfield.8sub.cypsa.projects.cptl-c.org", 
+            "name": "Springfield$ND$42.yard.springfield.8sub.cypsa.projects.cptl-c.org", 
+            "rdfs:type": "syard:Node"
+        }, 
+        {
+            "enet:hasDomainNameValue": "Springfield$ND$44.yard.springfield.8sub.cypsa.projects.cptl-c.org", 
+            "name": "Springfield$ND$44.yard.springfield.8sub.cypsa.projects.cptl-c.org", 
+            "rdfs:type": "syard:Node"
+        }, 
+        {
+            "enet:hasDomainNameValue": "CapitalCity$BRK$4647.yard.capital-city.8sub.cypsa.projects.cptl-c.org", 
+            "name": "CapitalCity$BRK$4647.yard.capital-city.8sub.cypsa.projects.cptl-c.org", 
+            "rdfs:type": "syard:Breaker"
+        }, 
+        {
+            "enet:hasDomainNameValue": "Cypress Creek$BRK$2325.yard.cypress-creek.8sub.cypsa.projects.cptl-c.org", 
+            "name": "Cypress Creek$BRK$2325.yard.cypress-creek.8sub.cypsa.projects.cptl-c.org", 
+            "rdfs:type": "syard:Breaker"
+        }, 
+        {
+            "enet:hasDomainNameValue": "NorthHaverbrook$ND$10.yard.north-haverbrook.8sub.cypsa.projects.cptl-c.org", 
+            "name": "NorthHaverbrook$ND$10.yard.north-haverbrook.8sub.cypsa.projects.cptl-c.org", 
+            "rdfs:type": "syard:Node"
+        }, 
+        {
+            "enet:hasDomainNameValue": "NorthHaverbrook$ND$11.yard.north-haverbrook.8sub.cypsa.projects.cptl-c.org", 
+            "name": "NorthHaverbrook$ND$11.yard.north-haverbrook.8sub.cypsa.projects.cptl-c.org", 
+            "rdfs:type": "syard:Node"
+        }, 
+        {
+            "enet:hasDomainNameValue": "NorthHaverbrook$ND$12.yard.north-haverbrook.8sub.cypsa.projects.cptl-c.org", 
+            "name": "NorthHaverbrook$ND$12.yard.north-haverbrook.8sub.cypsa.projects.cptl-c.org", 
+            "rdfs:type": "syard:Bus"
+        }, 
+        {
+            "enet:hasDomainNameValue": "CapitalCity$ND$47.yard.capital-city.8sub.cypsa.projects.cptl-c.org", 
+            "name": "CapitalCity$ND$47.yard.capital-city.8sub.cypsa.projects.cptl-c.org", 
+            "rdfs:type": "syard:Node"
+        }, 
+        {
+            "enet:hasDomainNameValue": "NorthHaverbrook$BRK$913.yard.north-haverbrook.8sub.cypsa.projects.cptl-c.org", 
+            "name": "NorthHaverbrook$BRK$913.yard.north-haverbrook.8sub.cypsa.projects.cptl-c.org", 
+            "rdfs:type": "syard:Breaker"
+        }, 
+        {
+            "enet:hasDomainNameValue": "NorthHaverbrook$BRK$910.yard.north-haverbrook.8sub.cypsa.projects.cptl-c.org", 
+            "name": "NorthHaverbrook$BRK$910.yard.north-haverbrook.8sub.cypsa.projects.cptl-c.org", 
+            "rdfs:type": "syard:Breaker"
+        }, 
+        {
+            "enet:hasDomainNameValue": "Paris$ND$50.yard.paris.8sub.cypsa.projects.cptl-c.org", 
+            "name": "Paris$ND$50.yard.paris.8sub.cypsa.projects.cptl-c.org", 
+            "rdfs:type": "syard:Bus"
+        }, 
+        {
+            "enet:hasDomainNameValue": "CapitalCity$ND$46.yard.capital-city.8sub.cypsa.projects.cptl-c.org", 
+            "name": "CapitalCity$ND$46.yard.capital-city.8sub.cypsa.projects.cptl-c.org", 
+            "rdfs:type": "syard:Bus"
+        }, 
+        {
+            "enet:hasDomainNameValue": "CapitalCity$ND$45.yard.capital-city.8sub.cypsa.projects.cptl-c.org", 
+            "name": "CapitalCity$ND$45.yard.capital-city.8sub.cypsa.projects.cptl-c.org", 
+            "rdfs:type": "syard:Node"
+        }, 
+        {
+            "enet:hasDomainNameValue": "Cypress Creek-UN-Gen2.yard.cypress-creek.8sub.cypsa.projects.cptl-c.org", 
+            "name": "Cypress Creek-UN-Gen2.yard.cypress-creek.8sub.cypsa.projects.cptl-c.org", 
+            "rdfs:type": "cptlc:Asset"
+        }, 
+        {
+            "enet:hasDomainNameValue": "Shelbyville$ND$30.yard.shelbyville.8sub.cypsa.projects.cptl-c.org", 
+            "name": "Shelbyville$ND$30.yard.shelbyville.8sub.cypsa.projects.cptl-c.org", 
+            "rdfs:type": "syard:Node"
+        }, 
+        {
+            "enet:hasDomainNameValue": "Shelbyville$ND$31.yard.shelbyville.8sub.cypsa.projects.cptl-c.org", 
+            "name": "Shelbyville$ND$31.yard.shelbyville.8sub.cypsa.projects.cptl-c.org", 
+            "rdfs:type": "syard:Bus"
+        }, 
+        {
+            "enet:hasDomainNameValue": "Shelbyville$ND$32.yard.shelbyville.8sub.cypsa.projects.cptl-c.org", 
+            "name": "Shelbyville$ND$32.yard.shelbyville.8sub.cypsa.projects.cptl-c.org", 
+            "rdfs:type": "syard:Node"
+        }, 
+        {
+            "enet:hasDomainNameValue": "Springfield$BRK$4142.yard.springfield.8sub.cypsa.projects.cptl-c.org", 
+            "name": "Springfield$BRK$4142.yard.springfield.8sub.cypsa.projects.cptl-c.org", 
+            "rdfs:type": "syard:Breaker"
+        }, 
+        {
+            "enet:hasDomainNameValue": "Cypress Creek$BRK$2225.yard.cypress-creek.8sub.cypsa.projects.cptl-c.org", 
+            "name": "Cypress Creek$BRK$2225.yard.cypress-creek.8sub.cypsa.projects.cptl-c.org", 
+            "rdfs:type": "syard:Breaker"
+        }, 
+        {
+            "enet:hasDomainNameValue": "Odgenville$BRK$34.yard.odgenville.8sub.cypsa.projects.cptl-c.org", 
+            "name": "Odgenville$BRK$34.yard.odgenville.8sub.cypsa.projects.cptl-c.org", 
+            "rdfs:type": "syard:Breaker"
+        }, 
+        {
+            "enet:hasDomainNameValue": "Shelbyville$BRK$2931.yard.shelbyville.8sub.cypsa.projects.cptl-c.org", 
+            "name": "Shelbyville$BRK$2931.yard.shelbyville.8sub.cypsa.projects.cptl-c.org", 
+            "rdfs:type": "syard:Breaker"
+        }, 
+        {
+            "enet:hasDomainNameValue": "Haverbrook$ND$36.yard.haverbrook.8sub.cypsa.projects.cptl-c.org", 
+            "name": "Haverbrook$ND$36.yard.haverbrook.8sub.cypsa.projects.cptl-c.org", 
+            "rdfs:type": "syard:Node"
+        }, 
+        {
+            "enet:hasDomainNameValue": "SEL_3620.network.paris.8sub.cypsa.projects.cptl-c.org", 
+            "enet:hasIPAddressValue": "192.168.5.200", 
+            "name": "192.168.5.200", 
+            "rdfs:type": "snet:Switch"
+        }, 
+        {
+            "enet:hasDomainNameValue": "Haverbrook-UN-Gen4.yard.haverbrook.8sub.cypsa.projects.cptl-c.org", 
+            "name": "Haverbrook-UN-Gen4.yard.haverbrook.8sub.cypsa.projects.cptl-c.org", 
+            "rdfs:type": "syard:Generator"
+        }, 
+        {
+            "enet:hasDomainNameValue": "NorthHaverbrook$BRK$89.yard.north-haverbrook.8sub.cypsa.projects.cptl-c.org", 
+            "name": "NorthHaverbrook$BRK$89.yard.north-haverbrook.8sub.cypsa.projects.cptl-c.org", 
+            "rdfs:type": "syard:Breaker"
+        }, 
+        {
+            "enet:hasDomainNameValue": "OvercurrentRelay_2.network.haverbrook.8sub.cypsa.projects.cptl-c.org", 
+            "name": "OvercurrentRelay_2.network.haverbrook.8sub.cypsa.projects.cptl-c.org", 
+            "rdfs:type": "snet:OvercurrentRelay"
+        }, 
+        {
+            "enet:hasDomainNameValue": "OvercurrentRelay_3.network.haverbrook.8sub.cypsa.projects.cptl-c.org", 
+            "name": "OvercurrentRelay_3.network.haverbrook.8sub.cypsa.projects.cptl-c.org", 
+            "rdfs:type": "snet:OvercurrentRelay"
+        }, 
+        {
+            "enet:hasDomainNameValue": "OvercurrentRelay_1.network.haverbrook.8sub.cypsa.projects.cptl-c.org", 
+            "name": "OvercurrentRelay_1.network.haverbrook.8sub.cypsa.projects.cptl-c.org", 
+            "rdfs:type": "snet:OvercurrentRelay"
+        }, 
+        {
+            "enet:hasDomainNameValue": "OvercurrentRelay_4.network.haverbrook.8sub.cypsa.projects.cptl-c.org", 
+            "name": "OvercurrentRelay_4.network.haverbrook.8sub.cypsa.projects.cptl-c.org", 
+            "rdfs:type": "snet:OvercurrentRelay"
+        }, 
+        {
+            "enet:hasDomainNameValue": "OvercurrentRelay_5.network.haverbrook.8sub.cypsa.projects.cptl-c.org", 
+            "name": "OvercurrentRelay_5.network.haverbrook.8sub.cypsa.projects.cptl-c.org", 
+            "rdfs:type": "snet:OvercurrentRelay"
+        }, 
+        {
+            "enet:hasDomainNameValue": "Cypress Creek$ND$19.yard.cypress-creek.8sub.cypsa.projects.cptl-c.org", 
+            "name": "Cypress Creek$ND$19.yard.cypress-creek.8sub.cypsa.projects.cptl-c.org", 
+            "rdfs:type": "syard:Bus"
+        }, 
+        {
+            "enet:hasDomainNameValue": "Cypress Creek$ND$18.yard.cypress-creek.8sub.cypsa.projects.cptl-c.org", 
+            "name": "Cypress Creek$ND$18.yard.cypress-creek.8sub.cypsa.projects.cptl-c.org", 
+            "rdfs:type": "syard:Node"
+        }, 
+        {
+            "enet:hasDomainNameValue": "Springfield$BRK$4441.yard.springfield.8sub.cypsa.projects.cptl-c.org", 
+            "name": "Springfield$BRK$4441.yard.springfield.8sub.cypsa.projects.cptl-c.org", 
+            "rdfs:type": "syard:Breaker"
+        }, 
+        {
+            "enet:hasDomainNameValue": "NorthHaverbrook$ND$14.yard.north-haverbrook.8sub.cypsa.projects.cptl-c.org", 
+            "name": "NorthHaverbrook$ND$14.yard.north-haverbrook.8sub.cypsa.projects.cptl-c.org", 
+            "rdfs:type": "syard:Node"
+        }, 
+        {
+            "enet:hasDomainNameValue": "Cypress Creek$ND$17.yard.cypress-creek.8sub.cypsa.projects.cptl-c.org", 
+            "name": "Cypress Creek$ND$17.yard.cypress-creek.8sub.cypsa.projects.cptl-c.org", 
+            "rdfs:type": "syard:Node"
+        }, 
+        {
+            "enet:hasDomainNameValue": "Cypress Creek$ND$16.yard.cypress-creek.8sub.cypsa.projects.cptl-c.org", 
+            "name": "Cypress Creek$ND$16.yard.cypress-creek.8sub.cypsa.projects.cptl-c.org", 
+            "rdfs:type": "syard:Node"
+        }, 
+        {
+            "enet:hasDomainNameValue": "Cypress Creek$ND$15.yard.cypress-creek.8sub.cypsa.projects.cptl-c.org", 
+            "name": "Cypress Creek$ND$15.yard.cypress-creek.8sub.cypsa.projects.cptl-c.org", 
+            "rdfs:type": "syard:Bus"
+        }, 
+        {
+            "enet:hasDomainNameValue": "NorthHaverbrook$ND$13.yard.north-haverbrook.8sub.cypsa.projects.cptl-c.org", 
+            "name": "NorthHaverbrook$ND$13.yard.north-haverbrook.8sub.cypsa.projects.cptl-c.org", 
+            "rdfs:type": "syard:Bus"
+        }, 
+        {
+            "enet:hasDomainNameValue": "Shelbyville$BRK$2729.yard.shelbyville.8sub.cypsa.projects.cptl-c.org", 
+            "name": "Shelbyville$BRK$2729.yard.shelbyville.8sub.cypsa.projects.cptl-c.org", 
+            "rdfs:type": "syard:Breaker"
+        }, 
+        {
+            "enet:hasDomainNameValue": "SEL_3620.network.odgenville.8sub.cypsa.projects.cptl-c.org", 
+            "enet:hasIPAddressValue": "192.168.4.200", 
+            "name": "192.168.4.200", 
+            "rdfs:type": "snet:Switch"
+        }, 
+        {
+            "enet:hasDomainNameValue": "Odgenville$BRK$12.yard.odgenville.8sub.cypsa.projects.cptl-c.org", 
+            "name": "Odgenville$BRK$12.yard.odgenville.8sub.cypsa.projects.cptl-c.org", 
+            "rdfs:type": "syard:Breaker"
+        }, 
+        {
+            "enet:hasDomainNameValue": "Odgenville$BRK$14.yard.odgenville.8sub.cypsa.projects.cptl-c.org", 
+            "name": "Odgenville$BRK$14.yard.odgenville.8sub.cypsa.projects.cptl-c.org", 
+            "rdfs:type": "syard:Breaker"
+        }, 
+        {
+            "enet:hasDomainNameValue": "Paris$BRK$4950.yard.paris.8sub.cypsa.projects.cptl-c.org", 
+            "name": "Paris$BRK$4950.yard.paris.8sub.cypsa.projects.cptl-c.org", 
+            "rdfs:type": "syard:Breaker"
+        }, 
+        {
+            "enet:hasDomainNameValue": "Paris$BRK$5051.yard.paris.8sub.cypsa.projects.cptl-c.org", 
+            "name": "Paris$BRK$5051.yard.paris.8sub.cypsa.projects.cptl-c.org", 
+            "rdfs:type": "syard:Breaker"
+        }, 
+        {
+            "enet:hasDomainNameValue": "SEL_451_2.network.odgenville.8sub.cypsa.projects.cptl-c.org", 
+            "enet:hasIPAddressValue": "10.34.1.102", 
+            "name": "10.34.1.102", 
+            "rdfs:type": "snet:OvercurrentRelay"
+        }, 
+        {
+            "enet:hasDomainNameValue": "Paris$ND$48.yard.paris.8sub.cypsa.projects.cptl-c.org", 
+            "name": "Paris$ND$48.yard.paris.8sub.cypsa.projects.cptl-c.org", 
+            "rdfs:type": "syard:Node"
+        }, 
+        {
+            "enet:hasDomainNameValue": "SEL_451_1.network.odgenville.8sub.cypsa.projects.cptl-c.org", 
+            "enet:hasIPAddressValue": "10.34.1.101", 
+            "name": "10.34.1.101", 
+            "rdfs:type": "snet:OvercurrentRelay"
+        }, 
+        {
+            "enet:hasDomainNameValue": "Springfield$BRK$4041.yard.springfield.8sub.cypsa.projects.cptl-c.org", 
+            "name": "Springfield$BRK$4041.yard.springfield.8sub.cypsa.projects.cptl-c.org", 
+            "rdfs:type": "syard:Breaker"
+        }, 
+        {
+            "enet:hasDomainNameValue": "Odgenville$ND$6.yard.odgenville.8sub.cypsa.projects.cptl-c.org", 
+            "name": "Odgenville$ND$6.yard.odgenville.8sub.cypsa.projects.cptl-c.org", 
+            "rdfs:type": "syard:Node"
+        }, 
+        {
+            "enet:hasDomainNameValue": "NorthHaverbrook$BRK$812.yard.north-haverbrook.8sub.cypsa.projects.cptl-c.org", 
+            "name": "NorthHaverbrook$BRK$812.yard.north-haverbrook.8sub.cypsa.projects.cptl-c.org", 
+            "rdfs:type": "syard:Breaker"
+        }, 
+        {
+            "enet:hasDomainNameValue": "Shelbyville$BRK$3031.yard.shelbyville.8sub.cypsa.projects.cptl-c.org", 
+            "name": "Shelbyville$BRK$3031.yard.shelbyville.8sub.cypsa.projects.cptl-c.org", 
+            "rdfs:type": "syard:Breaker"
+        }, 
+        {
+            "enet:hasDomainNameValue": "Odgenville$ND$5.yard.odgenville.8sub.cypsa.projects.cptl-c.org", 
+            "name": "Odgenville$ND$5.yard.odgenville.8sub.cypsa.projects.cptl-c.org", 
+            "rdfs:type": "syard:Bus"
+        }, 
+        {
+            "enet:hasDomainNameValue": "Odgenville$ND$2.yard.odgenville.8sub.cypsa.projects.cptl-c.org", 
+            "name": "Odgenville$ND$2.yard.odgenville.8sub.cypsa.projects.cptl-c.org", 
+            "rdfs:type": "syard:Bus"
+        }, 
+        {
+            "enet:hasDomainNameValue": "Odgenville$ND$3.yard.odgenville.8sub.cypsa.projects.cptl-c.org", 
+            "name": "Odgenville$ND$3.yard.odgenville.8sub.cypsa.projects.cptl-c.org", 
+            "rdfs:type": "syard:Node"
+        }, 
+        {
+            "enet:hasDomainNameValue": "Odgenville$ND$1.yard.odgenville.8sub.cypsa.projects.cptl-c.org", 
+            "name": "Odgenville$ND$1.yard.odgenville.8sub.cypsa.projects.cptl-c.org", 
+            "rdfs:type": "syard:Node"
+        }, 
+        {
+            "enet:hasDomainNameValue": "Odgenville-UN-Gen1.yard.odgenville.8sub.cypsa.projects.cptl-c.org", 
+            "name": "Odgenville-UN-Gen1.yard.odgenville.8sub.cypsa.projects.cptl-c.org", 
+            "rdfs:type": "syard:Generator"
+        }, 
+        {
+            "enet:hasDomainNameValue": "SEL_451_3.network.shelbyville.8sub.cypsa.projects.cptl-c.org", 
+            "enet:hasIPAddressValue": "10.36.1.103", 
+            "name": "10.36.1.103", 
+            "rdfs:type": "snet:OvercurrentRelay"
+        }, 
+        {
+            "enet:hasDomainNameValue": "SEL_451_2.network.shelbyville.8sub.cypsa.projects.cptl-c.org", 
+            "enet:hasIPAddressValue": "10.36.1.102", 
+            "name": "10.36.1.102", 
+            "rdfs:type": "snet:OvercurrentRelay"
+        }, 
+        {
+            "enet:hasDomainNameValue": "SEL_451_1.network.shelbyville.8sub.cypsa.projects.cptl-c.org", 
+            "enet:hasIPAddressValue": "10.36.1.101", 
+            "name": "10.36.1.101", 
+            "rdfs:type": "snet:OvercurrentRelay"
+        }, 
+        {
+            "enet:hasDomainNameValue": "SEL_451_6.network.shelbyville.8sub.cypsa.projects.cptl-c.org", 
+            "enet:hasIPAddressValue": "10.36.1.106", 
+            "name": "10.36.1.106", 
+            "rdfs:type": "snet:OvercurrentRelay"
+        }, 
+        {
+            "enet:hasDomainNameValue": "SEL_451_5.network.shelbyville.8sub.cypsa.projects.cptl-c.org", 
+            "enet:hasIPAddressValue": "10.36.1.105", 
+            "name": "10.36.1.105", 
+            "rdfs:type": "snet:OvercurrentRelay"
+        }, 
+        {
+            "enet:hasDomainNameValue": "SEL_451_4.network.shelbyville.8sub.cypsa.projects.cptl-c.org", 
+            "enet:hasIPAddressValue": "10.36.1.104", 
+            "name": "10.36.1.104", 
+            "rdfs:type": "snet:OvercurrentRelay"
+        }, 
+        {
+            "enet:hasDomainNameValue": "OvercurrentRelay_2.network.capital-city.8sub.cypsa.projects.cptl-c.org", 
+            "enet:hasIPAddressValue": "10.37.1.102", 
+            "name": "10.37.1.102", 
+            "rdfs:type": "snet:OvercurrentRelay"
+        }, 
+        {
+            "enet:hasDomainNameValue": "OvercurrentRelay_1.network.capital-city.8sub.cypsa.projects.cptl-c.org", 
+            "enet:hasIPAddressValue": "10.37.1.101", 
+            "name": "10.37.1.101", 
+            "rdfs:type": "snet:OvercurrentRelay"
+        }, 
+        {
+            "enet:hasDomainNameValue": "Haverbrook$BRK$3335.yard.haverbrook.8sub.cypsa.projects.cptl-c.org", 
+            "name": "Haverbrook$BRK$3335.yard.haverbrook.8sub.cypsa.projects.cptl-c.org", 
+            "rdfs:type": "syard:Breaker"
+        }, 
+        {
+            "enet:hasDomainNameValue": "Cypress Creek$BRK$1615.yard.cypress-creek.8sub.cypsa.projects.cptl-c.org", 
+            "name": "Cypress Creek$BRK$1615.yard.cypress-creek.8sub.cypsa.projects.cptl-c.org", 
+            "rdfs:type": "syard:Breaker"
+        }, 
+        {
+            "enet:hasDomainNameValue": "Haverbrook$BRK$3835.yard.haverbrook.8sub.cypsa.projects.cptl-c.org", 
+            "name": "Haverbrook$BRK$3835.yard.haverbrook.8sub.cypsa.projects.cptl-c.org", 
+            "rdfs:type": "syard:Breaker"
+        }, 
+        {
+            "enet:hasDomainNameValue": "DistanceRelay_1.network.capital-city.8sub.cypsa.projects.cptl-c.org", 
+            "name": "DistanceRelay_1.network.capital-city.8sub.cypsa.projects.cptl-c.org", 
+            "rdfs:type": "snet:DistanceRelay"
+        }, 
+        {
+            "enet:hasDomainNameValue": "ReversePowerRelay_1.network.haverbrook.8sub.cypsa.projects.cptl-c.org", 
+            "name": "ReversePowerRelay_1.network.haverbrook.8sub.cypsa.projects.cptl-c.org", 
+            "rdfs:type": "snet:ReversePowerRelay"
+        }, 
+        {
+            "enet:hasDomainNameValue": "Cypress Creek$BRK$2019.yard.cypress-creek.8sub.cypsa.projects.cptl-c.org", 
+            "name": "Cypress Creek$BRK$2019.yard.cypress-creek.8sub.cypsa.projects.cptl-c.org", 
+            "rdfs:type": "syard:Breaker"
+        }, 
+        {
+            "enet:hasDomainNameValue": "DistanceRelay_3.network.north-haverbrook.8sub.cypsa.projects.cptl-c.org", 
+            "enet:hasIPAddressValue": "10.33.1.203", 
+            "name": "10.33.1.203", 
+            "rdfs:type": "snet:DistanceRelay"
+        }, 
+        {
+            "enet:hasDomainNameValue": "Haverbrook$ND$33.yard.haverbrook.8sub.cypsa.projects.cptl-c.org", 
+            "name": "Haverbrook$ND$33.yard.haverbrook.8sub.cypsa.projects.cptl-c.org", 
+            "rdfs:type": "syard:Node"
+        }, 
+        {
+            "enet:hasDomainNameValue": "DistanceRelay_2.network.north-haverbrook.8sub.cypsa.projects.cptl-c.org", 
+            "name": "DistanceRelay_2.network.north-haverbrook.8sub.cypsa.projects.cptl-c.org", 
+            "rdfs:type": "snet:DistanceRelay"
+        }, 
+        {
+            "enet:hasDomainNameValue": "Cypress Creek$BRK$1519.yard.cypress-creek.8sub.cypsa.projects.cptl-c.org", 
+            "name": "Cypress Creek$BRK$1519.yard.cypress-creek.8sub.cypsa.projects.cptl-c.org", 
+            "rdfs:type": "syard:Breaker"
+        }, 
+        {
+            "enet:hasDomainNameValue": "Haverbrook$ND$37.yard.haverbrook.8sub.cypsa.projects.cptl-c.org", 
+            "name": "Haverbrook$ND$37.yard.haverbrook.8sub.cypsa.projects.cptl-c.org", 
+            "rdfs:type": "syard:Node"
+        }, 
+        {
+            "enet:hasDomainNameValue": "Haverbrook$ND$34.yard.haverbrook.8sub.cypsa.projects.cptl-c.org", 
+            "name": "Haverbrook$ND$34.yard.haverbrook.8sub.cypsa.projects.cptl-c.org", 
+            "rdfs:type": "syard:Node"
+        }, 
+        {
+            "enet:hasDomainNameValue": "Haverbrook$ND$35.yard.haverbrook.8sub.cypsa.projects.cptl-c.org", 
+            "name": "Haverbrook$ND$35.yard.haverbrook.8sub.cypsa.projects.cptl-c.org", 
+            "rdfs:type": "syard:Bus"
+        }, 
+        {
+            "enet:hasDomainNameValue": "Haverbrook$ND$38.yard.haverbrook.8sub.cypsa.projects.cptl-c.org", 
+            "name": "Haverbrook$ND$38.yard.haverbrook.8sub.cypsa.projects.cptl-c.org", 
+            "rdfs:type": "syard:Node"
+        }, 
+        {
+            "enet:hasDomainNameValue": "Capital City$BRK$4546.yard.capital-city.8sub.cypsa.projects.cptl-c.org", 
+            "name": "Capital City$BRK$4546.yard.capital-city.8sub.cypsa.projects.cptl-c.org", 
+            "rdfs:type": "cptlc:Asset"
+        }, 
+        {
+            "enet:hasDomainNameValue": "NorthHaverbrook$BRK$1112.yard.north-haverbrook.8sub.cypsa.projects.cptl-c.org", 
+            "name": "NorthHaverbrook$BRK$1112.yard.north-haverbrook.8sub.cypsa.projects.cptl-c.org", 
+            "rdfs:type": "syard:Breaker"
+        }, 
+        {
+            "enet:hasDomainNameValue": "DistanceRelay_1.network.north-haverbrook.8sub.cypsa.projects.cptl-c.org", 
+            "name": "DistanceRelay_1.network.north-haverbrook.8sub.cypsa.projects.cptl-c.org", 
+            "rdfs:type": "snet:DistanceRelay"
+        }, 
+        {
+            "enet:hasDomainNameValue": "DistanceRelay_1.network.springfield.8sub.cypsa.projects.cptl-c.org", 
+            "enet:hasIPAddressValue": "10.38.1.201", 
+            "name": "10.38.1.201", 
+            "rdfs:type": "snet:DistanceRelay"
+        }, 
+        {
+            "enet:hasDomainNameValue": "DistanceRelay_2.network.springfield.8sub.cypsa.projects.cptl-c.org", 
+            "enet:hasIPAddressValue": "10.38.1.202", 
+            "name": "10.38.1.202", 
+            "rdfs:type": "snet:DistanceRelay"
+        }, 
+        {
+            "enet:hasDomainNameValue": "DistanceRelay_3.network.springfield.8sub.cypsa.projects.cptl-c.org", 
+            "enet:hasIPAddressValue": "10.38.1.203", 
+            "name": "10.38.1.203", 
+            "rdfs:type": "snet:DistanceRelay"
+        }, 
+        {
+            "enet:hasDomainNameValue": "SEL_421_2.network.odgenville.8sub.cypsa.projects.cptl-c.org", 
+            "enet:hasIPAddressValue": "10.34.1.202", 
+            "name": "10.34.1.202", 
+            "rdfs:type": "snet:DistanceRelay"
+        }, 
+        {
+            "enet:hasDomainNameValue": "SEL_421_1.network.odgenville.8sub.cypsa.projects.cptl-c.org", 
+            "enet:hasIPAddressValue": "10.34.1.201", 
+            "name": "10.34.1.201", 
+            "rdfs:type": "snet:DistanceRelay"
+        }, 
+        {
+            "enet:hasDomainNameValue": "SEL_421_4.network.cypress-creek.8sub.cypsa.projects.cptl-c.org", 
+            "name": "SEL_421_4.network.cypress-creek.8sub.cypsa.projects.cptl-c.org", 
+            "rdfs:type": "snet:DistanceRelay"
+        }, 
+        {
+            "enet:hasDomainNameValue": "Paris$BRK$5052.yard.paris.8sub.cypsa.projects.cptl-c.org", 
+            "name": "Paris$BRK$5052.yard.paris.8sub.cypsa.projects.cptl-c.org", 
+            "rdfs:type": "syard:Breaker"
+        }, 
+        {
+            "enet:hasDomainNameValue": "Cypress Creek$BRK$2125.yard.cypress-creek.8sub.cypsa.projects.cptl-c.org", 
+            "name": "Cypress Creek$BRK$2125.yard.cypress-creek.8sub.cypsa.projects.cptl-c.org", 
+            "rdfs:type": "syard:Breaker"
+        }, 
+        {
+            "enet:hasDomainNameValue": "Paris$ND$49.yard.paris.8sub.cypsa.projects.cptl-c.org", 
+            "name": "Paris$ND$49.yard.paris.8sub.cypsa.projects.cptl-c.org", 
+            "rdfs:type": "syard:Node"
+        }, 
+        {
+            "enet:hasDomainNameValue": "North Haverbrook$BRK$78.yard.north-haverbrook.8sub.cypsa.projects.cptl-c.org", 
+            "name": "North Haverbrook$BRK$78.yard.north-haverbrook.8sub.cypsa.projects.cptl-c.org", 
+            "rdfs:type": "cptlc:Asset"
+        }, 
+        {
+            "enet:hasDomainNameValue": "SEL_451_3.network.odgenville.8sub.cypsa.projects.cptl-c.org", 
+            "enet:hasIPAddressValue": "10.34.1.103", 
+            "name": "10.34.1.103", 
+            "rdfs:type": "snet:OvercurrentRelay"
+        }, 
+        {
+            "enet:hasDomainNameValue": "Springfield$BRK$4341.yard.springfield.8sub.cypsa.projects.cptl-c.org", 
+            "name": "Springfield$BRK$4341.yard.springfield.8sub.cypsa.projects.cptl-c.org", 
+            "rdfs:type": "syard:Breaker"
+        }, 
+        {
+            "enet:hasDomainNameValue": "Springfield$BRK$3941.yard.springfield.8sub.cypsa.projects.cptl-c.org", 
+            "name": "Springfield$BRK$3941.yard.springfield.8sub.cypsa.projects.cptl-c.org", 
+            "rdfs:type": "syard:Breaker"
+        }, 
+        {
+            "enet:hasDomainNameValue": "SEL_3620.network.cypress-creek.8sub.cypsa.projects.cptl-c.org", 
+            "enet:hasIPAddressValue": "192.168.1.200", 
+            "name": "192.168.1.200", 
+            "rdfs:type": "snet:Switch"
+        }, 
+        {
+            "enet:hasDomainNameValue": "North Haverbrook$BRK$1413.yard.north-haverbrook.8sub.cypsa.projects.cptl-c.org", 
+            "name": "North Haverbrook$BRK$1413.yard.north-haverbrook.8sub.cypsa.projects.cptl-c.org", 
+            "rdfs:type": "cptlc:Asset"
+        }, 
+        {
+            "enet:hasDomainNameValue": "Odgenville$BRK$56.yard.odgenville.8sub.cypsa.projects.cptl-c.org", 
+            "name": "Odgenville$BRK$56.yard.odgenville.8sub.cypsa.projects.cptl-c.org", 
+            "rdfs:type": "syard:Breaker"
+        }, 
+        {
+            "enet:hasDomainNameValue": "Cypress Creek$ND$22.yard.cypress-creek.8sub.cypsa.projects.cptl-c.org", 
+            "name": "Cypress Creek$ND$22.yard.cypress-creek.8sub.cypsa.projects.cptl-c.org", 
+            "rdfs:type": "syard:Node"
+        }, 
+        {
+            "enet:hasDomainNameValue": "Cypress Creek$ND$23.yard.cypress-creek.8sub.cypsa.projects.cptl-c.org", 
+            "name": "Cypress Creek$ND$23.yard.cypress-creek.8sub.cypsa.projects.cptl-c.org", 
+            "rdfs:type": "syard:Node"
+        }, 
+        {
+            "enet:hasDomainNameValue": "Cypress Creek$ND$20.yard.cypress-creek.8sub.cypsa.projects.cptl-c.org", 
+            "name": "Cypress Creek$ND$20.yard.cypress-creek.8sub.cypsa.projects.cptl-c.org", 
+            "rdfs:type": "syard:Node"
+        }, 
+        {
+            "enet:hasDomainNameValue": "Cypress Creek$ND$21.yard.cypress-creek.8sub.cypsa.projects.cptl-c.org", 
+            "name": "Cypress Creek$ND$21.yard.cypress-creek.8sub.cypsa.projects.cptl-c.org", 
+            "rdfs:type": "syard:Node"
+        }, 
+        {
+            "enet:hasDomainNameValue": "North Haverbrook$BRK$913.yard.north-haverbrook.8sub.cypsa.projects.cptl-c.org", 
+            "name": "North Haverbrook$BRK$913.yard.north-haverbrook.8sub.cypsa.projects.cptl-c.org", 
+            "rdfs:type": "cptlc:Asset"
+        }, 
+        {
+            "enet:hasDomainNameValue": "Cypress Creek$ND$24.yard.cypress-creek.8sub.cypsa.projects.cptl-c.org", 
+            "name": "Cypress Creek$ND$24.yard.cypress-creek.8sub.cypsa.projects.cptl-c.org", 
+            "rdfs:type": "syard:Node"
+        }, 
+        {
+            "enet:hasDomainNameValue": "North Haverbrook$BRK$910.yard.north-haverbrook.8sub.cypsa.projects.cptl-c.org", 
+            "name": "North Haverbrook$BRK$910.yard.north-haverbrook.8sub.cypsa.projects.cptl-c.org", 
+            "rdfs:type": "cptlc:Asset"
+        }, 
+        {
+            "enet:hasDomainNameValue": "Capital City$BRK$4647.yard.capital-city.8sub.cypsa.projects.cptl-c.org", 
+            "name": "Capital City$BRK$4647.yard.capital-city.8sub.cypsa.projects.cptl-c.org", 
+            "rdfs:type": "cptlc:Asset"
+        }, 
+        {
+            "enet:hasDomainNameValue": "Switch_1.network.haverbrook.8sub.cypsa.projects.cptl-c.org", 
+            "enet:hasIPAddressValue": "192.168.2.200", 
+            "name": "192.168.2.200", 
+            "rdfs:type": "snet:Switch"
+        }, 
+        {
+            "enet:hasDomainNameValue": "NorthHaverbrook$BRK$78.yard.north-haverbrook.8sub.cypsa.projects.cptl-c.org", 
+            "name": "NorthHaverbrook$BRK$78.yard.north-haverbrook.8sub.cypsa.projects.cptl-c.org", 
+            "rdfs:type": "syard:Breaker"
+        }, 
+        {
+            "enet:hasDomainNameValue": "Paris$BRK$4850.yard.paris.8sub.cypsa.projects.cptl-c.org", 
+            "name": "Paris$BRK$4850.yard.paris.8sub.cypsa.projects.cptl-c.org", 
+            "rdfs:type": "syard:Breaker"
+        }, 
+        {
+            "enet:hasDomainNameValue": "Odgenville$ND$4.yard.odgenville.8sub.cypsa.projects.cptl-c.org", 
+            "name": "Odgenville$ND$4.yard.odgenville.8sub.cypsa.projects.cptl-c.org", 
+            "rdfs:type": "syard:Bus"
+        }, 
+        {
+            "enet:hasDomainNameValue": "SEL_3620.network.shelbyville.8sub.cypsa.projects.cptl-c.org", 
+            "enet:hasIPAddressValue": "192.168.6.200", 
+            "name": "192.168.6.200", 
+            "rdfs:type": "snet:Switch"
+        }, 
+        {
+            "enet:hasDomainNameValue": "Odgenville$BRK$23.yard.odgenville.8sub.cypsa.projects.cptl-c.org", 
+            "name": "Odgenville$BRK$23.yard.odgenville.8sub.cypsa.projects.cptl-c.org", 
+            "rdfs:type": "syard:Breaker"
+        }, 
+        {
+            "enet:hasDomainNameValue": "Odgenville$BRK$25.yard.odgenville.8sub.cypsa.projects.cptl-c.org", 
+            "name": "Odgenville$BRK$25.yard.odgenville.8sub.cypsa.projects.cptl-c.org", 
+            "rdfs:type": "syard:Breaker"
+        }, 
+        {
+            "enet:hasDomainNameValue": "SEL_421_2.network.paris.8sub.cypsa.projects.cptl-c.org", 
+            "enet:hasIPAddressValue": "10.35.1.202", 
+            "name": "10.35.1.202", 
+            "rdfs:type": "snet:DistanceRelay"
+        }, 
+        {
+            "enet:hasDomainNameValue": "Shelbyville-UN-Gen3.yard.shelbyville.8sub.cypsa.projects.cptl-c.org", 
+            "name": "Shelbyville-UN-Gen3.yard.shelbyville.8sub.cypsa.projects.cptl-c.org", 
+            "rdfs:type": "syard:Generator"
+        }, 
+        {
+            "enet:hasDomainNameValue": "NorthHaverbrook$BRK$1413.yard.north-haverbrook.8sub.cypsa.projects.cptl-c.org", 
+            "name": "NorthHaverbrook$BRK$1413.yard.north-haverbrook.8sub.cypsa.projects.cptl-c.org", 
+            "rdfs:type": "syard:Breaker"
+        }, 
+        {
+            "enet:hasDomainNameValue": "Switch_1.network.capital-city.8sub.cypsa.projects.cptl-c.org", 
+            "enet:hasIPAddressValue": "192.168.7.200", 
+            "name": "192.168.7.200", 
+            "rdfs:type": "snet:Switch"
+        }, 
+        {
+            "enet:hasDomainNameValue": "Shelbyville$BRK$2629.yard.shelbyville.8sub.cypsa.projects.cptl-c.org", 
+            "name": "Shelbyville$BRK$2629.yard.shelbyville.8sub.cypsa.projects.cptl-c.org", 
+            "rdfs:type": "syard:Breaker"
+        }, 
+        {
+            "enet:hasDomainNameValue": "North Haverbrook$BRK$1112.yard.north-haverbrook.8sub.cypsa.projects.cptl-c.org", 
+            "name": "North Haverbrook$BRK$1112.yard.north-haverbrook.8sub.cypsa.projects.cptl-c.org", 
+            "rdfs:type": "cptlc:Asset"
+        }, 
+        {
+            "enet:hasDomainNameValue": "Cypress Creek$BRK$2425.yard.cypress-creek.8sub.cypsa.projects.cptl-c.org", 
+            "name": "Cypress Creek$BRK$2425.yard.cypress-creek.8sub.cypsa.projects.cptl-c.org", 
+            "rdfs:type": "syard:Breaker"
+        }, 
+        {
+            "enet:hasDomainNameValue": "SEL_421_2.network.shelbyville.8sub.cypsa.projects.cptl-c.org", 
+            "enet:hasIPAddressValue": "10.36.1.202", 
+            "name": "10.36.1.202", 
+            "rdfs:type": "snet:DistanceRelay"
+        }, 
+        {
+            "enet:hasDomainNameValue": "SEL_421_3.network.shelbyville.8sub.cypsa.projects.cptl-c.org", 
+            "enet:hasIPAddressValue": "10.36.1.203", 
+            "name": "10.36.1.203", 
+            "rdfs:type": "snet:DistanceRelay"
+        }, 
+        {
+            "enet:hasDomainNameValue": "SEL_421_1.network.shelbyville.8sub.cypsa.projects.cptl-c.org", 
+            "enet:hasIPAddressValue": "10.36.1.201", 
+            "name": "10.36.1.201", 
+            "rdfs:type": "snet:DistanceRelay"
+        }, 
+        {
+            "enet:hasDomainNameValue": "DistanceRelay_1.network.haverbrook.8sub.cypsa.projects.cptl-c.org", 
+            "name": "DistanceRelay_1.network.haverbrook.8sub.cypsa.projects.cptl-c.org", 
+            "rdfs:type": "snet:DistanceRelay"
+        }, 
+        {
+            "enet:hasDomainNameValue": "DistanceRelay_3.network.haverbrook.8sub.cypsa.projects.cptl-c.org", 
+            "name": "DistanceRelay_3.network.haverbrook.8sub.cypsa.projects.cptl-c.org", 
+            "rdfs:type": "snet:DistanceRelay"
+        }, 
+        {
+            "enet:hasDomainNameValue": "DistanceRelay_2.network.haverbrook.8sub.cypsa.projects.cptl-c.org", 
+            "name": "DistanceRelay_2.network.haverbrook.8sub.cypsa.projects.cptl-c.org", 
+            "rdfs:type": "snet:DistanceRelay"
+        }
+    ]
+}

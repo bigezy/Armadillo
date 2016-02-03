@@ -1,0 +1,312 @@
+{
+    "CapitalCity": {
+        "inside": {
+            "1.properties": {
+                "IP": "10.37.1.1", 
+                "type": "regular"
+            }, 
+            "2.interfaces": {
+                "outside": {
+                    "binding": true, 
+                    "m2r NAT": false, 
+                    "r2m NAT": false, 
+                    "shared IP": false
+                }
+            }
+        }, 
+        "outside": {
+            "1.properties": {
+                "IP": "10.1.1.7", 
+                "type": "regular"
+            }, 
+            "2.interfaces": {
+                "inside": {
+                    "binding": true, 
+                    "m2r NAT": false, 
+                    "r2m NAT": false, 
+                    "shared IP": false
+                }
+            }
+        }
+    }, 
+    "NorthHaverbrook": {
+        "inside": {
+            "1.properties": {
+                "IP": "10.33.1.1", 
+                "type": "regular"
+            }, 
+            "2.interfaces": {
+                "outside": {
+                    "binding": true, 
+                    "m2r NAT": false, 
+                    "r2m NAT": false, 
+                    "shared IP": false
+                }
+            }
+        }, 
+        "outside": {
+            "1.properties": {
+                "IP": "10.1.1.3", 
+                "type": "regular"
+            }, 
+            "2.interfaces": {
+                "inside": {
+                    "binding": true, 
+                    "m2r NAT": false, 
+                    "r2m NAT": false, 
+                    "shared IP": false
+                }
+            }
+        }
+    }, 
+    "Ogdenville": {
+        "inside": {
+            "1.properties": {
+                "IP": "10.34.1.1", 
+                "type": "regular"
+            }, 
+            "2.interfaces": {
+                "outside": {
+                    "binding": true, 
+                    "m2r NAT": false, 
+                    "r2m NAT": false, 
+                    "shared IP": false
+                }
+            }
+        }, 
+        "outside": {
+            "1.properties": {
+                "IP": "10.1.1.4", 
+                "type": "regular"
+            }, 
+            "2.interfaces": {
+                "inside": {
+                    "binding": true, 
+                    "m2r NAT": false, 
+                    "r2m NAT": false, 
+                    "shared IP": false
+                }
+            }
+        }
+    }, 
+    "Paris": {
+        "inside": {
+            "1.properties": {
+                "IP": "10.35.1.1", 
+                "type": "regular"
+            }, 
+            "2.interfaces": {
+                "outside": {
+                    "binding": true, 
+                    "m2r NAT": false, 
+                    "r2m NAT": false, 
+                    "shared IP": false
+                }
+            }
+        }, 
+        "outside": {
+            "1.properties": {
+                "IP": "10.1.1.5", 
+                "type": "regular"
+            }, 
+            "2.interfaces": {
+                "inside": {
+                    "binding": true, 
+                    "m2r NAT": false, 
+                    "r2m NAT": false, 
+                    "shared IP": false
+                }
+            }
+        }
+    }, 
+    "Shelbyville": {
+        "inside": {
+            "1.properties": {
+                "IP": "10.36.1.1", 
+                "type": "regular"
+            }, 
+            "2.interfaces": {
+                "outside": {
+                    "binding": true, 
+                    "m2r NAT": false, 
+                    "r2m NAT": false, 
+                    "shared IP": false
+                }
+            }
+        }, 
+        "outside": {
+            "1.properties": {
+                "IP": "10.1.1.6", 
+                "type": "regular"
+            }, 
+            "2.interfaces": {
+                "inside": {
+                    "binding": true, 
+                    "m2r NAT": false, 
+                    "r2m NAT": false, 
+                    "shared IP": false
+                }
+            }
+        }
+    }, 
+    "Springfield": {
+        "inside": {
+            "1.properties": {
+                "IP": "10.38.1.1", 
+                "type": "regular"
+            }, 
+            "2.interfaces": {
+                "outside": {
+                    "binding": true, 
+                    "m2r NAT": false, 
+                    "r2m NAT": false, 
+                    "shared IP": false
+                }
+            }
+        }, 
+        "outside": {
+            "1.properties": {
+                "IP": "10.1.1.8", 
+                "type": "regular"
+            }, 
+            "2.interfaces": {
+                "inside": {
+                    "binding": true, 
+                    "m2r NAT": false, 
+                    "r2m NAT": false, 
+                    "shared IP": false
+                }
+            }
+        }
+    }, 
+    "ciscoasa": {
+        "dmz": {
+            "1.properties": {
+                "IP": "10.39.1.1", 
+                "type": "regular"
+            }, 
+            "2.interfaces": {
+                "inside": {
+                    "binding": true, 
+                    "m2r NAT": false, 
+                    "r2m NAT": false, 
+                    "security level": [
+                        "50", 
+                        "100"
+                    ], 
+                    "shared IP": false
+                }, 
+                "outside": {
+                    "binding": true, 
+                    "m2r NAT": false, 
+                    "r2m NAT": false, 
+                    "shared IP": false
+                }
+            }
+        }, 
+        "inside": {
+            "1.properties": {
+                "IP": "10.1.1.1", 
+                "type": "regular"
+            }, 
+            "2.interfaces": {
+                "dmz": {
+                    "binding": true, 
+                    "m2r NAT": false, 
+                    "r2m NAT": false, 
+                    "security level": [
+                        "100", 
+                        "50"
+                    ], 
+                    "shared IP": false
+                }, 
+                "outside": {
+                    "binding": true, 
+                    "m2r NAT": false, 
+                    "r2m NAT": false, 
+                    "shared IP": false
+                }
+            }
+        }, 
+        "outside": {
+            "1.properties": {
+                "IP": "72.36.82.50", 
+                "type": "regular"
+            }, 
+            "2.interfaces": {
+                "dmz": {
+                    "binding": true, 
+                    "m2r NAT": false, 
+                    "r2m NAT": false, 
+                    "shared IP": false
+                }, 
+                "inside": {
+                    "binding": true, 
+                    "m2r NAT": false, 
+                    "r2m NAT": false, 
+                    "shared IP": false
+                }
+            }
+        }
+    }, 
+    "cypress-creek": {
+        "inside": {
+            "1.properties": {
+                "IP": "10.31.1.1", 
+                "type": "regular"
+            }, 
+            "2.interfaces": {
+                "outside": {
+                    "binding": true, 
+                    "m2r NAT": false, 
+                    "r2m NAT": false, 
+                    "shared IP": false
+                }
+            }
+        }, 
+        "outside": {
+            "1.properties": {
+                "IP": "10.1.1.9", 
+                "type": "regular"
+            }, 
+            "2.interfaces": {
+                "inside": {
+                    "binding": true, 
+                    "m2r NAT": false, 
+                    "r2m NAT": false, 
+                    "shared IP": false
+                }
+            }
+        }
+    }, 
+    "haverbrook": {
+        "inside": {
+            "1.properties": {
+                "IP": "10.32.1.1", 
+                "type": "regular"
+            }, 
+            "2.interfaces": {
+                "outside": {
+                    "binding": true, 
+                    "m2r NAT": false, 
+                    "r2m NAT": false, 
+                    "shared IP": false
+                }
+            }
+        }, 
+        "outside": {
+            "1.properties": {
+                "IP": "10.1.1.2", 
+                "type": "regular"
+            }, 
+            "2.interfaces": {
+                "inside": {
+                    "binding": true, 
+                    "m2r NAT": false, 
+                    "r2m NAT": false, 
+                    "shared IP": false
+                }
+            }
+        }
+    }
+}

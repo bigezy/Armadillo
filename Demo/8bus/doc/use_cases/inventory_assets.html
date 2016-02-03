@@ -1,0 +1,126 @@
+<html>
+  <head>
+    <title>CyPSA Use Cases - Asset Inventory</title>
+    <link type="text/css" rel="stylesheet" href="../css/episteme.css"/>
+  </head>
+  <body>
+    <div id="wrapper">
+      <div id="navigation">
+	<a href="../index.html">home page</a> |
+	<a href="../use-cases.html">use cases</a> |
+	<a href="../install.html">install</a> |
+	<a href="../framework/index.html">framework</a> |
+	<a href="../publications.html">publications</a>
+      </div>
+
+      <h2>CyPSA Use Cases - Asset Inventory</h2>
+      <p>This document outlines a <em>workflow</em> that may
+	      be <em>expressed</em> via a particular user interface
+	      (e.g. web interface).  The workflow itself, however,
+	      should ideally be robust to new interfaces and interface
+	      designs.  We look at a <em>workflow</em> as a sequence
+	      of steps taken by a practitioner.  Our goal is to
+	      streamline these practitioner workflows via the CyPSA
+	      tool.  For our purposes, many of these use cases will be
+	      realized in terms of the CyPSA 8 Substation Model.</p>
+
+      <h2>CyPSA Use Cases - Asset Inventory Workflow</h2>
+      <p>For now, assume that the user is an IT System Administrator
+	who wants to understand more about her substation network.</p>
+
+      <ol>
+	<li>User authenticates to the system as an IT System
+	Administrator.  This may be implemented by a variety of
+	authentication schemes (user login).</li>
+	<li>The substation network is traditionally documented in a
+	static Visio file.  In contrast, CyPSA can load that same
+	information from a static JSON file from the 8 substation
+	  model.  Two things need to be implemented here:  (a) how to
+	load the model, and (b) how to view the model
+	(e.g. toggle between graph-based or tabular views).</li>
+	<li>The vertices and edges within the model, once loaded, are
+	tagged with provenance metadata (e.g. where did this data come
+	  from?).</li>
+      </ol>
+
+      <p>Now imagine that the same user wants to better understand the
+      importance of each cyber asset relative to its relations to
+	assets in the substation yard.</p>
+      <ol>
+	<li>User needs to authenticate to the system as a Power
+	  Engineer (as well as an IT System Administrator).  This
+	  workflow step may be implemented by a variety of
+	  authentication schemes (e.g. user login).</li>
+	<li>Load a version of the power node-breaker model and merge
+	it with that of the JSON file (via static node
+	  interconnections).  This may be implemented by viewing the
+	data graphically or in a tabular format.</li>
+	<li>The vertices and edges within the model, once loaded, are
+	  annotated with provenance metadata.</li>
+      </ol>	
+
+      <p>So far, we have seen assets loaded from a static model.  This
+      is visually displayed in the following diagram in which the
+      <a href="../framework/model.html">CyPSA Object Model</a> is
+      annotated with data sources for those types of information.
+      Blue boxes correspond to CPTL models for each of the
+      system components pulled from a filesystem.  In contrast, green
+      boxes correspond to services that dynamically provide data such
+      as PowerWorld and NPView.</p>
+      <img src="../images/use-cases-inventory-assets-workflow-1.png"/>
+
+      <ol>
+	<li>Register a PowerWorld data source instance.  This may be
+	implemented as a data source wizard that includes the socket
+	and authentication information necessary to connect to a
+	  PowerWorld service endpoint.</li>
+	<li>Register an NPView data source instance.  This may be
+	implemented as a data source wizard that includes the socket
+	and authentication information necessary to connect to an
+	  NPView service endpoint.</li>
+	<li>The new data sources will populate the inventory of
+	  assets.</li>
+	<li>Select a version of the substation yard provided by the
+	  new PowerWorld service endpoint and load the information.</li>
+	<li>Select assets with just a PowerWorld or FileSystem tag to
+	see differences between the two models.  Selection should
+	persist across different expressions of the model
+	(e.g. graphical or tabular).</li>
+	<li>Select a version of the substation network provided by
+	  the new NPView service endpoint and load the information.</li>
+	<li>Select assets with just an NPView tag to see differences
+	between the two models.  Selection should again persist across
+	different expressions of the model (graphical or
+	tabular).</li>
+      </ol>
+      
+      <h2>Data Source Management</h2>
+      <h2>Roles and User Profiles</h2>
+      <p>We can have the equivalent of cascading stylesheets for the
+	CyPSA data so that users and/or roles and visualize the
+	information as needed.</p>
+      
+      <h2>Annotation Services</h2>
+      <p>There are a wide variety of annotation services provided by
+	CyPSA and these include the following.  At an abstract level,
+	these annotations correspond to vertex and edge attributes.</p>
+      <ul>
+	<li>Annotate model with Vulnerability Information.  NB that
+	paths themselves, at an appropriate level of abstraction, may
+	be useful to search for as 'attack patterns' in
+	infrastructure.</li>
+	<li>Annotate model with configuration information.</li>
+	<li>...</li>
+      </ul>
+
+      
+      <h2>Workflow Generation (History)</h2>
+      <p>By logging at the appropriate level of abstraction, the
+      CyPSA tool can be used to script workflows performed by
+      practitioners.</p>
+      
+      <h2>Workspaces</h2>
+      
+    </div>
+  </body>
+</html>

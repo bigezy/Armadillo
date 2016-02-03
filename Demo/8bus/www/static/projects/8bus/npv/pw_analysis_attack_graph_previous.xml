@@ -1,0 +1,803 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<!DOCTYPE VCReport [
+<!ELEMENT VCReport ((NetCenter|HostCenter|NmapAnalysis)*, Endpoint*)>
+<!ATTLIST VCReport type CDATA #REQUIRED>
+<!ELEMENT NetCenter (Network,Intensity*)>
+<!ELEMENT HostCenter (Host,Intensity*)>
+<!ELEMENT Endpoint EMPTY>
+<!ATTLIST Endpoint IPAddress CDATA #REQUIRED>
+<!ATTLIST Endpoint depth CDATA #REQUIRED>
+<!ATTLIST Endpoint width CDATA #REQUIRED>
+<!ELEMENT Network EMPTY>
+<!ATTLIST Network netAddress CDATA #REQUIRED>
+<!ELEMENT Host EMPTY>
+<!ATTLIST Host IPAddress CDATA #REQUIRED>
+<!ELEMENT Intensity EMPTY>
+<!ATTLIST Intensity depth CDATA #REQUIRED>
+<!ATTLIST Intensity width CDATA #REQUIRED>
+<!ELEMENT Description (#PCDATA)>
+<!ELEMENT NmapAnalysis (Path*)>
+<!ATTLIST NmapAnalysis sourceNode CDATA #REQUIRED>
+<!ATTLIST NmapAnalysis sourceNodeId CDATA #REQUIRED>
+<!ATTLIST NmapAnalysis destinationNode CDATA #REQUIRED>
+<!ATTLIST NmapAnalysis destinationNodeId CDATA #REQUIRED>
+<!ATTLIST NmapAnalysis timeTaken CDATA #IMPLIED>
+<!ELEMENT Path (Node*)>
+<!ATTLIST Path attackNode CDATA #REQUIRED>
+<!ATTLIST Path nodeName CDATA #REQUIRED>
+<!ATTLIST Path securityIndex CDATA #REQUIRED>
+<!ATTLIST PATH cyberCost CDATA #REQUIRED>
+<!ATTLIST PATH performanceIndex CDATA #REQUIRED>
+<!ELEMENT Node EMPTY>
+<!ATTLIST Node IPAddress CDATA #REQUIRED>
+<!ATTLIST Node nodeName CDATA #REQUIRED>
+<!ATTLIST Node vulnID CDATA #REQUIRED>
+<!ATTLIST Node nodeType CDATA #REQUIRED>
+]>
+<VCReport type="vuln">
+	<NmapAnalysis sourceNode="10.39.1.22" sourceNodeId="4352" destinationNode="10.31.1.103" destinationNodeId="4472">
+		<Path attackNode="10.39.1.22" nodeName="10.39.1.22" securityIndex="0.405318" cyberCost="9.5888" performanceIndex="3.88652">
+			<Node IPAddress="10.39.1.22" nodeName="10.39.1.22" nodeType="CYBER" vulnID="None"/>
+			<Node IPAddress="10.31.1.103" nodeName="10.31.1.103" nodeType="POWER" vulnID="CVE-2013-4581"/>
+		</Path>
+	</NmapAnalysis>
+	<NmapAnalysis sourceNode="70.32.128.171" sourceNodeId="4364" destinationNode="10.31.1.103" destinationNodeId="4472">
+		<Path attackNode="70.32.128.171" nodeName="70.32.128.171" securityIndex="0.405318" cyberCost="9.5888" performanceIndex="3.88652">
+			<Node IPAddress="70.32.128.171" nodeName="70.32.128.171" nodeType="CYBER" vulnID="None"/>
+			<Node IPAddress="10.31.1.103" nodeName="10.31.1.103" nodeType="POWER" vulnID="CVE-2013-4581"/>
+		</Path>
+	</NmapAnalysis>
+	<NmapAnalysis sourceNode="70.32.128.22" sourceNodeId="4360" destinationNode="10.31.1.103" destinationNodeId="4472">
+		<Path attackNode="70.32.128.22" nodeName="70.32.128.22" securityIndex="0.405318" cyberCost="9.5888" performanceIndex="3.88652">
+			<Node IPAddress="70.32.128.22" nodeName="70.32.128.22" nodeType="CYBER" vulnID="None"/>
+			<Node IPAddress="10.31.1.103" nodeName="10.31.1.103" nodeType="POWER" vulnID="CVE-2013-4581"/>
+		</Path>
+	</NmapAnalysis>
+	<NmapAnalysis sourceNode="70.32.128.74" sourceNodeId="4362" destinationNode="10.31.1.103" destinationNodeId="4472">
+		<Path attackNode="70.32.128.74" nodeName="70.32.128.74" securityIndex="0.405318" cyberCost="9.5888" performanceIndex="3.88652">
+			<Node IPAddress="70.32.128.74" nodeName="70.32.128.74" nodeType="CYBER" vulnID="None"/>
+			<Node IPAddress="10.31.1.103" nodeName="10.31.1.103" nodeType="POWER" vulnID="CVE-2013-4581"/>
+		</Path>
+	</NmapAnalysis>
+	<NmapAnalysis sourceNode="10.31.1.105" sourceNodeId="4476" destinationNode="10.31.1.103" destinationNodeId="4472">
+		<Path attackNode="10.31.1.105" nodeName="10.31.1.105" securityIndex="0.353422" cyberCost="10.9968" performanceIndex="3.88652">
+			<Node IPAddress="10.31.1.105" nodeName="10.31.1.105" nodeType="CYBER" vulnID="None"/>
+			<Node IPAddress="10.31.1.103" nodeName="10.31.1.103" nodeType="POWER" vulnID="CVE-2014-2198"/>
+		</Path>
+	</NmapAnalysis>
+	<NmapAnalysis sourceNode="10.31.1.207" sourceNodeId="4466" destinationNode="10.31.1.103" destinationNodeId="4472">
+		<Path attackNode="10.31.1.207" nodeName="10.31.1.207" securityIndex="0.353422" cyberCost="10.9968" performanceIndex="3.88652">
+			<Node IPAddress="10.31.1.207" nodeName="10.31.1.207" nodeType="CYBER" vulnID="None"/>
+			<Node IPAddress="10.31.1.103" nodeName="10.31.1.103" nodeType="POWER" vulnID="CVE-2014-2198"/>
+		</Path>
+	</NmapAnalysis>
+	<NmapAnalysis sourceNode="10.31.1.206" sourceNodeId="4464" destinationNode="10.31.1.103" destinationNodeId="4472">
+		<Path attackNode="10.31.1.206" nodeName="10.31.1.206" securityIndex="0.353422" cyberCost="10.9968" performanceIndex="3.88652">
+			<Node IPAddress="10.31.1.206" nodeName="10.31.1.206" nodeType="CYBER" vulnID="None"/>
+			<Node IPAddress="10.31.1.103" nodeName="10.31.1.103" nodeType="POWER" vulnID="CVE-2014-2198"/>
+		</Path>
+	</NmapAnalysis>
+	<NmapAnalysis sourceNode="10.31.1.205" sourceNodeId="4462" destinationNode="10.31.1.103" destinationNodeId="4472">
+		<Path attackNode="10.31.1.205" nodeName="10.31.1.205" securityIndex="0.353422" cyberCost="10.9968" performanceIndex="3.88652">
+			<Node IPAddress="10.31.1.205" nodeName="10.31.1.205" nodeType="CYBER" vulnID="None"/>
+			<Node IPAddress="10.31.1.103" nodeName="10.31.1.103" nodeType="POWER" vulnID="CVE-2014-2198"/>
+		</Path>
+	</NmapAnalysis>
+	<NmapAnalysis sourceNode="10.31.1.204" sourceNodeId="4460" destinationNode="10.31.1.103" destinationNodeId="4472">
+		<Path attackNode="10.31.1.204" nodeName="10.31.1.204" securityIndex="0.353422" cyberCost="10.9968" performanceIndex="3.88652">
+			<Node IPAddress="10.31.1.204" nodeName="10.31.1.204" nodeType="CYBER" vulnID="None"/>
+			<Node IPAddress="10.31.1.103" nodeName="10.31.1.103" nodeType="POWER" vulnID="CVE-2014-2198"/>
+		</Path>
+	</NmapAnalysis>
+	<NmapAnalysis sourceNode="10.31.1.101" sourceNodeId="4468" destinationNode="10.31.1.103" destinationNodeId="4472">
+		<Path attackNode="10.31.1.101" nodeName="10.31.1.101" securityIndex="0.353422" cyberCost="10.9968" performanceIndex="3.88652">
+			<Node IPAddress="10.31.1.101" nodeName="10.31.1.101" nodeType="CYBER" vulnID="None"/>
+			<Node IPAddress="10.31.1.103" nodeName="10.31.1.103" nodeType="POWER" vulnID="CVE-2014-2198"/>
+		</Path>
+	</NmapAnalysis>
+	<NmapAnalysis sourceNode="10.31.1.102" sourceNodeId="4470" destinationNode="10.31.1.103" destinationNodeId="4472">
+		<Path attackNode="10.31.1.102" nodeName="10.31.1.102" securityIndex="0.353422" cyberCost="10.9968" performanceIndex="3.88652">
+			<Node IPAddress="10.31.1.102" nodeName="10.31.1.102" nodeType="CYBER" vulnID="None"/>
+			<Node IPAddress="10.31.1.103" nodeName="10.31.1.103" nodeType="POWER" vulnID="CVE-2014-2198"/>
+		</Path>
+	</NmapAnalysis>
+	<NmapAnalysis sourceNode="10.31.1.104" sourceNodeId="4474" destinationNode="10.31.1.103" destinationNodeId="4472">
+		<Path attackNode="10.31.1.104" nodeName="10.31.1.104" securityIndex="0.353422" cyberCost="10.9968" performanceIndex="3.88652">
+			<Node IPAddress="10.31.1.104" nodeName="10.31.1.104" nodeType="CYBER" vulnID="None"/>
+			<Node IPAddress="10.31.1.103" nodeName="10.31.1.103" nodeType="POWER" vulnID="CVE-2014-2198"/>
+		</Path>
+	</NmapAnalysis>
+	<NmapAnalysis sourceNode="10.31.1.202" sourceNodeId="4456" destinationNode="10.31.1.103" destinationNodeId="4472">
+		<Path attackNode="10.31.1.202" nodeName="10.31.1.202" securityIndex="0.353422" cyberCost="10.9968" performanceIndex="3.88652">
+			<Node IPAddress="10.31.1.202" nodeName="10.31.1.202" nodeType="CYBER" vulnID="None"/>
+			<Node IPAddress="10.31.1.103" nodeName="10.31.1.103" nodeType="POWER" vulnID="CVE-2014-3563"/>
+		</Path>
+	</NmapAnalysis>
+	<NmapAnalysis sourceNode="10.31.1.203" sourceNodeId="4458" destinationNode="10.31.1.103" destinationNodeId="4472">
+		<Path attackNode="10.31.1.203" nodeName="10.31.1.203" securityIndex="0.353422" cyberCost="10.9968" performanceIndex="3.88652">
+			<Node IPAddress="10.31.1.203" nodeName="10.31.1.203" nodeType="CYBER" vulnID="None"/>
+			<Node IPAddress="10.31.1.103" nodeName="10.31.1.103" nodeType="POWER" vulnID="CVE-2014-2198"/>
+		</Path>
+	</NmapAnalysis>
+	<NmapAnalysis sourceNode="10.31.1.250" sourceNodeId="4452" destinationNode="10.31.1.103" destinationNodeId="4472">
+		<Path attackNode="10.31.1.250" nodeName="10.31.1.250" securityIndex="0.353422" cyberCost="10.9968" performanceIndex="3.88652">
+			<Node IPAddress="10.31.1.250" nodeName="10.31.1.250" nodeType="CYBER" vulnID="None"/>
+			<Node IPAddress="10.31.1.103" nodeName="10.31.1.103" nodeType="POWER" vulnID="CVE-2014-2198"/>
+		</Path>
+	</NmapAnalysis>
+	<NmapAnalysis sourceNode="10.31.1.201" sourceNodeId="4454" destinationNode="10.31.1.103" destinationNodeId="4472">
+		<Path attackNode="10.31.1.201" nodeName="10.31.1.201" securityIndex="0.353422" cyberCost="10.9968" performanceIndex="3.88652">
+			<Node IPAddress="10.31.1.201" nodeName="10.31.1.201" nodeType="CYBER" vulnID="None"/>
+			<Node IPAddress="10.31.1.103" nodeName="10.31.1.103" nodeType="POWER" vulnID="CVE-2014-2198"/>
+		</Path>
+	</NmapAnalysis>
+	<NmapAnalysis sourceNode="10.39.1.22" sourceNodeId="4352" destinationNode="10.31.1.102" destinationNodeId="4470">
+		<Path attackNode="10.39.1.22" nodeName="10.39.1.22" securityIndex="0.232736" cyberCost="9.5888" performanceIndex="2.23166">
+			<Node IPAddress="10.39.1.22" nodeName="10.39.1.22" nodeType="CYBER" vulnID="None"/>
+			<Node IPAddress="10.31.1.102" nodeName="10.31.1.102" nodeType="POWER" vulnID="CVE-2013-4581"/>
+		</Path>
+	</NmapAnalysis>
+	<NmapAnalysis sourceNode="70.32.128.171" sourceNodeId="4364" destinationNode="10.31.1.102" destinationNodeId="4470">
+		<Path attackNode="70.32.128.171" nodeName="70.32.128.171" securityIndex="0.232736" cyberCost="9.5888" performanceIndex="2.23166">
+			<Node IPAddress="70.32.128.171" nodeName="70.32.128.171" nodeType="CYBER" vulnID="None"/>
+			<Node IPAddress="10.31.1.102" nodeName="10.31.1.102" nodeType="POWER" vulnID="CVE-2013-4581"/>
+		</Path>
+	</NmapAnalysis>
+	<NmapAnalysis sourceNode="70.32.128.22" sourceNodeId="4360" destinationNode="10.31.1.102" destinationNodeId="4470">
+		<Path attackNode="70.32.128.22" nodeName="70.32.128.22" securityIndex="0.232736" cyberCost="9.5888" performanceIndex="2.23166">
+			<Node IPAddress="70.32.128.22" nodeName="70.32.128.22" nodeType="CYBER" vulnID="None"/>
+			<Node IPAddress="10.31.1.102" nodeName="10.31.1.102" nodeType="POWER" vulnID="CVE-2013-4581"/>
+		</Path>
+	</NmapAnalysis>
+	<NmapAnalysis sourceNode="70.32.128.74" sourceNodeId="4362" destinationNode="10.31.1.102" destinationNodeId="4470">
+		<Path attackNode="70.32.128.74" nodeName="70.32.128.74" securityIndex="0.232736" cyberCost="9.5888" performanceIndex="2.23166">
+			<Node IPAddress="70.32.128.74" nodeName="70.32.128.74" nodeType="CYBER" vulnID="None"/>
+			<Node IPAddress="10.31.1.102" nodeName="10.31.1.102" nodeType="POWER" vulnID="CVE-2013-4581"/>
+		</Path>
+	</NmapAnalysis>
+	<NmapAnalysis sourceNode="72.36.82.195" sourceNodeId="4350" destinationNode="10.31.1.103" destinationNodeId="4472">
+		<Path attackNode="72.36.82.195" nodeName="72.36.82.195" securityIndex="0.213808" cyberCost="18.1776" performanceIndex="3.88652">
+			<Node IPAddress="72.36.82.195" nodeName="72.36.82.195" nodeType="CYBER" vulnID="None"/>
+			<Node IPAddress="10.39.1.22" nodeName="10.39.1.22" nodeType="CYBER" vulnID="CVE-2013-4581"/>
+			<Node IPAddress="10.31.1.103" nodeName="10.31.1.103" nodeType="POWER" vulnID="CVE-2013-4581"/>
+		</Path>
+	</NmapAnalysis>
+	<NmapAnalysis sourceNode="0.0.0.0/0" sourceNodeId="4485" destinationNode="10.31.1.103" destinationNodeId="4472">
+		<Path attackNode="0.0.0.0/0" nodeName="0.0.0.0/0" securityIndex="0.213808" cyberCost="18.1776" performanceIndex="3.88652">
+			<Node IPAddress="0.0.0.0/0" nodeName="0.0.0.0/0" nodeType="CYBER" vulnID="None"/>
+			<Node IPAddress="10.39.1.22" nodeName="10.39.1.22" nodeType="CYBER" vulnID="CVE-2013-4581"/>
+			<Node IPAddress="10.31.1.103" nodeName="10.31.1.103" nodeType="POWER" vulnID="CVE-2013-4581"/>
+		</Path>
+	</NmapAnalysis>
+	<NmapAnalysis sourceNode="72.36.82.196" sourceNodeId="4482" destinationNode="10.31.1.103" destinationNodeId="4472">
+		<Path attackNode="72.36.82.196" nodeName="72.36.82.196" securityIndex="0.213808" cyberCost="18.1776" performanceIndex="3.88652">
+			<Node IPAddress="72.36.82.196" nodeName="72.36.82.196" nodeType="CYBER" vulnID="None"/>
+			<Node IPAddress="10.39.1.22" nodeName="10.39.1.22" nodeType="CYBER" vulnID="CVE-2013-4581"/>
+			<Node IPAddress="10.31.1.103" nodeName="10.31.1.103" nodeType="POWER" vulnID="CVE-2013-4581"/>
+		</Path>
+	</NmapAnalysis>
+	<NmapAnalysis sourceNode="72.0.0.0/8" sourceNodeId="4489" destinationNode="10.31.1.103" destinationNodeId="4472">
+		<Path attackNode="72.0.0.0/8" nodeName="72.0.0.0/8" securityIndex="0.213808" cyberCost="18.1776" performanceIndex="3.88652">
+			<Node IPAddress="72.0.0.0/8" nodeName="72.0.0.0/8" nodeType="CYBER" vulnID="None"/>
+			<Node IPAddress="10.39.1.22" nodeName="10.39.1.22" nodeType="CYBER" vulnID="CVE-2013-4581"/>
+			<Node IPAddress="10.31.1.103" nodeName="10.31.1.103" nodeType="POWER" vulnID="CVE-2013-4581"/>
+		</Path>
+	</NmapAnalysis>
+	<NmapAnalysis sourceNode="72.36.82.194" sourceNodeId="4348" destinationNode="10.31.1.103" destinationNodeId="4472">
+		<Path attackNode="72.36.82.194" nodeName="72.36.82.194" securityIndex="0.213808" cyberCost="18.1776" performanceIndex="3.88652">
+			<Node IPAddress="72.36.82.194" nodeName="72.36.82.194" nodeType="CYBER" vulnID="None"/>
+			<Node IPAddress="10.39.1.22" nodeName="10.39.1.22" nodeType="CYBER" vulnID="CVE-2013-4581"/>
+			<Node IPAddress="10.31.1.103" nodeName="10.31.1.103" nodeType="POWER" vulnID="CVE-2013-4581"/>
+		</Path>
+	</NmapAnalysis>
+	<NmapAnalysis sourceNode="192.17.0.0/16" sourceNodeId="4490" destinationNode="10.31.1.103" destinationNodeId="4472">
+		<Path attackNode="192.17.0.0/16" nodeName="192.17.0.0/16" securityIndex="0.213808" cyberCost="18.1776" performanceIndex="3.88652">
+			<Node IPAddress="192.17.0.0/16" nodeName="192.17.0.0/16" nodeType="CYBER" vulnID="None"/>
+			<Node IPAddress="10.39.1.22" nodeName="10.39.1.22" nodeType="CYBER" vulnID="CVE-2013-4581"/>
+			<Node IPAddress="10.31.1.103" nodeName="10.31.1.103" nodeType="POWER" vulnID="CVE-2013-4581"/>
+		</Path>
+	</NmapAnalysis>
+	<NmapAnalysis sourceNode="10.31.1.105" sourceNodeId="4476" destinationNode="10.31.1.102" destinationNodeId="4470">
+		<Path attackNode="10.31.1.105" nodeName="10.31.1.105" securityIndex="0.202937" cyberCost="10.9968" performanceIndex="2.23166">
+			<Node IPAddress="10.31.1.105" nodeName="10.31.1.105" nodeType="CYBER" vulnID="None"/>
+			<Node IPAddress="10.31.1.102" nodeName="10.31.1.102" nodeType="POWER" vulnID="CVE-2014-3348"/>
+		</Path>
+	</NmapAnalysis>
+	<NmapAnalysis sourceNode="10.31.1.207" sourceNodeId="4466" destinationNode="10.31.1.102" destinationNodeId="4470">
+		<Path attackNode="10.31.1.207" nodeName="10.31.1.207" securityIndex="0.202937" cyberCost="10.9968" performanceIndex="2.23166">
+			<Node IPAddress="10.31.1.207" nodeName="10.31.1.207" nodeType="CYBER" vulnID="None"/>
+			<Node IPAddress="10.31.1.102" nodeName="10.31.1.102" nodeType="POWER" vulnID="CVE-2014-3348"/>
+		</Path>
+	</NmapAnalysis>
+	<NmapAnalysis sourceNode="10.31.1.206" sourceNodeId="4464" destinationNode="10.31.1.102" destinationNodeId="4470">
+		<Path attackNode="10.31.1.206" nodeName="10.31.1.206" securityIndex="0.202937" cyberCost="10.9968" performanceIndex="2.23166">
+			<Node IPAddress="10.31.1.206" nodeName="10.31.1.206" nodeType="CYBER" vulnID="None"/>
+			<Node IPAddress="10.31.1.102" nodeName="10.31.1.102" nodeType="POWER" vulnID="CVE-2014-3348"/>
+		</Path>
+	</NmapAnalysis>
+	<NmapAnalysis sourceNode="10.31.1.205" sourceNodeId="4462" destinationNode="10.31.1.102" destinationNodeId="4470">
+		<Path attackNode="10.31.1.205" nodeName="10.31.1.205" securityIndex="0.202937" cyberCost="10.9968" performanceIndex="2.23166">
+			<Node IPAddress="10.31.1.205" nodeName="10.31.1.205" nodeType="CYBER" vulnID="None"/>
+			<Node IPAddress="10.31.1.102" nodeName="10.31.1.102" nodeType="POWER" vulnID="CVE-2014-3348"/>
+		</Path>
+	</NmapAnalysis>
+	<NmapAnalysis sourceNode="10.31.1.204" sourceNodeId="4460" destinationNode="10.31.1.102" destinationNodeId="4470">
+		<Path attackNode="10.31.1.204" nodeName="10.31.1.204" securityIndex="0.202937" cyberCost="10.9968" performanceIndex="2.23166">
+			<Node IPAddress="10.31.1.204" nodeName="10.31.1.204" nodeType="CYBER" vulnID="None"/>
+			<Node IPAddress="10.31.1.102" nodeName="10.31.1.102" nodeType="POWER" vulnID="CVE-2014-3348"/>
+		</Path>
+	</NmapAnalysis>
+	<NmapAnalysis sourceNode="10.31.1.101" sourceNodeId="4468" destinationNode="10.31.1.102" destinationNodeId="4470">
+		<Path attackNode="10.31.1.101" nodeName="10.31.1.101" securityIndex="0.202937" cyberCost="10.9968" performanceIndex="2.23166">
+			<Node IPAddress="10.31.1.101" nodeName="10.31.1.101" nodeType="CYBER" vulnID="None"/>
+			<Node IPAddress="10.31.1.102" nodeName="10.31.1.102" nodeType="POWER" vulnID="CVE-2014-3348"/>
+		</Path>
+	</NmapAnalysis>
+	<NmapAnalysis sourceNode="10.31.1.103" sourceNodeId="4472" destinationNode="10.31.1.102" destinationNodeId="4470">
+		<Path attackNode="10.31.1.103" nodeName="10.31.1.103" securityIndex="0.202937" cyberCost="10.9968" performanceIndex="2.23166">
+			<Node IPAddress="10.31.1.103" nodeName="10.31.1.103" nodeType="CYBER" vulnID="None"/>
+			<Node IPAddress="10.31.1.102" nodeName="10.31.1.102" nodeType="POWER" vulnID="CVE-2014-3348"/>
+		</Path>
+	</NmapAnalysis>
+	<NmapAnalysis sourceNode="10.31.1.104" sourceNodeId="4474" destinationNode="10.31.1.102" destinationNodeId="4470">
+		<Path attackNode="10.31.1.104" nodeName="10.31.1.104" securityIndex="0.202937" cyberCost="10.9968" performanceIndex="2.23166">
+			<Node IPAddress="10.31.1.104" nodeName="10.31.1.104" nodeType="CYBER" vulnID="None"/>
+			<Node IPAddress="10.31.1.102" nodeName="10.31.1.102" nodeType="POWER" vulnID="CVE-2014-3348"/>
+		</Path>
+	</NmapAnalysis>
+	<NmapAnalysis sourceNode="10.31.1.202" sourceNodeId="4456" destinationNode="10.31.1.102" destinationNodeId="4470">
+		<Path attackNode="10.31.1.202" nodeName="10.31.1.202" securityIndex="0.202937" cyberCost="10.9968" performanceIndex="2.23166">
+			<Node IPAddress="10.31.1.202" nodeName="10.31.1.202" nodeType="CYBER" vulnID="None"/>
+			<Node IPAddress="10.31.1.102" nodeName="10.31.1.102" nodeType="POWER" vulnID="CVE-2014-3348"/>
+		</Path>
+	</NmapAnalysis>
+	<NmapAnalysis sourceNode="10.31.1.203" sourceNodeId="4458" destinationNode="10.31.1.102" destinationNodeId="4470">
+		<Path attackNode="10.31.1.203" nodeName="10.31.1.203" securityIndex="0.202937" cyberCost="10.9968" performanceIndex="2.23166">
+			<Node IPAddress="10.31.1.203" nodeName="10.31.1.203" nodeType="CYBER" vulnID="None"/>
+			<Node IPAddress="10.31.1.102" nodeName="10.31.1.102" nodeType="POWER" vulnID="CVE-2014-3348"/>
+		</Path>
+	</NmapAnalysis>
+	<NmapAnalysis sourceNode="10.31.1.250" sourceNodeId="4452" destinationNode="10.31.1.102" destinationNodeId="4470">
+		<Path attackNode="10.31.1.250" nodeName="10.31.1.250" securityIndex="0.202937" cyberCost="10.9968" performanceIndex="2.23166">
+			<Node IPAddress="10.31.1.250" nodeName="10.31.1.250" nodeType="CYBER" vulnID="None"/>
+			<Node IPAddress="10.31.1.102" nodeName="10.31.1.102" nodeType="POWER" vulnID="CVE-2014-3348"/>
+		</Path>
+	</NmapAnalysis>
+	<NmapAnalysis sourceNode="10.31.1.201" sourceNodeId="4454" destinationNode="10.31.1.102" destinationNodeId="4470">
+		<Path attackNode="10.31.1.201" nodeName="10.31.1.201" securityIndex="0.202937" cyberCost="10.9968" performanceIndex="2.23166">
+			<Node IPAddress="10.31.1.201" nodeName="10.31.1.201" nodeType="CYBER" vulnID="None"/>
+			<Node IPAddress="10.31.1.102" nodeName="10.31.1.102" nodeType="POWER" vulnID="CVE-2014-3348"/>
+		</Path>
+	</NmapAnalysis>
+	<NmapAnalysis sourceNode="10.39.1.22" sourceNodeId="4352" destinationNode="10.31.1.105" destinationNodeId="4476">
+		<Path attackNode="10.39.1.22" nodeName="10.39.1.22" securityIndex="0.16387" cyberCost="9.5888" performanceIndex="1.57132">
+			<Node IPAddress="10.39.1.22" nodeName="10.39.1.22" nodeType="CYBER" vulnID="None"/>
+			<Node IPAddress="10.31.1.105" nodeName="10.31.1.105" nodeType="POWER" vulnID="CVE-2013-4581"/>
+		</Path>
+	</NmapAnalysis>
+	<NmapAnalysis sourceNode="70.32.128.171" sourceNodeId="4364" destinationNode="10.31.1.105" destinationNodeId="4476">
+		<Path attackNode="70.32.128.171" nodeName="70.32.128.171" securityIndex="0.16387" cyberCost="9.5888" performanceIndex="1.57132">
+			<Node IPAddress="70.32.128.171" nodeName="70.32.128.171" nodeType="CYBER" vulnID="None"/>
+			<Node IPAddress="10.31.1.105" nodeName="10.31.1.105" nodeType="POWER" vulnID="CVE-2013-4581"/>
+		</Path>
+	</NmapAnalysis>
+	<NmapAnalysis sourceNode="70.32.128.22" sourceNodeId="4360" destinationNode="10.31.1.105" destinationNodeId="4476">
+		<Path attackNode="70.32.128.22" nodeName="70.32.128.22" securityIndex="0.16387" cyberCost="9.5888" performanceIndex="1.57132">
+			<Node IPAddress="70.32.128.22" nodeName="70.32.128.22" nodeType="CYBER" vulnID="None"/>
+			<Node IPAddress="10.31.1.105" nodeName="10.31.1.105" nodeType="POWER" vulnID="CVE-2013-4581"/>
+		</Path>
+	</NmapAnalysis>
+	<NmapAnalysis sourceNode="70.32.128.74" sourceNodeId="4362" destinationNode="10.31.1.105" destinationNodeId="4476">
+		<Path attackNode="70.32.128.74" nodeName="70.32.128.74" securityIndex="0.16387" cyberCost="9.5888" performanceIndex="1.57132">
+			<Node IPAddress="70.32.128.74" nodeName="70.32.128.74" nodeType="CYBER" vulnID="None"/>
+			<Node IPAddress="10.31.1.105" nodeName="10.31.1.105" nodeType="POWER" vulnID="CVE-2013-4581"/>
+		</Path>
+	</NmapAnalysis>
+	<NmapAnalysis sourceNode="10.39.1.22" sourceNodeId="4352" destinationNode="10.32.1.201" destinationNodeId="4480">
+		<Path attackNode="10.39.1.22" nodeName="10.39.1.22" securityIndex="0.143879" cyberCost="9.5888" performanceIndex="1.37963">
+			<Node IPAddress="10.39.1.22" nodeName="10.39.1.22" nodeType="CYBER" vulnID="None"/>
+			<Node IPAddress="10.32.1.201" nodeName="10.32.1.201" nodeType="POWER" vulnID="CVE-2013-4581"/>
+		</Path>
+	</NmapAnalysis>
+	<NmapAnalysis sourceNode="10.39.1.22" sourceNodeId="4352" destinationNode="10.31.1.104" destinationNodeId="4474">
+		<Path attackNode="10.39.1.22" nodeName="10.39.1.22" securityIndex="0.143879" cyberCost="9.5888" performanceIndex="1.37963">
+			<Node IPAddress="10.39.1.22" nodeName="10.39.1.22" nodeType="CYBER" vulnID="None"/>
+			<Node IPAddress="10.31.1.104" nodeName="10.31.1.104" nodeType="POWER" vulnID="CVE-2013-4581"/>
+		</Path>
+	</NmapAnalysis>
+	<NmapAnalysis sourceNode="70.32.128.171" sourceNodeId="4364" destinationNode="10.31.1.104" destinationNodeId="4474">
+		<Path attackNode="70.32.128.171" nodeName="70.32.128.171" securityIndex="0.143879" cyberCost="9.5888" performanceIndex="1.37963">
+			<Node IPAddress="70.32.128.171" nodeName="70.32.128.171" nodeType="CYBER" vulnID="None"/>
+			<Node IPAddress="10.31.1.104" nodeName="10.31.1.104" nodeType="POWER" vulnID="CVE-2013-4581"/>
+		</Path>
+	</NmapAnalysis>
+	<NmapAnalysis sourceNode="70.32.128.22" sourceNodeId="4360" destinationNode="10.31.1.104" destinationNodeId="4474">
+		<Path attackNode="70.32.128.22" nodeName="70.32.128.22" securityIndex="0.143879" cyberCost="9.5888" performanceIndex="1.37963">
+			<Node IPAddress="70.32.128.22" nodeName="70.32.128.22" nodeType="CYBER" vulnID="None"/>
+			<Node IPAddress="10.31.1.104" nodeName="10.31.1.104" nodeType="POWER" vulnID="CVE-2013-4581"/>
+		</Path>
+	</NmapAnalysis>
+	<NmapAnalysis sourceNode="70.32.128.74" sourceNodeId="4362" destinationNode="10.31.1.104" destinationNodeId="4474">
+		<Path attackNode="70.32.128.74" nodeName="70.32.128.74" securityIndex="0.143879" cyberCost="9.5888" performanceIndex="1.37963">
+			<Node IPAddress="70.32.128.74" nodeName="70.32.128.74" nodeType="CYBER" vulnID="None"/>
+			<Node IPAddress="10.31.1.104" nodeName="10.31.1.104" nodeType="POWER" vulnID="CVE-2013-4581"/>
+		</Path>
+	</NmapAnalysis>
+	<NmapAnalysis sourceNode="10.39.1.22" sourceNodeId="4352" destinationNode="10.31.1.101" destinationNodeId="4468">
+		<Path attackNode="10.39.1.22" nodeName="10.39.1.22" securityIndex="0.143812" cyberCost="9.5888" performanceIndex="1.37898">
+			<Node IPAddress="10.39.1.22" nodeName="10.39.1.22" nodeType="CYBER" vulnID="None"/>
+			<Node IPAddress="10.31.1.101" nodeName="10.31.1.101" nodeType="POWER" vulnID="CVE-2013-4581"/>
+		</Path>
+	</NmapAnalysis>
+	<NmapAnalysis sourceNode="70.32.128.171" sourceNodeId="4364" destinationNode="10.31.1.101" destinationNodeId="4468">
+		<Path attackNode="70.32.128.171" nodeName="70.32.128.171" securityIndex="0.143812" cyberCost="9.5888" performanceIndex="1.37898">
+			<Node IPAddress="70.32.128.171" nodeName="70.32.128.171" nodeType="CYBER" vulnID="None"/>
+			<Node IPAddress="10.31.1.101" nodeName="10.31.1.101" nodeType="POWER" vulnID="CVE-2013-4581"/>
+		</Path>
+	</NmapAnalysis>
+	<NmapAnalysis sourceNode="70.32.128.22" sourceNodeId="4360" destinationNode="10.31.1.101" destinationNodeId="4468">
+		<Path attackNode="70.32.128.22" nodeName="70.32.128.22" securityIndex="0.143812" cyberCost="9.5888" performanceIndex="1.37898">
+			<Node IPAddress="70.32.128.22" nodeName="70.32.128.22" nodeType="CYBER" vulnID="None"/>
+			<Node IPAddress="10.31.1.101" nodeName="10.31.1.101" nodeType="POWER" vulnID="CVE-2013-4581"/>
+		</Path>
+	</NmapAnalysis>
+	<NmapAnalysis sourceNode="70.32.128.74" sourceNodeId="4362" destinationNode="10.31.1.101" destinationNodeId="4468">
+		<Path attackNode="70.32.128.74" nodeName="70.32.128.74" securityIndex="0.143812" cyberCost="9.5888" performanceIndex="1.37898">
+			<Node IPAddress="70.32.128.74" nodeName="70.32.128.74" nodeType="CYBER" vulnID="None"/>
+			<Node IPAddress="10.31.1.101" nodeName="10.31.1.101" nodeType="POWER" vulnID="CVE-2013-4581"/>
+		</Path>
+	</NmapAnalysis>
+	<NmapAnalysis sourceNode="10.31.1.207" sourceNodeId="4466" destinationNode="10.31.1.105" destinationNodeId="4476">
+		<Path attackNode="10.31.1.207" nodeName="10.31.1.207" securityIndex="0.142888" cyberCost="10.9968" performanceIndex="1.57132">
+			<Node IPAddress="10.31.1.207" nodeName="10.31.1.207" nodeType="CYBER" vulnID="None"/>
+			<Node IPAddress="10.31.1.105" nodeName="10.31.1.105" nodeType="POWER" vulnID="CVE-2015-2157"/>
+		</Path>
+	</NmapAnalysis>
+	<NmapAnalysis sourceNode="10.31.1.206" sourceNodeId="4464" destinationNode="10.31.1.105" destinationNodeId="4476">
+		<Path attackNode="10.31.1.206" nodeName="10.31.1.206" securityIndex="0.142888" cyberCost="10.9968" performanceIndex="1.57132">
+			<Node IPAddress="10.31.1.206" nodeName="10.31.1.206" nodeType="CYBER" vulnID="None"/>
+			<Node IPAddress="10.31.1.105" nodeName="10.31.1.105" nodeType="POWER" vulnID="CVE-2015-2157"/>
+		</Path>
+	</NmapAnalysis>
+	<NmapAnalysis sourceNode="10.31.1.205" sourceNodeId="4462" destinationNode="10.31.1.105" destinationNodeId="4476">
+		<Path attackNode="10.31.1.205" nodeName="10.31.1.205" securityIndex="0.142888" cyberCost="10.9968" performanceIndex="1.57132">
+			<Node IPAddress="10.31.1.205" nodeName="10.31.1.205" nodeType="CYBER" vulnID="None"/>
+			<Node IPAddress="10.31.1.105" nodeName="10.31.1.105" nodeType="POWER" vulnID="CVE-2015-2157"/>
+		</Path>
+	</NmapAnalysis>
+	<NmapAnalysis sourceNode="10.31.1.204" sourceNodeId="4460" destinationNode="10.31.1.105" destinationNodeId="4476">
+		<Path attackNode="10.31.1.204" nodeName="10.31.1.204" securityIndex="0.142888" cyberCost="10.9968" performanceIndex="1.57132">
+			<Node IPAddress="10.31.1.204" nodeName="10.31.1.204" nodeType="CYBER" vulnID="None"/>
+			<Node IPAddress="10.31.1.105" nodeName="10.31.1.105" nodeType="POWER" vulnID="CVE-2015-2157"/>
+		</Path>
+	</NmapAnalysis>
+	<NmapAnalysis sourceNode="10.31.1.101" sourceNodeId="4468" destinationNode="10.31.1.105" destinationNodeId="4476">
+		<Path attackNode="10.31.1.101" nodeName="10.31.1.101" securityIndex="0.142888" cyberCost="10.9968" performanceIndex="1.57132">
+			<Node IPAddress="10.31.1.101" nodeName="10.31.1.101" nodeType="CYBER" vulnID="None"/>
+			<Node IPAddress="10.31.1.105" nodeName="10.31.1.105" nodeType="POWER" vulnID="CVE-2015-2157"/>
+		</Path>
+	</NmapAnalysis>
+	<NmapAnalysis sourceNode="10.31.1.102" sourceNodeId="4470" destinationNode="10.31.1.105" destinationNodeId="4476">
+		<Path attackNode="10.31.1.102" nodeName="10.31.1.102" securityIndex="0.142888" cyberCost="10.9968" performanceIndex="1.57132">
+			<Node IPAddress="10.31.1.102" nodeName="10.31.1.102" nodeType="CYBER" vulnID="None"/>
+			<Node IPAddress="10.31.1.105" nodeName="10.31.1.105" nodeType="POWER" vulnID="CVE-2015-2157"/>
+		</Path>
+	</NmapAnalysis>
+	<NmapAnalysis sourceNode="10.31.1.103" sourceNodeId="4472" destinationNode="10.31.1.105" destinationNodeId="4476">
+		<Path attackNode="10.31.1.103" nodeName="10.31.1.103" securityIndex="0.142888" cyberCost="10.9968" performanceIndex="1.57132">
+			<Node IPAddress="10.31.1.103" nodeName="10.31.1.103" nodeType="CYBER" vulnID="None"/>
+			<Node IPAddress="10.31.1.105" nodeName="10.31.1.105" nodeType="POWER" vulnID="CVE-2015-2157"/>
+		</Path>
+	</NmapAnalysis>
+	<NmapAnalysis sourceNode="10.31.1.104" sourceNodeId="4474" destinationNode="10.31.1.105" destinationNodeId="4476">
+		<Path attackNode="10.31.1.104" nodeName="10.31.1.104" securityIndex="0.142888" cyberCost="10.9968" performanceIndex="1.57132">
+			<Node IPAddress="10.31.1.104" nodeName="10.31.1.104" nodeType="CYBER" vulnID="None"/>
+			<Node IPAddress="10.31.1.105" nodeName="10.31.1.105" nodeType="POWER" vulnID="CVE-2015-2157"/>
+		</Path>
+	</NmapAnalysis>
+	<NmapAnalysis sourceNode="10.31.1.202" sourceNodeId="4456" destinationNode="10.31.1.105" destinationNodeId="4476">
+		<Path attackNode="10.31.1.202" nodeName="10.31.1.202" securityIndex="0.142888" cyberCost="10.9968" performanceIndex="1.57132">
+			<Node IPAddress="10.31.1.202" nodeName="10.31.1.202" nodeType="CYBER" vulnID="None"/>
+			<Node IPAddress="10.31.1.105" nodeName="10.31.1.105" nodeType="POWER" vulnID="CVE-2015-2157"/>
+		</Path>
+	</NmapAnalysis>
+	<NmapAnalysis sourceNode="10.31.1.203" sourceNodeId="4458" destinationNode="10.31.1.105" destinationNodeId="4476">
+		<Path attackNode="10.31.1.203" nodeName="10.31.1.203" securityIndex="0.142888" cyberCost="10.9968" performanceIndex="1.57132">
+			<Node IPAddress="10.31.1.203" nodeName="10.31.1.203" nodeType="CYBER" vulnID="None"/>
+			<Node IPAddress="10.31.1.105" nodeName="10.31.1.105" nodeType="POWER" vulnID="CVE-2015-0667"/>
+		</Path>
+	</NmapAnalysis>
+	<NmapAnalysis sourceNode="10.31.1.250" sourceNodeId="4452" destinationNode="10.31.1.105" destinationNodeId="4476">
+		<Path attackNode="10.31.1.250" nodeName="10.31.1.250" securityIndex="0.142888" cyberCost="10.9968" performanceIndex="1.57132">
+			<Node IPAddress="10.31.1.250" nodeName="10.31.1.250" nodeType="CYBER" vulnID="None"/>
+			<Node IPAddress="10.31.1.105" nodeName="10.31.1.105" nodeType="POWER" vulnID="CVE-2015-2157"/>
+		</Path>
+	</NmapAnalysis>
+	<NmapAnalysis sourceNode="10.31.1.201" sourceNodeId="4454" destinationNode="10.31.1.105" destinationNodeId="4476">
+		<Path attackNode="10.31.1.201" nodeName="10.31.1.201" securityIndex="0.142888" cyberCost="10.9968" performanceIndex="1.57132">
+			<Node IPAddress="10.31.1.201" nodeName="10.31.1.201" nodeType="CYBER" vulnID="None"/>
+			<Node IPAddress="10.31.1.105" nodeName="10.31.1.105" nodeType="POWER" vulnID="CVE-2015-2157"/>
+		</Path>
+	</NmapAnalysis>
+	<NmapAnalysis sourceNode="10.31.1.105" sourceNodeId="4476" destinationNode="10.31.1.104" destinationNodeId="4474">
+		<Path attackNode="10.31.1.105" nodeName="10.31.1.105" securityIndex="0.125457" cyberCost="10.9968" performanceIndex="1.37963">
+			<Node IPAddress="10.31.1.105" nodeName="10.31.1.105" nodeType="CYBER" vulnID="None"/>
+			<Node IPAddress="10.31.1.104" nodeName="10.31.1.104" nodeType="POWER" vulnID="CVE-2014-7299"/>
+		</Path>
+	</NmapAnalysis>
+	<NmapAnalysis sourceNode="10.31.1.207" sourceNodeId="4466" destinationNode="10.31.1.104" destinationNodeId="4474">
+		<Path attackNode="10.31.1.207" nodeName="10.31.1.207" securityIndex="0.125457" cyberCost="10.9968" performanceIndex="1.37963">
+			<Node IPAddress="10.31.1.207" nodeName="10.31.1.207" nodeType="CYBER" vulnID="None"/>
+			<Node IPAddress="10.31.1.104" nodeName="10.31.1.104" nodeType="POWER" vulnID="CVE-2014-7299"/>
+		</Path>
+	</NmapAnalysis>
+	<NmapAnalysis sourceNode="10.31.1.206" sourceNodeId="4464" destinationNode="10.31.1.104" destinationNodeId="4474">
+		<Path attackNode="10.31.1.206" nodeName="10.31.1.206" securityIndex="0.125457" cyberCost="10.9968" performanceIndex="1.37963">
+			<Node IPAddress="10.31.1.206" nodeName="10.31.1.206" nodeType="CYBER" vulnID="None"/>
+			<Node IPAddress="10.31.1.104" nodeName="10.31.1.104" nodeType="POWER" vulnID="CVE-2014-7299"/>
+		</Path>
+	</NmapAnalysis>
+	<NmapAnalysis sourceNode="10.31.1.205" sourceNodeId="4462" destinationNode="10.31.1.104" destinationNodeId="4474">
+		<Path attackNode="10.31.1.205" nodeName="10.31.1.205" securityIndex="0.125457" cyberCost="10.9968" performanceIndex="1.37963">
+			<Node IPAddress="10.31.1.205" nodeName="10.31.1.205" nodeType="CYBER" vulnID="None"/>
+			<Node IPAddress="10.31.1.104" nodeName="10.31.1.104" nodeType="POWER" vulnID="CVE-2014-7299"/>
+		</Path>
+	</NmapAnalysis>
+	<NmapAnalysis sourceNode="10.31.1.204" sourceNodeId="4460" destinationNode="10.31.1.104" destinationNodeId="4474">
+		<Path attackNode="10.31.1.204" nodeName="10.31.1.204" securityIndex="0.125457" cyberCost="10.9968" performanceIndex="1.37963">
+			<Node IPAddress="10.31.1.204" nodeName="10.31.1.204" nodeType="CYBER" vulnID="None"/>
+			<Node IPAddress="10.31.1.104" nodeName="10.31.1.104" nodeType="POWER" vulnID="CVE-2014-7299"/>
+		</Path>
+	</NmapAnalysis>
+	<NmapAnalysis sourceNode="10.31.1.101" sourceNodeId="4468" destinationNode="10.31.1.104" destinationNodeId="4474">
+		<Path attackNode="10.31.1.101" nodeName="10.31.1.101" securityIndex="0.125457" cyberCost="10.9968" performanceIndex="1.37963">
+			<Node IPAddress="10.31.1.101" nodeName="10.31.1.101" nodeType="CYBER" vulnID="None"/>
+			<Node IPAddress="10.31.1.104" nodeName="10.31.1.104" nodeType="POWER" vulnID="CVE-2014-7299"/>
+		</Path>
+	</NmapAnalysis>
+	<NmapAnalysis sourceNode="10.32.1.250" sourceNodeId="4478" destinationNode="10.32.1.201" destinationNodeId="4480">
+		<Path attackNode="10.32.1.250" nodeName="10.32.1.250" securityIndex="0.125457" cyberCost="10.9968" performanceIndex="1.37963">
+			<Node IPAddress="10.32.1.250" nodeName="10.32.1.250" nodeType="CYBER" vulnID="None"/>
+			<Node IPAddress="10.32.1.201" nodeName="10.32.1.201" nodeType="POWER" vulnID="CVE-2015-0984"/>
+		</Path>
+	</NmapAnalysis>
+	<NmapAnalysis sourceNode="10.31.1.102" sourceNodeId="4470" destinationNode="10.31.1.104" destinationNodeId="4474">
+		<Path attackNode="10.31.1.102" nodeName="10.31.1.102" securityIndex="0.125457" cyberCost="10.9968" performanceIndex="1.37963">
+			<Node IPAddress="10.31.1.102" nodeName="10.31.1.102" nodeType="CYBER" vulnID="None"/>
+			<Node IPAddress="10.31.1.104" nodeName="10.31.1.104" nodeType="POWER" vulnID="CVE-2014-7299"/>
+		</Path>
+	</NmapAnalysis>
+	<NmapAnalysis sourceNode="10.31.1.103" sourceNodeId="4472" destinationNode="10.31.1.104" destinationNodeId="4474">
+		<Path attackNode="10.31.1.103" nodeName="10.31.1.103" securityIndex="0.125457" cyberCost="10.9968" performanceIndex="1.37963">
+			<Node IPAddress="10.31.1.103" nodeName="10.31.1.103" nodeType="CYBER" vulnID="None"/>
+			<Node IPAddress="10.31.1.104" nodeName="10.31.1.104" nodeType="POWER" vulnID="CVE-2014-7299"/>
+		</Path>
+	</NmapAnalysis>
+	<NmapAnalysis sourceNode="10.31.1.202" sourceNodeId="4456" destinationNode="10.31.1.104" destinationNodeId="4474">
+		<Path attackNode="10.31.1.202" nodeName="10.31.1.202" securityIndex="0.125457" cyberCost="10.9968" performanceIndex="1.37963">
+			<Node IPAddress="10.31.1.202" nodeName="10.31.1.202" nodeType="CYBER" vulnID="None"/>
+			<Node IPAddress="10.31.1.104" nodeName="10.31.1.104" nodeType="POWER" vulnID="CVE-2014-7299"/>
+		</Path>
+	</NmapAnalysis>
+	<NmapAnalysis sourceNode="10.31.1.203" sourceNodeId="4458" destinationNode="10.31.1.104" destinationNodeId="4474">
+		<Path attackNode="10.31.1.203" nodeName="10.31.1.203" securityIndex="0.125457" cyberCost="10.9968" performanceIndex="1.37963">
+			<Node IPAddress="10.31.1.203" nodeName="10.31.1.203" nodeType="CYBER" vulnID="None"/>
+			<Node IPAddress="10.31.1.104" nodeName="10.31.1.104" nodeType="POWER" vulnID="CVE-2014-7299"/>
+		</Path>
+	</NmapAnalysis>
+	<NmapAnalysis sourceNode="10.31.1.250" sourceNodeId="4452" destinationNode="10.31.1.104" destinationNodeId="4474">
+		<Path attackNode="10.31.1.250" nodeName="10.31.1.250" securityIndex="0.125457" cyberCost="10.9968" performanceIndex="1.37963">
+			<Node IPAddress="10.31.1.250" nodeName="10.31.1.250" nodeType="CYBER" vulnID="None"/>
+			<Node IPAddress="10.31.1.104" nodeName="10.31.1.104" nodeType="POWER" vulnID="CVE-2014-7299"/>
+		</Path>
+	</NmapAnalysis>
+	<NmapAnalysis sourceNode="10.31.1.201" sourceNodeId="4454" destinationNode="10.31.1.104" destinationNodeId="4474">
+		<Path attackNode="10.31.1.201" nodeName="10.31.1.201" securityIndex="0.125457" cyberCost="10.9968" performanceIndex="1.37963">
+			<Node IPAddress="10.31.1.201" nodeName="10.31.1.201" nodeType="CYBER" vulnID="None"/>
+			<Node IPAddress="10.31.1.104" nodeName="10.31.1.104" nodeType="POWER" vulnID="CVE-2014-7299"/>
+		</Path>
+	</NmapAnalysis>
+	<NmapAnalysis sourceNode="10.31.1.105" sourceNodeId="4476" destinationNode="10.31.1.101" destinationNodeId="4468">
+		<Path attackNode="10.31.1.105" nodeName="10.31.1.105" securityIndex="0.125399" cyberCost="10.9968" performanceIndex="1.37898">
+			<Node IPAddress="10.31.1.105" nodeName="10.31.1.105" nodeType="CYBER" vulnID="None"/>
+			<Node IPAddress="10.31.1.101" nodeName="10.31.1.101" nodeType="POWER" vulnID="CVE-2015-0667"/>
+		</Path>
+	</NmapAnalysis>
+	<NmapAnalysis sourceNode="10.31.1.207" sourceNodeId="4466" destinationNode="10.31.1.101" destinationNodeId="4468">
+		<Path attackNode="10.31.1.207" nodeName="10.31.1.207" securityIndex="0.125399" cyberCost="10.9968" performanceIndex="1.37898">
+			<Node IPAddress="10.31.1.207" nodeName="10.31.1.207" nodeType="CYBER" vulnID="None"/>
+			<Node IPAddress="10.31.1.101" nodeName="10.31.1.101" nodeType="POWER" vulnID="CVE-2015-0667"/>
+		</Path>
+	</NmapAnalysis>
+	<NmapAnalysis sourceNode="10.31.1.206" sourceNodeId="4464" destinationNode="10.31.1.101" destinationNodeId="4468">
+		<Path attackNode="10.31.1.206" nodeName="10.31.1.206" securityIndex="0.125399" cyberCost="10.9968" performanceIndex="1.37898">
+			<Node IPAddress="10.31.1.206" nodeName="10.31.1.206" nodeType="CYBER" vulnID="None"/>
+			<Node IPAddress="10.31.1.101" nodeName="10.31.1.101" nodeType="POWER" vulnID="CVE-2015-0667"/>
+		</Path>
+	</NmapAnalysis>
+	<NmapAnalysis sourceNode="10.31.1.205" sourceNodeId="4462" destinationNode="10.31.1.101" destinationNodeId="4468">
+		<Path attackNode="10.31.1.205" nodeName="10.31.1.205" securityIndex="0.125399" cyberCost="10.9968" performanceIndex="1.37898">
+			<Node IPAddress="10.31.1.205" nodeName="10.31.1.205" nodeType="CYBER" vulnID="None"/>
+			<Node IPAddress="10.31.1.101" nodeName="10.31.1.101" nodeType="POWER" vulnID="CVE-2015-0667"/>
+		</Path>
+	</NmapAnalysis>
+	<NmapAnalysis sourceNode="10.31.1.204" sourceNodeId="4460" destinationNode="10.31.1.101" destinationNodeId="4468">
+		<Path attackNode="10.31.1.204" nodeName="10.31.1.204" securityIndex="0.125399" cyberCost="10.9968" performanceIndex="1.37898">
+			<Node IPAddress="10.31.1.204" nodeName="10.31.1.204" nodeType="CYBER" vulnID="None"/>
+			<Node IPAddress="10.31.1.101" nodeName="10.31.1.101" nodeType="POWER" vulnID="CVE-2015-0667"/>
+		</Path>
+	</NmapAnalysis>
+	<NmapAnalysis sourceNode="10.31.1.102" sourceNodeId="4470" destinationNode="10.31.1.101" destinationNodeId="4468">
+		<Path attackNode="10.31.1.102" nodeName="10.31.1.102" securityIndex="0.125399" cyberCost="10.9968" performanceIndex="1.37898">
+			<Node IPAddress="10.31.1.102" nodeName="10.31.1.102" nodeType="CYBER" vulnID="None"/>
+			<Node IPAddress="10.31.1.101" nodeName="10.31.1.101" nodeType="POWER" vulnID="CVE-2015-0667"/>
+		</Path>
+	</NmapAnalysis>
+	<NmapAnalysis sourceNode="10.31.1.103" sourceNodeId="4472" destinationNode="10.31.1.101" destinationNodeId="4468">
+		<Path attackNode="10.31.1.103" nodeName="10.31.1.103" securityIndex="0.125399" cyberCost="10.9968" performanceIndex="1.37898">
+			<Node IPAddress="10.31.1.103" nodeName="10.31.1.103" nodeType="CYBER" vulnID="None"/>
+			<Node IPAddress="10.31.1.101" nodeName="10.31.1.101" nodeType="POWER" vulnID="CVE-2015-0667"/>
+		</Path>
+	</NmapAnalysis>
+	<NmapAnalysis sourceNode="10.31.1.104" sourceNodeId="4474" destinationNode="10.31.1.101" destinationNodeId="4468">
+		<Path attackNode="10.31.1.104" nodeName="10.31.1.104" securityIndex="0.125399" cyberCost="10.9968" performanceIndex="1.37898">
+			<Node IPAddress="10.31.1.104" nodeName="10.31.1.104" nodeType="CYBER" vulnID="None"/>
+			<Node IPAddress="10.31.1.101" nodeName="10.31.1.101" nodeType="POWER" vulnID="CVE-2015-0667"/>
+		</Path>
+	</NmapAnalysis>
+	<NmapAnalysis sourceNode="10.31.1.202" sourceNodeId="4456" destinationNode="10.31.1.101" destinationNodeId="4468">
+		<Path attackNode="10.31.1.202" nodeName="10.31.1.202" securityIndex="0.125399" cyberCost="10.9968" performanceIndex="1.37898">
+			<Node IPAddress="10.31.1.202" nodeName="10.31.1.202" nodeType="CYBER" vulnID="None"/>
+			<Node IPAddress="10.31.1.101" nodeName="10.31.1.101" nodeType="POWER" vulnID="CVE-2015-0667"/>
+		</Path>
+	</NmapAnalysis>
+	<NmapAnalysis sourceNode="10.31.1.203" sourceNodeId="4458" destinationNode="10.31.1.101" destinationNodeId="4468">
+		<Path attackNode="10.31.1.203" nodeName="10.31.1.203" securityIndex="0.125399" cyberCost="10.9968" performanceIndex="1.37898">
+			<Node IPAddress="10.31.1.203" nodeName="10.31.1.203" nodeType="CYBER" vulnID="None"/>
+			<Node IPAddress="10.31.1.101" nodeName="10.31.1.101" nodeType="POWER" vulnID="CVE-2015-0667"/>
+		</Path>
+	</NmapAnalysis>
+	<NmapAnalysis sourceNode="10.31.1.250" sourceNodeId="4452" destinationNode="10.31.1.101" destinationNodeId="4468">
+		<Path attackNode="10.31.1.250" nodeName="10.31.1.250" securityIndex="0.125399" cyberCost="10.9968" performanceIndex="1.37898">
+			<Node IPAddress="10.31.1.250" nodeName="10.31.1.250" nodeType="CYBER" vulnID="None"/>
+			<Node IPAddress="10.31.1.101" nodeName="10.31.1.101" nodeType="POWER" vulnID="CVE-2015-0667"/>
+		</Path>
+	</NmapAnalysis>
+	<NmapAnalysis sourceNode="10.31.1.201" sourceNodeId="4454" destinationNode="10.31.1.101" destinationNodeId="4468">
+		<Path attackNode="10.31.1.201" nodeName="10.31.1.201" securityIndex="0.125399" cyberCost="10.9968" performanceIndex="1.37898">
+			<Node IPAddress="10.31.1.201" nodeName="10.31.1.201" nodeType="CYBER" vulnID="None"/>
+			<Node IPAddress="10.31.1.101" nodeName="10.31.1.101" nodeType="POWER" vulnID="CVE-2015-0667"/>
+		</Path>
+	</NmapAnalysis>
+	<NmapAnalysis sourceNode="72.36.82.195" sourceNodeId="4350" destinationNode="10.31.1.102" destinationNodeId="4470">
+		<Path attackNode="72.36.82.195" nodeName="72.36.82.195" securityIndex="0.12277" cyberCost="18.1776" performanceIndex="2.23166">
+			<Node IPAddress="72.36.82.195" nodeName="72.36.82.195" nodeType="CYBER" vulnID="None"/>
+			<Node IPAddress="10.39.1.22" nodeName="10.39.1.22" nodeType="CYBER" vulnID="CVE-2013-4581"/>
+			<Node IPAddress="10.31.1.102" nodeName="10.31.1.102" nodeType="POWER" vulnID="CVE-2013-4581"/>
+		</Path>
+	</NmapAnalysis>
+	<NmapAnalysis sourceNode="0.0.0.0/0" sourceNodeId="4485" destinationNode="10.31.1.102" destinationNodeId="4470">
+		<Path attackNode="0.0.0.0/0" nodeName="0.0.0.0/0" securityIndex="0.12277" cyberCost="18.1776" performanceIndex="2.23166">
+			<Node IPAddress="0.0.0.0/0" nodeName="0.0.0.0/0" nodeType="CYBER" vulnID="None"/>
+			<Node IPAddress="10.39.1.22" nodeName="10.39.1.22" nodeType="CYBER" vulnID="CVE-2013-4581"/>
+			<Node IPAddress="10.31.1.102" nodeName="10.31.1.102" nodeType="POWER" vulnID="CVE-2013-4581"/>
+		</Path>
+	</NmapAnalysis>
+	<NmapAnalysis sourceNode="72.36.82.196" sourceNodeId="4482" destinationNode="10.31.1.102" destinationNodeId="4470">
+		<Path attackNode="72.36.82.196" nodeName="72.36.82.196" securityIndex="0.12277" cyberCost="18.1776" performanceIndex="2.23166">
+			<Node IPAddress="72.36.82.196" nodeName="72.36.82.196" nodeType="CYBER" vulnID="None"/>
+			<Node IPAddress="10.39.1.22" nodeName="10.39.1.22" nodeType="CYBER" vulnID="CVE-2013-4581"/>
+			<Node IPAddress="10.31.1.102" nodeName="10.31.1.102" nodeType="POWER" vulnID="CVE-2013-4581"/>
+		</Path>
+	</NmapAnalysis>
+	<NmapAnalysis sourceNode="72.0.0.0/8" sourceNodeId="4489" destinationNode="10.31.1.102" destinationNodeId="4470">
+		<Path attackNode="72.0.0.0/8" nodeName="72.0.0.0/8" securityIndex="0.12277" cyberCost="18.1776" performanceIndex="2.23166">
+			<Node IPAddress="72.0.0.0/8" nodeName="72.0.0.0/8" nodeType="CYBER" vulnID="None"/>
+			<Node IPAddress="10.39.1.22" nodeName="10.39.1.22" nodeType="CYBER" vulnID="CVE-2013-4581"/>
+			<Node IPAddress="10.31.1.102" nodeName="10.31.1.102" nodeType="POWER" vulnID="CVE-2013-4581"/>
+		</Path>
+	</NmapAnalysis>
+	<NmapAnalysis sourceNode="72.36.82.194" sourceNodeId="4348" destinationNode="10.31.1.102" destinationNodeId="4470">
+		<Path attackNode="72.36.82.194" nodeName="72.36.82.194" securityIndex="0.12277" cyberCost="18.1776" performanceIndex="2.23166">
+			<Node IPAddress="72.36.82.194" nodeName="72.36.82.194" nodeType="CYBER" vulnID="None"/>
+			<Node IPAddress="10.39.1.22" nodeName="10.39.1.22" nodeType="CYBER" vulnID="CVE-2013-4581"/>
+			<Node IPAddress="10.31.1.102" nodeName="10.31.1.102" nodeType="POWER" vulnID="CVE-2013-4581"/>
+		</Path>
+	</NmapAnalysis>
+	<NmapAnalysis sourceNode="192.17.0.0/16" sourceNodeId="4490" destinationNode="10.31.1.102" destinationNodeId="4470">
+		<Path attackNode="192.17.0.0/16" nodeName="192.17.0.0/16" securityIndex="0.12277" cyberCost="18.1776" performanceIndex="2.23166">
+			<Node IPAddress="192.17.0.0/16" nodeName="192.17.0.0/16" nodeType="CYBER" vulnID="None"/>
+			<Node IPAddress="10.39.1.22" nodeName="10.39.1.22" nodeType="CYBER" vulnID="CVE-2013-4581"/>
+			<Node IPAddress="10.31.1.102" nodeName="10.31.1.102" nodeType="POWER" vulnID="CVE-2013-4581"/>
+		</Path>
+	</NmapAnalysis>
+	<NmapAnalysis sourceNode="72.36.82.195" sourceNodeId="4350" destinationNode="10.31.1.105" destinationNodeId="4476">
+		<Path attackNode="72.36.82.195" nodeName="72.36.82.195" securityIndex="0.0864424" cyberCost="18.1776" performanceIndex="1.57132">
+			<Node IPAddress="72.36.82.195" nodeName="72.36.82.195" nodeType="CYBER" vulnID="None"/>
+			<Node IPAddress="10.39.1.22" nodeName="10.39.1.22" nodeType="CYBER" vulnID="CVE-2013-4581"/>
+			<Node IPAddress="10.31.1.105" nodeName="10.31.1.105" nodeType="POWER" vulnID="CVE-2013-4581"/>
+		</Path>
+	</NmapAnalysis>
+	<NmapAnalysis sourceNode="0.0.0.0/0" sourceNodeId="4485" destinationNode="10.31.1.105" destinationNodeId="4476">
+		<Path attackNode="0.0.0.0/0" nodeName="0.0.0.0/0" securityIndex="0.0864424" cyberCost="18.1776" performanceIndex="1.57132">
+			<Node IPAddress="0.0.0.0/0" nodeName="0.0.0.0/0" nodeType="CYBER" vulnID="None"/>
+			<Node IPAddress="10.39.1.22" nodeName="10.39.1.22" nodeType="CYBER" vulnID="CVE-2013-4581"/>
+			<Node IPAddress="10.31.1.105" nodeName="10.31.1.105" nodeType="POWER" vulnID="CVE-2013-4581"/>
+		</Path>
+	</NmapAnalysis>
+	<NmapAnalysis sourceNode="72.36.82.196" sourceNodeId="4482" destinationNode="10.31.1.105" destinationNodeId="4476">
+		<Path attackNode="72.36.82.196" nodeName="72.36.82.196" securityIndex="0.0864424" cyberCost="18.1776" performanceIndex="1.57132">
+			<Node IPAddress="72.36.82.196" nodeName="72.36.82.196" nodeType="CYBER" vulnID="None"/>
+			<Node IPAddress="10.39.1.22" nodeName="10.39.1.22" nodeType="CYBER" vulnID="CVE-2013-4581"/>
+			<Node IPAddress="10.31.1.105" nodeName="10.31.1.105" nodeType="POWER" vulnID="CVE-2013-4581"/>
+		</Path>
+	</NmapAnalysis>
+	<NmapAnalysis sourceNode="72.0.0.0/8" sourceNodeId="4489" destinationNode="10.31.1.105" destinationNodeId="4476">
+		<Path attackNode="72.0.0.0/8" nodeName="72.0.0.0/8" securityIndex="0.0864424" cyberCost="18.1776" performanceIndex="1.57132">
+			<Node IPAddress="72.0.0.0/8" nodeName="72.0.0.0/8" nodeType="CYBER" vulnID="None"/>
+			<Node IPAddress="10.39.1.22" nodeName="10.39.1.22" nodeType="CYBER" vulnID="CVE-2013-4581"/>
+			<Node IPAddress="10.31.1.105" nodeName="10.31.1.105" nodeType="POWER" vulnID="CVE-2013-4581"/>
+		</Path>
+	</NmapAnalysis>
+	<NmapAnalysis sourceNode="72.36.82.194" sourceNodeId="4348" destinationNode="10.31.1.105" destinationNodeId="4476">
+		<Path attackNode="72.36.82.194" nodeName="72.36.82.194" securityIndex="0.0864424" cyberCost="18.1776" performanceIndex="1.57132">
+			<Node IPAddress="72.36.82.194" nodeName="72.36.82.194" nodeType="CYBER" vulnID="None"/>
+			<Node IPAddress="10.39.1.22" nodeName="10.39.1.22" nodeType="CYBER" vulnID="CVE-2013-4581"/>
+			<Node IPAddress="10.31.1.105" nodeName="10.31.1.105" nodeType="POWER" vulnID="CVE-2013-4581"/>
+		</Path>
+	</NmapAnalysis>
+	<NmapAnalysis sourceNode="192.17.0.0/16" sourceNodeId="4490" destinationNode="10.31.1.105" destinationNodeId="4476">
+		<Path attackNode="192.17.0.0/16" nodeName="192.17.0.0/16" securityIndex="0.0864424" cyberCost="18.1776" performanceIndex="1.57132">
+			<Node IPAddress="192.17.0.0/16" nodeName="192.17.0.0/16" nodeType="CYBER" vulnID="None"/>
+			<Node IPAddress="10.39.1.22" nodeName="10.39.1.22" nodeType="CYBER" vulnID="CVE-2013-4581"/>
+			<Node IPAddress="10.31.1.105" nodeName="10.31.1.105" nodeType="POWER" vulnID="CVE-2013-4581"/>
+		</Path>
+	</NmapAnalysis>
+	<NmapAnalysis sourceNode="72.36.82.195" sourceNodeId="4350" destinationNode="10.32.1.201" destinationNodeId="4480">
+		<Path attackNode="72.36.82.195" nodeName="72.36.82.195" securityIndex="0.0758973" cyberCost="18.1776" performanceIndex="1.37963">
+			<Node IPAddress="72.36.82.195" nodeName="72.36.82.195" nodeType="CYBER" vulnID="None"/>
+			<Node IPAddress="10.39.1.22" nodeName="10.39.1.22" nodeType="CYBER" vulnID="CVE-2013-4581"/>
+			<Node IPAddress="10.32.1.201" nodeName="10.32.1.201" nodeType="POWER" vulnID="CVE-2013-4581"/>
+		</Path>
+	</NmapAnalysis>
+	<NmapAnalysis sourceNode="72.36.82.195" sourceNodeId="4350" destinationNode="10.31.1.104" destinationNodeId="4474">
+		<Path attackNode="72.36.82.195" nodeName="72.36.82.195" securityIndex="0.0758973" cyberCost="18.1776" performanceIndex="1.37963">
+			<Node IPAddress="72.36.82.195" nodeName="72.36.82.195" nodeType="CYBER" vulnID="None"/>
+			<Node IPAddress="10.39.1.22" nodeName="10.39.1.22" nodeType="CYBER" vulnID="CVE-2013-4581"/>
+			<Node IPAddress="10.31.1.104" nodeName="10.31.1.104" nodeType="POWER" vulnID="CVE-2013-4581"/>
+		</Path>
+	</NmapAnalysis>
+	<NmapAnalysis sourceNode="0.0.0.0/0" sourceNodeId="4485" destinationNode="10.32.1.201" destinationNodeId="4480">
+		<Path attackNode="0.0.0.0/0" nodeName="0.0.0.0/0" securityIndex="0.0758973" cyberCost="18.1776" performanceIndex="1.37963">
+			<Node IPAddress="0.0.0.0/0" nodeName="0.0.0.0/0" nodeType="CYBER" vulnID="None"/>
+			<Node IPAddress="10.39.1.22" nodeName="10.39.1.22" nodeType="CYBER" vulnID="CVE-2013-4581"/>
+			<Node IPAddress="10.32.1.201" nodeName="10.32.1.201" nodeType="POWER" vulnID="CVE-2013-4581"/>
+		</Path>
+	</NmapAnalysis>
+	<NmapAnalysis sourceNode="0.0.0.0/0" sourceNodeId="4485" destinationNode="10.31.1.104" destinationNodeId="4474">
+		<Path attackNode="0.0.0.0/0" nodeName="0.0.0.0/0" securityIndex="0.0758973" cyberCost="18.1776" performanceIndex="1.37963">
+			<Node IPAddress="0.0.0.0/0" nodeName="0.0.0.0/0" nodeType="CYBER" vulnID="None"/>
+			<Node IPAddress="10.39.1.22" nodeName="10.39.1.22" nodeType="CYBER" vulnID="CVE-2013-4581"/>
+			<Node IPAddress="10.31.1.104" nodeName="10.31.1.104" nodeType="POWER" vulnID="CVE-2013-4581"/>
+		</Path>
+	</NmapAnalysis>
+	<NmapAnalysis sourceNode="72.36.82.196" sourceNodeId="4482" destinationNode="10.32.1.201" destinationNodeId="4480">
+		<Path attackNode="72.36.82.196" nodeName="72.36.82.196" securityIndex="0.0758973" cyberCost="18.1776" performanceIndex="1.37963">
+			<Node IPAddress="72.36.82.196" nodeName="72.36.82.196" nodeType="CYBER" vulnID="None"/>
+			<Node IPAddress="10.39.1.22" nodeName="10.39.1.22" nodeType="CYBER" vulnID="CVE-2013-4581"/>
+			<Node IPAddress="10.32.1.201" nodeName="10.32.1.201" nodeType="POWER" vulnID="CVE-2013-4581"/>
+		</Path>
+	</NmapAnalysis>
+	<NmapAnalysis sourceNode="72.36.82.196" sourceNodeId="4482" destinationNode="10.31.1.104" destinationNodeId="4474">
+		<Path attackNode="72.36.82.196" nodeName="72.36.82.196" securityIndex="0.0758973" cyberCost="18.1776" performanceIndex="1.37963">
+			<Node IPAddress="72.36.82.196" nodeName="72.36.82.196" nodeType="CYBER" vulnID="None"/>
+			<Node IPAddress="10.39.1.22" nodeName="10.39.1.22" nodeType="CYBER" vulnID="CVE-2013-4581"/>
+			<Node IPAddress="10.31.1.104" nodeName="10.31.1.104" nodeType="POWER" vulnID="CVE-2013-4581"/>
+		</Path>
+	</NmapAnalysis>
+	<NmapAnalysis sourceNode="72.0.0.0/8" sourceNodeId="4489" destinationNode="10.32.1.201" destinationNodeId="4480">
+		<Path attackNode="72.0.0.0/8" nodeName="72.0.0.0/8" securityIndex="0.0758973" cyberCost="18.1776" performanceIndex="1.37963">
+			<Node IPAddress="72.0.0.0/8" nodeName="72.0.0.0/8" nodeType="CYBER" vulnID="None"/>
+			<Node IPAddress="10.39.1.22" nodeName="10.39.1.22" nodeType="CYBER" vulnID="CVE-2013-4581"/>
+			<Node IPAddress="10.32.1.201" nodeName="10.32.1.201" nodeType="POWER" vulnID="CVE-2013-4581"/>
+		</Path>
+	</NmapAnalysis>
+	<NmapAnalysis sourceNode="72.0.0.0/8" sourceNodeId="4489" destinationNode="10.31.1.104" destinationNodeId="4474">
+		<Path attackNode="72.0.0.0/8" nodeName="72.0.0.0/8" securityIndex="0.0758973" cyberCost="18.1776" performanceIndex="1.37963">
+			<Node IPAddress="72.0.0.0/8" nodeName="72.0.0.0/8" nodeType="CYBER" vulnID="None"/>
+			<Node IPAddress="10.39.1.22" nodeName="10.39.1.22" nodeType="CYBER" vulnID="CVE-2013-4581"/>
+			<Node IPAddress="10.31.1.104" nodeName="10.31.1.104" nodeType="POWER" vulnID="CVE-2013-4581"/>
+		</Path>
+	</NmapAnalysis>
+	<NmapAnalysis sourceNode="72.36.82.194" sourceNodeId="4348" destinationNode="10.32.1.201" destinationNodeId="4480">
+		<Path attackNode="72.36.82.194" nodeName="72.36.82.194" securityIndex="0.0758973" cyberCost="18.1776" performanceIndex="1.37963">
+			<Node IPAddress="72.36.82.194" nodeName="72.36.82.194" nodeType="CYBER" vulnID="None"/>
+			<Node IPAddress="10.39.1.22" nodeName="10.39.1.22" nodeType="CYBER" vulnID="CVE-2013-4581"/>
+			<Node IPAddress="10.32.1.201" nodeName="10.32.1.201" nodeType="POWER" vulnID="CVE-2013-4581"/>
+		</Path>
+	</NmapAnalysis>
+	<NmapAnalysis sourceNode="72.36.82.194" sourceNodeId="4348" destinationNode="10.31.1.104" destinationNodeId="4474">
+		<Path attackNode="72.36.82.194" nodeName="72.36.82.194" securityIndex="0.0758973" cyberCost="18.1776" performanceIndex="1.37963">
+			<Node IPAddress="72.36.82.194" nodeName="72.36.82.194" nodeType="CYBER" vulnID="None"/>
+			<Node IPAddress="10.39.1.22" nodeName="10.39.1.22" nodeType="CYBER" vulnID="CVE-2013-4581"/>
+			<Node IPAddress="10.31.1.104" nodeName="10.31.1.104" nodeType="POWER" vulnID="CVE-2013-4581"/>
+		</Path>
+	</NmapAnalysis>
+	<NmapAnalysis sourceNode="192.17.0.0/16" sourceNodeId="4490" destinationNode="10.32.1.201" destinationNodeId="4480">
+		<Path attackNode="192.17.0.0/16" nodeName="192.17.0.0/16" securityIndex="0.0758973" cyberCost="18.1776" performanceIndex="1.37963">
+			<Node IPAddress="192.17.0.0/16" nodeName="192.17.0.0/16" nodeType="CYBER" vulnID="None"/>
+			<Node IPAddress="10.39.1.22" nodeName="10.39.1.22" nodeType="CYBER" vulnID="CVE-2013-4581"/>
+			<Node IPAddress="10.32.1.201" nodeName="10.32.1.201" nodeType="POWER" vulnID="CVE-2013-4581"/>
+		</Path>
+	</NmapAnalysis>
+	<NmapAnalysis sourceNode="192.17.0.0/16" sourceNodeId="4490" destinationNode="10.31.1.104" destinationNodeId="4474">
+		<Path attackNode="192.17.0.0/16" nodeName="192.17.0.0/16" securityIndex="0.0758973" cyberCost="18.1776" performanceIndex="1.37963">
+			<Node IPAddress="192.17.0.0/16" nodeName="192.17.0.0/16" nodeType="CYBER" vulnID="None"/>
+			<Node IPAddress="10.39.1.22" nodeName="10.39.1.22" nodeType="CYBER" vulnID="CVE-2013-4581"/>
+			<Node IPAddress="10.31.1.104" nodeName="10.31.1.104" nodeType="POWER" vulnID="CVE-2013-4581"/>
+		</Path>
+	</NmapAnalysis>
+	<NmapAnalysis sourceNode="72.36.82.195" sourceNodeId="4350" destinationNode="10.31.1.101" destinationNodeId="4468">
+		<Path attackNode="72.36.82.195" nodeName="72.36.82.195" securityIndex="0.0758617" cyberCost="18.1776" performanceIndex="1.37898">
+			<Node IPAddress="72.36.82.195" nodeName="72.36.82.195" nodeType="CYBER" vulnID="None"/>
+			<Node IPAddress="10.39.1.22" nodeName="10.39.1.22" nodeType="CYBER" vulnID="CVE-2013-4581"/>
+			<Node IPAddress="10.31.1.101" nodeName="10.31.1.101" nodeType="POWER" vulnID="CVE-2013-4581"/>
+		</Path>
+	</NmapAnalysis>
+	<NmapAnalysis sourceNode="0.0.0.0/0" sourceNodeId="4485" destinationNode="10.31.1.101" destinationNodeId="4468">
+		<Path attackNode="0.0.0.0/0" nodeName="0.0.0.0/0" securityIndex="0.0758617" cyberCost="18.1776" performanceIndex="1.37898">
+			<Node IPAddress="0.0.0.0/0" nodeName="0.0.0.0/0" nodeType="CYBER" vulnID="None"/>
+			<Node IPAddress="10.39.1.22" nodeName="10.39.1.22" nodeType="CYBER" vulnID="CVE-2013-4581"/>
+			<Node IPAddress="10.31.1.101" nodeName="10.31.1.101" nodeType="POWER" vulnID="CVE-2013-4581"/>
+		</Path>
+	</NmapAnalysis>
+	<NmapAnalysis sourceNode="72.36.82.196" sourceNodeId="4482" destinationNode="10.31.1.101" destinationNodeId="4468">
+		<Path attackNode="72.36.82.196" nodeName="72.36.82.196" securityIndex="0.0758617" cyberCost="18.1776" performanceIndex="1.37898">
+			<Node IPAddress="72.36.82.196" nodeName="72.36.82.196" nodeType="CYBER" vulnID="None"/>
+			<Node IPAddress="10.39.1.22" nodeName="10.39.1.22" nodeType="CYBER" vulnID="CVE-2013-4581"/>
+			<Node IPAddress="10.31.1.101" nodeName="10.31.1.101" nodeType="POWER" vulnID="CVE-2013-4581"/>
+		</Path>
+	</NmapAnalysis>
+	<NmapAnalysis sourceNode="72.0.0.0/8" sourceNodeId="4489" destinationNode="10.31.1.101" destinationNodeId="4468">
+		<Path attackNode="72.0.0.0/8" nodeName="72.0.0.0/8" securityIndex="0.0758617" cyberCost="18.1776" performanceIndex="1.37898">
+			<Node IPAddress="72.0.0.0/8" nodeName="72.0.0.0/8" nodeType="CYBER" vulnID="None"/>
+			<Node IPAddress="10.39.1.22" nodeName="10.39.1.22" nodeType="CYBER" vulnID="CVE-2013-4581"/>
+			<Node IPAddress="10.31.1.101" nodeName="10.31.1.101" nodeType="POWER" vulnID="CVE-2013-4581"/>
+		</Path>
+	</NmapAnalysis>
+	<NmapAnalysis sourceNode="72.36.82.194" sourceNodeId="4348" destinationNode="10.31.1.101" destinationNodeId="4468">
+		<Path attackNode="72.36.82.194" nodeName="72.36.82.194" securityIndex="0.0758617" cyberCost="18.1776" performanceIndex="1.37898">
+			<Node IPAddress="72.36.82.194" nodeName="72.36.82.194" nodeType="CYBER" vulnID="None"/>
+			<Node IPAddress="10.39.1.22" nodeName="10.39.1.22" nodeType="CYBER" vulnID="CVE-2013-4581"/>
+			<Node IPAddress="10.31.1.101" nodeName="10.31.1.101" nodeType="POWER" vulnID="CVE-2013-4581"/>
+		</Path>
+	</NmapAnalysis>
+	<NmapAnalysis sourceNode="192.17.0.0/16" sourceNodeId="4490" destinationNode="10.31.1.101" destinationNodeId="4468">
+		<Path attackNode="192.17.0.0/16" nodeName="192.17.0.0/16" securityIndex="0.0758617" cyberCost="18.1776" performanceIndex="1.37898">
+			<Node IPAddress="192.17.0.0/16" nodeName="192.17.0.0/16" nodeType="CYBER" vulnID="None"/>
+			<Node IPAddress="10.39.1.22" nodeName="10.39.1.22" nodeType="CYBER" vulnID="CVE-2013-4581"/>
+			<Node IPAddress="10.31.1.101" nodeName="10.31.1.101" nodeType="POWER" vulnID="CVE-2013-4581"/>
+		</Path>
+	</NmapAnalysis>
+	<NmapAnalysis sourceNode="70.32.128.171" sourceNodeId="4364" destinationNode="10.32.1.201" destinationNodeId="4480">
+		<Path attackNode="70.32.128.171" nodeName="70.32.128.171" securityIndex="0.070441" cyberCost="19.5856" performanceIndex="1.37963">
+			<Node IPAddress="70.32.128.171" nodeName="70.32.128.171" nodeType="CYBER" vulnID="None"/>
+			<Node IPAddress="10.32.1.250" nodeName="10.32.1.250" nodeType="CYBER" vulnID="CVE-2013-4581"/>
+			<Node IPAddress="10.32.1.201" nodeName="10.32.1.201" nodeType="POWER" vulnID="CVE-2014-8517"/>
+		</Path>
+	</NmapAnalysis>
+	<NmapAnalysis sourceNode="70.32.128.22" sourceNodeId="4360" destinationNode="10.32.1.201" destinationNodeId="4480">
+		<Path attackNode="70.32.128.22" nodeName="70.32.128.22" securityIndex="0.070441" cyberCost="19.5856" performanceIndex="1.37963">
+			<Node IPAddress="70.32.128.22" nodeName="70.32.128.22" nodeType="CYBER" vulnID="None"/>
+			<Node IPAddress="10.32.1.250" nodeName="10.32.1.250" nodeType="CYBER" vulnID="CVE-2013-4581"/>
+			<Node IPAddress="10.32.1.201" nodeName="10.32.1.201" nodeType="POWER" vulnID="CVE-2014-8517"/>
+		</Path>
+	</NmapAnalysis>
+	<NmapAnalysis sourceNode="70.32.128.74" sourceNodeId="4362" destinationNode="10.32.1.201" destinationNodeId="4480">
+		<Path attackNode="70.32.128.74" nodeName="70.32.128.74" securityIndex="0.070441" cyberCost="19.5856" performanceIndex="1.37963">
+			<Node IPAddress="70.32.128.74" nodeName="70.32.128.74" nodeType="CYBER" vulnID="None"/>
+			<Node IPAddress="10.32.1.250" nodeName="10.32.1.250" nodeType="CYBER" vulnID="CVE-2013-4581"/>
+			<Node IPAddress="10.32.1.201" nodeName="10.32.1.201" nodeType="POWER" vulnID="CVE-2014-8517"/>
+		</Path>
+	</NmapAnalysis>
+</VCReport>

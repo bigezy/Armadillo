@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+ copyright (c) 2015, Gabriel A. Weaver, Information Trust Institute
+   at the University of Illinois, Urbana-Champaign.
+
+  This file is part of the Cyber-Physical Topology Language for
+    the Power domain.
+
+  This ontology is available under the Creative Commons 
+  Attribution-ShareAlike License.  Details about this license
+  are available at the following URL:
+
+  http://creativecommons.org/licenses/by-sa/3.0/legalcode 
+  -->
+
+<!DOCTYPE rdf:RDF [
+    <!ENTITY cptlc "http://cptl-c.org/core/2014/07/core/" >
+    <!ENTITY owl "http://www.w3.org/2002/07/owl#" >
+    <!ENTITY dc "http://purl.org/dc/elements/1.1/" >
+    <!ENTITY enet "http://cptl-c.org/enterprise/2015/07/enterprise_network/" >
+    <!ENTITY xsd "http://www.w3.org/2001/XMLSchema#" >
+    <!ENTITY rdfs "http://www.w3.org/2000/01/rdf-schema#" >
+    <!ENTITY rdf "http://www.w3.org/1999/02/22-rdf-syntax-ns#" >
+    <!ENTITY syard "http://cptl-c.org/power/2015/07/substation_yard/" >
+]>
+
+<rdf:RDF
+    xmlns:cptlc="http://cptl-c.org/core/2014/07/core/"    
+    xmlns:dc="http://purl.org/dc/elements/1.1/"
+    xmlns:enet="http://cptl-c.org/enterprise/2015/07/enterprise_network/"
+    xmlns:owl="http://www.w3.org/2002/07/owl#"
+    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+    xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+    xmlns:syard="http://cptl-c.org/power/2015/07/substation_yard/">
+
+  <owl:Ontology rdf:about="http://cptl-c.org/power/2015/07/substation_yard">
+    <dc:title>Substation Yard</dc:title>
+    <dc:description>An ontology to describe components of a substation
+    yard.</dc:description>
+  </owl:Ontology>
+  
+  <owl:Class rdf:about="http://cptl-c.org/power/2015/07/substation_yard/SubstationYardComponent">
+    <rdfs:label xml:lang="en">Substation Yard Component</rdfs:label>
+    <rdfs:comment>Any piece of switching, protection, or control
+    equipment in a substation yard.  This may also include 
+    other assets such as a fence or substation house.
+    (http://en.wikipedia.org/wiki/Electrical_substation)</rdfs:comment>
+  </owl:Class>
+
+  <owl:Class rdf:about="http://cptl-c.org/power/2015/07/substation_yard/Breaker">
+    <rdfs:subClassOf rdf:resource="&syard;SubstationYardComponent"/>
+    <rdfs:label xml:lang="en">Breaker</rdfs:label>
+    <rdfs:comment>A breaker is an automatically operated electrical
+    switch designed to protect an electrical circuit from damage
+    caused by overload or short circuit
+    (http://en.wikipedia.org/wiki/Circuit_breaker).</rdfs:comment>
+  </owl:Class>
+
+  <owl:Class rdf:about="http://cptl-c.org/power/2015/07/substation_yard/Bus">
+    <rdfs:subClassOf rdf:resource="&syard;SubstationYardComponent"/>
+    <rdfs:label xml:lang="en">Bus</rdfs:label>
+    <rdfs:comment>A busbar is a strip or bar of conductive material
+      designed to conduct a substantial current of electricity
+      (http://en.wikipedia.org/wiki/Busbar).</rdfs:comment>
+  </owl:Class>
+
+  <owl:Class rdf:about="http://cptl-c.org/power/2015/07/substation_yard/Generator">
+    <rdfs:subClassOf rdf:resource="&syard;SubstationYardComponent"/>
+    <rdfs:label xml:lang="en">Generator</rdfs:label>
+    <rdfs:comment>A generator is a device that converts mechanical
+    energy to electrical energy for use in an external circuit.
+    Generators provide nearly all of the power for electric power
+    grids
+    (http://en.wikipedia.org/wiki/Electric_generator).</rdfs:comment>
+  </owl:Class>
+
+  <owl:Class rdf:about="http://cptl-c.org/power/2015/07/substation_yard/Node">
+    <rdfs:subClassOf rdf:resource="&syard;SubstationYardComponent"/>
+    <rdfs:label xml:lang="en">Node</rdfs:label>
+    <rdfs:comment>Not sure whether this really belongs here or in an ontology
+      for node-breaker diagrams.</rdfs:comment>
+  </owl:Class>
+  
+  <owl:Class rdf:about="http://cptl-c.org/power/2015/07/substation_yard/Transformer">
+    <rdfs:subClassOf rdf:resource="&syard;SubstationYardComponent"/>
+    <rdfs:label xml:lang="en">Transformer</rdfs:label>
+    <rdfs:comment>A transformer is an electrical device that transfers
+    energy between two or more circuits through electromagnetic
+    induction
+    (http://en.wikipedia.org/wiki/Transformer).</rdfs:comment>
+  </owl:Class>
+
+  <owl:ObjectProperty rdf:about="http://cptl-c.org/power/2015/07/substation_yard/hasLine">
+    <rdfs:subClassOf rdf:resource="&syard;SubstationYardComponent"/>
+    <rdfs:label xml:lang="en">Has Line</rdfs:label>
+    <rdf:type rdf:resource="&owl;SymmetricProperty"/>
+    <rdfs:domain rdf:resource="&syard;SubstationYardComponent"/>
+    <rdfs:range rdf:resource="&syard;SubstationYardComponent"/>
+    <rdfs:comment>An electrical power line between two substation yard 
+      components.</rdfs:comment>
+  </owl:ObjectProperty>    
+</rdf:RDF>

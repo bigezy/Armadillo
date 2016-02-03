@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<!--
+  copyright (c) 2015, Gabriel A. Weaver, Information Trust Institute
+    at the University of Illinois, Urbana-Champaign.
+
+  This file is part of the Cyber-Physical Topology Language for the
+    Power domain.
+
+  This code is free software:  you can redistribute it and/or modify it
+    under the terms of the GNU General Public License as published by the
+    Free Software Foundation, either version 3 of the License, or 
+    (at your option) any later version.
+
+  The Cyber-Physical Topology Language (CPTL):  Electrical Power 
+    is distributed in the hope that it will be useful, but 
+    WITHOUT ANY WARRANTY; without even the implied warranty of 
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU
+    General Public License for more details.
+
+  You should have received a copy of the GNU General Public License
+    along with this program.  If not, see http://www.gnu.org/licenses/
+
+
+MODIFIED BASED ON CODE UNDER FOLLOwING LICENSE:
+Copyright (c) 2010-2015, Michael Bostock
+All rights reserved.
+
+Redistribution and use in source and binary forms, with or without
+modification, are permitted provided that the following conditions are met:
+
+* Redistributions of source code must retain the above copyright notice, this
+  list of conditions and the following disclaimer.
+
+* Redistributions in binary form must reproduce the above copyright notice,
+  this list of conditions and the following disclaimer in the documentation
+  and/or other materials provided with the distribution.
+
+* The name Michael Bostock may not be used to endorse or promote products
+  derived from this software without specific prior written permission.
+
+THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS"
+AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE
+IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE
+DISCLAIMED. IN NO EVENT SHALL MICHAEL BOSTOCK BE LIABLE FOR ANY DIRECT,
+INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING,
+BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE,
+DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY
+OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING
+NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE,
+EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
+-->
+<meta charset="utf-8">
+<style>
+
+  .node {
+  stroke: #fff;
+  stroke-width: 1.5px;
+  }
+
+  .link {
+  stroke: #999;
+  stroke-opacity: .6;
+  }
+
+</style>
+<body>
+  <script src="../js/cptl_hbrowser_js/buckets/buckets.js"></script>
+  <script src="../js/cptl_hbrowser_js/cptl/force_directed_graph.js"></script>
+  <script src="../js/cptl_hbrowser_js/cptl/graph.js"></script>
+  <script src="../js/cptl_hbrowser_js/cptl/hierarchy-tree.js"></script>
+  <script src="../js/cptl_hbrowser_js/cptl/hierarchy-tree-view.js"></script>    
+  <script src="../js/cptl_hbrowser_js/cptl/operations-workbench.js"></script>
+  <script src="../js/cptl_hbrowser_js/cptl/viewutils.js"></script>
+  <script src="../js/cptl_hbrowser_js/d3/d3.v3.min.js"></script>
+  <script src="../js/cptl_hbrowser_js/d3/pinning.js"></script>    
+  <script src="../js/cptl_hbrowser_js/jquery/jquery.min.js"></script>
+  <script src="../js/cptl_hbrowser_js/tree-model/TreeModel.js"></script>  
+  <script>
+
+    var hierarchical_attr_name = "enet:hasDomainNameValue";
+    
+    /* SECONDARY FUNCTIONS **********************************************/
+    /*
+     * Document storage
+    */
+
+    /* Data Loading:  Load all the data necessary for the master application.
+     */
+    function load_json_into_localstorage(json_data_path, storage_key) {
+      d3.json(json_data_path, function(error, json_data) {
+        if (error) {
+          console.log("Failed to open JSON data at " + json_data_path);
+          throw(error);
+        }
+        localStorage.setItem( storage_key, JSON.stringify(json_data) );
+      });
+    }
+    
+    if (window.addEventListener) {
+      window.addEventListener("storage", updateGraphView, false);
+    }
+
+    function handler(e) {
+      console.log("Successfully communicated with other tab");
+      console.log("Received data: " + localStorage.getItem("view") );
+    }
+    
+    function updateGraphView(event) {
+      //console.log("Successfully communicated with other tab");
+      //console.log("Received data: " + localStorage.getItem("view") );
+      
+      if ("view" != event.key) return; 
+
+      if ( localStorage.getItem("view") != null ) {
+    
+          var view = new buckets.Set();
+          var view_arr = localStorage.getItem("view").split(",");
+
+          for (i=0; i < view_arr.length; i++) {
+            view.add( view_arr[i] );			     
+	  }		      
+          json_graph_data_str = localStorage.getItem("json_graph_data");
+          json_graph_data = JSON.parse(json_graph_data_str);
+    
+          json_tree_data_str = localStorage.getItem("json_tree_data");
+          json_tree_data = JSON.parse(json_tree_data_str);
+    
+	  htv = new HierarchyTreeView();    
+          htv.initialize(json_graph_data, json_tree_data);
+	  var induced_graph_data = htv.compute_induced_graph(view);
+
+	  fdg.update_d3_ids( induced_graph_data, "name" );
+
+          force.nodes([]);
+          force.links([]);
+          start();
+			
+          force.nodes( induced_graph_data["nodes"] );
+          force.links( induced_graph_data["links"] );
+          start();        
+      } // looping
+    }// function
+
+    
+    
+    /*
+     * D3JS 
+     */
+    function start() {
+	link = link.data( force.links(), function(d) {
+	    return d.source + "-" + d.target;
+	});
+	link.enter().insert("line", ".node").attr("class", "link");
+	link.exit().remove();
+
+	node = node.data( force.nodes(), function(d) {
+	    return d.id;
+        });
+    
+	node.enter().append("circle")
+	    .attr("class", function(d) { return d["rdfs:type"]; })
+            .attr("r", 20)
+            .attr("filter", function(d) { return get_image_url(d); })
+            .attr(hierarchical_attr_name, function(d) { return d[hierarchical_attr_name]; })
+            .call(node_drag);
+
+        node.append("title")
+           .text(function(d) { return d.name; });
+        node.exit().remove();
+    
+	force.start();
+    }
+    
+    function tick() {
+      node.attr("cx", function(d) { return d.x; })
+          .attr("cy", function(d) { return d.y; });
+
+      link.attr("x1", function(d) { return d.source.x; })
+	  .attr("y1", function(d) { return d.source.y; })
+	  .attr("x2", function(d) { return d.target.x; })
+	  .attr("y2", function(d) { return d.target.y; });
+    }
+    
+    /*
+     *  Annotations  
+     */
+    function get_image_url(d) {
+        var image_url = "#" + d["rdfs:type"] + "_image";
+        return "url(" + image_url + ")";
+    }
+
+    function append_icon_defs( icon_dict, defs_element ) {
+      for (var icon_id in icon_dict) {
+        var icon_path = icon_dict[icon_id];
+        var image_filter = defs_element.append("filter")
+          .attr("id", icon_id + "_image")
+          .attr("x", "0%")
+          .attr("y", "0%")
+          .attr("height", "100%")
+          .attr("width", "100%")
+          .append("feImage")
+          .attr("xlink:href", data_root + icon_path);
+        }
+    } 
+
+    /* APPLICATION LOGIC **********************************************/    
+    var data_root = "../cptl_data_models/cypsa_8sub/data/";
+    load_json_into_localstorage( data_root + "graph/graph.domain-names.json", "json_graph_data" );
+    load_json_into_localstorage( data_root + "hierarchy_tree/domain-names/hierarchy_tree.json", "json_tree_data" );
+    load_json_into_localstorage( data_root + "icons/icon_dict.json", "icon_dict_data" );
+    load_json_into_localstorage( data_root + "hierarchy_tree/domain-names/views.json", "views_data" );
+			
+    /*
+     * Set initial View
+     */
+    var view = new buckets.Set();    
+    var views_data_str = localStorage.getItem("views_data");
+    var views_data = JSON.parse( views_data_str );			
+
+    var current_view_list = views_data["current"];
+    for ( var i = 0; i < current_view_list.length; i++) {
+      var view_str = current_view_list[i];
+      view.add(view_str);			 
+    }			
+			
+    /*
+     * Initialize Hierarchy Tree
+     */
+    json_graph_data_str = localStorage.getItem("json_graph_data");
+    json_graph_data = JSON.parse(json_graph_data_str);
+    
+    json_tree_data_str = localStorage.getItem("json_tree_data");
+    json_tree_data = JSON.parse(json_tree_data_str);
+    
+    //-- Initialize HTV and FDG
+    fdg = new ForceDirectedGraph();
+    htv = new HierarchyTreeView();    
+    htv.initialize(json_graph_data, json_tree_data);
+    
+    /*
+     * Initialize D3JS Force Directed Graph 
+     */
+    var color = d3.scale.category10();
+    var charge = -500;
+    var height = 1000;
+    var link_distance = 100;
+    var width = 1000;
+
+    var nodes = [],
+        links = [];
+    
+    var force = d3.layout.force()
+      .nodes(nodes)
+      .links(links)
+      .charge(charge)
+      .linkDistance(link_distance)
+      .size( [width, height] )
+      .on( "tick", tick );
+
+    var svg = d3.select("body").append("svg")
+      .attr("width", width)
+      .attr("height", height);
+    
+    var node = svg.selectAll(".node"),
+        link = svg.selectAll(".link");
+
+    //-- Add icon annotations 
+    icon_dict_str = localStorage.getItem("icon_dict_data");
+    icon_dict = JSON.parse(icon_dict_str);
+    
+    var defs_element = svg.append("defs");
+    append_icon_defs( icon_dict, defs_element );
+
+    
+    /*
+     * Compute and display induced graph
+     */
+    var node_id_field = "name";        
+    var induced_graph_data = htv.compute_induced_graph(view);
+    fdg.update_d3_ids( induced_graph_data, node_id_field );
+    nodes = induced_graph_data["nodes"];
+    links = induced_graph_data["links"];
+    force.nodes(nodes);
+    force.links(links);
+    start();        
+  </script>
+</body>  

@@ -1,0 +1,122 @@
+{
+  "nodes":
+    [
+	{"name":"ogdenville-yard:Ogdenville-UN-Gen1",
+	 "rdfs:type":"syard:Generator"},
+
+	{"name":"ogdenville-yard:Ogdenville-ND-1",
+	 "rdfs:type":"syard:Node"},
+
+	{"name":"ogdenville-yard:Ogdenville-BRK-14",
+	 "rdfs:type":"syard:Breaker"},
+
+	{"name":"ogdenville-yard:Ogdenville-BRK-12", 
+	 "rdfs:type":"syard:Breaker"},
+
+	{"name":"ogdenville-yard:Ogdenville-ND-2",
+	 "rdfs:type":"syard:Bus"},
+
+	{"name":"ogdenville-yard:Ogdenville-BRK-42", 
+	 "rdfs:type":"syard:Breaker"},
+
+	{"name":"ogdenville-yard:Ogdenville-ND-4",
+	 "rdfs:type":"syard:Bus"},
+
+	{"name":"ogdenville-yard:Ogdenville-BRK-34",
+	 "rdfs:type":"syard:Breaker"},
+
+	{"name":"ogdenville-yard:Ogdenville-ND-3", 
+	 "rdfs:type":"syard:Node"},
+
+	{"name":"ogdenville-yard:Ogdenville-BRK-23", 
+	 "rdfs:type":"syard:Breaker"},
+
+	{"name":"ogdenville-yard:Ogdenville-ND-2", 
+	 "rdfs:type":"syard:Bus"},
+
+	{"name":"ogdenville-yard:Ogdenville-BRK-25", 
+	 "rdfs:type":"syard:Breaker"},
+
+	{"name":"ogdenville-yard:Ogdenville-ND-5", 
+	 "rdfs:type":"syard:Bus"},
+
+	{"name":"ogdenville-yard:Ogdenville-BRK-56", 
+	 "rdfs:type":"syard:Breaker"},
+
+	{"name":"ogdenville-yard:Ogdenville-ND-6", 
+	 "rdfs:type":"syard:Node"},
+
+	{"name":"ogdenville-yard:Ogdenville-BRK-62", 
+	 "rdfs:type":"syard:Breaker"}
+    ],
+  "links":
+    [
+	{"source":"ogdenville-yard:Ogdenville-UN-Gen1",
+	 "target":"ogdenville-yard:Ogdenville-ND-1",
+	 "relation":"syard:hasLine"},
+
+	{"source":"ogdenville-yard:Ogdenville-ND-1",
+	 "target":"ogdenville-yard:Ogdenville-BRK-12",
+	 "relation":"syard:hasLine"},
+
+	{"source":"ogdenville-yard:Ogdenville-ND-1",
+	 "target":"ogdenville-yard:Ogdenville-BRK-14",
+	 "relation":"syard:hasLine"},
+
+	{"source":"ogdenville-yard:Ogdenville-BRK-12",
+	 "target":"ogdenville-yard:Ogdenville-ND-2",
+	 "relation":"syard:hasLine"},
+
+	{"source":"ogdenville-yard:Ogdenville-ND-2",
+	 "target":"ogdenville-yard:Ogdenville-BRK-42",
+	 "relation":"syard:hasLine"},
+
+	{"source":"ogdenville-yard:Ogdenville-BRK-42",
+	 "target":"ogdenville-yard:Ogdenville-ND-4",
+	 "relation":"syard:hasLine"},
+
+	{"source":"ogdenville-yard:Ogdenville-ND-4",
+	 "target":"ogdenville-yard:Ogdenville-BRK-14",
+	 "relation":"syard:hasLine"},
+
+	{"source":"ogdenville-yard:Ogdenville-ND-4",
+	 "target":"ogdenville-yard:Ogdenville-BRK-34",
+	 "relation":"syard:hasLine"},
+
+	{"source":"ogdenville-yard:Ogdenville-BRK-34",
+	 "target":"ogdenville-yard:Ogdenville-ND-3",
+	 "relation":"syard:hasLine"},
+
+	{"source":"ogdenville-yard:Ogdenville-ND-3",
+	 "target":"ogdenville-yard:Ogdenville-BRK-23",
+	 "relation":"syard:hasLine"},
+
+	{"source":"ogdenville-yard:Ogdenville-BRK-23",
+	 "target":"ogdenville-yard:Ogdenville-ND-2",
+	 "relation":"syard:hasLine"},
+
+	{"source":"ogdenville-yard:Ogdenville-ND-2",
+	 "target":"ogdenville-yard:Ogdenville-BRK-25",
+	 "relation":"syard:hasLine"},
+	
+	{"source":"ogdenville-yard:Ogdenville-ND-2",
+	 "target":"ogdenville-yard:Ogdenville-BRK-62",
+	 "relation":"syard:hasLine"},
+
+	{"source":"ogdenville-yard:Ogdenville-BRK-25",
+	 "target":"ogdenville-yard:Ogdenville-ND-5",
+	 "relation":"syard:hasLine"},
+
+	{"source":"ogdenville-yard:Ogdenville-ND-5",
+	 "target":"ogdenville-yard:Ogdenville-BRK-56",
+	 "relation":"syard:hasLine"},
+
+	{"source":"ogdenville-yard:Ogdenville-BRK-56",
+	 "target":"ogdenville-yard:Ogdenville-ND-6",
+	 "relation":"syard:hasLine"},
+
+	{"source":"ogdenville-yard:Ogdenville-ND-6",
+	 "target":"ogdenville-yard:Ogdenville-BRK-62",
+	 "relation":"syard:hasLine"}
+    ]
+}

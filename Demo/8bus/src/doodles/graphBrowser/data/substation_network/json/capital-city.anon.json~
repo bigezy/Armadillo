@@ -1,0 +1,60 @@
+{
+	"nodes":
+	   [
+		{"name":"capital-city-network:Switch_1",
+		 "rdfs:type":"snet:Switch", 
+		 "enet:hasIPValue":"192.168.7.200"},
+
+		{"name":"capital-city-network:DistanceRelay_1",
+		 "rdfs:type":"snet:DistanceRelay", 
+		 "enet:hasIPValue":"10.37.1.201"},
+
+		{"name":"capital-city-network:OvercurrentRelay_1",
+		 "rdfs:type":"snet:OvercurrentRelay", 
+		 "enet:hasIPValue":"10.37.1.101"},
+
+		{"name":"capital-city-network:OvercurrentRelay_2",
+		 "rdfs:type":"snet:OvercurrentRelay", 
+		 "enet:hasIPValue":"10.37.1.102"},
+
+		{"name":"cypress-creek-network:SEL_421_7",
+		 "rdfs:type":"cptlc:Asset"},
+
+		{"name":"capital-city-yard:CapitalCity$BRK$4546",
+		 "rdfs:type":"cptlc:Asset"},
+
+		{"name":"capital-city-yard:CapitalCity$BRK$4647",
+		 "rdfs:type":"cptlc:Asset"}
+	   ],
+	"links":
+	   [
+		{"source":"capital-city-network:Switch_1",
+		 "target":"capital-city-network:OvercurrentRelay_1",
+		 "relation":"cptlc:hasLink"},
+
+		{"source":"capital-city-network:DistanceRelay_1",
+		 "target":"cypress-creek-network:SEL_421_7",
+		 "relation":"cptlc:hasLink"},
+
+		{"source":"capital-city-network:DistanceRelay_1",
+		 "target":"capital-city-network:OvercurrentRelay_2",
+		 "relation":"cptlc:hasLink"},
+
+		{"source":"capital-city-network:DistanceRelay_1",
+		 "target":"capital-city-yard:CapitalCity$BRK$4546",
+		 "relation":"snet:hasBreakerConnections"},
+
+		{"source":"capital-city-network:OvercurrentRelay_1",
+		 "target":"capital-city-network:DistanceRelay_1",
+		 "relation":"cptlc:hasLink"},
+
+		{"source":"capital-city-network:OvercurrentRelay_1",
+		 "target":"capital-city-yard:CapitalCity$BRK$4546",
+		 "relation":"snet:hasBreakerConnections"},
+
+		{"source":"capital-city-network:OvercurrentRelay_2",
+		 "target":"capital-city-yard:CapitalCity$BRK$4647",
+		 "relation":"snet:hasBreakerConnections"}
+
+	   ]
+}

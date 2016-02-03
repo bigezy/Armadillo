@@ -1,0 +1,120 @@
+<cypsa:GetAssetInventory
+  <request>
+    <requestName>GetAssetInventory</requestName>
+  </request>
+  <reply>
+      
+    <Assets xmlns="http://cypsa.org/xmlns/asi"
+	    xmlns:dc="http://purl.org/dc/elements/1.1"
+	    asiversion="0.5">
+
+      <assetgroup projid="8sub:capital-city">
+	<groupname xml:lang="eng">Capital City</groupname>
+	<work projid="8sub:node-breaker" xml:lang="eng">
+	  <title xml:lang="eng">Node Breaker</title>
+	</work>
+	<work projid="8sub:network" xml:lang="eng">
+	  <title xml:lang="eng">Substation Network</title>
+	</work>	
+      </assetgroup>
+      
+      <assetgroup projid="8sub:control-center">
+	<groupname xml:lang="eng">Control Center</groupname>
+	<work projid="8sub:network" xml:lang="eng">
+	  <title xml:lang="eng">Network</title>
+	</work>	
+      </assetgroup>
+
+      <assetgroup projid="8sub:cyprus-creek">
+	<groupname xml:lang="eng">Cyprus Creek</groupname>
+	<work projid="8sub:node-breaker" xml:lang="eng">
+	  <title xml:lang="eng">Node Breaker</title>
+	</work>
+	<work projid="8sub:network" xml:lang="eng">
+	  <title xml:lang="eng">Substation Network</title>
+	</work>	
+      </assetgroup>
+
+      <assetgroup projid="8sub:haverbrook">
+	<groupname xml:lang="eng">Haverbrook</groupname>
+	<work projid="8sub:node-breaker" xml:lang="eng">
+	  <title xml:lang="eng">Node Breaker</title>
+	</work>
+	<work projid="8sub:network" xml:lang="eng">
+	  <title xml:lang="eng">Substation Network</title>
+	</work>	
+      </assetgroup>
+
+      <assetgroup projid="8sub:north-haverbrook">
+	<groupname xml:lang="eng">North Haverbrook</groupname>
+	<work projid="8sub:node-breaker" xml:lang="eng">
+	  <title xml:lang="eng">Node Breaker</title>
+	</work>
+	<work projid="8sub:network" xml:lang="eng">
+	  <title xml:lang="eng">Substation Network</title>
+	</work>	
+      </assetgroup>
+            
+      <assetgroup projid="8sub:ogdenville">
+	<groupname xml:lang="eng">Ogdenville</groupname>
+	<work projid="8sub:node-breaker" xml:lang="eng">
+	  <title xml:lang="eng">Node Breaker</title>
+	  <edition projid="8sub:man1">
+	    <label xml:lang="eng">Manually Generated Node Breaker Model</label>
+	    <dc:date>2014-10-4</dc:date>
+	    <online docname="8sub/substation_yard/ogdenville.json">
+	      <validate schema="https://github.com/ITI/cptl-power/blob/master/src/grammars/json/substation_yard.grammar"/>
+	    </online>
+	  </edition>
+	  <edition projid="8sub:powerworld">
+	    <label xml:lang="eng">PowerWorld Generated Node Breaker Model</label>
+	    <dc:date>2014-10-4</dc:date>
+	  </edition>
+	</work>
+	<work projid="8sub:network" xml:lang="eng">
+	  <title xml:lang="eng">Substation Network</title>
+	  <edition projid="8sub:man1">
+	    <label xml:lang="eng">Manually Generated Substation Network</label>
+	    <dc:date>2014-10-4</dc:date>
+	    <online docname="8sub/substation_network/ogdenville.json">
+	      <validate schema="https://github.com/ITI/cptl-power/blob/master/src/grammars/json/substation_network.grammar"/>
+	    </online>
+	  </edition>
+	</work>
+      </assetgroup>
+
+      <assetgroup projid="8sub:paris">
+	<groupname xml:lang="eng">Paris</groupname>
+	<work projid="8sub:node-breaker" xml:lang="eng">
+	  <title xml:lang="eng">Node Breaker</title>
+	</work>
+	<work projid="8sub:network" xml:lang="eng">
+	  <title xml:lang="eng">Substation Network</title>
+	</work>	
+      </assetgroup>
+
+      <assetgroup projid="8sub:shelbyville">
+	<groupname xml:lang="eng">Shelbyville</groupname>
+	<work projid="8sub:node-breaker" xml:lang="eng">
+	  <title xml:lang="eng">Node Breaker</title>
+	</work>
+	<work projid="8sub:network" xml:lang="eng">
+	  <title xml:lang="eng">Substation Network</title>
+	</work>	
+      </assetgroup>
+
+      <assetgroup projid="8sub:springfield">
+	<groupname xml:lang="eng">Springfield</groupname>
+	<work projid="8sub:node-breaker" xml:lang="eng">
+	  <title xml:lang="eng">Node Breaker</title>
+	</work>
+	<work projid="8sub:network" xml:lang="eng">
+	  <title xml:lang="eng">Substation Network</title>
+	</work>	
+      </assetgroup>
+      
+    </Assets>
+
+    
+  </reply>
+</cypsa:GetAssetInventory>

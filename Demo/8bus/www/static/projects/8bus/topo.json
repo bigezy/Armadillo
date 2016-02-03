@@ -1,0 +1,12 @@
+{
+	"rows":[
+		{"LocationID":"CAPCITY","LocationName":"Capital City","PhysicalStatus":"n/a","CyberStatus":"n/a","Rank":"n/a"},
+		{"LocationID":"CYCREEK","LocationName":"Cypress Creek","PhysicalStatus":"n/a","CyberStatus":"n/a","Rank":"n/a"},
+		{"LocationID":"HVRBRK","LocationName":"Haverbrook","PhysicalStatus":"n/a","CyberStatus":"n/a","Rank":"n/a"},
+		{"LocationID":"NHVRBRK","LocationName":"North Haverbrook","PhysicalStatus":"n/a","CyberStatus":"n/a","Rank":"n/a"},
+		{"LocationID":"OGDVL","LocationName":"Ogdenville","PhysicalStatus":"n/a","CyberStatus":"n/a","Rank":"n/a"},
+		{"LocationID":"PARIS","LocationName":"Paris","PhysicalStatus":"n/a","CyberStatus":"n/a","Rank":"n/a"},
+		{"LocationID":"SHLBVL","LocationName":"Shelbyville","PhysicalStatus":"n/a","CyberStatus":"n/a","Rank":"n/a"},
+		{"LocationID":"SPGFLD","LocationName":"Springfield","PhysicalStatus":"n/a","CyberStatus":"n/a","Rank":"n/a"}		
+	]
+}

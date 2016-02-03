@@ -1,0 +1,46 @@
+<html>
+  <head>
+    <title>Installation Prerequisites</title>
+    <link type="text/css" rel="stylesheet" href="css/episteme.css"/>
+  </head>
+  <body>
+    <div id="wrapper">
+      <div id="navigation">
+	<a href="index.html">home page</a> |
+	<a href="install.html">install</a> |
+	<a href="framework/index.html">framework</a> |
+	<a href="publications.html">publications</a>
+      </div>
+
+      <h1>Data</h1>
+      <h2>8 Substation Model</h2>
+      <p>By default, the CyPSA application runs on an 8 substation model.
+	The model lives at the CPTL Power GitHub as an example of
+	CPTL.  Therefore, one must download it as a dataset for the
+	CyPSA application.  In the future, this can be turned into a script.</p>
+      <ol>
+	<li><code>cd projects/8bus</code></li>
+	<li><code>mkdir cptl</code></li>
+	<li><code>git init</code></li>
+	<li><code>git remote add -f origin https://github.com/ITI/cptl-power.git</code></li>
+	<li><code>git config core.sparsecheckout true</code></li>
+	<li><code>echo data/substation_network >> .git/info/sparse-checkout</code></li>
+	<li><code>echo data/substation_yard >> .git/info/sparse-checkout</code></li>
+	<li><code>git checkout master</code></li>
+      </ol>
+
+      <h1>Code</h1>
+      <h2>Concordion</h2>
+      <p><a href="http://concordion.org">Concordion</a> provides a way
+	to relate a specification with a set of unit tests.  Since
+	the project is being developed in Python, we do the following:</p>
+      <ul>
+	<li>Download <a href="https://code.google.com/p/pyconcordion/source/checkout">PyConcordion</a>.</li>
+	<li>Download <a href="https://github.com/concordion/pyconcordion2/tree/master/pyconcordion2">PyConcordion2</a>.</li>
+	<li>Run <code>ant test</code> from the command line to run the CyPSA tests.</li>
+	<li>Look at the output generated in the <code>/tmp/pyConcordion/</code> folder.</li>
+      </ul>
+    </div>
+  </body>
+</html>
+

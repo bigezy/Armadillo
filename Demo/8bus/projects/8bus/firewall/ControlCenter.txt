@@ -1,0 +1,295 @@
+: Saved
+:
+ASA Version 8.2(5)
+!
+hostname ciscoasa
+domain-name iti.lab
+enable password 8Ry2YjIyt7RRXU24 encrypted
+passwd 2KFQnbNIdI.2KYOU encrypted
+names
+!
+interface Ethernet0/0
+ nameif outside
+ security-level 0
+ ip address 72.36.82.50 255.255.255.0
+!
+interface Ethernet0/1
+ nameif inside
+ security-level 100
+ ip address 10.1.1.1 255.255.255.0
+!
+interface Ethernet0/2
+ nameif dmz
+ security-level 50
+ ip address 10.39.1.1 255.255.255.0
+!
+interface Ethernet0/3
+ shutdown
+ no nameif
+ no security-level
+ no ip address
+!
+interface Management0/0
+ shutdown
+ no nameif
+ no security-level
+ no ip address
+!
+boot system disk0:/asa825-k8.bin
+ftp mode passive
+dns server-group DefaultDNS
+ domain-name iti.lab
+object-group network EMS_SERVERS
+ network-object host 72.36.82.195
+object-group network FTP_SERVER
+ network-object host 72.36.82.194
+object-group network ICCP_SERVERS
+ network-object host 72.36.82.196
+object-group network EMS_FEP
+ network-object host 72.36.82.194
+object-group network CAPITALCITY
+ network-object host 10.37.1.250
+object-group network SPRINGFIELD
+ network-object host 10.38.1.250
+object-group network SHELBYVILLE
+ network-object host 10.36.1.250
+object-group network PARIS
+ network-object host 10.35.1.250
+object-group network OGDENVILLE
+ network-object host 10.34.1.250
+object-group network NORTHHAVERBROOK
+ network-object host 10.33.1.250
+object-group network HAVERBROOK
+ network-object host 10.32.1.250
+object-group network CYPRESSCREEK
+ network-object host 10.31.1.250
+object-group network CYP_CREEK_451
+ network-object host 10.31.1.101
+ network-object host 10.31.1.102
+ network-object host 10.31.1.103
+ network-object host 10.31.1.104
+ network-object host 10.31.1.105
+object-group network CYP_CREEK_421
+ network-object host 10.31.1.201
+ network-object host 10.31.1.202
+ network-object host 10.31.1.203
+ network-object host 10.31.1.204
+ network-object host 10.31.1.205
+ network-object host 10.31.1.206
+ network-object host 10.31.1.207
+object-group network CAP_CITY_451
+ network-object host 10.37.1.101
+ network-object host 10.37.1.102
+object-group network CAP_CITY_421
+ network-object host 10.37.1.201
+object-group network HAV_421
+ network-object host 10.32.1.201
+object-group network NHAV_451
+ network-object host 10.33.1.101
+ network-object host 10.33.1.102
+ network-object host 10.33.1.103
+ network-object host 10.33.1.104
+ network-object host 10.33.1.105
+ network-object host 10.33.1.106
+ network-object host 10.33.1.107
+object-group network NHAV_421
+ network-object host 10.33.1.201
+ network-object host 10.33.1.202
+ network-object host 10.33.1.203
+object-group network OGVL_451
+ network-object host 10.34.1.101
+ network-object host 10.34.1.102
+ network-object host 10.34.1.103
+object-group network OGVL_421
+ network-object host 10.34.1.201
+ network-object host 10.34.1.202
+object-group network PARIS_451
+ network-object host 10.35.1.101
+ network-object host 10.35.1.102
+ network-object host 10.35.1.103
+ network-object host 10.35.1.104
+object-group network PARIS_421
+ network-object host 10.35.1.201
+ network-object host 10.35.1.202
+ network-object host 10.35.1.203
+object-group network SPFD_451
+ network-object host 10.38.1.101
+ network-object host 10.38.1.102
+ network-object host 10.38.1.103
+ network-object host 10.38.1.104
+ network-object host 10.38.1.105
+object-group network SPFD_421
+ network-object host 10.38.1.201
+ network-object host 10.38.1.202
+ network-object host 10.38.1.203
+object-group network SHEL_451
+ network-object host 10.36.1.101
+ network-object host 10.36.1.102
+ network-object host 10.36.1.103
+ network-object host 10.36.1.104
+ network-object host 10.36.1.105
+object-group network SHEL_421
+ network-object host 10.36.1.201
+ network-object host 10.36.1.202
+ network-object host 10.36.1.203
+object-group network DIST
+ group-object SPRINGFIELD
+ group-object SHELBYVILLE
+ group-object PARIS
+ group-object OGDENVILLE
+ group-object NORTHHAVERBROOK
+ group-object HAVERBROOK
+ group-object CYPRESSCREEK
+ group-object CYP_CREEK_451
+ group-object CYP_CREEK_421
+ group-object OGVL_451
+ group-object OGVL_421
+ group-object PARIS_451
+ group-object PARIS_421
+ group-object SHEL_451
+ group-object SHEL_421
+object-group network DIST_FTP
+ group-object CAPITALCITY
+ group-object CAP_CITY_451
+ group-object CAP_CITY_421
+ group-object HAV_421
+ group-object NHAV_451
+ group-object NHAV_421
+ group-object SPFD_451
+ group-object SPFD_421
+object-group service FTP_DATA tcp
+ port-object eq ftp-data
+ port-object eq ftp
+ port-object eq nfs
+object-group service HTTP tcp
+ port-object eq www
+ port-object eq https
+object-group service SCADA tcp
+ port-object eq 7000
+ port-object eq www
+object-group service ICCP_DATA tcp
+ port-object eq 102
+ port-object eq 8080
+object-group network PEER_UTILS
+ network-object host 192.17.102.102
+ network-object host 192.17.102.103
+ network-object host 192.17.102.104
+object-group network VENDOR_ACCESS
+ network-object host 70.32.128.22
+ network-object host 70.32.128.74
+ network-object host 70.32.128.171
+object-group network JUMP_HOST
+ network-object host 10.39.1.22
+access-list FromOUTSIDE remark ***** BEGIN FromINSIDE ACL *****
+access-list FromOUTSIDE remark allow access to DIST RELAYS
+access-list FromOUTSIDE extended permit tcp object-group EMS_SERVERS object-group DIST object-group SCADA
+access-list FromOUTSIDE remark allow Peer Utilities Access to Substations via ICCP
+access-list FromOUTSIDE extended permit tcp object-group PEER_UTILS object-group DIST object-group ICCP_DATA
+access-list FromOUTSIDE remark allow Google (Vendor) access to RTU
+access-list FromOUTSIDE extended permit tcp object-group VENDOR_ACCESS object-group DIST eq ssh
+access-list FromOUTSIDE extended permit tcp any object-group JUMP_HOST eq ssh
+access-list FromOUTSIDE extended deny ip any any
+access-list FromOUTSIDE remark ***** END FromINSIDE ACL *****
+access-list FromOUTSIDE extended permit tcp object-group JUMP_HOST object-group DIST eq ssh
+access-list FromOUTSIDE remark ***** END FromOUTSIDE ACL *****
+access-list FromINSIDE remark ***** BEGIN FromOUTSIDE ACL *****
+access-list FromINSIDE remark allow DIST access to EMS FEP
+access-list FromINSIDE extended permit tcp object-group DIST object-group EMS_FEP object-group ICCP_DATA
+access-list FromINSIDE remark allow RTU access to FTP
+access-list FromINSIDE extended permit tcp object-group DIST_FTP object-group FTP_SERVER object-group FTP_DATA
+access-list FromINSIDE extended deny ip any any
+access-list FromDMZ remark ************ DMZ for jump hosts ***********
+access-list FromDMZ extended permit tcp object-group JUMP_HOST object-group DIST eq ssh
+access-list FromDMZ extended permit tcp object-group JUMP_HOST object-group DIST_FTP eq ssh
+access-list FromDMZ remark ************** End Jump Host DMZ  *************
+pager lines 24
+mtu outside 1500
+mtu inside 1500
+mtu dmz 1500
+no failover
+icmp unreachable rate-limit 1 burst-size 1
+no asdm history enable
+arp timeout 14400
+access-group FromOUTSIDE in interface outside
+access-group FromINSIDE in interface inside
+access-group FromDMZ in interface dmz
+route outside 0.0.0.0 0.0.0.0 72.36.82.1 1
+route outside 72.0.0.0 255.0.0.0 72.36.82.1
+route outside 192.17.0.0 255.255.0.0 72.36.82.1
+route inside 10.31.1.0 255.255.255.0 10.1.1.9 1
+route inside 10.32.1.0 255.255.255.0 10.1.1.2 1
+route inside 10.33.1.0 255.255.255.0 10.1.1.3 1
+route inside 10.34.1.0 255.255.255.0 10.1.1.4 1
+route inside 10.35.1.0 255.255.255.0 10.1.1.5 1
+route inside 10.36.1.0 255.255.255.0 10.1.1.7 1
+route inside 10.37.1.0 255.255.255.0 10.1.1.7 1
+route inside 10.38.1.0 255.255.255.0 10.1.1.8 1
+timeout xlate 3:00:00
+timeout conn 1:00:00 half-closed 0:10:00 udp 0:02:00 icmp 0:00:02
+timeout sunrpc 0:10:00 h323 0:05:00 h225 1:00:00 mgcp 0:05:00 mgcp-pat 0:05:00
+timeout sip 0:30:00 sip_media 0:02:00 sip-invite 0:03:00 sip-disconnect 0:02:00
+timeout sip-provisional-media 0:02:00 uauth 0:05:00 absolute
+timeout tcp-proxy-reassembly 0:01:00
+timeout floating-conn 0:00:00
+dynamic-access-policy-record DfltAccessPolicy
+aaa authentication ssh console LOCAL
+no snmp-server location
+no snmp-server contact
+snmp-server enable traps snmp authentication linkup linkdown coldstart
+crypto ipsec security-association lifetime seconds 28800
+crypto ipsec security-association lifetime kilobytes 4608000
+telnet timeout 5
+ssh 72.36.82.0 255.255.255.0 outside
+ssh 10.1.1.0 255.255.255.0 inside
+ssh timeout 10
+console timeout 0
+dhcpd address 10.1.1.10-10.1.1.99 inside
+!
+threat-detection basic-threat
+threat-detection statistics access-list
+no threat-detection statistics tcp-intercept
+username root password Ouupee5Z0FPOp2AB encrypted
+!
+class-map inspection_default
+ match default-inspection-traffic
+!
+!
+policy-map type inspect dns preset_dns_map
+ parameters
+  message-length maximum client auto
+  message-length maximum 512
+policy-map global_policy
+ class inspection_default
+  inspect dns preset_dns_map
+  inspect ftp
+  inspect h323 h225
+  inspect h323 ras
+  inspect netbios
+  inspect rsh
+  inspect rtsp
+  inspect skinny
+  inspect esmtp
+  inspect sqlnet
+  inspect sunrpc
+  inspect tftp
+  inspect sip
+  inspect xdmcp
+  inspect ip-options
+!
+service-policy global_policy global
+prompt hostname context
+no call-home reporting anonymous
+call-home
+ profile CiscoTAC-1
+  no active
+  destination address http https://tools.cisco.com/its/service/oddce/services/DDCEService
+  destination address email callhome@cisco.com
+  destination transport-method http
+  subscribe-to-alert-group diagnostic
+  subscribe-to-alert-group environment
+  subscribe-to-alert-group inventory periodic monthly
+  subscribe-to-alert-group configuration periodic monthly
+  subscribe-to-alert-group telemetry periodic daily
+Cryptochecksum:90db155be3e67277947a7f8d70fa792b
+: end
+[OK]

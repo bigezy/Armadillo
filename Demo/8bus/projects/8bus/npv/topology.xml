@@ -1,0 +1,4301 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<!DOCTYPE Topology [ 
+<!ELEMENT Topology (Network*, Device*, Tunnel*)>
+<!ATTLIST Topology dtdVersion CDATA #IMPLIED>
+
+<!ELEMENT Network (Description*)>
+<!ATTLIST Network name CDATA #REQUIRED>
+<!ATTLIST Network aliases CDATA #IMPLIED>
+<!ATTLIST Network id CDATA #REQUIRED>
+<!ATTLIST Network parentId CDATA #IMPLIED>
+<!ATTLIST Network netAddress CDATA #REQUIRED>
+<!ATTLIST Network netMask CDATA #REQUIRED>
+<!ATTLIST Network critical (true|false) #REQUIRED>
+<!ATTLIST Network network_type CDATA #REQUIRED>
+<!ATTLIST Network tunnel_network_hub_node_id CDATA #REQUIRED>
+<!ATTLIST Network cloud (true|false) #REQUIRED>
+<!ATTLIST Network hidden (true|false) #IMPLIED>
+<!ATTLIST Network nodeRefId CDATA #IMPLIED>
+<!ATTLIST Network rooted (src|dst|both) #IMPLIED>
+<!ATTLIST Network group CDATA #IMPLIED>
+
+<!ELEMENT Device (Description*, DNSServer*, NIC*,Service*)>
+<!ATTLIST Device name CDATA #REQUIRED>
+<!ATTLIST Device aliases CDATA #IMPLIED>
+<!ATTLIST Device id CDATA #REQUIRED>
+<!ATTLIST Device type (firewall|router|host|gateway|range|cluster|host_router) #REQUIRED>
+<!ATTLIST Device members CDATA #IMPLIED>
+<!ATTLIST Device pseudo (true|false) #IMPLIED>
+<!ATTLIST Device hidden (true|false) #IMPLIED>
+<!ATTLIST Device nodeRefId CDATA #IMPLIED>
+<!ATTLIST Device rooted (src|dst|both) #IMPLIED>
+<!ATTLIST Device group CDATA #IMPLIED>
+<!ATTLIST Device status CDATA #IMPLIED>
+<!ATTLIST Device oses CDATA #IMPLIED>
+
+<!ELEMENT NIC EMPTY>
+<!ATTLIST NIC name CDATA #IMPLIED>
+<!ATTLIST NIC ipAddress CDATA #REQUIRED>
+<!ATTLIST NIC nodeRefId CDATA #IMPLIED>
+
+<!ELEMENT Service (Vulnerability*)>
+<!ATTLIST Service name CDATA #REQUIRED>
+<!ATTLIST Service product CDATA #IMPLIED>
+<!ATTLIST Service version CDATA #IMPLIED>
+<!ATTLIST Service protocol CDATA #REQUIRED>
+<!ATTLIST Service port CDATA #REQUIRED>
+
+<!ELEMENT Vulnerability EMPTY>
+<!ATTLIST Vulnerability id CDATA #REQUIRED>
+<!ATTLIST Vulnerability cvssVector CDATA #IMPLIED>
+<!ATTLIST Vulnerability cvssBaseScore CDATA #IMPLIED>
+<!ATTLIST Vulnerability cvssExploitSubScore CDATA #IMPLIED>
+<!ATTLIST Vulnerability cvssImpactSubScore CDATA #IMPLIED>
+
+<!ELEMENT Tunnel (Description*)>
+<!ATTLIST Tunnel encryption (none|ipsec|ssl|l2tp|pptp) #IMPLIED>
+<!ATTLIST Tunnel id CDATA #REQUIRED>
+<!ATTLIST Tunnel dialup (true|false) #IMPLIED>
+<!ATTLIST Tunnel endpoint_1 CDATA #REQUIRED>
+<!ATTLIST Tunnel interface_1 CDATA #REQUIRED>
+<!ATTLIST Tunnel address_1 CDATA #REQUIRED>
+<!ATTLIST Tunnel endpoint_2 CDATA #REQUIRED>
+<!ATTLIST Tunnel interface_2 CDATA #REQUIRED>
+<!ATTLIST Tunnel address_2 CDATA #REQUIRED>
+<!ATTLIST Tunnel name CDATA #IMPLIED>
+
+<!ELEMENT Description (#PCDATA)>
+
+<!ELEMENT DNSServer (#PCDATA)>
+]>
+
+<Topology
+ dtdVersion="1.5.20">
+    <Network
+     aliases="inside"
+     cloud="false"
+     critical="false"
+     hidden="false"
+     id="1878"
+     name="10.32.1.0/24"
+     netAddress="10.32.1.0"
+     netMask="255.255.255.0"
+     network_type="standard"
+     tunnel_network_hub_node_id="None" />
+    <Network
+     aliases="outside"
+     cloud="false"
+     critical="false"
+     hidden="false"
+     id="1875"
+     name="72.36.82.0/24"
+     netAddress="72.36.82.0"
+     netMask="255.255.255.0"
+     network_type="standard"
+     tunnel_network_hub_node_id="None" />
+    <Network
+     aliases="inside"
+     cloud="false"
+     critical="false"
+     hidden="false"
+     id="1877"
+     name="10.31.1.0/24"
+     netAddress="10.31.1.0"
+     netMask="255.255.255.0"
+     network_type="standard"
+     tunnel_network_hub_node_id="None" />
+    <Network
+     aliases="inside"
+     cloud="false"
+     critical="false"
+     hidden="false"
+     id="1871"
+     name="10.34.1.0/24"
+     netAddress="10.34.1.0"
+     netMask="255.255.255.0"
+     network_type="standard"
+     tunnel_network_hub_node_id="None" />
+    <Network
+     aliases="inside"
+     cloud="false"
+     critical="false"
+     hidden="false"
+     id="1873"
+     name="10.36.1.0/24"
+     netAddress="10.36.1.0"
+     netMask="255.255.255.0"
+     network_type="standard"
+     tunnel_network_hub_node_id="None" />
+    <Network
+     aliases="inside"
+     cloud="false"
+     critical="false"
+     hidden="false"
+     id="1872"
+     name="10.35.1.0/24"
+     netAddress="10.35.1.0"
+     netMask="255.255.255.0"
+     network_type="standard"
+     tunnel_network_hub_node_id="None" />
+    <Network
+     aliases="outside"
+     cloud="false"
+     critical="false"
+     hidden="false"
+     id="1868"
+     name="10.1.1.0/24"
+     netAddress="10.1.1.0"
+     netMask="255.255.255.0"
+     network_type="standard"
+     tunnel_network_hub_node_id="None" />
+    <Network
+     aliases="inside"
+     cloud="false"
+     critical="false"
+     hidden="false"
+     id="1869"
+     name="10.37.1.0/24"
+     netAddress="10.37.1.0"
+     netMask="255.255.255.0"
+     network_type="standard"
+     tunnel_network_hub_node_id="None" />
+    <Network
+     cloud="false"
+     critical="false"
+     hidden="true"
+     id="2029"
+     name="72.0.0.0/8"
+     netAddress="72.0.0.0"
+     netMask="255.0.0.0"
+     network_type="standard"
+     nodeRefId="2028"
+     rooted="dst"
+     tunnel_network_hub_node_id="None" />
+    <Network
+     aliases="inside"
+     cloud="false"
+     critical="false"
+     hidden="false"
+     id="1870"
+     name="10.33.1.0/24"
+     netAddress="10.33.1.0"
+     netMask="255.255.255.0"
+     network_type="standard"
+     tunnel_network_hub_node_id="None" />
+    <Network
+     cloud="false"
+     critical="false"
+     hidden="true"
+     id="1881"
+     name="Internet"
+     netAddress="0.0.0.0"
+     netMask="0.0.0.0"
+     network_type="standard"
+     nodeRefId="1880"
+     tunnel_network_hub_node_id="None" />
+    <Network
+     cloud="false"
+     critical="false"
+     hidden="true"
+     id="1882"
+     name="unmapped"
+     netAddress="0.0.0.0"
+     netMask="0.0.0.0"
+     network_type="standard"
+     nodeRefId="1880"
+     tunnel_network_hub_node_id="None" />
+    <Network
+     aliases="inside"
+     cloud="false"
+     critical="false"
+     hidden="false"
+     id="1874"
+     name="10.38.1.0/24"
+     netAddress="10.38.1.0"
+     netMask="255.255.255.0"
+     network_type="standard"
+     tunnel_network_hub_node_id="None" />
+    <Network
+     cloud="false"
+     critical="false"
+     hidden="true"
+     id="2030"
+     name="192.17.0.0/16"
+     netAddress="192.17.0.0"
+     netMask="255.255.0.0"
+     network_type="standard"
+     nodeRefId="2028"
+     rooted="dst"
+     tunnel_network_hub_node_id="None" />
+    <Network
+     aliases="dmz"
+     cloud="false"
+     critical="false"
+     hidden="false"
+     id="1876"
+     name="10.39.1.0/24"
+     netAddress="10.39.1.0"
+     netMask="255.255.255.0"
+     network_type="standard"
+     tunnel_network_hub_node_id="None" />
+    <Device
+     hidden="false"
+     id="1920"
+     name="10.33.1.103"
+     pseudo="false"
+     type="host">
+        <Description>10.33.1.103
+        </Description>
+        <NIC
+         ipAddress="10.33.1.103"
+         name="NPV_IFACE_1919"
+         nodeRefId="1870" />
+    </Device>
+    <Device
+     hidden="false"
+     id="1922"
+     name="10.33.1.104"
+     pseudo="false"
+     type="host">
+        <Description>10.33.1.104
+        </Description>
+        <NIC
+         ipAddress="10.33.1.104"
+         name="NPV_IFACE_1921"
+         nodeRefId="1870" />
+    </Device>
+    <Device
+     hidden="false"
+     id="1924"
+     name="10.33.1.105"
+     pseudo="false"
+     type="host">
+        <Description>10.33.1.105
+        </Description>
+        <NIC
+         ipAddress="10.33.1.105"
+         name="NPV_IFACE_1923"
+         nodeRefId="1870" />
+    </Device>
+    <Device
+     hidden="false"
+     id="1926"
+     name="10.33.1.106"
+     pseudo="false"
+     type="host">
+        <Description>10.33.1.106
+        </Description>
+        <NIC
+         ipAddress="10.33.1.106"
+         name="NPV_IFACE_1925"
+         nodeRefId="1870" />
+    </Device>
+    <Device
+     hidden="false"
+     id="1928"
+     name="10.33.1.107"
+     pseudo="false"
+     type="host">
+        <Description>10.33.1.107
+        </Description>
+        <NIC
+         ipAddress="10.33.1.107"
+         name="NPV_IFACE_1927"
+         nodeRefId="1870" />
+    </Device>
+    <Device
+     aliases="NORTHHAVERBROOK"
+     hidden="false"
+     id="1930"
+     name="10.33.1.250"
+     pseudo="false"
+     type="host">
+        <Description>10.33.1.250
+        </Description>
+        <NIC
+         ipAddress="10.33.1.250"
+         name="NPV_IFACE_1929"
+         nodeRefId="1870" />
+    </Device>
+    <Device
+     aliases="OGDENVILLE"
+     hidden="false"
+     id="1932"
+     name="10.34.1.250"
+     pseudo="false"
+     type="host">
+        <Description>10.34.1.250
+        </Description>
+        <NIC
+         ipAddress="10.34.1.250"
+         name="NPV_IFACE_1931"
+         nodeRefId="1871" />
+    </Device>
+    <Device
+     hidden="false"
+     id="1934"
+     name="10.34.1.201"
+     pseudo="false"
+     type="host">
+        <Description>10.34.1.201
+        </Description>
+        <NIC
+         ipAddress="10.34.1.201"
+         name="NPV_IFACE_1933"
+         nodeRefId="1871" />
+    </Device>
+    <Device
+     hidden="false"
+     id="1936"
+     name="10.34.1.202"
+     pseudo="false"
+     type="host">
+        <Description>10.34.1.202
+        </Description>
+        <NIC
+         ipAddress="10.34.1.202"
+         name="NPV_IFACE_1935"
+         nodeRefId="1871" />
+    </Device>
+    <Device
+     hidden="false"
+     id="1938"
+     name="10.34.1.101"
+     pseudo="false"
+     type="host">
+        <Description>10.34.1.101
+        </Description>
+        <NIC
+         ipAddress="10.34.1.101"
+         name="NPV_IFACE_1937"
+         nodeRefId="1871" />
+    </Device>
+    <Device
+     hidden="false"
+     id="1940"
+     name="10.34.1.102"
+     pseudo="false"
+     type="host">
+        <Description>10.34.1.102
+        </Description>
+        <NIC
+         ipAddress="10.34.1.102"
+         name="NPV_IFACE_1939"
+         nodeRefId="1871" />
+    </Device>
+    <Device
+     hidden="false"
+     id="1942"
+     name="10.34.1.103"
+     pseudo="false"
+     type="host">
+        <Description>10.34.1.103
+        </Description>
+        <NIC
+         ipAddress="10.34.1.103"
+         name="NPV_IFACE_1941"
+         nodeRefId="1871" />
+    </Device>
+    <Device
+     aliases="PARIS"
+     hidden="false"
+     id="1944"
+     name="10.35.1.250"
+     pseudo="false"
+     type="host">
+        <Description>10.35.1.250
+        </Description>
+        <NIC
+         ipAddress="10.35.1.250"
+         name="NPV_IFACE_1943"
+         nodeRefId="1872" />
+    </Device>
+    <Device
+     hidden="false"
+     id="1946"
+     name="10.35.1.201"
+     pseudo="false"
+     type="host">
+        <Description>10.35.1.201
+        </Description>
+        <NIC
+         ipAddress="10.35.1.201"
+         name="NPV_IFACE_1945"
+         nodeRefId="1872" />
+    </Device>
+    <Device
+     hidden="false"
+     id="1948"
+     name="10.35.1.202"
+     pseudo="false"
+     type="host">
+        <Description>10.35.1.202
+        </Description>
+        <NIC
+         ipAddress="10.35.1.202"
+         name="NPV_IFACE_1947"
+         nodeRefId="1872" />
+    </Device>
+    <Device
+     hidden="false"
+     id="1950"
+     name="10.35.1.203"
+     pseudo="false"
+     type="host">
+        <Description>10.35.1.203
+        </Description>
+        <NIC
+         ipAddress="10.35.1.203"
+         name="NPV_IFACE_1949"
+         nodeRefId="1872" />
+    </Device>
+    <Device
+     hidden="false"
+     id="1952"
+     name="10.35.1.101"
+     pseudo="false"
+     type="host">
+        <Description>10.35.1.101
+        </Description>
+        <NIC
+         ipAddress="10.35.1.101"
+         name="NPV_IFACE_1951"
+         nodeRefId="1872" />
+    </Device>
+    <Device
+     hidden="false"
+     id="1954"
+     name="10.35.1.102"
+     pseudo="false"
+     type="host">
+        <Description>10.35.1.102
+        </Description>
+        <NIC
+         ipAddress="10.35.1.102"
+         name="NPV_IFACE_1953"
+         nodeRefId="1872" />
+    </Device>
+    <Device
+     hidden="false"
+     id="1956"
+     name="10.35.1.103"
+     pseudo="false"
+     type="host">
+        <Description>10.35.1.103
+        </Description>
+        <NIC
+         ipAddress="10.35.1.103"
+         name="NPV_IFACE_1955"
+         nodeRefId="1872" />
+    </Device>
+    <Device
+     hidden="false"
+     id="1958"
+     name="10.35.1.104"
+     pseudo="false"
+     type="host">
+        <Description>10.35.1.104
+        </Description>
+        <NIC
+         ipAddress="10.35.1.104"
+         name="NPV_IFACE_1957"
+         nodeRefId="1872" />
+    </Device>
+    <Device
+     aliases="SHELBYVILLE"
+     hidden="false"
+     id="1960"
+     name="10.36.1.250"
+     pseudo="false"
+     type="host">
+        <Description>10.36.1.250
+        </Description>
+        <NIC
+         ipAddress="10.36.1.250"
+         name="NPV_IFACE_1959"
+         nodeRefId="1873" />
+    </Device>
+    <Device
+     hidden="false"
+     id="2012"
+     name="10.31.1.101"
+     pseudo="false"
+     status="up"
+     type="host">
+        <Description>10.31.1.101
+        </Description>
+        <NIC
+         ipAddress="10.31.1.101"
+         name="NPV_IFACE_2011"
+         nodeRefId="1877" />
+        <Service
+         name="ssh"
+         port="22"
+         product="ssh"
+         protocol="tcp"
+         version="">
+            <Vulnerability
+             cvssBaseScore="4.95845112"
+             cvssExploitSubScore="9.9968"
+             cvssImpactSubScore="2.86275"
+             cvssVector="(AV:N,AC:L,Au:N,C:N,I:N,A:P)"
+             id="CVE-2015-7845" />
+            <Vulnerability
+             cvssBaseScore="9.99509120602"
+             cvssExploitSubScore="9.9968"
+             cvssImpactSubScore="10.00084536"
+             cvssVector="(AV:N,AC:L,Au:N,C:C,I:C,A:C)"
+             id="CVE-2015-6476" />
+            <Vulnerability
+             cvssBaseScore="6.52278517275"
+             cvssExploitSubScore="7.952"
+             cvssImpactSubScore="6.44297671875"
+             cvssVector="(AV:N,AC:L,Au:S,C:P,I:P,A:P)"
+             id="CVE-2015-6316" />
+            <Vulnerability
+             cvssBaseScore="7.78639008"
+             cvssExploitSubScore="9.9968"
+             cvssImpactSubScore="6.8706"
+             cvssVector="(AV:N,AC:L,Au:N,C:N,I:N,A:C)"
+             id="CVE-2015-7752" />
+            <Vulnerability
+             cvssBaseScore="7.48465909275"
+             cvssExploitSubScore="9.9968"
+             cvssImpactSubScore="6.44297671875"
+             cvssVector="(AV:L,AC:L,Au:N,C:P,I:P,A:P)"
+             id="CVE-2015-6333" />
+            <Vulnerability
+             cvssBaseScore="4.95845112"
+             cvssExploitSubScore="9.9968"
+             cvssImpactSubScore="2.86275"
+             cvssVector="(AV:N,AC:L,Au:N,C:N,I:N,A:P)"
+             id="CVE-2015-7760" />
+            <Vulnerability
+             cvssBaseScore="3.9965772"
+             cvssExploitSubScore="7.952"
+             cvssImpactSubScore="2.86275"
+             cvssVector="(AV:N,AC:L,Au:S,C:N,I:N,A:P)"
+             id="CVE-2015-6300" />
+            <Vulnerability
+             cvssBaseScore="4.29612792"
+             cvssExploitSubScore="8.5888"
+             cvssImpactSubScore="2.86275"
+             cvssVector="(AV:L,AC:M,Au:N,C:N,I:P,A:N)"
+             id="CVE-2015-6563" />
+            <Vulnerability
+             cvssBaseScore="9.03321728602"
+             cvssExploitSubScore="7.952"
+             cvssImpactSubScore="10.00084536"
+             cvssVector="(AV:N,AC:L,Au:S,C:C,I:C,A:C)"
+             id="CVE-2015-2907" />
+            <Vulnerability
+             cvssBaseScore="9.03321728602"
+             cvssExploitSubScore="7.952"
+             cvssImpactSubScore="10.00084536"
+             cvssVector="(AV:N,AC:L,Au:S,C:C,I:C,A:C)"
+             id="CVE-2015-2906" />
+            <Vulnerability
+             cvssBaseScore="9.99509120602"
+             cvssExploitSubScore="9.9968"
+             cvssImpactSubScore="10.00084536"
+             cvssVector="(AV:N,AC:L,Au:N,C:C,I:C,A:C)"
+             id="CVE-2015-2897" />
+            <Vulnerability
+             cvssBaseScore="8.473175256"
+             cvssExploitSubScore="9.9968"
+             cvssImpactSubScore="7.843935"
+             cvssVector="(AV:N,AC:L,Au:N,C:P,I:N,A:C)"
+             id="CVE-2015-5600" />
+            <Vulnerability
+             cvssBaseScore="4.29612792"
+             cvssExploitSubScore="8.5888"
+             cvssImpactSubScore="2.86275"
+             cvssVector="(AV:N,AC:M,Au:N,C:N,I:P,A:N)"
+             id="CVE-2015-5352" />
+            <Vulnerability
+             cvssBaseScore="4.29612792"
+             cvssExploitSubScore="8.5888"
+             cvssImpactSubScore="2.86275"
+             cvssVector="(AV:N,AC:M,Au:N,C:N,I:N,A:P)"
+             id="CVE-2015-4236" />
+            <Vulnerability
+             cvssBaseScore="4.95845112"
+             cvssExploitSubScore="9.9968"
+             cvssImpactSubScore="2.86275"
+             cvssVector="(AV:N,AC:L,Au:N,C:P,I:N,A:N)"
+             id="CVE-2015-4196" />
+            <Vulnerability
+             cvssBaseScore="4.29612792"
+             cvssExploitSubScore="8.5888"
+             cvssImpactSubScore="2.86275"
+             cvssVector="(AV:N,AC:M,Au:N,C:P,I:N,A:N)"
+             id="CVE-2015-4217" />
+            <Vulnerability
+             cvssBaseScore="4.95845112"
+             cvssExploitSubScore="9.9968"
+             cvssImpactSubScore="2.86275"
+             cvssVector="(AV:N,AC:L,Au:N,C:P,I:N,A:N)"
+             id="CVE-2015-4216" />
+            <Vulnerability
+             cvssBaseScore="3.9965772"
+             cvssExploitSubScore="7.952"
+             cvssImpactSubScore="2.86275"
+             cvssVector="(AV:N,AC:L,Au:S,C:N,I:N,A:P)"
+             id="CVE-2015-4195" />
+            <Vulnerability
+             cvssBaseScore="8.7723513024"
+             cvssExploitSubScore="8.5888"
+             cvssImpactSubScore="9.206604"
+             cvssVector="(AV:N,AC:M,Au:N,C:C,I:C,A:N)"
+             id="CVE-2012-4716" />
+        </Service>
+    </Device>
+    <Device
+     hidden="false"
+     id="1962"
+     name="10.36.1.201"
+     pseudo="false"
+     type="host">
+        <Description>10.36.1.201
+        </Description>
+        <NIC
+         ipAddress="10.36.1.201"
+         name="NPV_IFACE_1961"
+         nodeRefId="1873" />
+    </Device>
+    <Device
+     hidden="false"
+     id="1964"
+     name="10.36.1.202"
+     pseudo="false"
+     type="host">
+        <Description>10.36.1.202
+        </Description>
+        <NIC
+         ipAddress="10.36.1.202"
+         name="NPV_IFACE_1963"
+         nodeRefId="1873" />
+    </Device>
+    <Device
+     hidden="false"
+     id="1966"
+     name="10.36.1.203"
+     pseudo="false"
+     type="host">
+        <Description>10.36.1.203
+        </Description>
+        <NIC
+         ipAddress="10.36.1.203"
+         name="NPV_IFACE_1965"
+         nodeRefId="1873" />
+    </Device>
+    <Device
+     hidden="false"
+     id="1968"
+     name="10.36.1.101"
+     pseudo="false"
+     type="host">
+        <Description>10.36.1.101
+        </Description>
+        <NIC
+         ipAddress="10.36.1.101"
+         name="NPV_IFACE_1967"
+         nodeRefId="1873" />
+    </Device>
+    <Device
+     hidden="false"
+     id="1970"
+     name="10.36.1.102"
+     pseudo="false"
+     type="host">
+        <Description>10.36.1.102
+        </Description>
+        <NIC
+         ipAddress="10.36.1.102"
+         name="NPV_IFACE_1969"
+         nodeRefId="1873" />
+    </Device>
+    <Device
+     hidden="false"
+     id="1972"
+     name="10.36.1.103"
+     pseudo="false"
+     type="host">
+        <Description>10.36.1.103
+        </Description>
+        <NIC
+         ipAddress="10.36.1.103"
+         name="NPV_IFACE_1971"
+         nodeRefId="1873" />
+    </Device>
+    <Device
+     hidden="false"
+     id="2014"
+     name="10.31.1.102"
+     pseudo="false"
+     status="up"
+     type="host">
+        <Description>10.31.1.102
+        </Description>
+        <NIC
+         ipAddress="10.31.1.102"
+         name="NPV_IFACE_2013"
+         nodeRefId="1877" />
+        <Service
+         name="ssh"
+         port="22"
+         product="ssh"
+         protocol="tcp"
+         version="">
+            <Vulnerability
+             cvssBaseScore="4.95845112"
+             cvssExploitSubScore="9.9968"
+             cvssImpactSubScore="2.86275"
+             cvssVector="(AV:N,AC:L,Au:N,C:N,I:N,A:P)"
+             id="CVE-2015-7845" />
+            <Vulnerability
+             cvssBaseScore="9.99509120602"
+             cvssExploitSubScore="9.9968"
+             cvssImpactSubScore="10.00084536"
+             cvssVector="(AV:N,AC:L,Au:N,C:C,I:C,A:C)"
+             id="CVE-2015-6476" />
+            <Vulnerability
+             cvssBaseScore="6.52278517275"
+             cvssExploitSubScore="7.952"
+             cvssImpactSubScore="6.44297671875"
+             cvssVector="(AV:N,AC:L,Au:S,C:P,I:P,A:P)"
+             id="CVE-2015-6316" />
+            <Vulnerability
+             cvssBaseScore="7.78639008"
+             cvssExploitSubScore="9.9968"
+             cvssImpactSubScore="6.8706"
+             cvssVector="(AV:N,AC:L,Au:N,C:N,I:N,A:C)"
+             id="CVE-2015-7752" />
+            <Vulnerability
+             cvssBaseScore="7.48465909275"
+             cvssExploitSubScore="9.9968"
+             cvssImpactSubScore="6.44297671875"
+             cvssVector="(AV:L,AC:L,Au:N,C:P,I:P,A:P)"
+             id="CVE-2015-6333" />
+            <Vulnerability
+             cvssBaseScore="4.95845112"
+             cvssExploitSubScore="9.9968"
+             cvssImpactSubScore="2.86275"
+             cvssVector="(AV:N,AC:L,Au:N,C:N,I:N,A:P)"
+             id="CVE-2015-7760" />
+            <Vulnerability
+             cvssBaseScore="3.9965772"
+             cvssExploitSubScore="7.952"
+             cvssImpactSubScore="2.86275"
+             cvssVector="(AV:N,AC:L,Au:S,C:N,I:N,A:P)"
+             id="CVE-2015-6300" />
+            <Vulnerability
+             cvssBaseScore="4.29612792"
+             cvssExploitSubScore="8.5888"
+             cvssImpactSubScore="2.86275"
+             cvssVector="(AV:L,AC:M,Au:N,C:N,I:P,A:N)"
+             id="CVE-2015-6563" />
+            <Vulnerability
+             cvssBaseScore="9.03321728602"
+             cvssExploitSubScore="7.952"
+             cvssImpactSubScore="10.00084536"
+             cvssVector="(AV:N,AC:L,Au:S,C:C,I:C,A:C)"
+             id="CVE-2015-2907" />
+            <Vulnerability
+             cvssBaseScore="9.03321728602"
+             cvssExploitSubScore="7.952"
+             cvssImpactSubScore="10.00084536"
+             cvssVector="(AV:N,AC:L,Au:S,C:C,I:C,A:C)"
+             id="CVE-2015-2906" />
+            <Vulnerability
+             cvssBaseScore="9.99509120602"
+             cvssExploitSubScore="9.9968"
+             cvssImpactSubScore="10.00084536"
+             cvssVector="(AV:N,AC:L,Au:N,C:C,I:C,A:C)"
+             id="CVE-2015-2897" />
+            <Vulnerability
+             cvssBaseScore="8.473175256"
+             cvssExploitSubScore="9.9968"
+             cvssImpactSubScore="7.843935"
+             cvssVector="(AV:N,AC:L,Au:N,C:P,I:N,A:C)"
+             id="CVE-2015-5600" />
+            <Vulnerability
+             cvssBaseScore="4.29612792"
+             cvssExploitSubScore="8.5888"
+             cvssImpactSubScore="2.86275"
+             cvssVector="(AV:N,AC:M,Au:N,C:N,I:P,A:N)"
+             id="CVE-2015-5352" />
+            <Vulnerability
+             cvssBaseScore="4.29612792"
+             cvssExploitSubScore="8.5888"
+             cvssImpactSubScore="2.86275"
+             cvssVector="(AV:N,AC:M,Au:N,C:N,I:N,A:P)"
+             id="CVE-2015-4236" />
+            <Vulnerability
+             cvssBaseScore="4.95845112"
+             cvssExploitSubScore="9.9968"
+             cvssImpactSubScore="2.86275"
+             cvssVector="(AV:N,AC:L,Au:N,C:P,I:N,A:N)"
+             id="CVE-2015-4196" />
+            <Vulnerability
+             cvssBaseScore="4.29612792"
+             cvssExploitSubScore="8.5888"
+             cvssImpactSubScore="2.86275"
+             cvssVector="(AV:N,AC:M,Au:N,C:P,I:N,A:N)"
+             id="CVE-2015-4217" />
+            <Vulnerability
+             cvssBaseScore="4.95845112"
+             cvssExploitSubScore="9.9968"
+             cvssImpactSubScore="2.86275"
+             cvssVector="(AV:N,AC:L,Au:N,C:P,I:N,A:N)"
+             id="CVE-2015-4216" />
+            <Vulnerability
+             cvssBaseScore="3.9965772"
+             cvssExploitSubScore="7.952"
+             cvssImpactSubScore="2.86275"
+             cvssVector="(AV:N,AC:L,Au:S,C:N,I:N,A:P)"
+             id="CVE-2015-4195" />
+            <Vulnerability
+             cvssBaseScore="8.7723513024"
+             cvssExploitSubScore="8.5888"
+             cvssImpactSubScore="9.206604"
+             cvssVector="(AV:N,AC:M,Au:N,C:C,I:C,A:N)"
+             id="CVE-2012-4716" />
+        </Service>
+    </Device>
+    <Device
+     hidden="false"
+     id="1974"
+     name="10.36.1.104"
+     pseudo="false"
+     type="host">
+        <Description>10.36.1.104
+        </Description>
+        <NIC
+         ipAddress="10.36.1.104"
+         name="NPV_IFACE_1973"
+         nodeRefId="1873" />
+    </Device>
+    <Device
+     hidden="false"
+     id="1976"
+     name="10.36.1.105"
+     pseudo="false"
+     type="host">
+        <Description>10.36.1.105
+        </Description>
+        <NIC
+         ipAddress="10.36.1.105"
+         name="NPV_IFACE_1975"
+         nodeRefId="1873" />
+    </Device>
+    <Device
+     hidden="false"
+     id="1978"
+     name="10.38.1.201"
+     pseudo="false"
+     type="host">
+        <Description>10.38.1.201
+        </Description>
+        <NIC
+         ipAddress="10.38.1.201"
+         name="NPV_IFACE_1977"
+         nodeRefId="1874" />
+    </Device>
+    <Device
+     hidden="false"
+     id="1980"
+     name="10.38.1.202"
+     pseudo="false"
+     type="host">
+        <Description>10.38.1.202
+        </Description>
+        <NIC
+         ipAddress="10.38.1.202"
+         name="NPV_IFACE_1979"
+         nodeRefId="1874" />
+    </Device>
+    <Device
+     hidden="false"
+     id="1982"
+     name="10.38.1.203"
+     pseudo="false"
+     type="host">
+        <Description>10.38.1.203
+        </Description>
+        <NIC
+         ipAddress="10.38.1.203"
+         name="NPV_IFACE_1981"
+         nodeRefId="1874" />
+    </Device>
+    <Device
+     hidden="false"
+     id="1984"
+     name="10.38.1.101"
+     pseudo="false"
+     type="host">
+        <Description>10.38.1.101
+        </Description>
+        <NIC
+         ipAddress="10.38.1.101"
+         name="NPV_IFACE_1983"
+         nodeRefId="1874" />
+    </Device>
+    <Device
+     hidden="false"
+     id="2016"
+     name="10.31.1.103"
+     pseudo="false"
+     status="up"
+     type="host">
+        <Description>10.31.1.103
+        </Description>
+        <NIC
+         ipAddress="10.31.1.103"
+         name="NPV_IFACE_2015"
+         nodeRefId="1877" />
+        <Service
+         name="ssh"
+         port="22"
+         product="ssh"
+         protocol="tcp"
+         version="">
+            <Vulnerability
+             cvssBaseScore="4.95845112"
+             cvssExploitSubScore="9.9968"
+             cvssImpactSubScore="2.86275"
+             cvssVector="(AV:N,AC:L,Au:N,C:N,I:N,A:P)"
+             id="CVE-2015-7845" />
+            <Vulnerability
+             cvssBaseScore="9.99509120602"
+             cvssExploitSubScore="9.9968"
+             cvssImpactSubScore="10.00084536"
+             cvssVector="(AV:N,AC:L,Au:N,C:C,I:C,A:C)"
+             id="CVE-2015-6476" />
+            <Vulnerability
+             cvssBaseScore="6.52278517275"
+             cvssExploitSubScore="7.952"
+             cvssImpactSubScore="6.44297671875"
+             cvssVector="(AV:N,AC:L,Au:S,C:P,I:P,A:P)"
+             id="CVE-2015-6316" />
+            <Vulnerability
+             cvssBaseScore="7.78639008"
+             cvssExploitSubScore="9.9968"
+             cvssImpactSubScore="6.8706"
+             cvssVector="(AV:N,AC:L,Au:N,C:N,I:N,A:C)"
+             id="CVE-2015-7752" />
+            <Vulnerability
+             cvssBaseScore="7.48465909275"
+             cvssExploitSubScore="9.9968"
+             cvssImpactSubScore="6.44297671875"
+             cvssVector="(AV:L,AC:L,Au:N,C:P,I:P,A:P)"
+             id="CVE-2015-6333" />
+            <Vulnerability
+             cvssBaseScore="4.95845112"
+             cvssExploitSubScore="9.9968"
+             cvssImpactSubScore="2.86275"
+             cvssVector="(AV:N,AC:L,Au:N,C:N,I:N,A:P)"
+             id="CVE-2015-7760" />
+            <Vulnerability
+             cvssBaseScore="3.9965772"
+             cvssExploitSubScore="7.952"
+             cvssImpactSubScore="2.86275"
+             cvssVector="(AV:N,AC:L,Au:S,C:N,I:N,A:P)"
+             id="CVE-2015-6300" />
+            <Vulnerability
+             cvssBaseScore="4.29612792"
+             cvssExploitSubScore="8.5888"
+             cvssImpactSubScore="2.86275"
+             cvssVector="(AV:L,AC:M,Au:N,C:N,I:P,A:N)"
+             id="CVE-2015-6563" />
+            <Vulnerability
+             cvssBaseScore="9.03321728602"
+             cvssExploitSubScore="7.952"
+             cvssImpactSubScore="10.00084536"
+             cvssVector="(AV:N,AC:L,Au:S,C:C,I:C,A:C)"
+             id="CVE-2015-2907" />
+            <Vulnerability
+             cvssBaseScore="9.03321728602"
+             cvssExploitSubScore="7.952"
+             cvssImpactSubScore="10.00084536"
+             cvssVector="(AV:N,AC:L,Au:S,C:C,I:C,A:C)"
+             id="CVE-2015-2906" />
+            <Vulnerability
+             cvssBaseScore="9.99509120602"
+             cvssExploitSubScore="9.9968"
+             cvssImpactSubScore="10.00084536"
+             cvssVector="(AV:N,AC:L,Au:N,C:C,I:C,A:C)"
+             id="CVE-2015-2897" />
+            <Vulnerability
+             cvssBaseScore="8.473175256"
+             cvssExploitSubScore="9.9968"
+             cvssImpactSubScore="7.843935"
+             cvssVector="(AV:N,AC:L,Au:N,C:P,I:N,A:C)"
+             id="CVE-2015-5600" />
+            <Vulnerability
+             cvssBaseScore="4.29612792"
+             cvssExploitSubScore="8.5888"
+             cvssImpactSubScore="2.86275"
+             cvssVector="(AV:N,AC:M,Au:N,C:N,I:P,A:N)"
+             id="CVE-2015-5352" />
+            <Vulnerability
+             cvssBaseScore="4.29612792"
+             cvssExploitSubScore="8.5888"
+             cvssImpactSubScore="2.86275"
+             cvssVector="(AV:N,AC:M,Au:N,C:N,I:N,A:P)"
+             id="CVE-2015-4236" />
+            <Vulnerability
+             cvssBaseScore="4.95845112"
+             cvssExploitSubScore="9.9968"
+             cvssImpactSubScore="2.86275"
+             cvssVector="(AV:N,AC:L,Au:N,C:P,I:N,A:N)"
+             id="CVE-2015-4196" />
+            <Vulnerability
+             cvssBaseScore="4.29612792"
+             cvssExploitSubScore="8.5888"
+             cvssImpactSubScore="2.86275"
+             cvssVector="(AV:N,AC:M,Au:N,C:P,I:N,A:N)"
+             id="CVE-2015-4217" />
+            <Vulnerability
+             cvssBaseScore="4.95845112"
+             cvssExploitSubScore="9.9968"
+             cvssImpactSubScore="2.86275"
+             cvssVector="(AV:N,AC:L,Au:N,C:P,I:N,A:N)"
+             id="CVE-2015-4216" />
+            <Vulnerability
+             cvssBaseScore="3.9965772"
+             cvssExploitSubScore="7.952"
+             cvssImpactSubScore="2.86275"
+             cvssVector="(AV:N,AC:L,Au:S,C:N,I:N,A:P)"
+             id="CVE-2015-4195" />
+            <Vulnerability
+             cvssBaseScore="8.7723513024"
+             cvssExploitSubScore="8.5888"
+             cvssImpactSubScore="9.206604"
+             cvssVector="(AV:N,AC:M,Au:N,C:C,I:C,A:N)"
+             id="CVE-2012-4716" />
+        </Service>
+    </Device>
+    <Device
+     hidden="false"
+     id="1986"
+     name="10.38.1.102"
+     pseudo="false"
+     type="host">
+        <Description>10.38.1.102
+        </Description>
+        <NIC
+         ipAddress="10.38.1.102"
+         name="NPV_IFACE_1985"
+         nodeRefId="1874" />
+    </Device>
+    <Device
+     hidden="false"
+     id="1988"
+     name="10.38.1.103"
+     pseudo="false"
+     type="host">
+        <Description>10.38.1.103
+        </Description>
+        <NIC
+         ipAddress="10.38.1.103"
+         name="NPV_IFACE_1987"
+         nodeRefId="1874" />
+    </Device>
+    <Device
+     hidden="false"
+     id="1990"
+     name="10.38.1.104"
+     pseudo="false"
+     type="host">
+        <Description>10.38.1.104
+        </Description>
+        <NIC
+         ipAddress="10.38.1.104"
+         name="NPV_IFACE_1989"
+         nodeRefId="1874" />
+    </Device>
+    <Device
+     hidden="false"
+     id="1992"
+     name="10.38.1.105"
+     pseudo="false"
+     type="host">
+        <Description>10.38.1.105
+        </Description>
+        <NIC
+         ipAddress="10.38.1.105"
+         name="NPV_IFACE_1991"
+         nodeRefId="1874" />
+    </Device>
+    <Device
+     aliases="SPRINGFIELD"
+     hidden="false"
+     id="1994"
+     name="10.38.1.250"
+     pseudo="false"
+     type="host">
+        <Description>10.38.1.250
+        </Description>
+        <NIC
+         ipAddress="10.38.1.250"
+         name="NPV_IFACE_1993"
+         nodeRefId="1874" />
+    </Device>
+    <Device
+     aliases="CYPRESSCREEK"
+     hidden="false"
+     id="1996"
+     name="10.31.1.250"
+     pseudo="false"
+     status="up"
+     type="host">
+        <Description>10.31.1.250
+        </Description>
+        <NIC
+         ipAddress="10.31.1.250"
+         name="NPV_IFACE_1995"
+         nodeRefId="1877" />
+        <Service
+         name="ssh"
+         port="22"
+         product="ssh"
+         protocol="tcp"
+         version="">
+            <Vulnerability
+             cvssBaseScore="4.95845112"
+             cvssExploitSubScore="9.9968"
+             cvssImpactSubScore="2.86275"
+             cvssVector="(AV:N,AC:L,Au:N,C:N,I:N,A:P)"
+             id="CVE-2015-7845" />
+            <Vulnerability
+             cvssBaseScore="9.99509120602"
+             cvssExploitSubScore="9.9968"
+             cvssImpactSubScore="10.00084536"
+             cvssVector="(AV:N,AC:L,Au:N,C:C,I:C,A:C)"
+             id="CVE-2015-6476" />
+            <Vulnerability
+             cvssBaseScore="6.52278517275"
+             cvssExploitSubScore="7.952"
+             cvssImpactSubScore="6.44297671875"
+             cvssVector="(AV:N,AC:L,Au:S,C:P,I:P,A:P)"
+             id="CVE-2015-6316" />
+            <Vulnerability
+             cvssBaseScore="7.78639008"
+             cvssExploitSubScore="9.9968"
+             cvssImpactSubScore="6.8706"
+             cvssVector="(AV:N,AC:L,Au:N,C:N,I:N,A:C)"
+             id="CVE-2015-7752" />
+            <Vulnerability
+             cvssBaseScore="7.48465909275"
+             cvssExploitSubScore="9.9968"
+             cvssImpactSubScore="6.44297671875"
+             cvssVector="(AV:L,AC:L,Au:N,C:P,I:P,A:P)"
+             id="CVE-2015-6333" />
+            <Vulnerability
+             cvssBaseScore="4.95845112"
+             cvssExploitSubScore="9.9968"
+             cvssImpactSubScore="2.86275"
+             cvssVector="(AV:N,AC:L,Au:N,C:N,I:N,A:P)"
+             id="CVE-2015-7760" />
+            <Vulnerability
+             cvssBaseScore="3.9965772"
+             cvssExploitSubScore="7.952"
+             cvssImpactSubScore="2.86275"
+             cvssVector="(AV:N,AC:L,Au:S,C:N,I:N,A:P)"
+             id="CVE-2015-6300" />
+            <Vulnerability
+             cvssBaseScore="4.29612792"
+             cvssExploitSubScore="8.5888"
+             cvssImpactSubScore="2.86275"
+             cvssVector="(AV:L,AC:M,Au:N,C:N,I:P,A:N)"
+             id="CVE-2015-6563" />
+            <Vulnerability
+             cvssBaseScore="9.03321728602"
+             cvssExploitSubScore="7.952"
+             cvssImpactSubScore="10.00084536"
+             cvssVector="(AV:N,AC:L,Au:S,C:C,I:C,A:C)"
+             id="CVE-2015-2907" />
+            <Vulnerability
+             cvssBaseScore="9.03321728602"
+             cvssExploitSubScore="7.952"
+             cvssImpactSubScore="10.00084536"
+             cvssVector="(AV:N,AC:L,Au:S,C:C,I:C,A:C)"
+             id="CVE-2015-2906" />
+            <Vulnerability
+             cvssBaseScore="9.99509120602"
+             cvssExploitSubScore="9.9968"
+             cvssImpactSubScore="10.00084536"
+             cvssVector="(AV:N,AC:L,Au:N,C:C,I:C,A:C)"
+             id="CVE-2015-2897" />
+            <Vulnerability
+             cvssBaseScore="8.473175256"
+             cvssExploitSubScore="9.9968"
+             cvssImpactSubScore="7.843935"
+             cvssVector="(AV:N,AC:L,Au:N,C:P,I:N,A:C)"
+             id="CVE-2015-5600" />
+            <Vulnerability
+             cvssBaseScore="4.29612792"
+             cvssExploitSubScore="8.5888"
+             cvssImpactSubScore="2.86275"
+             cvssVector="(AV:N,AC:M,Au:N,C:N,I:P,A:N)"
+             id="CVE-2015-5352" />
+            <Vulnerability
+             cvssBaseScore="4.29612792"
+             cvssExploitSubScore="8.5888"
+             cvssImpactSubScore="2.86275"
+             cvssVector="(AV:N,AC:M,Au:N,C:N,I:N,A:P)"
+             id="CVE-2015-4236" />
+            <Vulnerability
+             cvssBaseScore="4.95845112"
+             cvssExploitSubScore="9.9968"
+             cvssImpactSubScore="2.86275"
+             cvssVector="(AV:N,AC:L,Au:N,C:P,I:N,A:N)"
+             id="CVE-2015-4196" />
+            <Vulnerability
+             cvssBaseScore="4.29612792"
+             cvssExploitSubScore="8.5888"
+             cvssImpactSubScore="2.86275"
+             cvssVector="(AV:N,AC:M,Au:N,C:P,I:N,A:N)"
+             id="CVE-2015-4217" />
+            <Vulnerability
+             cvssBaseScore="4.95845112"
+             cvssExploitSubScore="9.9968"
+             cvssImpactSubScore="2.86275"
+             cvssVector="(AV:N,AC:L,Au:N,C:P,I:N,A:N)"
+             id="CVE-2015-4216" />
+            <Vulnerability
+             cvssBaseScore="3.9965772"
+             cvssExploitSubScore="7.952"
+             cvssImpactSubScore="2.86275"
+             cvssVector="(AV:N,AC:L,Au:S,C:N,I:N,A:P)"
+             id="CVE-2015-4195" />
+            <Vulnerability
+             cvssBaseScore="8.7723513024"
+             cvssExploitSubScore="8.5888"
+             cvssImpactSubScore="9.206604"
+             cvssVector="(AV:N,AC:M,Au:N,C:C,I:C,A:N)"
+             id="CVE-2012-4716" />
+        </Service>
+    </Device>
+    <Device
+     hidden="false"
+     id="2018"
+     name="10.31.1.104"
+     pseudo="false"
+     status="up"
+     type="host">
+        <Description>10.31.1.104
+        </Description>
+        <NIC
+         ipAddress="10.31.1.104"
+         name="NPV_IFACE_2017"
+         nodeRefId="1877" />
+        <Service
+         name="ssh"
+         port="22"
+         product="ssh"
+         protocol="tcp"
+         version="">
+            <Vulnerability
+             cvssBaseScore="4.95845112"
+             cvssExploitSubScore="9.9968"
+             cvssImpactSubScore="2.86275"
+             cvssVector="(AV:N,AC:L,Au:N,C:N,I:N,A:P)"
+             id="CVE-2015-7845" />
+            <Vulnerability
+             cvssBaseScore="9.99509120602"
+             cvssExploitSubScore="9.9968"
+             cvssImpactSubScore="10.00084536"
+             cvssVector="(AV:N,AC:L,Au:N,C:C,I:C,A:C)"
+             id="CVE-2015-6476" />
+            <Vulnerability
+             cvssBaseScore="6.52278517275"
+             cvssExploitSubScore="7.952"
+             cvssImpactSubScore="6.44297671875"
+             cvssVector="(AV:N,AC:L,Au:S,C:P,I:P,A:P)"
+             id="CVE-2015-6316" />
+            <Vulnerability
+             cvssBaseScore="7.78639008"
+             cvssExploitSubScore="9.9968"
+             cvssImpactSubScore="6.8706"
+             cvssVector="(AV:N,AC:L,Au:N,C:N,I:N,A:C)"
+             id="CVE-2015-7752" />
+            <Vulnerability
+             cvssBaseScore="7.48465909275"
+             cvssExploitSubScore="9.9968"
+             cvssImpactSubScore="6.44297671875"
+             cvssVector="(AV:L,AC:L,Au:N,C:P,I:P,A:P)"
+             id="CVE-2015-6333" />
+            <Vulnerability
+             cvssBaseScore="4.95845112"
+             cvssExploitSubScore="9.9968"
+             cvssImpactSubScore="2.86275"
+             cvssVector="(AV:N,AC:L,Au:N,C:N,I:N,A:P)"
+             id="CVE-2015-7760" />
+            <Vulnerability
+             cvssBaseScore="3.9965772"
+             cvssExploitSubScore="7.952"
+             cvssImpactSubScore="2.86275"
+             cvssVector="(AV:N,AC:L,Au:S,C:N,I:N,A:P)"
+             id="CVE-2015-6300" />
+            <Vulnerability
+             cvssBaseScore="4.29612792"
+             cvssExploitSubScore="8.5888"
+             cvssImpactSubScore="2.86275"
+             cvssVector="(AV:L,AC:M,Au:N,C:N,I:P,A:N)"
+             id="CVE-2015-6563" />
+            <Vulnerability
+             cvssBaseScore="9.03321728602"
+             cvssExploitSubScore="7.952"
+             cvssImpactSubScore="10.00084536"
+             cvssVector="(AV:N,AC:L,Au:S,C:C,I:C,A:C)"
+             id="CVE-2015-2907" />
+            <Vulnerability
+             cvssBaseScore="9.03321728602"
+             cvssExploitSubScore="7.952"
+             cvssImpactSubScore="10.00084536"
+             cvssVector="(AV:N,AC:L,Au:S,C:C,I:C,A:C)"
+             id="CVE-2015-2906" />
+            <Vulnerability
+             cvssBaseScore="9.99509120602"
+             cvssExploitSubScore="9.9968"
+             cvssImpactSubScore="10.00084536"
+             cvssVector="(AV:N,AC:L,Au:N,C:C,I:C,A:C)"
+             id="CVE-2015-2897" />
+            <Vulnerability
+             cvssBaseScore="8.473175256"
+             cvssExploitSubScore="9.9968"
+             cvssImpactSubScore="7.843935"
+             cvssVector="(AV:N,AC:L,Au:N,C:P,I:N,A:C)"
+             id="CVE-2015-5600" />
+            <Vulnerability
+             cvssBaseScore="4.29612792"
+             cvssExploitSubScore="8.5888"
+             cvssImpactSubScore="2.86275"
+             cvssVector="(AV:N,AC:M,Au:N,C:N,I:P,A:N)"
+             id="CVE-2015-5352" />
+            <Vulnerability
+             cvssBaseScore="4.29612792"
+             cvssExploitSubScore="8.5888"
+             cvssImpactSubScore="2.86275"
+             cvssVector="(AV:N,AC:M,Au:N,C:N,I:N,A:P)"
+             id="CVE-2015-4236" />
+            <Vulnerability
+             cvssBaseScore="4.95845112"
+             cvssExploitSubScore="9.9968"
+             cvssImpactSubScore="2.86275"
+             cvssVector="(AV:N,AC:L,Au:N,C:P,I:N,A:N)"
+             id="CVE-2015-4196" />
+            <Vulnerability
+             cvssBaseScore="4.29612792"
+             cvssExploitSubScore="8.5888"
+             cvssImpactSubScore="2.86275"
+             cvssVector="(AV:N,AC:M,Au:N,C:P,I:N,A:N)"
+             id="CVE-2015-4217" />
+            <Vulnerability
+             cvssBaseScore="4.95845112"
+             cvssExploitSubScore="9.9968"
+             cvssImpactSubScore="2.86275"
+             cvssVector="(AV:N,AC:L,Au:N,C:P,I:N,A:N)"
+             id="CVE-2015-4216" />
+            <Vulnerability
+             cvssBaseScore="3.9965772"
+             cvssExploitSubScore="7.952"
+             cvssImpactSubScore="2.86275"
+             cvssVector="(AV:N,AC:L,Au:S,C:N,I:N,A:P)"
+             id="CVE-2015-4195" />
+            <Vulnerability
+             cvssBaseScore="8.7723513024"
+             cvssExploitSubScore="8.5888"
+             cvssImpactSubScore="9.206604"
+             cvssVector="(AV:N,AC:M,Au:N,C:C,I:C,A:N)"
+             id="CVE-2012-4716" />
+        </Service>
+    </Device>
+    <Device
+     hidden="false"
+     id="1998"
+     name="10.31.1.201"
+     pseudo="false"
+     status="up"
+     type="host">
+        <Description>10.31.1.201
+        </Description>
+        <NIC
+         ipAddress="10.31.1.201"
+         name="NPV_IFACE_1997"
+         nodeRefId="1877" />
+        <Service
+         name="ssh"
+         port="22"
+         product="ssh"
+         protocol="tcp"
+         version="">
+            <Vulnerability
+             cvssBaseScore="4.95845112"
+             cvssExploitSubScore="9.9968"
+             cvssImpactSubScore="2.86275"
+             cvssVector="(AV:N,AC:L,Au:N,C:N,I:N,A:P)"
+             id="CVE-2015-7845" />
+            <Vulnerability
+             cvssBaseScore="9.99509120602"
+             cvssExploitSubScore="9.9968"
+             cvssImpactSubScore="10.00084536"
+             cvssVector="(AV:N,AC:L,Au:N,C:C,I:C,A:C)"
+             id="CVE-2015-6476" />
+            <Vulnerability
+             cvssBaseScore="6.52278517275"
+             cvssExploitSubScore="7.952"
+             cvssImpactSubScore="6.44297671875"
+             cvssVector="(AV:N,AC:L,Au:S,C:P,I:P,A:P)"
+             id="CVE-2015-6316" />
+            <Vulnerability
+             cvssBaseScore="7.78639008"
+             cvssExploitSubScore="9.9968"
+             cvssImpactSubScore="6.8706"
+             cvssVector="(AV:N,AC:L,Au:N,C:N,I:N,A:C)"
+             id="CVE-2015-7752" />
+            <Vulnerability
+             cvssBaseScore="7.48465909275"
+             cvssExploitSubScore="9.9968"
+             cvssImpactSubScore="6.44297671875"
+             cvssVector="(AV:L,AC:L,Au:N,C:P,I:P,A:P)"
+             id="CVE-2015-6333" />
+            <Vulnerability
+             cvssBaseScore="4.95845112"
+             cvssExploitSubScore="9.9968"
+             cvssImpactSubScore="2.86275"
+             cvssVector="(AV:N,AC:L,Au:N,C:N,I:N,A:P)"
+             id="CVE-2015-7760" />
+            <Vulnerability
+             cvssBaseScore="3.9965772"
+             cvssExploitSubScore="7.952"
+             cvssImpactSubScore="2.86275"
+             cvssVector="(AV:N,AC:L,Au:S,C:N,I:N,A:P)"
+             id="CVE-2015-6300" />
+            <Vulnerability
+             cvssBaseScore="4.29612792"
+             cvssExploitSubScore="8.5888"
+             cvssImpactSubScore="2.86275"
+             cvssVector="(AV:L,AC:M,Au:N,C:N,I:P,A:N)"
+             id="CVE-2015-6563" />
+            <Vulnerability
+             cvssBaseScore="9.03321728602"
+             cvssExploitSubScore="7.952"
+             cvssImpactSubScore="10.00084536"
+             cvssVector="(AV:N,AC:L,Au:S,C:C,I:C,A:C)"
+             id="CVE-2015-2907" />
+            <Vulnerability
+             cvssBaseScore="9.03321728602"
+             cvssExploitSubScore="7.952"
+             cvssImpactSubScore="10.00084536"
+             cvssVector="(AV:N,AC:L,Au:S,C:C,I:C,A:C)"
+             id="CVE-2015-2906" />
+            <Vulnerability
+             cvssBaseScore="9.99509120602"
+             cvssExploitSubScore="9.9968"
+             cvssImpactSubScore="10.00084536"
+             cvssVector="(AV:N,AC:L,Au:N,C:C,I:C,A:C)"
+             id="CVE-2015-2897" />
+            <Vulnerability
+             cvssBaseScore="8.473175256"
+             cvssExploitSubScore="9.9968"
+             cvssImpactSubScore="7.843935"
+             cvssVector="(AV:N,AC:L,Au:N,C:P,I:N,A:C)"
+             id="CVE-2015-5600" />
+            <Vulnerability
+             cvssBaseScore="4.29612792"
+             cvssExploitSubScore="8.5888"
+             cvssImpactSubScore="2.86275"
+             cvssVector="(AV:N,AC:M,Au:N,C:N,I:P,A:N)"
+             id="CVE-2015-5352" />
+            <Vulnerability
+             cvssBaseScore="4.29612792"
+             cvssExploitSubScore="8.5888"
+             cvssImpactSubScore="2.86275"
+             cvssVector="(AV:N,AC:M,Au:N,C:N,I:N,A:P)"
+             id="CVE-2015-4236" />
+            <Vulnerability
+             cvssBaseScore="4.95845112"
+             cvssExploitSubScore="9.9968"
+             cvssImpactSubScore="2.86275"
+             cvssVector="(AV:N,AC:L,Au:N,C:P,I:N,A:N)"
+             id="CVE-2015-4196" />
+            <Vulnerability
+             cvssBaseScore="4.29612792"
+             cvssExploitSubScore="8.5888"
+             cvssImpactSubScore="2.86275"
+             cvssVector="(AV:N,AC:M,Au:N,C:P,I:N,A:N)"
+             id="CVE-2015-4217" />
+            <Vulnerability
+             cvssBaseScore="4.95845112"
+             cvssExploitSubScore="9.9968"
+             cvssImpactSubScore="2.86275"
+             cvssVector="(AV:N,AC:L,Au:N,C:P,I:N,A:N)"
+             id="CVE-2015-4216" />
+            <Vulnerability
+             cvssBaseScore="3.9965772"
+             cvssExploitSubScore="7.952"
+             cvssImpactSubScore="2.86275"
+             cvssVector="(AV:N,AC:L,Au:S,C:N,I:N,A:P)"
+             id="CVE-2015-4195" />
+            <Vulnerability
+             cvssBaseScore="8.7723513024"
+             cvssExploitSubScore="8.5888"
+             cvssImpactSubScore="9.206604"
+             cvssVector="(AV:N,AC:M,Au:N,C:C,I:C,A:N)"
+             id="CVE-2012-4716" />
+        </Service>
+    </Device>
+    <Device
+     hidden="false"
+     id="2000"
+     name="10.31.1.202"
+     pseudo="false"
+     status="up"
+     type="host">
+        <Description>10.31.1.202
+        </Description>
+        <NIC
+         ipAddress="10.31.1.202"
+         name="NPV_IFACE_1999"
+         nodeRefId="1877" />
+        <Service
+         name="ssh"
+         port="22"
+         product="ssh"
+         protocol="tcp"
+         version="">
+            <Vulnerability
+             cvssBaseScore="4.95845112"
+             cvssExploitSubScore="9.9968"
+             cvssImpactSubScore="2.86275"
+             cvssVector="(AV:N,AC:L,Au:N,C:N,I:N,A:P)"
+             id="CVE-2015-7845" />
+            <Vulnerability
+             cvssBaseScore="9.99509120602"
+             cvssExploitSubScore="9.9968"
+             cvssImpactSubScore="10.00084536"
+             cvssVector="(AV:N,AC:L,Au:N,C:C,I:C,A:C)"
+             id="CVE-2015-6476" />
+            <Vulnerability
+             cvssBaseScore="6.52278517275"
+             cvssExploitSubScore="7.952"
+             cvssImpactSubScore="6.44297671875"
+             cvssVector="(AV:N,AC:L,Au:S,C:P,I:P,A:P)"
+             id="CVE-2015-6316" />
+            <Vulnerability
+             cvssBaseScore="7.78639008"
+             cvssExploitSubScore="9.9968"
+             cvssImpactSubScore="6.8706"
+             cvssVector="(AV:N,AC:L,Au:N,C:N,I:N,A:C)"
+             id="CVE-2015-7752" />
+            <Vulnerability
+             cvssBaseScore="7.48465909275"
+             cvssExploitSubScore="9.9968"
+             cvssImpactSubScore="6.44297671875"
+             cvssVector="(AV:L,AC:L,Au:N,C:P,I:P,A:P)"
+             id="CVE-2015-6333" />
+            <Vulnerability
+             cvssBaseScore="4.95845112"
+             cvssExploitSubScore="9.9968"
+             cvssImpactSubScore="2.86275"
+             cvssVector="(AV:N,AC:L,Au:N,C:N,I:N,A:P)"
+             id="CVE-2015-7760" />
+            <Vulnerability
+             cvssBaseScore="3.9965772"
+             cvssExploitSubScore="7.952"
+             cvssImpactSubScore="2.86275"
+             cvssVector="(AV:N,AC:L,Au:S,C:N,I:N,A:P)"
+             id="CVE-2015-6300" />
+            <Vulnerability
+             cvssBaseScore="4.29612792"
+             cvssExploitSubScore="8.5888"
+             cvssImpactSubScore="2.86275"
+             cvssVector="(AV:L,AC:M,Au:N,C:N,I:P,A:N)"
+             id="CVE-2015-6563" />
+            <Vulnerability
+             cvssBaseScore="9.03321728602"
+             cvssExploitSubScore="7.952"
+             cvssImpactSubScore="10.00084536"
+             cvssVector="(AV:N,AC:L,Au:S,C:C,I:C,A:C)"
+             id="CVE-2015-2907" />
+            <Vulnerability
+             cvssBaseScore="9.03321728602"
+             cvssExploitSubScore="7.952"
+             cvssImpactSubScore="10.00084536"
+             cvssVector="(AV:N,AC:L,Au:S,C:C,I:C,A:C)"
+             id="CVE-2015-2906" />
+            <Vulnerability
+             cvssBaseScore="9.99509120602"
+             cvssExploitSubScore="9.9968"
+             cvssImpactSubScore="10.00084536"
+             cvssVector="(AV:N,AC:L,Au:N,C:C,I:C,A:C)"
+             id="CVE-2015-2897" />
+            <Vulnerability
+             cvssBaseScore="8.473175256"
+             cvssExploitSubScore="9.9968"
+             cvssImpactSubScore="7.843935"
+             cvssVector="(AV:N,AC:L,Au:N,C:P,I:N,A:C)"
+             id="CVE-2015-5600" />
+            <Vulnerability
+             cvssBaseScore="4.29612792"
+             cvssExploitSubScore="8.5888"
+             cvssImpactSubScore="2.86275"
+             cvssVector="(AV:N,AC:M,Au:N,C:N,I:P,A:N)"
+             id="CVE-2015-5352" />
+            <Vulnerability
+             cvssBaseScore="4.29612792"
+             cvssExploitSubScore="8.5888"
+             cvssImpactSubScore="2.86275"
+             cvssVector="(AV:N,AC:M,Au:N,C:N,I:N,A:P)"
+             id="CVE-2015-4236" />
+            <Vulnerability
+             cvssBaseScore="4.95845112"
+             cvssExploitSubScore="9.9968"
+             cvssImpactSubScore="2.86275"
+             cvssVector="(AV:N,AC:L,Au:N,C:P,I:N,A:N)"
+             id="CVE-2015-4196" />
+            <Vulnerability
+             cvssBaseScore="4.29612792"
+             cvssExploitSubScore="8.5888"
+             cvssImpactSubScore="2.86275"
+             cvssVector="(AV:N,AC:M,Au:N,C:P,I:N,A:N)"
+             id="CVE-2015-4217" />
+            <Vulnerability
+             cvssBaseScore="4.95845112"
+             cvssExploitSubScore="9.9968"
+             cvssImpactSubScore="2.86275"
+             cvssVector="(AV:N,AC:L,Au:N,C:P,I:N,A:N)"
+             id="CVE-2015-4216" />
+            <Vulnerability
+             cvssBaseScore="3.9965772"
+             cvssExploitSubScore="7.952"
+             cvssImpactSubScore="2.86275"
+             cvssVector="(AV:N,AC:L,Au:S,C:N,I:N,A:P)"
+             id="CVE-2015-4195" />
+            <Vulnerability
+             cvssBaseScore="8.7723513024"
+             cvssExploitSubScore="8.5888"
+             cvssImpactSubScore="9.206604"
+             cvssVector="(AV:N,AC:M,Au:N,C:C,I:C,A:N)"
+             id="CVE-2012-4716" />
+        </Service>
+    </Device>
+    <Device
+     hidden="false"
+     id="2002"
+     name="10.31.1.203"
+     pseudo="false"
+     status="up"
+     type="host">
+        <Description>10.31.1.203
+        </Description>
+        <NIC
+         ipAddress="10.31.1.203"
+         name="NPV_IFACE_2001"
+         nodeRefId="1877" />
+        <Service
+         name="ssh"
+         port="22"
+         product="ssh"
+         protocol="tcp"
+         version="">
+            <Vulnerability
+             cvssBaseScore="4.95845112"
+             cvssExploitSubScore="9.9968"
+             cvssImpactSubScore="2.86275"
+             cvssVector="(AV:N,AC:L,Au:N,C:N,I:N,A:P)"
+             id="CVE-2015-7845" />
+            <Vulnerability
+             cvssBaseScore="9.99509120602"
+             cvssExploitSubScore="9.9968"
+             cvssImpactSubScore="10.00084536"
+             cvssVector="(AV:N,AC:L,Au:N,C:C,I:C,A:C)"
+             id="CVE-2015-6476" />
+            <Vulnerability
+             cvssBaseScore="6.52278517275"
+             cvssExploitSubScore="7.952"
+             cvssImpactSubScore="6.44297671875"
+             cvssVector="(AV:N,AC:L,Au:S,C:P,I:P,A:P)"
+             id="CVE-2015-6316" />
+            <Vulnerability
+             cvssBaseScore="7.78639008"
+             cvssExploitSubScore="9.9968"
+             cvssImpactSubScore="6.8706"
+             cvssVector="(AV:N,AC:L,Au:N,C:N,I:N,A:C)"
+             id="CVE-2015-7752" />
+            <Vulnerability
+             cvssBaseScore="7.48465909275"
+             cvssExploitSubScore="9.9968"
+             cvssImpactSubScore="6.44297671875"
+             cvssVector="(AV:L,AC:L,Au:N,C:P,I:P,A:P)"
+             id="CVE-2015-6333" />
+            <Vulnerability
+             cvssBaseScore="4.95845112"
+             cvssExploitSubScore="9.9968"
+             cvssImpactSubScore="2.86275"
+             cvssVector="(AV:N,AC:L,Au:N,C:N,I:N,A:P)"
+             id="CVE-2015-7760" />
+            <Vulnerability
+             cvssBaseScore="3.9965772"
+             cvssExploitSubScore="7.952"
+             cvssImpactSubScore="2.86275"
+             cvssVector="(AV:N,AC:L,Au:S,C:N,I:N,A:P)"
+             id="CVE-2015-6300" />
+            <Vulnerability
+             cvssBaseScore="4.29612792"
+             cvssExploitSubScore="8.5888"
+             cvssImpactSubScore="2.86275"
+             cvssVector="(AV:L,AC:M,Au:N,C:N,I:P,A:N)"
+             id="CVE-2015-6563" />
+            <Vulnerability
+             cvssBaseScore="9.03321728602"
+             cvssExploitSubScore="7.952"
+             cvssImpactSubScore="10.00084536"
+             cvssVector="(AV:N,AC:L,Au:S,C:C,I:C,A:C)"
+             id="CVE-2015-2907" />
+            <Vulnerability
+             cvssBaseScore="9.03321728602"
+             cvssExploitSubScore="7.952"
+             cvssImpactSubScore="10.00084536"
+             cvssVector="(AV:N,AC:L,Au:S,C:C,I:C,A:C)"
+             id="CVE-2015-2906" />
+            <Vulnerability
+             cvssBaseScore="9.99509120602"
+             cvssExploitSubScore="9.9968"
+             cvssImpactSubScore="10.00084536"
+             cvssVector="(AV:N,AC:L,Au:N,C:C,I:C,A:C)"
+             id="CVE-2015-2897" />
+            <Vulnerability
+             cvssBaseScore="8.473175256"
+             cvssExploitSubScore="9.9968"
+             cvssImpactSubScore="7.843935"
+             cvssVector="(AV:N,AC:L,Au:N,C:P,I:N,A:C)"
+             id="CVE-2015-5600" />
+            <Vulnerability
+             cvssBaseScore="4.29612792"
+             cvssExploitSubScore="8.5888"
+             cvssImpactSubScore="2.86275"
+             cvssVector="(AV:N,AC:M,Au:N,C:N,I:P,A:N)"
+             id="CVE-2015-5352" />
+            <Vulnerability
+             cvssBaseScore="4.29612792"
+             cvssExploitSubScore="8.5888"
+             cvssImpactSubScore="2.86275"
+             cvssVector="(AV:N,AC:M,Au:N,C:N,I:N,A:P)"
+             id="CVE-2015-4236" />
+            <Vulnerability
+             cvssBaseScore="4.95845112"
+             cvssExploitSubScore="9.9968"
+             cvssImpactSubScore="2.86275"
+             cvssVector="(AV:N,AC:L,Au:N,C:P,I:N,A:N)"
+             id="CVE-2015-4196" />
+            <Vulnerability
+             cvssBaseScore="4.29612792"
+             cvssExploitSubScore="8.5888"
+             cvssImpactSubScore="2.86275"
+             cvssVector="(AV:N,AC:M,Au:N,C:P,I:N,A:N)"
+             id="CVE-2015-4217" />
+            <Vulnerability
+             cvssBaseScore="4.95845112"
+             cvssExploitSubScore="9.9968"
+             cvssImpactSubScore="2.86275"
+             cvssVector="(AV:N,AC:L,Au:N,C:P,I:N,A:N)"
+             id="CVE-2015-4216" />
+            <Vulnerability
+             cvssBaseScore="3.9965772"
+             cvssExploitSubScore="7.952"
+             cvssImpactSubScore="2.86275"
+             cvssVector="(AV:N,AC:L,Au:S,C:N,I:N,A:P)"
+             id="CVE-2015-4195" />
+            <Vulnerability
+             cvssBaseScore="8.7723513024"
+             cvssExploitSubScore="8.5888"
+             cvssImpactSubScore="9.206604"
+             cvssVector="(AV:N,AC:M,Au:N,C:C,I:C,A:N)"
+             id="CVE-2012-4716" />
+        </Service>
+    </Device>
+    <Device
+     hidden="false"
+     id="2004"
+     name="10.31.1.204"
+     pseudo="false"
+     status="up"
+     type="host">
+        <Description>10.31.1.204
+        </Description>
+        <NIC
+         ipAddress="10.31.1.204"
+         name="NPV_IFACE_2003"
+         nodeRefId="1877" />
+        <Service
+         name="ssh"
+         port="22"
+         product="ssh"
+         protocol="tcp"
+         version="">
+            <Vulnerability
+             cvssBaseScore="4.95845112"
+             cvssExploitSubScore="9.9968"
+             cvssImpactSubScore="2.86275"
+             cvssVector="(AV:N,AC:L,Au:N,C:N,I:N,A:P)"
+             id="CVE-2015-7845" />
+            <Vulnerability
+             cvssBaseScore="9.99509120602"
+             cvssExploitSubScore="9.9968"
+             cvssImpactSubScore="10.00084536"
+             cvssVector="(AV:N,AC:L,Au:N,C:C,I:C,A:C)"
+             id="CVE-2015-6476" />
+            <Vulnerability
+             cvssBaseScore="6.52278517275"
+             cvssExploitSubScore="7.952"
+             cvssImpactSubScore="6.44297671875"
+             cvssVector="(AV:N,AC:L,Au:S,C:P,I:P,A:P)"
+             id="CVE-2015-6316" />
+            <Vulnerability
+             cvssBaseScore="7.78639008"
+             cvssExploitSubScore="9.9968"
+             cvssImpactSubScore="6.8706"
+             cvssVector="(AV:N,AC:L,Au:N,C:N,I:N,A:C)"
+             id="CVE-2015-7752" />
+            <Vulnerability
+             cvssBaseScore="7.48465909275"
+             cvssExploitSubScore="9.9968"
+             cvssImpactSubScore="6.44297671875"
+             cvssVector="(AV:L,AC:L,Au:N,C:P,I:P,A:P)"
+             id="CVE-2015-6333" />
+            <Vulnerability
+             cvssBaseScore="4.95845112"
+             cvssExploitSubScore="9.9968"
+             cvssImpactSubScore="2.86275"
+             cvssVector="(AV:N,AC:L,Au:N,C:N,I:N,A:P)"
+             id="CVE-2015-7760" />
+            <Vulnerability
+             cvssBaseScore="3.9965772"
+             cvssExploitSubScore="7.952"
+             cvssImpactSubScore="2.86275"
+             cvssVector="(AV:N,AC:L,Au:S,C:N,I:N,A:P)"
+             id="CVE-2015-6300" />
+            <Vulnerability
+             cvssBaseScore="4.29612792"
+             cvssExploitSubScore="8.5888"
+             cvssImpactSubScore="2.86275"
+             cvssVector="(AV:L,AC:M,Au:N,C:N,I:P,A:N)"
+             id="CVE-2015-6563" />
+            <Vulnerability
+             cvssBaseScore="9.03321728602"
+             cvssExploitSubScore="7.952"
+             cvssImpactSubScore="10.00084536"
+             cvssVector="(AV:N,AC:L,Au:S,C:C,I:C,A:C)"
+             id="CVE-2015-2907" />
+            <Vulnerability
+             cvssBaseScore="9.03321728602"
+             cvssExploitSubScore="7.952"
+             cvssImpactSubScore="10.00084536"
+             cvssVector="(AV:N,AC:L,Au:S,C:C,I:C,A:C)"
+             id="CVE-2015-2906" />
+            <Vulnerability
+             cvssBaseScore="9.99509120602"
+             cvssExploitSubScore="9.9968"
+             cvssImpactSubScore="10.00084536"
+             cvssVector="(AV:N,AC:L,Au:N,C:C,I:C,A:C)"
+             id="CVE-2015-2897" />
+            <Vulnerability
+             cvssBaseScore="8.473175256"
+             cvssExploitSubScore="9.9968"
+             cvssImpactSubScore="7.843935"
+             cvssVector="(AV:N,AC:L,Au:N,C:P,I:N,A:C)"
+             id="CVE-2015-5600" />
+            <Vulnerability
+             cvssBaseScore="4.29612792"
+             cvssExploitSubScore="8.5888"
+             cvssImpactSubScore="2.86275"
+             cvssVector="(AV:N,AC:M,Au:N,C:N,I:P,A:N)"
+             id="CVE-2015-5352" />
+            <Vulnerability
+             cvssBaseScore="4.29612792"
+             cvssExploitSubScore="8.5888"
+             cvssImpactSubScore="2.86275"
+             cvssVector="(AV:N,AC:M,Au:N,C:N,I:N,A:P)"
+             id="CVE-2015-4236" />
+            <Vulnerability
+             cvssBaseScore="4.95845112"
+             cvssExploitSubScore="9.9968"
+             cvssImpactSubScore="2.86275"
+             cvssVector="(AV:N,AC:L,Au:N,C:P,I:N,A:N)"
+             id="CVE-2015-4196" />
+            <Vulnerability
+             cvssBaseScore="4.29612792"
+             cvssExploitSubScore="8.5888"
+             cvssImpactSubScore="2.86275"
+             cvssVector="(AV:N,AC:M,Au:N,C:P,I:N,A:N)"
+             id="CVE-2015-4217" />
+            <Vulnerability
+             cvssBaseScore="4.95845112"
+             cvssExploitSubScore="9.9968"
+             cvssImpactSubScore="2.86275"
+             cvssVector="(AV:N,AC:L,Au:N,C:P,I:N,A:N)"
+             id="CVE-2015-4216" />
+            <Vulnerability
+             cvssBaseScore="3.9965772"
+             cvssExploitSubScore="7.952"
+             cvssImpactSubScore="2.86275"
+             cvssVector="(AV:N,AC:L,Au:S,C:N,I:N,A:P)"
+             id="CVE-2015-4195" />
+            <Vulnerability
+             cvssBaseScore="8.7723513024"
+             cvssExploitSubScore="8.5888"
+             cvssImpactSubScore="9.206604"
+             cvssVector="(AV:N,AC:M,Au:N,C:C,I:C,A:N)"
+             id="CVE-2012-4716" />
+        </Service>
+    </Device>
+    <Device
+     hidden="false"
+     id="2006"
+     name="10.31.1.205"
+     pseudo="false"
+     status="up"
+     type="host">
+        <Description>10.31.1.205
+        </Description>
+        <NIC
+         ipAddress="10.31.1.205"
+         name="NPV_IFACE_2005"
+         nodeRefId="1877" />
+        <Service
+         name="ssh"
+         port="22"
+         product="ssh"
+         protocol="tcp"
+         version="">
+            <Vulnerability
+             cvssBaseScore="4.95845112"
+             cvssExploitSubScore="9.9968"
+             cvssImpactSubScore="2.86275"
+             cvssVector="(AV:N,AC:L,Au:N,C:N,I:N,A:P)"
+             id="CVE-2015-7845" />
+            <Vulnerability
+             cvssBaseScore="9.99509120602"
+             cvssExploitSubScore="9.9968"
+             cvssImpactSubScore="10.00084536"
+             cvssVector="(AV:N,AC:L,Au:N,C:C,I:C,A:C)"
+             id="CVE-2015-6476" />
+            <Vulnerability
+             cvssBaseScore="6.52278517275"
+             cvssExploitSubScore="7.952"
+             cvssImpactSubScore="6.44297671875"
+             cvssVector="(AV:N,AC:L,Au:S,C:P,I:P,A:P)"
+             id="CVE-2015-6316" />
+            <Vulnerability
+             cvssBaseScore="7.78639008"
+             cvssExploitSubScore="9.9968"
+             cvssImpactSubScore="6.8706"
+             cvssVector="(AV:N,AC:L,Au:N,C:N,I:N,A:C)"
+             id="CVE-2015-7752" />
+            <Vulnerability
+             cvssBaseScore="7.48465909275"
+             cvssExploitSubScore="9.9968"
+             cvssImpactSubScore="6.44297671875"
+             cvssVector="(AV:L,AC:L,Au:N,C:P,I:P,A:P)"
+             id="CVE-2015-6333" />
+            <Vulnerability
+             cvssBaseScore="4.95845112"
+             cvssExploitSubScore="9.9968"
+             cvssImpactSubScore="2.86275"
+             cvssVector="(AV:N,AC:L,Au:N,C:N,I:N,A:P)"
+             id="CVE-2015-7760" />
+            <Vulnerability
+             cvssBaseScore="3.9965772"
+             cvssExploitSubScore="7.952"
+             cvssImpactSubScore="2.86275"
+             cvssVector="(AV:N,AC:L,Au:S,C:N,I:N,A:P)"
+             id="CVE-2015-6300" />
+            <Vulnerability
+             cvssBaseScore="4.29612792"
+             cvssExploitSubScore="8.5888"
+             cvssImpactSubScore="2.86275"
+             cvssVector="(AV:L,AC:M,Au:N,C:N,I:P,A:N)"
+             id="CVE-2015-6563" />
+            <Vulnerability
+             cvssBaseScore="9.03321728602"
+             cvssExploitSubScore="7.952"
+             cvssImpactSubScore="10.00084536"
+             cvssVector="(AV:N,AC:L,Au:S,C:C,I:C,A:C)"
+             id="CVE-2015-2907" />
+            <Vulnerability
+             cvssBaseScore="9.03321728602"
+             cvssExploitSubScore="7.952"
+             cvssImpactSubScore="10.00084536"
+             cvssVector="(AV:N,AC:L,Au:S,C:C,I:C,A:C)"
+             id="CVE-2015-2906" />
+            <Vulnerability
+             cvssBaseScore="9.99509120602"
+             cvssExploitSubScore="9.9968"
+             cvssImpactSubScore="10.00084536"
+             cvssVector="(AV:N,AC:L,Au:N,C:C,I:C,A:C)"
+             id="CVE-2015-2897" />
+            <Vulnerability
+             cvssBaseScore="8.473175256"
+             cvssExploitSubScore="9.9968"
+             cvssImpactSubScore="7.843935"
+             cvssVector="(AV:N,AC:L,Au:N,C:P,I:N,A:C)"
+             id="CVE-2015-5600" />
+            <Vulnerability
+             cvssBaseScore="4.29612792"
+             cvssExploitSubScore="8.5888"
+             cvssImpactSubScore="2.86275"
+             cvssVector="(AV:N,AC:M,Au:N,C:N,I:P,A:N)"
+             id="CVE-2015-5352" />
+            <Vulnerability
+             cvssBaseScore="4.29612792"
+             cvssExploitSubScore="8.5888"
+             cvssImpactSubScore="2.86275"
+             cvssVector="(AV:N,AC:M,Au:N,C:N,I:N,A:P)"
+             id="CVE-2015-4236" />
+            <Vulnerability
+             cvssBaseScore="4.95845112"
+             cvssExploitSubScore="9.9968"
+             cvssImpactSubScore="2.86275"
+             cvssVector="(AV:N,AC:L,Au:N,C:P,I:N,A:N)"
+             id="CVE-2015-4196" />
+            <Vulnerability
+             cvssBaseScore="4.29612792"
+             cvssExploitSubScore="8.5888"
+             cvssImpactSubScore="2.86275"
+             cvssVector="(AV:N,AC:M,Au:N,C:P,I:N,A:N)"
+             id="CVE-2015-4217" />
+            <Vulnerability
+             cvssBaseScore="4.95845112"
+             cvssExploitSubScore="9.9968"
+             cvssImpactSubScore="2.86275"
+             cvssVector="(AV:N,AC:L,Au:N,C:P,I:N,A:N)"
+             id="CVE-2015-4216" />
+            <Vulnerability
+             cvssBaseScore="3.9965772"
+             cvssExploitSubScore="7.952"
+             cvssImpactSubScore="2.86275"
+             cvssVector="(AV:N,AC:L,Au:S,C:N,I:N,A:P)"
+             id="CVE-2015-4195" />
+            <Vulnerability
+             cvssBaseScore="8.7723513024"
+             cvssExploitSubScore="8.5888"
+             cvssImpactSubScore="9.206604"
+             cvssVector="(AV:N,AC:M,Au:N,C:C,I:C,A:N)"
+             id="CVE-2012-4716" />
+        </Service>
+    </Device>
+    <Device
+     hidden="false"
+     id="2008"
+     name="10.31.1.206"
+     pseudo="false"
+     status="up"
+     type="host">
+        <Description>10.31.1.206
+        </Description>
+        <NIC
+         ipAddress="10.31.1.206"
+         name="NPV_IFACE_2007"
+         nodeRefId="1877" />
+        <Service
+         name="ssh"
+         port="22"
+         product="ssh"
+         protocol="tcp"
+         version="">
+            <Vulnerability
+             cvssBaseScore="4.95845112"
+             cvssExploitSubScore="9.9968"
+             cvssImpactSubScore="2.86275"
+             cvssVector="(AV:N,AC:L,Au:N,C:N,I:N,A:P)"
+             id="CVE-2015-7845" />
+            <Vulnerability
+             cvssBaseScore="9.99509120602"
+             cvssExploitSubScore="9.9968"
+             cvssImpactSubScore="10.00084536"
+             cvssVector="(AV:N,AC:L,Au:N,C:C,I:C,A:C)"
+             id="CVE-2015-6476" />
+            <Vulnerability
+             cvssBaseScore="6.52278517275"
+             cvssExploitSubScore="7.952"
+             cvssImpactSubScore="6.44297671875"
+             cvssVector="(AV:N,AC:L,Au:S,C:P,I:P,A:P)"
+             id="CVE-2015-6316" />
+            <Vulnerability
+             cvssBaseScore="7.78639008"
+             cvssExploitSubScore="9.9968"
+             cvssImpactSubScore="6.8706"
+             cvssVector="(AV:N,AC:L,Au:N,C:N,I:N,A:C)"
+             id="CVE-2015-7752" />
+            <Vulnerability
+             cvssBaseScore="7.48465909275"
+             cvssExploitSubScore="9.9968"
+             cvssImpactSubScore="6.44297671875"
+             cvssVector="(AV:L,AC:L,Au:N,C:P,I:P,A:P)"
+             id="CVE-2015-6333" />
+            <Vulnerability
+             cvssBaseScore="4.95845112"
+             cvssExploitSubScore="9.9968"
+             cvssImpactSubScore="2.86275"
+             cvssVector="(AV:N,AC:L,Au:N,C:N,I:N,A:P)"
+             id="CVE-2015-7760" />
+            <Vulnerability
+             cvssBaseScore="3.9965772"
+             cvssExploitSubScore="7.952"
+             cvssImpactSubScore="2.86275"
+             cvssVector="(AV:N,AC:L,Au:S,C:N,I:N,A:P)"
+             id="CVE-2015-6300" />
+            <Vulnerability
+             cvssBaseScore="4.29612792"
+             cvssExploitSubScore="8.5888"
+             cvssImpactSubScore="2.86275"
+             cvssVector="(AV:L,AC:M,Au:N,C:N,I:P,A:N)"
+             id="CVE-2015-6563" />
+            <Vulnerability
+             cvssBaseScore="9.03321728602"
+             cvssExploitSubScore="7.952"
+             cvssImpactSubScore="10.00084536"
+             cvssVector="(AV:N,AC:L,Au:S,C:C,I:C,A:C)"
+             id="CVE-2015-2907" />
+            <Vulnerability
+             cvssBaseScore="9.03321728602"
+             cvssExploitSubScore="7.952"
+             cvssImpactSubScore="10.00084536"
+             cvssVector="(AV:N,AC:L,Au:S,C:C,I:C,A:C)"
+             id="CVE-2015-2906" />
+            <Vulnerability
+             cvssBaseScore="9.99509120602"
+             cvssExploitSubScore="9.9968"
+             cvssImpactSubScore="10.00084536"
+             cvssVector="(AV:N,AC:L,Au:N,C:C,I:C,A:C)"
+             id="CVE-2015-2897" />
+            <Vulnerability
+             cvssBaseScore="8.473175256"
+             cvssExploitSubScore="9.9968"
+             cvssImpactSubScore="7.843935"
+             cvssVector="(AV:N,AC:L,Au:N,C:P,I:N,A:C)"
+             id="CVE-2015-5600" />
+            <Vulnerability
+             cvssBaseScore="4.29612792"
+             cvssExploitSubScore="8.5888"
+             cvssImpactSubScore="2.86275"
+             cvssVector="(AV:N,AC:M,Au:N,C:N,I:P,A:N)"
+             id="CVE-2015-5352" />
+            <Vulnerability
+             cvssBaseScore="4.29612792"
+             cvssExploitSubScore="8.5888"
+             cvssImpactSubScore="2.86275"
+             cvssVector="(AV:N,AC:M,Au:N,C:N,I:N,A:P)"
+             id="CVE-2015-4236" />
+            <Vulnerability
+             cvssBaseScore="4.95845112"
+             cvssExploitSubScore="9.9968"
+             cvssImpactSubScore="2.86275"
+             cvssVector="(AV:N,AC:L,Au:N,C:P,I:N,A:N)"
+             id="CVE-2015-4196" />
+            <Vulnerability
+             cvssBaseScore="4.29612792"
+             cvssExploitSubScore="8.5888"
+             cvssImpactSubScore="2.86275"
+             cvssVector="(AV:N,AC:M,Au:N,C:P,I:N,A:N)"
+             id="CVE-2015-4217" />
+            <Vulnerability
+             cvssBaseScore="4.95845112"
+             cvssExploitSubScore="9.9968"
+             cvssImpactSubScore="2.86275"
+             cvssVector="(AV:N,AC:L,Au:N,C:P,I:N,A:N)"
+             id="CVE-2015-4216" />
+            <Vulnerability
+             cvssBaseScore="3.9965772"
+             cvssExploitSubScore="7.952"
+             cvssImpactSubScore="2.86275"
+             cvssVector="(AV:N,AC:L,Au:S,C:N,I:N,A:P)"
+             id="CVE-2015-4195" />
+            <Vulnerability
+             cvssBaseScore="8.7723513024"
+             cvssExploitSubScore="8.5888"
+             cvssImpactSubScore="9.206604"
+             cvssVector="(AV:N,AC:M,Au:N,C:C,I:C,A:N)"
+             id="CVE-2012-4716" />
+        </Service>
+    </Device>
+    <Device
+     hidden="false"
+     id="2020"
+     name="10.31.1.105"
+     pseudo="false"
+     status="up"
+     type="host">
+        <Description>10.31.1.105
+        </Description>
+        <NIC
+         ipAddress="10.31.1.105"
+         name="NPV_IFACE_2019"
+         nodeRefId="1877" />
+        <Service
+         name="ssh"
+         port="22"
+         product="ssh"
+         protocol="tcp"
+         version="">
+            <Vulnerability
+             cvssBaseScore="4.95845112"
+             cvssExploitSubScore="9.9968"
+             cvssImpactSubScore="2.86275"
+             cvssVector="(AV:N,AC:L,Au:N,C:N,I:N,A:P)"
+             id="CVE-2015-7845" />
+            <Vulnerability
+             cvssBaseScore="9.99509120602"
+             cvssExploitSubScore="9.9968"
+             cvssImpactSubScore="10.00084536"
+             cvssVector="(AV:N,AC:L,Au:N,C:C,I:C,A:C)"
+             id="CVE-2015-6476" />
+            <Vulnerability
+             cvssBaseScore="6.52278517275"
+             cvssExploitSubScore="7.952"
+             cvssImpactSubScore="6.44297671875"
+             cvssVector="(AV:N,AC:L,Au:S,C:P,I:P,A:P)"
+             id="CVE-2015-6316" />
+            <Vulnerability
+             cvssBaseScore="7.78639008"
+             cvssExploitSubScore="9.9968"
+             cvssImpactSubScore="6.8706"
+             cvssVector="(AV:N,AC:L,Au:N,C:N,I:N,A:C)"
+             id="CVE-2015-7752" />
+            <Vulnerability
+             cvssBaseScore="7.48465909275"
+             cvssExploitSubScore="9.9968"
+             cvssImpactSubScore="6.44297671875"
+             cvssVector="(AV:L,AC:L,Au:N,C:P,I:P,A:P)"
+             id="CVE-2015-6333" />
+            <Vulnerability
+             cvssBaseScore="4.95845112"
+             cvssExploitSubScore="9.9968"
+             cvssImpactSubScore="2.86275"
+             cvssVector="(AV:N,AC:L,Au:N,C:N,I:N,A:P)"
+             id="CVE-2015-7760" />
+            <Vulnerability
+             cvssBaseScore="3.9965772"
+             cvssExploitSubScore="7.952"
+             cvssImpactSubScore="2.86275"
+             cvssVector="(AV:N,AC:L,Au:S,C:N,I:N,A:P)"
+             id="CVE-2015-6300" />
+            <Vulnerability
+             cvssBaseScore="4.29612792"
+             cvssExploitSubScore="8.5888"
+             cvssImpactSubScore="2.86275"
+             cvssVector="(AV:L,AC:M,Au:N,C:N,I:P,A:N)"
+             id="CVE-2015-6563" />
+            <Vulnerability
+             cvssBaseScore="9.03321728602"
+             cvssExploitSubScore="7.952"
+             cvssImpactSubScore="10.00084536"
+             cvssVector="(AV:N,AC:L,Au:S,C:C,I:C,A:C)"
+             id="CVE-2015-2907" />
+            <Vulnerability
+             cvssBaseScore="9.03321728602"
+             cvssExploitSubScore="7.952"
+             cvssImpactSubScore="10.00084536"
+             cvssVector="(AV:N,AC:L,Au:S,C:C,I:C,A:C)"
+             id="CVE-2015-2906" />
+            <Vulnerability
+             cvssBaseScore="9.99509120602"
+             cvssExploitSubScore="9.9968"
+             cvssImpactSubScore="10.00084536"
+             cvssVector="(AV:N,AC:L,Au:N,C:C,I:C,A:C)"
+             id="CVE-2015-2897" />
+            <Vulnerability
+             cvssBaseScore="8.473175256"
+             cvssExploitSubScore="9.9968"
+             cvssImpactSubScore="7.843935"
+             cvssVector="(AV:N,AC:L,Au:N,C:P,I:N,A:C)"
+             id="CVE-2015-5600" />
+            <Vulnerability
+             cvssBaseScore="4.29612792"
+             cvssExploitSubScore="8.5888"
+             cvssImpactSubScore="2.86275"
+             cvssVector="(AV:N,AC:M,Au:N,C:N,I:P,A:N)"
+             id="CVE-2015-5352" />
+            <Vulnerability
+             cvssBaseScore="4.29612792"
+             cvssExploitSubScore="8.5888"
+             cvssImpactSubScore="2.86275"
+             cvssVector="(AV:N,AC:M,Au:N,C:N,I:N,A:P)"
+             id="CVE-2015-4236" />
+            <Vulnerability
+             cvssBaseScore="4.95845112"
+             cvssExploitSubScore="9.9968"
+             cvssImpactSubScore="2.86275"
+             cvssVector="(AV:N,AC:L,Au:N,C:P,I:N,A:N)"
+             id="CVE-2015-4196" />
+            <Vulnerability
+             cvssBaseScore="4.29612792"
+             cvssExploitSubScore="8.5888"
+             cvssImpactSubScore="2.86275"
+             cvssVector="(AV:N,AC:M,Au:N,C:P,I:N,A:N)"
+             id="CVE-2015-4217" />
+            <Vulnerability
+             cvssBaseScore="4.95845112"
+             cvssExploitSubScore="9.9968"
+             cvssImpactSubScore="2.86275"
+             cvssVector="(AV:N,AC:L,Au:N,C:P,I:N,A:N)"
+             id="CVE-2015-4216" />
+            <Vulnerability
+             cvssBaseScore="3.9965772"
+             cvssExploitSubScore="7.952"
+             cvssImpactSubScore="2.86275"
+             cvssVector="(AV:N,AC:L,Au:S,C:N,I:N,A:P)"
+             id="CVE-2015-4195" />
+            <Vulnerability
+             cvssBaseScore="8.7723513024"
+             cvssExploitSubScore="8.5888"
+             cvssImpactSubScore="9.206604"
+             cvssVector="(AV:N,AC:M,Au:N,C:C,I:C,A:N)"
+             id="CVE-2012-4716" />
+        </Service>
+    </Device>
+    <Device
+     hidden="false"
+     id="2010"
+     name="10.31.1.207"
+     pseudo="false"
+     type="host">
+        <Description>10.31.1.207
+        </Description>
+        <NIC
+         ipAddress="10.31.1.207"
+         name="NPV_IFACE_2009"
+         nodeRefId="1877" />
+    </Device>
+    <Device
+     aliases="CAPITALCITY"
+     hidden="false"
+     id="1884"
+     name="10.37.1.250"
+     pseudo="false"
+     type="host">
+        <Description>10.37.1.250
+        </Description>
+        <NIC
+         ipAddress="10.37.1.250"
+         name="NPV_IFACE_1883"
+         nodeRefId="1869" />
+    </Device>
+    <Device
+     aliases="CAP_CITY_421"
+     hidden="false"
+     id="1886"
+     name="10.37.1.201"
+     pseudo="false"
+     type="host">
+        <Description>10.37.1.201
+        </Description>
+        <NIC
+         ipAddress="10.37.1.201"
+         name="NPV_IFACE_1885"
+         nodeRefId="1869" />
+    </Device>
+    <Device
+     hidden="false"
+     id="1888"
+     name="10.37.1.101"
+     pseudo="false"
+     type="host">
+        <Description>10.37.1.101
+        </Description>
+        <NIC
+         ipAddress="10.37.1.101"
+         name="NPV_IFACE_1887"
+         nodeRefId="1869" />
+    </Device>
+    <Device
+     hidden="false"
+     id="1890"
+     name="10.37.1.102"
+     pseudo="false"
+     type="host">
+        <Description>10.37.1.102
+        </Description>
+        <NIC
+         ipAddress="10.37.1.102"
+         name="NPV_IFACE_1889"
+         nodeRefId="1869" />
+    </Device>
+    <Device
+     aliases="EMS_FEP:FTP_SERVER"
+     hidden="false"
+     id="1892"
+     name="72.36.82.194"
+     pseudo="false"
+     type="host">
+        <Description>72.36.82.194
+        </Description>
+        <NIC
+         ipAddress="72.36.82.194"
+         name="NPV_IFACE_1891"
+         nodeRefId="1875" />
+    </Device>
+    <Device
+     aliases="HAVERBROOK"
+     hidden="false"
+     id="2022"
+     name="10.32.1.250"
+     pseudo="false"
+     status="up"
+     type="host">
+        <Description>10.32.1.250
+        </Description>
+        <NIC
+         ipAddress="10.32.1.250"
+         name="NPV_IFACE_2021"
+         nodeRefId="1878" />
+        <Service
+         name="ssh"
+         port="22"
+         product="ssh"
+         protocol="tcp"
+         version="">
+            <Vulnerability
+             cvssBaseScore="4.95845112"
+             cvssExploitSubScore="9.9968"
+             cvssImpactSubScore="2.86275"
+             cvssVector="(AV:N,AC:L,Au:N,C:N,I:N,A:P)"
+             id="CVE-2015-7845" />
+            <Vulnerability
+             cvssBaseScore="9.99509120602"
+             cvssExploitSubScore="9.9968"
+             cvssImpactSubScore="10.00084536"
+             cvssVector="(AV:N,AC:L,Au:N,C:C,I:C,A:C)"
+             id="CVE-2015-6476" />
+            <Vulnerability
+             cvssBaseScore="6.52278517275"
+             cvssExploitSubScore="7.952"
+             cvssImpactSubScore="6.44297671875"
+             cvssVector="(AV:N,AC:L,Au:S,C:P,I:P,A:P)"
+             id="CVE-2015-6316" />
+            <Vulnerability
+             cvssBaseScore="7.78639008"
+             cvssExploitSubScore="9.9968"
+             cvssImpactSubScore="6.8706"
+             cvssVector="(AV:N,AC:L,Au:N,C:N,I:N,A:C)"
+             id="CVE-2015-7752" />
+            <Vulnerability
+             cvssBaseScore="7.48465909275"
+             cvssExploitSubScore="9.9968"
+             cvssImpactSubScore="6.44297671875"
+             cvssVector="(AV:L,AC:L,Au:N,C:P,I:P,A:P)"
+             id="CVE-2015-6333" />
+            <Vulnerability
+             cvssBaseScore="4.95845112"
+             cvssExploitSubScore="9.9968"
+             cvssImpactSubScore="2.86275"
+             cvssVector="(AV:N,AC:L,Au:N,C:N,I:N,A:P)"
+             id="CVE-2015-7760" />
+            <Vulnerability
+             cvssBaseScore="3.9965772"
+             cvssExploitSubScore="7.952"
+             cvssImpactSubScore="2.86275"
+             cvssVector="(AV:N,AC:L,Au:S,C:N,I:N,A:P)"
+             id="CVE-2015-6300" />
+            <Vulnerability
+             cvssBaseScore="4.29612792"
+             cvssExploitSubScore="8.5888"
+             cvssImpactSubScore="2.86275"
+             cvssVector="(AV:L,AC:M,Au:N,C:N,I:P,A:N)"
+             id="CVE-2015-6563" />
+            <Vulnerability
+             cvssBaseScore="9.03321728602"
+             cvssExploitSubScore="7.952"
+             cvssImpactSubScore="10.00084536"
+             cvssVector="(AV:N,AC:L,Au:S,C:C,I:C,A:C)"
+             id="CVE-2015-2907" />
+            <Vulnerability
+             cvssBaseScore="9.03321728602"
+             cvssExploitSubScore="7.952"
+             cvssImpactSubScore="10.00084536"
+             cvssVector="(AV:N,AC:L,Au:S,C:C,I:C,A:C)"
+             id="CVE-2015-2906" />
+            <Vulnerability
+             cvssBaseScore="9.99509120602"
+             cvssExploitSubScore="9.9968"
+             cvssImpactSubScore="10.00084536"
+             cvssVector="(AV:N,AC:L,Au:N,C:C,I:C,A:C)"
+             id="CVE-2015-2897" />
+            <Vulnerability
+             cvssBaseScore="8.473175256"
+             cvssExploitSubScore="9.9968"
+             cvssImpactSubScore="7.843935"
+             cvssVector="(AV:N,AC:L,Au:N,C:P,I:N,A:C)"
+             id="CVE-2015-5600" />
+            <Vulnerability
+             cvssBaseScore="4.29612792"
+             cvssExploitSubScore="8.5888"
+             cvssImpactSubScore="2.86275"
+             cvssVector="(AV:N,AC:M,Au:N,C:N,I:P,A:N)"
+             id="CVE-2015-5352" />
+            <Vulnerability
+             cvssBaseScore="4.29612792"
+             cvssExploitSubScore="8.5888"
+             cvssImpactSubScore="2.86275"
+             cvssVector="(AV:N,AC:M,Au:N,C:N,I:N,A:P)"
+             id="CVE-2015-4236" />
+            <Vulnerability
+             cvssBaseScore="4.95845112"
+             cvssExploitSubScore="9.9968"
+             cvssImpactSubScore="2.86275"
+             cvssVector="(AV:N,AC:L,Au:N,C:P,I:N,A:N)"
+             id="CVE-2015-4196" />
+            <Vulnerability
+             cvssBaseScore="4.29612792"
+             cvssExploitSubScore="8.5888"
+             cvssImpactSubScore="2.86275"
+             cvssVector="(AV:N,AC:M,Au:N,C:P,I:N,A:N)"
+             id="CVE-2015-4217" />
+            <Vulnerability
+             cvssBaseScore="4.95845112"
+             cvssExploitSubScore="9.9968"
+             cvssImpactSubScore="2.86275"
+             cvssVector="(AV:N,AC:L,Au:N,C:P,I:N,A:N)"
+             id="CVE-2015-4216" />
+            <Vulnerability
+             cvssBaseScore="3.9965772"
+             cvssExploitSubScore="7.952"
+             cvssImpactSubScore="2.86275"
+             cvssVector="(AV:N,AC:L,Au:S,C:N,I:N,A:P)"
+             id="CVE-2015-4195" />
+            <Vulnerability
+             cvssBaseScore="8.7723513024"
+             cvssExploitSubScore="8.5888"
+             cvssImpactSubScore="9.206604"
+             cvssVector="(AV:N,AC:M,Au:N,C:C,I:C,A:N)"
+             id="CVE-2012-4716" />
+        </Service>
+    </Device>
+    <Device
+     aliases="EMS_SERVERS"
+     hidden="false"
+     id="1894"
+     name="72.36.82.195"
+     pseudo="false"
+     type="host">
+        <Description>72.36.82.195
+        </Description>
+        <NIC
+         ipAddress="72.36.82.195"
+         name="NPV_IFACE_1893"
+         nodeRefId="1875" />
+    </Device>
+    <Device
+     aliases="JUMP_HOST"
+     hidden="false"
+     id="1896"
+     name="10.39.1.22"
+     pseudo="false"
+     status="up"
+     type="host">
+        <Description>10.39.1.22
+        </Description>
+        <NIC
+         ipAddress="10.39.1.22"
+         name="NPV_IFACE_1895"
+         nodeRefId="1876" />
+        <Service
+         name="ssh"
+         port="22"
+         product="ssh"
+         protocol="tcp"
+         version="">
+            <Vulnerability
+             cvssBaseScore="4.95845112"
+             cvssExploitSubScore="9.9968"
+             cvssImpactSubScore="2.86275"
+             cvssVector="(AV:N,AC:L,Au:N,C:N,I:N,A:P)"
+             id="CVE-2015-7845" />
+            <Vulnerability
+             cvssBaseScore="9.99509120602"
+             cvssExploitSubScore="9.9968"
+             cvssImpactSubScore="10.00084536"
+             cvssVector="(AV:N,AC:L,Au:N,C:C,I:C,A:C)"
+             id="CVE-2015-6476" />
+            <Vulnerability
+             cvssBaseScore="6.52278517275"
+             cvssExploitSubScore="7.952"
+             cvssImpactSubScore="6.44297671875"
+             cvssVector="(AV:N,AC:L,Au:S,C:P,I:P,A:P)"
+             id="CVE-2015-6316" />
+            <Vulnerability
+             cvssBaseScore="7.78639008"
+             cvssExploitSubScore="9.9968"
+             cvssImpactSubScore="6.8706"
+             cvssVector="(AV:N,AC:L,Au:N,C:N,I:N,A:C)"
+             id="CVE-2015-7752" />
+            <Vulnerability
+             cvssBaseScore="7.48465909275"
+             cvssExploitSubScore="9.9968"
+             cvssImpactSubScore="6.44297671875"
+             cvssVector="(AV:L,AC:L,Au:N,C:P,I:P,A:P)"
+             id="CVE-2015-6333" />
+            <Vulnerability
+             cvssBaseScore="4.95845112"
+             cvssExploitSubScore="9.9968"
+             cvssImpactSubScore="2.86275"
+             cvssVector="(AV:N,AC:L,Au:N,C:N,I:N,A:P)"
+             id="CVE-2015-7760" />
+            <Vulnerability
+             cvssBaseScore="3.9965772"
+             cvssExploitSubScore="7.952"
+             cvssImpactSubScore="2.86275"
+             cvssVector="(AV:N,AC:L,Au:S,C:N,I:N,A:P)"
+             id="CVE-2015-6300" />
+            <Vulnerability
+             cvssBaseScore="4.29612792"
+             cvssExploitSubScore="8.5888"
+             cvssImpactSubScore="2.86275"
+             cvssVector="(AV:L,AC:M,Au:N,C:N,I:P,A:N)"
+             id="CVE-2015-6563" />
+            <Vulnerability
+             cvssBaseScore="9.03321728602"
+             cvssExploitSubScore="7.952"
+             cvssImpactSubScore="10.00084536"
+             cvssVector="(AV:N,AC:L,Au:S,C:C,I:C,A:C)"
+             id="CVE-2015-2907" />
+            <Vulnerability
+             cvssBaseScore="9.03321728602"
+             cvssExploitSubScore="7.952"
+             cvssImpactSubScore="10.00084536"
+             cvssVector="(AV:N,AC:L,Au:S,C:C,I:C,A:C)"
+             id="CVE-2015-2906" />
+            <Vulnerability
+             cvssBaseScore="9.99509120602"
+             cvssExploitSubScore="9.9968"
+             cvssImpactSubScore="10.00084536"
+             cvssVector="(AV:N,AC:L,Au:N,C:C,I:C,A:C)"
+             id="CVE-2015-2897" />
+            <Vulnerability
+             cvssBaseScore="8.473175256"
+             cvssExploitSubScore="9.9968"
+             cvssImpactSubScore="7.843935"
+             cvssVector="(AV:N,AC:L,Au:N,C:P,I:N,A:C)"
+             id="CVE-2015-5600" />
+            <Vulnerability
+             cvssBaseScore="4.29612792"
+             cvssExploitSubScore="8.5888"
+             cvssImpactSubScore="2.86275"
+             cvssVector="(AV:N,AC:M,Au:N,C:N,I:P,A:N)"
+             id="CVE-2015-5352" />
+            <Vulnerability
+             cvssBaseScore="4.29612792"
+             cvssExploitSubScore="8.5888"
+             cvssImpactSubScore="2.86275"
+             cvssVector="(AV:N,AC:M,Au:N,C:N,I:N,A:P)"
+             id="CVE-2015-4236" />
+            <Vulnerability
+             cvssBaseScore="4.95845112"
+             cvssExploitSubScore="9.9968"
+             cvssImpactSubScore="2.86275"
+             cvssVector="(AV:N,AC:L,Au:N,C:P,I:N,A:N)"
+             id="CVE-2015-4196" />
+            <Vulnerability
+             cvssBaseScore="4.29612792"
+             cvssExploitSubScore="8.5888"
+             cvssImpactSubScore="2.86275"
+             cvssVector="(AV:N,AC:M,Au:N,C:P,I:N,A:N)"
+             id="CVE-2015-4217" />
+            <Vulnerability
+             cvssBaseScore="4.95845112"
+             cvssExploitSubScore="9.9968"
+             cvssImpactSubScore="2.86275"
+             cvssVector="(AV:N,AC:L,Au:N,C:P,I:N,A:N)"
+             id="CVE-2015-4216" />
+            <Vulnerability
+             cvssBaseScore="3.9965772"
+             cvssExploitSubScore="7.952"
+             cvssImpactSubScore="2.86275"
+             cvssVector="(AV:N,AC:L,Au:S,C:N,I:N,A:P)"
+             id="CVE-2015-4195" />
+            <Vulnerability
+             cvssBaseScore="8.7723513024"
+             cvssExploitSubScore="8.5888"
+             cvssImpactSubScore="9.206604"
+             cvssVector="(AV:N,AC:M,Au:N,C:C,I:C,A:N)"
+             id="CVE-2012-4716" />
+        </Service>
+    </Device>
+    <Device
+     group="164:PEER_UTILS;1093:PEER_UTILS;1267:PEER_UTILS;1445:PEER_UTILS;1625:PEER_UTILS;1811:PEER_UTILS;553:PEER_UTILS;739:PEER_UTILS;903:PEER_UTILS"
+     hidden="true"
+     id="1898"
+     name="192.17.102.102"
+     nodeRefId="2028"
+     pseudo="false"
+     rooted="dst"
+     type="host">
+        <Description>192.17.102.102
+        </Description>
+        <NIC
+         ipAddress="192.17.102.102"
+         name="NPV_IFACE_1897"
+         nodeRefId="" />
+    </Device>
+    <Device
+     group="164:PEER_UTILS;1093:PEER_UTILS;1267:PEER_UTILS;1445:PEER_UTILS;1625:PEER_UTILS;1811:PEER_UTILS;553:PEER_UTILS;739:PEER_UTILS;903:PEER_UTILS"
+     hidden="true"
+     id="1900"
+     name="192.17.102.103"
+     nodeRefId="2028"
+     pseudo="false"
+     rooted="dst"
+     type="host">
+        <Description>192.17.102.103
+        </Description>
+        <NIC
+         ipAddress="192.17.102.103"
+         name="NPV_IFACE_1899"
+         nodeRefId="" />
+    </Device>
+    <Device
+     group="164:PEER_UTILS;1093:PEER_UTILS;1267:PEER_UTILS;1445:PEER_UTILS;1625:PEER_UTILS;1811:PEER_UTILS;553:PEER_UTILS;739:PEER_UTILS;903:PEER_UTILS"
+     hidden="true"
+     id="1902"
+     name="192.17.102.104"
+     nodeRefId="2028"
+     pseudo="false"
+     rooted="dst"
+     type="host">
+        <Description>192.17.102.104
+        </Description>
+        <NIC
+         ipAddress="192.17.102.104"
+         name="NPV_IFACE_1901"
+         nodeRefId="" />
+    </Device>
+    <Device
+     group="164:VENDOR_ACCESS;1093:VENDOR_ACCESS;1267:VENDOR_ACCESS;1445:VENDOR_ACCESS;1625:VENDOR_ACCESS;1811:VENDOR_ACCESS;553:VENDOR_ACCESS;739:VENDOR_ACCESS;903:VENDOR_ACCESS"
+     hidden="true"
+     id="1904"
+     name="70.32.128.22"
+     nodeRefId="1880"
+     pseudo="false"
+     type="host">
+        <Description>70.32.128.22
+        </Description>
+        <NIC
+         ipAddress="70.32.128.22"
+         name="NPV_IFACE_1903"
+         nodeRefId="" />
+    </Device>
+    <Device
+     aliases="HAV_421"
+     hidden="false"
+     id="2024"
+     name="10.32.1.201"
+     pseudo="false"
+     status="up"
+     type="host">
+        <Description>10.32.1.201
+        </Description>
+        <NIC
+         ipAddress="10.32.1.201"
+         name="NPV_IFACE_2023"
+         nodeRefId="1878" />
+        <Service
+         name="ftp"
+         port="21"
+         product="ftp"
+         protocol="tcp"
+         version="">
+            <Vulnerability
+             cvssBaseScore="6.82233589275"
+             cvssExploitSubScore="8.5888"
+             cvssImpactSubScore="6.44297671875"
+             cvssVector="(AV:N,AC:M,Au:N,C:P,I:P,A:P)"
+             id="CVE-2015-5999" />
+            <Vulnerability
+             cvssBaseScore="7.48465909275"
+             cvssExploitSubScore="9.9968"
+             cvssImpactSubScore="6.44297671875"
+             cvssVector="(AV:N,AC:L,Au:N,C:P,I:P,A:P)"
+             id="CVE-2015-3968" />
+            <Vulnerability
+             cvssBaseScore="6.82233589275"
+             cvssExploitSubScore="8.5888"
+             cvssImpactSubScore="6.44297671875"
+             cvssVector="(AV:N,AC:M,Au:N,C:P,I:P,A:P)"
+             id="CVE-2015-7674" />
+            <Vulnerability
+             cvssBaseScore="6.82233589275"
+             cvssExploitSubScore="8.5888"
+             cvssImpactSubScore="6.44297671875"
+             cvssVector="(AV:N,AC:M,Au:N,C:P,I:P,A:P)"
+             id="CVE-2015-7673" />
+            <Vulnerability
+             cvssBaseScore="7.48465909275"
+             cvssExploitSubScore="9.9968"
+             cvssImpactSubScore="6.44297671875"
+             cvssVector="(AV:N,AC:L,Au:N,C:P,I:P,A:P)"
+             id="CVE-2015-7768" />
+            <Vulnerability
+             cvssBaseScore="7.48465909275"
+             cvssExploitSubScore="9.9968"
+             cvssImpactSubScore="6.44297671875"
+             cvssVector="(AV:N,AC:L,Au:N,C:P,I:P,A:P)"
+             id="CVE-2015-7767" />
+            <Vulnerability
+             cvssBaseScore="7.78639008"
+             cvssExploitSubScore="9.9968"
+             cvssImpactSubScore="6.8706"
+             cvssVector="(AV:N,AC:L,Au:N,C:C,I:N,A:N)"
+             id="CVE-2015-7603" />
+            <Vulnerability
+             cvssBaseScore="7.78639008"
+             cvssExploitSubScore="9.9968"
+             cvssImpactSubScore="6.8706"
+             cvssVector="(AV:N,AC:L,Au:N,C:C,I:N,A:N)"
+             id="CVE-2015-7601" />
+            <Vulnerability
+             cvssBaseScore="4.95845112"
+             cvssExploitSubScore="9.9968"
+             cvssImpactSubScore="2.86275"
+             cvssVector="(AV:N,AC:L,Au:N,C:N,I:P,A:N)"
+             id="CVE-2015-5912" />
+            <Vulnerability
+             cvssBaseScore="7.48465909275"
+             cvssExploitSubScore="9.9968"
+             cvssImpactSubScore="6.44297671875"
+             cvssVector="(AV:N,AC:L,Au:N,C:P,I:P,A:P)"
+             id="CVE-2015-6750" />
+            <Vulnerability
+             cvssBaseScore="9.99509120602"
+             cvssExploitSubScore="9.9968"
+             cvssImpactSubScore="10.00084536"
+             cvssVector="(AV:N,AC:L,Au:N,C:C,I:C,A:C)"
+             id="CVE-2013-7404" />
+            <Vulnerability
+             cvssBaseScore="9.99509120602"
+             cvssExploitSubScore="9.9968"
+             cvssImpactSubScore="10.00084536"
+             cvssVector="(AV:N,AC:L,Au:N,C:C,I:C,A:C)"
+             id="CVE-2003-1603" />
+            <Vulnerability
+             cvssBaseScore="9.99509120602"
+             cvssExploitSubScore="9.9968"
+             cvssImpactSubScore="10.00084536"
+             cvssVector="(AV:N,AC:L,Au:N,C:C,I:C,A:C)"
+             id="CVE-2001-1594" />
+            <Vulnerability
+             cvssBaseScore="6.82233589275"
+             cvssExploitSubScore="8.5888"
+             cvssImpactSubScore="6.44297671875"
+             cvssVector="(AV:N,AC:M,Au:N,C:P,I:P,A:P)"
+             id="CVE-2015-1330" />
+            <Vulnerability
+             cvssBaseScore="6.82233589275"
+             cvssExploitSubScore="8.5888"
+             cvssImpactSubScore="6.44297671875"
+             cvssVector="(AV:N,AC:M,Au:N,C:P,I:P,A:P)"
+             id="CVE-2015-4108" />
+            <Vulnerability
+             cvssBaseScore="7.48465909275"
+             cvssExploitSubScore="9.9968"
+             cvssImpactSubScore="6.44297671875"
+             cvssVector="(AV:N,AC:L,Au:N,C:P,I:P,A:P)"
+             id="CVE-2015-4022" />
+            <Vulnerability
+             cvssBaseScore="8.9710945086"
+             cvssExploitSubScore="9.9968"
+             cvssImpactSubScore="8.549602875"
+             cvssVector="(AV:N,AC:L,Au:N,C:P,I:P,A:C)"
+             id="CVE-2015-4051" />
+            <Vulnerability
+             cvssBaseScore="3.4697292"
+             cvssExploitSubScore="6.832"
+             cvssImpactSubScore="2.86275"
+             cvssVector="(AV:N,AC:M,Au:S,C:N,I:P,A:N)"
+             id="CVE-2014-1902" />
+            <Vulnerability
+             cvssBaseScore="4.29612792"
+             cvssExploitSubScore="8.5888"
+             cvssImpactSubScore="2.86275"
+             cvssVector="(AV:N,AC:M,Au:N,C:P,I:N,A:N)"
+             id="CVE-2015-1126" />
+            <Vulnerability
+             cvssBaseScore="9.99509120602"
+             cvssExploitSubScore="9.9968"
+             cvssImpactSubScore="10.00084536"
+             cvssVector="(AV:N,AC:L,Au:N,C:C,I:C,A:C)"
+             id="CVE-2015-0984" />
+        </Service>
+        <Service
+         name="ssh"
+         port="22"
+         product="ssh"
+         protocol="tcp"
+         version="">
+            <Vulnerability
+             cvssBaseScore="4.95845112"
+             cvssExploitSubScore="9.9968"
+             cvssImpactSubScore="2.86275"
+             cvssVector="(AV:N,AC:L,Au:N,C:N,I:N,A:P)"
+             id="CVE-2015-7845" />
+            <Vulnerability
+             cvssBaseScore="9.99509120602"
+             cvssExploitSubScore="9.9968"
+             cvssImpactSubScore="10.00084536"
+             cvssVector="(AV:N,AC:L,Au:N,C:C,I:C,A:C)"
+             id="CVE-2015-6476" />
+            <Vulnerability
+             cvssBaseScore="6.52278517275"
+             cvssExploitSubScore="7.952"
+             cvssImpactSubScore="6.44297671875"
+             cvssVector="(AV:N,AC:L,Au:S,C:P,I:P,A:P)"
+             id="CVE-2015-6316" />
+            <Vulnerability
+             cvssBaseScore="7.78639008"
+             cvssExploitSubScore="9.9968"
+             cvssImpactSubScore="6.8706"
+             cvssVector="(AV:N,AC:L,Au:N,C:N,I:N,A:C)"
+             id="CVE-2015-7752" />
+            <Vulnerability
+             cvssBaseScore="7.48465909275"
+             cvssExploitSubScore="9.9968"
+             cvssImpactSubScore="6.44297671875"
+             cvssVector="(AV:L,AC:L,Au:N,C:P,I:P,A:P)"
+             id="CVE-2015-6333" />
+            <Vulnerability
+             cvssBaseScore="4.95845112"
+             cvssExploitSubScore="9.9968"
+             cvssImpactSubScore="2.86275"
+             cvssVector="(AV:N,AC:L,Au:N,C:N,I:N,A:P)"
+             id="CVE-2015-7760" />
+            <Vulnerability
+             cvssBaseScore="3.9965772"
+             cvssExploitSubScore="7.952"
+             cvssImpactSubScore="2.86275"
+             cvssVector="(AV:N,AC:L,Au:S,C:N,I:N,A:P)"
+             id="CVE-2015-6300" />
+            <Vulnerability
+             cvssBaseScore="4.29612792"
+             cvssExploitSubScore="8.5888"
+             cvssImpactSubScore="2.86275"
+             cvssVector="(AV:L,AC:M,Au:N,C:N,I:P,A:N)"
+             id="CVE-2015-6563" />
+            <Vulnerability
+             cvssBaseScore="9.03321728602"
+             cvssExploitSubScore="7.952"
+             cvssImpactSubScore="10.00084536"
+             cvssVector="(AV:N,AC:L,Au:S,C:C,I:C,A:C)"
+             id="CVE-2015-2907" />
+            <Vulnerability
+             cvssBaseScore="9.03321728602"
+             cvssExploitSubScore="7.952"
+             cvssImpactSubScore="10.00084536"
+             cvssVector="(AV:N,AC:L,Au:S,C:C,I:C,A:C)"
+             id="CVE-2015-2906" />
+            <Vulnerability
+             cvssBaseScore="9.99509120602"
+             cvssExploitSubScore="9.9968"
+             cvssImpactSubScore="10.00084536"
+             cvssVector="(AV:N,AC:L,Au:N,C:C,I:C,A:C)"
+             id="CVE-2015-2897" />
+            <Vulnerability
+             cvssBaseScore="8.473175256"
+             cvssExploitSubScore="9.9968"
+             cvssImpactSubScore="7.843935"
+             cvssVector="(AV:N,AC:L,Au:N,C:P,I:N,A:C)"
+             id="CVE-2015-5600" />
+            <Vulnerability
+             cvssBaseScore="4.29612792"
+             cvssExploitSubScore="8.5888"
+             cvssImpactSubScore="2.86275"
+             cvssVector="(AV:N,AC:M,Au:N,C:N,I:P,A:N)"
+             id="CVE-2015-5352" />
+            <Vulnerability
+             cvssBaseScore="4.29612792"
+             cvssExploitSubScore="8.5888"
+             cvssImpactSubScore="2.86275"
+             cvssVector="(AV:N,AC:M,Au:N,C:N,I:N,A:P)"
+             id="CVE-2015-4236" />
+            <Vulnerability
+             cvssBaseScore="4.95845112"
+             cvssExploitSubScore="9.9968"
+             cvssImpactSubScore="2.86275"
+             cvssVector="(AV:N,AC:L,Au:N,C:P,I:N,A:N)"
+             id="CVE-2015-4196" />
+            <Vulnerability
+             cvssBaseScore="4.29612792"
+             cvssExploitSubScore="8.5888"
+             cvssImpactSubScore="2.86275"
+             cvssVector="(AV:N,AC:M,Au:N,C:P,I:N,A:N)"
+             id="CVE-2015-4217" />
+            <Vulnerability
+             cvssBaseScore="4.95845112"
+             cvssExploitSubScore="9.9968"
+             cvssImpactSubScore="2.86275"
+             cvssVector="(AV:N,AC:L,Au:N,C:P,I:N,A:N)"
+             id="CVE-2015-4216" />
+            <Vulnerability
+             cvssBaseScore="3.9965772"
+             cvssExploitSubScore="7.952"
+             cvssImpactSubScore="2.86275"
+             cvssVector="(AV:N,AC:L,Au:S,C:N,I:N,A:P)"
+             id="CVE-2015-4195" />
+            <Vulnerability
+             cvssBaseScore="8.7723513024"
+             cvssExploitSubScore="8.5888"
+             cvssImpactSubScore="9.206604"
+             cvssVector="(AV:N,AC:M,Au:N,C:C,I:C,A:N)"
+             id="CVE-2012-4716" />
+        </Service>
+        <Service
+         name="telnet"
+         port="23"
+         product="telnet"
+         protocol="tcp"
+         version="">
+            <Vulnerability
+             cvssBaseScore="9.99509120602"
+             cvssExploitSubScore="9.9968"
+             cvssImpactSubScore="10.00084536"
+             cvssVector="(AV:N,AC:L,Au:N,C:C,I:C,A:C)"
+             id="CVE-2015-2897" />
+            <Vulnerability
+             cvssBaseScore="9.99509120602"
+             cvssExploitSubScore="9.9968"
+             cvssImpactSubScore="10.00084536"
+             cvssVector="(AV:N,AC:L,Au:N,C:C,I:C,A:C)"
+             id="CVE-2013-7404" />
+            <Vulnerability
+             cvssBaseScore="7.48465909275"
+             cvssExploitSubScore="9.9968"
+             cvssImpactSubScore="6.44297671875"
+             cvssVector="(AV:N,AC:L,Au:N,C:P,I:P,A:P)"
+             id="CVE-2015-2866" />
+            <Vulnerability
+             cvssBaseScore="9.33276800602"
+             cvssExploitSubScore="8.5888"
+             cvssImpactSubScore="10.00084536"
+             cvssVector="(AV:N,AC:M,Au:N,C:C,I:C,A:C)"
+             id="CVE-2014-5406" />
+            <Vulnerability
+             cvssBaseScore="3.9965772"
+             cvssExploitSubScore="7.952"
+             cvssImpactSubScore="2.86275"
+             cvssVector="(AV:N,AC:L,Au:S,C:N,I:N,A:P)"
+             id="CVE-2015-4195" />
+            <Vulnerability
+             cvssBaseScore="4.95845112"
+             cvssExploitSubScore="9.9968"
+             cvssImpactSubScore="2.86275"
+             cvssVector="(AV:N,AC:L,Au:N,C:N,I:N,A:P)"
+             id="CVE-2015-0776" />
+            <Vulnerability
+             cvssBaseScore="4.95845112"
+             cvssExploitSubScore="9.9968"
+             cvssImpactSubScore="2.86275"
+             cvssVector="(AV:N,AC:L,Au:N,C:N,I:N,A:P)"
+             id="CVE-2015-0775" />
+            <Vulnerability
+             cvssBaseScore="6.82451616"
+             cvssExploitSubScore="7.952"
+             cvssImpactSubScore="6.8706"
+             cvssVector="(AV:N,AC:L,Au:S,C:C,I:N,A:N)"
+             id="CVE-2015-3939" />
+            <Vulnerability
+             cvssBaseScore="9.99509120602"
+             cvssExploitSubScore="9.9968"
+             cvssImpactSubScore="10.00084536"
+             cvssVector="(AV:N,AC:L,Au:N,C:C,I:C,A:C)"
+             id="CVE-2015-3459" />
+            <Vulnerability
+             cvssBaseScore="7.78639008"
+             cvssExploitSubScore="9.9968"
+             cvssImpactSubScore="6.8706"
+             cvssVector="(AV:N,AC:L,Au:N,C:N,I:C,A:N)"
+             id="CVE-2015-0924" />
+            <Vulnerability
+             cvssBaseScore="4.95845112"
+             cvssExploitSubScore="9.9968"
+             cvssImpactSubScore="2.86275"
+             cvssVector="(AV:N,AC:L,Au:N,C:N,I:P,A:N)"
+             id="CVE-2014-3019" />
+            <Vulnerability
+             cvssBaseScore="9.99509120602"
+             cvssExploitSubScore="9.9968"
+             cvssImpactSubScore="10.00084536"
+             cvssVector="(AV:N,AC:L,Au:N,C:C,I:C,A:C)"
+             id="CVE-2015-0014" />
+            <Vulnerability
+             cvssBaseScore="4.29612792"
+             cvssExploitSubScore="8.5888"
+             cvssImpactSubScore="2.86275"
+             cvssVector="(AV:N,AC:M,Au:N,C:N,I:P,A:N)"
+             id="CVE-2014-8006" />
+            <Vulnerability
+             cvssBaseScore="9.99509120602"
+             cvssExploitSubScore="9.9968"
+             cvssImpactSubScore="10.00084536"
+             cvssVector="(AV:N,AC:L,Au:N,C:C,I:C,A:C)"
+             id="CVE-2014-8329" />
+            <Vulnerability
+             cvssBaseScore="7.78639008"
+             cvssExploitSubScore="9.9968"
+             cvssImpactSubScore="6.8706"
+             cvssVector="(AV:N,AC:L,Au:N,C:N,I:N,A:C)"
+             id="CVE-2014-3362" />
+            <Vulnerability
+             cvssBaseScore="7.48465909275"
+             cvssExploitSubScore="9.9968"
+             cvssImpactSubScore="6.44297671875"
+             cvssVector="(AV:N,AC:L,Au:N,C:P,I:P,A:P)"
+             id="CVE-2014-2350" />
+            <Vulnerability
+             cvssBaseScore="4.29612792"
+             cvssExploitSubScore="8.5888"
+             cvssImpactSubScore="2.86275"
+             cvssVector="(AV:N,AC:M,Au:N,C:N,I:P,A:N)"
+             id="CVE-2014-0337" />
+            <Vulnerability
+             cvssBaseScore="9.99509120602"
+             cvssExploitSubScore="9.9968"
+             cvssImpactSubScore="10.00084536"
+             cvssVector="(AV:N,AC:L,Au:N,C:C,I:C,A:C)"
+             id="CVE-2014-2321" />
+            <Vulnerability
+             cvssBaseScore="9.33276800602"
+             cvssExploitSubScore="8.5888"
+             cvssImpactSubScore="10.00084536"
+             cvssVector="(AV:N,AC:M,Au:N,C:C,I:C,A:C)"
+             id="CVE-2014-0329" />
+        </Service>
+    </Device>
+    <Device
+     group="164:VENDOR_ACCESS;1093:VENDOR_ACCESS;1267:VENDOR_ACCESS;1445:VENDOR_ACCESS;1625:VENDOR_ACCESS;1811:VENDOR_ACCESS;553:VENDOR_ACCESS;739:VENDOR_ACCESS;903:VENDOR_ACCESS"
+     hidden="true"
+     id="1906"
+     name="70.32.128.74"
+     nodeRefId="1880"
+     pseudo="false"
+     type="host">
+        <Description>70.32.128.74
+        </Description>
+        <NIC
+         ipAddress="70.32.128.74"
+         name="NPV_IFACE_1905"
+         nodeRefId="" />
+    </Device>
+    <Device
+     group="164:VENDOR_ACCESS;1093:VENDOR_ACCESS;1267:VENDOR_ACCESS;1445:VENDOR_ACCESS;1625:VENDOR_ACCESS;1811:VENDOR_ACCESS;553:VENDOR_ACCESS;739:VENDOR_ACCESS;903:VENDOR_ACCESS"
+     hidden="true"
+     id="1908"
+     name="70.32.128.171"
+     nodeRefId="1880"
+     pseudo="false"
+     type="host">
+        <Description>70.32.128.171
+        </Description>
+        <NIC
+         ipAddress="70.32.128.171"
+         name="NPV_IFACE_1907"
+         nodeRefId="" />
+    </Device>
+    <Device
+     hidden="false"
+     id="1910"
+     name="10.33.1.201"
+     pseudo="false"
+     type="host">
+        <Description>10.33.1.201
+        </Description>
+        <NIC
+         ipAddress="10.33.1.201"
+         name="NPV_IFACE_1909"
+         nodeRefId="1870" />
+    </Device>
+    <Device
+     hidden="false"
+     id="1912"
+     name="10.33.1.202"
+     pseudo="false"
+     type="host">
+        <Description>10.33.1.202
+        </Description>
+        <NIC
+         ipAddress="10.33.1.202"
+         name="NPV_IFACE_1911"
+         nodeRefId="1870" />
+    </Device>
+    <Device
+     hidden="false"
+     id="1914"
+     name="10.33.1.203"
+     pseudo="false"
+     type="host">
+        <Description>10.33.1.203
+        </Description>
+        <NIC
+         ipAddress="10.33.1.203"
+         name="NPV_IFACE_1913"
+         nodeRefId="1870" />
+    </Device>
+    <Device
+     hidden="false"
+     id="1916"
+     name="10.33.1.101"
+     pseudo="false"
+     type="host">
+        <Description>10.33.1.101
+        </Description>
+        <NIC
+         ipAddress="10.33.1.101"
+         name="NPV_IFACE_1915"
+         nodeRefId="1870" />
+    </Device>
+    <Device
+     aliases="ICCP_SERVERS"
+     hidden="false"
+     id="2026"
+     name="72.36.82.196"
+     pseudo="false"
+     type="host">
+        <Description>72.36.82.196
+        </Description>
+        <NIC
+         ipAddress="72.36.82.196"
+         name="NPV_IFACE_2025"
+         nodeRefId="1875" />
+    </Device>
+    <Device
+     hidden="false"
+     id="1918"
+     name="10.33.1.102"
+     pseudo="false"
+     type="host">
+        <Description>10.33.1.102
+        </Description>
+        <NIC
+         ipAddress="10.33.1.102"
+         name="NPV_IFACE_1917"
+         nodeRefId="1870" />
+    </Device>
+    <Device
+     aliases="Paris"
+     hidden="false"
+     id="1445"
+     name="Paris"
+     pseudo="false"
+     type="firewall">
+        <Description>Paris
+        </Description>
+        <NIC
+         ipAddress="10.1.1.5"
+         name="outside"
+         nodeRefId="1868" />
+        <NIC
+         ipAddress="10.35.1.1"
+         name="inside"
+         nodeRefId="1872" />
+        <NIC
+         ipAddress="unknown"
+         name="Ethernet0/2"
+         nodeRefId="" />
+        <NIC
+         ipAddress="unknown"
+         name="Ethernet0/3"
+         nodeRefId="" />
+        <NIC
+         ipAddress="unknown"
+         name="Management0/0"
+         nodeRefId="" />
+        <NIC
+         ipAddress="unknown"
+         name="GigabitEthernet1/0"
+         nodeRefId="" />
+        <NIC
+         ipAddress="unknown"
+         name="GigabitEthernet1/1"
+         nodeRefId="" />
+        <NIC
+         ipAddress="unknown"
+         name="GigabitEthernet1/2"
+         nodeRefId="" />
+        <NIC
+         ipAddress="unknown"
+         name="GigabitEthernet1/3"
+         nodeRefId="" />
+    </Device>
+    <Device
+     aliases="cypress-creek:10.31.1.1"
+     hidden="false"
+     id="739"
+     name="cypress-creek"
+     pseudo="false"
+     status="up"
+     type="firewall">
+        <Description>cypress-creek
+        </Description>
+        <NIC
+         ipAddress="10.31.1.1"
+         name="inside"
+         nodeRefId="1877" />
+        <NIC
+         ipAddress="10.1.1.9"
+         name="outside"
+         nodeRefId="1868" />
+        <NIC
+         ipAddress="unknown"
+         name="Ethernet0/2"
+         nodeRefId="" />
+        <NIC
+         ipAddress="unknown"
+         name="Ethernet0/3"
+         nodeRefId="" />
+        <NIC
+         ipAddress="unknown"
+         name="Ethernet0/4"
+         nodeRefId="" />
+        <NIC
+         ipAddress="unknown"
+         name="Ethernet0/5"
+         nodeRefId="" />
+        <NIC
+         ipAddress="unknown"
+         name="Ethernet0/6"
+         nodeRefId="" />
+        <NIC
+         ipAddress="unknown"
+         name="Ethernet0/7"
+         nodeRefId="" />
+        <NIC
+         ipAddress="unknown"
+         name="Vlan1"
+         nodeRefId="" />
+        <NIC
+         ipAddress="unknown"
+         name="Vlan2"
+         nodeRefId="" />
+        <Service
+         name="ssh"
+         port="22"
+         product="ssh"
+         protocol="tcp"
+         version="">
+            <Vulnerability
+             cvssBaseScore="4.95845112"
+             cvssExploitSubScore="9.9968"
+             cvssImpactSubScore="2.86275"
+             cvssVector="(AV:N,AC:L,Au:N,C:N,I:N,A:P)"
+             id="CVE-2015-7845" />
+            <Vulnerability
+             cvssBaseScore="9.99509120602"
+             cvssExploitSubScore="9.9968"
+             cvssImpactSubScore="10.00084536"
+             cvssVector="(AV:N,AC:L,Au:N,C:C,I:C,A:C)"
+             id="CVE-2015-6476" />
+            <Vulnerability
+             cvssBaseScore="6.52278517275"
+             cvssExploitSubScore="7.952"
+             cvssImpactSubScore="6.44297671875"
+             cvssVector="(AV:N,AC:L,Au:S,C:P,I:P,A:P)"
+             id="CVE-2015-6316" />
+            <Vulnerability
+             cvssBaseScore="7.78639008"
+             cvssExploitSubScore="9.9968"
+             cvssImpactSubScore="6.8706"
+             cvssVector="(AV:N,AC:L,Au:N,C:N,I:N,A:C)"
+             id="CVE-2015-7752" />
+            <Vulnerability
+             cvssBaseScore="7.48465909275"
+             cvssExploitSubScore="9.9968"
+             cvssImpactSubScore="6.44297671875"
+             cvssVector="(AV:L,AC:L,Au:N,C:P,I:P,A:P)"
+             id="CVE-2015-6333" />
+            <Vulnerability
+             cvssBaseScore="4.95845112"
+             cvssExploitSubScore="9.9968"
+             cvssImpactSubScore="2.86275"
+             cvssVector="(AV:N,AC:L,Au:N,C:N,I:N,A:P)"
+             id="CVE-2015-7760" />
+            <Vulnerability
+             cvssBaseScore="3.9965772"
+             cvssExploitSubScore="7.952"
+             cvssImpactSubScore="2.86275"
+             cvssVector="(AV:N,AC:L,Au:S,C:N,I:N,A:P)"
+             id="CVE-2015-6300" />
+            <Vulnerability
+             cvssBaseScore="4.29612792"
+             cvssExploitSubScore="8.5888"
+             cvssImpactSubScore="2.86275"
+             cvssVector="(AV:L,AC:M,Au:N,C:N,I:P,A:N)"
+             id="CVE-2015-6563" />
+            <Vulnerability
+             cvssBaseScore="9.03321728602"
+             cvssExploitSubScore="7.952"
+             cvssImpactSubScore="10.00084536"
+             cvssVector="(AV:N,AC:L,Au:S,C:C,I:C,A:C)"
+             id="CVE-2015-2907" />
+            <Vulnerability
+             cvssBaseScore="9.03321728602"
+             cvssExploitSubScore="7.952"
+             cvssImpactSubScore="10.00084536"
+             cvssVector="(AV:N,AC:L,Au:S,C:C,I:C,A:C)"
+             id="CVE-2015-2906" />
+            <Vulnerability
+             cvssBaseScore="9.99509120602"
+             cvssExploitSubScore="9.9968"
+             cvssImpactSubScore="10.00084536"
+             cvssVector="(AV:N,AC:L,Au:N,C:C,I:C,A:C)"
+             id="CVE-2015-2897" />
+            <Vulnerability
+             cvssBaseScore="8.473175256"
+             cvssExploitSubScore="9.9968"
+             cvssImpactSubScore="7.843935"
+             cvssVector="(AV:N,AC:L,Au:N,C:P,I:N,A:C)"
+             id="CVE-2015-5600" />
+            <Vulnerability
+             cvssBaseScore="4.29612792"
+             cvssExploitSubScore="8.5888"
+             cvssImpactSubScore="2.86275"
+             cvssVector="(AV:N,AC:M,Au:N,C:N,I:P,A:N)"
+             id="CVE-2015-5352" />
+            <Vulnerability
+             cvssBaseScore="4.29612792"
+             cvssExploitSubScore="8.5888"
+             cvssImpactSubScore="2.86275"
+             cvssVector="(AV:N,AC:M,Au:N,C:N,I:N,A:P)"
+             id="CVE-2015-4236" />
+            <Vulnerability
+             cvssBaseScore="4.95845112"
+             cvssExploitSubScore="9.9968"
+             cvssImpactSubScore="2.86275"
+             cvssVector="(AV:N,AC:L,Au:N,C:P,I:N,A:N)"
+             id="CVE-2015-4196" />
+            <Vulnerability
+             cvssBaseScore="4.29612792"
+             cvssExploitSubScore="8.5888"
+             cvssImpactSubScore="2.86275"
+             cvssVector="(AV:N,AC:M,Au:N,C:P,I:N,A:N)"
+             id="CVE-2015-4217" />
+            <Vulnerability
+             cvssBaseScore="4.95845112"
+             cvssExploitSubScore="9.9968"
+             cvssImpactSubScore="2.86275"
+             cvssVector="(AV:N,AC:L,Au:N,C:P,I:N,A:N)"
+             id="CVE-2015-4216" />
+            <Vulnerability
+             cvssBaseScore="3.9965772"
+             cvssExploitSubScore="7.952"
+             cvssImpactSubScore="2.86275"
+             cvssVector="(AV:N,AC:L,Au:S,C:N,I:N,A:P)"
+             id="CVE-2015-4195" />
+            <Vulnerability
+             cvssBaseScore="8.7723513024"
+             cvssExploitSubScore="8.5888"
+             cvssImpactSubScore="9.206604"
+             cvssVector="(AV:N,AC:M,Au:N,C:C,I:C,A:N)"
+             id="CVE-2012-4716" />
+        </Service>
+        <Service
+         name="https"
+         port="443"
+         product="https"
+         protocol="tcp"
+         version="">
+            <Vulnerability
+             cvssBaseScore="6.82233589275"
+             cvssExploitSubScore="8.5888"
+             cvssImpactSubScore="6.44297671875"
+             cvssVector="(AV:N,AC:M,Au:N,C:P,I:P,A:P)"
+             id="CVE-2015-7984" />
+            <Vulnerability
+             cvssBaseScore="4.95845112"
+             cvssExploitSubScore="9.9968"
+             cvssImpactSubScore="2.86275"
+             cvssVector="(AV:N,AC:L,Au:N,C:N,I:N,A:P)"
+             id="CVE-2014-9756" />
+            <Vulnerability
+             cvssBaseScore="9.99509120602"
+             cvssExploitSubScore="9.9968"
+             cvssImpactSubScore="10.00084536"
+             cvssVector="(AV:N,AC:L,Au:N,C:C,I:C,A:C)"
+             id="CVE-2015-8236" />
+            <Vulnerability
+             cvssBaseScore="7.78639008"
+             cvssExploitSubScore="9.9968"
+             cvssImpactSubScore="6.8706"
+             cvssVector="(AV:N,AC:L,Au:N,C:C,I:N,A:N)"
+             id="CVE-2015-7910" />
+            <Vulnerability
+             cvssBaseScore="4.29612792"
+             cvssExploitSubScore="8.5888"
+             cvssImpactSubScore="2.86275"
+             cvssVector="(AV:N,AC:M,Au:N,C:N,I:P,A:N)"
+             id="CVE-2015-8053" />
+            <Vulnerability
+             cvssBaseScore="4.29612792"
+             cvssExploitSubScore="8.5888"
+             cvssImpactSubScore="2.86275"
+             cvssVector="(AV:N,AC:M,Au:N,C:N,I:P,A:N)"
+             id="CVE-2015-8052" />
+            <Vulnerability
+             cvssBaseScore="9.99509120602"
+             cvssExploitSubScore="9.9968"
+             cvssImpactSubScore="10.00084536"
+             cvssVector="(AV:N,AC:L,Au:N,C:C,I:C,A:C)"
+             id="CVE-2015-8051" />
+            <Vulnerability
+             cvssBaseScore="4.29612792"
+             cvssExploitSubScore="8.5888"
+             cvssImpactSubScore="2.86275"
+             cvssVector="(AV:N,AC:M,Au:N,C:N,I:P,A:N)"
+             id="CVE-2015-5255" />
+            <Vulnerability
+             cvssBaseScore="2.5740876"
+             cvssExploitSubScore="4.928"
+             cvssImpactSubScore="2.86275"
+             cvssVector="(AV:N,AC:H,Au:N,C:N,I:N,A:P)"
+             id="CVE-2015-8035" />
+            <Vulnerability
+             cvssBaseScore="4.95845112"
+             cvssExploitSubScore="9.9968"
+             cvssImpactSubScore="2.86275"
+             cvssVector="(AV:N,AC:L,Au:N,C:N,I:P,A:N)"
+             id="CVE-2015-8023" />
+            <Vulnerability
+             cvssBaseScore="6.82233589275"
+             cvssExploitSubScore="8.5888"
+             cvssImpactSubScore="6.44297671875"
+             cvssVector="(AV:N,AC:M,Au:N,C:P,I:P,A:P)"
+             id="CVE-2015-7942" />
+        </Service>
+    </Device>
+    <Device
+     aliases="haverbrook:10.32.1.1"
+     hidden="false"
+     id="903"
+     name="haverbrook"
+     pseudo="false"
+     status="up"
+     type="firewall">
+        <Description>haverbrook
+        </Description>
+        <NIC
+         ipAddress="10.32.1.1"
+         name="inside"
+         nodeRefId="1878" />
+        <NIC
+         ipAddress="10.1.1.2"
+         name="outside"
+         nodeRefId="1868" />
+        <NIC
+         ipAddress="unknown"
+         name="Ethernet0/2"
+         nodeRefId="" />
+        <NIC
+         ipAddress="unknown"
+         name="Ethernet0/3"
+         nodeRefId="" />
+        <NIC
+         ipAddress="unknown"
+         name="Ethernet0/4"
+         nodeRefId="" />
+        <NIC
+         ipAddress="unknown"
+         name="Ethernet0/5"
+         nodeRefId="" />
+        <NIC
+         ipAddress="unknown"
+         name="Ethernet0/6"
+         nodeRefId="" />
+        <NIC
+         ipAddress="unknown"
+         name="Ethernet0/7"
+         nodeRefId="" />
+        <NIC
+         ipAddress="unknown"
+         name="Vlan1"
+         nodeRefId="" />
+        <NIC
+         ipAddress="unknown"
+         name="Vlan2"
+         nodeRefId="" />
+        <Service
+         name="ssh"
+         port="22"
+         product="ssh"
+         protocol="tcp"
+         version="">
+            <Vulnerability
+             cvssBaseScore="4.95845112"
+             cvssExploitSubScore="9.9968"
+             cvssImpactSubScore="2.86275"
+             cvssVector="(AV:N,AC:L,Au:N,C:N,I:N,A:P)"
+             id="CVE-2015-7845" />
+            <Vulnerability
+             cvssBaseScore="9.99509120602"
+             cvssExploitSubScore="9.9968"
+             cvssImpactSubScore="10.00084536"
+             cvssVector="(AV:N,AC:L,Au:N,C:C,I:C,A:C)"
+             id="CVE-2015-6476" />
+            <Vulnerability
+             cvssBaseScore="6.52278517275"
+             cvssExploitSubScore="7.952"
+             cvssImpactSubScore="6.44297671875"
+             cvssVector="(AV:N,AC:L,Au:S,C:P,I:P,A:P)"
+             id="CVE-2015-6316" />
+            <Vulnerability
+             cvssBaseScore="7.78639008"
+             cvssExploitSubScore="9.9968"
+             cvssImpactSubScore="6.8706"
+             cvssVector="(AV:N,AC:L,Au:N,C:N,I:N,A:C)"
+             id="CVE-2015-7752" />
+            <Vulnerability
+             cvssBaseScore="7.48465909275"
+             cvssExploitSubScore="9.9968"
+             cvssImpactSubScore="6.44297671875"
+             cvssVector="(AV:L,AC:L,Au:N,C:P,I:P,A:P)"
+             id="CVE-2015-6333" />
+            <Vulnerability
+             cvssBaseScore="4.95845112"
+             cvssExploitSubScore="9.9968"
+             cvssImpactSubScore="2.86275"
+             cvssVector="(AV:N,AC:L,Au:N,C:N,I:N,A:P)"
+             id="CVE-2015-7760" />
+            <Vulnerability
+             cvssBaseScore="3.9965772"
+             cvssExploitSubScore="7.952"
+             cvssImpactSubScore="2.86275"
+             cvssVector="(AV:N,AC:L,Au:S,C:N,I:N,A:P)"
+             id="CVE-2015-6300" />
+            <Vulnerability
+             cvssBaseScore="4.29612792"
+             cvssExploitSubScore="8.5888"
+             cvssImpactSubScore="2.86275"
+             cvssVector="(AV:L,AC:M,Au:N,C:N,I:P,A:N)"
+             id="CVE-2015-6563" />
+            <Vulnerability
+             cvssBaseScore="9.03321728602"
+             cvssExploitSubScore="7.952"
+             cvssImpactSubScore="10.00084536"
+             cvssVector="(AV:N,AC:L,Au:S,C:C,I:C,A:C)"
+             id="CVE-2015-2907" />
+            <Vulnerability
+             cvssBaseScore="9.03321728602"
+             cvssExploitSubScore="7.952"
+             cvssImpactSubScore="10.00084536"
+             cvssVector="(AV:N,AC:L,Au:S,C:C,I:C,A:C)"
+             id="CVE-2015-2906" />
+            <Vulnerability
+             cvssBaseScore="9.99509120602"
+             cvssExploitSubScore="9.9968"
+             cvssImpactSubScore="10.00084536"
+             cvssVector="(AV:N,AC:L,Au:N,C:C,I:C,A:C)"
+             id="CVE-2015-2897" />
+            <Vulnerability
+             cvssBaseScore="8.473175256"
+             cvssExploitSubScore="9.9968"
+             cvssImpactSubScore="7.843935"
+             cvssVector="(AV:N,AC:L,Au:N,C:P,I:N,A:C)"
+             id="CVE-2015-5600" />
+            <Vulnerability
+             cvssBaseScore="4.29612792"
+             cvssExploitSubScore="8.5888"
+             cvssImpactSubScore="2.86275"
+             cvssVector="(AV:N,AC:M,Au:N,C:N,I:P,A:N)"
+             id="CVE-2015-5352" />
+            <Vulnerability
+             cvssBaseScore="4.29612792"
+             cvssExploitSubScore="8.5888"
+             cvssImpactSubScore="2.86275"
+             cvssVector="(AV:N,AC:M,Au:N,C:N,I:N,A:P)"
+             id="CVE-2015-4236" />
+            <Vulnerability
+             cvssBaseScore="4.95845112"
+             cvssExploitSubScore="9.9968"
+             cvssImpactSubScore="2.86275"
+             cvssVector="(AV:N,AC:L,Au:N,C:P,I:N,A:N)"
+             id="CVE-2015-4196" />
+            <Vulnerability
+             cvssBaseScore="4.29612792"
+             cvssExploitSubScore="8.5888"
+             cvssImpactSubScore="2.86275"
+             cvssVector="(AV:N,AC:M,Au:N,C:P,I:N,A:N)"
+             id="CVE-2015-4217" />
+            <Vulnerability
+             cvssBaseScore="4.95845112"
+             cvssExploitSubScore="9.9968"
+             cvssImpactSubScore="2.86275"
+             cvssVector="(AV:N,AC:L,Au:N,C:P,I:N,A:N)"
+             id="CVE-2015-4216" />
+            <Vulnerability
+             cvssBaseScore="3.9965772"
+             cvssExploitSubScore="7.952"
+             cvssImpactSubScore="2.86275"
+             cvssVector="(AV:N,AC:L,Au:S,C:N,I:N,A:P)"
+             id="CVE-2015-4195" />
+            <Vulnerability
+             cvssBaseScore="8.7723513024"
+             cvssExploitSubScore="8.5888"
+             cvssImpactSubScore="9.206604"
+             cvssVector="(AV:N,AC:M,Au:N,C:C,I:C,A:N)"
+             id="CVE-2012-4716" />
+        </Service>
+        <Service
+         name="https"
+         port="443"
+         product="https"
+         protocol="tcp"
+         version="">
+            <Vulnerability
+             cvssBaseScore="6.82233589275"
+             cvssExploitSubScore="8.5888"
+             cvssImpactSubScore="6.44297671875"
+             cvssVector="(AV:N,AC:M,Au:N,C:P,I:P,A:P)"
+             id="CVE-2015-7984" />
+            <Vulnerability
+             cvssBaseScore="4.95845112"
+             cvssExploitSubScore="9.9968"
+             cvssImpactSubScore="2.86275"
+             cvssVector="(AV:N,AC:L,Au:N,C:N,I:N,A:P)"
+             id="CVE-2014-9756" />
+            <Vulnerability
+             cvssBaseScore="9.99509120602"
+             cvssExploitSubScore="9.9968"
+             cvssImpactSubScore="10.00084536"
+             cvssVector="(AV:N,AC:L,Au:N,C:C,I:C,A:C)"
+             id="CVE-2015-8236" />
+            <Vulnerability
+             cvssBaseScore="7.78639008"
+             cvssExploitSubScore="9.9968"
+             cvssImpactSubScore="6.8706"
+             cvssVector="(AV:N,AC:L,Au:N,C:C,I:N,A:N)"
+             id="CVE-2015-7910" />
+            <Vulnerability
+             cvssBaseScore="4.29612792"
+             cvssExploitSubScore="8.5888"
+             cvssImpactSubScore="2.86275"
+             cvssVector="(AV:N,AC:M,Au:N,C:N,I:P,A:N)"
+             id="CVE-2015-8053" />
+            <Vulnerability
+             cvssBaseScore="4.29612792"
+             cvssExploitSubScore="8.5888"
+             cvssImpactSubScore="2.86275"
+             cvssVector="(AV:N,AC:M,Au:N,C:N,I:P,A:N)"
+             id="CVE-2015-8052" />
+            <Vulnerability
+             cvssBaseScore="9.99509120602"
+             cvssExploitSubScore="9.9968"
+             cvssImpactSubScore="10.00084536"
+             cvssVector="(AV:N,AC:L,Au:N,C:C,I:C,A:C)"
+             id="CVE-2015-8051" />
+            <Vulnerability
+             cvssBaseScore="4.29612792"
+             cvssExploitSubScore="8.5888"
+             cvssImpactSubScore="2.86275"
+             cvssVector="(AV:N,AC:M,Au:N,C:N,I:P,A:N)"
+             id="CVE-2015-5255" />
+            <Vulnerability
+             cvssBaseScore="2.5740876"
+             cvssExploitSubScore="4.928"
+             cvssImpactSubScore="2.86275"
+             cvssVector="(AV:N,AC:H,Au:N,C:N,I:N,A:P)"
+             id="CVE-2015-8035" />
+            <Vulnerability
+             cvssBaseScore="4.95845112"
+             cvssExploitSubScore="9.9968"
+             cvssImpactSubScore="2.86275"
+             cvssVector="(AV:N,AC:L,Au:N,C:N,I:P,A:N)"
+             id="CVE-2015-8023" />
+            <Vulnerability
+             cvssBaseScore="6.82233589275"
+             cvssExploitSubScore="8.5888"
+             cvssImpactSubScore="6.44297671875"
+             cvssVector="(AV:N,AC:M,Au:N,C:P,I:P,A:P)"
+             id="CVE-2015-7942" />
+        </Service>
+    </Device>
+    <Device
+     aliases="Springfield"
+     hidden="false"
+     id="1811"
+     name="Springfield"
+     pseudo="false"
+     type="firewall">
+        <Description>Springfield
+        </Description>
+        <NIC
+         ipAddress="10.1.1.8"
+         name="outside"
+         nodeRefId="1868" />
+        <NIC
+         ipAddress="10.38.1.1"
+         name="inside"
+         nodeRefId="1874" />
+        <NIC
+         ipAddress="unknown"
+         name="Ethernet0/2"
+         nodeRefId="" />
+        <NIC
+         ipAddress="unknown"
+         name="Ethernet0/3"
+         nodeRefId="" />
+        <NIC
+         ipAddress="unknown"
+         name="Management0/0"
+         nodeRefId="" />
+        <NIC
+         ipAddress="unknown"
+         name="GigabitEthernet1/0"
+         nodeRefId="" />
+        <NIC
+         ipAddress="unknown"
+         name="GigabitEthernet1/1"
+         nodeRefId="" />
+        <NIC
+         ipAddress="unknown"
+         name="GigabitEthernet1/2"
+         nodeRefId="" />
+        <NIC
+         ipAddress="unknown"
+         name="GigabitEthernet1/3"
+         nodeRefId="" />
+    </Device>
+    <Device
+     aliases="ciscoasa:10.39.1.1"
+     hidden="false"
+     id="553"
+     name="ciscoasa"
+     pseudo="false"
+     status="up"
+     type="firewall">
+        <Description>ciscoasa
+        </Description>
+        <NIC
+         ipAddress="72.36.82.50"
+         name="outside"
+         nodeRefId="1875" />
+        <NIC
+         ipAddress="10.1.1.1"
+         name="inside"
+         nodeRefId="1868" />
+        <NIC
+         ipAddress="10.39.1.1"
+         name="dmz"
+         nodeRefId="1876" />
+        <NIC
+         ipAddress="unknown"
+         name="Ethernet0/3"
+         nodeRefId="" />
+        <NIC
+         ipAddress="unknown"
+         name="Management0/0"
+         nodeRefId="" />
+        <Service
+         name="ssh"
+         port="22"
+         product="ssh"
+         protocol="tcp"
+         version="">
+            <Vulnerability
+             cvssBaseScore="4.95845112"
+             cvssExploitSubScore="9.9968"
+             cvssImpactSubScore="2.86275"
+             cvssVector="(AV:N,AC:L,Au:N,C:N,I:N,A:P)"
+             id="CVE-2015-7845" />
+            <Vulnerability
+             cvssBaseScore="9.99509120602"
+             cvssExploitSubScore="9.9968"
+             cvssImpactSubScore="10.00084536"
+             cvssVector="(AV:N,AC:L,Au:N,C:C,I:C,A:C)"
+             id="CVE-2015-6476" />
+            <Vulnerability
+             cvssBaseScore="6.52278517275"
+             cvssExploitSubScore="7.952"
+             cvssImpactSubScore="6.44297671875"
+             cvssVector="(AV:N,AC:L,Au:S,C:P,I:P,A:P)"
+             id="CVE-2015-6316" />
+            <Vulnerability
+             cvssBaseScore="7.78639008"
+             cvssExploitSubScore="9.9968"
+             cvssImpactSubScore="6.8706"
+             cvssVector="(AV:N,AC:L,Au:N,C:N,I:N,A:C)"
+             id="CVE-2015-7752" />
+            <Vulnerability
+             cvssBaseScore="7.48465909275"
+             cvssExploitSubScore="9.9968"
+             cvssImpactSubScore="6.44297671875"
+             cvssVector="(AV:L,AC:L,Au:N,C:P,I:P,A:P)"
+             id="CVE-2015-6333" />
+            <Vulnerability
+             cvssBaseScore="4.95845112"
+             cvssExploitSubScore="9.9968"
+             cvssImpactSubScore="2.86275"
+             cvssVector="(AV:N,AC:L,Au:N,C:N,I:N,A:P)"
+             id="CVE-2015-7760" />
+            <Vulnerability
+             cvssBaseScore="3.9965772"
+             cvssExploitSubScore="7.952"
+             cvssImpactSubScore="2.86275"
+             cvssVector="(AV:N,AC:L,Au:S,C:N,I:N,A:P)"
+             id="CVE-2015-6300" />
+            <Vulnerability
+             cvssBaseScore="4.29612792"
+             cvssExploitSubScore="8.5888"
+             cvssImpactSubScore="2.86275"
+             cvssVector="(AV:L,AC:M,Au:N,C:N,I:P,A:N)"
+             id="CVE-2015-6563" />
+            <Vulnerability
+             cvssBaseScore="9.03321728602"
+             cvssExploitSubScore="7.952"
+             cvssImpactSubScore="10.00084536"
+             cvssVector="(AV:N,AC:L,Au:S,C:C,I:C,A:C)"
+             id="CVE-2015-2907" />
+            <Vulnerability
+             cvssBaseScore="9.03321728602"
+             cvssExploitSubScore="7.952"
+             cvssImpactSubScore="10.00084536"
+             cvssVector="(AV:N,AC:L,Au:S,C:C,I:C,A:C)"
+             id="CVE-2015-2906" />
+            <Vulnerability
+             cvssBaseScore="9.99509120602"
+             cvssExploitSubScore="9.9968"
+             cvssImpactSubScore="10.00084536"
+             cvssVector="(AV:N,AC:L,Au:N,C:C,I:C,A:C)"
+             id="CVE-2015-2897" />
+            <Vulnerability
+             cvssBaseScore="8.473175256"
+             cvssExploitSubScore="9.9968"
+             cvssImpactSubScore="7.843935"
+             cvssVector="(AV:N,AC:L,Au:N,C:P,I:N,A:C)"
+             id="CVE-2015-5600" />
+            <Vulnerability
+             cvssBaseScore="4.29612792"
+             cvssExploitSubScore="8.5888"
+             cvssImpactSubScore="2.86275"
+             cvssVector="(AV:N,AC:M,Au:N,C:N,I:P,A:N)"
+             id="CVE-2015-5352" />
+            <Vulnerability
+             cvssBaseScore="4.29612792"
+             cvssExploitSubScore="8.5888"
+             cvssImpactSubScore="2.86275"
+             cvssVector="(AV:N,AC:M,Au:N,C:N,I:N,A:P)"
+             id="CVE-2015-4236" />
+            <Vulnerability
+             cvssBaseScore="4.95845112"
+             cvssExploitSubScore="9.9968"
+             cvssImpactSubScore="2.86275"
+             cvssVector="(AV:N,AC:L,Au:N,C:P,I:N,A:N)"
+             id="CVE-2015-4196" />
+            <Vulnerability
+             cvssBaseScore="4.29612792"
+             cvssExploitSubScore="8.5888"
+             cvssImpactSubScore="2.86275"
+             cvssVector="(AV:N,AC:M,Au:N,C:P,I:N,A:N)"
+             id="CVE-2015-4217" />
+            <Vulnerability
+             cvssBaseScore="4.95845112"
+             cvssExploitSubScore="9.9968"
+             cvssImpactSubScore="2.86275"
+             cvssVector="(AV:N,AC:L,Au:N,C:P,I:N,A:N)"
+             id="CVE-2015-4216" />
+            <Vulnerability
+             cvssBaseScore="3.9965772"
+             cvssExploitSubScore="7.952"
+             cvssImpactSubScore="2.86275"
+             cvssVector="(AV:N,AC:L,Au:S,C:N,I:N,A:P)"
+             id="CVE-2015-4195" />
+            <Vulnerability
+             cvssBaseScore="8.7723513024"
+             cvssExploitSubScore="8.5888"
+             cvssImpactSubScore="9.206604"
+             cvssVector="(AV:N,AC:M,Au:N,C:C,I:C,A:N)"
+             id="CVE-2012-4716" />
+        </Service>
+        <Service
+         name="https"
+         port="443"
+         product="https"
+         protocol="tcp"
+         version="">
+            <Vulnerability
+             cvssBaseScore="6.82233589275"
+             cvssExploitSubScore="8.5888"
+             cvssImpactSubScore="6.44297671875"
+             cvssVector="(AV:N,AC:M,Au:N,C:P,I:P,A:P)"
+             id="CVE-2015-7984" />
+            <Vulnerability
+             cvssBaseScore="4.95845112"
+             cvssExploitSubScore="9.9968"
+             cvssImpactSubScore="2.86275"
+             cvssVector="(AV:N,AC:L,Au:N,C:N,I:N,A:P)"
+             id="CVE-2014-9756" />
+            <Vulnerability
+             cvssBaseScore="9.99509120602"
+             cvssExploitSubScore="9.9968"
+             cvssImpactSubScore="10.00084536"
+             cvssVector="(AV:N,AC:L,Au:N,C:C,I:C,A:C)"
+             id="CVE-2015-8236" />
+            <Vulnerability
+             cvssBaseScore="7.78639008"
+             cvssExploitSubScore="9.9968"
+             cvssImpactSubScore="6.8706"
+             cvssVector="(AV:N,AC:L,Au:N,C:C,I:N,A:N)"
+             id="CVE-2015-7910" />
+            <Vulnerability
+             cvssBaseScore="4.29612792"
+             cvssExploitSubScore="8.5888"
+             cvssImpactSubScore="2.86275"
+             cvssVector="(AV:N,AC:M,Au:N,C:N,I:P,A:N)"
+             id="CVE-2015-8053" />
+            <Vulnerability
+             cvssBaseScore="4.29612792"
+             cvssExploitSubScore="8.5888"
+             cvssImpactSubScore="2.86275"
+             cvssVector="(AV:N,AC:M,Au:N,C:N,I:P,A:N)"
+             id="CVE-2015-8052" />
+            <Vulnerability
+             cvssBaseScore="9.99509120602"
+             cvssExploitSubScore="9.9968"
+             cvssImpactSubScore="10.00084536"
+             cvssVector="(AV:N,AC:L,Au:N,C:C,I:C,A:C)"
+             id="CVE-2015-8051" />
+            <Vulnerability
+             cvssBaseScore="4.29612792"
+             cvssExploitSubScore="8.5888"
+             cvssImpactSubScore="2.86275"
+             cvssVector="(AV:N,AC:M,Au:N,C:N,I:P,A:N)"
+             id="CVE-2015-5255" />
+            <Vulnerability
+             cvssBaseScore="2.5740876"
+             cvssExploitSubScore="4.928"
+             cvssImpactSubScore="2.86275"
+             cvssVector="(AV:N,AC:H,Au:N,C:N,I:N,A:P)"
+             id="CVE-2015-8035" />
+            <Vulnerability
+             cvssBaseScore="4.95845112"
+             cvssExploitSubScore="9.9968"
+             cvssImpactSubScore="2.86275"
+             cvssVector="(AV:N,AC:L,Au:N,C:N,I:P,A:N)"
+             id="CVE-2015-8023" />
+            <Vulnerability
+             cvssBaseScore="6.82233589275"
+             cvssExploitSubScore="8.5888"
+             cvssImpactSubScore="6.44297671875"
+             cvssVector="(AV:N,AC:M,Au:N,C:P,I:P,A:P)"
+             id="CVE-2015-7942" />
+        </Service>
+    </Device>
+    <Device
+     aliases="NorthHaverbrook"
+     hidden="false"
+     id="1093"
+     name="NorthHaverbrook"
+     pseudo="false"
+     type="firewall">
+        <Description>NorthHaverbrook
+        </Description>
+        <NIC
+         ipAddress="10.1.1.3"
+         name="outside"
+         nodeRefId="1868" />
+        <NIC
+         ipAddress="10.33.1.1"
+         name="inside"
+         nodeRefId="1870" />
+        <NIC
+         ipAddress="unknown"
+         name="Ethernet0/2"
+         nodeRefId="" />
+        <NIC
+         ipAddress="unknown"
+         name="Ethernet0/3"
+         nodeRefId="" />
+        <NIC
+         ipAddress="unknown"
+         name="Management0/0"
+         nodeRefId="" />
+        <NIC
+         ipAddress="unknown"
+         name="GigabitEthernet1/0"
+         nodeRefId="" />
+        <NIC
+         ipAddress="unknown"
+         name="GigabitEthernet1/1"
+         nodeRefId="" />
+        <NIC
+         ipAddress="unknown"
+         name="GigabitEthernet1/2"
+         nodeRefId="" />
+        <NIC
+         ipAddress="unknown"
+         name="GigabitEthernet1/3"
+         nodeRefId="" />
+    </Device>
+    <Device
+     aliases="Ogdenville"
+     hidden="false"
+     id="1267"
+     name="Ogdenville"
+     pseudo="false"
+     type="firewall">
+        <Description>Ogdenville
+        </Description>
+        <NIC
+         ipAddress="10.1.1.4"
+         name="outside"
+         nodeRefId="1868" />
+        <NIC
+         ipAddress="10.34.1.1"
+         name="inside"
+         nodeRefId="1871" />
+        <NIC
+         ipAddress="unknown"
+         name="Ethernet0/2"
+         nodeRefId="" />
+        <NIC
+         ipAddress="unknown"
+         name="Ethernet0/3"
+         nodeRefId="" />
+        <NIC
+         ipAddress="unknown"
+         name="Management0/0"
+         nodeRefId="" />
+        <NIC
+         ipAddress="unknown"
+         name="GigabitEthernet1/0"
+         nodeRefId="" />
+        <NIC
+         ipAddress="unknown"
+         name="GigabitEthernet1/1"
+         nodeRefId="" />
+        <NIC
+         ipAddress="unknown"
+         name="GigabitEthernet1/2"
+         nodeRefId="" />
+        <NIC
+         ipAddress="unknown"
+         name="GigabitEthernet1/3"
+         nodeRefId="" />
+    </Device>
+    <Device
+     aliases="Shelbyville"
+     hidden="false"
+     id="1625"
+     name="Shelbyville"
+     pseudo="false"
+     type="firewall">
+        <Description>Shelbyville
+        </Description>
+        <NIC
+         ipAddress="10.1.1.6"
+         name="outside"
+         nodeRefId="1868" />
+        <NIC
+         ipAddress="10.36.1.1"
+         name="inside"
+         nodeRefId="1873" />
+        <NIC
+         ipAddress="unknown"
+         name="Ethernet0/2"
+         nodeRefId="" />
+        <NIC
+         ipAddress="unknown"
+         name="Ethernet0/3"
+         nodeRefId="" />
+        <NIC
+         ipAddress="unknown"
+         name="Management0/0"
+         nodeRefId="" />
+        <NIC
+         ipAddress="unknown"
+         name="GigabitEthernet1/0"
+         nodeRefId="" />
+        <NIC
+         ipAddress="unknown"
+         name="GigabitEthernet1/1"
+         nodeRefId="" />
+        <NIC
+         ipAddress="unknown"
+         name="GigabitEthernet1/2"
+         nodeRefId="" />
+        <NIC
+         ipAddress="unknown"
+         name="GigabitEthernet1/3"
+         nodeRefId="" />
+    </Device>
+    <Device
+     aliases="CapitalCity"
+     hidden="false"
+     id="164"
+     name="CapitalCity"
+     pseudo="false"
+     type="firewall">
+        <Description>CapitalCity
+        </Description>
+        <NIC
+         ipAddress="10.1.1.7"
+         name="outside"
+         nodeRefId="1868" />
+        <NIC
+         ipAddress="10.37.1.1"
+         name="inside"
+         nodeRefId="1869" />
+        <NIC
+         ipAddress="unknown"
+         name="Ethernet0/2"
+         nodeRefId="" />
+        <NIC
+         ipAddress="unknown"
+         name="Ethernet0/3"
+         nodeRefId="" />
+        <NIC
+         ipAddress="unknown"
+         name="Management0/0"
+         nodeRefId="" />
+        <NIC
+         ipAddress="unknown"
+         name="GigabitEthernet1/0"
+         nodeRefId="" />
+        <NIC
+         ipAddress="unknown"
+         name="GigabitEthernet1/1"
+         nodeRefId="" />
+        <NIC
+         ipAddress="unknown"
+         name="GigabitEthernet1/2"
+         nodeRefId="" />
+        <NIC
+         ipAddress="unknown"
+         name="GigabitEthernet1/3"
+         nodeRefId="" />
+    </Device>
+    <Device
+     hidden="false"
+     id="1880"
+     name="Unmapped"
+     pseudo="true"
+     type="gateway">
+        <Description>Unmapped
+        </Description>
+        <NIC
+         ipAddress="0.0.0.0"
+         name="NPV_IFACE_1879"
+         nodeRefId="" />
+    </Device>
+    <Device
+     hidden="false"
+     id="2028"
+     name="72.36.82.1"
+     pseudo="true"
+     type="gateway">
+        <Description>72.36.82.1
+        </Description>
+        <NIC
+         ipAddress="72.36.82.1"
+         name="NPV_IFACE_2027"
+         nodeRefId="1875" />
+    </Device>
+</Topology>

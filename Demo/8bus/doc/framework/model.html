@@ -1,0 +1,287 @@
+<html>
+  <head>
+    <title>The CyPSA Framework - Object Model</title>
+    <link type="text/css" rel="stylesheet" href="../css/episteme.css"/>
+  </head>
+  <body>
+    <div id="wrapper">
+      <div id="navigation">
+	<a href="../index.html">home page</a> |
+	<a href="../install.html">install</a> |
+	<a href="index.html">framework</a> |
+	<a href="../publications.html">publications</a>
+      </div>
+
+      <h2>CyPSA Framework Object Model</h2>
+      <p>The CyPSA tool inventories and analyzes several different
+      kinds of information for the utility that range from individual
+      devices to entire substations, to the utility as a whole.  The
+      diagram below illustrates the <emph>containment</emph>
+      relationship among these objects.  In this section, we will
+      briefly describe the objects and data sources from which those
+	objects may be retrieved for inventorying or further
+	analysis.  The figure below shows the <emph>primary</emph>
+      object model for CyPSA (others may be added later).</p>
+      
+      <img src="../images/framework-object-model.png"/>
+
+      <p>We will now describe objects in terms of those found in the
+      (1) Control Center, (2) Substation Network, and (3) Substation
+      Yard.  The concept underlying each of these objects is defined
+      by CPTL-managed ontologies.</p>
+	
+      <h3>Control Center Objects</h3>
+      <p>We now specify the types of objects found in the control
+      center.  Concepts for these object types are found in the
+      Enterprise Network Ontology
+      ( <a href="../cptl/cptl-spec.html">HTML</a>
+      | <a href="https://github.com/ITI/cptl-power/blob/master/src/ontologies/201505-enet.rdf">RDF</a>).
+      Many of these descriptions come from Wikipedia.</p>
+
+      <table>
+	<tr>
+	  <th>Object Name</th>
+	  <th>Description</th>
+	  <th>Ontological Concept</th>
+	  <th>Example Object Reference</th>
+	</tr>
+	<tr>
+	  <td>Firewall</td>
+	  <td>In computing,
+	  a <a href="http://en.wikipedia.org/wiki/Firewall(computing)">firewall</a>
+	  is a network security system that controls the incoming and
+	  outgoing network traffic based on an applied rule set.  A
+	  firewall establishes a barrier betwen a trusted, secure
+	  internal network and another network (e.g. the Internet)
+	  that is assumed not to be secure and trusted.</td>
+	  <td><code>enet:Firewall</code></td>
+	  <td><code>urn:cypsa:8bus:control-center.network#fw-1</code></td>
+	</tr>
+	<tr>
+	  <td>Host</td>
+	  <td>A network <a href="http://en.wikipedia.org/wiki/Host
+	  (network)">host</a> is a computer or other device connected
+	    to a computer network.</td>
+	  <td><code>enet:Host</code></td>
+	  <td><code>urn:cypsa:8bus:control-center.network#host-34</code></td>
+	</tr>
+	<tr>
+	  <td>Network</td>
+	  <td>A <a href="http://en.wikipedia.org/wiki/Computer
+	  network">computer network</a> or data network is a
+	  telecommunications network which allows computers to
+	  exchange data.  In computer networks, networked computing
+	  devices pass data to each other along data connections
+	    (network links).</td>
+	  <td><code>enet:Network</code></td>
+	  <td><code>urn:cypsa:8bus:control-center.network#network-3</code></td>
+	</tr>
+	<tr>
+	  <td>Switch</td>
+	  <td>A <a href="http://en.wikipedia.org/wiki/Network
+	  switch">network switch</a> (also called a switching hub,
+	  bridging hub, officially MAC bridge) is a computer
+	  networking device that connects devices together on a
+	  computer network, by using packet switching to receive
+	  process, and forward data to the destination device.  Unlike
+	  less advanced network hubs, a network switch forwards data
+	  only to one or multiple devices that need to receive it,
+	  rather than broadcasting the same data out of each of its
+	    ports.</td>
+          <td><code>enet:Switch</code></td>
+	  <td><code>urn:cypsa:8bus:control-center.network#switch-1</code></td>
+	</tr>
+      </table>
+
+      <h3>Substation Objects - Substation Yard</h3>
+      <p>The substation yard objects tracked and analyzed by the CyPSA
+      tool represent concepts found in
+      the Substation Yard ontology
+      ( <a href="../cptl/cptl-spec.power.html">HTML</a> | <a href="https://github.com/ITI/cptl-power/blob/master/src/ontologies/201505-syard.rdf">RDF</a>).</p>
+
+      <table>
+	<tr>
+	  <th>Object Name</th>
+	  <th>Description</th>
+	  <th>Ontological Concept</th>
+	  <th>Example Object Reference</th>
+	</tr>
+	<tr>
+	  <td>Substation</td>
+	  <td>The name of the substation.</td>
+	  <td>TBD</td>
+	  <td><code>urn:cypsa:8bus:ogdenville</code></td>
+	</tr>
+	<tr>
+	  <td>Substation Yard</td>
+	  <td>The yard of the substation.  A bus-branch and
+	  node-breaker model are two expressions of the same notion of
+	    the substation yard.</td>
+	  <td>TBD</td>
+	  <td><code>urn:cypsa:8bus:ogdenville.node-breaker, urn:cypsa:8bus:ogdenville.node-breaker.v2</code></td>
+	</tr>
+	<tr>
+	  <td>Bus</td>
+	  <td>A <a href="http://en.wikipedia.org/wiki/Busbar">busbar</a>
+	  is a strip or bar of conductive material designed to
+	    conduct a substantial current of electricity.</td>
+	  <td><code>syard:Bus</code></td>
+	  <td><code>urn:cypsa:8bus:ogdenville.node-breaker#bus-2</code></td>
+	</tr>
+	<tr>
+	  <td>Breaker</td>
+	  <td>A <a href="http://en.wikipedia.org/wiki/Circuit
+	  breaker">breaker</a> is an automatically operated
+	  electrical switch designed to protect an electrical circuit
+	    from damage caused by overload or short circuit.</td>
+	  <td><code>syard:Breaker</code></td>
+	  <td><code>urn:cypsa:8bus:ogdenville.node-breaker#breaker-12</code></td>
+	</tr>
+	<tr>
+	  <td>Generator</td>
+	  <td>A <a href="http://en.wikipedia.org/wiki/Electric
+	  generator">generator</a> is a device that converts
+	  mechanical energy to electrical energy for use in an
+	  external circuit.  Generators provide nearly all of the
+	    power for electric power grids.</td>
+	  <td><code>syard:Generator</code></td>
+	  <td><code>urn:cypsa:8bus:ogdenville.node-breaker#generator-1</code></td>
+	</tr>
+	<tr>
+	  <td>Transformer</td>
+	  <td>A <a href="http://en.wikipedia.org/wiki/Transformer">transformer</a>
+	  is an electrical device that transfers energy between two
+	    or more circuits through electromagnetic induction.</td>
+	  <td><code>syard:Transformer</code></td>
+	  <td><code>urn:cypsa:8bus:ogdenville.node-breaker#transformer-1</code></td>
+	</tr>
+      </table>
+
+      <h3>Substation Objects - Substation Network</h3>
+      <p>The substation network objects tracked and analyzed by the
+      CyPSA tool represent concepts found in
+      the Substation Network ontology ( <a href="../cptl/cptl-spec.power.html">HTML</a> | <a href="https://github.com/ITI/cptl-power/blob/master/src/ontologies/201505-snet.rdf">RDF</a>).</p>
+
+      <table>
+	<tr>
+	  <th>Object Name</th>
+	  <th>Description</th>
+	  <th>Ontological Concept</th>
+	  <th>Example Object Reference</th>
+	</tr>
+	<tr>
+	  <td>RTU</td>
+	  <td>A <a href="http://en.wikipedia.org/wiki/Remote_Terminal_Unit">remote
+	  terminal unit (RTU)</a> is a microprocessor-controlled
+	  electronic device that interfaces objects in the physical
+	  world to a SCADA system by transmitting telemetry data to a
+	    master system.</td>
+	  <td><code>snet:RTU</code></td>
+	  <td><code>urn:cypsa:8bus:ogdenville.network#rtu-1</code></td>
+	</tr>
+	<tr>
+	  <td>Switch</td>
+	  <td>A <a href="https://en.wikipedia.org/wiki/Network_switch">network
+	  switch</a> (also called switching hub, bridging hub,
+	  officially MAC bridge[1]) is a computer networking device
+	  that connects devices together on a computer network, by
+	  using packet switching to receive, process, and forward
+	  data to the destination device.  Unlike less advanced
+	  network hubs, a network switch forwards data only to one or
+	  multiple devices that need to receive it, rather than
+	  broadcasting the same data out of each of its ports.</td>
+	  <td><code>snet:Switch</code></td>
+	  <td><code>urn:cypsa:8bus:ogdenville.network#switch-2,
+	      urn:cypsa:8bus:ogdenville.network#SEL_3620_1</code></td>
+	</tr>
+	<tr>
+	  <td>Relay</td>
+	  <td>A <a href="http://en.wikipedia.org/wiki/Protective_relay">relay</a>
+	    is a device designed to trip a circuit breaker when a
+	    fault is detected.</td>
+	  <td><code>snet:Relay</code></td>
+	  <td><code>urn:cypsa:8bus:ogdenville.network#SEL_421_1</code></td>
+	</tr>
+	<tr>
+	  <td>Distance Relay</td>
+	  <td>The most common form of protection on high voltage
+	  transmission systems
+	  is <a href="http://en.wikipedia.org/wiki/Protective_relay#Distance_relay">distance
+	  relay</a> protection.  Power lines have set impedance per
+	  kilometre and using this value and comparing voltage and
+	    current the distance to a fault can be determined.</td>
+	  <td><code>snet:DistanceRelay</code></td>
+	  <td><code>urn:cypsa:8bus:ogdenville.network#SEL_421_1</code></td>
+	</tr>
+	<tr>
+	  <td>Overcurrent Relay</td>
+	  <td>A
+	  digital <a href="http://en.wikipedia.org/wiki/Protective_relay#Over_current_relay">overcurrent
+	  relay</a> is a protective relay which operates when the load
+	  current exceeds a pickup value.</td>
+	  <td><code>snet:OverCurrentRelay</code></td>
+	  <td><code>urn:cypsa:8bus:ogdenville.network#SEL_451_1</code></td>
+	</tr>
+	<tr>
+	  <td>Reverse Power Relay</td>
+	  <td>A <a href="http://www.electrotechnik.net/2009/06/reverse-power-relay-function-and.html">reverse
+	  power relay</a> is a directional power relay that is used to
+	  monitor the power from a generator running in parallel with
+	  another generator or the utility.  The function of the
+	  reverse power relay is to prevent a reverse power condition
+	  in which power flows from the bus bar into the generator.
+	  This condition can occur when there is a failure in the
+	  prime mover such as an engine or a turbine which drives the
+	  generator.</td>
+	  <td><code>snet:ReversePowerRelay</code></td>
+	  <td><code>urn:cypsa:8bus:ogdenville.network#revpwr_2</code></td>
+	</tr>
+      </table>
+
+      <h2>CyPSA Data Sources</h2>
+      <p>Utilities have access to a wide variety of data sources
+      concerning their assets but lack the ability to easily integrate
+      data available from individual devices, state estimation
+      applications such as PowerWorld, or network analysis tools such
+      as NPView.  As such, CyPSA supports integration of data from the
+      following sources so that analytics can readily access that
+      information through the object model described above via the
+	Data Access Object pattern.</p>
+
+      <p>The CyPSA Data Management Layer indexes the location of
+      different kinds of information so that upon request, a service
+      (e.g. an analytic) can retrieve and subsequently incorporate
+      that information into its algorithm.</p>
+
+      <img src="../images/framework-object-model.data-sources.png"/>      
+
+      <table>
+	<tr>
+	  <th>Data Source Name</th>
+	  <th>Description</th>
+	  <th>Relevant Concepts</th>
+	  <th>Data Format</th>
+	</tr>
+	<tr>
+	  <td>CVE</td>
+	  <td>Information about asset vulnerabilities</td>
+	  <td><code>snet:Relay</code>, <code>snet:Switch</code></td>
+	  <td>?</td>
+	</tr>
+	<tr>
+	  <td>NPView</td>
+	  <td>Firewall analysis for critical infrastructure</td>
+	  <td>Substation network, control network</td>
+	  <td>?</td>
+	</tr>
+	<tr>
+	  <td>PowerWorld</td>
+	  <td>Power systems simulation trainer</td>
+	  <td>Substation yard</td>
+	  <td>.pwb file</td>
+	</tr>
+      </table>
+    </div>
+
+  </body>
+</html>

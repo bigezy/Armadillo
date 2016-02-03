@@ -1,0 +1,63 @@
+<project name="cpserver" default="usage" basedir=".">
+  <description>
+    Simple build file for the CYPSA VM
+  </description>
+
+  <!-- set global properties for this build -->
+  <property name="bin.dir" location="bin"/>
+  <property name="src.dir" location="src"/>
+  <property name="build.dir" location="projects"/>
+  <property name="dist.dir" location="dist"/>
+
+  <!-- edit this to reflect the utility name -->
+  <property name="utility" value="8-substation"/>
+  
+  <!-- Initialize -->
+  <target name="init">
+    <mkdir dir="${build.dir}"/>
+    <mkdir dir="${bin.dir}"/>
+    <mkdir dir="${dist.dir}"/>
+    <mkdir dir="${utility}"/>
+  </target>
+
+  <target name="clean" description="clean up">
+    <delete dir="${build.dir}"/>
+    <delete dir="${dist.dir}"/>
+  </target>
+
+  <target name="new"
+	  depends="init"
+	  description="Create a project">
+    <mkdir dir="${build.dir}/${utility}"/>
+    <mkdir dir="${build.dir}/${utility}/firewall"/>
+    <mkdir dir="${build.dir}/${utility}/nmap"/>
+    <mkdir dir="${build.dir}/${utility}/powerworld"/>
+    <mkdir dir="${build.dir}/${utility}/cyber_physical_ic"/>
+    <mkdir dir="${build.dir}/${utility}/state"/>
+    <mkdir dir="${build.dir}/${utility}/physical"/>
+  </target>
+
+  <target name="usage">
+    <echo>
+      test              Run unit tests to ensure proper behavior of CyPSA
+      run-npview        Run NPView service locally
+    </echo>
+  </target>
+  
+  <target name="test">
+    <exec executable="${src.dir}/scripts/run_tests.sh"/>
+  </target>
+  
+  <!-- CYPSA Services -->
+  <target name="run-cypsa">
+    
+  </target>
+  
+  <target name="run-npview"
+	  description="Runs NPView">
+    <!-- Requires firewall and nmap directories -->
+    <!-- Generates ${utility.build}/topology.xml, ${utility.build}/attackgraph.xml -->
+  </target>
+
+  
+</project>

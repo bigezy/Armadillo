@@ -1,0 +1,5 @@
+-dev C:\test\bin\..\projects\cwlp\firewall  -o C:\test\bin\..\projects\cwlp\npv 
+-nmapFiles C:\test\bin\..\projects\cwlp\nmap -o C:\test\bin\..\projects\cwlp\npv 
+-r C:\test\bin\..\projects\cwlp\npv\ruleset.xml -t C:\test\bin\..\projects\cwlp\npv\topology.xml -sig C:\test\bin\..\projects\cwlp\npv\signature.csv 
+-a paths -reqDefault -deagg -intSrc -extSrc -intDst -extDst -xml C:\test\bin\..\projects\cwlp\npv\analysis.xml -dict C:\test\bin\..\projects\cwlp\npv\dictionary.xml -vwG C:\test\bin\..\projects\cwlp\npv\connectivity.csv -sig C:\test\bin\..\projects\cwlp\npv\signature.csv 
+-q  

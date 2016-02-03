@@ -1,0 +1,1268 @@
+<?xml version='1.0' encoding='us-ascii'?>
+<!DOCTYPE ObjectDictionary[
+<!ELEMENT ObjectDictionary (Item+) >
+<!ELEMENT Item (Description*)>
+<!ATTLIST Item id CDATA #REQUIRED>
+<!ATTLIST Item ruleid CDATA #IMPLIED>
+<!ATTLIST Item type (firewall|router|host|gateway|range|addressRange|tunnel|rule|rulemap) #REQUIRED>
+<!ATTLIST Item name CDATA #REQUIRED>
+<!ELEMENT Description EMPTY>
+]>
+<ObjectDictionary>
+<Item id ="47" type ="rulemap" name ="Paris" ruleid = "1"/>
+<Item id ="48" type ="rulemap" name ="Paris" ruleid = "2"/>
+<Item id ="49" type ="rulemap" name ="Paris" ruleid = "3"/>
+<Item id ="50" type ="rulemap" name ="Paris" ruleid = "4"/>
+<Item id ="51" type ="rulemap" name ="Paris" ruleid = "5"/>
+<Item id ="52" type ="rulemap" name ="Paris" ruleid = "6"/>
+<Item id ="53" type ="rulemap" name ="Paris" ruleid = "7"/>
+<Item id ="18" type ="rulemap" name ="cypress-creek" ruleid = "1"/>
+<Item id ="19" type ="rulemap" name ="cypress-creek" ruleid = "2"/>
+<Item id ="20" type ="rulemap" name ="cypress-creek" ruleid = "3"/>
+<Item id ="21" type ="rulemap" name ="cypress-creek" ruleid = "4"/>
+<Item id ="22" type ="rulemap" name ="cypress-creek" ruleid = "5"/>
+<Item id ="23" type ="rulemap" name ="cypress-creek" ruleid = "6"/>
+<Item id ="24" type ="rulemap" name ="cypress-creek" ruleid = "7"/>
+<Item id ="25" type ="rulemap" name ="haverbrook" ruleid = "1"/>
+<Item id ="26" type ="rulemap" name ="haverbrook" ruleid = "2"/>
+<Item id ="27" type ="rulemap" name ="haverbrook" ruleid = "3"/>
+<Item id ="28" type ="rulemap" name ="haverbrook" ruleid = "4"/>
+<Item id ="29" type ="rulemap" name ="haverbrook" ruleid = "5"/>
+<Item id ="30" type ="rulemap" name ="haverbrook" ruleid = "6"/>
+<Item id ="31" type ="rulemap" name ="haverbrook" ruleid = "7"/>
+<Item id ="61" type ="rulemap" name ="Springfield" ruleid = "1"/>
+<Item id ="62" type ="rulemap" name ="Springfield" ruleid = "2"/>
+<Item id ="63" type ="rulemap" name ="Springfield" ruleid = "3"/>
+<Item id ="64" type ="rulemap" name ="Springfield" ruleid = "4"/>
+<Item id ="65" type ="rulemap" name ="Springfield" ruleid = "5"/>
+<Item id ="66" type ="rulemap" name ="Springfield" ruleid = "6"/>
+<Item id ="67" type ="rulemap" name ="Springfield" ruleid = "7"/>
+<Item id ="68" type ="rulemap" name ="Springfield" ruleid = "8"/>
+<Item id ="7" type ="rulemap" name ="ciscoasa" ruleid = "1"/>
+<Item id ="8" type ="rulemap" name ="ciscoasa" ruleid = "2"/>
+<Item id ="9" type ="rulemap" name ="ciscoasa" ruleid = "3"/>
+<Item id ="10" type ="rulemap" name ="ciscoasa" ruleid = "4"/>
+<Item id ="11" type ="rulemap" name ="ciscoasa" ruleid = "5"/>
+<Item id ="12" type ="rulemap" name ="ciscoasa" ruleid = "6"/>
+<Item id ="13" type ="rulemap" name ="ciscoasa" ruleid = "7"/>
+<Item id ="14" type ="rulemap" name ="ciscoasa" ruleid = "8"/>
+<Item id ="15" type ="rulemap" name ="ciscoasa" ruleid = "9"/>
+<Item id ="16" type ="rulemap" name ="ciscoasa" ruleid = "10"/>
+<Item id ="17" type ="rulemap" name ="ciscoasa" ruleid = "11"/>
+<Item id ="32" type ="rulemap" name ="NorthHaverbrook" ruleid = "1"/>
+<Item id ="33" type ="rulemap" name ="NorthHaverbrook" ruleid = "2"/>
+<Item id ="34" type ="rulemap" name ="NorthHaverbrook" ruleid = "3"/>
+<Item id ="35" type ="rulemap" name ="NorthHaverbrook" ruleid = "4"/>
+<Item id ="36" type ="rulemap" name ="NorthHaverbrook" ruleid = "5"/>
+<Item id ="37" type ="rulemap" name ="NorthHaverbrook" ruleid = "6"/>
+<Item id ="38" type ="rulemap" name ="NorthHaverbrook" ruleid = "7"/>
+<Item id ="39" type ="rulemap" name ="NorthHaverbrook" ruleid = "8"/>
+<Item id ="40" type ="rulemap" name ="Ogdenville" ruleid = "1"/>
+<Item id ="41" type ="rulemap" name ="Ogdenville" ruleid = "2"/>
+<Item id ="42" type ="rulemap" name ="Ogdenville" ruleid = "3"/>
+<Item id ="43" type ="rulemap" name ="Ogdenville" ruleid = "4"/>
+<Item id ="44" type ="rulemap" name ="Ogdenville" ruleid = "5"/>
+<Item id ="45" type ="rulemap" name ="Ogdenville" ruleid = "6"/>
+<Item id ="46" type ="rulemap" name ="Ogdenville" ruleid = "7"/>
+<Item id ="54" type ="rulemap" name ="Shelbyville" ruleid = "1"/>
+<Item id ="55" type ="rulemap" name ="Shelbyville" ruleid = "2"/>
+<Item id ="56" type ="rulemap" name ="Shelbyville" ruleid = "3"/>
+<Item id ="57" type ="rulemap" name ="Shelbyville" ruleid = "4"/>
+<Item id ="58" type ="rulemap" name ="Shelbyville" ruleid = "5"/>
+<Item id ="59" type ="rulemap" name ="Shelbyville" ruleid = "6"/>
+<Item id ="60" type ="rulemap" name ="Shelbyville" ruleid = "7"/>
+<Item id ="1" type ="rulemap" name ="CapitalCity" ruleid = "1"/>
+<Item id ="2" type ="rulemap" name ="CapitalCity" ruleid = "2"/>
+<Item id ="3" type ="rulemap" name ="CapitalCity" ruleid = "3"/>
+<Item id ="4" type ="rulemap" name ="CapitalCity" ruleid = "4"/>
+<Item id ="5" type ="rulemap" name ="CapitalCity" ruleid = "5"/>
+<Item id ="6" type ="rulemap" name ="CapitalCity" ruleid = "6"/>
+<Item id="1868" type ="addressRange" name ="10.1.1.0/24" sig = "10.1.1.0;255">
+<Description>
+10.1.1.0-10.1.1.255
+</Description>
+</Item>
+<Item id="1877" type ="addressRange" name ="10.31.1.0/24" sig = "10.31.1.0;255">
+<Description>
+10.31.1.0-10.31.1.255
+</Description>
+</Item>
+<Item id="2012" type ="addressRange" name ="10.31.1.101" sig = "10.31.1.101;0">
+<Description>
+10.31.1.101-10.31.1.101
+</Description>
+</Item>
+<Item id="2014" type ="addressRange" name ="10.31.1.102" sig = "10.31.1.102;0">
+<Description>
+10.31.1.102-10.31.1.102
+</Description>
+</Item>
+<Item id="2016" type ="addressRange" name ="10.31.1.103" sig = "10.31.1.103;0">
+<Description>
+10.31.1.103-10.31.1.103
+</Description>
+</Item>
+<Item id="2018" type ="addressRange" name ="10.31.1.104" sig = "10.31.1.104;0">
+<Description>
+10.31.1.104-10.31.1.104
+</Description>
+</Item>
+<Item id="2020" type ="addressRange" name ="10.31.1.105" sig = "10.31.1.105;0">
+<Description>
+10.31.1.105-10.31.1.105
+</Description>
+</Item>
+<Item id="1998" type ="addressRange" name ="10.31.1.201" sig = "10.31.1.201;0">
+<Description>
+10.31.1.201-10.31.1.201
+</Description>
+</Item>
+<Item id="2000" type ="addressRange" name ="10.31.1.202" sig = "10.31.1.202;0">
+<Description>
+10.31.1.202-10.31.1.202
+</Description>
+</Item>
+<Item id="2002" type ="addressRange" name ="10.31.1.203" sig = "10.31.1.203;0">
+<Description>
+10.31.1.203-10.31.1.203
+</Description>
+</Item>
+<Item id="2004" type ="addressRange" name ="10.31.1.204" sig = "10.31.1.204;0">
+<Description>
+10.31.1.204-10.31.1.204
+</Description>
+</Item>
+<Item id="2006" type ="addressRange" name ="10.31.1.205" sig = "10.31.1.205;0">
+<Description>
+10.31.1.205-10.31.1.205
+</Description>
+</Item>
+<Item id="2008" type ="addressRange" name ="10.31.1.206" sig = "10.31.1.206;0">
+<Description>
+10.31.1.206-10.31.1.206
+</Description>
+</Item>
+<Item id="2010" type ="addressRange" name ="10.31.1.207" sig = "10.31.1.207;0">
+<Description>
+10.31.1.207-10.31.1.207
+</Description>
+</Item>
+<Item id="1996" type ="addressRange" name ="10.31.1.250" sig = "10.31.1.250;0">
+<Description>
+10.31.1.250-10.31.1.250
+</Description>
+</Item>
+<Item id="1878" type ="addressRange" name ="10.32.1.0/24" sig = "10.32.1.0;255">
+<Description>
+10.32.1.0-10.32.1.255
+</Description>
+</Item>
+<Item id="2024" type ="addressRange" name ="10.32.1.201" sig = "10.32.1.201;0">
+<Description>
+10.32.1.201-10.32.1.201
+</Description>
+</Item>
+<Item id="2022" type ="addressRange" name ="10.32.1.250" sig = "10.32.1.250;0">
+<Description>
+10.32.1.250-10.32.1.250
+</Description>
+</Item>
+<Item id="1870" type ="addressRange" name ="10.33.1.0/24" sig = "10.33.1.0;255">
+<Description>
+10.33.1.0-10.33.1.255
+</Description>
+</Item>
+<Item id="1916" type ="addressRange" name ="10.33.1.101" sig = "10.33.1.101;0">
+<Description>
+10.33.1.101-10.33.1.101
+</Description>
+</Item>
+<Item id="1918" type ="addressRange" name ="10.33.1.102" sig = "10.33.1.102;0">
+<Description>
+10.33.1.102-10.33.1.102
+</Description>
+</Item>
+<Item id="1920" type ="addressRange" name ="10.33.1.103" sig = "10.33.1.103;0">
+<Description>
+10.33.1.103-10.33.1.103
+</Description>
+</Item>
+<Item id="1922" type ="addressRange" name ="10.33.1.104" sig = "10.33.1.104;0">
+<Description>
+10.33.1.104-10.33.1.104
+</Description>
+</Item>
+<Item id="1924" type ="addressRange" name ="10.33.1.105" sig = "10.33.1.105;0">
+<Description>
+10.33.1.105-10.33.1.105
+</Description>
+</Item>
+<Item id="1926" type ="addressRange" name ="10.33.1.106" sig = "10.33.1.106;0">
+<Description>
+10.33.1.106-10.33.1.106
+</Description>
+</Item>
+<Item id="1928" type ="addressRange" name ="10.33.1.107" sig = "10.33.1.107;0">
+<Description>
+10.33.1.107-10.33.1.107
+</Description>
+</Item>
+<Item id="1910" type ="addressRange" name ="10.33.1.201" sig = "10.33.1.201;0">
+<Description>
+10.33.1.201-10.33.1.201
+</Description>
+</Item>
+<Item id="1912" type ="addressRange" name ="10.33.1.202" sig = "10.33.1.202;0">
+<Description>
+10.33.1.202-10.33.1.202
+</Description>
+</Item>
+<Item id="1914" type ="addressRange" name ="10.33.1.203" sig = "10.33.1.203;0">
+<Description>
+10.33.1.203-10.33.1.203
+</Description>
+</Item>
+<Item id="1930" type ="addressRange" name ="10.33.1.250" sig = "10.33.1.250;0">
+<Description>
+10.33.1.250-10.33.1.250
+</Description>
+</Item>
+<Item id="1871" type ="addressRange" name ="10.34.1.0/24" sig = "10.34.1.0;255">
+<Description>
+10.34.1.0-10.34.1.255
+</Description>
+</Item>
+<Item id="1938" type ="addressRange" name ="10.34.1.101" sig = "10.34.1.101;0">
+<Description>
+10.34.1.101-10.34.1.101
+</Description>
+</Item>
+<Item id="1940" type ="addressRange" name ="10.34.1.102" sig = "10.34.1.102;0">
+<Description>
+10.34.1.102-10.34.1.102
+</Description>
+</Item>
+<Item id="1942" type ="addressRange" name ="10.34.1.103" sig = "10.34.1.103;0">
+<Description>
+10.34.1.103-10.34.1.103
+</Description>
+</Item>
+<Item id="1934" type ="addressRange" name ="10.34.1.201" sig = "10.34.1.201;0">
+<Description>
+10.34.1.201-10.34.1.201
+</Description>
+</Item>
+<Item id="1936" type ="addressRange" name ="10.34.1.202" sig = "10.34.1.202;0">
+<Description>
+10.34.1.202-10.34.1.202
+</Description>
+</Item>
+<Item id="1932" type ="addressRange" name ="10.34.1.250" sig = "10.34.1.250;0">
+<Description>
+10.34.1.250-10.34.1.250
+</Description>
+</Item>
+<Item id="1872" type ="addressRange" name ="10.35.1.0/24" sig = "10.35.1.0;255">
+<Description>
+10.35.1.0-10.35.1.255
+</Description>
+</Item>
+<Item id="1952" type ="addressRange" name ="10.35.1.101" sig = "10.35.1.101;0">
+<Description>
+10.35.1.101-10.35.1.101
+</Description>
+</Item>
+<Item id="1954" type ="addressRange" name ="10.35.1.102" sig = "10.35.1.102;0">
+<Description>
+10.35.1.102-10.35.1.102
+</Description>
+</Item>
+<Item id="1956" type ="addressRange" name ="10.35.1.103" sig = "10.35.1.103;0">
+<Description>
+10.35.1.103-10.35.1.103
+</Description>
+</Item>
+<Item id="1958" type ="addressRange" name ="10.35.1.104" sig = "10.35.1.104;0">
+<Description>
+10.35.1.104-10.35.1.104
+</Description>
+</Item>
+<Item id="1946" type ="addressRange" name ="10.35.1.201" sig = "10.35.1.201;0">
+<Description>
+10.35.1.201-10.35.1.201
+</Description>
+</Item>
+<Item id="1948" type ="addressRange" name ="10.35.1.202" sig = "10.35.1.202;0">
+<Description>
+10.35.1.202-10.35.1.202
+</Description>
+</Item>
+<Item id="1950" type ="addressRange" name ="10.35.1.203" sig = "10.35.1.203;0">
+<Description>
+10.35.1.203-10.35.1.203
+</Description>
+</Item>
+<Item id="1944" type ="addressRange" name ="10.35.1.250" sig = "10.35.1.250;0">
+<Description>
+10.35.1.250-10.35.1.250
+</Description>
+</Item>
+<Item id="1873" type ="addressRange" name ="10.36.1.0/24" sig = "10.36.1.0;255">
+<Description>
+10.36.1.0-10.36.1.255
+</Description>
+</Item>
+<Item id="1968" type ="addressRange" name ="10.36.1.101" sig = "10.36.1.101;0">
+<Description>
+10.36.1.101-10.36.1.101
+</Description>
+</Item>
+<Item id="1970" type ="addressRange" name ="10.36.1.102" sig = "10.36.1.102;0">
+<Description>
+10.36.1.102-10.36.1.102
+</Description>
+</Item>
+<Item id="1972" type ="addressRange" name ="10.36.1.103" sig = "10.36.1.103;0">
+<Description>
+10.36.1.103-10.36.1.103
+</Description>
+</Item>
+<Item id="1974" type ="addressRange" name ="10.36.1.104" sig = "10.36.1.104;0">
+<Description>
+10.36.1.104-10.36.1.104
+</Description>
+</Item>
+<Item id="1976" type ="addressRange" name ="10.36.1.105" sig = "10.36.1.105;0">
+<Description>
+10.36.1.105-10.36.1.105
+</Description>
+</Item>
+<Item id="1962" type ="addressRange" name ="10.36.1.201" sig = "10.36.1.201;0">
+<Description>
+10.36.1.201-10.36.1.201
+</Description>
+</Item>
+<Item id="1964" type ="addressRange" name ="10.36.1.202" sig = "10.36.1.202;0">
+<Description>
+10.36.1.202-10.36.1.202
+</Description>
+</Item>
+<Item id="1966" type ="addressRange" name ="10.36.1.203" sig = "10.36.1.203;0">
+<Description>
+10.36.1.203-10.36.1.203
+</Description>
+</Item>
+<Item id="1960" type ="addressRange" name ="10.36.1.250" sig = "10.36.1.250;0">
+<Description>
+10.36.1.250-10.36.1.250
+</Description>
+</Item>
+<Item id="1869" type ="addressRange" name ="10.37.1.0/24" sig = "10.37.1.0;255">
+<Description>
+10.37.1.0-10.37.1.255
+</Description>
+</Item>
+<Item id="1888" type ="addressRange" name ="10.37.1.101" sig = "10.37.1.101;0">
+<Description>
+10.37.1.101-10.37.1.101
+</Description>
+</Item>
+<Item id="1890" type ="addressRange" name ="10.37.1.102" sig = "10.37.1.102;0">
+<Description>
+10.37.1.102-10.37.1.102
+</Description>
+</Item>
+<Item id="1886" type ="addressRange" name ="10.37.1.201" sig = "10.37.1.201;0">
+<Description>
+10.37.1.201-10.37.1.201
+</Description>
+</Item>
+<Item id="1884" type ="addressRange" name ="10.37.1.250" sig = "10.37.1.250;0">
+<Description>
+10.37.1.250-10.37.1.250
+</Description>
+</Item>
+<Item id="1874" type ="addressRange" name ="10.38.1.0/24" sig = "10.38.1.0;255">
+<Description>
+10.38.1.0-10.38.1.255
+</Description>
+</Item>
+<Item id="1984" type ="addressRange" name ="10.38.1.101" sig = "10.38.1.101;0">
+<Description>
+10.38.1.101-10.38.1.101
+</Description>
+</Item>
+<Item id="1986" type ="addressRange" name ="10.38.1.102" sig = "10.38.1.102;0">
+<Description>
+10.38.1.102-10.38.1.102
+</Description>
+</Item>
+<Item id="1988" type ="addressRange" name ="10.38.1.103" sig = "10.38.1.103;0">
+<Description>
+10.38.1.103-10.38.1.103
+</Description>
+</Item>
+<Item id="1990" type ="addressRange" name ="10.38.1.104" sig = "10.38.1.104;0">
+<Description>
+10.38.1.104-10.38.1.104
+</Description>
+</Item>
+<Item id="1992" type ="addressRange" name ="10.38.1.105" sig = "10.38.1.105;0">
+<Description>
+10.38.1.105-10.38.1.105
+</Description>
+</Item>
+<Item id="1978" type ="addressRange" name ="10.38.1.201" sig = "10.38.1.201;0">
+<Description>
+10.38.1.201-10.38.1.201
+</Description>
+</Item>
+<Item id="1980" type ="addressRange" name ="10.38.1.202" sig = "10.38.1.202;0">
+<Description>
+10.38.1.202-10.38.1.202
+</Description>
+</Item>
+<Item id="1982" type ="addressRange" name ="10.38.1.203" sig = "10.38.1.203;0">
+<Description>
+10.38.1.203-10.38.1.203
+</Description>
+</Item>
+<Item id="1994" type ="addressRange" name ="10.38.1.250" sig = "10.38.1.250;0">
+<Description>
+10.38.1.250-10.38.1.250
+</Description>
+</Item>
+<Item id="1876" type ="addressRange" name ="10.39.1.0/24" sig = "10.39.1.0;255">
+<Description>
+10.39.1.0-10.39.1.255
+</Description>
+</Item>
+<Item id="1896" type ="addressRange" name ="10.39.1.22" sig = "10.39.1.22;0">
+<Description>
+10.39.1.22-10.39.1.22
+</Description>
+</Item>
+<Item id="2030" type ="addressRange" name ="192.17.0.0/16" sig = "192.17.0.0;65535">
+<Description>
+192.17.0.0-192.17.255.255
+</Description>
+</Item>
+<Item id="1898" type ="addressRange" name ="192.17.102.102" sig = "192.17.102.102;0">
+<Description>
+192.17.102.102-192.17.102.102
+</Description>
+</Item>
+<Item id="1900" type ="addressRange" name ="192.17.102.103" sig = "192.17.102.103;0">
+<Description>
+192.17.102.103-192.17.102.103
+</Description>
+</Item>
+<Item id="1902" type ="addressRange" name ="192.17.102.104" sig = "192.17.102.104;0">
+<Description>
+192.17.102.104-192.17.102.104
+</Description>
+</Item>
+<Item id="1908" type ="addressRange" name ="70.32.128.171" sig = "70.32.128.171;0">
+<Description>
+70.32.128.171-70.32.128.171
+</Description>
+</Item>
+<Item id="1904" type ="addressRange" name ="70.32.128.22" sig = "70.32.128.22;0">
+<Description>
+70.32.128.22-70.32.128.22
+</Description>
+</Item>
+<Item id="1906" type ="addressRange" name ="70.32.128.74" sig = "70.32.128.74;0">
+<Description>
+70.32.128.74-70.32.128.74
+</Description>
+</Item>
+<Item id="2029" type ="addressRange" name ="72.0.0.0/8" sig = "72.0.0.0;16777215">
+<Description>
+72.0.0.0-72.255.255.255
+</Description>
+</Item>
+<Item id="1875" type ="addressRange" name ="72.36.82.0/24" sig = "72.36.82.0;255">
+<Description>
+72.36.82.0-72.36.82.255
+</Description>
+</Item>
+<Item id="2028" type ="gateway" name ="72.36.82.1" sig = "72.36.82.1"/>
+<Item id="2031" type ="addressRange" name ="72.36.82.1" sig = "72.36.82.1;0">
+<Description>
+72.36.82.1-72.36.82.1
+</Description>
+</Item>
+<Item id="1892" type ="addressRange" name ="72.36.82.194" sig = "72.36.82.194;0">
+<Description>
+72.36.82.194-72.36.82.194
+</Description>
+</Item>
+<Item id="1894" type ="addressRange" name ="72.36.82.195" sig = "72.36.82.195;0">
+<Description>
+72.36.82.195-72.36.82.195
+</Description>
+</Item>
+<Item id="2026" type ="addressRange" name ="72.36.82.196" sig = "72.36.82.196;0">
+<Description>
+72.36.82.196-72.36.82.196
+</Description>
+</Item>
+<Item id="164" type ="firewall" name ="CapitalCity" sig = "CapitalCity"/>
+<Item id="1881" type ="addressRange" name ="Internet" sig = "0.0.0.0;4294967295">
+<Description>
+0.0.0.0-255.255.255.255
+</Description>
+</Item>
+<Item id="1093" type ="firewall" name ="NorthHaverbrook" sig = "NorthHaverbrook"/>
+<Item id="1267" type ="firewall" name ="Ogdenville" sig = "Ogdenville"/>
+<Item id="1445" type ="firewall" name ="Paris" sig = "Paris"/>
+<Item id="1625" type ="firewall" name ="Shelbyville" sig = "Shelbyville"/>
+<Item id="1811" type ="firewall" name ="Springfield" sig = "Springfield"/>
+<Item id="1880" type ="gateway" name ="Unmapped" sig = "Unmapped"/>
+<Item id="553" type ="firewall" name ="ciscoasa" sig = "ciscoasa"/>
+<Item id="739" type ="firewall" name ="cypress-creek" sig = "cypress-creek"/>
+<Item id="903" type ="firewall" name ="haverbrook" sig = "haverbrook"/>
+<Item id="1882" type ="addressRange" name ="unmapped" sig = "0.0.0.0;4294967295">
+<Description>
+0.0.0.0-255.255.255.255
+</Description>
+</Item>
+<Item id="5" type ="rule" name ="CapitalCity:FromINSIDE:RULE_1" sig = "7336fa04e42195e998c2527b79b01398" ruleid="CapitalCity:FromINSIDE:RULE_1">
+<Description>
+CapitalCity:FromINSIDE:RULE_1 
+	[10.37.1.101-10.37.1.102
+	10.37.1.201-10.37.1.201
+	10.37.1.250-10.37.1.250],
+		[72.36.82.194-72.36.82.194]
+	( 5 )[tcp:s[0,65535]d[20,20]s[0,65535]d[21,21]s[0,65535]d[2049,2049]] permit=True,direction=in,vpn_rule=False
+</Description>
+</Item>
+<Item id="6" type ="rule" name ="CapitalCity:FromINSIDE:RULE_2" sig = "8172465297797beba81298432569d0ef" ruleid="CapitalCity:FromINSIDE:RULE_2">
+<Description>
+CapitalCity:FromINSIDE:RULE_2 
+	[0.0.0.0-255.255.255.255],
+		[0.0.0.0-255.255.255.255]
+	( 6 )[ip:s[0,65535]d[0,65535]] permit=False,direction=in,vpn_rule=False
+</Description>
+</Item>
+<Item id="1" type ="rule" name ="CapitalCity:FromOUTSIDE:RULE_1" sig = "2a40a18410f960d08444eb228994d0b7" ruleid="CapitalCity:FromOUTSIDE:RULE_1">
+<Description>
+CapitalCity:FromOUTSIDE:RULE_1 
+	[192.17.102.102-192.17.102.104],
+		[10.37.1.101-10.37.1.102
+		10.37.1.201-10.37.1.201
+		10.37.1.250-10.37.1.250]
+	( 1 )[tcp:s[0,65535]d[102,102]s[0,65535]d[8080,8080]] permit=True,direction=in,vpn_rule=False
+</Description>
+</Item>
+<Item id="2" type ="rule" name ="CapitalCity:FromOUTSIDE:RULE_2" sig = "77d31a2a9836b028cf5338f8e97d78a1" ruleid="CapitalCity:FromOUTSIDE:RULE_2">
+<Description>
+CapitalCity:FromOUTSIDE:RULE_2 
+	[70.32.128.22-70.32.128.22
+	70.32.128.74-70.32.128.74
+	70.32.128.171-70.32.128.171],
+		[10.37.1.101-10.37.1.102
+		10.37.1.201-10.37.1.201
+		10.37.1.250-10.37.1.250]
+	( 2 )[tcp:s[0,65535]d[22,22]] permit=True,direction=in,vpn_rule=False
+</Description>
+</Item>
+<Item id="3" type ="rule" name ="CapitalCity:FromOUTSIDE:RULE_3" sig = "69a159e1f7c39b4b40ad84d79bdcb22d" ruleid="CapitalCity:FromOUTSIDE:RULE_3">
+<Description>
+CapitalCity:FromOUTSIDE:RULE_3 
+	[10.39.1.22-10.39.1.22],
+		[10.37.1.101-10.37.1.102
+		10.37.1.201-10.37.1.201
+		10.37.1.250-10.37.1.250]
+	( 3 )[tcp:s[0,65535]d[22,22]] permit=True,direction=in,vpn_rule=False
+</Description>
+</Item>
+<Item id="4" type ="rule" name ="CapitalCity:FromOUTSIDE:RULE_4" sig = "5d81c7432e7a09a8d2551e8efe63fbd2" ruleid="CapitalCity:FromOUTSIDE:RULE_4">
+<Description>
+CapitalCity:FromOUTSIDE:RULE_4 
+	[0.0.0.0-255.255.255.255],
+		[0.0.0.0-255.255.255.255]
+	( 4 )[ip:s[0,65535]d[0,65535]] permit=False,direction=in,vpn_rule=False
+</Description>
+</Item>
+<Item id="37" type ="rule" name ="NorthHaverbrook:FromINSIDE:RULE_1" sig = "e3e74e71fa688dbda0cbf7f5851ee917" ruleid="NorthHaverbrook:FromINSIDE:RULE_1">
+<Description>
+NorthHaverbrook:FromINSIDE:RULE_1 
+	[10.33.1.101-10.33.1.107
+	10.33.1.201-10.33.1.203
+	10.33.1.250-10.33.1.250],
+		[72.36.82.194-72.36.82.194]
+	( 37 )[tcp:s[0,65535]d[20,20]s[0,65535]d[21,21]s[0,65535]d[2049,2049]] permit=True,direction=in,vpn_rule=False
+</Description>
+</Item>
+<Item id="38" type ="rule" name ="NorthHaverbrook:FromINSIDE:RULE_2" sig = "13d95f00fb695802bc3a773c5b17504b" ruleid="NorthHaverbrook:FromINSIDE:RULE_2">
+<Description>
+NorthHaverbrook:FromINSIDE:RULE_2 
+	[10.33.1.101-10.33.1.107
+	10.33.1.201-10.33.1.203
+	10.33.1.250-10.33.1.250],
+		[72.36.82.194-72.36.82.194]
+	( 38 )[tcp:s[0,65535]d[102,102]s[0,65535]d[8080,8080]] permit=True,direction=in,vpn_rule=False
+</Description>
+</Item>
+<Item id="39" type ="rule" name ="NorthHaverbrook:FromINSIDE:RULE_3" sig = "a2c84b0ab1da899bef86a7e81b251773" ruleid="NorthHaverbrook:FromINSIDE:RULE_3">
+<Description>
+NorthHaverbrook:FromINSIDE:RULE_3 
+	[0.0.0.0-255.255.255.255],
+		[0.0.0.0-255.255.255.255]
+	( 39 )[ip:s[0,65535]d[0,65535]] permit=False,direction=in,vpn_rule=False
+</Description>
+</Item>
+<Item id="32" type ="rule" name ="NorthHaverbrook:FromOUTSIDE:RULE_1" sig = "490b9018b61200c4a36cdd591563f734" ruleid="NorthHaverbrook:FromOUTSIDE:RULE_1">
+<Description>
+NorthHaverbrook:FromOUTSIDE:RULE_1 
+	[192.17.102.102-192.17.102.104],
+		[10.33.1.101-10.33.1.107
+		10.33.1.201-10.33.1.203
+		10.33.1.250-10.33.1.250]
+	( 32 )[tcp:s[0,65535]d[102,102]s[0,65535]d[8080,8080]] permit=True,direction=in,vpn_rule=False
+</Description>
+</Item>
+<Item id="33" type ="rule" name ="NorthHaverbrook:FromOUTSIDE:RULE_2" sig = "71c04d289358cfd73b145421e712c907" ruleid="NorthHaverbrook:FromOUTSIDE:RULE_2">
+<Description>
+NorthHaverbrook:FromOUTSIDE:RULE_2 
+	[70.32.128.22-70.32.128.22
+	70.32.128.74-70.32.128.74
+	70.32.128.171-70.32.128.171],
+		[10.33.1.101-10.33.1.107
+		10.33.1.201-10.33.1.203
+		10.33.1.250-10.33.1.250]
+	( 33 )[tcp:s[0,65535]d[22,22]] permit=True,direction=in,vpn_rule=False
+</Description>
+</Item>
+<Item id="34" type ="rule" name ="NorthHaverbrook:FromOUTSIDE:RULE_3" sig = "c5ed62b70a80a3ae8682dc854e3374aa" ruleid="NorthHaverbrook:FromOUTSIDE:RULE_3">
+<Description>
+NorthHaverbrook:FromOUTSIDE:RULE_3 
+	[72.36.82.195-72.36.82.195],
+		[10.33.1.101-10.33.1.107
+		10.33.1.201-10.33.1.203
+		10.33.1.250-10.33.1.250]
+	( 34 )[tcp:s[0,65535]d[7000,7000]s[0,65535]d[80,80]] permit=True,direction=in,vpn_rule=False
+</Description>
+</Item>
+<Item id="35" type ="rule" name ="NorthHaverbrook:FromOUTSIDE:RULE_4" sig = "7d8bd1f4b912c90c0e871f34dce84e0f" ruleid="NorthHaverbrook:FromOUTSIDE:RULE_4">
+<Description>
+NorthHaverbrook:FromOUTSIDE:RULE_4 
+	[10.39.1.22-10.39.1.22],
+		[10.33.1.101-10.33.1.107
+		10.33.1.201-10.33.1.203
+		10.33.1.250-10.33.1.250]
+	( 35 )[tcp:s[0,65535]d[22,22]] permit=True,direction=in,vpn_rule=False
+</Description>
+</Item>
+<Item id="36" type ="rule" name ="NorthHaverbrook:FromOUTSIDE:RULE_5" sig = "2dd075ba30789ad2f608194d6b21fae5" ruleid="NorthHaverbrook:FromOUTSIDE:RULE_5">
+<Description>
+NorthHaverbrook:FromOUTSIDE:RULE_5 
+	[0.0.0.0-255.255.255.255],
+		[0.0.0.0-255.255.255.255]
+	( 36 )[ip:s[0,65535]d[0,65535]] permit=False,direction=in,vpn_rule=False
+</Description>
+</Item>
+<Item id="45" type ="rule" name ="Ogdenville:FromINSIDE:RULE_1" sig = "5918b2419dd3c7a94bd9d9f2029d9af4" ruleid="Ogdenville:FromINSIDE:RULE_1">
+<Description>
+Ogdenville:FromINSIDE:RULE_1 
+	[10.34.1.101-10.34.1.103
+	10.34.1.201-10.34.1.202
+	10.34.1.250-10.34.1.250],
+		[72.36.82.194-72.36.82.194]
+	( 45 )[tcp:s[0,65535]d[102,102]s[0,65535]d[8080,8080]] permit=True,direction=in,vpn_rule=False
+</Description>
+</Item>
+<Item id="46" type ="rule" name ="Ogdenville:FromINSIDE:RULE_2" sig = "731e08a66d4379507d1fb05431bb406c" ruleid="Ogdenville:FromINSIDE:RULE_2">
+<Description>
+Ogdenville:FromINSIDE:RULE_2 
+	[0.0.0.0-255.255.255.255],
+		[0.0.0.0-255.255.255.255]
+	( 46 )[ip:s[0,65535]d[0,65535]] permit=False,direction=in,vpn_rule=False
+</Description>
+</Item>
+<Item id="40" type ="rule" name ="Ogdenville:FromOUTSIDE:RULE_1" sig = "d65fe27add4c03341f27b664b33f3861" ruleid="Ogdenville:FromOUTSIDE:RULE_1">
+<Description>
+Ogdenville:FromOUTSIDE:RULE_1 
+	[192.17.102.102-192.17.102.104],
+		[10.34.1.101-10.34.1.103
+		10.34.1.201-10.34.1.202
+		10.34.1.250-10.34.1.250]
+	( 40 )[tcp:s[0,65535]d[102,102]s[0,65535]d[8080,8080]] permit=True,direction=in,vpn_rule=False
+</Description>
+</Item>
+<Item id="41" type ="rule" name ="Ogdenville:FromOUTSIDE:RULE_2" sig = "5f28ca534e89820d783e76b62a1371a7" ruleid="Ogdenville:FromOUTSIDE:RULE_2">
+<Description>
+Ogdenville:FromOUTSIDE:RULE_2 
+	[70.32.128.22-70.32.128.22
+	70.32.128.74-70.32.128.74
+	70.32.128.171-70.32.128.171],
+		[10.34.1.101-10.34.1.103
+		10.34.1.201-10.34.1.202
+		10.34.1.250-10.34.1.250]
+	( 41 )[tcp:s[0,65535]d[22,22]] permit=True,direction=in,vpn_rule=False
+</Description>
+</Item>
+<Item id="42" type ="rule" name ="Ogdenville:FromOUTSIDE:RULE_3" sig = "a8eb4dc0fd6645d22b45a6daaf777d26" ruleid="Ogdenville:FromOUTSIDE:RULE_3">
+<Description>
+Ogdenville:FromOUTSIDE:RULE_3 
+	[72.36.82.195-72.36.82.195],
+		[10.34.1.101-10.34.1.103
+		10.34.1.201-10.34.1.202
+		10.34.1.250-10.34.1.250]
+	( 42 )[tcp:s[0,65535]d[7000,7000]s[0,65535]d[80,80]] permit=True,direction=in,vpn_rule=False
+</Description>
+</Item>
+<Item id="43" type ="rule" name ="Ogdenville:FromOUTSIDE:RULE_4" sig = "6803628a0b2a7418575d2d9be942bf29" ruleid="Ogdenville:FromOUTSIDE:RULE_4">
+<Description>
+Ogdenville:FromOUTSIDE:RULE_4 
+	[10.39.1.22-10.39.1.22],
+		[10.34.1.101-10.34.1.103
+		10.34.1.201-10.34.1.202
+		10.34.1.250-10.34.1.250]
+	( 43 )[tcp:s[0,65535]d[22,22]] permit=True,direction=in,vpn_rule=False
+</Description>
+</Item>
+<Item id="44" type ="rule" name ="Ogdenville:FromOUTSIDE:RULE_5" sig = "7482f70f021b0542b498a7bedebdb5c4" ruleid="Ogdenville:FromOUTSIDE:RULE_5">
+<Description>
+Ogdenville:FromOUTSIDE:RULE_5 
+	[0.0.0.0-255.255.255.255],
+		[0.0.0.0-255.255.255.255]
+	( 44 )[ip:s[0,65535]d[0,65535]] permit=False,direction=in,vpn_rule=False
+</Description>
+</Item>
+<Item id="52" type ="rule" name ="Paris:FromINSIDE:RULE_1" sig = "9c02dcc4a94c297482929c8850306bd4" ruleid="Paris:FromINSIDE:RULE_1">
+<Description>
+Paris:FromINSIDE:RULE_1 
+	[10.35.1.101-10.35.1.104
+	10.35.1.201-10.35.1.203
+	10.35.1.250-10.35.1.250],
+		[72.36.82.194-72.36.82.194]
+	( 52 )[tcp:s[0,65535]d[102,102]s[0,65535]d[8080,8080]] permit=True,direction=in,vpn_rule=False
+</Description>
+</Item>
+<Item id="53" type ="rule" name ="Paris:FromINSIDE:RULE_2" sig = "c2c0812f3ba6a3fe5f7fb449b9e1ae39" ruleid="Paris:FromINSIDE:RULE_2">
+<Description>
+Paris:FromINSIDE:RULE_2 
+	[0.0.0.0-255.255.255.255],
+		[0.0.0.0-255.255.255.255]
+	( 53 )[ip:s[0,65535]d[0,65535]] permit=False,direction=in,vpn_rule=False
+</Description>
+</Item>
+<Item id="47" type ="rule" name ="Paris:FromOUTSIDE:RULE_1" sig = "acf19a42314954e09a8c1b74e36d9c98" ruleid="Paris:FromOUTSIDE:RULE_1">
+<Description>
+Paris:FromOUTSIDE:RULE_1 
+	[192.17.102.102-192.17.102.104],
+		[10.35.1.101-10.35.1.104
+		10.35.1.201-10.35.1.203
+		10.35.1.250-10.35.1.250]
+	( 47 )[tcp:s[0,65535]d[102,102]s[0,65535]d[8080,8080]] permit=True,direction=in,vpn_rule=False
+</Description>
+</Item>
+<Item id="48" type ="rule" name ="Paris:FromOUTSIDE:RULE_2" sig = "352d848a78d60824e8d68ecf94cd1062" ruleid="Paris:FromOUTSIDE:RULE_2">
+<Description>
+Paris:FromOUTSIDE:RULE_2 
+	[70.32.128.22-70.32.128.22
+	70.32.128.74-70.32.128.74
+	70.32.128.171-70.32.128.171],
+		[10.35.1.101-10.35.1.104
+		10.35.1.201-10.35.1.203
+		10.35.1.250-10.35.1.250]
+	( 48 )[tcp:s[0,65535]d[22,22]] permit=True,direction=in,vpn_rule=False
+</Description>
+</Item>
+<Item id="49" type ="rule" name ="Paris:FromOUTSIDE:RULE_3" sig = "d6943eeff6cdcd0a6503d0edee06d326" ruleid="Paris:FromOUTSIDE:RULE_3">
+<Description>
+Paris:FromOUTSIDE:RULE_3 
+	[72.36.82.195-72.36.82.195],
+		[10.35.1.101-10.35.1.104
+		10.35.1.201-10.35.1.203
+		10.35.1.250-10.35.1.250]
+	( 49 )[tcp:s[0,65535]d[7000,7000]s[0,65535]d[80,80]] permit=True,direction=in,vpn_rule=False
+</Description>
+</Item>
+<Item id="50" type ="rule" name ="Paris:FromOUTSIDE:RULE_4" sig = "12ebec7a3967c384885a1a5e207b16d1" ruleid="Paris:FromOUTSIDE:RULE_4">
+<Description>
+Paris:FromOUTSIDE:RULE_4 
+	[10.39.1.22-10.39.1.22],
+		[10.35.1.101-10.35.1.104
+		10.35.1.201-10.35.1.203
+		10.35.1.250-10.35.1.250]
+	( 50 )[tcp:s[0,65535]d[22,22]] permit=True,direction=in,vpn_rule=False
+</Description>
+</Item>
+<Item id="51" type ="rule" name ="Paris:FromOUTSIDE:RULE_5" sig = "127acd99e18991d48c3f0e5d6cac6161" ruleid="Paris:FromOUTSIDE:RULE_5">
+<Description>
+Paris:FromOUTSIDE:RULE_5 
+	[0.0.0.0-255.255.255.255],
+		[0.0.0.0-255.255.255.255]
+	( 51 )[ip:s[0,65535]d[0,65535]] permit=False,direction=in,vpn_rule=False
+</Description>
+</Item>
+<Item id="54" type ="rule" name ="Shelbyville:FromINSIDE:RULE_1" sig = "443760a2c1c9e8ab29695754d3114a76" ruleid="Shelbyville:FromINSIDE:RULE_1">
+<Description>
+Shelbyville:FromINSIDE:RULE_1 
+	[10.36.1.101-10.36.1.105
+	10.36.1.201-10.36.1.203
+	10.36.1.250-10.36.1.250],
+		[72.36.82.194-72.36.82.194]
+	( 54 )[tcp:s[0,65535]d[102,102]s[0,65535]d[8080,8080]] permit=True,direction=in,vpn_rule=False
+</Description>
+</Item>
+<Item id="55" type ="rule" name ="Shelbyville:FromINSIDE:RULE_2" sig = "142832e18e5be7b6270cfa1202ece3bc" ruleid="Shelbyville:FromINSIDE:RULE_2">
+<Description>
+Shelbyville:FromINSIDE:RULE_2 
+	[0.0.0.0-255.255.255.255],
+		[0.0.0.0-255.255.255.255]
+	( 55 )[ip:s[0,65535]d[0,65535]] permit=False,direction=in,vpn_rule=False
+</Description>
+</Item>
+<Item id="56" type ="rule" name ="Shelbyville:FromOUTSIDE:RULE_1" sig = "883d4a0508911b99b6d05874ab2950b7" ruleid="Shelbyville:FromOUTSIDE:RULE_1">
+<Description>
+Shelbyville:FromOUTSIDE:RULE_1 
+	[192.17.102.102-192.17.102.104],
+		[10.36.1.101-10.36.1.105
+		10.36.1.201-10.36.1.203
+		10.36.1.250-10.36.1.250]
+	( 56 )[tcp:s[0,65535]d[102,102]s[0,65535]d[8080,8080]] permit=True,direction=in,vpn_rule=False
+</Description>
+</Item>
+<Item id="57" type ="rule" name ="Shelbyville:FromOUTSIDE:RULE_2" sig = "0bd85ec3af8f380a1780bfb3dc45d1b4" ruleid="Shelbyville:FromOUTSIDE:RULE_2">
+<Description>
+Shelbyville:FromOUTSIDE:RULE_2 
+	[70.32.128.22-70.32.128.22
+	70.32.128.74-70.32.128.74
+	70.32.128.171-70.32.128.171],
+		[10.36.1.101-10.36.1.105
+		10.36.1.201-10.36.1.203
+		10.36.1.250-10.36.1.250]
+	( 57 )[tcp:s[0,65535]d[22,22]] permit=True,direction=in,vpn_rule=False
+</Description>
+</Item>
+<Item id="58" type ="rule" name ="Shelbyville:FromOUTSIDE:RULE_3" sig = "4f9355bfc75d7d8df291b35984682b57" ruleid="Shelbyville:FromOUTSIDE:RULE_3">
+<Description>
+Shelbyville:FromOUTSIDE:RULE_3 
+	[72.36.82.195-72.36.82.195],
+		[10.36.1.101-10.36.1.105
+		10.36.1.201-10.36.1.203
+		10.36.1.250-10.36.1.250]
+	( 58 )[tcp:s[0,65535]d[7000,7000]s[0,65535]d[80,80]] permit=True,direction=in,vpn_rule=False
+</Description>
+</Item>
+<Item id="59" type ="rule" name ="Shelbyville:FromOUTSIDE:RULE_4" sig = "37d521d9e3226bebd81c95418cdb67f7" ruleid="Shelbyville:FromOUTSIDE:RULE_4">
+<Description>
+Shelbyville:FromOUTSIDE:RULE_4 
+	[10.39.1.22-10.39.1.22],
+		[10.36.1.101-10.36.1.105
+		10.36.1.201-10.36.1.203
+		10.36.1.250-10.36.1.250]
+	( 59 )[tcp:s[0,65535]d[22,22]] permit=True,direction=in,vpn_rule=False
+</Description>
+</Item>
+<Item id="60" type ="rule" name ="Shelbyville:FromOUTSIDE:RULE_5" sig = "0c0e087e18fdac5dc487dcf33936c049" ruleid="Shelbyville:FromOUTSIDE:RULE_5">
+<Description>
+Shelbyville:FromOUTSIDE:RULE_5 
+	[0.0.0.0-255.255.255.255],
+		[0.0.0.0-255.255.255.255]
+	( 60 )[ip:s[0,65535]d[0,65535]] permit=False,direction=in,vpn_rule=False
+</Description>
+</Item>
+<Item id="66" type ="rule" name ="Springfield:FromINSIDE:RULE_1" sig = "d3c74f7827ea44a3fb18fa37af30a7d8" ruleid="Springfield:FromINSIDE:RULE_1">
+<Description>
+Springfield:FromINSIDE:RULE_1 
+	[10.38.1.101-10.38.1.105
+	10.38.1.201-10.38.1.203
+	10.38.1.250-10.38.1.250],
+		[72.36.82.194-72.36.82.194]
+	( 66 )[tcp:s[0,65535]d[20,20]s[0,65535]d[21,21]s[0,65535]d[2049,2049]] permit=True,direction=in,vpn_rule=False
+</Description>
+</Item>
+<Item id="67" type ="rule" name ="Springfield:FromINSIDE:RULE_2" sig = "9a232576b1c23a66249835f3d117a18e" ruleid="Springfield:FromINSIDE:RULE_2">
+<Description>
+Springfield:FromINSIDE:RULE_2 
+	[10.38.1.101-10.38.1.105
+	10.38.1.201-10.38.1.203
+	10.38.1.250-10.38.1.250],
+		[72.36.82.194-72.36.82.194]
+	( 67 )[tcp:s[0,65535]d[102,102]s[0,65535]d[8080,8080]] permit=True,direction=in,vpn_rule=False
+</Description>
+</Item>
+<Item id="68" type ="rule" name ="Springfield:FromINSIDE:RULE_3" sig = "7726139fc3767c85ba5cad3d84f08dfe" ruleid="Springfield:FromINSIDE:RULE_3">
+<Description>
+Springfield:FromINSIDE:RULE_3 
+	[0.0.0.0-255.255.255.255],
+		[0.0.0.0-255.255.255.255]
+	( 68 )[ip:s[0,65535]d[0,65535]] permit=False,direction=in,vpn_rule=False
+</Description>
+</Item>
+<Item id="61" type ="rule" name ="Springfield:FromOUTSIDE:RULE_1" sig = "e54e7c3485876fe86481227c31392737" ruleid="Springfield:FromOUTSIDE:RULE_1">
+<Description>
+Springfield:FromOUTSIDE:RULE_1 
+	[192.17.102.102-192.17.102.104],
+		[10.38.1.101-10.38.1.105
+		10.38.1.201-10.38.1.203
+		10.38.1.250-10.38.1.250]
+	( 61 )[tcp:s[0,65535]d[102,102]s[0,65535]d[8080,8080]] permit=True,direction=in,vpn_rule=False
+</Description>
+</Item>
+<Item id="62" type ="rule" name ="Springfield:FromOUTSIDE:RULE_2" sig = "28ef382b0333bc449fef2b081467f856" ruleid="Springfield:FromOUTSIDE:RULE_2">
+<Description>
+Springfield:FromOUTSIDE:RULE_2 
+	[70.32.128.22-70.32.128.22
+	70.32.128.74-70.32.128.74
+	70.32.128.171-70.32.128.171],
+		[10.38.1.101-10.38.1.105
+		10.38.1.201-10.38.1.203
+		10.38.1.250-10.38.1.250]
+	( 62 )[tcp:s[0,65535]d[22,22]] permit=True,direction=in,vpn_rule=False
+</Description>
+</Item>
+<Item id="63" type ="rule" name ="Springfield:FromOUTSIDE:RULE_3" sig = "d47c513312e49e3e07abe2d10278204a" ruleid="Springfield:FromOUTSIDE:RULE_3">
+<Description>
+Springfield:FromOUTSIDE:RULE_3 
+	[72.36.82.195-72.36.82.195],
+		[10.38.1.101-10.38.1.105
+		10.38.1.201-10.38.1.203
+		10.38.1.250-10.38.1.250]
+	( 63 )[tcp:s[0,65535]d[7000,7000]s[0,65535]d[80,80]] permit=True,direction=in,vpn_rule=False
+</Description>
+</Item>
+<Item id="64" type ="rule" name ="Springfield:FromOUTSIDE:RULE_4" sig = "75a0351eb980e32fe4ec43fdcec6a2e5" ruleid="Springfield:FromOUTSIDE:RULE_4">
+<Description>
+Springfield:FromOUTSIDE:RULE_4 
+	[10.39.1.22-10.39.1.22],
+		[10.38.1.101-10.38.1.105
+		10.38.1.201-10.38.1.203
+		10.38.1.250-10.38.1.250]
+	( 64 )[tcp:s[0,65535]d[22,22]] permit=True,direction=in,vpn_rule=False
+</Description>
+</Item>
+<Item id="65" type ="rule" name ="Springfield:FromOUTSIDE:RULE_5" sig = "6d12e788acb58eaaa49dd76c7a16c349" ruleid="Springfield:FromOUTSIDE:RULE_5">
+<Description>
+Springfield:FromOUTSIDE:RULE_5 
+	[0.0.0.0-255.255.255.255],
+		[0.0.0.0-255.255.255.255]
+	( 65 )[ip:s[0,65535]d[0,65535]] permit=False,direction=in,vpn_rule=False
+</Description>
+</Item>
+<Item id="7" type ="rule" name ="ciscoasa:FromDMZ:RULE_1" sig = "30ee0166ff61b18b96853def55646393" ruleid="ciscoasa:FromDMZ:RULE_1">
+<Description>
+ciscoasa:FromDMZ:RULE_1 
+	[10.39.1.22-10.39.1.22],
+		[10.31.1.101-10.31.1.105
+		10.31.1.201-10.31.1.207
+		10.31.1.250-10.31.1.250
+		10.32.1.250-10.32.1.250
+		10.33.1.250-10.33.1.250
+		10.34.1.101-10.34.1.103
+		10.34.1.201-10.34.1.202
+		10.34.1.250-10.34.1.250
+		10.35.1.101-10.35.1.104
+		10.35.1.201-10.35.1.203
+		10.35.1.250-10.35.1.250
+		10.36.1.101-10.36.1.105
+		10.36.1.201-10.36.1.203
+		10.36.1.250-10.36.1.250
+		10.38.1.250-10.38.1.250]
+	( 7 )[tcp:s[0,65535]d[22,22]] permit=True,direction=in,vpn_rule=False
+</Description>
+</Item>
+<Item id="8" type ="rule" name ="ciscoasa:FromDMZ:RULE_2" sig = "5945b232f2193ea7baf9f78d2d7727cd" ruleid="ciscoasa:FromDMZ:RULE_2">
+<Description>
+ciscoasa:FromDMZ:RULE_2 
+	[10.39.1.22-10.39.1.22],
+		[10.32.1.201-10.32.1.201
+		10.33.1.101-10.33.1.107
+		10.33.1.201-10.33.1.203
+		10.37.1.101-10.37.1.102
+		10.37.1.201-10.37.1.201
+		10.37.1.250-10.37.1.250
+		10.38.1.101-10.38.1.105
+		10.38.1.201-10.38.1.203]
+	( 8 )[tcp:s[0,65535]d[22,22]] permit=True,direction=in,vpn_rule=False
+</Description>
+</Item>
+<Item id="9" type ="rule" name ="ciscoasa:FromINSIDE:RULE_1" sig = "572a0434f139b8556e829e022b630524" ruleid="ciscoasa:FromINSIDE:RULE_1">
+<Description>
+ciscoasa:FromINSIDE:RULE_1 
+	[10.31.1.101-10.31.1.105
+	10.31.1.201-10.31.1.207
+	10.31.1.250-10.31.1.250
+	10.32.1.250-10.32.1.250
+	10.33.1.250-10.33.1.250
+	10.34.1.101-10.34.1.103
+	10.34.1.201-10.34.1.202
+	10.34.1.250-10.34.1.250
+	10.35.1.101-10.35.1.104
+	10.35.1.201-10.35.1.203
+	10.35.1.250-10.35.1.250
+	10.36.1.101-10.36.1.105
+	10.36.1.201-10.36.1.203
+	10.36.1.250-10.36.1.250
+	10.38.1.250-10.38.1.250],
+		[72.36.82.194-72.36.82.194]
+	( 9 )[tcp:s[0,65535]d[102,102]s[0,65535]d[8080,8080]] permit=True,direction=in,vpn_rule=False
+</Description>
+</Item>
+<Item id="10" type ="rule" name ="ciscoasa:FromINSIDE:RULE_2" sig = "9e66c8665eacf0622067371eff05fe8a" ruleid="ciscoasa:FromINSIDE:RULE_2">
+<Description>
+ciscoasa:FromINSIDE:RULE_2 
+	[10.32.1.201-10.32.1.201
+	10.33.1.101-10.33.1.107
+	10.33.1.201-10.33.1.203
+	10.37.1.101-10.37.1.102
+	10.37.1.201-10.37.1.201
+	10.37.1.250-10.37.1.250
+	10.38.1.101-10.38.1.105
+	10.38.1.201-10.38.1.203],
+		[72.36.82.194-72.36.82.194]
+	( 10 )[tcp:s[0,65535]d[20,20]s[0,65535]d[21,21]s[0,65535]d[2049,2049]] permit=True,direction=in,vpn_rule=False
+</Description>
+</Item>
+<Item id="11" type ="rule" name ="ciscoasa:FromINSIDE:RULE_3" sig = "9823a85f0090f9cf9a9fe9346f7d427b" ruleid="ciscoasa:FromINSIDE:RULE_3">
+<Description>
+ciscoasa:FromINSIDE:RULE_3 
+	[0.0.0.0-255.255.255.255],
+		[0.0.0.0-255.255.255.255]
+	( 11 )[ip:s[0,65535]d[0,65535]] permit=False,direction=in,vpn_rule=False
+</Description>
+</Item>
+<Item id="12" type ="rule" name ="ciscoasa:FromOUTSIDE:RULE_1" sig = "63e443b240f2a3e06468fe76ddbf5729" ruleid="ciscoasa:FromOUTSIDE:RULE_1">
+<Description>
+ciscoasa:FromOUTSIDE:RULE_1 
+	[72.36.82.195-72.36.82.195],
+		[10.31.1.101-10.31.1.105
+		10.31.1.201-10.31.1.207
+		10.31.1.250-10.31.1.250
+		10.32.1.250-10.32.1.250
+		10.33.1.250-10.33.1.250
+		10.34.1.101-10.34.1.103
+		10.34.1.201-10.34.1.202
+		10.34.1.250-10.34.1.250
+		10.35.1.101-10.35.1.104
+		10.35.1.201-10.35.1.203
+		10.35.1.250-10.35.1.250
+		10.36.1.101-10.36.1.105
+		10.36.1.201-10.36.1.203
+		10.36.1.250-10.36.1.250
+		10.38.1.250-10.38.1.250]
+	( 12 )[tcp:s[0,65535]d[7000,7000]s[0,65535]d[80,80]] permit=True,direction=in,vpn_rule=False
+</Description>
+</Item>
+<Item id="13" type ="rule" name ="ciscoasa:FromOUTSIDE:RULE_2" sig = "1a088d44599166e7da6ca5faac096a6c" ruleid="ciscoasa:FromOUTSIDE:RULE_2">
+<Description>
+ciscoasa:FromOUTSIDE:RULE_2 
+	[192.17.102.102-192.17.102.104],
+		[10.31.1.101-10.31.1.105
+		10.31.1.201-10.31.1.207
+		10.31.1.250-10.31.1.250
+		10.32.1.250-10.32.1.250
+		10.33.1.250-10.33.1.250
+		10.34.1.101-10.34.1.103
+		10.34.1.201-10.34.1.202
+		10.34.1.250-10.34.1.250
+		10.35.1.101-10.35.1.104
+		10.35.1.201-10.35.1.203
+		10.35.1.250-10.35.1.250
+		10.36.1.101-10.36.1.105
+		10.36.1.201-10.36.1.203
+		10.36.1.250-10.36.1.250
+		10.38.1.250-10.38.1.250]
+	( 13 )[tcp:s[0,65535]d[102,102]s[0,65535]d[8080,8080]] permit=True,direction=in,vpn_rule=False
+</Description>
+</Item>
+<Item id="14" type ="rule" name ="ciscoasa:FromOUTSIDE:RULE_3" sig = "4a91e12db3a38ff788e92c7228ccc1f7" ruleid="ciscoasa:FromOUTSIDE:RULE_3">
+<Description>
+ciscoasa:FromOUTSIDE:RULE_3 
+	[70.32.128.22-70.32.128.22
+	70.32.128.74-70.32.128.74
+	70.32.128.171-70.32.128.171],
+		[10.31.1.101-10.31.1.105
+		10.31.1.201-10.31.1.207
+		10.31.1.250-10.31.1.250
+		10.32.1.250-10.32.1.250
+		10.33.1.250-10.33.1.250
+		10.34.1.101-10.34.1.103
+		10.34.1.201-10.34.1.202
+		10.34.1.250-10.34.1.250
+		10.35.1.101-10.35.1.104
+		10.35.1.201-10.35.1.203
+		10.35.1.250-10.35.1.250
+		10.36.1.101-10.36.1.105
+		10.36.1.201-10.36.1.203
+		10.36.1.250-10.36.1.250
+		10.38.1.250-10.38.1.250]
+	( 14 )[tcp:s[0,65535]d[22,22]] permit=True,direction=in,vpn_rule=False
+</Description>
+</Item>
+<Item id="15" type ="rule" name ="ciscoasa:FromOUTSIDE:RULE_4" sig = "69644e69de9fa6079851320152fa7fcc" ruleid="ciscoasa:FromOUTSIDE:RULE_4">
+<Description>
+ciscoasa:FromOUTSIDE:RULE_4 
+	[0.0.0.0-255.255.255.255],
+		[10.39.1.22-10.39.1.22]
+	( 15 )[tcp:s[0,65535]d[22,22]] permit=True,direction=in,vpn_rule=False
+</Description>
+</Item>
+<Item id="16" type ="rule" name ="ciscoasa:FromOUTSIDE:RULE_5" sig = "8a316f5076a61182014ae24cc2e33d1b" ruleid="ciscoasa:FromOUTSIDE:RULE_5">
+<Description>
+ciscoasa:FromOUTSIDE:RULE_5 
+	[0.0.0.0-255.255.255.255],
+		[0.0.0.0-255.255.255.255]
+	( 16 )[ip:s[0,65535]d[0,65535]] permit=False,direction=in,vpn_rule=False
+</Description>
+</Item>
+<Item id="17" type ="rule" name ="ciscoasa:FromOUTSIDE:RULE_6" sig = "32460dafb75078df6b747bd4380f68ef" ruleid="ciscoasa:FromOUTSIDE:RULE_6">
+<Description>
+ciscoasa:FromOUTSIDE:RULE_6 
+	[10.39.1.22-10.39.1.22],
+		[10.31.1.101-10.31.1.105
+		10.31.1.201-10.31.1.207
+		10.31.1.250-10.31.1.250
+		10.32.1.250-10.32.1.250
+		10.33.1.250-10.33.1.250
+		10.34.1.101-10.34.1.103
+		10.34.1.201-10.34.1.202
+		10.34.1.250-10.34.1.250
+		10.35.1.101-10.35.1.104
+		10.35.1.201-10.35.1.203
+		10.35.1.250-10.35.1.250
+		10.36.1.101-10.36.1.105
+		10.36.1.201-10.36.1.203
+		10.36.1.250-10.36.1.250
+		10.38.1.250-10.38.1.250]
+	( 17 )[tcp:s[0,65535]d[22,22]] permit=True,direction=in,vpn_rule=False
+</Description>
+</Item>
+<Item id="23" type ="rule" name ="cypress-creek:FromINSIDE:RULE_1" sig = "0fe0929f65c0c160496e87bded45ecbe" ruleid="cypress-creek:FromINSIDE:RULE_1">
+<Description>
+cypress-creek:FromINSIDE:RULE_1 
+	[10.31.1.101-10.31.1.105
+	10.31.1.201-10.31.1.207
+	10.31.1.250-10.31.1.250],
+		[72.36.82.194-72.36.82.194]
+	( 23 )[tcp:s[0,65535]d[102,102]s[0,65535]d[8080,8080]] permit=True,direction=in,vpn_rule=False
+</Description>
+</Item>
+<Item id="24" type ="rule" name ="cypress-creek:FromINSIDE:RULE_2" sig = "5235dd7b63b5e12b4631486fc9ef19dc" ruleid="cypress-creek:FromINSIDE:RULE_2">
+<Description>
+cypress-creek:FromINSIDE:RULE_2 
+	[0.0.0.0-255.255.255.255],
+		[0.0.0.0-255.255.255.255]
+	( 24 )[ip:s[0,65535]d[0,65535]] permit=False,direction=in,vpn_rule=False
+</Description>
+</Item>
+<Item id="18" type ="rule" name ="cypress-creek:FromOUTSIDE:RULE_1" sig = "a995bc7afe9f4f00cac0f84719c13d58" ruleid="cypress-creek:FromOUTSIDE:RULE_1">
+<Description>
+cypress-creek:FromOUTSIDE:RULE_1 
+	[192.17.102.102-192.17.102.104],
+		[10.31.1.101-10.31.1.105
+		10.31.1.201-10.31.1.207
+		10.31.1.250-10.31.1.250]
+	( 18 )[tcp:s[0,65535]d[102,102]s[0,65535]d[8080,8080]] permit=True,direction=in,vpn_rule=False
+</Description>
+</Item>
+<Item id="19" type ="rule" name ="cypress-creek:FromOUTSIDE:RULE_2" sig = "52ee6769d35493301cdb5d4e5bf6b559" ruleid="cypress-creek:FromOUTSIDE:RULE_2">
+<Description>
+cypress-creek:FromOUTSIDE:RULE_2 
+	[70.32.128.22-70.32.128.22
+	70.32.128.74-70.32.128.74
+	70.32.128.171-70.32.128.171],
+		[10.31.1.101-10.31.1.105
+		10.31.1.201-10.31.1.207
+		10.31.1.250-10.31.1.250]
+	( 19 )[tcp:s[0,65535]d[22,22]] permit=True,direction=in,vpn_rule=False
+</Description>
+</Item>
+<Item id="20" type ="rule" name ="cypress-creek:FromOUTSIDE:RULE_3" sig = "a58a277ad56a1c3a5bb2874d741cb107" ruleid="cypress-creek:FromOUTSIDE:RULE_3">
+<Description>
+cypress-creek:FromOUTSIDE:RULE_3 
+	[72.36.82.195-72.36.82.195],
+		[10.31.1.101-10.31.1.105
+		10.31.1.201-10.31.1.207
+		10.31.1.250-10.31.1.250]
+	( 20 )[tcp:s[0,65535]d[7000,7000]s[0,65535]d[80,80]] permit=True,direction=in,vpn_rule=False
+</Description>
+</Item>
+<Item id="21" type ="rule" name ="cypress-creek:FromOUTSIDE:RULE_4" sig = "6808535a7aa784f531666b30fdb59d3f" ruleid="cypress-creek:FromOUTSIDE:RULE_4">
+<Description>
+cypress-creek:FromOUTSIDE:RULE_4 
+	[10.39.1.22-10.39.1.22],
+		[10.31.1.101-10.31.1.105
+		10.31.1.201-10.31.1.207
+		10.31.1.250-10.31.1.250]
+	( 21 )[tcp:s[0,65535]d[22,22]] permit=True,direction=in,vpn_rule=False
+</Description>
+</Item>
+<Item id="22" type ="rule" name ="cypress-creek:FromOUTSIDE:RULE_5" sig = "195b5ed162b97d25f7d9e7464ec6302b" ruleid="cypress-creek:FromOUTSIDE:RULE_5">
+<Description>
+cypress-creek:FromOUTSIDE:RULE_5 
+	[0.0.0.0-255.255.255.255],
+		[0.0.0.0-255.255.255.255]
+	( 22 )[ip:s[0,65535]d[0,65535]] permit=False,direction=in,vpn_rule=False
+</Description>
+</Item>
+<Item id="29" type ="rule" name ="haverbrook:FromINSIDE:RULE_1" sig = "a96d601f245b9126805490931ac4ee30" ruleid="haverbrook:FromINSIDE:RULE_1">
+<Description>
+haverbrook:FromINSIDE:RULE_1 
+	[10.32.1.201-10.32.1.201
+	10.32.1.250-10.32.1.250],
+		[72.36.82.194-72.36.82.194]
+	( 29 )[tcp:s[0,65535]d[20,20]s[0,65535]d[21,21]s[0,65535]d[2049,2049]] permit=True,direction=in,vpn_rule=False
+</Description>
+</Item>
+<Item id="30" type ="rule" name ="haverbrook:FromINSIDE:RULE_2" sig = "ee11d867e91e161f3d9fd7a9840ae501" ruleid="haverbrook:FromINSIDE:RULE_2">
+<Description>
+haverbrook:FromINSIDE:RULE_2 
+	[10.32.1.201-10.32.1.201
+	10.32.1.250-10.32.1.250],
+		[72.36.82.194-72.36.82.194]
+	( 30 )[tcp:s[0,65535]d[102,102]s[0,65535]d[8080,8080]] permit=True,direction=in,vpn_rule=False
+</Description>
+</Item>
+<Item id="31" type ="rule" name ="haverbrook:FromINSIDE:RULE_3" sig = "a177176fbfdc6b7393395b86c34527f8" ruleid="haverbrook:FromINSIDE:RULE_3">
+<Description>
+haverbrook:FromINSIDE:RULE_3 
+	[0.0.0.0-255.255.255.255],
+		[0.0.0.0-255.255.255.255]
+	( 31 )[ip:s[0,65535]d[0,65535]] permit=False,direction=in,vpn_rule=False
+</Description>
+</Item>
+<Item id="25" type ="rule" name ="haverbrook:FromOUTSIDE:RULE_1" sig = "a3a1abe94c6c9169e889f1a7f56eb051" ruleid="haverbrook:FromOUTSIDE:RULE_1">
+<Description>
+haverbrook:FromOUTSIDE:RULE_1 
+	[192.17.102.102-192.17.102.104],
+		[10.32.1.201-10.32.1.201
+		10.32.1.250-10.32.1.250]
+	( 25 )[tcp:s[0,65535]d[102,102]s[0,65535]d[8080,8080]] permit=True,direction=in,vpn_rule=False
+</Description>
+</Item>
+<Item id="26" type ="rule" name ="haverbrook:FromOUTSIDE:RULE_2" sig = "ca3f43dcd1bd76c40949b1e27706eeb0" ruleid="haverbrook:FromOUTSIDE:RULE_2">
+<Description>
+haverbrook:FromOUTSIDE:RULE_2 
+	[70.32.128.22-70.32.128.22
+	70.32.128.74-70.32.128.74
+	70.32.128.171-70.32.128.171],
+		[10.32.1.201-10.32.1.201
+		10.32.1.250-10.32.1.250]
+	( 26 )[tcp:s[0,65535]d[22,22]] permit=True,direction=in,vpn_rule=False
+</Description>
+</Item>
+<Item id="27" type ="rule" name ="haverbrook:FromOUTSIDE:RULE_3" sig = "9fe20baf66b8a06060e3445a86eb1ebc" ruleid="haverbrook:FromOUTSIDE:RULE_3">
+<Description>
+haverbrook:FromOUTSIDE:RULE_3 
+	[10.39.1.22-10.39.1.22],
+		[10.32.1.201-10.32.1.201
+		10.32.1.250-10.32.1.250]
+	( 27 )[tcp:s[0,65535]d[22,22]] permit=True,direction=in,vpn_rule=False
+</Description>
+</Item>
+<Item id="28" type ="rule" name ="haverbrook:FromOUTSIDE:RULE_4" sig = "a968922a1daa94019f296c8720dad4d4" ruleid="haverbrook:FromOUTSIDE:RULE_4">
+<Description>
+haverbrook:FromOUTSIDE:RULE_4 
+	[0.0.0.0-255.255.255.255],
+		[0.0.0.0-255.255.255.255]
+	( 28 )[ip:s[0,65535]d[0,65535]] permit=False,direction=in,vpn_rule=False
+</Description>
+</Item>
+</ObjectDictionary>
