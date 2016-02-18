@@ -1,9 +1,9 @@
 SOCCA_DOCS_PATH,SOCCA_docs
-CONNECTIVITY_CSV_FILE,C:\8bus\projects\8bus\npv\connectivity.csv
-ATTACK_GRAPH_XML_FILE,C:\8bus\projects\8bus\attack_graph-0-0-0-0.xml
-ANALYSIS_ATTACK_GRAPH_XML_FILE_PREVIOUS,C:\8bus\projects\8bus\npv\pw_analysis_attack_graph_previous.xml
-ANALYSIS_ATTACK_GRAPH_XML_FILE_CURRENT,C:\8bus\projects\8bus\npv\pw_analysis_attack_graph_current.xml
-CRITICAL_ASSETS_FILE,C:\8bus\projects\8bus\critical-assets.txt
+CONNECTIVITY_CSV_FILE,C:\armadillo\Demo\8bus\projects\8bus\npv\connectivity.csv
+ATTACK_GRAPH_XML_FILE,C:\armadillo\Demo\8bus\projects\8bus\attack_graph-0-0-0-0.xml
+ANALYSIS_ATTACK_GRAPH_XML_FILE_PREVIOUS,C:\armadillo\Demo\8bus\projects\8bus\npv\pw_analysis_attack_graph_previous.xml
+ANALYSIS_ATTACK_GRAPH_XML_FILE_CURRENT,C:\armadillo\Demo\8bus\projects\8bus\npv\pw_analysis_attack_graph_current.xml
+CRITICAL_ASSETS_FILE,C:\armadillo\Demo\8bus\projects\8bus\critical-assets.txt
 PW_CASE_FILE_NAME,case.pwb
-PW_CASE_FILE_DIR,C:\8bus\projects\8bus\powerworld\
-ATTACK_GRAPH_XML_PATH,C:\8bus\projects\8bus\attack_graph
+PW_CASE_FILE_DIR,C:\armadillo\Demo\8bus\projects\8bus\powerworld\
+ATTACK_GRAPH_XML_PATH,C:\armadillo\Demo\8bus\projects\8bus\attack_graph

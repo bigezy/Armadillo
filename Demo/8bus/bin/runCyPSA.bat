@@ -12,7 +12,9 @@ IF "%2" == "" (
 	ECHO "<USAGE> %0 [project_name] [entry node IP]"
     EXIT /B
 )
-SET PROJECT_PATH=%cd%\..
+REM SET PROJECT_PATH=%cd%\..
+SET PROJECT_PATH=C:\armadillo\Demo\8bus
+
 SET PROJECT_NAME=%1
 REM for 8bus, use 10.31.1.201
 SET ENTRY_NODE=%2
@@ -26,23 +28,30 @@ REM
 REM start /d "path" file.exe
 
 SET PROJECT_FOLDER= %PROJECT_PATH%\projects\%project_name%
+
 SET NPV_GRAPH_ARGS=-d -c %PROJECT_FOLDER%\npv\connectivity.csv -s -t %PROJECT_FOLDER%\npv\topology-dict.json -a %PROJECT_FOLDER%\\critical-assets.txt -i %PROJECT_FOLDER%\\npv\\compromised.csv -p %PROJECT_FOLDER%\\npv\\patched.csv -n %PROJECT_FOLDER% -e %ENTRY_NODE%
-SET PW_PATH=PW\CPPW.exe
-SET SOCCA_PATH=CyPsaEngine\CYPSA_Engine.exe
-SET NPV_GRAPH_FILE=NPVGraph\np_vgraph.exe
-SET AUTOCONNECT_FILE=PW\AutoConnect.aux
+
+REM SET PW_PATH=PW\CPPW.exe
+SET PW_PATH=C:\armadillo\Demo\8bus\bin\PW\CPPW.exe
+REM SET SOCCA_PATH=CyPsaEngine\CYPSA_Engine.exe
+SET SOCCA_PATH=C:\armadillo\Demo\8bus\bin\CyPsaEngine\CYPSA_Engine.exe
+REM SET NPV_GRAPH_FILE=NPVGraph\np_vgraph.exe
+SET NPV_GRAPH_FILE=C:\armadillo\Demo\8bus\bin\NPVGraph\np_vgraph.exe
+REM SET AUTOCONNECT_FILE=PW\AutoConnect.aux
+SET AUTOCONNECT_FILE=C:\armadillo\Demo\8bus\bin\PW\AutoConnect.aux
+
 SET PW_ANALYSIS_CURRENT=%PROJECT_FOLDER%\pw_analysis_attack_graph_current.xml
 SET PW_ANALYSIS_PREVIOUS=%PROJECT_FOLDER%\pw_analysis_attack_graph_previous.xml
 SET COMPROMISED_FILE==%PROJECT_FOLDER%\npv\compromised.csv
 SET PATCHED_FILE==%PROJECT_FOLDER%\npv\patched.csv
 
-ECHO %PROJECT_FOLDER% here11
-ECHO %PW_ANALYSIS_CURRENT% here1100
+REM ECHO %PROJECT_FOLDER% here11
+REM ECHO %PW_ANALYSIS_CURRENT% here1100
 
-IF NOT EXIST PW (
-	ECHO ERROR: Could not locate folder PW. Please add the CP-PW-Trainer executable to bin\PW
- 	EXIT /B
-)
+REM IF NOT EXIST PW_PATH (
+REM 	ECHO ERROR: Could not locate folder PW. Please add the CP-PW-Trainer executable to bin\PW
+REM  	EXIT /B
+REM )
 
 IF NOT EXIST %AUTOCONNECT_FILE% (
 	ECHO ERROR: Could not locate the autoconnect aux file file %AUTOCONNECT_FILE% needed by CPPW
@@ -53,7 +62,7 @@ IF NOT EXIST %NPV_GRAPH_FILE% (
 	ECHO ERROR: Could not locate the npvgraph script file %NPV_GRAPH_FILE% needed
 	EXIT /B
 )
-echo here 1
+REM echo here 1
 REM ---------------------------->
 REM
 REM Start NPV analysis and generate attack graph
@@ -65,9 +74,9 @@ REM ---------------------------->
 REM 
 REM Delete previous pw_analysis_attack_graph files
 
-del %PW_ANALYSIS_CURRENT%
+REM del %PW_ANALYSIS_CURRENT%
 
-del %PW_ANALYSIS_PREVIOUS%
+REM del %PW_ANALYSIS_PREVIOUS%
 
 REM Create empty comrpmmoised/patched files:
 del %COMPROMISED_FILE%
@@ -93,14 +102,17 @@ REM
 REM Start SOCCA Server
 IF EXIST %AUTOCONNECT_FILE% (
 	ECHO "Start SOCCA Server"
+	cd /d "C:\armadillo\Demo\8bus\bin"
 	START %SOCCA_PATH%
 )
 
 REM ---------------------------->
 REM
 REM Run PowerWorld CP-Trainer and autoconnect
-IF EXIST PW (
+REM IF EXIST PW (
 	ECHO "START PowerWorld"
 	START %PW_PATH% %AUTOCONNECT_FILE%
-)
+	
+	ECHO "Start Web server"
+REM )
 
