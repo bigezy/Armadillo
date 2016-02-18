@@ -267,13 +267,13 @@
         }, 
         {
             "relation": "syard:hasLine", 
-            "source": "NorthHaverbrook$ND$8.yard.north-haverbrook.8sub.cypsa.projects.cptl-c.org", 
-            "target": "NorthHaverbrook$BRK$812.yard.north-haverbrook.8sub.cypsa.projects.cptl-c.org"
+            "source": "North Haverbrook$ND$8.yard.north-haverbrook.8sub.cypsa.projects.cptl-c.org", 
+            "target": "North Haverbrook$BRK$812.yard.north-haverbrook.8sub.cypsa.projects.cptl-c.org"
         }, 
         {
             "relation": "syard:hasLine", 
-            "source": "NorthHaverbrook$BRK$812.yard.north-haverbrook.8sub.cypsa.projects.cptl-c.org", 
-            "target": "NorthHaverbrook$ND$12.yard.north-haverbrook.8sub.cypsa.projects.cptl-c.org"
+            "source": "North Haverbrook$BRK$812.yard.north-haverbrook.8sub.cypsa.projects.cptl-c.org", 
+            "target": "North Haverbrook$ND$12.yard.north-haverbrook.8sub.cypsa.projects.cptl-c.org"
         }, 
         {
             "relation": "syard:hasLine", 
@@ -387,13 +387,13 @@
         }, 
         {
             "relation": "syard:hasLine", 
-            "source": "NorthHaverbrook$ND$12.yard.north-haverbrook.8sub.cypsa.projects.cptl-c.org", 
-            "target": "NorthHaverbrook$BRK$1213.yard.north-haverbrook.8sub.cypsa.projects.cptl-c.org"
+            "source": "North Haverbrook$ND$12.yard.north-haverbrook.8sub.cypsa.projects.cptl-c.org", 
+            "target": "North Haverbrook$BRK$1213.yard.north-haverbrook.8sub.cypsa.projects.cptl-c.org"
         }, 
         {
             "relation": "syard:hasLine", 
-            "source": "NorthHaverbrook$BRK$1213.yard.north-haverbrook.8sub.cypsa.projects.cptl-c.org", 
-            "target": "NorthHaverbrook$ND$13.yard.north-haverbrook.8sub.cypsa.projects.cptl-c.org"
+            "source": "North Haverbrook$BRK$1213.yard.north-haverbrook.8sub.cypsa.projects.cptl-c.org", 
+            "target": "North Haverbrook$ND$13.yard.north-haverbrook.8sub.cypsa.projects.cptl-c.org"
         }, 
         {
             "relation": "syard:hasLine", 
@@ -462,18 +462,18 @@
         }, 
         {
             "relation": "syard:hasLine", 
-            "source": "NorthHaverbrook$ND$8.yard.north-haverbrook.8sub.cypsa.projects.cptl-c.org", 
-            "target": "NorthHaverbrook$BRK$89.yard.north-haverbrook.8sub.cypsa.projects.cptl-c.org"
+            "source": "North Haverbrook$ND$8.yard.north-haverbrook.8sub.cypsa.projects.cptl-c.org", 
+            "target": "North Haverbrook$BRK$89.yard.north-haverbrook.8sub.cypsa.projects.cptl-c.org"
         }, 
         {
             "relation": "syard:hasLine", 
-            "source": "NorthHaverbrook$BRK$89.yard.north-haverbrook.8sub.cypsa.projects.cptl-c.org", 
-            "target": "NorthHaverbrook$ND$8.yard.north-haverbrook.8sub.cypsa.projects.cptl-c.org"
+            "source": "North Haverbrook$BRK$89.yard.north-haverbrook.8sub.cypsa.projects.cptl-c.org", 
+            "target": "North Haverbrook$ND$8.yard.north-haverbrook.8sub.cypsa.projects.cptl-c.org"
         }, 
         {
             "relation": "syard:hasLine", 
-            "source": "NorthHaverbrook$ND$59.yard.north-haverbrook.8sub.cypsa.projects.cptl-c.org", 
-            "target": "NorthHaverbrook$BRK$89.yard.north-haverbrook.8sub.cypsa.projects.cptl-c.org"
+            "source": "North Haverbrook$ND$59.yard.north-haverbrook.8sub.cypsa.projects.cptl-c.org", 
+            "target": "North Haverbrook$BRK$89.yard.north-haverbrook.8sub.cypsa.projects.cptl-c.org"
         }, 
         {
             "relation": "cptlc:hasLink", 
@@ -592,13 +592,13 @@
         }, 
         {
             "relation": "syard:hasLine", 
-            "source": "NorthHaverbrook$BRK$1112.yard.north-haverbrook.8sub.cypsa.projects.cptl-c.org", 
-            "target": "NorthHaverbrook$ND$11.yard.north-haverbrook.8sub.cypsa.projects.cptl-c.org"
+            "source": "North Haverbrook$BRK$1112.yard.north-haverbrook.8sub.cypsa.projects.cptl-c.org", 
+            "target": "North Haverbrook$ND$11.yard.north-haverbrook.8sub.cypsa.projects.cptl-c.org"
         }, 
         {
             "relation": "syard:hasLine", 
-            "source": "NorthHaverbrook$ND$12.yard.north-haverbrook.8sub.cypsa.projects.cptl-c.org", 
-            "target": "NorthHaverbrook$BRK$1112.yard.north-haverbrook.8sub.cypsa.projects.cptl-c.org"
+            "source": "North Haverbrook$ND$12.yard.north-haverbrook.8sub.cypsa.projects.cptl-c.org", 
+            "target": "North Haverbrook$BRK$1112.yard.north-haverbrook.8sub.cypsa.projects.cptl-c.org"
         }, 
         {
             "relation": "syard:hasLine", 
@@ -622,13 +622,13 @@
         }, 
         {
             "relation": "syard:hasLine", 
-            "source": "NorthHaverbrook$ND$13.yard.north-haverbrook.8sub.cypsa.projects.cptl-c.org", 
-            "target": "NorthHaverbrook$BRK$913.yard.north-haverbrook.8sub.cypsa.projects.cptl-c.org"
+            "source": "North Haverbrook$ND$13.yard.north-haverbrook.8sub.cypsa.projects.cptl-c.org", 
+            "target": "North Haverbrook$BRK$913.yard.north-haverbrook.8sub.cypsa.projects.cptl-c.org"
         }, 
         {
             "relation": "syard:hasLine", 
-            "source": "NorthHaverbrook$BRK$913.yard.north-haverbrook.8sub.cypsa.projects.cptl-c.org", 
-            "target": "NorthHaverbrook$ND$59.yard.north-haverbrook.8sub.cypsa.projects.cptl-c.org"
+            "source": "North Haverbrook$BRK$913.yard.north-haverbrook.8sub.cypsa.projects.cptl-c.org", 
+            "target": "North Haverbrook$ND$59.yard.north-haverbrook.8sub.cypsa.projects.cptl-c.org"
         }, 
         {
             "relation": "cptlc:hasLink", 
@@ -693,11 +693,11 @@
         {
             "relation": "syard:hasLine", 
             "source": "Shelbyville$ND$26.yard.shelbyville.8sub.cypsa.projects.cptl-c.org", 
-            "target": "NorthHaverbrook$ND$14.yard.north-haverbrook.8sub.cypsa.projects.cptl-c.org"
+            "target": "North Haverbrook$ND$14.yard.north-haverbrook.8sub.cypsa.projects.cptl-c.org"
         }, 
         {
             "relation": "syard:hasLine", 
-            "source": "NorthHaverbrook$ND$14.yard.north-haverbrook.8sub.cypsa.projects.cptl-c.org", 
+            "source": "North Haverbrook$ND$14.yard.north-haverbrook.8sub.cypsa.projects.cptl-c.org", 
             "target": "Shelbyville$ND$26.yard.shelbyville.8sub.cypsa.projects.cptl-c.org"
         }, 
         {
@@ -722,8 +722,8 @@
         }, 
         {
             "relation": "syard:hasLine", 
-            "source": "NorthHaverbrook$BRK$1413.yard.north-haverbrook.8sub.cypsa.projects.cptl-c.org", 
-            "target": "NorthHaverbrook$ND$14.yard.north-haverbrook.8sub.cypsa.projects.cptl-c.org"
+            "source": "North Haverbrook$BRK$1413.yard.north-haverbrook.8sub.cypsa.projects.cptl-c.org", 
+            "target": "North Haverbrook$ND$14.yard.north-haverbrook.8sub.cypsa.projects.cptl-c.org"
         }, 
         {
             "relation": "syard:hasLine", 
@@ -837,8 +837,8 @@
         }, 
         {
             "relation": "syard:hasLine", 
-            "source": "NorthHaverbrook$ND$13.yard.north-haverbrook.8sub.cypsa.projects.cptl-c.org", 
-            "target": "NorthHaverbrook$BRK$1413.yard.north-haverbrook.8sub.cypsa.projects.cptl-c.org"
+            "source": "North Haverbrook$ND$13.yard.north-haverbrook.8sub.cypsa.projects.cptl-c.org", 
+            "target": "North Haverbrook$BRK$1413.yard.north-haverbrook.8sub.cypsa.projects.cptl-c.org"
         }, 
         {
             "relation": "syard:hasLine", 
@@ -882,13 +882,13 @@
         }, 
         {
             "relation": "syard:hasLine", 
-            "source": "NorthHaverbrook$ND$7.yard.north-haverbrook.8sub.cypsa.projects.cptl-c.org", 
+            "source": "North Haverbrook$ND$7.yard.north-haverbrook.8sub.cypsa.projects.cptl-c.org", 
             "target": "Odgenville$ND$3.yard.odgenville.8sub.cypsa.projects.cptl-c.org"
         }, 
         {
             "relation": "syard:hasLine", 
-            "source": "NorthHaverbrook$ND$7.yard.north-haverbrook.8sub.cypsa.projects.cptl-c.org", 
-            "target": "NorthHaverbrook$BRK$78.yard.north-haverbrook.8sub.cypsa.projects.cptl-c.org"
+            "source": "North Haverbrook$ND$7.yard.north-haverbrook.8sub.cypsa.projects.cptl-c.org", 
+            "target": "North Haverbrook$BRK$78.yard.north-haverbrook.8sub.cypsa.projects.cptl-c.org"
         }, 
         {
             "relation": "cptlc:hasLink", 
@@ -1017,13 +1017,13 @@
         }, 
         {
             "relation": "syard:hasLine", 
-            "source": "CapitalCity$ND$46.yard.capital-city.8sub.cypsa.projects.cptl-c.org", 
-            "target": "CapitalCity$BRK$4647.yard.capital-city.8sub.cypsa.projects.cptl-c.org"
+            "source": "Capital City$ND$46.yard.capital-city.8sub.cypsa.projects.cptl-c.org", 
+            "target": "Capital City$BRK$4647.yard.capital-city.8sub.cypsa.projects.cptl-c.org"
         }, 
         {
             "relation": "syard:hasLine", 
-            "source": "CapitalCity$BRK$4647.yard.capital-city.8sub.cypsa.projects.cptl-c.org", 
-            "target": "CapitalCity$ND$47.yard.capital-city.8sub.cypsa.projects.cptl-c.org"
+            "source": "Capital City$BRK$4647.yard.capital-city.8sub.cypsa.projects.cptl-c.org", 
+            "target": "Capital City$ND$47.yard.capital-city.8sub.cypsa.projects.cptl-c.org"
         }, 
         {
             "relation": "syard:hasLine", 
@@ -1058,11 +1058,11 @@
         {
             "relation": "syard:hasLine", 
             "source": "Cypress Creek$ND$21.yard.cypress-creek.8sub.cypsa.projects.cptl-c.org", 
-            "target": "NorthHaverbrook$ND$11.yard.north-haverbrook.8sub.cypsa.projects.cptl-c.org"
+            "target": "North Haverbrook$ND$11.yard.north-haverbrook.8sub.cypsa.projects.cptl-c.org"
         }, 
         {
             "relation": "syard:hasLine", 
-            "source": "NorthHaverbrook$ND$11.yard.north-haverbrook.8sub.cypsa.projects.cptl-c.org", 
+            "source": "North Haverbrook$ND$11.yard.north-haverbrook.8sub.cypsa.projects.cptl-c.org", 
             "target": "Cypress Creek$ND$21.yard.cypress-creek.8sub.cypsa.projects.cptl-c.org"
         }, 
         {
@@ -1102,13 +1102,13 @@
         }, 
         {
             "relation": "syard:hasLine", 
-            "source": "CapitalCity$ND$45.yard.capital-city.8sub.cypsa.projects.cptl-c.org", 
+            "source": "Capital City$ND$45.yard.capital-city.8sub.cypsa.projects.cptl-c.org", 
             "target": "Cypress Creek$TX$4545.yard.cypress-creek.8sub.cypsa.projects.cptl-c.org"
         }, 
         {
             "relation": "syard:hasLine", 
-            "source": "NorthHaverbrook$BRK$78.yard.north-haverbrook.8sub.cypsa.projects.cptl-c.org", 
-            "target": "NorthHaverbrook$ND$8.yard.north-haverbrook.8sub.cypsa.projects.cptl-c.org"
+            "source": "North Haverbrook$BRK$78.yard.north-haverbrook.8sub.cypsa.projects.cptl-c.org", 
+            "target": "North Haverbrook$ND$8.yard.north-haverbrook.8sub.cypsa.projects.cptl-c.org"
         }, 
         {
             "relation": "syard:hasLine", 
@@ -1232,8 +1232,8 @@
         }, 
         {
             "relation": "syard:hasLine", 
-            "source": "NorthHaverbrook$BRK$910.yard.north-haverbrook.8sub.cypsa.projects.cptl-c.org", 
-            "target": "NorthHaverbrook$ND$10.yard.north-haverbrook.8sub.cypsa.projects.cptl-c.org"
+            "source": "North Haverbrook$BRK$910.yard.north-haverbrook.8sub.cypsa.projects.cptl-c.org", 
+            "target": "North Haverbrook$ND$10.yard.north-haverbrook.8sub.cypsa.projects.cptl-c.org"
         }, 
         {
             "relation": "syard:hasLine", 
@@ -1242,8 +1242,8 @@
         }, 
         {
             "relation": "syard:hasLine", 
-            "source": "NorthHaverbrook$ND$59.yard.north-haverbrook.8sub.cypsa.projects.cptl-c.org", 
-            "target": "NorthHaverbrook$BRK$910.yard.north-haverbrook.8sub.cypsa.projects.cptl-c.org"
+            "source": "North Haverbrook$ND$59.yard.north-haverbrook.8sub.cypsa.projects.cptl-c.org", 
+            "target": "North Haverbrook$BRK$910.yard.north-haverbrook.8sub.cypsa.projects.cptl-c.org"
         }, 
         {
             "relation": "cptlc:hasLink", 
@@ -1262,13 +1262,13 @@
         }, 
         {
             "relation": "syard:hasLine", 
-            "source": "CapitalCity$BRK$4546.yard.capital-city.8sub.cypsa.projects.cptl-c.org", 
-            "target": "CapitalCity$ND$46.yard.capital-city.8sub.cypsa.projects.cptl-c.org"
+            "source": "Capital City$BRK$4546.yard.capital-city.8sub.cypsa.projects.cptl-c.org", 
+            "target": "Capital City$ND$46.yard.capital-city.8sub.cypsa.projects.cptl-c.org"
         }, 
         {
             "relation": "syard:hasLine", 
-            "source": "CapitalCity$ND$45.yard.capital-city.8sub.cypsa.projects.cptl-c.org", 
-            "target": "CapitalCity$BRK$4546.yard.capital-city.8sub.cypsa.projects.cptl-c.org"
+            "source": "Capital City$ND$45.yard.capital-city.8sub.cypsa.projects.cptl-c.org", 
+            "target": "Capital City$BRK$4546.yard.capital-city.8sub.cypsa.projects.cptl-c.org"
         }, 
         {
             "relation": "cptlc:hasLink", 
@@ -1455,8 +1455,8 @@
             "rdfs:type": "syard:Node"
         }, 
         {
-            "enet:hasDomainNameValue": "NorthHaverbrook$ND$7.yard.north-haverbrook.8sub.cypsa.projects.cptl-c.org", 
-            "name": "NorthHaverbrook$ND$7.yard.north-haverbrook.8sub.cypsa.projects.cptl-c.org", 
+            "enet:hasDomainNameValue": "North Haverbrook$ND$7.yard.north-haverbrook.8sub.cypsa.projects.cptl-c.org", 
+            "name": "North Haverbrook$ND$7.yard.north-haverbrook.8sub.cypsa.projects.cptl-c.org", 
             "rdfs:type": "syard:Node"
         }, 
         {
@@ -1476,8 +1476,8 @@
             "rdfs:type": "syard:Transformer"
         }, 
         {
-            "enet:hasDomainNameValue": "NorthHaverbrook$ND$8.yard.north-haverbrook.8sub.cypsa.projects.cptl-c.org", 
-            "name": "NorthHaverbrook$ND$8.yard.north-haverbrook.8sub.cypsa.projects.cptl-c.org", 
+            "enet:hasDomainNameValue": "North Haverbrook$ND$8.yard.north-haverbrook.8sub.cypsa.projects.cptl-c.org", 
+            "name": "North Haverbrook$ND$8.yard.north-haverbrook.8sub.cypsa.projects.cptl-c.org", 
             "rdfs:type": "syard:Bus"
         }, 
         {
@@ -1502,7 +1502,7 @@
         }, 
         {
             "enet:hasDomainNameValue": "SEL_421_7.network.cypress-creek.8sub.cypsa.projects.cptl-c.org", 
-            "enet:hasIPAddressValue": "10.31.1.207", 
+            "enet:hasIPAddressValue": "10.31.1.201", 
             "name": "SEL_421_7.network.cypress-creek.8sub.cypsa.projects.cptl-c.org", 
             "rdfs:type": "snet:DistanceRelay"
         }, 
@@ -1599,13 +1599,13 @@
             "rdfs:type": "syard:Breaker"
         }, 
         {
-            "enet:hasDomainNameValue": "CapitalCity$BRK$4546.yard.capital-city.8sub.cypsa.projects.cptl-c.org", 
-            "name": "CapitalCity$BRK$4546.yard.capital-city.8sub.cypsa.projects.cptl-c.org", 
+            "enet:hasDomainNameValue": "Capital City$BRK$4546.yard.capital-city.8sub.cypsa.projects.cptl-c.org", 
+            "name": "Capital City$BRK$4546.yard.capital-city.8sub.cypsa.projects.cptl-c.org", 
             "rdfs:type": "syard:Breaker"
         }, 
         {
-            "enet:hasDomainNameValue": "NorthHaverbrook$BRK$1213.yard.north-haverbrook.8sub.cypsa.projects.cptl-c.org", 
-            "name": "NorthHaverbrook$BRK$1213.yard.north-haverbrook.8sub.cypsa.projects.cptl-c.org", 
+            "enet:hasDomainNameValue": "North Haverbrook$BRK$1213.yard.north-haverbrook.8sub.cypsa.projects.cptl-c.org", 
+            "name": "North Haverbrook$BRK$1213.yard.north-haverbrook.8sub.cypsa.projects.cptl-c.org", 
             "rdfs:type": "syard:Breaker"
         }, 
         {
@@ -1614,8 +1614,8 @@
             "rdfs:type": "cptlc:Asset"
         }, 
         {
-            "enet:hasDomainNameValue": "NorthHaverbrook$ND$59.yard.north-haverbrook.8sub.cypsa.projects.cptl-c.org", 
-            "name": "NorthHaverbrook$ND$59.yard.north-haverbrook.8sub.cypsa.projects.cptl-c.org", 
+            "enet:hasDomainNameValue": "North Haverbrook$ND$59.yard.north-haverbrook.8sub.cypsa.projects.cptl-c.org", 
+            "name": "North Haverbrook$ND$59.yard.north-haverbrook.8sub.cypsa.projects.cptl-c.org", 
             "rdfs:type": "syard:Bus"
         }, 
         {
@@ -1719,8 +1719,8 @@
             "rdfs:type": "syard:Node"
         }, 
         {
-            "enet:hasDomainNameValue": "CapitalCity$BRK$4647.yard.capital-city.8sub.cypsa.projects.cptl-c.org", 
-            "name": "CapitalCity$BRK$4647.yard.capital-city.8sub.cypsa.projects.cptl-c.org", 
+            "enet:hasDomainNameValue": "Capital City$BRK$4647.yard.capital-city.8sub.cypsa.projects.cptl-c.org", 
+            "name": "Capital City$BRK$4647.yard.capital-city.8sub.cypsa.projects.cptl-c.org", 
             "rdfs:type": "syard:Breaker"
         }, 
         {
@@ -1729,33 +1729,33 @@
             "rdfs:type": "syard:Breaker"
         }, 
         {
-            "enet:hasDomainNameValue": "NorthHaverbrook$ND$10.yard.north-haverbrook.8sub.cypsa.projects.cptl-c.org", 
-            "name": "NorthHaverbrook$ND$10.yard.north-haverbrook.8sub.cypsa.projects.cptl-c.org", 
+            "enet:hasDomainNameValue": "North Haverbrook$ND$10.yard.north-haverbrook.8sub.cypsa.projects.cptl-c.org", 
+            "name": "North Haverbrook$ND$10.yard.north-haverbrook.8sub.cypsa.projects.cptl-c.org", 
             "rdfs:type": "syard:Node"
         }, 
         {
-            "enet:hasDomainNameValue": "NorthHaverbrook$ND$11.yard.north-haverbrook.8sub.cypsa.projects.cptl-c.org", 
-            "name": "NorthHaverbrook$ND$11.yard.north-haverbrook.8sub.cypsa.projects.cptl-c.org", 
+            "enet:hasDomainNameValue": "North Haverbrook$ND$11.yard.north-haverbrook.8sub.cypsa.projects.cptl-c.org", 
+            "name": "North Haverbrook$ND$11.yard.north-haverbrook.8sub.cypsa.projects.cptl-c.org", 
             "rdfs:type": "syard:Node"
         }, 
         {
-            "enet:hasDomainNameValue": "NorthHaverbrook$ND$12.yard.north-haverbrook.8sub.cypsa.projects.cptl-c.org", 
-            "name": "NorthHaverbrook$ND$12.yard.north-haverbrook.8sub.cypsa.projects.cptl-c.org", 
+            "enet:hasDomainNameValue": "North Haverbrook$ND$12.yard.north-haverbrook.8sub.cypsa.projects.cptl-c.org", 
+            "name": "North Haverbrook$ND$12.yard.north-haverbrook.8sub.cypsa.projects.cptl-c.org", 
             "rdfs:type": "syard:Bus"
         }, 
         {
-            "enet:hasDomainNameValue": "CapitalCity$ND$47.yard.capital-city.8sub.cypsa.projects.cptl-c.org", 
-            "name": "CapitalCity$ND$47.yard.capital-city.8sub.cypsa.projects.cptl-c.org", 
+            "enet:hasDomainNameValue": "Capital City$ND$47.yard.capital-city.8sub.cypsa.projects.cptl-c.org", 
+            "name": "Capital City$ND$47.yard.capital-city.8sub.cypsa.projects.cptl-c.org", 
             "rdfs:type": "syard:Node"
         }, 
         {
-            "enet:hasDomainNameValue": "NorthHaverbrook$BRK$913.yard.north-haverbrook.8sub.cypsa.projects.cptl-c.org", 
-            "name": "NorthHaverbrook$BRK$913.yard.north-haverbrook.8sub.cypsa.projects.cptl-c.org", 
+            "enet:hasDomainNameValue": "North Haverbrook$BRK$913.yard.north-haverbrook.8sub.cypsa.projects.cptl-c.org", 
+            "name": "North Haverbrook$BRK$913.yard.north-haverbrook.8sub.cypsa.projects.cptl-c.org", 
             "rdfs:type": "syard:Breaker"
         }, 
         {
-            "enet:hasDomainNameValue": "NorthHaverbrook$BRK$910.yard.north-haverbrook.8sub.cypsa.projects.cptl-c.org", 
-            "name": "NorthHaverbrook$BRK$910.yard.north-haverbrook.8sub.cypsa.projects.cptl-c.org", 
+            "enet:hasDomainNameValue": "North Haverbrook$BRK$910.yard.north-haverbrook.8sub.cypsa.projects.cptl-c.org", 
+            "name": "North Haverbrook$BRK$910.yard.north-haverbrook.8sub.cypsa.projects.cptl-c.org", 
             "rdfs:type": "syard:Breaker"
         }, 
         {
@@ -1764,19 +1764,19 @@
             "rdfs:type": "syard:Bus"
         }, 
         {
-            "enet:hasDomainNameValue": "CapitalCity$ND$46.yard.capital-city.8sub.cypsa.projects.cptl-c.org", 
-            "name": "CapitalCity$ND$46.yard.capital-city.8sub.cypsa.projects.cptl-c.org", 
+            "enet:hasDomainNameValue": "Capital City$ND$46.yard.capital-city.8sub.cypsa.projects.cptl-c.org", 
+            "name": "Capital City$ND$46.yard.capital-city.8sub.cypsa.projects.cptl-c.org", 
             "rdfs:type": "syard:Bus"
         }, 
         {
-            "enet:hasDomainNameValue": "CapitalCity$ND$45.yard.capital-city.8sub.cypsa.projects.cptl-c.org", 
-            "name": "CapitalCity$ND$45.yard.capital-city.8sub.cypsa.projects.cptl-c.org", 
+            "enet:hasDomainNameValue": "Capital City$ND$45.yard.capital-city.8sub.cypsa.projects.cptl-c.org", 
+            "name": "Capital City$ND$45.yard.capital-city.8sub.cypsa.projects.cptl-c.org", 
             "rdfs:type": "syard:Node"
         }, 
         {
             "enet:hasDomainNameValue": "Cypress Creek-UN-Gen2.yard.cypress-creek.8sub.cypsa.projects.cptl-c.org", 
             "name": "Cypress Creek-UN-Gen2.yard.cypress-creek.8sub.cypsa.projects.cptl-c.org", 
-            "rdfs:type": "cptlc:Asset"
+            "rdfs:type": "syard:Generator"
         }, 
         {
             "enet:hasDomainNameValue": "Shelbyville$ND$30.yard.shelbyville.8sub.cypsa.projects.cptl-c.org", 
@@ -1830,8 +1830,8 @@
             "rdfs:type": "syard:Generator"
         }, 
         {
-            "enet:hasDomainNameValue": "NorthHaverbrook$BRK$89.yard.north-haverbrook.8sub.cypsa.projects.cptl-c.org", 
-            "name": "NorthHaverbrook$BRK$89.yard.north-haverbrook.8sub.cypsa.projects.cptl-c.org", 
+            "enet:hasDomainNameValue": "North Haverbrook$BRK$89.yard.north-haverbrook.8sub.cypsa.projects.cptl-c.org", 
+            "name": "North Haverbrook$BRK$89.yard.north-haverbrook.8sub.cypsa.projects.cptl-c.org", 
             "rdfs:type": "syard:Breaker"
         }, 
         {
@@ -1875,8 +1875,8 @@
             "rdfs:type": "syard:Breaker"
         }, 
         {
-            "enet:hasDomainNameValue": "NorthHaverbrook$ND$14.yard.north-haverbrook.8sub.cypsa.projects.cptl-c.org", 
-            "name": "NorthHaverbrook$ND$14.yard.north-haverbrook.8sub.cypsa.projects.cptl-c.org", 
+            "enet:hasDomainNameValue": "North Haverbrook$ND$14.yard.north-haverbrook.8sub.cypsa.projects.cptl-c.org", 
+            "name": "North Haverbrook$ND$14.yard.north-haverbrook.8sub.cypsa.projects.cptl-c.org", 
             "rdfs:type": "syard:Node"
         }, 
         {
@@ -1895,8 +1895,8 @@
             "rdfs:type": "syard:Bus"
         }, 
         {
-            "enet:hasDomainNameValue": "NorthHaverbrook$ND$13.yard.north-haverbrook.8sub.cypsa.projects.cptl-c.org", 
-            "name": "NorthHaverbrook$ND$13.yard.north-haverbrook.8sub.cypsa.projects.cptl-c.org", 
+            "enet:hasDomainNameValue": "North Haverbrook$ND$13.yard.north-haverbrook.8sub.cypsa.projects.cptl-c.org", 
+            "name": "North Haverbrook$ND$13.yard.north-haverbrook.8sub.cypsa.projects.cptl-c.org", 
             "rdfs:type": "syard:Bus"
         }, 
         {
@@ -1958,8 +1958,8 @@
             "rdfs:type": "syard:Node"
         }, 
         {
-            "enet:hasDomainNameValue": "NorthHaverbrook$BRK$812.yard.north-haverbrook.8sub.cypsa.projects.cptl-c.org", 
-            "name": "NorthHaverbrook$BRK$812.yard.north-haverbrook.8sub.cypsa.projects.cptl-c.org", 
+            "enet:hasDomainNameValue": "North Haverbrook$BRK$812.yard.north-haverbrook.8sub.cypsa.projects.cptl-c.org", 
+            "name": "North Haverbrook$BRK$812.yard.north-haverbrook.8sub.cypsa.projects.cptl-c.org", 
             "rdfs:type": "syard:Breaker"
         }, 
         {
@@ -2117,8 +2117,8 @@
             "rdfs:type": "cptlc:Asset"
         }, 
         {
-            "enet:hasDomainNameValue": "NorthHaverbrook$BRK$1112.yard.north-haverbrook.8sub.cypsa.projects.cptl-c.org", 
-            "name": "NorthHaverbrook$BRK$1112.yard.north-haverbrook.8sub.cypsa.projects.cptl-c.org", 
+            "enet:hasDomainNameValue": "North Haverbrook$BRK$1112.yard.north-haverbrook.8sub.cypsa.projects.cptl-c.org", 
+            "name": "North Haverbrook$BRK$1112.yard.north-haverbrook.8sub.cypsa.projects.cptl-c.org", 
             "rdfs:type": "syard:Breaker"
         }, 
         {
@@ -2260,8 +2260,8 @@
             "rdfs:type": "snet:Switch"
         }, 
         {
-            "enet:hasDomainNameValue": "NorthHaverbrook$BRK$78.yard.north-haverbrook.8sub.cypsa.projects.cptl-c.org", 
-            "name": "NorthHaverbrook$BRK$78.yard.north-haverbrook.8sub.cypsa.projects.cptl-c.org", 
+            "enet:hasDomainNameValue": "North Haverbrook$BRK$78.yard.north-haverbrook.8sub.cypsa.projects.cptl-c.org", 
+            "name": "North Haverbrook$BRK$78.yard.north-haverbrook.8sub.cypsa.projects.cptl-c.org", 
             "rdfs:type": "syard:Breaker"
         }, 
         {
@@ -2302,8 +2302,8 @@
             "rdfs:type": "syard:Generator"
         }, 
         {
-            "enet:hasDomainNameValue": "NorthHaverbrook$BRK$1413.yard.north-haverbrook.8sub.cypsa.projects.cptl-c.org", 
-            "name": "NorthHaverbrook$BRK$1413.yard.north-haverbrook.8sub.cypsa.projects.cptl-c.org", 
+            "enet:hasDomainNameValue": "North Haverbrook$BRK$1413.yard.north-haverbrook.8sub.cypsa.projects.cptl-c.org", 
+            "name": "North Haverbrook$BRK$1413.yard.north-haverbrook.8sub.cypsa.projects.cptl-c.org", 
             "rdfs:type": "syard:Breaker"
         }, 
         {

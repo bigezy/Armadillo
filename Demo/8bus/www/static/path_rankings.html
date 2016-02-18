@@ -1,0 +1,429 @@
+<!--
+Copyright (c) <2016> <Information Trust Institute>
+All rights reserved.
+
+
+Developed by: <CyPSA Project>
+             <University of Illinois at Urbana-Champaign>
+
+Permission is hereby granted, free of charge, to any person obtaining
+a copy of this software and associated documentation files (the
+"Software"), to deal with the Software without restriction, including
+without limitation the rights to use, copy, modify, merge, publish,
+distribute, sublicense, and/or sell copies of the Software, and to
+permit persons to whom the Software is furnished to do so, subject to
+the following conditions:
+
+Redistributions of source code must retain the above copyright notice,
+this list of conditions and the following disclaimers.
+Redistributions in binary form must reproduce the above copyright
+notice, this list of conditions and the following disclaimers in the
+documentation and/or other materials provided with the distribution.
+Neither the names of <Name of Development Group, Name of Institution>,
+nor the names of its contributors may be used to endorse or promote
+products derived from this Software without specific prior written
+permission.  THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY
+KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES
+OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND
+NONINFRINGEMENT. IN NO EVENT SHALL THE CONTRIBUTORS OR COPYRIGHT
+HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER
+IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR
+IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS WITH THE
+SOFTWARE.  -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>CyPSA</title>
+<!-- Bootstrap -->
+<link href="css/bootstrap.min.css" rel="stylesheet">
+<link href="css/bootstrap-theme.min.css" rel="stylesheet">
+<link href="css/font-awesome.min.css" rel="stylesheet">
+<link href="css/bootstrap-social.css" rel="stylesheet">
+<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+<!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+<link href="css/mystyles.css" rel="stylesheet">
+<link rel="stylesheet" type="text/css" media="screen"
+    href="css/ui.jqgrid-bootstrap.css" />
+<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+<script
+    src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+<!-- Include all compiled plugins (below), or include individual files as needed -->
+<script src="js/bootstrap.min.js"></script>
+<link href="https://gitcdn.github.io/bootstrap-toggle/2.2.0/css/bootstrap-toggle.min.css" rel="stylesheet">
+<script src="https://gitcdn.github.io/bootstrap-toggle/2.2.0/js/bootstrap-toggle.min.js"></script>
+<!-- jqGrid -->
+<script type="text/ecmascript" src="js/i18n/grid.locale-en.js"></script>
+<script type="text/ecmascript" src="js/jquery.jqGrid.min.js"></script>
+<script src="js/cptl_hbrowser_js/d3/d3.v3.min.js"></script>
+<script>
+	$.jgrid.defaults.width = 780;
+	$.jgrid.defaults.responsive = true;
+	$.jgrid.defaults.styleUI = 'Bootstrap';
+</script>
+<script type='text/javascript' src="http://labratrevenge.com/d3-tip/javascripts/d3.tip.v0.6.3.js"> </script>
+<script type='text/javascript' src="http://code.jquery.com/ui/1.11.4/jquery-ui.min.js"></script>
+<script type='text/javascript' src="http://bost.ocks.org/mike/fisheye/fisheye.js?0.0.3"></script>
+<script type="text/javascript" src="js/cptl_hbrowser_js/cptl/annotations_handler.js"></script>
+<script type="text/javascript">
+
+
+var annotations_storage_key = "access_paths";
+var ip_2_name = {};  
+var selected_asset_names = [];
+var deselected_asset_names = [];
+
+$(document).ready(function() {
+    var project_name = QueryString['project'];
+    var entry_vertex = QueryString['entryNode'];
+    var socket_url = "ws://localhost:8888/xmlsocket";
+
+    // Ugly Hack
+    initialize_ip_2_name(ip_2_name);
+
+    // Decent
+    var ah = new AnnotationsHandler();
+    ah.set_socket_url(socket_url);
+    ah.load_annotations_into_localstorage( project_name, entry_vertex, annotations_storage_key, update_annotation_consumers );
+
+ });
+
+function update_annotation_consumers(annotations_csv_data) {
+  var ah = new AnnotationsHandler();
+  var annotations_join_key = "enet:hasIPAddressValue";
+
+  // Update the HTML Table
+  ah.update_annotations_table(annotations_csv_data, annotations_join_key);
+
+  // Update the graph
+  var json_graph_data_str = localStorage.getItem("json_graph_data");
+  var json_tree_data_str = localStorage.getItem("json_tree_data"); 
+
+  if ( null != json_graph_data_str && null != json_tree_data_str ) {
+    var tree_join_key = "path";
+    var vertex_join_key = "enet:hasDomainNameValue";
+    var json_graph_data = JSON.parse(json_graph_data_str);
+    var json_tree_data = JSON.parse(json_tree_data_str);
+
+    ah.annotate_graph(json_graph_data, annotations_csv_data, annotations_join_key);
+    ah.annotate_tree(json_tree_data, json_graph_data, tree_join_key, vertex_join_key);
+
+    var json_graph_str = JSON.stringify( json_graph_data );
+    var json_tree_str = JSON.stringify( json_tree_data );
+
+    // This is a hack.  Fix this so don't need 'annotated' prefix
+    localStorage.setItem( "annotated_json_graph_data", json_graph_str );
+    localStorage.setItem( "annotated_json_tree_data", json_tree_str );
+    localStorage.setItem( "annotated_hierarchy_tree", true );
+  }
+}
+
+
+function initialize_ip_2_name(ip_2_name) {
+    var json_graph_data_str = localStorage.getItem("json_graph_data");
+    json_graph_data = JSON.parse(json_graph_data_str);
+
+    var nodes = json_graph_data["nodes"];
+    var nodes_w_ip = nodes.filter( function(n) { return ("enet:hasIPAddressValue" in n) });
+    for (var i=0; i < nodes_w_ip.length; i++) {
+      var node = nodes_w_ip[i];
+      var name = node["name"];
+      var ip = node["enet:hasIPAddressValue"];		      
+      ip_2_name[ip] = name;		      
+    }		      
+}
+
+function toggle_asset( tr_element, selected_asset_names, deselected_asset_names, ip_2_name ) {
+   var ip_value = tr_element.getAttribute("id");
+   if ( ! (ip_value in ip_2_name) ) {
+     console.error("Could not find IP: " + ip_value + " in the model.");
+     return;		      
+   }
+		      
+   var asset_name = ip_2_name[ip_value];
+		      
+   if ( tr_element.hasAttribute("selected")  ) {
+     // Deselect the asset
+     tr_element.removeAttribute("selected");
+
+     deselected_asset_names.push(asset_name);    
+     var idx = selected_asset_names.indexOf(asset_name);
+     if ( idx > -1 ) {
+       selected_asset_names.splice(idx, 1);
+     }
+   } else {
+     tr_element.setAttribute("selected", "true");
+
+     // Not every selected asset may be previously deselected
+     selected_asset_names.push(asset_name);
+     var idx = deselected_asset_names.indexOf(asset_name);
+     if ( idx > -1 ) {
+       deselected_asset_names.splice(idx, 1);
+     }
+   }
+}
+		      
+function view_selected_assets(selected_asset_names,
+                              deselected_asset_names)  {
+  var toggled_assets = {};
+  toggled_assets["deselected"] = deselected_asset_names;
+  toggled_assets["selected"] = selected_asset_names;
+  var toggled_assets_str = JSON.stringify(toggled_assets);		   
+  localStorage.setItem("toggled_assets", toggled_assets_str)		   
+}
+		      
+ var QueryString = function() {
+   /* This function is anonymous, is executed immediately,
+     and the return value is assigned to QueryString */
+   var query_string = {};
+   var query = window.location.search.substring(1);
+
+   var vars = query.split("&");
+
+   for (var i=0; i < vars.length; i++) {
+     var pair = vars[i].split("=");		     
+     // if first entry with this name		     
+    if (typeof query_string[pair[0]] === "undefined" ) {		     
+      query_string[ pair[0] ] = decodeURIComponent(pair[1]);		     
+    } else if (typeof query_string[pair[0]] === "string" ) {
+      var arr = [ query_string[pair[0]], decodeURIComponent(pair[1]) ];		     
+      query_string[pair[0]] = arr;
+    } else {
+      query_string[pair[0]].push(decodeURIComponent(pair[1]));		     
+    }
+  } // for looping through the params
+  return query_string;		     
+ }();
+</script>
+
+<!-- Inline style script for CPTL HBrowser -->
+<style>
+    .box-title {
+      font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;    
+      font-size:  30px;
+      background-color: #d8ecf9;
+      border: 0.5px solid black;
+      font-style: italic;
+    }
+    
+    .tree-box{
+      overflow: scroll;    
+      float:left;
+      height: 700px;
+      border: 2px solid black;
+      margin:10px;
+    }
+
+    .graph-box{
+      overflow: scroll;
+      float:left;
+      height: 700px;    
+      border: 2px solid black;
+      margin:10px;
+    }
+
+    .clear{
+      clear:both;
+    }
+
+    .row {
+      width: 100%;
+      margin: 0px;
+    }
+
+    .container {
+      width: 100%;
+      margin: 10px;
+    }
+
+    button.select_assets {
+      float: right;
+    }
+    
+    tr:hover {
+      background-color: #f5f5f5;
+      cursor:pointer;
+    }
+    
+    tr[selected] {
+      background-color: #d8ecf9;
+    }
+</style>
+</head>
+<body>
+    <nav class="navbar navbar-inverse navbar-fixed-top"
+        role="navigation">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed"
+                    data-toggle="collapse" data-target="#navbar"
+                    aria-expanded="false" aria-controls="navbar">
+                    <span class="sr-only">Toggle navigation</span> <span
+                        class="icon-bar"></span> <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+            </div>
+            <div id="navbar" class="navbar-collapse collapse">
+                <ul class="nav navbar-nav">
+                    <!--                     <li class="navbar-left">
+                        <div class="navbar-brand" href="#">
+                            <img src="img/cypsa_logo.png" height=30
+                                width=50></a>
+                        </div>
+                    </li> -->
+                    <li id=logo>
+                        <h1>
+                            <em>Cy</em>PSA
+                        </h1>
+                    </li>
+                    <li class="navbar-left"><a href=".."><span
+                            class="glyphicon glyphicon-home"
+                            aria-hidden="true"></span> Home</a></li>
+                    <li class="active dropdown navbar-left"><a
+                        href="#" class="dropdown-toggle"
+                        data-toggle="dropdown" role="button"
+                        aria-haspopup="true" aria-expanded="false"><span
+                            class="glyphicon glyphicon-list"></span>
+                            Model <span class="caret"></span></a>
+                        <ul class="dropdown-menu">
+                            <li><a
+                                href="http://network-perception.com">8-bus</a></li>
+                        </ul></li>
+                    <li class="dropdown navbar-left"><a href="#"
+                        class="dropdown-toggle" data-toggle="dropdown"
+                        role="button" aria-haspopup="true"
+                        aria-expanded="false"><span
+                            class="glyphicon glyphicon-play-circle"></span>
+                            Action <span class="caret"></span></a>
+                        <ul class="dropdown-menu">
+                            <li><a
+                                href="http://network-perception.com">Patch</a></li>
+                        </ul></li>
+                </ul>
+                <ul class="nav navbar-nav navbar-right">
+                    <li class="dropdown"><a href="#"
+                        class="dropdown-toggle" data-toggle="dropdown"
+                        role="button" aria-haspopup="true"
+                        aria-expanded="false"> <span
+                            class="glyphicon glyphicon-user"
+                            aria-hidden="true"> </span> mbamba <span
+                            class="caret"></span></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="#">Account</a></li>
+                            <li><a href="#">Sign Out</a></li>
+                        </ul></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <div class="container">
+        <div class="row">
+
+    	  <div class="ui-widget row">
+
+            <div class="table-box">
+	      <div class="tree-box">
+		<div class="box-title">Ranked Assets</div>
+		<div class="box-content">
+		  <br/>		  
+		  <table id="annotations-table" class="imagetable">
+		    <thead>
+		      <tr>
+			<th data-sort="string">IP Address</th>
+			<th data-sort="string">Type</th>
+                        <th data-sort="int">Performance Index (Curr/Prev)</th>
+			<th data-sort="int">Cyber Cost (Curr/Prev)</th>
+			<th data-sort="int">Security Index (Curr/Prev)</th>
+		      </tr>
+		    </thead>
+		    <tbody>
+		      
+		    </tbody>
+		  </table>
+		</div>
+		<br/>
+		<button class="select_assets" type="button" onclick="view_selected_assets( selected_asset_names, deselected_asset_names)">Highlight Assets</button>		
+	      </div>
+
+	      <div class="graph-box">
+		<div class="box-title">Asset Connectivity</div>		      	      
+	        <div class="box-content"><iframe src="cptl_hbrowser/force_directed.html" frameborder="0" width="900" height="700"></iframe></div>    
+	      </div>
+	    </div>
+
+         </div><!-- ui-widget row -->
+       </div><!-- row -->
+	
+    <footer class="row-footer">
+        <div class="container">
+            <div class="row">
+                <div
+                    class="col-xs-5 col-xs-offset-1 col-sm-2 col-sm-offset-1">
+                    <h5>Links</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">About</a></li>
+                        <li><a href="#address">Contact</a></li>
+                    </ul>
+                </div>
+                <div id="address" class="col-xs-12 col-sm-5">
+                    <h5>Our Address</h5>
+                    <address>
+                        Information Trust Institute<br> University
+                        of Illinois at Urbana-Champaign<br>
+                        Coordinated Science Laboratory<br> 1308
+                        West Main St, Urbana, IL 61801-2307<br> <i
+                            class="fa fa-phone"></i>: +1 (217) 333-3546<br>
+                        <i class="fa fa-fax"></i>: +1 (217) 244-1823<br>
+                        <i class="fa fa-envelope"></i>: <a
+                            href="mailto:krogers6@illinois.edu">krogers6@illinois.edu</a>
+                    </address>
+                </div>
+                <div class="nav navbar-nav" style="padding: 40px 10px;">
+                    <a class="btn btn-social-icon btn-google-plus"
+                        href="http://google.com/+"><i
+                        class="fa fa-google-plus"></i></a> <a
+                        class="btn btn-social-icon btn-facebook"
+                        href="http://www.facebook.com/profile.php?id="><i
+                        class="fa fa-facebook"></i></a> <a
+                        class="btn btn-social-icon btn-linkedin"
+                        href="http://www.linkedin.com/in/"><i
+                        class="fa fa-linkedin"></i></a> <a
+                        class="btn btn-social-icon btn-twitter"
+                        href="http://twitter.com/"><i
+                        class="fa fa-twitter"></i></a> <a
+                        class="btn btn-social-icon btn-youtube"
+                        href="http://youtube.com/"><i
+                        class="fa fa-youtube"></i></a> <a
+                        class="btn btn-social-icon" href="mailto:"><i
+                        class="fa fa-envelope-o"></i></a>
+                </div>
+                <div class="col-xs-12">
+                    <p style="padding: 10px;"></p>
+                    <p align=center>© Copyright 2013-2015 University
+                        of Illinois Board of Trustees</p>
+                </div>
+            </div>
+        </div>
+        <script type="text/javascript">
+        $(document).ready(function(){
+        $('input[type="checkbox"]').click(function(){
+        if($(this).is(":checked")){
+        alert("Checking the box will show the full topo that includes power devices.");
+        }
+        else if($(this).is(":not(:checked)")){
+        console.log("Checkbox is unchecked.");
+        }
+        });
+        });
+        </script>
+    </footer>
+</body>
+</html>

@@ -11,7 +11,7 @@ xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
       <th style="text-align:left">Attack Paths</th>
     </tr>
 	
-    <xsl:for-each select="VCReport/NmapAnalysis[@sourceNode = $IPAddress or @destinationNode = $IPAddress]">
+    <xsl:for-each select="VCReport/NmapAnalysis[@sourceNode = $IPAddress or @destinationNode = $IPAddress or Path/Node/@IPAddress = $IPAddress]">
 	<tr><td><b>Performance Index: <xsl:value-of select="Path/@performanceIndex" /> - Cyber Cost: <xsl:value-of select="Path/@cyberCost" /> - Security Index: <xsl:value-of select="Path/@securityIndex" /> </b></td></tr>
     <tr><td>
 	<xsl:for-each select="Path/Node">

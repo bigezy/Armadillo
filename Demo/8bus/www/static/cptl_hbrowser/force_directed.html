@@ -53,13 +53,18 @@ EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 <style>
 
   .node {
-  stroke: #fff;
-  stroke-width: 1.5px;
+    stroke: #fff;
+    stroke-width: 1.5px;
   }
 
   .link {
-  stroke: #999;
-  stroke-opacity: .6;
+    stroke: #999;
+    stroke-opacity: .6;
+  }
+
+  .node_state {
+    stroke:none;
+    fill:none;
   }
 
 </style>
@@ -78,6 +83,9 @@ EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
   <script>
 
     var hierarchical_attr_name = "enet:hasDomainNameValue";
+    var node_id_field = "path";
+    var highlight_attr_name = "cypsa-performance_idx";
+    var highlight_attr_maxvalue = 11.0;
     
     /* SECONDARY FUNCTIONS **********************************************/
     /*
@@ -104,44 +112,142 @@ EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
       console.log("Successfully communicated with other tab");
       console.log("Received data: " + localStorage.getItem("view") );
     }
-    
+
     function updateGraphView(event) {
       //console.log("Successfully communicated with other tab");
       //console.log("Received data: " + localStorage.getItem("view") );
-      
-      if ("view" != event.key) return; 
 
+      if ( "toggled_assets" != event.key && "view" != event.key && "annotated_hierarchy_tree" != event.key) return;
+
+      var view = new buckets.Set();       		      
+
+      // If there is a pre-saved view in storage, use it
       if ( localStorage.getItem("view") != null ) {
-    
-          var view = new buckets.Set();
-          var view_arr = localStorage.getItem("view").split(",");
+        var view_arr = localStorage.getItem("view").split(",");
+        for (i=0; i < view_arr.length; i++) {
+          view.add( view_arr[i] );
+        }
+      }
 
-          for (i=0; i < view_arr.length; i++) {
-            view.add( view_arr[i] );			     
-	  }		      
-          json_graph_data_str = localStorage.getItem("json_graph_data");
-          json_graph_data = JSON.parse(json_graph_data_str);
-    
-          json_tree_data_str = localStorage.getItem("json_tree_data");
-          json_tree_data = JSON.parse(json_tree_data_str);
-    
-	  htv = new HierarchyTreeView();    
-          htv.initialize(json_graph_data, json_tree_data);
-	  var induced_graph_data = htv.compute_induced_graph(view);
+      // This is a hack.  fix thix so don't need 'annotated' prefix		      
+      if ( "annotated_hierarchy_tree" == event.key || "toggled_assets" == event.key ) {
+        json_graph_data_str = localStorage.getItem("annotated_json_graph_data");
+        json_graph_data = JSON.parse(json_graph_data_str);
+        json_tree_data_str = localStorage.getItem("annotated_json_tree_data");
+        json_tree_data = JSON.parse(json_tree_data_str);
+      } else {
+        json_graph_data_str = localStorage.getItem("json_graph_data");
+        json_graph_data = JSON.parse(json_graph_data_str);
+        json_tree_data_str = localStorage.getItem("json_tree_data");
+        json_tree_data = JSON.parse(json_tree_data_str);
+      }
 
-	  fdg.update_d3_ids( induced_graph_data, "name" );
+		      
+      htv = new HierarchyTreeView();    
+      htv.initialize(json_graph_data, json_tree_data);
 
-          force.nodes([]);
-          force.links([]);
-          start();
+      if ( "toggled_assets" == event.key ) {
+        var toggled_assets_str = localStorage.getItem("toggled_assets");
+        var toggled_assets = JSON.parse(toggled_assets_str);
+		      
+        var selected_assets = toggled_assets["selected"];		       
+        var deselected_assets = toggled_assets["deselected"];
+		      
+        // I.  Process the unselected assets		      
+        for (var i=0; i < deselected_assets.length; i++) {
+          var asset_name = deselected_assets[i];
+          var substation_network_name = asset_name.split(".").slice(1).join(".");
+          var substation_name = asset_name.split(".").slice(2).join(".");
+
+          if ( view.contains(asset_name) ) {
+           // 3.  Deselected and in view
+           view = htv.view_contract(view, substation_network_name);
+           view = htv.view_contract(view, substation_name);
+          } else {
+           // 4.  Deselected and not in view
+	   continue;		  
+	  }
+        } // Process the deselected assets
+
+        // II.  Process the selected assets
+        for (var i=0; i < selected_assets.length; i++) {
+          var asset_name = selected_assets[i];
+          var substation_network_name = asset_name.split(".").slice(1).join(".");
+          var substation_name = asset_name.split(".").slice(2).join(".");
+
+          if ( view.contains(asset_name) ) {
+             // 3.  Selected and in view
+             continue;			  
+          } else {
+	    // 4.  Selected and not in view
+            view = htv.view_expand(view, substation_name);			  
+            view = htv.view_expand(view, substation_network_name);
+	  }
+        }
+	localStorage.setItem("view", view.toArray());		  
+      } // View has been updated according to those selected
+
+			  
+      var induced_graph_data = htv.compute_induced_graph(view);
+      fdg.update_d3_ids( induced_graph_data, "path" );
+
+      force.nodes([]);
+      force.links([]);
+      start();
 			
-          force.nodes( induced_graph_data["nodes"] );
-          force.links( induced_graph_data["links"] );
-          start();        
-      } // looping
+      force.nodes( induced_graph_data["nodes"] );
+      force.links( induced_graph_data["links"] );
+      start();        
+
+      if ( "toggled_assets" in localStorage ) {			  
+        highlight_toggled_assets(highlight_attr_name, highlight_attr_maxvalue);			   
+      }
+			  
     }// function
 
-    
+
+    function highlight_toggled_assets(highlight_attr_name, highlight_attr_maxvalue) {		
+      var toggled_assets_str = localStorage.getItem("toggled_assets");
+      var toggled_assets = JSON.parse(toggled_assets_str);
+      var selected_assets = toggled_assets["selected"];		       
+      var deselected_assets = toggled_assets["deselected"];
+
+      // Brittle selector.  Make this work with arbitrary properties			  
+      var selector = "name$=";
+  			  
+      for (var i=0; i < deselected_assets.length; i++) {
+        var asset_name = deselected_assets[i];			
+        var asset_group = document.querySelector( "[" + selector + "'" + asset_name + "'" + "]");
+	if ( asset_group != null ) {		
+	  var node_state = asset_group.children[0];
+	  node_state.setAttribute("style", "fill:none;");		
+        }
+      }
+
+      for (var i=0; i < selected_assets.length; i++) {
+        var asset_name = selected_assets[i];
+        var asset_group = document.querySelector( "[" + selector + "'" + asset_name + "'" + "]");
+
+        if ( asset_group != null ) {
+	  var node_state = asset_group.children[0];
+	  var value_str = asset_group.getAttribute( highlight_attr_name );
+          if ( value_str != null || value_str != "") {
+	     var value = parseFloat(value_str);
+             var pct = value / highlight_attr_maxvalue;
+	     if ( pct <= 0.3 ) {
+		node_state.setAttribute("style", "fill:green;stroke:black;");						    
+	     } else if ( pct <= 0.6 ) {
+		node_state.setAttribute("style", "fill:yellow;stroke:black;");							    
+	     } else {
+		node_state.setAttribute("style", "fill:red;stroke:black;");		
+	     }
+					    
+	  } else {
+	    node_state.setAttribute("style", "fill:#d8ecf9;stroke:black;");		
+          }
+	}
+      }			
+    }
     
     /*
      * D3JS 
@@ -153,27 +259,50 @@ EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 	link.enter().insert("line", ".node").attr("class", "link");
 	link.exit().remove();
 
+	/* Create a 1-1 mapping of the node with the
+			force-directed nodes.    The second
+			function provides the key */
 	node = node.data( force.nodes(), function(d) {
 	    return d.id;
         });
-    
-	node.enter().append("circle")
-	    .attr("class", function(d) { return d["rdfs:type"]; })
-            .attr("r", 20)
-            .attr("filter", function(d) { return get_image_url(d); })
-            .attr(hierarchical_attr_name, function(d) { return d[hierarchical_attr_name]; })
-            .call(node_drag);
 
-        node.append("title")
-           .text(function(d) { return d.name; });
+	// Mappings that need DOM node creation
+	node.enter().append("g")
+		    .attr("rdfs-type", function(d) { return d["rdfs:type"]; })
+		    .attr("name", function(d) { return d["enet:hasDomainNameValue"]; })
+		    .attr("enet-hasDomainNameValue", function(d) { return d["enet:hasDomainNameValue"]; })
+		    .attr("cypsa-node_type", function(d) { return d["cypsa:node_type"]; })
+		    .attr("enet-hasIPAddressValue", function(d) { return d["enet:hasIPAddressValue"]; }) 
+	            .attr("cypsa-performance_idx", function(d) { return d["cypsa:performance_idx"]; })		
+		    .attr("cypsa-security_idx", function(d) { return d["cypsa:security_idx"]; })	
+		    .attr("cypsa-cyber_cost", function(d) { return d["cypsa:cyber_cost"]; });
+			
+	node.append("circle")
+	    .attr("class", "node_state")
+	    .attr("r", 30);			
+			
+	node.append("circle")
+			.attr("class", "node_icon")
+			.attr("r", 20)
+			.attr("filter", function(d) { return get_image_url(d); })
+			.call(node_drag);
+
+	node.append("title")
+           .text(function(d) { return "name: " + d["name"] + ": " + d["enet:hasIPAddressValue"]; });
+				
+				
         node.exit().remove();
     
 	force.start();
     }
-    
+
+   /*
+    * Tick
+    */
     function tick() {
-      node.attr("cx", function(d) { return d.x; })
-          .attr("cy", function(d) { return d.y; });
+	var node_circles = d3.selectAll("circle");
+	node_circles.attr("cx", function(d) { return d.x; })
+			.attr("cy", function(d) { return d.y; });
 
       link.attr("x1", function(d) { return d.source.x; })
 	  .attr("y1", function(d) { return d.source.y; })
@@ -202,7 +331,41 @@ EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
           .attr("xlink:href", data_root + icon_path);
         }
     } 
+	
+    /*
+     *  Zoom  
+     */	
+	function redraw() {
+		svg.attr("transform",
+			"translate(" + d3.event.translate + ")"
+			+ " scale(" + d3.event.scale + ")");
+	}
+	
+    /*
+     *  Drag  
+     */	
+    function dragstarted(d) {
+        d3.event.sourceEvent.stopPropagation();
+        d3.select(this).classed("dragging", true);
+    }
 
+    function dragged(d) {
+        d3.select(this).attr("x", d.x = d3.event.x).attr("y", d.y = d3.event.y);
+    }
+
+
+    function dragended(d) {
+        d3.select(this).classed("dragging", false);
+    }
+	
+	function drag(){
+		return force.drag()
+		   // .origin(function(d) { return d; })
+			.on("dragstart", dragstarted)
+			.on("drag", dragged)
+			.on("dragend", dragended);
+	}	
+	
     /* APPLICATION LOGIC **********************************************/    
     var data_root = "../cptl_data_models/cypsa_8sub/data/";
     load_json_into_localstorage( data_root + "graph/graph.domain-names.json", "json_graph_data" );
@@ -245,24 +408,47 @@ EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
     var height = 1000;
     var link_distance = 100;
     var width = 1000;
+	var gravity = 0.05
+	var radius = 6;
 
     var nodes = [],
         links = [];
     
     var force = d3.layout.force()
       .nodes(nodes)
+	  //.gravity(gravity)
       .links(links)
       .charge(charge)
       .linkDistance(link_distance)
       .size( [width, height] )
       .on( "tick", tick );
-
+	
+	//Drag test
+    var drag = force.drag()
+        .origin(function(d) { return d; })
+        .on("dragstart", dragstarted)
+        .on("drag", dragged)
+		.on("dragend", dragended);
+	
+	
+		
     var svg = d3.select("body").append("svg")
-      .attr("width", width)
-      .attr("height", height);
+      //.attr("width", width)
+      //.attr("height", height);
+	  .attr("viewBox", "0 0 " + width + " " + height )
+	  //Add zoom
+	  .attr("pointer-events", "all")
+		.call(d3.behavior.zoom().on("zoom", redraw))
+	  .append('svg:g');
     
-    var node = svg.selectAll(".node"),
-        link = svg.selectAll(".link");
+    
+	var node = svg.selectAll(".node")
+	    .call(drag);
+		//force.drag()
+		//		.on("drag", function(d) { drag() }));
+		
+    var link = svg.selectAll(".link");
+	
 
     //-- Add icon annotations 
     icon_dict_str = localStorage.getItem("icon_dict_data");
@@ -275,7 +461,7 @@ EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
     /*
      * Compute and display induced graph
      */
-    var node_id_field = "name";        
+
     var induced_graph_data = htv.compute_induced_graph(view);
     fdg.update_d3_ids( induced_graph_data, node_id_field );
     nodes = induced_graph_data["nodes"];
