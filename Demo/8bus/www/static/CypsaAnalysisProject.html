@@ -44,6 +44,8 @@
  <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
  <script src="js/jquery.js"></script>
 <script src="js/stupidtable.js"></script>
+<link href="css/jquery.dataTables.min.css" rel="stylesheet">
+<script src="js/jquery.dataTables.min.js"></script>
 </head>
 <body>
  <nav class="navbar navbar-inverse navbar-fixed-top"
@@ -149,7 +151,7 @@
 		    		<tr>
 		    			<td><div id="divCyber"><img src="img/cyber.jpg" height="600px" width="600px"/></div>
 		      				<div id="divPhysical"><img src="img/physical.jpg" height="600px" width="600px"/></div>
-		       				<div id="divPaths" style="height:600px; width:600px; overflow-y:auto"><p id="pPaths"><h4>Paths will be displayed upon selection.</h4></p></div>
+		       				<div id="divPaths" style="height:600px; width:600px; overflow-y:auto"><b><p id="pPaths">Paths will be displayed upon selection.</p></b></div>
 		       			</td>
 		       		</tr>
 	    		</table>
@@ -178,6 +180,14 @@
 		       </tr>
 	       </table>
        </div>
+      <div id="divCompExport" >
+       <table width="300px">
+		       <tr>
+			       <td><input type="button" onclick="javascript:getvalue_func1();" class="btn btn-info" value="Compromise Selected Hosts"/></td>
+			       <td><p id="downloadCSV" style="width:900px; margin:20px;font-style:italic"></p></td>
+		       </tr>
+	       </table>
+       </div>
      </div>
 
      <br/>
@@ -192,7 +202,7 @@
         console.log("Checkbox is unchecked.");
         }
         });*/
-        var projectName = QueryString['project'].split("/");
+        var projectName = QueryString['project'].split("\\");
         document.getElementById("projectName").innerHTML = "CyPSA Analysis for - " + projectName[projectName.length-2];
         var xmldata;
         var parsedXMLdata;
@@ -205,7 +215,7 @@
       	    xs.send(parameters);
       	//console.log(e.data);
       	}
-      	xs.onmessage = function(e) { //console.log(e.data);
+      	xs.onmessage = function(e) { console.log(e.data);
       	  	xmldata=e.data;
       	  parsedXMLdata = JSON.parse( xmldata );
       	  
@@ -230,6 +240,9 @@
         td1 = document.createElement('th');td1.setAttribute("data-sort", "int");
         td1.appendChild(document.createTextNode("Security Index (Curr/Prev)"));
         tr1.appendChild(td1); 
+        /*td1 = document.createElement('th');td1.setAttribute("data-sort", "int");
+        td1.appendChild(document.createTextNode("Impact Percentage"));
+        tr1.appendChild(td1);*/ 
         thead1.appendChild(tr1);
         theTable.appendChild(thead1);
         
@@ -248,11 +261,16 @@
     	    td.appendChild(document.createTextNode(parseFloat(parsedXMLdata[i][2]).toFixed(2)+"/"+parseFloat(parsedXMLdata[i][6]).toFixed(2)));
     	    tr.appendChild(td);
     	    td = document.createElement('td');
-    	    td.appendChild(document.createTextNode(parseFloat(parsedXMLdata[i][4]).toFixed(2)+"/"+parseFloat(parsedXMLdata[i][8]).toFixed(2)));
+    	    td.appendChild(document.createTextNode((parseFloat(parsedXMLdata[i][4]).toFixed(2)==0? "Infinite" : parseFloat(parsedXMLdata[i][4]).toFixed(2)) + "/"+ (parseFloat(parsedXMLdata[i][8]).toFixed(2)==0? "Infinite " : parseFloat(parsedXMLdata[i][8]).toFixed(2))));
     	    tr.appendChild(td);
     	    td = document.createElement('td');
     	    td.appendChild(document.createTextNode(parseFloat(parsedXMLdata[i][3]).toFixed(2)+"/"+parseFloat(parsedXMLdata[i][7]).toFixed(2)));	    
     	    tr.appendChild(td);
+    	    /*td = document.createElement('td');
+    	    var percentage=parseFloat(parsedXMLdata[i][3]).toFixed(2)/parseFloat(parsedXMLdata[i][11]).toFixed(2);
+    	    percentage=percentage*100;
+    	    td.appendChild(document.createTextNode(parseFloat(percentage).toFixed(2)+"%"));	    
+    	    tr.appendChild(td);*/
     	    tr.setAttribute("id", parsedXMLdata[i][1]);    	    
     	    tbody1.appendChild(tr);
     	}
@@ -263,8 +281,7 @@
     	
     	var d = document.getElementById('tableContent');
     	d.className = "imagetable";
-    	$("#tableContent").stupidtable();
-    	
+    	$('#tableContent').DataTable();
     	var tbody = d.getElementsByTagName("tbody")[0];
     	tbody.onclick = function (e) {
     	    e = e || window.event;
@@ -289,7 +306,15 @@
     	   
     	};
     	//Vulnerabilities
-    	
+    	function highlight_row(the_element) {
+    		
+	if(the_element.parentNode.parentNode.style.backgroundColor != "green") {
+		the_element.parentNode.parentNode.style.backgroundColor = "green";
+	} else {
+		the_element.parentNode.parentNode.style.backgroundColor = "White";
+	}
+}
+
     	var thePatchTable = document.createElement('table');
     	var tr1, td1;
     	var td,tr;
@@ -322,6 +347,7 @@
                 checkbox.name = "patchHost";
                 checkbox.value = parsedXMLdata[i][1];
                 checkbox.id = "chkPatchHost" + i;
+                checkbox.onclick = function (){highlight_row(this)};
                 td.appendChild(checkbox);
                 tr.appendChild(td);
     		    td = document.createElement('td');
@@ -357,14 +383,15 @@
             //ws.send(document.getElementById('msg').value);
         }
             $('#divCompromisedHosts').hide(); 
-			 $('#divVulnerabilities').hide();
-
+			 $('#divVulnerabilities').hide(); //divCompExport
+			 $('#divCompExport').hide();
 	            $('#divPhysical').hide(); 
 				 $('#divPaths').hide();
         $(function(){
 		  	 $('#toggle-div').click(function(){
 		     $('#divPatchHosts').show();
 		     $('#divExport').show();
+		     $('#divCompExport').hide();
 		     $('#divCompromisedHosts').hide(); 
 			 $('#divVulnerabilities').hide();
 		  });
@@ -373,6 +400,7 @@
 		  $('#toggle-div1').click(function(){
 		     $('#divPatchHosts').hide();
 		     $('#divExport').hide();
+		     $('#divCompExport').show();
 		     $('#divCompromisedHosts').show(); 
 			 $('#divVulnerabilities').hide();
 		  });
@@ -381,6 +409,7 @@
 		  $('#toggle-div2').click(function(){
 		     $('#divPatchHosts').hide();
 		     $('#divExport').hide();
+		     $('#divCompExport').hide();
 		     $('#divCompromisedHosts').hide(); 
 			 $('#divVulnerabilities').show();
 		  });
@@ -424,9 +453,10 @@
 	                td1 = document.createElement('th');
 	                td1.appendChild(document.createTextNode("Asset IP Address"));
 	                tr1.appendChild(td1);
-	                td1 = document.createElement('th');
+	                /*td1 = document.createElement('th');
 	                td1.appendChild(document.createTextNode("Vulnerabilities"));
 	                tr1.appendChild(td1);
+	                */
 	                table1.appendChild(tr1);
 	                var rows = allText.split("\n");
 	                for (var i = 0, tr, td; i < rows.length; i++) {
@@ -438,13 +468,18 @@
 			            	var checkbox = document.createElement('input');
 		                    checkbox.type = "checkbox";
 		                    checkbox.name = "compromised[]";
-		                    checkbox.value = "value";
+		                    checkbox.value = cells[j];
 		                    checkbox.id = "compromised";
 		                    td.appendChild(checkbox);
 		                    tr.appendChild(td);
 		                    td = document.createElement('td');
 		                    td.appendChild(document.createTextNode(cells[j]));
 		                    tr.appendChild(td);
+		                    /*
+		                    td = document.createElement('td');
+		                    td.appendChild(document.createTextNode("Test"));
+		                    tr.appendChild(td);
+		                    */
 		                    table1.appendChild(tr);
 		                    
 	                    }
@@ -495,10 +530,13 @@ var QueryString = function () {
 	}();
 
 		function getvalue_func() {
-		  var datacsv = $('#tblPatchHosts input:checked').map(function() {
+		  var datacsvCheckbox = $('#tblPatchHosts input:checked').map(function() {
 		    return this.value;
-		  }).get().join(",");
-		  datacsv=datacsv+","+QueryString['project'] + ',' +QueryString['entryNode'];
+		  }).get().join("-1,") + '-1,'+ $('#tblPatchHosts input:not(:checked)').map(function() {
+			    return this.value;
+			  }).get().join("-0,") +'-0';
+		  console.log(datacsvCheckbox);
+		  var datacsv = QueryString['project'] + ',' +QueryString['entryNode'] + ',' + datacsvCheckbox;
 		  ws = new WebSocket("ws://localhost:8888/websocket");
           
       	ws.onmessage = function(e) {  
@@ -507,9 +545,22 @@ var QueryString = function () {
       	    ws.send(datacsv);
       	}
       	document.getElementById("downloadCSV").innerHTML = "Patched Hosts saved to file";
-      	$('#tblPatchHosts input:checkbox').attr('checked',false);	  
 		}
-	
+		
+		function getvalue_func1() {
+			  var datacsv = $('#tblCompromised1 input:checked').map(function() {
+			    return this.value;
+			  }).get().join(",");
+			  datacsv=datacsv+","+QueryString['project'] + ',' +QueryString['entryNode'];
+			  ws = new WebSocket("ws://localhost:8888/compwebsocket");
+	          
+	      	ws.onmessage = function(e) {  
+	      	};
+	      	ws.onopen = function(e) {
+	      	    ws.send(datacsv);
+	      	}
+	      	document.getElementById("downloadCSV").innerHTML = "Patched Hosts saved to file";
+			}
 	    
 function selectProject(path, entryNode){
 		window.location = '/static/CypsaAnalysisProject.html?project=' + path + '&entryNode=' + entryNode;
@@ -548,6 +599,7 @@ function displayResult(Project, IPAddress)
   	if (window.ActiveXObject || xhttp.responseType == "msxml-document")
   	  {
   	  ex = xml.transformNode(xsl);
+  	document.getElementById("pPaths").innerHTML = "";
   	  document.getElementById("pPaths").innerHTML = ex;
   	  }
   	// code for Chrome, Firefox, Opera, etc.
@@ -558,6 +610,8 @@ function displayResult(Project, IPAddress)
   	  xsltProcessor.setParameter(null, "IPAddress", IPAddress);
   	  
   	  resultDocument = xsltProcessor.transformToFragment(xml, document);
+  	document.getElementById("pPaths").innerHTML = "";
+  	
   	  document.getElementById("pPaths").appendChild(resultDocument);
   	  }
   	};
