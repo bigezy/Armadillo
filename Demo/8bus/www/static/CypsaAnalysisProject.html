@@ -202,8 +202,9 @@
         console.log("Checkbox is unchecked.");
         }
         });*/
+		//var project = "../projects/8bus/npv";
         var projectName = QueryString['project'].split("\\");
-        document.getElementById("projectName").innerHTML = "CyPSA Analysis for - " + projectName[projectName.length-2];
+        document.getElementById("projectName").innerHTML = "CyPSA Analysis for - "+ projectName[projectName.length-2];
         var xmldata;
         var parsedXMLdata;
     	xs = new WebSocket("ws://localhost:8888/xmlsocket");
