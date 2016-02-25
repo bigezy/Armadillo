@@ -187,8 +187,9 @@ EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
     root = json_tree_data;
     root.x0 = height / 2;
     root.y0 = 0;
+
 	
-	//Add rectangle for mouse event listening
+	//Add rectangle for mouse event listening - center is root node
 	
 	svg.append('svg:rect')
 		.attr("x", -width/2)
@@ -205,7 +206,9 @@ EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
     //-- Toggle the root children closed
     d3.select(self.frameElement).style("height", "800px");
     var root_children = root.children; //[0].children;
-    root_children.forEach( function(d) { collapse(d); update(d); } );
+	var root2 = root.children[0];
+	root2_children = root2.children;
+    root2_children.forEach( function(d) { collapse(d); update(d); } );
 
     function update(source) {
 
