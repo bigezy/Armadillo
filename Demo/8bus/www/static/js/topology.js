@@ -20,6 +20,16 @@
 //});
 //var merge = require('gulp-merge-json');
 //var jsoncombine = require("gulp-jsoncombine");
+
+/*
+ *  Zoom  
+ */	
+function zoomer() {
+	svg.attr("transform",
+		"translate(" + d3.event.translate + ")"
+		+ " scale(" + d3.event.scale + ")");
+}
+
 var width = 960, height = 500;
 var color;
 color = d3.scale.category20();
@@ -30,8 +40,13 @@ var force = d3.layout.force().charge(-120).linkDistance(30).size(
 // Add canvas
 var svg = d3.select("#topoContainer")
     .append("svg")
-    .attr("width", width)
-    .attr("height", height);
+	//.attr("width", width)
+	//.attr("height", height);
+	.attr("viewBox", "0 0 " + width + " " + height )
+	//Add zoom
+	//.attr("pointer-events", "all")
+	.call(d3.behavior.zoom().on("zoom", zoomer))
+	.append('svg:g');
 
 // Draw graph from json data
 var drawGraph = function (graph) {
