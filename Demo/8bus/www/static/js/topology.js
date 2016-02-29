@@ -21,14 +21,52 @@
 //var merge = require('gulp-merge-json');
 //var jsoncombine = require("gulp-jsoncombine");
 
-/*
- *  Zoom  
- */	
-function zoomer() {
-	svg.attr("transform",
-		"translate(" + d3.event.translate + ")"
-		+ " scale(" + d3.event.scale + ")");
-}
+
+    /*
+     *  Zoom  
+     */	
+	function zoomer() {
+		svg.attr("transform",
+			"translate(" + d3.event.translate + ")"
+			+ " scale(" + d3.event.scale + ")");
+	}
+	
+    /*
+     *  Drag  
+     */	
+    function dragstarted(d) {
+        d3.event.sourceEvent.stopPropagation();
+        d3.select(this).classed("dragging", true);
+		force.stop();
+    }
+
+    function dragged(d) {
+        d3.select(this).attr("cx", d.x = d3.event.x).attr("cy", d.y = d3.event.y);
+		d.px += d3.event.dx;
+        d.py += d3.event.dy;
+        d.x += d3.event.dx;
+        d.y += d3.event.dy; 
+		//tick();
+    }
+
+    function dragended(d) {
+        d3.select(this).classed("dragging", false);
+		d.fixed = true; // set the node to fixed so the force doesn't include the node in its auto positioning stuf
+		force.resume();
+		
+		//tick();
+    }
+    function releasenode(d) {
+        d.fixed = false; // set the node to fixed so the force doesn't include the node in its auto positioning stuff
+        //force.resume();
+    }
+	
+//Drag test
+var node_drag = d3.behavior.drag()
+	//.origin(function(d) { return d; })
+	.on("dragstart", dragstarted)
+	.on("drag", dragged)
+	.on("dragend", dragended);
 
 var width = 960, height = 500;
 var color;
@@ -47,7 +85,7 @@ var svg = d3.select("#topoContainer")
 	//.attr("pointer-events", "all")
 	.call(d3.behavior.zoom().on("zoom", zoomer))
 	.append('svg:g');
-
+		
 // Draw graph from json data
 var drawGraph = function (graph) {
 	  console.log(graph);
@@ -70,7 +108,9 @@ var drawGraph = function (graph) {
         var gnodes = svg.selectAll('g.gnode')
             .data(graph.nodes).enter()
             .append('g')
-            .classed('gnode', true).call(force.drag);
+            .classed('gnode', true)
+			.on('dblclick', releasenode)//added
+			.call(node_drag); //added
 
         /*             var node = gnodes.append("circle")
          .attr("class", "node")
