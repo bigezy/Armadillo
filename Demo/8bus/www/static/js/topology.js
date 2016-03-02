@@ -83,7 +83,7 @@ var svg = d3.select("#topoContainer")
 	.attr("viewBox", "0 0 " + width + " " + height )
 	//Add zoom
 	//.attr("pointer-events", "all")
-	.call(d3.behavior.zoom().on("zoom", zoomer))
+	.call(d3.behavior.zoom().on("zoom", zoomer)).on("dblclick.zoom",null)
 	.append('svg:g');
 		
 // Draw graph from json data
