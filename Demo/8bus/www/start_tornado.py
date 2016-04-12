@@ -14,10 +14,10 @@ import xml.etree.ElementTree as ET
 
 PORT = 8888
 flag = "a"
-projectPath = "C:/CyPsaProduction/projects/8bus/npv/pw_analysis_attack_graph_current.xml"
-projectPathprev = "C:/CyPsaProduction/projects/8bus/npv/pw_analysis_attack_graph_previous.xml"
-CypsaEnginePath =r"C:\CyPsaProduction\bin\runCyPSA.bat"
-CypsaEngineRoot =r"C:\CyPsaProduction\bin"
+projectPath = "C:/armadillo/Demo/8bus/projects/8bus/npv/pw_analysis_attack_graph_current.xml"
+projectPathprev = "C:/armadillo/Demo/8bus/projects/8bus/npv/pw_analysis_attack_graph_previous.xml"
+CypsaEnginePath =r"C:\armadillo\Demo\8bus\bin\runCyPSA.bat"
+CypsaEngineRoot =r"C:\armadillo\Demo\8bus\bin"
 
 
 class MyHandler(FileSystemEventHandler):
