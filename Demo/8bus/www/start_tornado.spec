@@ -4,7 +4,7 @@ block_cipher = None
 
 
 a = Analysis(['start_tornado.py'],
-             pathex=['C:\\8bus\\www'],
+             pathex=['C:\\CyPsaProduction\\www'],
              binaries=None,
              datas=None,
              hiddenimports=[],

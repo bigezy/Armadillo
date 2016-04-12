@@ -171,7 +171,54 @@
      
      </div>
       <div id="divCompromisedHosts"></div>
-       <div id="divVulnerabilities"></div>
+       <div id="divVulnerabilities">
+       <br>
+		<table class="imagetable">
+		<thead>
+			<tr>
+				<th>Vulnerability ID</th>
+				<th>Occurences</th>
+				<th>Patch Vulnerability</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr>
+				<td>CVE-2015-4195</td>
+				<td>33</td>
+				<td>
+					<select multiple>
+						<option value="All">All</option>
+						<option value="10.31.1.103">10.31.1.103</option>
+						<option value="10.31.1.104">10.31.1.104</option>
+						<option value="10.31.1.101">10.31.1.101</option>
+					</select>
+				</td>
+			</tr>
+			<tr>
+				<td>CVE-2015-2907</td>
+				<td>11</td>
+				<td>
+					<select multiple>
+						<option value="All">All</option>
+						<option value="10.31.1.102">10.31.1.102</option>
+					</select>
+				</td>
+			</tr>
+			<tr>
+				<td>CVE-2015-2906</td>
+				<td>10</td>
+				<td>
+					<select multiple>
+						<option value="All">All</option>
+						<option value="10.31.1.105">10.31.1.105</option>
+					</select>
+				</td>
+			</tr>
+		</tbody>
+		</table>
+		<br>
+		<a id="toggle-div2" href="javascript:void(0);" class="btn btn-info" >Patch Vulnerabilities</a>
+       </div>
        <div id="divExport" >
        <table width="300px">
 		       <tr>
@@ -184,7 +231,7 @@
        <table width="300px">
 		       <tr>
 			       <td><input type="button" onclick="javascript:getvalue_func1();" class="btn btn-info" value="Compromise Selected Hosts"/></td>
-			       <td><p id="downloadCSV" style="width:900px; margin:20px;font-style:italic"></p></td>
+			       <td><p id="downloadCSV1" style="width:900px; margin:20px;font-style:italic"></p></td>
 		       </tr>
 	       </table>
        </div>
@@ -192,7 +239,9 @@
 
      <br/>
      <script type='text/javascript'>
+     
         $(document).ready(function(){
+        	
         	
         /*$('input[type="checkbox"]').click(function(){
         if($(this).is(":checked")){
@@ -202,9 +251,8 @@
         console.log("Checkbox is unchecked.");
         }
         });*/
-		//var project = "../projects/8bus/npv";
-        var projectName = QueryString['project'].split("\\");
-        document.getElementById("projectName").innerHTML = "CyPSA Analysis"; // for - " + projectName[projectName.length-2];
+        var projectName = QueryString['project'].split("/");
+        document.getElementById("projectName").innerHTML = "CyPSA Analysis for - " + projectName[projectName.length-2];
         var xmldata;
         var parsedXMLdata;
     	xs = new WebSocket("ws://localhost:8888/xmlsocket");
@@ -317,8 +365,9 @@
 }
 
     	var thePatchTable = document.createElement('table');
-    	var tr1, td1;
+    	var tr1, td1, thead1;
     	var td,tr;
+		thead1 = document.createElement('thead');
     	tr1 = document.createElement('tr');
     	td1 = document.createElement('th');
         td1.appendChild(document.createTextNode("Select"));
@@ -329,12 +378,13 @@
         td1 = document.createElement('th');
         td1.appendChild(document.createTextNode("Vulnerabilities"));
         tr1.appendChild(td1);
-        thePatchTable.appendChild(tr1);
-        
+		thead1.appendChild(tr1);
+        thePatchTable.appendChild(thead1);
+        tbodyPatch = document.createElement('tbody');
     	for (var i in parsedXMLdata) {
     	    
-    		if(parsedXMLdata[i][0]=="destination")
-    		{
+    		//if(parsedXMLdata[i][0]=="destination")
+    		//{
     			var vulnerabilities = parsedXMLdata[i][10].split(",");
     			var uniqueArray = vulnerabilities.filter(function(elem, pos) {
     			    return vulnerabilities.indexOf(elem) == pos;
@@ -357,20 +407,152 @@
     		    td = document.createElement('td');
     		    td.appendChild(document.createTextNode(uniqueArray.toString()));
     		    tr.appendChild(td);
-    		    thePatchTable.appendChild(tr);
-    		}
+    		    tbodyPatch.appendChild(tr);
+    		//}
     	}
-    	
+    	thePatchTable.appendChild(tbodyPatch);
 
     	thePatchTable.setAttribute("id", "tblPatchHosts");
     	document.getElementById('divPatchHosts').appendChild(thePatchTable);
     	
     	var d = document.getElementById('tblPatchHosts');
     	d.className = "imagetable sort";
-    	
-
       	  	};
+      	  	
+      	  var timer = setInterval(myTimer, 10000)
+          function processData(parsedXMLdata)
+      	  {
+      		var arrayLength = parsedXMLdata.length;
         	
+        	//var assettable=document.getElementById("tableContent");
+        	//assettable.remove();
+        	$("#tableContent tbody tr").remove();
+        	var theTable = document.getElementById("tableContent");
+        	var tr;
+            var td;
+        	for (var i in parsedXMLdata) {
+        	    tr = document.createElement('tr');
+        	    td = document.createElement('td');
+        	    td.appendChild(document.createTextNode(parsedXMLdata[i][1]));
+        	    tr.appendChild(td);
+        	    td = document.createElement('td');
+        	    td.appendChild(document.createTextNode(parsedXMLdata[i][0]));
+        	    tr.appendChild(td);
+        	    td = document.createElement('td');
+        	    td.appendChild(document.createTextNode(parseFloat(parsedXMLdata[i][2]).toFixed(2)+"/"+parseFloat(parsedXMLdata[i][6]).toFixed(2)));
+        	    tr.appendChild(td);
+        	    td = document.createElement('td');
+        	    td.appendChild(document.createTextNode((parseFloat(parsedXMLdata[i][4]).toFixed(2)==0? "Infinite" : parseFloat(parsedXMLdata[i][4]).toFixed(2)) + "/"+ (parseFloat(parsedXMLdata[i][8]).toFixed(2)==0? "Infinite " : parseFloat(parsedXMLdata[i][8]).toFixed(2))));
+        	    tr.appendChild(td);
+        	    td = document.createElement('td');
+        	    td.appendChild(document.createTextNode(parseFloat(parsedXMLdata[i][3]).toFixed(2)+"/"+parseFloat(parsedXMLdata[i][7]).toFixed(2)));	    
+        	    tr.appendChild(td);
+        	    /*td = document.createElement('td');
+        	    var percentage=parseFloat(parsedXMLdata[i][3]).toFixed(2)/parseFloat(parsedXMLdata[i][11]).toFixed(2);
+        	    percentage=percentage*100;
+        	    td.appendChild(document.createTextNode(parseFloat(percentage).toFixed(2)+"%"));	    
+        	    tr.appendChild(td);*/
+        	    tr.setAttribute("id", parsedXMLdata[i][1]);    	    
+        	    $("#tableContent tbody").append(tr);
+        	}
+        	
+        	
+        	//theTable.setAttribute("id", "tableContent");
+        	//document.getElementById('mainContent').appendChild(theTable);
+        	
+        	var d = document.getElementById('tableContent');
+        	//d.className = "imagetable";
+        	//$('#tableContent').DataTable();
+        	var tbody = d.getElementsByTagName("tbody")[0];
+        	tbody.onclick = function (e) {
+        	    e = e || window.event;
+        	    var data = [];
+        	    var target = e.srcElement || e.target;
+        	    
+        	    while (target && target.nodeName !== "TR") {
+        	        target = target.parentNode;
+        	    }
+        	    if (target) {
+        	    	$("#tableContent tr").removeClass("highlight");
+        	        var cells = target.getElementsByTagName("td");
+        	        target.setAttribute("class", "highlight")
+        	        for (var i = 0; i < cells.length; i++) {
+        	            data.push(cells[i].innerHTML);
+        	        }    	        
+        	    }
+        	    
+        	   var c = document.getElementById("pPaths");
+        	   c.innerHTML = "";
+        	   displayResult(QueryString['project'],data[0]);
+        	   $("#tblPatchHosts tbody tr").remove();
+        	   var patchTable = document.getElementById("tblPatchHosts");
+			   var tbodyPatch = tr = document.createElement('tbody');
+        	   //Updating Patch Table
+        	   for (var i in parsedXMLdata) {
+           	    
+           		
+           			var vulnerabilities = parsedXMLdata[i][10].split(",");
+           			var uniqueArray = vulnerabilities.filter(function(elem, pos) {
+           			    return vulnerabilities.indexOf(elem) == pos;
+           			  }); 
+           			
+           			
+           			tr = document.createElement('tr');
+           			td = document.createElement('td');
+                   	var checkbox = document.createElement('input');
+                       checkbox.type = "checkbox";
+                       checkbox.name = "patchHost";
+                       checkbox.value = parsedXMLdata[i][1];
+                       checkbox.id = "chkPatchHost" + i;
+                       checkbox.onclick = function (){highlight_row(this)};
+                       td.appendChild(checkbox);
+                       tr.appendChild(td);
+           		    td = document.createElement('td');
+           		    td.appendChild(document.createTextNode(parsedXMLdata[i][1]));
+           		    tr.appendChild(td);
+           		    td = document.createElement('td');
+           		    td.appendChild(document.createTextNode(uniqueArray.toString()));
+           		    tr.appendChild(td);
+           		 	tbodyPatch.appendChild(tr);
+           		
+           	}
+        	  patchTable.appendChild(tbodyPatch); 
+        	};
+        	
+
+        	
+      	  }
+          function myTimer(){
+      		  var flag;
+      		  console.log("calling socket");
+      		ts = new WebSocket("ws://localhost:8888/timersocket");
+            
+      		ts.onmessage = function(e) {
+      			console.log("Socket");
+      			flag=e.data;
+      			if (flag == "a"){
+      				console.log("timer");
+      			
+      			}
+      			else{
+      				
+      				console.log(e.data);      			
+      			var timerXmldata=e.data;
+            	var  timerParsedXMLdata = JSON.parse( timerXmldata );
+      			processData(timerParsedXMLdata);
+      			console.log("New Data");
+      			}
+      			//Get table by Id
+      			//Clear all rows
+      			//append new body
+      			
+      		}
+          	
+          	ts.onopen = function(e) {
+          		console.log("Connection");
+          		ts.send("timer");
+          	}
+      	  }
         });
         
     
@@ -444,21 +626,25 @@
 	        {
 	            if(rawFile.status === 200 || rawFile.status == 0)
 	            {
-	                var allText = rawFile.responseText;
+	            	var allText = rawFile.responseText;
 	                var table1 = document.createElement("table");
-	                var tr1, td1;
+	                var tr1, td1, thead1, tbody1;
+					thead1 = document.createElement('thead');
 	            	tr1 = document.createElement('tr');
 	                td1 = document.createElement('th');
 	                td1.appendChild(document.createTextNode("Select"));
 	                tr1.appendChild(td1);
-	                td1 = document.createElement('th');
+	                td1 = document.createElement('th'); td1.setAttribute("data-sort", "string");
 	                td1.appendChild(document.createTextNode("Asset IP Address"));
 	                tr1.appendChild(td1);
 	                /*td1 = document.createElement('th');
 	                td1.appendChild(document.createTextNode("Vulnerabilities"));
 	                tr1.appendChild(td1);
 	                */
-	                table1.appendChild(tr1);
+					thead1.appendChild(tr1);
+					table1.appendChild(thead1);
+	                /*table1.appendChild(tr1);*/
+					tbody1 = document.createElement('tbody');
 	                var rows = allText.split("\n");
 	                for (var i = 0, tr, td; i < rows.length; i++) {
 	                     var cells = rows[i].split(",");
@@ -481,20 +667,20 @@
 		                    td.appendChild(document.createTextNode("Test"));
 		                    tr.appendChild(td);
 		                    */
-		                    table1.appendChild(tr);
+		                    tbody1.appendChild(tr);
 		                    
 	                    }
 	                    
 	                }
 	                
-	                var divCompromisedHosts = document.getElementById("divCompromisedHosts");
-	               
-	                table1.setAttribute("id", "tblCompromised1");
-	        	    
-	                divCompromisedHosts.innerHTML = "";
+	                table1.appendChild(tbody1);
+	                var divCompromisedHosts = document.getElementById("divCompromisedHosts");	               
+	                table1.setAttribute("id", "tblCompromised1");	        	     
+	                divCompromisedHosts.innerHTML = "<br>";
 	                divCompromisedHosts.appendChild(table1);
 		             var d = document.getElementById('tblCompromised1');
 		        	 d.setAttribute("class", "imagetable sort");
+					 $('#tblCompromised1').DataTable();
 		             //alert(allText);
 	            }
 	        }
@@ -560,7 +746,7 @@ var QueryString = function () {
 	      	ws.onopen = function(e) {
 	      	    ws.send(datacsv);
 	      	}
-	      	document.getElementById("downloadCSV").innerHTML = "Patched Hosts saved to file";
+	      	document.getElementById("downloadCSV1").innerHTML = "Compromised Hosts saved to file";
 			}
 	    
 function selectProject(path, entryNode){
