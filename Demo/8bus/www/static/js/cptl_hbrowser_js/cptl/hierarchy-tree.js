@@ -47,10 +47,9 @@ module.exports = (function () {
     // TREE METHODS
     HierarchyTree.prototype.initialize_tree = function(json_tree_data) {
 	var tree = new TreeModel();
-	// Parse the tree
 	this.config.tree = tree.parse( json_tree_data );
     };
-
+    
     HierarchyTree.prototype.get_nodes = function(key, value) {
 	var nodes = this.config.tree.all( function(n) {
 	    if (key == "path") {

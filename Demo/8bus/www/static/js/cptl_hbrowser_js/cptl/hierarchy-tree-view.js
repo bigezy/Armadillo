@@ -56,19 +56,7 @@ module.exports = (function () {
 	type = node.model["rdfs:type"];
 	return type;
     };
-
-    HierarchyTreeView.prototype.get_node = function( path_value ) {
-	var nodes = this.config.ht.get_nodes("path", path_value );
-	var node = nodes[0];
-	var node_result = {};
-
-	for (var property_key in node.model) {
-	    if ("children" != property_key) {
-		node_result[property_key] = node.model[property_key];
-	    }
-	}
-	return node_result;
-    };
+	
     
     HierarchyTreeView.prototype.is_hierarchy_tree = function( mapping ) {
 	var leaves = this.config.ht.leaves(this.config.ht.config.tree);
@@ -242,9 +230,8 @@ module.exports = (function () {
 	    var name = view_array[i];
 	    var path = view_array[i];
 
-	    //var type = this.get_type_for_node(path);
-	    //var node = { "name": name, "path":path, "rdfs:type":type };
-	    var node = this.get_node(path);
+	    var type = this.get_type_for_node(path);
+	    var node = { "name": name, "path":path, "rdfs:type":type };
 	    induced_graph["nodes"].push(node);
 	}
 	induced_graph["links"] = this.compute_induced_edges(view);

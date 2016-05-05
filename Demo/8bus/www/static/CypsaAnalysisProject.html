@@ -354,13 +354,17 @@
     	   displayResult(QueryString['project'],data[0]);
     	   
     	};
+			function hasClass(element, cls) {
+    return (' ' + element.className + ' ').indexOf(' ' + cls + ' ') > -1;
+}
     	//Vulnerabilities
     	function highlight_row(the_element) {
-    		
-	if(the_element.parentNode.parentNode.style.backgroundColor != "green") {
-		the_element.parentNode.parentNode.style.backgroundColor = "green";
+
+	if(hasClass(the_element.parentNode.parentNode,"rowhighlight"))
+	{
+		the_element.parentNode.parentNode.className = "";
 	} else {
-		the_element.parentNode.parentNode.style.backgroundColor = "White";
+		the_element.parentNode.parentNode.className = "rowhighlight";
 	}
 }
 
@@ -407,6 +411,10 @@
     		    td = document.createElement('td');
     		    td.appendChild(document.createTextNode(uniqueArray.toString()));
     		    tr.appendChild(td);
+				if(parsedXMLdata[i][13]==1)
+			 		tr.setAttribute("bgcolor","#736F6E");
+				else
+						tr.setAttribute("bgcolor","#FF0000");
     		    tbodyPatch.appendChild(tr);
     		//}
     	}
@@ -420,6 +428,19 @@
       	  	};
       	  	
       	  var timer = setInterval(myTimer, 10000)
+		  function hasClass1(element, cls) {
+    return (' ' + element.className + ' ').indexOf(' ' + cls + ' ') > -1;
+}
+    	//Vulnerabilities
+    	function highlight_row1(the_element) {
+
+	if(hasClass1(the_element.parentNode.parentNode,"rowhighlight"))
+	{
+		the_element.parentNode.parentNode.className = "";
+	} else {
+		the_element.parentNode.parentNode.className = "rowhighlight";
+	}
+}
           function processData(parsedXMLdata)
       	  {
       		var arrayLength = parsedXMLdata.length;
@@ -484,7 +505,11 @@
         	   var c = document.getElementById("pPaths");
         	   c.innerHTML = "";
         	   displayResult(QueryString['project'],data[0]);
-        	   $("#tblPatchHosts tbody tr").remove();
+        	   
+        	};
+        	
+	$("#tblPatchHosts tbody tr").remove();
+			   //alert("deleted");
         	   var patchTable = document.getElementById("tblPatchHosts");
 			   var tbodyPatch = tr = document.createElement('tbody');
         	   //Updating Patch Table
@@ -504,7 +529,7 @@
                        checkbox.name = "patchHost";
                        checkbox.value = parsedXMLdata[i][1];
                        checkbox.id = "chkPatchHost" + i;
-                       checkbox.onclick = function (){highlight_row(this)};
+                       checkbox.onclick = function (){highlight_row1(this)};
                        td.appendChild(checkbox);
                        tr.appendChild(td);
            		    td = document.createElement('td');
@@ -513,13 +538,14 @@
            		    td = document.createElement('td');
            		    td.appendChild(document.createTextNode(uniqueArray.toString()));
            		    tr.appendChild(td);
+				    if(parsedXMLdata[i][13]==1)
+			 			tr.setAttribute("bgcolor","#736F6E");
+					else
+						tr.setAttribute("bgcolor","#FF0000");
            		 	tbodyPatch.appendChild(tr);
            		
            	}
         	  patchTable.appendChild(tbodyPatch); 
-        	};
-        	
-
         	
       	  }
           function myTimer(){
@@ -530,7 +556,7 @@
       		ts.onmessage = function(e) {
       			console.log("Socket");
       			flag=e.data;
-      			if (flag == "a"){
+      			if (flag == "a"||flag=="b"){
       				console.log("timer");
       			
       			}
@@ -538,8 +564,8 @@
       				
       				console.log(e.data);      			
       			var timerXmldata=e.data;
-            	var  timerParsedXMLdata = JSON.parse( timerXmldata );
-      			processData(timerParsedXMLdata);
+            	//var  timerParsedXMLdata = JSON.parse( timerXmldata );
+      			processData(JSON.parse(timerXmldata));
       			console.log("New Data");
       			}
       			//Get table by Id
@@ -618,63 +644,74 @@
 			 $('#divPaths').show();
 		  });
 		});
-		var rawFile = new XMLHttpRequest();
-	    rawFile.open("GET", "host_ips.csv", true);
-	    rawFile.onreadystatechange = function ()
-	    {
-	        if(rawFile.readyState === 4)
-	        {
-	            if(rawFile.status === 200 || rawFile.status == 0)
-	            {
-	            	var allText = rawFile.responseText;
-	                var table1 = document.createElement("table");
-	                var tr1, td1, thead1, tbody1;
-					thead1 = document.createElement('thead');
-	            	tr1 = document.createElement('tr');
-	                td1 = document.createElement('th');
-	                td1.appendChild(document.createTextNode("Select"));
-	                tr1.appendChild(td1);
-	                td1 = document.createElement('th'); td1.setAttribute("data-sort", "string");
-	                td1.appendChild(document.createTextNode("Asset IP Address"));
-	                tr1.appendChild(td1);
-	                /*td1 = document.createElement('th');
+		cs = new WebSocket("ws://localhost:8888/compfilewebsocket");
+
+
+      	cs.onopen = function(e) {
+      	    //var emptycsv="nullas,abcd";
+      	  var parameters = QueryString['project'];
+      	    cs.send(parameters);
+      	//console.log(e.data);
+      	}
+      	cs.onmessage = function(e) {
+			console.log(e.data);
+			var allText = e.data;
+			//parsedXMLdata = JSON.parse(xmldata);
+			//var allText = rawFile.responseText;
+			var table1 = document.createElement("table");
+			var tr1, td1, thead1, tbody1;
+			thead1 = document.createElement('thead');
+			tr1 = document.createElement('tr');
+			td1 = document.createElement('th');
+			td1.appendChild(document.createTextNode("Select"));
+			tr1.appendChild(td1);
+			td1 = document.createElement('th');
+			td1.setAttribute("data-sort", "string");
+			td1.appendChild(document.createTextNode("Asset IP Address"));
+			tr1.appendChild(td1);
+			/*td1 = document.createElement('th');
 	                td1.appendChild(document.createTextNode("Vulnerabilities"));
 	                tr1.appendChild(td1);
 	                */
 					thead1.appendChild(tr1);
-					table1.appendChild(thead1);
+			table1.appendChild(
+					thead1);
 	                /*table1.appendChild(tr1);*/
 					tbody1 = document.createElement('tbody');
-	                var rows = allText.split("\n");
+	                var rows = allText.split("/n");
 	                for (var i = 0, tr, td; i < rows.length; i++) {
 	                     var cells = rows[i].split(",");
-	                     for (var j = 0; j < cells.length-1; j++) {
-	                      
+
+	                      if(cells!="")
+						  {
 		                    tr = document.createElement('tr');
 			            	td = document.createElement('td');
 			            	var checkbox = document.createElement('input');
 		                    checkbox.type = "checkbox";
-		                    checkbox.name = "compromised[]";
-		                    checkbox.value = cells[j];
+							 checkbox.name = "compromised[]";
+		                    checkbox.value = cells;
 		                    checkbox.id = "compromised";
 		                    td.appendChild(checkbox);
 		                    tr.appendChild(td);
 		                    td = document.createElement('td');
-		                    td.appendChild(document.createTextNode(cells[j]));
+		                    td.appendChild(document.createTextNode(cells));
 		                    tr.appendChild(td);
-		                    /*
+							 /*
 		                    td = document.createElement('td');
 		                    td.appendChild(document.createTextNode("Test"));
 		                    tr.appendChild(td);
 		                    */
 		                    tbody1.appendChild(tr);
-		                    
-	                    }
+						  }
+
 	                    
 	                }
 	                
 	                table1.appendChild(tbody1);
-	                var divCompromisedHosts = document.getElementById("divCompromisedHosts");	               
+	                var
+							divCompromisedHosts = document.getElementById
+							(
+									"divCompromisedHosts");
 	                table1.setAttribute("id", "tblCompromised1");	        	     
 	                divCompromisedHosts.innerHTML = "<br>";
 	                divCompromisedHosts.appendChild(table1);
@@ -682,10 +719,7 @@
 		        	 d.setAttribute("class", "imagetable sort");
 					 $('#tblCompromised1').DataTable();
 		             //alert(allText);
-	            }
-	        }
-	    }
-	    rawFile.send(null);
+	           }
 	    
         </script>
         

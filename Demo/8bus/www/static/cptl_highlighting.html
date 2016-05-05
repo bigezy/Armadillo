@@ -1,0 +1,489 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>CyPSA</title>
+<!-- Bootstrap -->
+<link href="css/bootstrap.min.css" rel="stylesheet">
+<link href="css/bootstrap-theme.min.css" rel="stylesheet">
+<link href="css/font-awesome.min.css" rel="stylesheet">
+<link href="css/bootstrap-social.css" rel="stylesheet">
+<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+<!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+<link href="css/mystyles.css" rel="stylesheet">
+<link rel="stylesheet" type="text/css" media="screen"
+    href="css/ui.jqgrid-bootstrap.css" />
+<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+<!--<script
+    src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>-->
+<!-- Include all compiled plugins (below), or include individual files as needed -->
+<!--<script src="js/bootstrap.min.js"></script>-->
+<!--<link href="https://gitcdn.github.io/bootstrap-toggle/2.2.0/css/bootstrap-toggle.min.css" rel="stylesheet">-->
+<!--<script src="https://gitcdn.github.io/bootstrap-toggle/2.2.0/js/bootstrap-toggle.min.js"></script>-->
+<!-- jqGrid -->
+<!--<script type="text/ecmascript" src="js/i18n/grid.locale-en.js"></script>-->
+
+<!--<script type="text/ecmascript" src="js/jquery.jqGrid.min.js"></script>-->
+<!--<script src="http://d3js.org/d3.v3.min.js"></script>-->
+<!--<script>
+	$.jgrid.defaults.width = 780;
+	$.jgrid.defaults.responsive = true;
+	$.jgrid.defaults.styleUI = 'Bootstrap';
+</script>-->
+<script type='text/javascript' src="/cptl_highlighting/js/jquery/jquery.min.js"></script>
+<script type='text/javascript' src="/cptl_highlighting/js/cptl/api/v1.0.0/utils.js"></script>
+
+<script type='text/javascript'>
+          var graph_ref = "capital-city";
+  	  var graph_base_url = "/cptl_highlighting/graphs/force_directed.html";
+	  
+	  function set_graph_ref(new_graph_ref) {
+	    var old_graph_ref = graph_ref;
+	    graph_ref = new_graph_ref;
+
+	    document.getElementById( new_graph_ref ).setAttribute("class", "selected");
+	    document.getElementById( old_graph_ref ).removeAttribute("class");
+	    document.getElementById('graph_iframe').src = graph_base_url + "?graph_ref=" + graph_ref;
+	  }
+	  
+	  function set_node_state_attr(selector, data_value, node_state_attr, node_state_attr_value) {
+	    var node_gs = document.getElementById('graph_iframe').contentWindow.document.querySelectorAll("[" + selector + "'" + data_value + "'" + "]");
+	    for ( var i=0; i < node_gs.length; i++) {
+              var node_g = node_gs[i];
+              var node_state_circle = node_g.childNodes[0];
+              node_state_circle.setAttribute(node_state_attr, node_state_attr_value);
+            }		       
+          }
+
+	  function set_node_icon_attr(selector, data_value, node_icon_attr, node_icon_attr_value) {
+	    var node_gs = document.getElementById('graph_iframe').contentWindow.document.querySelectorAll("[" + selector + "'" + data_value + "'" + "]");
+	    for ( var i=0; i < node_gs.length; i++) {
+              var node_g = node_gs[i];
+              var node_icon_circle = node_g.childNodes[1];
+              node_icon_circle.setAttribute(node_icon_attr, node_icon_attr_value);
+            }		       
+          }
+			       
+	  function update_node_style() {
+	    var form_element = document.getElementById("node_style");
+            var node_type_value = form_element.elements[0].value;
+	    var node_color_value = form_element.elements[1].value;
+	    var node_size_value = form_element.elements[2].value;
+            var node_state_size_num = Number(node_size_value) + 10;
+			        
+	    var style = "";
+	    if (node_color_value != "clear") {
+	      style = style + "fill:" + node_color_value + "; stroke:black;";
+	    }
+
+           			       
+            set_node_state_attr("rdfs-type=", node_type_value, 'style', style);
+            set_node_state_attr("rdfs-type=", node_type_value, 'r', node_state_size_num.toString() );			       
+            set_node_icon_attr("rdfs-type=", node_type_value, 'r', node_size_value);		       
+          }
+			       
+          function set_link_attr(selector, data_value, link_attr, link_attr_value) {
+            var links = document.getElementById('graph_iframe').contentWindow.document.querySelectorAll("[" + selector + "'" + data_value + "'" + "]");
+            for ( var i=0; i < links.length; i++) {
+              var link = links[i];
+	      link.setAttribute(link_attr, link_attr_value);
+            }		       
+          }
+			       
+	  function update_link_style() {
+	    var form_element = document.getElementById("link_style");
+            var link_relation_value = form_element.elements[0].value;
+	    var link_color_value = form_element.elements[1].value;
+	    var link_width_value = form_element.elements[2].value;
+			        
+	    var style = "";
+	    if (link_color_value != "clear") {
+	      style = style + "stroke:" + link_color_value + "; stroke-width: " + link_width_value + ";";
+	    }
+
+            set_link_attr( "relation$=", link_relation_value, "style", style);			       
+          }
+			       
+	  function init_browser() {
+
+	    if ( graph_ref == null || graph_ref == "" ) { 			
+	      console.log("Must supply 'graph_ref' parameter.");
+	      return;
+            }
+           
+            var graph_iframe = $('#graph_iframe');
+	    graph_iframe.attr("src", graph_base_url + "?graph_ref=" + graph_ref);
+            graph_iframe.attr("height", "700");
+	    graph_iframe.attr("width", "900");	  
+	    return;
+	  }
+
+	  $(document).ready( init_browser );
+</script>
+
+<!-- Inline style script for CPTL HBrowser -->
+<style>
+    .box-title {
+      font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;    
+      font-size:  30px;
+      background-color: #d8ecf9;
+      border: 0.5px solid black;
+      font-style: italic;
+    }
+    
+    .inventory-list{
+      overflow: scroll;    
+      float:left;
+      height: 700px;
+      width: 20%;
+      border: 2px solid black;
+      margin:10px;
+    }
+
+    .graph-box{
+      overflow: scroll;
+      float:left;
+      border: 2px solid black;
+      height: 700px;
+      width: 50%;    
+      margin:10px;
+    }
+
+    .style-box{
+      overflow: scroll;
+      float:left;
+      border: 2px solid black;
+      height: 700px;
+      width: 20%;    
+      margin:10px;
+    }
+    
+    .clear{
+      clear:both;
+    }
+
+    .row {
+      width: 100%;
+      margin: 0px;
+    }
+
+    .container {
+      width: 100%;
+      margin: 10px;
+    }
+
+    li {
+      cursor: pointer;
+    }
+    
+    li.selected {
+      background-color: #dceadc;
+    }
+</style>
+</head>
+<body>
+    <nav class="navbar navbar-inverse navbar-fixed-top"
+        role="navigation">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed"
+                    data-toggle="collapse" data-target="#navbar"
+                    aria-expanded="false" aria-controls="navbar">
+                    <span class="sr-only">Toggle navigation</span> <span
+                        class="icon-bar"></span> <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+            </div>
+            <div id="navbar" class="navbar-collapse collapse">
+                <ul class="nav navbar-nav">
+                    <!--                     <li class="navbar-left">
+                        <div class="navbar-brand" href="#">
+                            <img src="img/cypsa_logo.png" height=30
+                                width=50></a>
+                        </div>
+                    </li> -->
+                    <li id=logo>
+                        <h1>
+                            <em>Cy</em>PSA
+                        </h1>
+                    </li>
+                    <li class="navbar-left"><a href=".."><span
+                            class="glyphicon glyphicon-home"
+                            aria-hidden="true"></span> Home</a></li>
+                    <li class="active dropdown navbar-left"><a
+                        href="#" class="dropdown-toggle"
+                        data-toggle="dropdown" role="button"
+                        aria-haspopup="true" aria-expanded="false"><span
+                            class="glyphicon glyphicon-list"></span>
+                            Model <span class="caret"></span></a>
+                        <ul class="dropdown-menu">
+                            <li><a
+                                href="http://network-perception.com">8-bus</a></li>
+                        </ul></li>
+                    <li class="dropdown navbar-left"><a href="#"
+                        class="dropdown-toggle" data-toggle="dropdown"
+                        role="button" aria-haspopup="true"
+                        aria-expanded="false"><span
+                            class="glyphicon glyphicon-play-circle"></span>
+                            Action <span class="caret"></span></a>
+                        <ul class="dropdown-menu">
+                            <li><a
+                                href="http://network-perception.com">Patch</a></li>
+                        </ul></li>
+                </ul>
+                <ul class="nav navbar-nav navbar-right">
+                    <li class="dropdown"><a href="#"
+                        class="dropdown-toggle" data-toggle="dropdown"
+                        role="button" aria-haspopup="true"
+                        aria-expanded="false"> <span
+                            class="glyphicon glyphicon-user"
+                            aria-hidden="true"> </span> mbamba <span
+                            class="caret"></span></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="#">Account</a></li>
+                            <li><a href="#">Sign Out</a></li>
+                        </ul></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <div class="container">
+        <div class="row">
+
+    	  <div class="ui-widget row">
+
+            <div class="cptl_hbrowser">
+
+              <div class="inventory-list">
+		<div class="box-title">Substation Inventory</div>
+		<div class="box-content">
+		  <ul>
+
+		    <li id="8sub"><a onclick="set_graph_ref('8sub');">8 Substation Model</a>
+		      <ul>
+			<li id="control-center"><a onclick="set_graph_ref('control-center');">Control Center</a></li>
+			<li id="substations"><a onclick="set_graph_ref('substations');">Substations</a>
+			  <ul>
+			    <li id="capital-city" class="selected"><a onclick="set_graph_ref('capital-city');">Capital City</a>
+			      <ul>
+				<li id="capital-city.network"><a onclick="set_graph_ref('capital-city.network');">Capital City Network</a>
+				<li id="capital-city.yard"><a onclick="set_graph_ref('capital-city.yard');">Capital City Yard</a>				  
+			      </ul>
+			    </li>
+			    <li id="cypress-creek"><a onclick="set_graph_ref('cypress-creek');">Cypress Creek</a>
+			      <ul>
+				<li id="cypress-creek.network"><a onclick="set_graph_ref('cypress-creek.network');">Cypress Creek Network</a>
+				<li id="cypress-creek.yard"><a onclick="set_graph_ref('cypress-creek.yard');">Cypress Creek Yard</a>				  
+			      </ul>
+			    </li>
+			    <li id="haverbrook"><a onclick="set_graph_ref('haverbrook');">Haverbrook</a>
+			      <ul>
+				<li id="haverbrook.network"><a onclick="set_graph_ref('haverbrook.network');">Haverbrook Network</a>
+				<li id="haverbrook.yard"><a onclick="set_graph_ref('haverbrook.yard');">Haverbrook Yard</a>				  
+			      </ul>
+			    </li>
+			    <li id="north-haverbrook"><a onclick="set_graph_ref('north-haverbrook');">North Haverbrook</a>
+			      <ul>
+				<li id="north-haverbrook.network"><a onclick="set_graph_ref('north-haverbrook.network');">North Haverbrook Network</a>
+				<li id="north-haverbrook.yard"><a onclick="set_graph_ref('north-haverbrook.yard');">North Haverbrook Yard</a>				  
+			      </ul>
+			    </li>
+			    <li id="odgenville"><a onclick="set_graph_ref('odgenville');">Odgenville</a>
+			      <ul>
+				<li id="odgenville.network"><a onclick="set_graph_ref('odgenville.network');">Odgenville Network</a>
+				<li id="odgenville.yard"><a onclick="set_graph_ref('odgenville.yard');">Odgenville Yard</a>				  
+			      </ul>
+			    </li>
+			    <li id="paris"><a onclick="set_graph_ref('paris');">Paris</a>
+			      <ul>
+				<li id="paris.network"><a onclick="set_graph_ref('paris.network');">Paris Network</a>
+				<li id="paris.yard"><a onclick="set_graph_ref('paris.yard');">Paris Yard</a>				  
+			      </ul>
+			    </li>
+			    <li id="shelbyville"><a onclick="set_graph_ref('shelbyville');">Shelbyville</a>
+			      <ul>
+				<li id="shelbyville.network"><a onclick="set_graph_ref('shelbyville.network');">Shelbyville Network</a>
+				<li id="shelbyville.yard"><a onclick="set_graph_ref('shelbyville.yard');">Shelbyville Yard</a>				  
+			      </ul>
+			    </li>
+			    <li id="springfield"><a onclick="set_graph_ref('springfield');">Springfield</a>
+			      <ul>
+				<li id="springfield.network"><a onclick="set_graph_ref('springfield.network');">Springfield Network</a>
+				<li id="springfield.yard"><a onclick="set_graph_ref('springfield.yard');">Springfield Yard</a>				  
+			      </ul>
+			    </li>
+			  </ul>
+			</li>						
+		      </ul>
+		    </li>
+		  </ul>
+		</div>
+	      </div>
+
+	      <div class="graph-box">
+		<div class="box-title">Asset Connectivity</div>		      	      
+	        <div class="box-content">
+		  <iframe id="graph_iframe"></iframe>
+		</div>    
+	      </div>
+
+	      <div class="style-box">
+		<div class="box-title">Graph Style</div>
+		<div class="box-content"/>
+		  <h2>Style Nodes</h2>
+		  <form id="node_style">
+		    <label for="rdfs:type">Node Type: </label>
+		    <select id="rdfs:type" name="rdfs:type">
+		      <option value="syard:Breaker">Breaker</option>
+		      <option value="syard:Bus">Bus</option>
+		      <option value="snet:DistanceRelay">Distance Relay</option>
+		      <option value="enet:Firewall">Firewall</option>
+		      <option value="enet:Gateway">Gateway</option>
+		      <option value="syard:Generator">Generator</option>
+		      
+		      <option value="enet:Host">Host</option>		
+		      <option value="enet:Network">Network</option>
+		      <option value="enet:NIC">NIC</option>
+		      <option value="syard:Node">Node</option>		
+		      <option value="snet:OvercurrentRelay">Overcurrent Relay</option>
+		      <option value="snet:ReversePowerRelay">Reverse Power Relay</option>
+		      <option value="snet-sel:421">SEL 421</option>
+		      <option value="snet-sel:3620">SEL 3620</option>
+		      <option value="snet-sel:451">SEL 451</option>
+		      <option value="snet:Switch">Switch</option>
+		      <option value="syard:Transformer">Transformer</option>				
+		    </select><br/>
+
+		    <label for="color">Color: </label>
+		    <select id="color" name="color">
+		      <option value="black">black</span></option>
+                      <option value="clear">clear</span></option>
+                      <option value="red">red</option>
+                      <option value="orange">orange</option>
+                      <option value="yellow">yellow</option>
+		      <option value="green">green</option>
+		      <option value="blue">blue</option>
+		      <option value="purple">purple</option>		
+                    </select><br/>
+
+	            <label for="size">Size: </label>
+	            <select id="size" name="size">
+		      <option value="10">small</option>
+		      <option value="20" selected>medium</option>
+		      <option value="40">large</option>
+                    </select><br/>
+   	         <input type="button" onclick="update_node_style();" value="Apply"/>
+               </form>
+
+               <h2>Style Links</h2>
+               <form id="link_style">
+                 <label for="relation">Link Type: </label>
+                 <select id="relation" name="relation">
+		   <option value="cptlc:hasComponent">Asset Contains Hardware</option>
+		   <option value="cptlc:hasEthernetLink">Ethernet Link (non-fiber)</option>
+		   <option value="cptlc:hasFiberEthernetLink">Fiber Ethernet Link</option>
+		   <option value="enet:hasHost">Network Has Host</option>
+		   <option value="syard:hasLine">Substation Yard Link</option>		
+		   <option value="snet:hasBreakerConnections">Relay-Breaker Connection</option>
+		   <option value="cptlc:hasSerialLink">Serial Link</option>
+	         </select><br/>
+
+	         <label for="color">Color: </label>
+	         <select id="color" name="color">
+		   <option value="white">white</span></option>
+		   <option value="red">red</option>
+		   <option value="orange">orange</option>
+		   <option value="yellow">yellow</option>
+		   <option value="green">green</option>
+		   <option value="blue">blue</option>
+		   <option value="purple">purple</option>		
+		   <option value="black">black</span></option>
+                 </select><br/>
+
+	         <label for="width">Width: </label>
+	         <select id="width" name="width">
+		  <option value="2" selected>fine</option>
+		  <option value="5">medium</option>
+		  <option value="10">thick</option>
+                </select><br/>
+	      
+	        <input type="button" onclick="update_link_style();" value="Apply"/>
+              </form>
+	      </div> <!-- graph style-->
+	      
+	    </div><!-- cptl hbrowser-->
+         </div><!-- ui-widget row -->
+       </div><!-- row -->
+	
+    <footer class="row-footer">
+        <div class="container">
+            <div class="row">
+                <div
+                    class="col-xs-5 col-xs-offset-1 col-sm-2 col-sm-offset-1">
+                    <h5>Links</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">About</a></li>
+                        <li><a href="#address">Contact</a></li>
+                    </ul>
+                </div>
+                <div id="address" class="col-xs-12 col-sm-5">
+                    <h5>Our Address</h5>
+                    <address>
+                        Information Trust Institute<br> University
+                        of Illinois at Urbana-Champaign<br>
+                        Coordinated Science Laboratory<br> 1308
+                        West Main St, Urbana, IL 61801-2307<br> <i
+                            class="fa fa-phone"></i>: +1 (217) 333-3546<br>
+                        <i class="fa fa-fax"></i>: +1 (217) 244-1823<br>
+                        <i class="fa fa-envelope"></i>: <a
+                            href="mailto:krogers6@illinois.edu">krogers6@illinois.edu</a>
+                    </address>
+                </div>
+                <div class="nav navbar-nav" style="padding: 40px 10px;">
+                    <a class="btn btn-social-icon btn-google-plus"
+                        href="http://google.com/+"><i
+                        class="fa fa-google-plus"></i></a> <a
+                        class="btn btn-social-icon btn-facebook"
+                        href="http://www.facebook.com/profile.php?id="><i
+                        class="fa fa-facebook"></i></a> <a
+                        class="btn btn-social-icon btn-linkedin"
+                        href="http://www.linkedin.com/in/"><i
+                        class="fa fa-linkedin"></i></a> <a
+                        class="btn btn-social-icon btn-twitter"
+                        href="http://twitter.com/"><i
+                        class="fa fa-twitter"></i></a> <a
+                        class="btn btn-social-icon btn-youtube"
+                        href="http://youtube.com/"><i
+                        class="fa fa-youtube"></i></a> <a
+                        class="btn btn-social-icon" href="mailto:"><i
+                        class="fa fa-envelope-o"></i></a>
+                </div>
+                <div class="col-xs-12">
+                    <p style="padding: 10px;"></p>
+                    <p align=center>© Copyright 2013-2015 University
+                        of Illinois Board of Trustees</p>
+                </div>
+            </div>
+        </div>
+        <script type="text/javascript">
+        $(document).ready(function(){
+        $('input[type="checkbox"]').click(function(){
+        if($(this).is(":checked")){
+        alert("Checking the box will show the full topo that includes power devices.");
+        }
+        else if($(this).is(":not(:checked)")){
+        console.log("Checkbox is unchecked.");
+        }
+        });
+        });
+        </script>
+    </footer>
+</body>
+</html>

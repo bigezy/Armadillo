@@ -269,7 +269,8 @@ EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 	// Mappings that need DOM node creation
 	node.enter().append("g")
 		    .attr("rdfs-type", function(d) { return d["rdfs:type"]; })
-		    .attr("name", function(d) { return d["enet:hasDomainNameValue"]; })
+		    //.attr("name", function(d) { return d["enet:hasDomainNameValue"]; })
+			.attr("name", function(d) { return d["name"]; })
 		    .attr("enet-hasDomainNameValue", function(d) { return d["enet:hasDomainNameValue"]; })
 		    .attr("cypsa-node_type", function(d) { return d["cypsa:node_type"]; })
 		    .attr("enet-hasIPAddressValue", function(d) { return d["enet:hasIPAddressValue"]; }) 

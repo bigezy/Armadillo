@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<!--
+Copyright (c) 2016 Gabriel A. Weaver, Information Trust Institute
+All rights reserved.
+
+Developed by:             Gabriel A. Weaver, Information Trust Institute
+                          University of Illinois at Urbana-Champaign
+                          http://www.iti.illinois.edu/
+
+Permission is hereby granted, free of charge, to any person obtaining
+a copy of this software and associated documentation files (the
+"Software"), to deal with the Software without restriction, including
+without limitation the rights to use, copy, modify, merge, publish,
+distribute, sublicense, and/or sell copies of the Software, and to
+permit persons to whom the Software is furnished to do so, subject to
+the following conditions:
+
+Redistributions of source code must retain the above copyright notice,
+this list of conditions and the following disclaimers.
+Redistributions in binary form must reproduce the above copyright
+notice, this list of conditions and the following disclaimers in the
+documentation and/or other materials provided with the distribution.
+
+Neither the names of Gabriel A. Weaver, Information Trust Institute,
+University of Illinois at Urbana-Champaign, nor the names of its
+contributors may be used to endorse or promote products derived from
+this Software without specific prior written permission.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND,
+EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF
+MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND
+NONINFRINGEMENT. IN NO EVENT SHALL THE CONTRIBUTORS OR COPYRIGHT
+HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER
+IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR
+IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS WITH THE
+SOFTWARE.
+
+MODIFIED BASED ON CODE UNDER FOLLOwING LICENSE:
+Copyright (c) 2010-2015, Michael Bostock
+All rights reserved.
+
+Redistribution and use in source and binary forms, with or without
+modification, are permitted provided that the following conditions are met:
+
+* Redistributions of source code must retain the above copyright notice, this
+  list of conditions and the following disclaimer.
+
+* Redistributions in binary form must reproduce the above copyright notice,
+  this list of conditions and the following disclaimer in the documentation
+  and/or other materials provided with the distribution.
+
+* The name Michael Bostock may not be used to endorse or promote products
+  derived from this software without specific prior written permission.
+
+THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS"
+AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE
+IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE
+DISCLAIMED. IN NO EVENT SHALL MICHAEL BOSTOCK BE LIABLE FOR ANY DIRECT,
+INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING,
+BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE,
+DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY
+OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING
+NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE,
+EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
+-->
+<meta charset="utf-8">
+<link rel="stylesheet" href="/cptl_highlighting/css/graphs.css"/>
+<style>
+  /**
+   * Styling for node and link annotations
+   */
+  .node_state {
+    stroke:none;
+    fill:none;
+  }
+</style>
+
+<body>
+  <script src="/cptl_highlighting/js/cptl/api/v1.0.0/graphs/socket_graphs_dao.js"></script>
+  <script src="/cptl_highlighting/js/cptl/api/v1.0.0/utils.js"></script>  
+  <script src="/cptl_highlighting/js/jquery/jquery.min.js"></script>
+  <script src="/cptl_highlighting/js/d3/d3.v3.min.js"></script>
+
+  <script>
+    localStorage.setItem("server_base_url", "http://72.36.82.224:443")
+    var server_base_url = localStorage.getItem("server_base_url");
+    if ( server_base_url == null || server_base_url == "" ) {
+      throw new Error("CPTL Server Base URL ('server_base_url') needs to be configured!");
+    }
+    
+    var id_property = "cptlc:hasUUID";
+    
+    /***********************************************************************
+     *  Styling Examples 
+     ************************************************************************/    
+    var link_selector = "relation$=";
+
+    function update_link_style(selector, data_value, link_attr, link_attr_value) {
+      var links = document.querySelectorAll("[" + selector + "'" + data_value + "'" + "]");
+      for ( var i=0; i < links.length; i++) {
+         var link = links[i];
+	 link.setAttribute(link_attr, link_attr_value);
+      }		       
+    }
+
+    var node_selector = "id=";
+			 
+    function update_node_state(selector, data_value, node_state_attr, node_state_attr_value) {
+      var node_gs = document.querySelectorAll("[" + selector + "'" + data_value + "'" + "]");
+      for ( var i=0; i < node_gs.length; i++) {
+         var node_g = node_gs[i];
+	 var node_state_circle = node_g.childNodes[0];		 
+	 node_state_circle.setAttribute(node_state_attr, node_state_attr_value);
+      }		       
+    }
+
+			 
+    /***********************************************************************
+     *  Main Application
+     ************************************************************************/    
+
+    // Initialize the force layout
+    var color = d3.scale.category10();
+    var charge = -1500;
+    var height = 1000;
+    var link_distance = 100;
+    var width = 1000;
+
+    var svg_g = d3.select("body").append("svg")
+      .attr("viewBox", "0 0 " + width + " " + height )
+      .attr("pointer-events", "all")			 
+			.call(d3.behavior.zoom().on("zoom", redraw))
+			.append("svg:g");			 
+
+    load_json_into_localstorage( server_base_url + "/api/v1.0.0/icons", "icons_resolver");    
+    var icons_resolver_str = localStorage.getItem("icons_resolver");
+    var icons_resolver = JSON.parse(icons_resolver_str);
+    
+    var defs_element = svg_g.append("defs");
+    append_icon_defs( server_base_url, icons_resolver, defs_element );
+
+			
+    // Initialize the graph with data
+    var force = d3.layout.force()
+      .charge(charge)
+      .linkDistance(link_distance)
+      .size( [width, height] )
+      .on( "tick", tick );
+
+    var graphs_dao = new SocketGraphsDAO();
+    graphs_dao.config.base_url = server_base_url;
+			
+    var graph_ref = get_parameter_by_name("graph_ref");
+      if ( graph_ref != null && graph_ref != "" ) { 			
+   	graphs_dao.get_graphs(graph_ref, update_graph);
+    } else {
+      console.log("Must supply 'graph_ref' parameter.");
+    }
+
+    /************************************************************************/
+    
+    /**
+     *  Annotate a selection of nodes with attributes
+     *  @param {string} node_selection - The selection of nodes to annotate
+     */
+    function annotate_node_selection(node_selection) {
+        node_selection.enter().append("g")
+		      .attr("rdfs-type", function(d) { return d["rdfs:type"]; })
+		      .attr("id", function(d) { return d[id_property]; })	 
+                      .attr("rdfs-label", function(d) { return d["rdfs:label"]; });
+
+	node_selection.append("circle")
+	    .attr("class", "node_state")
+	    .attr("r", 30);			
+
+        node_selection.append("circle")
+            .attr("class", "node_icon")
+            .attr("r", 20)
+    	    .attr("filter", function(d) { return get_image_url(d); })
+	    .call(drag);
+
+        node_selection.append("title")
+           .text( function(d) { return d["rdfs:label"]; } );
+    }
+
+    /**
+     * Annotate a selection of links with attributes
+     * @param {string} link_selection - The selection of links to annotate
+     */
+    function annotate_link_selection(link_selection) {
+        link_selection.enter().insert("line", ".node")
+            .attr("class", "link")
+            .attr("relation", function(d) { return d["relation"]; })
+            .attr("source", function(d) { return d["source"]; })
+            .attr("target", function(d) { return d["target"]; });
+    }
+    
+    /*
+     * Node Icons
+     */
+    function get_image_url(d) {
+        var types = d["rdfs:type"].split(",");
+        var type = types[0];
+        if ( types.length > 1 ) {
+           type = types[1];   			 
+        }
+        var image_url = "#" + type + "_image";
+        return "url(" + image_url + ")";
+    }
+
+    function append_icon_defs( server_base_url, icons_resolver, defs_element ) {
+      for (var icon_id in icons_resolver) {
+        var image_filter = defs_element.append("filter")
+          .attr("id", icon_id + "_image")
+          .attr("x", "0%")
+          .attr("y", "0%")
+          .attr("height", "100%")
+          .attr("width", "100%")
+          .append("feImage")
+          .attr("xlink:href", server_base_url + "/api/v1.0.0/icons/" + icon_id);
+      }
+    }
+    
+    /*
+     *  Zoom Callbacks
+     */	
+    function redraw() {
+      var svg_g = d3.select("body").select("svg").select("g");
+      svg_g.attr("transform",
+               "translate(" + d3.event.translate + ")" + " scale(" + d3.event.scale + ")");
+    }
+	
+    /*
+     *  Drag Callbacks
+     */	
+    function dragstarted(d) {
+        d3.event.sourceEvent.stopPropagation();
+        d3.select(this).classed("dragging", true);
+    }
+
+    function dragged(d) {
+        d3.select(this).attr("x", d.x = d3.event.x).attr("y", d.y = d3.event.y);
+    }
+
+    function dragended(d) {
+        d3.select(this).classed("dragging", false);
+    }
+	
+    function drag(){
+	return force.drag()
+                .on("dragstart", dragstarted)
+		.on("drag", dragged)
+		.on("dragend", dragended);
+    }	
+
+    /*
+     * D3JS 
+     */
+    function start() {
+        // Initialize Links in DOM			 
+        var link_elements = svg_g.selectAll(".link");
+        var link = link_elements.data( force.links() );
+    
+        annotate_link_selection(link);
+
+	// Initialize Nodes in DOM 
+        var node_elements = svg_g.selectAll(".node");
+        var node = node_elements.data( force.nodes() );
+			 
+        annotate_node_selection(node);			 
+        force.start();
+    }
+
+    function tick() {
+	var node_circles = d3.selectAll("circle");
+	node_circles.attr("cx", function(d) { return d.x; })
+			.attr("cy", function(d) { return d.y; });
+
+        var link_elements = svg_g.selectAll(".link");
+        link_elements.attr("x1", function(d) { return d.source.x; })
+	    .attr("y1", function(d) { return d.source.y; })
+	    .attr("x2", function(d) { return d.target.x; })
+	    .attr("y2", function(d) { return d.target.y; });
+    }
+
+    
+    function update_graph(data, textStatus, jqXHR) {    
+      var nodes = data["nodes"];
+      var links = data["links"];
+
+      // Update the links
+      for (var i=0; i < links.length; i++) {
+        var link = links[i];
+        var source_uuid = link["source"];
+        var target_uuid = link["target"];
+        link["source"] = nodes.map( function(x) { return x[id_property]; }).indexOf(source_uuid);
+	link["target"] = nodes.map( function(x) { return x[id_property]; }).indexOf(target_uuid);		
+      }
+			
+      force.nodes(nodes);
+      force.links(links);
+      start();
+    }
+
+  </script>
+</body>  
