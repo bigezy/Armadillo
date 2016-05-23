@@ -16,8 +16,8 @@ import xml.etree.ElementTree as ET
 
 PORT = 8888
 flag = "a"
-CypsaEnginePath =r"C:\CyPsaProduction\bin\runCyPSA.bat"
-CypsaEngineRoot =r"C:\CyPsaProduction\bin"
+CypsaEnginePath =r"C:\armadillo\Demo\8bus\bin\runCyPSA.bat"
+CypsaEngineRoot =r"C:\armadillo\Demo\8bus\bin"
 globalPath = ""
 
 
