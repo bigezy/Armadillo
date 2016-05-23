@@ -1,0 +1,106 @@
+{
+    "1d446343-c84a-42ff-a8e0-1e45846b2584": {
+	"rdfs:label": "8 Substation All",
+ 	"cptla:graph_join": "graph_ref1=514d63aa-1fcf-423b-880d-168bac34354f&graph_ref2=329e832d-1be2-4094-8722-f91d37595c10&id_field=cptlc:hasUUID&join_field1=rdfs:label&join_field2=enet:hasIPAddressValue",
+	"graph": "graphs/json/8sub.json"
+    },
+
+    "514d63aa-1fcf-423b-880d-168bac34354f": {
+	"rdfs:label":  "CyPSA 8 Substation Model",
+	"graph": "graphs/substation/json/substations.json"
+    }, 
+    
+    "329e832d-1be2-4094-8722-f91d37595c10":{
+	"rdfs:label": "Control Center Network",
+	"rdfs:type": "enet:control_center",
+	"graph": "graphs/control_center_network/json/control_center.json"
+    },
+
+    "4adddaa9-d137-4a0b-ae20-9344e6a2336e":{
+	"rdfs:label": "Odgenville",
+	"rdfs:type": "snet:substation",
+ 	"cptla:graph_join": "graph_ref1=e9adc3b5-ba85-4a0d-82f3-4bec283fe086&graph_ref2=0720ba06-dc7a-46f8-9543-c2caf2676077&id_field=cptlc:hasUUID&join_field1=cptlc:hasURI&join_field2=cptlc:hasURI",
+	"graph": "graphs/substation/json/odgenville.json"
+    },
+    
+    "e9adc3b5-ba85-4a0d-82f3-4bec283fe086": {
+	"rdfs:label":  "Odgenville Substation Yard",
+	"rdfs:type": "syard:substation_yard",
+	"graph": "graphs/substation_yard/json/odgenville.json"
+    },
+    "0720ba06-dc7a-46f8-9543-c2caf2676077": {
+	"rdfs:label":  "Odgenville Substation Network",
+	"rdfs:type": "snet:substation_network",      	
+	"graph": "graphs/substation_network/json/odgenville.json"
+    }, 
+    "9eaf9f4b-4158-42e7-856d-dba88c492236": {
+      "rdfs:label":  "Capital City Substation Network",
+	"rdfs:type": "snet:substation_network",      
+	"graph": "graphs/substation_network/json/capital-city.json"
+    }, 
+  "f4835209-6ca0-402b-860c-6fe79b76cfcf": {
+      "rdfs:label":  "Springfield Substation Yard",
+      "rdfs:type": "syard:substation_yard",      
+      "graph": "graphs/substation_yard/json/springfield.json"
+  }, 
+  "4207225d-50f3-49b1-8b14-19b98862f2f5": {
+      "rdfs:label":  "North Haverbrook Substation Network",
+      "rdfs:type": "snet:substation_network",           
+      "graph": "graphs/substation_network/json/north-haverbrook.json"
+  }, 
+  "eb2a743c-4659-41c8-97b7-148746a45c6a": {
+      "rdfs:label":  "Springfield Substation Network",
+      "rdfs:type": "snet:substation_network",            
+      "graph": "graphs/substation_network/json/springfield.json"
+  }, 
+    "93560eb6-0a80-45c7-91a9-61fa74d45275": {
+	"rdfs:label":  "Haverbrook Substation Network",
+	"rdfs:type": "snet:substation_network",      	
+	"graph": "graphs/substation_network/json/haverbrook.json"
+  }, 
+    "c9752e0a-f4ea-4571-b9d3-721384668538": {
+	"rdfs:label":  "Haverbrook Substation Yard",
+	"rdfs:type": "syard:substation_yard",	
+	"graph": "graphs/substation_yard/json/haverbrook.json"
+  }, 
+    "3d4f90e0-30cb-4daf-ac9f-d14534b34b6a": {
+	"rdfs:label":  "Paris Substation Yard",
+	"rdfs:type": "syard:substation_yard",	
+	"graph": "graphs/substation_yard/json/paris.json"
+  }, 
+    "6456e892-23b1-400e-92ce-9a2cb1167f40": {
+	"rdfs:label":  "North Haverbrook Substation Yard",
+	"rdfs:type": "syard:substation_yard",	
+	"graph": "graphs/substation_yard/json/north-haverbrook.json"
+  }, 
+    "2c21c75f-ab96-41b6-9585-f4feb21575ed": {
+	"rdfs:label":  "Cypress Creek Substation Network",
+	"rdfs:type": "snet:substation_network",      	
+	"graph": "graphs/substation_network/json/cypress-creek.json"
+  }, 
+    "6346def5-775d-4327-875c-4cf942c8ffb6": {
+	"rdfs:label":  "Shelbyville Substation Yard",
+	"rdfs:type": "syard:substation_yard",	
+	"graph": "graphs/substation_yard/json/shelbyville.json"
+  }, 
+    "7f3c36c5-446e-46bd-b616-7d9adb0aaa58": {
+	"rdfs:label":  "Cypress Creek Substation Yard",
+	"rdfs:type": "syard:substation_yard",		
+	"graph": "graphs/substation_yard/json/cypress-creek.json"
+  }, 
+    "6b8459cf-cab0-4488-96d6-4b8e4ec04f08": {
+	"rdfs:label":  "Capital City Substation Yard",
+	"rdfs:type": "syard:substation_yard",			
+	"graph": "graphs/substation_yard/json/capital-city.json"
+  }, 
+    "b4323f39-01dd-47e9-b55e-167c4e52bb02": {
+	"rdfs:label":  "Shelbyville Substation Network",
+	"rdfs:type": "snet:substation_network",      	
+	"graph": "graphs/substation_network/json/shelbyville.json"
+  }, 
+    "c0a53ea9-f565-443c-b621-73380a43803b": {
+	"rdfs:label":  "Paris Substation Network",
+	"rdfs:type": "snet:substation_network",      	
+	"graph": "graphs/substation_network/json/paris.json"
+  }
+}

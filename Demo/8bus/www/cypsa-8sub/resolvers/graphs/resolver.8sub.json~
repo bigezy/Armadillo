@@ -1,0 +1,209 @@
+{
+
+    "capital-city": {
+	"rdfs:label":  "Capital City Substation",
+	"rdfs:type": "cptl-power:substation",
+	"graph": "graphs/substation/json/capital-city.json",
+	"cptl-analysis:graph_join": {
+	    "graph_ref1": "capital-city.yard",
+	    "join_field1": "cptlc:hasURI",
+	    "graph_ref2": "capital-city.network",
+	    "join_field2": "cptlc:hasURI"
+	}
+    },
+
+    "capital-city.yard": {
+	"rdfs:label":  "Capital City Substation Yard",
+	"rdfs:type": "syard:substation_yard",
+	"graph": "graphs/substation_yard/json/capital-city.json"
+    },
+    
+    "capital-city.network": {
+	"rdfs:label":  "Capital City Substation Network",
+	"rdfs:type": "snet:substation_network",      	
+	"graph": "graphs/substation_network/json/capital-city.json"
+    },
+
+    "control-center": {
+	"rdfs:label": "Control Center Network",
+	"rdfs:type": "cptl-power:control_center",
+	"graph": "graphs/control_center/json/control_center.json",
+	"dc:source": "Converted from NPView Firewall Analysis Output"
+    },
+
+    "cypress-creek": {
+	"rdfs:label":  "Cypress Creek Substation",
+	"rdfs:type": "cptl-power:substation",
+	"graph": "graphs/substation/json/cypress-creek.json",
+	"cptl-analysis:graph_join": {
+	    "graph_ref1": "cypress-creek.yard",
+	    "join_field1": "cptlc:hasURI",
+	    "graph_ref2": "cypress-creek.network",
+	    "join_field2": "cptlc:hasURI"
+	}
+    },
+
+    "cypress-creek.yard": {
+	"rdfs:label":  "Cypress Creek Substation Yard",
+	"rdfs:type": "syard:substation_yard",
+	"graph": "graphs/substation_yard/json/cypress-creek.json"
+    },
+        
+    "cypress-creek.network": {
+	"rdfs:label":  "Cypress Creek Substation Network",
+	"rdfs:type": "snet:substation_network",      	
+	"graph": "graphs/substation_network/json/cypress-creek.json"
+    },
+
+    "capital-city_cypress-creek": {
+	"rdfs:label":  "Capital City, Cypress Creek",
+	"rdfs:type": "cptl-power:substation",
+	"graph": "graphs/joins/capital-city_cypress-creek.json"
+    },
+    
+    
+    "haverbrook": {
+	"rdfs:label":  "Haverbrook Substation",
+	"rdfs:type": "cptl-power:substation",
+	"graph": "graphs/substation/json/haverbrook.json",
+	"cptl-analysis:graph_join": {
+	    "graph_ref1": "haverbrook.yard",
+	    "join_field1": "cptlc:hasURI",
+	    "graph_ref2": "haverbrook.network",
+	    "join_field2": "cptlc:hasURI"
+	}
+    },
+    
+    "haverbrook.yard": {
+	"rdfs:label":  "Haverbrook Substation Yard",
+	"rdfs:type": "syard:substation_yard",
+	"graph": "graphs/substation_yard/json/haverbrook.json"
+    },
+        
+    "haverbrook.network": {
+	"rdfs:label":  "Haverbrook Substation Network",
+	"rdfs:type": "snet:substation_network",      	
+	"graph": "graphs/substation_network/json/haverbrook.json"
+    },
+
+    "north-haverbrook": {
+	"rdfs:label":  "North Haverbrook Substation",
+	"rdfs:type": "cptl-power:substation",
+	"graph": "graphs/substation/json/north-haverbrook.json",
+	"cptl-analysis:graph_join": {
+	    "graph_ref1": "north-haverbrook.yard",
+	    "join_field1": "cptlc:hasURI",
+	    "graph_ref2": "north-haverbrook.network",
+	    "join_field2": "cptlc:hasURI"
+	}
+    },
+
+    "north-haverbrook.yard": {
+	"rdfs:label":  "North Haverbrook Substation Yard",
+	"rdfs:type": "syard:substation_yard",
+	"graph": "graphs/substation_yard/json/north-haverbrook.json"
+    },
+        
+    "north-haverbrook.network": {
+	"rdfs:label":  "North Haverbrook Substation Network",
+	"rdfs:type": "snet:substation_network",      	
+	"graph": "graphs/substation_network/json/north-haverbrook.json"
+    },
+
+    "odgenville": {
+	"rdfs:label":  "Odgenville Substation",
+	"rdfs:type": "cptl-power:substation",
+	"graph": "graphs/substation/json/odgenville.json",
+	"cptl-analysis:graph_join": {
+	    "graph_ref1": "odgenville.yard",
+	    "join_field1": "cptlc:hasURI",
+	    "graph_ref2": "odgenville.network",
+	    "join_field2": "cptlc:hasURI"
+	}
+    },
+    
+    "odgenville.yard": {
+	"rdfs:label":  "Odgenville Substation Yard",
+	"rdfs:type": "syard:substation_yard",
+	"graph": "graphs/substation_yard/json/odgenville.json"
+    },
+    
+    "odgenville.network": {
+	"rdfs:label":  "Odgenville Substation Network",
+	"rdfs:type": "snet:substation_network",      	
+	"graph": "graphs/substation_network/json/odgenville.json"
+    },
+
+    "paris": {
+	"rdfs:label":  "Paris Substation",
+	"rdfs:type": "cptl-power:substation",
+	"graph": "graphs/substation/json/paris.json",
+	"cptl-analysis:graph_join": {
+	    "graph_ref1": "paris.yard",
+	    "join_field1": "cptlc:hasURI",
+	    "graph_ref2": "paris.network",
+	    "join_field2": "cptlc:hasURI"
+	}
+    },
+    
+    "paris.yard": {
+	"rdfs:label":  "Paris Substation Yard",
+	"rdfs:type": "syard:substation_yard",
+	"graph": "graphs/substation_yard/json/paris.json"
+    },
+    
+    "paris.network": {
+	"rdfs:label":  "Paris Substation Network",
+	"rdfs:type": "snet:substation_network",      	
+	"graph": "graphs/substation_network/json/paris.json"
+    },
+
+    "shelbyville": {
+	"rdfs:label":  "Shelbyville Substation",
+	"rdfs:type": "cptl-power:substation",
+	"graph": "graphs/substation/json/shelbyville.json",
+	"cptl-analysis:graph_join": {
+	    "graph_ref1": "shelbyville.yard",
+	    "join_field1": "cptlc:hasURI",
+	    "graph_ref2": "shelbyville.network",
+	    "join_field2": "cptlc:hasURI"
+	}
+    },
+    
+    "shelbyville.yard": {
+	"rdfs:label":  "ShelbyvilleSubstation Yard",
+	"rdfs:type": "syard:substation_yard",
+	"graph": "graphs/substation_yard/json/shelbyville.json"
+    },
+    
+    "shelbyville.network": {
+	"rdfs:label":  "Shelbyville Substation Network",
+	"rdfs:type": "snet:substation_network",      	
+	"graph": "graphs/substation_network/json/shelbyville.json"
+    },
+
+    "springfield": {
+	"rdfs:label":  "Springfield Substation",
+	"rdfs:type": "cptl-power:substation",
+	"graph": "graphs/substation/json/springfield.json",
+	"cptl-analysis:graph_join": {
+	    "graph_ref1": "springfield.yard",
+	    "join_field1": "cptlc:hasURI",
+	    "graph_ref2": "springfield.network",
+	    "join_field2": "cptlc:hasURI"
+	}
+    },
+    
+    "springfield.yard": {
+	"rdfs:label":  "Springfield Substation Yard",
+	"rdfs:type": "syard:substation_yard",
+	"graph": "graphs/substation_yard/json/springfield.json"
+    },
+    
+    "springfield.network": {
+	"rdfs:label":  "Springfield Substation Network",
+	"rdfs:type": "snet:substation_network",      	
+	"graph": "graphs/substation_network/json/springfield.json"
+    }
+
+}

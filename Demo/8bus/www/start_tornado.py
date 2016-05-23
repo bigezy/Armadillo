@@ -6,7 +6,9 @@ import os
 import os.path
 import csv
 import json
+import time
 import sys
+import subprocess
 import time
 from watchdog.observers import Observer
 from watchdog.events import FileSystemEventHandler
@@ -14,8 +16,6 @@ import xml.etree.ElementTree as ET
 
 PORT = 8888
 flag = "a"
-projectPath = "C:/CyPsaProduction/projects/8bus/npv/pw_analysis_attack_graph_current.xml"
-projectPathprev = "C:/CyPsaProduction/projects/8bus/npv/pw_analysis_attack_graph_previous.xml"
 CypsaEnginePath =r"C:\CyPsaProduction\bin\runCyPSA.bat"
 CypsaEngineRoot =r"C:\CyPsaProduction\bin"
 globalPath = ""
@@ -66,8 +66,11 @@ class timerSocketHandler(tornado.websocket.WebSocketHandler):
 
     def on_message(self, message):
         global flag
+        s=""
         #self.write_message("hello")
         if flag == "b":
+            #read PID's
+            #save them in an array
             filepath=globalPath+"/pw_analysis_attack_graph_current.xml"
             prevfilepath=globalPath+"/pw_analysis_attack_graph_previous.xml"
             print "This is csvfile path timer "+filepath
@@ -252,7 +255,6 @@ class WebSocketHandler(tornado.websocket.WebSocketHandler):
     def on_close(self):
         pass
 
-
 class CompWebSocketHandler(tornado.websocket.WebSocketHandler):
     def open(self):
         pass
@@ -266,16 +268,61 @@ class CompWebSocketHandler(tornado.websocket.WebSocketHandler):
             writer = csv.writer(fo)
             writer.writerow( ('IP Address', 'Patch') )
             for i in range(length-1):
+                print a[i]
                 writer.writerow( (a[i], 1) )
         finally:
             fo.close()
 
-            #project=(a[length-1].split("/"))
-            #batFileCmd = CypsaEnginePath+" " + project[len(project)-2] +" " + a[length]
-            #from subprocess import Popen
-            #p = Popen(batFileCmd, cwd=CypsaEngineRoot)
-            #stdout, stderr = p.communicate()
+            project=(a[length-1].split("/"))
             #self.write_message(data)
+
+
+    def on_close(self):
+        pass
+
+
+class StopAnalysisWebSocketHandler(tornado.websocket.WebSocketHandler):
+    def open(self):
+        pass
+
+    def on_message(self, message):
+        print "Killing process : %s" % time.ctime()
+        #time.sleep(60)
+        #print "End : %s" % time.ctime()
+        command="taskkill /f"
+        print os.getcwd()
+        file = open('../bin/PIDs.txt', 'r')
+        for line in file:
+            s=line
+            s=s.strip()
+            command=command+" /pid "+s
+        print command
+        os.system(command)
+
+
+    def on_close(self):
+        pass
+
+
+class CypsaAnalysisWebSocketHandler(tornado.websocket.WebSocketHandler):
+    def open(self):
+        pass
+
+    def on_message(self, message):
+        projectinfo=(message.split(","))
+        project=projectinfo[0].split("/")
+        reply="This is Cypsa analysis project: "+projectinfo[0]
+        batFileCmd = CypsaEnginePath+" " + project[len(project)-2] +" " + projectinfo[1]
+        print "Compromised process:"+batFileCmd
+        cwdir=os.getcwd()
+        os.chdir(CypsaEngineRoot)
+        #time.sleep(15)
+        from subprocess import Popen
+        p = Popen(batFileCmd, cwd=CypsaEngineRoot)
+        stdout, stderr = p.communicate()
+        print os.getcwd()
+        os.chdir(cwdir)
+        self.write_message(reply)
 
 
     def on_close(self):
@@ -523,6 +570,8 @@ def make_app():
         (r'/xmlsocket', XMLSocketHandler),
         (r'/xslsocket', XSLSocketHandler),
         (r'/compwebsocket', CompWebSocketHandler),
+        (r'/startcypsasocket',CypsaAnalysisWebSocketHandler),
+        (r'/stopcypsasocket',StopAnalysisWebSocketHandler),
         (r'/compfilewebsocket', CompFileWebSocketHandler),
         (r'/(.*)', tornado.web.StaticFileHandler, {'path': settings['static_path']}),
     ]

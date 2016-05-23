@@ -1,0 +1,320 @@
+{
+  "nodes": [
+    {
+      "rdfs:label": "Cypress Creek TX 4545", 
+      "rdfs:type": "syard:Transformer", 
+      "cptlc:hasURI": "http://Cypress_Creek-TX-4545.yard.cypress-creek.8sub.cypsa.projects.cptl-c.org", 
+      "cptlc:hasUUID": "c9617361-167a-4b47-abdb-1c532df675a7"
+    }, 
+    {
+      "rdfs:label": "Cypress Creek ND 16", 
+      "rdfs:type": "syard:Node", 
+      "cptlc:hasURI": "http://Cypress_Creek-ND-16.yard.cypress-creek.8sub.cypsa.projects.cptl-c.org", 
+      "cptlc:hasUUID": "85ae31c9-2dc1-470b-a9b9-b1799052ad34"
+    }, 
+    {
+      "rdfs:label": "Cypress Creek BRK 1615", 
+      "rdfs:type": "syard:Breaker", 
+      "cptlc:hasURI": "http://Cypress_Creek-BRK-1615.yard.cypress-creek.8sub.cypsa.projects.cptl-c.org", 
+      "cptlc:hasUUID": "a870faa5-02ef-40f9-ac4b-6418f3e9c241"
+    }, 
+    {
+      "rdfs:label": "Cypress Creek ND 15", 
+      "rdfs:type": "syard:Bus", 
+      "cptlc:hasURI": "http://Cypress_Creek-ND-15.yard.cypress-creek.8sub.cypsa.projects.cptl-c.org", 
+      "cptlc:hasUUID": "3ac12698-34d6-43f5-ad37-403b321d05c6"
+    }, 
+    {
+      "rdfs:label": "Cypress Creek BRK 1519", 
+      "rdfs:type": "syard:Breaker", 
+      "cptlc:hasURI": "http://Cypress_Creek-BRK-1519.yard.cypress-creek.8sub.cypsa.projects.cptl-c.org", 
+      "cptlc:hasUUID": "43b2b910-588e-4285-9b05-e1f195777fcd"
+    }, 
+    {
+      "rdfs:label": "Cypress Creek BRK 1815", 
+      "rdfs:type": "syard:Breaker", 
+      "cptlc:hasURI": "http://Cypress_Creek-BRK-1815.yard.cypress-creek.8sub.cypsa.projects.cptl-c.org", 
+      "cptlc:hasUUID": "91c14f8b-6585-4dd1-88b0-862f4abbb9ac"
+    }, 
+    {
+      "rdfs:label": "Cypress Creek ND 18", 
+      "rdfs:type": "syard:Node", 
+      "cptlc:hasURI": "http://Cypress_Creek-ND-18.yard.cypress-creek.8sub.cypsa.projects.cptl-c.org", 
+      "cptlc:hasUUID": "843e8890-ce0e-438b-a998-1eb3b8190bdd"
+    }, 
+    {
+      "rdfs:label": "Cypress Creek BRK 1715", 
+      "rdfs:type": "syard:Breaker", 
+      "cptlc:hasURI": "http://Cypress_Creek-BRK-1715.yard.cypress-creek.8sub.cypsa.projects.cptl-c.org", 
+      "cptlc:hasUUID": "9e40dffb-768a-4769-9667-97f945e7a2d1"
+    }, 
+    {
+      "rdfs:label": "Cypress Creek ND 17", 
+      "rdfs:type": "syard:Node", 
+      "cptlc:hasURI": "http://Cypress_Creek-ND-17.yard.cypress-creek.8sub.cypsa.projects.cptl-c.org", 
+      "cptlc:hasUUID": "74988e38-e9b1-4be6-b3ff-303332a5f1fe"
+    }, 
+    {
+      "rdfs:label": "Cypress Creek BRK 1719", 
+      "rdfs:type": "syard:Breaker", 
+      "cptlc:hasURI": "http://Cypress_Creek-BRK-1719.yard.cypress-creek.8sub.cypsa.projects.cptl-c.org", 
+      "cptlc:hasUUID": "82e11c11-3759-4f6b-b4bf-61d448836634"
+    }, 
+    {
+      "rdfs:label": "Cypress Creek ND 19", 
+      "rdfs:type": "syard:Bus", 
+      "cptlc:hasURI": "http://Cypress_Creek-ND-19.yard.cypress-creek.8sub.cypsa.projects.cptl-c.org", 
+      "cptlc:hasUUID": "d7a6a8ba-ca6d-4c49-8e1f-2eff716891d0"
+    }, 
+    {
+      "rdfs:label": "Cypress Creek BRK 2019", 
+      "rdfs:type": "syard:Breaker", 
+      "cptlc:hasURI": "http://Cypress_Creek-BRK-2019.yard.cypress-creek.8sub.cypsa.projects.cptl-c.org", 
+      "cptlc:hasUUID": "a4b7cafd-153e-40e5-880b-3c4d6dde8392"
+    }, 
+    {
+      "rdfs:label": "Cypress Creek ND 20", 
+      "rdfs:type": "syard:Node", 
+      "cptlc:hasURI": "http://Cypress_Creek-ND-20.yard.cypress-creek.8sub.cypsa.projects.cptl-c.org", 
+      "cptlc:hasUUID": "cf1c7737-67e2-4429-93b9-61f2d9cf1f73"
+    }, 
+    {
+      "rdfs:label": "Cypress Creek BRK 1925", 
+      "rdfs:type": "syard:Breaker", 
+      "cptlc:hasURI": "http://Cypress_Creek-BRK-1925.yard.cypress-creek.8sub.cypsa.projects.cptl-c.org", 
+      "cptlc:hasUUID": "ba190399-73f3-4c4b-bc91-4ac1625cefed"
+    }, 
+    {
+      "rdfs:label": "Cypress Creek ND 25", 
+      "rdfs:type": "syard:Bus", 
+      "cptlc:hasURI": "http://Cypress_Creek-ND-25.yard.cypress-creek.8sub.cypsa.projects.cptl-c.org", 
+      "cptlc:hasUUID": "843abf18-47e8-4e42-9eb0-622f4d5b0b54"
+    }, 
+    {
+      "rdfs:label": "Cypress Creek BRK 2225", 
+      "rdfs:type": "syard:Breaker", 
+      "cptlc:hasURI": "http://Cypress_Creek-BRK-2225.yard.cypress-creek.8sub.cypsa.projects.cptl-c.org", 
+      "cptlc:hasUUID": "a74effb7-2e56-4c1d-86be-e55edae3854f"
+    }, 
+    {
+      "rdfs:label": "Cypress Creek ND 22", 
+      "rdfs:type": "syard:Node", 
+      "cptlc:hasURI": "http://Cypress_Creek-ND-22.yard.cypress-creek.8sub.cypsa.projects.cptl-c.org", 
+      "cptlc:hasUUID": "099927f3-79f8-40ae-8518-ceccbeddc0b2"
+    }, 
+    {
+      "rdfs:label": "Cypress Creek BRK 2425", 
+      "rdfs:type": "syard:Breaker", 
+      "cptlc:hasURI": "http://Cypress_Creek-BRK-2425.yard.cypress-creek.8sub.cypsa.projects.cptl-c.org", 
+      "cptlc:hasUUID": "dd7505ae-411b-4ec9-9221-3fd1aad01b50"
+    }, 
+    {
+      "rdfs:label": "Cypress Creek ND 24", 
+      "rdfs:type": "syard:Node", 
+      "cptlc:hasURI": "http://Cypress_Creek-ND-24.yard.cypress-creek.8sub.cypsa.projects.cptl-c.org", 
+      "cptlc:hasUUID": "bb32aa93-9724-4bd4-8643-240cf06e3df2"
+    }, 
+    {
+      "rdfs:label": "Cypress Creek BRK 2125", 
+      "rdfs:type": "syard:Breaker", 
+      "cptlc:hasURI": "http://Cypress_Creek-BRK-2125.yard.cypress-creek.8sub.cypsa.projects.cptl-c.org", 
+      "cptlc:hasUUID": "9a4ed777-d628-4136-8460-e1e73718cded"
+    }, 
+    {
+      "rdfs:label": "Cypress Creek ND 21", 
+      "rdfs:type": "syard:Node", 
+      "cptlc:hasURI": "http://Cypress_Creek-ND-21.yard.cypress-creek.8sub.cypsa.projects.cptl-c.org", 
+      "cptlc:hasUUID": "513899d7-8143-4922-99b7-68547cca2ba0"
+    }, 
+    {
+      "rdfs:label": "Cypress Creek BRK 2325", 
+      "rdfs:type": "syard:Breaker", 
+      "cptlc:hasURI": "http://Cypress_Creek-BRK-2325.yard.cypress-creek.8sub.cypsa.projects.cptl-c.org", 
+      "cptlc:hasUUID": "90777d70-4a66-4f6e-9870-4b8d0b3e1e7c"
+    }, 
+    {
+      "rdfs:label": "Cypress Creek ND 23", 
+      "rdfs:type": "syard:Node", 
+      "cptlc:hasURI": "http://Cypress_Creek-ND-23.yard.cypress-creek.8sub.cypsa.projects.cptl-c.org", 
+      "cptlc:hasUUID": "b48f3c65-dfc8-4f52-a98d-829d190feae0"
+    }, 
+    {
+      "rdfs:label": "Haverbrook ND 36", 
+      "rdfs:type": "cptlc:Asset", 
+      "cptlc:hasURI": "http://Haverbrook-ND-36.yard.haverbrook.8sub.cypsa.projects.cptl-c.org", 
+      "cptlc:hasUUID": "014aa122-014c-4e38-b074-c70d7f28457f"
+    }, 
+    {
+      "rdfs:label": "Odgenville ND 6", 
+      "rdfs:type": "cptlc:Asset", 
+      "cptlc:hasURI": "http://Odgenville-ND-6.yard.odgenville.8sub.cypsa.projects.cptl-c.org", 
+      "cptlc:hasUUID": "ec8f9af2-491a-45c4-8c1d-965dbcf57f43"
+    }, 
+    {
+      "rdfs:label": "Cypress Creek UN Gen2", 
+      "rdfs:type": "syard:Generator", 
+      "cptlc:hasURI": "http://Cypress_Creek-UN-Gen2.yard.cypress-creek.8sub.cypsa.projects.cptl-c.org", 
+      "cptlc:hasUUID": "a916dc94-c63c-4ab7-871b-7537107794cc"
+    }, 
+    {
+      "rdfs:label": "Shelbyville ND 28", 
+      "rdfs:type": "cptlc:Asset", 
+      "cptlc:hasURI": "http://Shelbyville-ND-28.yard.shelbyville.8sub.cypsa.projects.cptl-c.org", 
+      "cptlc:hasUUID": "74d4399a-3fcc-49f2-a105-b14afde02529"
+    }, 
+    {
+      "rdfs:label": "Paris ND 48", 
+      "rdfs:type": "cptlc:Asset", 
+      "cptlc:hasURI": "http://Paris-ND-48.yard.paris.8sub.cypsa.projects.cptl-c.org", 
+      "cptlc:hasUUID": "78e37d70-c601-489d-a189-9d6aaadbcf41"
+    }, 
+    {
+      "rdfs:label": "North Haverbrook ND 11", 
+      "rdfs:type": "cptlc:Asset", 
+      "cptlc:hasURI": "http://North_Haverbrook-ND-11.yard.north-haverbrook.8sub.cypsa.projects.cptl-c.org", 
+      "cptlc:hasUUID": "66f2e3e0-097f-413b-bc34-936d5643551a"
+    }
+  ], 
+  "links": [
+    {
+      "source": "c9617361-167a-4b47-abdb-1c532df675a7", 
+      "relation": "syard:hasLine", 
+      "target": "85ae31c9-2dc1-470b-a9b9-b1799052ad34"
+    }, 
+    {
+      "source": "85ae31c9-2dc1-470b-a9b9-b1799052ad34", 
+      "relation": "syard:hasLine", 
+      "target": "a870faa5-02ef-40f9-ac4b-6418f3e9c241"
+    }, 
+    {
+      "source": "a870faa5-02ef-40f9-ac4b-6418f3e9c241", 
+      "relation": "syard:hasLine", 
+      "target": "3ac12698-34d6-43f5-ad37-403b321d05c6"
+    }, 
+    {
+      "source": "3ac12698-34d6-43f5-ad37-403b321d05c6", 
+      "relation": "syard:hasLine", 
+      "target": "9e40dffb-768a-4769-9667-97f945e7a2d1"
+    }, 
+    {
+      "source": "3ac12698-34d6-43f5-ad37-403b321d05c6", 
+      "relation": "syard:hasLine", 
+      "target": "43b2b910-588e-4285-9b05-e1f195777fcd"
+    }, 
+    {
+      "source": "3ac12698-34d6-43f5-ad37-403b321d05c6", 
+      "relation": "syard:hasLine", 
+      "target": "91c14f8b-6585-4dd1-88b0-862f4abbb9ac"
+    }, 
+    {
+      "source": "91c14f8b-6585-4dd1-88b0-862f4abbb9ac", 
+      "relation": "syard:hasLine", 
+      "target": "843e8890-ce0e-438b-a998-1eb3b8190bdd"
+    }, 
+    {
+      "source": "843e8890-ce0e-438b-a998-1eb3b8190bdd", 
+      "relation": "syard:hasLine", 
+      "target": "014aa122-014c-4e38-b074-c70d7f28457f"
+    }, 
+    {
+      "source": "9e40dffb-768a-4769-9667-97f945e7a2d1", 
+      "relation": "syard:hasLine", 
+      "target": "74988e38-e9b1-4be6-b3ff-303332a5f1fe"
+    }, 
+    {
+      "source": "74988e38-e9b1-4be6-b3ff-303332a5f1fe", 
+      "relation": "syard:hasLine", 
+      "target": "82e11c11-3759-4f6b-b4bf-61d448836634"
+    }, 
+    {
+      "source": "74988e38-e9b1-4be6-b3ff-303332a5f1fe", 
+      "relation": "syard:hasLine", 
+      "target": "ec8f9af2-491a-45c4-8c1d-965dbcf57f43"
+    }, 
+    {
+      "source": "82e11c11-3759-4f6b-b4bf-61d448836634", 
+      "relation": "syard:hasLine", 
+      "target": "d7a6a8ba-ca6d-4c49-8e1f-2eff716891d0"
+    }, 
+    {
+      "source": "d7a6a8ba-ca6d-4c49-8e1f-2eff716891d0", 
+      "relation": "syard:hasLine", 
+      "target": "43b2b910-588e-4285-9b05-e1f195777fcd"
+    }, 
+    {
+      "source": "d7a6a8ba-ca6d-4c49-8e1f-2eff716891d0", 
+      "relation": "syard:hasLine", 
+      "target": "a4b7cafd-153e-40e5-880b-3c4d6dde8392"
+    }, 
+    {
+      "source": "a4b7cafd-153e-40e5-880b-3c4d6dde8392", 
+      "relation": "syard:hasLine", 
+      "target": "cf1c7737-67e2-4429-93b9-61f2d9cf1f73"
+    }, 
+    {
+      "source": "cf1c7737-67e2-4429-93b9-61f2d9cf1f73", 
+      "relation": "syard:hasLine", 
+      "target": "a916dc94-c63c-4ab7-871b-7537107794cc"
+    }, 
+    {
+      "source": "ba190399-73f3-4c4b-bc91-4ac1625cefed", 
+      "relation": "syard:hasLine", 
+      "target": "843abf18-47e8-4e42-9eb0-622f4d5b0b54"
+    }, 
+    {
+      "source": "843abf18-47e8-4e42-9eb0-622f4d5b0b54", 
+      "relation": "syard:hasLine", 
+      "target": "a74effb7-2e56-4c1d-86be-e55edae3854f"
+    }, 
+    {
+      "source": "843abf18-47e8-4e42-9eb0-622f4d5b0b54", 
+      "relation": "syard:hasLine", 
+      "target": "dd7505ae-411b-4ec9-9221-3fd1aad01b50"
+    }, 
+    {
+      "source": "843abf18-47e8-4e42-9eb0-622f4d5b0b54", 
+      "relation": "syard:hasLine", 
+      "target": "9a4ed777-d628-4136-8460-e1e73718cded"
+    }, 
+    {
+      "source": "843abf18-47e8-4e42-9eb0-622f4d5b0b54", 
+      "relation": "syard:hasLine", 
+      "target": "90777d70-4a66-4f6e-9870-4b8d0b3e1e7c"
+    }, 
+    {
+      "source": "a74effb7-2e56-4c1d-86be-e55edae3854f", 
+      "relation": "syard:hasLine", 
+      "target": "099927f3-79f8-40ae-8518-ceccbeddc0b2"
+    }, 
+    {
+      "source": "099927f3-79f8-40ae-8518-ceccbeddc0b2", 
+      "relation": "syard:hasLine", 
+      "target": "74d4399a-3fcc-49f2-a105-b14afde02529"
+    }, 
+    {
+      "source": "dd7505ae-411b-4ec9-9221-3fd1aad01b50", 
+      "relation": "syard:hasLine", 
+      "target": "bb32aa93-9724-4bd4-8643-240cf06e3df2"
+    }, 
+    {
+      "source": "bb32aa93-9724-4bd4-8643-240cf06e3df2", 
+      "relation": "syard:hasLine", 
+      "target": "78e37d70-c601-489d-a189-9d6aaadbcf41"
+    }, 
+    {
+      "source": "9a4ed777-d628-4136-8460-e1e73718cded", 
+      "relation": "syard:hasLine", 
+      "target": "513899d7-8143-4922-99b7-68547cca2ba0"
+    }, 
+    {
+      "source": "513899d7-8143-4922-99b7-68547cca2ba0", 
+      "relation": "syard:hasLine", 
+      "target": "66f2e3e0-097f-413b-bc34-936d5643551a"
+    }, 
+    {
+      "source": "90777d70-4a66-4f6e-9870-4b8d0b3e1e7c", 
+      "relation": "syard:hasLine", 
+      "target": "b48f3c65-dfc8-4f52-a98d-829d190feae0"
+    }
+  ]
+}

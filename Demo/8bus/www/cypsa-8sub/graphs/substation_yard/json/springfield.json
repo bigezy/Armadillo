@@ -1,0 +1,166 @@
+{
+  "nodes": [
+    {
+      "rdfs:label": "Springfield UN Gen5", 
+      "rdfs:type": "syard:Generator", 
+      "cptlc:hasURI": "http://Springfield-UN-Gen5.yard.springfield.8sub.cypsa.projects.cptl-c.org", 
+      "cptlc:hasUUID": "4e213ea2-35ca-4302-ac40-2e6fb489aaa3"
+    }, 
+    {
+      "rdfs:label": "Springfield ND 43", 
+      "rdfs:type": "syard:Node", 
+      "cptlc:hasURI": "http://Springfield-ND-43.yard.springfield.8sub.cypsa.projects.cptl-c.org", 
+      "cptlc:hasUUID": "2316dbec-6fb4-4a7a-a99b-0a8a0a4a0929"
+    }, 
+    {
+      "rdfs:label": "Springfield BRK 4341", 
+      "rdfs:type": "syard:Breaker", 
+      "cptlc:hasURI": "http://Springfield-BRK-4341.yard.springfield.8sub.cypsa.projects.cptl-c.org", 
+      "cptlc:hasUUID": "f39a7ddf-3908-4daf-8e29-e281cd876c0c"
+    }, 
+    {
+      "rdfs:label": "Springfield ND 41", 
+      "rdfs:type": "syard:Bus", 
+      "cptlc:hasURI": "http://Springfield-ND-41.yard.springfield.8sub.cypsa.projects.cptl-c.org", 
+      "cptlc:hasUUID": "2b68bfec-35df-4e6e-b694-6469e4504d5e"
+    }, 
+    {
+      "rdfs:label": "Springfield BRK 3941", 
+      "rdfs:type": "syard:Breaker", 
+      "cptlc:hasURI": "http://Springfield-BRK-3941.yard.springfield.8sub.cypsa.projects.cptl-c.org", 
+      "cptlc:hasUUID": "a3a7b489-8c9c-47a7-8e5a-617786f166aa"
+    }, 
+    {
+      "rdfs:label": "Springfield ND 39", 
+      "rdfs:type": "syard:Node", 
+      "cptlc:hasURI": "http://Springfield-ND-39.yard.springfield.8sub.cypsa.projects.cptl-c.org", 
+      "cptlc:hasUUID": "fab8510a-d64e-481b-aeba-274db23ae766"
+    }, 
+    {
+      "rdfs:label": "Springfield BRK 4441", 
+      "rdfs:type": "syard:Breaker", 
+      "cptlc:hasURI": "http://Springfield-BRK-4441.yard.springfield.8sub.cypsa.projects.cptl-c.org", 
+      "cptlc:hasUUID": "80535f3d-13b2-406f-9798-23f6ab8027da"
+    }, 
+    {
+      "rdfs:label": "Springfield ND 44", 
+      "rdfs:type": "syard:Node", 
+      "cptlc:hasURI": "http://Springfield-ND-44.yard.springfield.8sub.cypsa.projects.cptl-c.org", 
+      "cptlc:hasUUID": "3ca757dc-7c1e-4aa3-ba6c-57c5e8e6a6fa"
+    }, 
+    {
+      "rdfs:label": "Springfield BRK 4142", 
+      "rdfs:type": "syard:Breaker", 
+      "cptlc:hasURI": "http://Springfield-BRK-4142.yard.springfield.8sub.cypsa.projects.cptl-c.org", 
+      "cptlc:hasUUID": "9766a375-19b1-45dd-8891-8ebf7b8ce9e4"
+    }, 
+    {
+      "rdfs:label": "Springfield ND 42", 
+      "rdfs:type": "syard:Node", 
+      "cptlc:hasURI": "http://Springfield-ND-42.yard.springfield.8sub.cypsa.projects.cptl-c.org", 
+      "cptlc:hasUUID": "2cdd062a-b1fd-4e00-9d9c-3f31ab506715"
+    }, 
+    {
+      "rdfs:label": "Springfield BRK 4041", 
+      "rdfs:type": "syard:Breaker", 
+      "cptlc:hasURI": "http://Springfield-BRK-4041.yard.springfield.8sub.cypsa.projects.cptl-c.org", 
+      "cptlc:hasUUID": "934dc8b6-41f0-4968-adbc-5045cf218585"
+    }, 
+    {
+      "rdfs:label": "Springfield ND 40", 
+      "rdfs:type": "syard:Node", 
+      "cptlc:hasURI": "http://Springfield-ND-40.yard.springfield.8sub.cypsa.projects.cptl-c.org", 
+      "cptlc:hasUUID": "1977bb6d-cd4f-45ed-b4be-945822773cff"
+    }, 
+    {
+      "rdfs:label": "Haverbrook ND 37", 
+      "rdfs:type": "cptlc:Asset", 
+      "cptlc:hasURI": "http://Haverbrook-ND-37.yard.haverbrook.8sub.cypsa.projects.cptl-c.org", 
+      "cptlc:hasUUID": "aec929cb-d172-415a-bfa6-dfe5ffc5520b"
+    }, 
+    {
+      "rdfs:label": "Paris ND 51", 
+      "rdfs:type": "cptlc:Asset", 
+      "cptlc:hasURI": "http://Paris-ND-51.yard.paris.8sub.cypsa.projects.cptl-c.org", 
+      "cptlc:hasUUID": "46d6a8f2-7b44-4f7b-b3f7-446cca40a69e"
+    }, 
+    {
+      "rdfs:label": "Haverbrook ND 38", 
+      "rdfs:type": "cptlc:Asset", 
+      "cptlc:hasURI": "http://Haverbrook-ND-38.yard.haverbrook.8sub.cypsa.projects.cptl-c.org", 
+      "cptlc:hasUUID": "33df492c-261e-4814-81bf-54f6f1d98bcb"
+    }
+  ], 
+  "links": [
+    {
+      "source": "4e213ea2-35ca-4302-ac40-2e6fb489aaa3", 
+      "relation": "syard:hasLine", 
+      "target": "2316dbec-6fb4-4a7a-a99b-0a8a0a4a0929"
+    }, 
+    {
+      "source": "2316dbec-6fb4-4a7a-a99b-0a8a0a4a0929", 
+      "relation": "syard:hasLine", 
+      "target": "f39a7ddf-3908-4daf-8e29-e281cd876c0c"
+    }, 
+    {
+      "source": "f39a7ddf-3908-4daf-8e29-e281cd876c0c", 
+      "relation": "syard:hasLine", 
+      "target": "2b68bfec-35df-4e6e-b694-6469e4504d5e"
+    }, 
+    {
+      "source": "2b68bfec-35df-4e6e-b694-6469e4504d5e", 
+      "relation": "syard:hasLine", 
+      "target": "a3a7b489-8c9c-47a7-8e5a-617786f166aa"
+    }, 
+    {
+      "source": "2b68bfec-35df-4e6e-b694-6469e4504d5e", 
+      "relation": "syard:hasLine", 
+      "target": "80535f3d-13b2-406f-9798-23f6ab8027da"
+    }, 
+    {
+      "source": "2b68bfec-35df-4e6e-b694-6469e4504d5e", 
+      "relation": "syard:hasLine", 
+      "target": "9766a375-19b1-45dd-8891-8ebf7b8ce9e4"
+    }, 
+    {
+      "source": "2b68bfec-35df-4e6e-b694-6469e4504d5e", 
+      "relation": "syard:hasLine", 
+      "target": "934dc8b6-41f0-4968-adbc-5045cf218585"
+    }, 
+    {
+      "source": "a3a7b489-8c9c-47a7-8e5a-617786f166aa", 
+      "relation": "syard:hasLine", 
+      "target": "fab8510a-d64e-481b-aeba-274db23ae766"
+    }, 
+    {
+      "source": "fab8510a-d64e-481b-aeba-274db23ae766", 
+      "relation": "syard:hasLine", 
+      "target": "aec929cb-d172-415a-bfa6-dfe5ffc5520b"
+    }, 
+    {
+      "source": "80535f3d-13b2-406f-9798-23f6ab8027da", 
+      "relation": "syard:hasLine", 
+      "target": "3ca757dc-7c1e-4aa3-ba6c-57c5e8e6a6fa"
+    }, 
+    {
+      "source": "9766a375-19b1-45dd-8891-8ebf7b8ce9e4", 
+      "relation": "syard:hasLine", 
+      "target": "2cdd062a-b1fd-4e00-9d9c-3f31ab506715"
+    }, 
+    {
+      "source": "2cdd062a-b1fd-4e00-9d9c-3f31ab506715", 
+      "relation": "syard:hasLine", 
+      "target": "46d6a8f2-7b44-4f7b-b3f7-446cca40a69e"
+    }, 
+    {
+      "source": "934dc8b6-41f0-4968-adbc-5045cf218585", 
+      "relation": "syard:hasLine", 
+      "target": "1977bb6d-cd4f-45ed-b4be-945822773cff"
+    }, 
+    {
+      "source": "1977bb6d-cd4f-45ed-b4be-945822773cff", 
+      "relation": "syard:hasLine", 
+      "target": "33df492c-261e-4814-81bf-54f6f1d98bcb"
+    }
+  ]
+}

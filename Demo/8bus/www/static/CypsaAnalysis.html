@@ -38,9 +38,9 @@
 <script type='text/javascript' src="http://code.jquery.com/ui/1.11.4/jquery-ui.min.js"></script>
 <script type='text/javascript' src="http://bost.ocks.org/mike/fisheye/fisheye.js?0.0.3"></script>
 <script type='text/javascript'>
-function selectProject(path)
+function selectProject(path,entry)
 {
-		window.location = '/static/CypsaAnalysisProject.html?project=' + path;
+		window.location = '/static/CypsaAnalysisProject.html?project=' + path +'&entryNode='+entry;
 	}
 </script>
 </head>
@@ -128,7 +128,7 @@ function selectProject(path)
 				<table style="align:center;">
 				<tr >
 				<td>Project Link &nbsp; &nbsp; </td>
-				<td><input value="../projects/8bus/npv" id="txtSelectProject" name="project" style="width: 350px;" type="text" placeholder="Please enter Project link"></input>
+				<td><input id="txtSelectProject" name="project" style="width: 350px;" type="text" placeholder="Please enter Project link"></input>
 				</td>
 				</tr>	
 				<tr>
@@ -136,13 +136,13 @@ function selectProject(path)
 				</tr>
 				<tr>
 				<td>Entry Node IP&nbsp; &nbsp; </td>
-				<td><input value="10.31.1.201" id="txtEntryPoint" name="project" style="width: 350px;" type="text" placeholder="Please enter entry node IP"></input></td>
+				<td><input id="txtEntryPoint" name="project" style="width: 350px;" type="text" placeholder="Please enter entry node IP"></input></td>
 				</tr>
 				<tr>
 				<td colspan="2">&nbsp</td>
 				</tr>				
 				<tr>
-				<td colspan="3"><center><input type="button" onclick="selectProject(document.getElementById('txtSelectProject').value)" class="btn btn-info" value="Select"/></center>
+				<td colspan="3"><center><input type="button" onclick="selectProject(document.getElementById('txtSelectProject').value,document.getElementById('txtEntryPoint').value)" class="btn btn-info" value="Select"/></center>
 				</td>
 				</tr>
 				

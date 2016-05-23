@@ -1,0 +1,267 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+ copyright (c) 2015, Gabriel A. Weaver, Information Trust Institute
+   at the University of Illinois, Urbana-Champaign.
+
+  This file is part of the Cyber-Physical Topology Language for
+    the Power domain.
+
+  This ontology is available under the Creative Commons 
+  Attribution-ShareAlike License.  Details about this license
+  are available at the following URL:
+
+  http://creativecommons.org/licenses/by-sa/3.0/legalcode 
+-->
+
+<!DOCTYPE rdf:RDF [
+    <!ENTITY foaf "http://xmlns.com/foaf/0.1/" >
+    <!ENTITY owl "http://www.w3.org/2002/07/owl#" >
+    <!ENTITY dc "http://purl.org/dc/elements/1.1/" >
+    <!ENTITY xsd "http://www.w3.org/2001/XMLSchema#" >
+    <!ENTITY devos "http://cptl-c.org/device/2015/05/os/" >
+    <!ENTITY rdfs "http://www.w3.org/2000/01/rdf-schema#" >
+    <!ENTITY rdf "http://www.w3.org/1999/02/22-rdf-syntax-ns#" >
+]>
+
+<rdf:RDF
+    xmlns:dc="http://purl.org/dc/elements/1.1/"
+    xmlns:foaf="http://xmlns.com/foaf/0.1/"
+    xmlns:owl="http://www.w3.org/2002/07/owl#"
+    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+    xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+    xmlns:devos="http://cptl-c.org/device/2015/05/os/">
+
+  <owl:Ontology rdf:about="http://cptl-c.org/device/2015/05/os">
+    <dc:title>A rudimentary ontology for constructs within an Operating System</dc:title>
+    <dc:description>OS-level data structures to describe systems.</dc:description>
+  </owl:Ontology>
+
+  <owl:Class rdf:about="http://cptl-c.org/device/2015/05/os/Device">
+    <rdfs:subClassOf rdf:resource="http://cptl-c.org/core/2015/05/core/Asset"/>
+    <rdfs:label xml:lang="en">Device</rdfs:label>
+    <rdfs:comment>In computing, an input device is a peripheral (piece
+    of computer hardware equipment) used to provide data and control
+    signals to an information processing system such as a computer or
+    other information appliance. Examples of input devices include
+    keyboards, mice, scanners, digital cameras and joysticks.
+    (http://en.wikipedia.org/wiki/Input_device)</rdfs:comment>
+  </owl:Class>
+
+  <owl:Class rdf:about="http://cptl-c.org/device/2015/05/os/DevicePath">
+    <rdfs:subClassOf rdf:resource="http://cptl-c.org/core/2015/05/core/Path"/>
+    <rdfs:label xml:lang="en">Device Path</rdfs:label>
+  </owl:Class>
+  
+  <owl:Class rdf:about="http://cptl-c.org/device/2015/05/os/File">
+    <rdfs:subClassOf rdf:resource="http://cptl-c.org/core/2015/05/core/Asset"/>
+    <rdfs:label xml:lang="en">File</rdfs:label>
+    <rdfs:comment>A computer file is a resource for storing
+    information, which is available to a computer program and is
+    usually based on some kind of durable storage.
+    (http://en.wikipedia.org/wiki/Computer_file)</rdfs:comment>
+  </owl:Class>
+  
+  <owl:Class rdf:about="http://cptl-c.org/device/2015/05/os/GID">
+    <rdfs:label xml:lang="en">Group Identifier</rdfs:label>
+  </owl:Class>
+  
+  <owl:Class rdf:about="http://cptl-c.org/device/2015/05/os/PID">
+    <rdfs:label xml:lang="en">Process Identifier</rdfs:label>
+  </owl:Class>
+  
+  <owl:Class rdf:about="http://cptl-c.org/device/2015/05/os/Process">
+    <rdfs:subClassOf rdf:resource="http://cptl-c.org/core/2015/05/core/Asset"/>
+    <rdfs:label xml:lang="en">Process</rdfs:label>
+    <rdfs:comment>In computing, a process is an instance of a computer
+    program that is being executed.  It contains the program code and
+    its current activity.  Depending on the operating system (OS), a
+    process may be made up of multiple threads of execution that
+    execute instructions
+    concurrently. (http://en.wikipedia.org/wiki/Process (computing))</rdfs:comment>
+  </owl:Class>
+
+  <owl:Class rdf:about="http://cptl-c.org/device/2015/05/os/SID">
+    <rdfs:label xml:lang="en">Security Identifier</rdfs:label>
+  </owl:Class>
+  
+  <owl:Class rdf:about="http://cptl-c.org/device/2015/05/os/UID">
+    <rdfs:label xml:lang="en">User Identifier</rdfs:label>
+  </owl:Class>
+  
+  <owl:Class rdf:about="http://cptl-c.org/device/2015/05/os/Username">
+    <rdfs:label xml:lang="en">Username</rdfs:label>
+  </owl:Class>
+
+  <!-- Relations -->
+  <owl:ObjectProperty
+      rdf:about="http://cptl-c.org/device/2015/05/os/hasCommunicationFlow">
+    <rdfs:subClassOf rdf:resource="http://cptl-c.org/core/2015/05/core/hasLink"/>
+    <rdfs:label xml:lang="en">Has Communications Flow</rdfs:label>
+    <rdfs:comment>A general communications flow betwen two processes,
+    whether on the same host or not.</rdfs:comment>
+    <rdfs:domain rdf:resource="&devos;Process"/>
+    <rdfs:range rdf:resource="&devos;Process"/>    
+  </owl:ObjectProperty>
+
+  <owl:ObjectProperty
+      rdf:about="http://cptl-c.org/device/2015/05/os/hasIPC">
+    <rdfs:subClassOf rdf:resource="http://cptl-c.org/device/2015/05/os/hasCommunicationFlow"/>
+    <rdfs:label xml:lang="en">Has Interprocess Communications</rdfs:label>
+    <rdfs:comment>In computer science, inter-process communication
+    (IPC) is the activity of sharing data across multiple and commonly
+    specialized processes using communication protocols.
+    (http://en.wikipedia.org/wiki/Inter-process_communication) </rdfs:comment>
+    <rdfs:domain rdf:resource="&devos;Process"/>
+    <rdfs:range rdf:resource="&devos;Process"/>    
+  </owl:ObjectProperty>
+
+  <owl:ObjectProperty
+      rdf:about="http://cptl-c.org/device/2015/05/os/isProcessOwner">
+    <rdfs:label xml:lang="en">Is Process Owner</rdfs:label>
+    <rdfs:comment>A relation to capture the process owner.</rdfs:comment>
+    <rdfs:domain rdf:resource="&foaf;OnlineAccount"/>
+    <rdfs:range rdf:resource="&devos;Process"/>
+  </owl:ObjectProperty>
+   
+  <owl:ObjectProperty
+      rdf:about="http://cptl-c.org/device/2015/05/os/accessesFile">
+    <rdfs:subClassOf rdf:resource="http://cptl-c.org/core/2015/05/core/hasLink"/>
+    <rdfs:label xml:lang="en">Accesses File</rdfs:label>
+    <rdfs:comment>A relation to capture file accesses by a process.</rdfs:comment>
+    <rdfs:domain rdf:resource="&devos;Process"/>
+    <rdfs:range rdf:resource="&devos;File"/>
+  </owl:ObjectProperty>
+
+  <owl:ObjectProperty
+      rdf:about="http://cptl-c.org/device/2015/05/os/createsFile">
+    <rdfs:subClassOf rdf:resource="http://cptl-c.org/device/2015/05/os/accessesFile"/>
+    <rdfs:label xml:lang="en">Creates File</rdfs:label>
+    <rdfs:comment>A process creates a file.</rdfs:comment>
+  </owl:ObjectProperty>
+  
+  <owl:ObjectProperty
+      rdf:about="http://cptl-c.org/device/2015/05/os/readsFile">
+    <rdfs:subClassOf rdf:resource="http://cptl-c.org/device/2015/05/os/accessesFile"/>
+    <rdfs:label xml:lang="en">Reads File</rdfs:label>
+    <rdfs:comment>A process reads a file.</rdfs:comment>
+  </owl:ObjectProperty>
+
+  <owl:ObjectProperty
+      rdf:about="http://cptl-c.org/device/2015/05/os/writesFile">
+    <rdfs:subClassOf rdf:resource="http://cptl-c.org/device/2015/05/os/writesFile"/>
+    <rdfs:label xml:lang="en">Writes File</rdfs:label>
+    <rdfs:comment>A process writes a file.</rdfs:comment>
+  </owl:ObjectProperty>
+
+  <owl:ObjectProperty
+      rdf:about="http://cptl-c.org/device/2015/05/os/executesFile">
+    <rdfs:subClassOf rdf:resource="http://cptl-c.org/device/2015/05/os/accessesFile"/>
+    <rdfs:label xml:lang="en">Executes File</rdfs:label>
+    <rdfs:comment>A process executes a file.</rdfs:comment>
+  </owl:ObjectProperty>
+
+  <owl:ObjectProperty
+      rdf:about="http://cptl-c.org/device/2015/05/os/opensFile">
+    <rdfs:subClassOf rdf:resource="http://cptl-c.org/device/2015/05/os/accessesFile"/>
+    <rdfs:label xml:lang="en">Opens File</rdfs:label>
+    <rdfs:comment>A process opens a file.</rdfs:comment>
+  </owl:ObjectProperty>
+
+  <owl:ObjectProperty
+      rdf:about="http://cptl-c.org/device/2015/05/os/closesFile">
+    <rdfs:subClassOf rdf:resource="http://cptl-c.org/device/2015/05/os/accessesFile"/>
+    <rdfs:label xml:lang="en">Closes File</rdfs:label>
+    <rdfs:comment>A process closes a file.</rdfs:comment>
+  </owl:ObjectProperty>
+
+  <owl:ObjectProperty rdf:about="http://cptl-c.org/device/2015/05/os/hasCommand">
+    <rdfs:label xml:lang="en">Has Command</rdfs:label>
+    <rdfs:comment>The command invoked to start the process</rdfs:comment>
+    <rdfs:domain rdf:resource="&devos;Process"/>
+    <rdfs:range rdf:resource="&devos;Command"/>
+  </owl:ObjectProperty>
+  
+  <owl:ObjectProperty rdf:about="http://cptl-c.org/device/2015/05/os/hasUsername">
+    <rdfs:label xml:lang="en">Has Username</rdfs:label>
+    <rdfs:comment>The username associated with the process</rdfs:comment>
+    <rdfs:domain rdf:resource="&devos;Process"/>
+    <rdfs:range rdf:resource="&devos;Username"/>
+  </owl:ObjectProperty>
+  
+  <owl:ObjectProperty rdf:about="http://cptl-c.org/device/2015/05/os/hasChildProcess">
+    <rdfs:label xml:lang="en">Has Child Process</rdfs:label>
+    <rdfs:comment>The child process associated with the process</rdfs:comment>
+    <rdfs:domain rdf:resource="&devos;Process"/>
+    <rdfs:range rdf:resource="&devos;Process"/>
+  </owl:ObjectProperty>
+
+  <owl:ObjectProperty rdf:about="http://cptl-c.org/device/2015/05/os/hasParentProcess">
+    <rdfs:label xml:lang="en">Has Parent Process</rdfs:label>
+    <rdfs:comment>The parent process associated with the process</rdfs:comment>
+    <rdfs:domain rdf:resource="&devos;Process"/>
+    <rdfs:range rdf:resource="&devos;Process"/>
+  </owl:ObjectProperty>
+
+
+  <owl:DatatypeProperty rdf:about="http://cptl-c.org/device/2015/05/os/hasCPUUsage">
+    <rdfs:label xml:lang="en">Has CPU Usage</rdfs:label>
+    <rdfs:comment>This provides the percentage of CPU consumed by a
+    process.</rdfs:comment>
+    <rdfs:domain rdf:resource="&devos;Process"/>
+    <rdfs:range rdf:resource="&xsd;float"/>
+  </owl:DatatypeProperty>
+
+  <owl:DatatypeProperty rdf:about="http://cptl-c.org/device/2015/05/os/hasMemoryUsage">
+    <rdfs:label xml:lang="en">Has Memory Usage</rdfs:label>
+    <rdfs:comment>This provides the information on physical or virtual
+    memory usage.  This property needs to be throught through more
+    clearly.</rdfs:comment>
+    <rdfs:domain rdf:resource="&devos;Process"/>
+    <rdfs:range rdf:resource="&xsd;float"/>
+  </owl:DatatypeProperty>
+
+  <owl:DatatypeProperty rdf:about="http://cptl-c.org/device/2015/05/os/hasCommandValue">
+    <rdfs:label xml:lang="en">Has Command Value</rdfs:label>
+    <rdfs:domain rdf:resource="&devos;Process"/>
+    <rdfs:range rdf:resource="&xsd;Literal"/>
+  </owl:DatatypeProperty>
+  
+  <owl:DatatypeProperty rdf:about="http://cptl-c.org/device/2015/05/os/hasGIDValue">
+    <rdfs:label xml:lang="en">Has GID Value</rdfs:label>
+    <rdfs:domain rdf:resource="&devos;Process"/>
+    <rdfs:range rdf:resource="&xsd;Literal"/>
+  </owl:DatatypeProperty>
+  
+  <owl:DatatypeProperty rdf:about="http://cptl-c.org/device/2015/05/os/hasPIDValue">
+    <rdfs:label xml:lang="en">Has PID Value</rdfs:label>
+    <rdfs:domain rdf:resource="&devos;Process"/>
+    <rdfs:range rdf:resource="&xsd;Literal"/>
+  </owl:DatatypeProperty>
+
+  <owl:DatatypeProperty rdf:about="http://cptl-c.org/device/2015/05/os/hasPrivilegeValue">
+    <rdfs:label xml:lang="en">Has Privilege Value</rdfs:label>
+    <rdfs:domain rdf:resource="&devos;Process"/>
+    <rdfs:range rdf:resource="&xsd;Literal"/>
+  </owl:DatatypeProperty>
+  
+  <owl:DatatypeProperty rdf:about="http://cptl-c.org/device/2015/05/os/hasSIDValue">
+    <rdfs:label xml:lang="en">Has SID Value</rdfs:label>
+    <rdfs:domain rdf:resource="&devos;Process"/>
+    <rdfs:range rdf:resource="&xsd;Literal"/>
+  </owl:DatatypeProperty>
+  
+  <owl:DatatypeProperty rdf:about="http://cptl-c.org/device/2015/05/os/hasUIDValue">
+    <rdfs:label xml:lang="en">Has UID Value</rdfs:label>
+    <rdfs:domain rdf:resource="&devos;Process"/>
+    <rdfs:range rdf:resource="&xsd;Literal"/>
+  </owl:DatatypeProperty>
+    
+  <owl:DatatypeProperty rdf:about="http://cptl-c.org/device/2015/05/os/hasUsernameValue">
+    <rdfs:label xml:lang="en">Has Username Value</rdfs:label>
+    <rdfs:domain rdf:resource="&devos;Process"/>
+    <rdfs:range rdf:resource="&xsd;Literal"/>
+  </owl:DatatypeProperty>
+
+  
+</rdf:RDF>
+    

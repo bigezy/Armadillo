@@ -129,10 +129,10 @@
     <table width="100%">
     <tr>
     <td><h2><p id="projectName" ></p></h2></td>
-    <td style="align:right"><a href="#modal" class="btn btn-info" style="align:right;" role="button">Select Project</a></td>
+    <td style="align:right"><a onclick="javascript:start_cypsa();" class="btn btn-info" style="align:right;" role="button">Start</a> &nbsp;&nbsp;&nbsp;<a onclick="javascript:stop_cypsa();" class="btn btn-info" style="align:right;" role="button">Stop</a>&nbsp;&nbsp;&nbsp;<a href="#modal" class="btn btn-info" style="align:right;" role="button">Select Project</a></td>
     </tr>
     </table>
-    
+    <p id="Analysis"></p>
     </div>
     <hr>
     <div style="margin:30px">
@@ -749,7 +749,30 @@ var QueryString = function () {
 	  } 
 	    return query_string;
 	}();
+		function start_cypsa()
+		{
+			var projectinfo = QueryString['project'] + ',' +QueryString['entryNode'];
+			ws1 = new WebSocket("ws://localhost:8888/startcypsasocket");
 
+      	ws1.onmessage = function(e) {
+      	};
+      	ws1.onopen = function(e) {
+      	    ws1.send(projectinfo);
+      	}
+      	document.getElementById("Analysis").innerHTML = "Analysis Started: "+Date();
+		}
+		function stop_cypsa()
+		{
+			var projectinfo = QueryString['project'] + ',' +QueryString['entryNode'];
+			ws1 = new WebSocket("ws://localhost:8888/stopcypsasocket");
+
+      	ws1.onmessage = function(e) {
+      	};
+      	ws1.onopen = function(e) {
+      	    ws1.send(projectinfo);
+      	}
+      	document.getElementById("Analysis").innerHTML = "Analysis Stopped: "+Date();
+		}
 		function getvalue_func() {
 		  var datacsvCheckbox = $('#tblPatchHosts input:checked').map(function() {
 		    return this.value;

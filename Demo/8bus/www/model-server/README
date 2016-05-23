@@ -1,0 +1,24 @@
+PREREQUISITES
+*  Install unittest, tornado
+
+CLONE REPOSITORY
+* git clone https://github.com/cptlc/model-server.git
+* cd model-server
+
+CONFIGURE 
+*  export PYTHONPATH=$PYTHONPATH:`pwd`/src
+*  Edit config/tests.ini and config/server.ini
+   Set 'model_basedir' to the clone of https://github.com/cptlc/cptl-models.git
+*  Edit the contents of the 'keys' directory if necessary
+
+RUN TESTS
+* python src/cptl/test/daos_tests.py
+* python src/cptl/test/requests_tests.py
+
+GETTING STARTED 
+* sudo python src/server.py
+* Browse to http://localhost:443/
+  
+
+
+

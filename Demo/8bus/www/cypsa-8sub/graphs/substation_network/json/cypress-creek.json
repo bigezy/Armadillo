@@ -1,0 +1,344 @@
+{
+  "nodes": [
+    {
+      "rdfs:label": "Cypress Creek SEL 3620", 
+      "rdfs:type": "snet-sel:3620", 
+      "cptlc:hasURI": "http://SEL_3620.network.cypress-creek.8sub.cypsa.projects.cptl-c.org", 
+      "enet:hasIPAddressValue": "192.168.1.200", 
+      "cptlc:hasUUID": "36185780-2ec8-434e-b9ff-d23ea6e96193"
+    }, 
+    {
+      "rdfs:label": "Cypress Creek SEL 421 1", 
+      "rdfs:type": "snet-sel:421", 
+      "cptlc:hasURI": "http://SEL_421_1.network.cypress-creek.8sub.cypsa.projects.cptl-c.org", 
+      "enet:hasIPAddressValue": "10.31.1.201", 
+      "cptlc:hasUUID": "73cd5af8-60b7-4563-bf38-c6cec7594d00"
+    }, 
+    {
+      "rdfs:label": "Cypress Creek SEL 421 2", 
+      "rdfs:type": "snet-sel:421", 
+      "cptlc:hasURI": "http://SEL_421_2.network.cypress-creek.8sub.cypsa.projects.cptl-c.org", 
+      "enet:hasIPAddressValue": "10.31.1.202", 
+      "cptlc:hasUUID": "7f336b00-f54f-4cc9-87bb-21251a1f2dd2"
+    }, 
+    {
+      "rdfs:label": "Cypress Creek SEL 421 3", 
+      "rdfs:type": "snet-sel:421", 
+      "cptlc:hasURI": "http://SEL_421_3.network.cypress-creek.8sub.cypsa.projects.cptl-c.org", 
+      "enet:hasIPAddressValue": "10.31.1.203", 
+      "cptlc:hasUUID": "c56d1e83-8ccc-44fd-93a9-25f50ddb703f"
+    }, 
+    {
+      "rdfs:label": "Cypress Creek SEL 421 4", 
+      "rdfs:type": "snet-sel:421", 
+      "cptlc:hasURI": "http://SEL_421_4.network.cypress-creek.8sub.cypsa.projects.cptl-c.org", 
+      "enet:hasIPAddressValue": "10.31.1.204", 
+      "cptlc:hasUUID": "7fb091cc-163c-4dfd-8f55-7aceda9aaee2"
+    }, 
+    {
+      "rdfs:label": "Cypress Creek SEL 421 5", 
+      "rdfs:type": "snet-sel:421", 
+      "cptlc:hasURI": "http://SEL_421_5.network.cypress-creek.8sub.cypsa.projects.cptl-c.org", 
+      "enet:hasIPAddressValue": "10.31.1.205", 
+      "cptlc:hasUUID": "5b8800b5-ac08-4819-bba9-6b7b60f64cae"
+    }, 
+    {
+      "rdfs:label": "Cypress Creek SEL 421 6", 
+      "rdfs:type": "snet-sel:421", 
+      "cptlc:hasURI": "http://SEL_421_6.network.cypress-creek.8sub.cypsa.projects.cptl-c.org", 
+      "enet:hasIPAddressValue": "10.31.1.206", 
+      "cptlc:hasUUID": "a0922f69-e9f2-4c42-ba70-bda13444194b"
+    }, 
+    {
+      "rdfs:label": "Cypress Creek SEL 421 7", 
+      "rdfs:type": "snet-sel:421", 
+      "cptlc:hasURI": "http://SEL_421_7.network.cypress-creek.8sub.cypsa.projects.cptl-c.org", 
+      "enet:hasIPAddressValue": "10.31.1.207", 
+      "cptlc:hasUUID": "c5a1f3fe-dd10-4e9a-a025-68f91fe748c9"
+    }, 
+    {
+      "rdfs:label": "Cypress Creek SEL 451 1", 
+      "rdfs:type": "snet-sel:451", 
+      "cptlc:hasURI": "http://SEL_451_1.network.cypress-creek.8sub.cypsa.projects.cptl-c.org", 
+      "enet:hasIPAddressValue": "10.31.1.101", 
+      "cptlc:hasUUID": "7941ce0f-4e6c-49da-aeda-a9b2ad526f13"
+    }, 
+    {
+      "rdfs:label": "Cypress Creek SEL 451 2", 
+      "rdfs:type": "snet-sel:451", 
+      "cptlc:hasURI": "http://SEL_451_2.network.cypress-creek.8sub.cypsa.projects.cptl-c.org", 
+      "enet:hasIPAddressValue": "10.31.1.102", 
+      "cptlc:hasUUID": "9cf12279-ecdd-426f-9a59-b0d79ca11718"
+    }, 
+    {
+      "rdfs:label": "Cypress Creek SEL 451 3", 
+      "rdfs:type": "snet-sel:451", 
+      "cptlc:hasURI": "http://SEL_451_3.network.cypress-creek.8sub.cypsa.projects.cptl-c.org", 
+      "enet:hasIPAddressValue": "10.31.1.103", 
+      "cptlc:hasUUID": "070bc84a-21d0-4415-a1d1-86a180d12794"
+    }, 
+    {
+      "rdfs:label": "Cypress Creek SEL 451 4", 
+      "rdfs:type": "snet-sel:451", 
+      "cptlc:hasURI": "http://SEL_451_4.network.cypress-creek.8sub.cypsa.projects.cptl-c.org", 
+      "enet:hasIPAddressValue": "10.31.1.104", 
+      "cptlc:hasUUID": "530748f2-af9a-4da4-aeb3-ef7a35108dc3"
+    }, 
+    {
+      "rdfs:label": "Cypress Creek SEL 451 5", 
+      "rdfs:type": "snet-sel:451", 
+      "cptlc:hasURI": "http://SEL_451_5.network.cypress-creek.8sub.cypsa.projects.cptl-c.org", 
+      "enet:hasIPAddressValue": "10.31.1.105", 
+      "cptlc:hasUUID": "7380eecd-a2b3-4969-9083-21a3d18f10b8"
+    }, 
+    {
+      "rdfs:label": "Paris SEL 421 2", 
+      "rdfs:type": "snet-sel:421", 
+      "cptlc:hasURI": "http://SEL_421_2.network.paris.8sub.cypsa.projects.cptl-c.org", 
+      "cptlc:hasUUID": "ad04ff88-d11e-4b96-8f37-bf63f0403deb"
+    }, 
+    {
+      "rdfs:label": "North Haverbrook Distance Relay 3", 
+      "rdfs:type": "snet:DistanceRelay", 
+      "cptlc:hasURI": "http://DistanceRelay_3.network.north-haverbrook.8sub.cypsa.projects.cptl-c.org", 
+      "cptlc:hasUUID": "8cc7974c-c37b-4986-a6b4-eb8785b72979"
+    }, 
+    {
+      "rdfs:label": "Shelbyville SEL 421 2", 
+      "rdfs:type": "snet-sel:421", 
+      "cptlc:hasURI": "http://SEL_421_2.network.shelbyville.8sub.cypsa.projects.cptl-c.org", 
+      "cptlc:hasUUID": "fdbc4b0e-0a55-48a0-b37b-b18c347c9956"
+    }, 
+    {
+      "rdfs:label": "Haverbrook Distance Relay 2", 
+      "rdfs:type": "snet:DistanceRelay", 
+      "cptlc:hasURI": "http://DistanceRelay_2.network.haverbrook.8sub.cypsa.projects.cptl-c.org", 
+      "cptlc:hasUUID": "a4b8c67d-bbc3-4ecf-b289-7782cef8d807"
+    }, 
+    {
+      "rdfs:label": "Odgenville SEL 421 1", 
+      "rdfs:type": "snet-sel:421", 
+      "cptlc:hasURI": "http://SEL_421_1.network.odgenville.8sub.cypsa.projects.cptl-c.org", 
+      "cptlc:hasUUID": "a1cc5d34-9d45-4729-8361-c06a90df9ace"
+    }, 
+    {
+      "rdfs:label": "Capital City Distance Relay 1", 
+      "rdfs:type": "snet:DistanceRelay", 
+      "cptlc:hasURI": "http://DistanceRelay_1.network.capital-city.8sub.cypsa.projects.cptl-c.org", 
+      "cptlc:hasUUID": "c07148cb-aaeb-49b6-bad0-ffc8d054bd1f"
+    }, 
+    {
+      "rdfs:label": "Cypress Creek BRK 2425", 
+      "rdfs:type": "syard:Breaker", 
+      "cptlc:hasURI": "http://Cypress_Creek-BRK-2425.yard.cypress-creek.8sub.cypsa.projects.cptl-c.org", 
+      "cptlc:hasUUID": "10ff7c21-ec7c-4bc7-a06b-007e8731f675"
+    }, 
+    {
+      "rdfs:label": "Cypress Creek BRK 1519", 
+      "rdfs:type": "syard:Breaker", 
+      "cptlc:hasURI": "http://Cypress_Creek-BRK-1519.yard.cypress-creek.8sub.cypsa.projects.cptl-c.org", 
+      "cptlc:hasUUID": "c85043d2-1a1d-4c7a-ab8e-69cb353576ff"
+    }, 
+    {
+      "rdfs:label": "Cypress Creek BRK 1715", 
+      "rdfs:type": "syard:Breaker", 
+      "cptlc:hasURI": "http://Cypress_Creek-BRK-1715.yard.cypress-creek.8sub.cypsa.projects.cptl-c.org", 
+      "cptlc:hasUUID": "b73a8665-fc3c-45dc-b6da-1f875fe5b8a3"
+    }, 
+    {
+      "rdfs:label": "Cypress Creek BRK 1815", 
+      "rdfs:type": "syard:Breaker", 
+      "cptlc:hasURI": "http://Cypress_Creek-BRK-1815.yard.cypress-creek.8sub.cypsa.projects.cptl-c.org", 
+      "cptlc:hasUUID": "33b20414-1393-4415-9ea6-15730203c777"
+    }, 
+    {
+      "rdfs:label": "Cypress Creek BRK 1615", 
+      "rdfs:type": "syard:Breaker", 
+      "cptlc:hasURI": "http://Cypress_Creek-BRK-1615.yard.cypress-creek.8sub.cypsa.projects.cptl-c.org", 
+      "cptlc:hasUUID": "d3692701-fe5e-4b1c-8635-f8bb2147bfb6"
+    }, 
+    {
+      "rdfs:label": "Cypress Creek BRK 2019", 
+      "rdfs:type": "syard:Breaker", 
+      "cptlc:hasURI": "http://Cypress_Creek-BRK-2019.yard.cypress-creek.8sub.cypsa.projects.cptl-c.org", 
+      "cptlc:hasUUID": "f63e8aaf-0ad1-4099-a616-b153ebb568d1"
+    }, 
+    {
+      "rdfs:label": "Cypress Creek BRK 1719", 
+      "rdfs:type": "syard:Breaker", 
+      "cptlc:hasURI": "http://Cypress_Creek-BRK-1719.yard.cypress-creek.8sub.cypsa.projects.cptl-c.org", 
+      "cptlc:hasUUID": "f415bc05-3b2e-4f23-bbcd-a5e579bc4510"
+    }, 
+    {
+      "rdfs:label": "Cypress Creek BRK 1925", 
+      "rdfs:type": "syard:Breaker", 
+      "cptlc:hasURI": "http://Cypress_Creek-BRK-1925.yard.cypress-creek.8sub.cypsa.projects.cptl-c.org", 
+      "cptlc:hasUUID": "2a2d110d-9951-4fc3-a61c-f072caf8513d"
+    }, 
+    {
+      "rdfs:label": "Cypress Creek BRK 2325", 
+      "rdfs:type": "syard:Breaker", 
+      "cptlc:hasURI": "http://Cypress_Creek-BRK-2325.yard.cypress-creek.8sub.cypsa.projects.cptl-c.org", 
+      "cptlc:hasUUID": "9fe04795-2ae4-47be-9dae-d60808bb84f1"
+    }, 
+    {
+      "rdfs:label": "Cypress Creek BRK 2125", 
+      "rdfs:type": "syard:Breaker", 
+      "cptlc:hasURI": "http://Cypress_Creek-BRK-2125.yard.cypress-creek.8sub.cypsa.projects.cptl-c.org", 
+      "cptlc:hasUUID": "2154a90c-8ccb-4faa-85b7-a531513a0c6d"
+    }, 
+    {
+      "rdfs:label": "Cypress Creek BRK 2225", 
+      "rdfs:type": "syard:Breaker", 
+      "cptlc:hasURI": "http://Cypress_Creek-BRK-2225.yard.cypress-creek.8sub.cypsa.projects.cptl-c.org", 
+      "cptlc:hasUUID": "6a412caa-9f48-4587-9984-8be96f5a2b3a"
+    }
+  ], 
+  "links": [
+    {
+      "source": "36185780-2ec8-434e-b9ff-d23ea6e96193", 
+      "relation": "cptlc:hasEthernetLink", 
+      "target": "73cd5af8-60b7-4563-bf38-c6cec7594d00"
+    }, 
+    {
+      "source": "36185780-2ec8-434e-b9ff-d23ea6e96193", 
+      "relation": "cptlc:hasEthernetLink", 
+      "target": "7f336b00-f54f-4cc9-87bb-21251a1f2dd2"
+    }, 
+    {
+      "source": "36185780-2ec8-434e-b9ff-d23ea6e96193", 
+      "relation": "cptlc:hasEthernetLink", 
+      "target": "c56d1e83-8ccc-44fd-93a9-25f50ddb703f"
+    }, 
+    {
+      "source": "36185780-2ec8-434e-b9ff-d23ea6e96193", 
+      "relation": "cptlc:hasEthernetLink", 
+      "target": "7fb091cc-163c-4dfd-8f55-7aceda9aaee2"
+    }, 
+    {
+      "source": "36185780-2ec8-434e-b9ff-d23ea6e96193", 
+      "relation": "cptlc:hasEthernetLink", 
+      "target": "5b8800b5-ac08-4819-bba9-6b7b60f64cae"
+    }, 
+    {
+      "source": "36185780-2ec8-434e-b9ff-d23ea6e96193", 
+      "relation": "cptlc:hasEthernetLink", 
+      "target": "a0922f69-e9f2-4c42-ba70-bda13444194b"
+    }, 
+    {
+      "source": "36185780-2ec8-434e-b9ff-d23ea6e96193", 
+      "relation": "cptlc:hasEthernetLink", 
+      "target": "c5a1f3fe-dd10-4e9a-a025-68f91fe748c9"
+    }, 
+    {
+      "source": "36185780-2ec8-434e-b9ff-d23ea6e96193", 
+      "relation": "cptlc:hasEthernetLink", 
+      "target": "7941ce0f-4e6c-49da-aeda-a9b2ad526f13"
+    }, 
+    {
+      "source": "36185780-2ec8-434e-b9ff-d23ea6e96193", 
+      "relation": "cptlc:hasEthernetLink", 
+      "target": "9cf12279-ecdd-426f-9a59-b0d79ca11718"
+    }, 
+    {
+      "source": "36185780-2ec8-434e-b9ff-d23ea6e96193", 
+      "relation": "cptlc:hasEthernetLink", 
+      "target": "070bc84a-21d0-4415-a1d1-86a180d12794"
+    }, 
+    {
+      "source": "36185780-2ec8-434e-b9ff-d23ea6e96193", 
+      "relation": "cptlc:hasEthernetLink", 
+      "target": "530748f2-af9a-4da4-aeb3-ef7a35108dc3"
+    }, 
+    {
+      "source": "36185780-2ec8-434e-b9ff-d23ea6e96193", 
+      "relation": "cptlc:hasEthernetLink", 
+      "target": "7380eecd-a2b3-4969-9083-21a3d18f10b8"
+    }, 
+    {
+      "source": "73cd5af8-60b7-4563-bf38-c6cec7594d00", 
+      "relation": "cptlc:hasFiberEthernetLink", 
+      "target": "ad04ff88-d11e-4b96-8f37-bf63f0403deb"
+    }, 
+    {
+      "source": "c56d1e83-8ccc-44fd-93a9-25f50ddb703f", 
+      "relation": "cptlc:hasFiberEthernetLink", 
+      "target": "8cc7974c-c37b-4986-a6b4-eb8785b72979"
+    }, 
+    {
+      "source": "7fb091cc-163c-4dfd-8f55-7aceda9aaee2", 
+      "relation": "cptlc:hasFiberEthernetLink", 
+      "target": "fdbc4b0e-0a55-48a0-b37b-b18c347c9956"
+    }, 
+    {
+      "source": "5b8800b5-ac08-4819-bba9-6b7b60f64cae", 
+      "relation": "cptlc:hasFiberEthernetLink", 
+      "target": "a4b8c67d-bbc3-4ecf-b289-7782cef8d807"
+    }, 
+    {
+      "source": "a0922f69-e9f2-4c42-ba70-bda13444194b", 
+      "relation": "cptlc:hasFiberEthernetLink", 
+      "target": "a1cc5d34-9d45-4729-8361-c06a90df9ace"
+    }, 
+    {
+      "source": "c5a1f3fe-dd10-4e9a-a025-68f91fe748c9", 
+      "relation": "cptlc:hasFiberEthernetLink", 
+      "target": "c07148cb-aaeb-49b6-bad0-ffc8d054bd1f"
+    }, 
+    {
+      "source": "7941ce0f-4e6c-49da-aeda-a9b2ad526f13", 
+      "relation": "snet:hasBreakerConnections", 
+      "target": "10ff7c21-ec7c-4bc7-a06b-007e8731f675"
+    }, 
+    {
+      "source": "9cf12279-ecdd-426f-9a59-b0d79ca11718", 
+      "relation": "snet:hasBreakerConnections", 
+      "target": "c85043d2-1a1d-4c7a-ab8e-69cb353576ff"
+    }, 
+    {
+      "source": "9cf12279-ecdd-426f-9a59-b0d79ca11718", 
+      "relation": "snet:hasBreakerConnections", 
+      "target": "b73a8665-fc3c-45dc-b6da-1f875fe5b8a3"
+    }, 
+    {
+      "source": "9cf12279-ecdd-426f-9a59-b0d79ca11718", 
+      "relation": "snet:hasBreakerConnections", 
+      "target": "33b20414-1393-4415-9ea6-15730203c777"
+    }, 
+    {
+      "source": "9cf12279-ecdd-426f-9a59-b0d79ca11718", 
+      "relation": "snet:hasBreakerConnections", 
+      "target": "d3692701-fe5e-4b1c-8635-f8bb2147bfb6"
+    }, 
+    {
+      "source": "070bc84a-21d0-4415-a1d1-86a180d12794", 
+      "relation": "snet:hasBreakerConnections", 
+      "target": "f63e8aaf-0ad1-4099-a616-b153ebb568d1"
+    }, 
+    {
+      "source": "070bc84a-21d0-4415-a1d1-86a180d12794", 
+      "relation": "snet:hasBreakerConnections", 
+      "target": "f415bc05-3b2e-4f23-bbcd-a5e579bc4510"
+    }, 
+    {
+      "source": "070bc84a-21d0-4415-a1d1-86a180d12794", 
+      "relation": "snet:hasBreakerConnections", 
+      "target": "2a2d110d-9951-4fc3-a61c-f072caf8513d"
+    }, 
+    {
+      "source": "530748f2-af9a-4da4-aeb3-ef7a35108dc3", 
+      "relation": "snet:hasBreakerConnections", 
+      "target": "9fe04795-2ae4-47be-9dae-d60808bb84f1"
+    }, 
+    {
+      "source": "7380eecd-a2b3-4969-9083-21a3d18f10b8", 
+      "relation": "snet:hasBreakerConnections", 
+      "target": "2154a90c-8ccb-4faa-85b7-a531513a0c6d"
+    }, 
+    {
+      "source": "7380eecd-a2b3-4969-9083-21a3d18f10b8", 
+      "relation": "snet:hasBreakerConnections", 
+      "target": "6a412caa-9f48-4587-9984-8be96f5a2b3a"
+    }
+  ]
+}

@@ -1,0 +1,92 @@
+<html xmlns:concordion="http://www.concordion.org/2007/concordion">
+  <head>
+    <title>CPTL Analysis - Graph Join</title>
+    <link rel="stylesheet" href="/css/jsdoc.css">
+  </head>
+  <body>
+    <!-- header -->
+    <div id="header"></div>
+
+    <!-- resource index -->
+    <div id="index">
+      <ul class="classList">
+	<li><a href="/api/v1.0.0/docs/index.html">/api/v1.0.0/</a></li>
+	<li><a href="/api/v1.0.0/docs/analyses.html">/api/v1.0.0/analyses</a></li>		
+	<li><a href="/api/v1.0.0/docs/graphs.html">/api/v1.0.0/graphs</a></li>
+	<li><a href="/api/v1.0.0/docs/icons.html">/api/v1.0.0/icons</a></li>	
+      </ul>
+    </div>
+
+    <div id="content">
+      <h1 class="classTitle">Resource  /api/v1.0.0/analyses/graph_join</h1>
+      <br/>
+
+      <table class="summaryTable">
+	<tr>
+	  <th colspan="2">Graph Join</th>
+	</tr>
+	<tr>
+	  <td>Description</td>
+	  <td>TBD</td>
+	</tr>
+	<tr>
+	  <td>URL Params</td>
+	  <td><p><b>Required:</b><br/>
+	      <ul>
+	        <li><code>graph_ref1</code>:<br/>
+		  example: graph_ref1=capital-city.yard</li>
+                <li><code>join_field1</code><br/>
+		  example: join_field=cptlc:hasURI</li>
+		<li><code>graph_ref2</code><br/>
+		  example: graph_ref2=capital-city.network</li>
+                <li><code>join_field2</code><br/>
+		  example: join_field=cptlc:hasURI</li>
+		<li><code>id_field</code><br/>
+		  example: id_field=cptlc:hasUUID</li>
+	      </ul>
+	    </p>
+	  </td>
+	</tr>
+	<tr>
+	  <td>Data Params</td>
+	  <td>None</td>
+	</tr>
+	<tr>
+	  <td>Success Response</td>
+	  <td>
+	    <ul>
+	      <li><b>Code:</b> 200 <br/>
+		<b>Content:</b> <code> { 'nodes': [...], 'links':[...] }</code><br/>
+	        <p>The graph join of the two graphs provided using the fields specified.</p>
+	      </li>
+	    </ul>
+	  </td>
+	</tr>
+	<tr>
+	  <td>Error Response</td>
+	  <td>TBD</td>
+	</tr>
+	<tr>
+	  <td>Sample Call</td>
+	  <td>
+	      <form action="/api/v1.0.0/analyses/graph_join">
+	        Graph Reference 1:
+		<input type="text" size="40" name="graph_ref1" value="capital-city.yard"><br/>
+		Join Field 1:
+		<input type="text" name="join_field1" value="cptlc:hasURI"><br/><br/>
+		Graph Reference 2:
+		<input type="text" size="40" name="graph_ref2" value="capital-city.network"><br/>
+		Join Field 2:
+		<input type="text" name="join_field2" value="cptlc:hasURI"><br/><br/>
+
+		ID Field:
+		<input type="text" name="id_field" value="cptlc:hasUUID"><br/>		
+		
+		<input type="submit" value="Submit">
+	      </form>
+	  </pre> 
+	</tr>
+      </table>
+    </div> <!-- content-->
+  </body> 
+</html>

@@ -1,0 +1,38 @@
+{
+  "type": "object",
+  "properties" : {
+
+     "nodes" : {
+       "type": "array",
+       "items": {
+       	   "type": "object",
+	   "properties": {
+	     "cptlc:hasAliases": { "type": "string" },
+	     "cptlc:hasUUID": { "type": "string", "pattern": "[0-f]{8}-[0-f]{4}-[0-f]{4}-[0-f]{4}-[0-f]{12}" },
+	     "cptlc:hasURI": { "type": "string" },
+	     "enet:hasIPAddressValue": { "type": "string", "pattern": "^([0-9]{1,3}\\.){3}[0-9]{1,3}$"},
+	     "rdfs:label": { "type": "string" },
+	     "rdfs:type": { "type": "string" }
+	   },
+	   "required": ["cptlc:hasUUID", "rdfs:label", "rdfs:type"],
+	   "additionalProperties": false
+        }
+     },
+
+     "links" : {
+       "type": "array",
+       "items": {
+           "type": "object",
+	   "properties": {
+	     "source": { "type": "string", "pattern": "[0-f]{8}-[0-f]{4}-[0-f]{4}-[0-f]{4}-[0-f]{12}" },
+	     "target": { "type": "string", "pattern": "[0-f]{8}-[0-f]{4}-[0-f]{4}-[0-f]{4}-[0-f]{12}" },
+	       "relation": { "enum" : [ "cptlc:hasEthernetLink", "cptlc:hasFiberEthernetLink", "cptlc:hasSerialLink", "snet:hasBreakerConnections", "syard:hasLine" ] }
+	   },
+	   "required": ["source", "target", "relation"],
+	   "additionalProperties": false
+       }
+     }    
+  },
+  "required": ["nodes", "links"]
+}
+

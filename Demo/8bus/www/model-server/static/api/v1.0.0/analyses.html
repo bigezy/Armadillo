@@ -1,0 +1,98 @@
+<html xmlns:concordion="http://www.concordion.org/2007/concordion">
+  <head>
+    <title>CPTL Model Server REST API - analyses</title>
+    <link rel="stylesheet" href="/css/jsdoc.css">
+  </head>
+  <body>
+    <!-- header -->
+    <div id="header"></div>
+
+    <!-- resource index -->
+    <div id="index">
+      <ul class="classList">
+	<li><a href="/api/v1.0.0/docs/index.html">/api/v1.0.0/</a></li>
+	<li><a href="/api/v1.0.0/docs/analyses.html">/api/v1.0.0/analyses</a></li>	
+	<li><a href="/api/v1.0.0/docs/graphs.html">/api/v1.0.0/graphs</a></li>
+	<li><a href="/api/v1.0.0/docs/icons.html">/api/v1.0.0/icons</a></li>		
+      </ul>
+    </div>
+
+    <div id="content">      
+      <h1 class="classTitle">Resource  /api/v1.0.0/analyses</h1>
+      <br/>
+
+      <table class="summaryTable">
+	<tr>
+	  <th colspan="2">Show Analyses - Retrieve analyses</th>
+	</tr>
+	<tr>
+	  <td>URL</td>
+	  <td><b><code>/api/v1.0.0/analyses</code> or <code>/api/v1.0.0/analyses/:analysis_id</code></b>
+	</tr>
+	<tr>
+	  <td>Method</td>
+	  <td><code>GET</code></td>
+	</tr>
+	<tr>
+	  <td>URL Params</td>
+	  <td><p><b>Optional:</b><br/>
+	      <code>id=[UUID] or id=[string]</code><br/>
+	      example: id=514d63aa-1fcf-423b-880d-168bac34354f</p></td>
+	</tr>
+	<tr>
+	  <td>Data Params</td>
+	  <td>None</td>
+	</tr>
+	<tr>
+	  <td>Success Response</td>
+	  <td>
+	    <ul>
+	      <li><b>Code:</b> 200 <br/>
+		<b>Content:</b> <code> { 'nodes': [...], 'links':[...] }</code><br/>
+	        <p>The content returned on success should validate against the schema provided.</p>
+	      </li>
+	    </ul>
+	  </td>
+	</tr>
+	<tr>
+	  <td>Error Response</td>
+	  <td>
+	    <ul>
+	      <li><b>Code:</b> 401 UNAUTHORIZED<br/>
+	        <b>Content:</b> <code> { error : "You are unauthorized to make this request" }</code><br/></li>
+	      OR<br/>
+	      <li><b>Code:</b> 404 NOT FOUND<br/>
+	        <b>Content:</b> <code> { error : "No graph for ID found" }</code><br/></li>
+	    </ul>
+	  </td>
+	</tr>
+	<tr>
+	  <td>Sample Call 1</td>
+	  <td><pre>
+	      $.ajax({
+	      url: "/api/v1.0.0/analyses",
+	      dataType: "json",
+	      type : "GET",
+    	      success : function(r) {
+              console.log(r);
+	      }
+	      });
+	  </pre> <a href="/api/v1.0.0/analyses">Call</a></td>
+	</tr>
+      </table>
+
+      <h2>Available Analyses</h2>
+      <table class="summaryTable">
+	<tr>
+	  <th>Method</td>
+          <th>Description</th>
+	</tr>
+	<tr>
+	  <td><a href="/api/v1.0.0/docs/analyses/graph_join.html">/api/v1.0.0/analyses/graph_join</a></td>
+	  <td>Graph Join Analysis</td>
+	</tr>
+      </table>
+      
+    </div> <!-- content-->
+  </body> 
+</html>

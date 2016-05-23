@@ -1,0 +1,228 @@
+{
+  "nodes": [
+    {
+      "rdfs:label": "Springfield Switch 1", 
+      "enet:hasIPAddressValue": "192.168.8.200", 
+      "cptlc:hasURI": "http://Switch_1.network.springfield.8sub.cypsa.projects.cptl-c.org", 
+      "rdfs:type": "snet:Switch", 
+      "cptlc:hasUUID": "a040abf9-95da-48dc-a133-ab302a4d9671"
+    }, 
+    {
+      "rdfs:label": "Springfield Distance Relay 1", 
+      "enet:hasIPAddressValue": "10.38.1.201", 
+      "cptlc:hasURI": "http://DistanceRelay_1.network.springfield.8sub.cypsa.projects.cptl-c.org", 
+      "rdfs:type": "snet:DistanceRelay", 
+      "cptlc:hasUUID": "161242af-b72f-4fc0-aa56-9715ac284a92"
+    }, 
+    {
+      "rdfs:label": "Springfield Distance Relay 2", 
+      "enet:hasIPAddressValue": "10.38.1.202", 
+      "cptlc:hasURI": "http://DistanceRelay_2.network.springfield.8sub.cypsa.projects.cptl-c.org", 
+      "rdfs:type": "snet:DistanceRelay", 
+      "cptlc:hasUUID": "eeccfcf3-4131-4c49-aac2-3690aa481434"
+    }, 
+    {
+      "rdfs:label": "Springfield Distance Relay 3", 
+      "enet:hasIPAddressValue": "10.38.1.203", 
+      "cptlc:hasURI": "http://DistanceRelay_3.network.springfield.8sub.cypsa.projects.cptl-c.org", 
+      "rdfs:type": "snet:DistanceRelay", 
+      "cptlc:hasUUID": "cf47fd37-83f1-4ded-9339-bda45252af5c"
+    }, 
+    {
+      "rdfs:label": "Springfield Reverse Power Relay 1", 
+      "rdfs:type": "snet:ReversePowerRelay", 
+      "cptlc:hasURI": "http://ReversePowerRelay_1.network.springfield.8sub.cypsa.projects.cptl-c.org", 
+      "cptlc:hasUUID": "af21a363-d391-4ec0-a1ed-0c82e283b8ae"
+    }, 
+    {
+      "rdfs:label": "Springfield Overcurrent Relay 1", 
+      "enet:hasIPAddressValue": "10.38.1.101", 
+      "cptlc:hasURI": "http://OvercurrentRelay_1.network.springfield.8sub.cypsa.projects.cptl-c.org", 
+      "rdfs:type": "snet:OvercurrentRelay", 
+      "cptlc:hasUUID": "4394cdf3-bda5-471f-8ef3-f8c61aabb57e"
+    }, 
+    {
+      "rdfs:label": "Springfield Overcurrent Relay 2", 
+      "enet:hasIPAddressValue": "10.38.1.102", 
+      "cptlc:hasURI": "http://OvercurrentRelay_2.network.springfield.8sub.cypsa.projects.cptl-c.org", 
+      "rdfs:type": "snet:OvercurrentRelay", 
+      "cptlc:hasUUID": "88dba10a-7e77-41b1-9373-733a65f650f5"
+    }, 
+    {
+      "rdfs:label": "Springfield Overcurrent Relay 3", 
+      "enet:hasIPAddressValue": "10.38.1.103", 
+      "cptlc:hasURI": "http://OvercurrentRelay_3.network.springfield.8sub.cypsa.projects.cptl-c.org", 
+      "rdfs:type": "snet:OvercurrentRelay", 
+      "cptlc:hasUUID": "7d4aa12a-b202-4bdd-b7f5-96484841eeb9"
+    }, 
+    {
+      "rdfs:label": "Springfield Overcurrent Relay 4", 
+      "enet:hasIPAddressValue": "10.38.1.104", 
+      "cptlc:hasURI": "http://OvercurrentRelay_4.network.springfield.8sub.cypsa.projects.cptl-c.org", 
+      "rdfs:type": "snet:OvercurrentRelay", 
+      "cptlc:hasUUID": "9930e062-0261-4b74-b3c0-32ff3316b7a4"
+    }, 
+    {
+      "rdfs:label": "Springfield Overcurrent Relay 5", 
+      "enet:hasIPAddressValue": "10.38.1.105", 
+      "cptlc:hasURI": "http://OvercurrentRelay_5.network.springfield.8sub.cypsa.projects.cptl-c.org", 
+      "rdfs:type": "snet:OvercurrentRelay", 
+      "cptlc:hasUUID": "705cf996-d5d0-424d-bacd-545a1e0eb226"
+    }, 
+    {
+      "rdfs:label": "Haverbrook Distance Relay 3", 
+      "rdfs:type": "snet:DistanceRelay", 
+      "cptlc:hasURI": "http://DistanceRelay_3.network.haverbrook.8sub.cypsa.projects.cptl-c.org", 
+      "cptlc:hasUUID": "88c4d925-8661-425f-add3-b012aa369264"
+    }, 
+    {
+      "rdfs:label": "Springfield BRK 4041", 
+      "rdfs:type": "syard:Breaker", 
+      "cptlc:hasURI": "http://Springfield-BRK-4041.yard.springfield.8sub.cypsa.projects.cptl-c.org", 
+      "cptlc:hasUUID": "97838e82-f3f6-46b2-82ac-48778c61df13"
+    }, 
+    {
+      "rdfs:label": "Paris SEL 421 3", 
+      "rdfs:type": "snet-sel:421", 
+      "cptlc:hasURI": "http://SEL_421_3.network.paris.8sub.cypsa.projects.cptl-c.org", 
+      "cptlc:hasUUID": "9fe628df-b617-4d7b-a144-d9a9c0c17205"
+    }, 
+    {
+      "rdfs:label": "Springfield BRK 4142", 
+      "rdfs:type": "syard:Breaker", 
+      "cptlc:hasURI": "http://Springfield-BRK-4142.yard.springfield.8sub.cypsa.projects.cptl-c.org", 
+      "cptlc:hasUUID": "66685ae1-a031-4e59-955b-7a297e41c1fa"
+    }, 
+    {
+      "rdfs:label": "Haverbrook Distance Relay 1", 
+      "rdfs:type": "snet:DistanceRelay", 
+      "cptlc:hasURI": "http://DistanceRelay_1.network.haverbrook.8sub.cypsa.projects.cptl-c.org", 
+      "cptlc:hasUUID": "01d24675-dcf7-4792-8041-e9ce3b1ede7a"
+    }, 
+    {
+      "rdfs:label": "Springfield BRK 3941", 
+      "rdfs:type": "syard:Breaker", 
+      "cptlc:hasURI": "http://Springfield-BRK-3941.yard.springfield.8sub.cypsa.projects.cptl-c.org", 
+      "cptlc:hasUUID": "95d62569-eff7-4b01-aa55-a90a44678384"
+    }, 
+    {
+      "rdfs:label": "Springfield BRK 4341", 
+      "rdfs:type": "syard:Breaker", 
+      "cptlc:hasURI": "http://Springfield-BRK-4341.yard.springfield.8sub.cypsa.projects.cptl-c.org", 
+      "cptlc:hasUUID": "018fc1be-76c0-439b-9f82-ecaa79d5f1b3"
+    }, 
+    {
+      "rdfs:label": "Springfield BRK 4441", 
+      "rdfs:type": "syard:Breaker", 
+      "cptlc:hasURI": "http://Springfield-BRK-4441.yard.springfield.8sub.cypsa.projects.cptl-c.org", 
+      "cptlc:hasUUID": "9f4e632c-c0d2-40a0-94e1-31738c571ef2"
+    }
+  ], 
+  "links": [
+    {
+      "source": "a040abf9-95da-48dc-a133-ab302a4d9671", 
+      "relation": "cptlc:hasEthernetLink", 
+      "target": "4394cdf3-bda5-471f-8ef3-f8c61aabb57e"
+    }, 
+    {
+      "source": "161242af-b72f-4fc0-aa56-9715ac284a92", 
+      "relation": "cptlc:hasSerialLink", 
+      "target": "eeccfcf3-4131-4c49-aac2-3690aa481434"
+    }, 
+    {
+      "source": "161242af-b72f-4fc0-aa56-9715ac284a92", 
+      "relation": "cptlc:hasFiberEthernetLink", 
+      "target": "88c4d925-8661-425f-add3-b012aa369264"
+    }, 
+    {
+      "source": "161242af-b72f-4fc0-aa56-9715ac284a92", 
+      "relation": "snet:hasBreakerConnections", 
+      "target": "97838e82-f3f6-46b2-82ac-48778c61df13"
+    }, 
+    {
+      "source": "eeccfcf3-4131-4c49-aac2-3690aa481434", 
+      "relation": "cptlc:hasSerialLink", 
+      "target": "88dba10a-7e77-41b1-9373-733a65f650f5"
+    }, 
+    {
+      "source": "eeccfcf3-4131-4c49-aac2-3690aa481434", 
+      "relation": "cptlc:hasFiberEthernetLink", 
+      "target": "9fe628df-b617-4d7b-a144-d9a9c0c17205"
+    }, 
+    {
+      "source": "eeccfcf3-4131-4c49-aac2-3690aa481434", 
+      "relation": "snet:hasBreakerConnections", 
+      "target": "66685ae1-a031-4e59-955b-7a297e41c1fa"
+    }, 
+    {
+      "source": "cf47fd37-83f1-4ded-9339-bda45252af5c", 
+      "relation": "cptlc:hasSerialLink", 
+      "target": "705cf996-d5d0-424d-bacd-545a1e0eb226"
+    }, 
+    {
+      "source": "cf47fd37-83f1-4ded-9339-bda45252af5c", 
+      "relation": "cptlc:hasFiberEthernetLink", 
+      "target": "01d24675-dcf7-4792-8041-e9ce3b1ede7a"
+    }, 
+    {
+      "source": "cf47fd37-83f1-4ded-9339-bda45252af5c", 
+      "relation": "snet:hasBreakerConnections", 
+      "target": "95d62569-eff7-4b01-aa55-a90a44678384"
+    }, 
+    {
+      "source": "af21a363-d391-4ec0-a1ed-0c82e283b8ae", 
+      "relation": "cptlc:hasSerialLink", 
+      "target": "7d4aa12a-b202-4bdd-b7f5-96484841eeb9"
+    }, 
+    {
+      "source": "af21a363-d391-4ec0-a1ed-0c82e283b8ae", 
+      "relation": "snet:hasBreakerConnections", 
+      "target": "018fc1be-76c0-439b-9f82-ecaa79d5f1b3"
+    }, 
+    {
+      "source": "4394cdf3-bda5-471f-8ef3-f8c61aabb57e", 
+      "relation": "cptlc:hasSerialLink", 
+      "target": "161242af-b72f-4fc0-aa56-9715ac284a92"
+    }, 
+    {
+      "source": "4394cdf3-bda5-471f-8ef3-f8c61aabb57e", 
+      "relation": "snet:hasBreakerConnections", 
+      "target": "97838e82-f3f6-46b2-82ac-48778c61df13"
+    }, 
+    {
+      "source": "88dba10a-7e77-41b1-9373-733a65f650f5", 
+      "relation": "cptlc:hasSerialLink", 
+      "target": "af21a363-d391-4ec0-a1ed-0c82e283b8ae"
+    }, 
+    {
+      "source": "88dba10a-7e77-41b1-9373-733a65f650f5", 
+      "relation": "snet:hasBreakerConnections", 
+      "target": "66685ae1-a031-4e59-955b-7a297e41c1fa"
+    }, 
+    {
+      "source": "7d4aa12a-b202-4bdd-b7f5-96484841eeb9", 
+      "relation": "cptlc:hasSerialLink", 
+      "target": "9930e062-0261-4b74-b3c0-32ff3316b7a4"
+    }, 
+    {
+      "source": "7d4aa12a-b202-4bdd-b7f5-96484841eeb9", 
+      "relation": "snet:hasBreakerConnections", 
+      "target": "018fc1be-76c0-439b-9f82-ecaa79d5f1b3"
+    }, 
+    {
+      "source": "9930e062-0261-4b74-b3c0-32ff3316b7a4", 
+      "relation": "cptlc:hasSerialLink", 
+      "target": "cf47fd37-83f1-4ded-9339-bda45252af5c"
+    }, 
+    {
+      "source": "9930e062-0261-4b74-b3c0-32ff3316b7a4", 
+      "relation": "snet:hasBreakerConnections", 
+      "target": "9f4e632c-c0d2-40a0-94e1-31738c571ef2"
+    }, 
+    {
+      "source": "705cf996-d5d0-424d-bacd-545a1e0eb226", 
+      "relation": "snet:hasBreakerConnections", 
+      "target": "95d62569-eff7-4b01-aa55-a90a44678384"
+    }
+  ]
+}

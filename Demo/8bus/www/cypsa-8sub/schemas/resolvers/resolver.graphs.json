@@ -1,0 +1,12 @@
+{
+    "type": "object",
+    "additionalProperties" : {
+	"type": "object",
+	"properties": {
+	    "rdfs:label" : { "type": "string" },
+	    "rdfs:type" : { "enum" : [ "syard:substation_yard", "snet:substation_network"] },
+	    "graph" : { "type": "string" }
+	}
+    }
+}
+

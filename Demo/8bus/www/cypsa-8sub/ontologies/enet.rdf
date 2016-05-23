@@ -1,0 +1,198 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+ copyright (c) 2015, Gabriel A. Weaver, Information Trust Institute
+   at the University of Illinois, Urbana-Champaign.
+
+  This file is part of the Cyber-Physical Topology Language for
+    the Power domain.
+
+  This ontology is available under the Creative Commons 
+  Attribution-ShareAlike License.  Details about this license
+  are available at the following URL:
+
+  http://creativecommons.org/licenses/by-sa/3.0/legalcode 
+  -->
+
+<!DOCTYPE rdf:RDF [
+    <!ENTITY cptlc "http://cptl-c.org/core/2014/07/core/" >
+    <!ENTITY owl "http://www.w3.org/2002/07/owl#" >
+    <!ENTITY dc "http://purl.org/dc/elements/1.1/" >
+    <!ENTITY enet "http://cptl-c.org/enterprise/2015/07/enterprise_network/" >
+    <!ENTITY xsd "http://www.w3.org/2001/XMLSchema#" >
+    <!ENTITY rdfs "http://www.w3.org/2000/01/rdf-schema#" >
+    <!ENTITY rdf "http://www.w3.org/1999/02/22-rdf-syntax-ns#" >
+]>
+
+<rdf:RDF 
+    xmlns:cptlc="http://cptl-c.org/core/2014/07/core/"
+    xmlns:dc="http://purl.org/dc/elements/1.1/"
+    xmlns:enet="http://cptl-c.org/enterprise/2015/07/enterprise_network/"
+    xmlns:owl="http://www.w3.org/2002/07/owl#"
+    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+    xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
+    
+    <owl:Ontology rdf:about="http://cptl-c.org/enterprise/2015/07/enterprise_network">
+      <dc:title>Enterprise Network Ontology</dc:title>
+      <dc:description>An ontology to describe components of an enterprise network.</dc:description>
+    </owl:Ontology>
+
+    <!-- Hardware -->
+    <owl:Class rdf:about="http://cptl-c.org/enterprise/2015/07/enterprise_network/Firewall">
+      <rdfs:subClassOf rdf:resource="http://cptl-c.org/core/2014/07/core/Asset"/>
+      <rdfs:label xml:lang="en">Firewall</rdfs:label>
+      <rdfs:comment>In computing, a firewall is a network security
+      system that controls the incoming and outgoing network traffic
+      based on an applied rule set. A firewall establishes a barrier
+      between a trusted, secure internal network and another network
+      (e.g., the Internet) that is assumed not to be secure and
+      trusted. (http://en.wikipedia.org/wiki/Firewall(computing))</rdfs:comment>
+    </owl:Class>
+
+    <owl:Class rdf:about="http://cptl-c.org/enterprise/2015/07/enterprise_network/Gateway">
+      <rdfs:subClassOf rdf:resource="http://cptl-c.org/core/2014/07/core/Asset"/>
+      <rdfs:label xml:lang="en">Gateway</rdfs:label>
+      <rdfs:comment> the computers that control traffic between
+      company networks or the computers used by internet service
+      providers (ISPs) to connect users to the internet are gateway
+      nodes. (https://en.wikipedia.org/wiki/Gateway_(telecommunications))</rdfs:comment>
+    </owl:Class>
+
+    <owl:Class rdf:about="http://cptl-c.org/enterprise/2015/07/enterprise_network/Host">
+      <rdfs:subClassOf rdf:resource="http://cptl-c.org/core/2014/07/core/Asset"/>
+      <rdfs:label xml:lang="en">Host</rdfs:label>
+      <rdfs:comment>A network host is a computer or other device
+      connected to a computer network. (http://en.wikipedia.org/wiki/Host_(network))</rdfs:comment>
+    </owl:Class>
+
+    <owl:Class rdf:about="http://cptl-c.org/enterprise/2015/07/enterprise_network/Network">
+      <rdfs:subClassOf rdf:resource="http://cptl-c.org/core/2014/07/core/Asset"/>
+      <rdfs:label xml:lang="en">Network</rdfs:label>
+      <rdfs:comment>A computer network or data network is a
+      telecommunications network which allows computers to exchange
+      data. In computer networks, networked computing devices pass
+      data to each other along data connections (network
+      links). (http://en.wikipedia.org/wiki/Computer_network)</rdfs:comment>
+    </owl:Class>
+
+    <owl:Class rdf:about="http://cptl-c.org/enterprise/2015/07/enterprise_network/NIC">
+      <rdfs:subClassOf rdf:resource="http://cptl-c.org/core/2014/07/core/Asset"/>
+      <rdfs:label xml:lang="en">NIC</rdfs:label>
+      <rdfs:comment>A computer hardware component that connects a
+      computer to a computer network
+      (https://en.wikipedia.org/wiki/Network_interface_controller)</rdfs:comment>
+    </owl:Class>
+    
+    <owl:Class rdf:about="http://cptl-c.org/enterprise/2015/07/enterprise_network/Switch">
+      <rdfs:subClassOf rdf:resource="http://cptl-c.org/core/2014/07/core/Asset"/>
+      <rdfs:label xml:lang="en">Switch</rdfs:label>
+      <rdfs:comment>A network switch (also called switching hub,
+    bridging hub, officially MAC bridge[1]) is a computer networking
+    device that connects devices together on a computer network, by
+    using packet switching to receive, process and forward data to the
+    destination device. Unlike less advanced network hubs, a network
+    switch forwards data only to one or multiple devices that need to
+    receive it, rather than broadcasting the same data out of each of
+    its ports. (http://en.wikipedia.org/wiki/Network_switch)</rdfs:comment>
+    </owl:Class>
+
+    <!-- Resources -->
+    <owl:Class rdf:about="http://cptl-c.org/enterprise/2015/07/enterprise_network/IPAddress">
+      <rdfs:subClassOf rdf:resource="http://cptl-c.org/core/2014/07/core/Asset"/>
+      <rdfs:label xml:lang="en">IP Address</rdfs:label>
+      <rdfs:comment>An Internet Protocol address (IP address) is a
+      numerical label assigned to each device (e.g., computer,
+      printer) participating in a computer network that uses the
+      Internet Protocol for communication. An IP address serves two
+      principal functions: host or network interface identification
+      and location addressing. (http://en.wikipedia.org/wiki/IP_address)
+      </rdfs:comment>
+    </owl:Class>
+
+    <owl:Class rdf:about="http://cptl-c.org/enterprise/2015/07/enterprise_network/IPv4Address">
+      <rdfs:subClassOf rdf:resource="http://cptl-c.org/enterprise/2015/07/enterprise_network/IPAddress"/>
+      <rdfs:label xml:lang="en">IPv4 Address</rdfs:label>
+    </owl:Class>
+
+    <owl:Class rdf:about="http://cptl-c.org/enterprise/2015/07/enterprise_network/IPv6Address">
+      <rdfs:subClassOf rdf:resource="http://cptl-c.org/enterprise/2015/07/enterprise_network/IPAddress"/>
+      <rdfs:label xml:lang="en">IPv6 Address</rdfs:label>
+    </owl:Class>
+
+    <owl:Class rdf:about="http://cptl-c.org/enterprise/2015/07/enterprise_network/Port">
+      <rdfs:subClassOf rdf:resource="http://cptl-c.org/enerprise/2015/07/enterprise_network/Port"/>
+      <rdfs:label xml:lang="en">Port</rdfs:label>
+      <rdfs:comment>A port is a software construct serving as a communications endpoint in a computer's host operating system. A port is always associated with an IP address of a host and the protocol type of the communication. It completes the destination or origination address of a communications session. A port is identified for each address and protocol by a 16-bit number, commonly known as the port number. (http://en.wikipedia.org/wiki/Port_(computer_networking))</rdfs:comment>
+    </owl:Class>
+    
+  <!-- Relations -->
+  <!-- Object Properties -->    
+  <owl:ObjectProperty rdf:about="http://cptl-c.org/enterprise/2015/07/enterprise_network/hasIPAddress">
+    <rdfs:label xml:lang="en">Has IP Address</rdfs:label>
+    <rdfs:comment>An IPv4 or IPv6 value associated with an Asset.</rdfs:comment>    
+    <rdfs:domain rdf:resource="&cptlc;Asset"/>
+    <rdfs:range rdf:resource="&enet;IPAddress"/>
+  </owl:ObjectProperty>
+
+  <owl:ObjectProperty rdf:about="http://cptl-c.org/enterprise/2015/07/enterprise_network/hasPort">
+    <rdfs:label xml:lang="en">Has Port</rdfs:label>
+    <rdfs:comment>A port associated with an asset</rdfs:comment>
+    <rdfs:domain rdf:resource="&cptlc;Asset"/>
+    <rdfs:range rdf:resource="&enet;Port"/>
+  </owl:ObjectProperty>
+
+  <!-- Datatype Properties -->
+
+  <owl:DatatypeProperty rdf:about="http://cptl-c.org/enterprise/2015/07/enterprise_network/hasDomainNameValue">
+    <rdfs:label xml:lang="en">Domain Name Value</rdfs:label>
+    <rdfs:comment>A Domain Name value associated with a devices.</rdfs:comment>
+    <rdfs:domain rdf:resource="&cptlc;Asset"/>
+    <rdfs:range rdf:resource="&rdfs;Literal"/>
+  </owl:DatatypeProperty>
+
+  <owl:DatatypeProperty rdf:about="http://cptl-c.org/enterprise/2015/07/enterprise_network/hasIPAddressValue">
+    <rdfs:label xml:lang="en">IP Address Value</rdfs:label>
+    <rdfs:comment>An IPv4 or IPv6 value associated with a devices.</rdfs:comment>
+    <rdfs:domain rdf:resource="&cptlc;Asset"/>
+    <rdfs:range rdf:resource="&rdfs;Literal"/>
+  </owl:DatatypeProperty>
+
+  <owl:DatatypeProperty rdf:about="http://cptl-c.org/enterprise/2015/07/enterprise_network/hasNetworkMask">
+    <rdfs:label xml:lang="en">Network Mask</rdfs:label>
+    <rdfs:comment>The bitmask that when applied by a bitwise AND operation to any IP address in the network,
+      recovers the network address (https://en.wikipedia.org/wiki/Subnetwork).</rdfs:comment>
+    <rdfs:domain rdf:resource="&cptlc;Asset"/>
+    <rdfs:range rdf:resource="&rdfs;Literal"/>
+  </owl:DatatypeProperty>
+
+  <owl:DatatypeProperty rdf:about="http://cptl-c.org/enterprise/2015/07/enterprise_network/hasNetworkAddress">
+    <rdfs:label xml:lang="en">Network Address</rdfs:label>
+    <rdfs:comment></rdfs:comment>
+    <rdfs:domain rdf:resource="&cptlc;Asset"/>
+    <rdfs:range rdf:resource="&rdfs;Literal"/>
+  </owl:DatatypeProperty>
+
+  <owl:DatatypeProperty rdf:about="http://cptl-c.org/enterprise/2015/07/enterprise_network/hasPortValue">
+    <rdfs:label xml:lang="en">Has Port Value</rdfs:label>
+    <rdfs:comment>A port associated with an asset</rdfs:comment>
+    <rdfs:domain rdf:resource="&cptlc;Asset"/>
+    <rdfs:range rdf:resource="&rdfs;Literal"/>
+  </owl:DatatypeProperty>
+
+  <owl:DatatypeProperty rdf:about="http://cptl-c.org/enterprise/2015/07/enterprise_network/hasIPv4AddressValue">
+    <rdfs:label xml:lang="en">IPv4 Value</rdfs:label>
+    <rdfs:comment>An IPv4 value associated with a devices.</rdfs:comment>
+    <rdfs:domain rdf:resource="&cptlc;Asset"/>
+    <rdfs:range rdf:resource="&rdfs;Literal"/>
+  </owl:DatatypeProperty>
+
+  <owl:DatatypeProperty rdf:about="http://cptl-c.org/enterprise/2015/07/enterprise_network/hasIPv6AddressValue">
+    <rdfs:label xml:lang="en">IPv6 Value</rdfs:label>
+    <rdfs:comment>An IPv6 value associated with a devices.</rdfs:comment>
+    <rdfs:domain rdf:resource="&cptlc;Asset"/>
+    <rdfs:range rdf:resource="&rdfs;Literal"/>
+  </owl:DatatypeProperty>
+  
+</rdf:RDF>
+
+
+

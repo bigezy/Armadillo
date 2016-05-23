@@ -1,0 +1,122 @@
+{
+  "nodes": [
+    {
+      "rdfs:label": "Paris ND 49", 
+      "rdfs:type": "syard:Node", 
+      "cptlc:hasURI": "http://Paris-ND-49.yard.paris.8sub.cypsa.projects.cptl-c.org", 
+      "cptlc:hasUUID": "e7bc0aba-e865-4ab9-b150-049620c2d659"
+    }, 
+    {
+      "rdfs:label": "Paris BRK 4950", 
+      "rdfs:type": "syard:Breaker", 
+      "cptlc:hasURI": "http://Paris-BRK-4950.yard.paris.8sub.cypsa.projects.cptl-c.org", 
+      "cptlc:hasUUID": "cd32123c-03b4-4cc9-b51b-744a8a8b86b6"
+    }, 
+    {
+      "rdfs:label": "Paris ND 50", 
+      "rdfs:type": "syard:Bus", 
+      "cptlc:hasURI": "http://Paris-ND-50.yard.paris.8sub.cypsa.projects.cptl-c.org", 
+      "cptlc:hasUUID": "f4a23a49-2c39-4ff2-9f1f-11c10ad93f0e"
+    }, 
+    {
+      "rdfs:label": "Paris BRK 5051", 
+      "rdfs:type": "syard:Breaker", 
+      "cptlc:hasURI": "http://Paris-BRK-5051.yard.paris.8sub.cypsa.projects.cptl-c.org", 
+      "cptlc:hasUUID": "5f92ebe3-7b6e-4abf-a435-2c3979293023"
+    }, 
+    {
+      "rdfs:label": "Paris ND 51", 
+      "rdfs:type": "syard:Node", 
+      "cptlc:hasURI": "http://Paris-ND-51.yard.paris.8sub.cypsa.projects.cptl-c.org", 
+      "cptlc:hasUUID": "8bc60736-ee1c-42b3-a894-8113340a3262"
+    }, 
+    {
+      "rdfs:label": "Paris BRK 4850", 
+      "rdfs:type": "syard:Breaker", 
+      "cptlc:hasURI": "http://Paris-BRK-4850.yard.paris.8sub.cypsa.projects.cptl-c.org", 
+      "cptlc:hasUUID": "178cf804-cd47-4806-b551-d375af4a684f"
+    }, 
+    {
+      "rdfs:label": "Paris ND 48", 
+      "rdfs:type": "syard:Node", 
+      "cptlc:hasURI": "http://Paris-ND-48.yard.paris.8sub.cypsa.projects.cptl-c.org", 
+      "cptlc:hasUUID": "75b6daa1-73b4-4198-bcf9-52490de851b1"
+    }, 
+    {
+      "rdfs:label": "Paris BRK 5052", 
+      "rdfs:type": "syard:Breaker", 
+      "cptlc:hasURI": "http://Paris-BRK-5052.yard.paris.8sub.cypsa.projects.cptl-c.org", 
+      "cptlc:hasUUID": "f30b6853-85cc-44b0-a2fa-cb0f2e2e6724"
+    }, 
+    {
+      "rdfs:label": "Paris ND 52", 
+      "rdfs:type": "syard:Node", 
+      "cptlc:hasURI": "http://Paris-ND-52.yard.paris.8sub.cypsa.projects.cptl-c.org", 
+      "cptlc:hasUUID": "619d4f87-55bb-4162-96f3-7da8b7958246"
+    }, 
+    {
+      "rdfs:label": "Springfield ND 42", 
+      "rdfs:type": "cptlc:Asset", 
+      "cptlc:hasURI": "http://Springfield-ND-42.yard.springfield.8sub.cypsa.projects.cptl-c.org", 
+      "cptlc:hasUUID": "35db8ebd-731a-4217-bf46-8e37a4d8b6db"
+    }, 
+    {
+      "rdfs:label": "Cypress Creek ND 24", 
+      "rdfs:type": "cptlc:Asset", 
+      "cptlc:hasURI": "http://Cypress_Creek-ND-24.yard.cypress-creek.8sub.cypsa.projects.cptl-c.org", 
+      "cptlc:hasUUID": "1fdf2552-3cb4-4901-b42b-56f9d57f4e48"
+    }
+  ], 
+  "links": [
+    {
+      "source": "e7bc0aba-e865-4ab9-b150-049620c2d659", 
+      "relation": "syard:hasLine", 
+      "target": "cd32123c-03b4-4cc9-b51b-744a8a8b86b6"
+    }, 
+    {
+      "source": "cd32123c-03b4-4cc9-b51b-744a8a8b86b6", 
+      "relation": "syard:hasLine", 
+      "target": "f4a23a49-2c39-4ff2-9f1f-11c10ad93f0e"
+    }, 
+    {
+      "source": "f4a23a49-2c39-4ff2-9f1f-11c10ad93f0e", 
+      "relation": "syard:hasLine", 
+      "target": "5f92ebe3-7b6e-4abf-a435-2c3979293023"
+    }, 
+    {
+      "source": "f4a23a49-2c39-4ff2-9f1f-11c10ad93f0e", 
+      "relation": "syard:hasLine", 
+      "target": "178cf804-cd47-4806-b551-d375af4a684f"
+    }, 
+    {
+      "source": "f4a23a49-2c39-4ff2-9f1f-11c10ad93f0e", 
+      "relation": "syard:hasLine", 
+      "target": "f30b6853-85cc-44b0-a2fa-cb0f2e2e6724"
+    }, 
+    {
+      "source": "5f92ebe3-7b6e-4abf-a435-2c3979293023", 
+      "relation": "syard:hasLine", 
+      "target": "8bc60736-ee1c-42b3-a894-8113340a3262"
+    }, 
+    {
+      "source": "8bc60736-ee1c-42b3-a894-8113340a3262", 
+      "relation": "syard:hasLine", 
+      "target": "35db8ebd-731a-4217-bf46-8e37a4d8b6db"
+    }, 
+    {
+      "source": "178cf804-cd47-4806-b551-d375af4a684f", 
+      "relation": "syard:hasLine", 
+      "target": "75b6daa1-73b4-4198-bcf9-52490de851b1"
+    }, 
+    {
+      "source": "75b6daa1-73b4-4198-bcf9-52490de851b1", 
+      "relation": "syard:hasLine", 
+      "target": "1fdf2552-3cb4-4901-b42b-56f9d57f4e48"
+    }, 
+    {
+      "source": "f30b6853-85cc-44b0-a2fa-cb0f2e2e6724", 
+      "relation": "syard:hasLine", 
+      "target": "619d4f87-55bb-4162-96f3-7da8b7958246"
+    }
+  ]
+}

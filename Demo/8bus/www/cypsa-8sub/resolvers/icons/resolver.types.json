@@ -1,0 +1,56 @@
+{
+    "cptlc:Asset": {
+	"icon": "icons/img/core/asset.png"
+    },
+    "enet:Firewall": {
+       "icon": "icons/img/enterprise_network/firewall.gif"
+    },
+    "enet:Gateway": {
+       "icon": "icons/img/enterprise_network/router.gif"
+    },
+    "enet:Host": {
+       "icon": "icons/img/enterprise_network/device.gif"
+    },
+    "enet:NIC": {
+       "icon": "icons/img/enterprise_network/network_jack.png"
+    },
+    "enet:Network": {
+       "icon": "icons/img/enterprise_network/network.png"
+    },
+    "snet-sel:3620": {
+      "icon": "icons/img/substation_network/SEL/SEL-3620.png"	
+    },
+    "snet-sel:421": {
+      "icon": "icons/img/substation_network/SEL/SEL-421.png" 
+    },
+    "snet-sel:451": {
+      "icon": "icons/img/substation_network/SEL/SEL-451.png" 
+    },
+    "snet:DistanceRelay": {
+      "icon": "icons/img/substation_network/distance_relay.png"
+    },
+    "snet:OvercurrentRelay": {
+      "icon": "icons/img/substation_network/overcurrent_relay.png"
+    },
+    "snet:ReversePowerRelay": {
+      "icon": "icons/img/substation_network/reverse_power_relay.png"
+    },
+    "snet:Switch": {
+      "icon": "icons/img/substation_network/switch.png"
+    },
+    "syard:Breaker": {
+      "icon": "icons/img/substation_yard/breaker.png"
+    },
+    "syard:Bus": {
+      "icon": "icons/img/substation_yard/bus.png"
+    },
+    "syard:Generator": {
+      "icon": "icons/img/substation_yard/generator.png"
+    },
+    "syard:Node": {
+      "icon": "icons/img/substation_yard/node.png"
+    },
+    "syard:Transformer": {
+      "icon": "icons/img/substation_yard/transformer.png"
+    }
+}

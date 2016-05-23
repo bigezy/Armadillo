@@ -1,0 +1,4817 @@
+{
+  "nodes": [
+    {
+      "rdfs:label": "Shelbyville SEL 421 1", 
+      "rdfs:type": "snet-sel:421", 
+      "cptlc:hasUUID": "f8486fb3-83fd-4401-a6f4-f93f7c088e87", 
+      "enet:hasIPAddressValue": "10.36.1.201", 
+      "cptlc:hasURI": "http://SEL_421_1.network.shelbyville.8sub.cypsa.projects.cptl-c.org", 
+      "cptlc:hasAliases": "480622cc-1dcb-4219-92e8-150fac66bfae"
+    }, 
+    {
+      "rdfs:label": "Shelbyville SEL 421 2", 
+      "rdfs:type": "snet-sel:421", 
+      "cptlc:hasUUID": "fdbc4b0e-0a55-48a0-b37b-b18c347c9956", 
+      "enet:hasIPAddressValue": "10.36.1.202", 
+      "cptlc:hasURI": "http://SEL_421_2.network.shelbyville.8sub.cypsa.projects.cptl-c.org", 
+      "cptlc:hasAliases": "137bb87c-2302-4a6a-b09b-ba198f4e33a1"
+    }, 
+    {
+      "rdfs:label": "Shelbyville SEL 421 3", 
+      "rdfs:type": "snet-sel:421", 
+      "cptlc:hasUUID": "67e354a9-07ed-453d-9da3-10f5f775f3e1", 
+      "enet:hasIPAddressValue": "10.36.1.203", 
+      "cptlc:hasURI": "http://SEL_421_3.network.shelbyville.8sub.cypsa.projects.cptl-c.org", 
+      "cptlc:hasAliases": "48edc523-2d7b-4233-887d-e3e722b06c4a"
+    }, 
+    {
+      "rdfs:label": "Haverbrook Distance Relay 1", 
+      "rdfs:type": "snet:DistanceRelay", 
+      "cptlc:hasUUID": "01d24675-dcf7-4792-8041-e9ce3b1ede7a", 
+      "enet:hasIPAddressValue": "10.32.1.201", 
+      "cptlc:hasURI": "http://DistanceRelay_1.network.haverbrook.8sub.cypsa.projects.cptl-c.org", 
+      "cptlc:hasAliases": "f4e4d975-fd2b-4c6e-bd27-d8e01c448c8b"
+    }, 
+    {
+      "rdfs:label": "Springfield Distance Relay 2", 
+      "rdfs:type": "snet:DistanceRelay", 
+      "cptlc:hasUUID": "742b4f3c-9514-4986-bdd1-b228a2f65585", 
+      "enet:hasIPAddressValue": "10.38.1.202", 
+      "cptlc:hasURI": "http://DistanceRelay_2.network.springfield.8sub.cypsa.projects.cptl-c.org", 
+      "cptlc:hasAliases": "eeccfcf3-4131-4c49-aac2-3690aa481434"
+    }, 
+    {
+      "rdfs:label": "Springfield Distance Relay 3", 
+      "rdfs:type": "snet:DistanceRelay", 
+      "cptlc:hasUUID": "6ff28069-25fa-44c7-ab33-22a819628615", 
+      "enet:hasIPAddressValue": "10.38.1.203", 
+      "cptlc:hasURI": "http://DistanceRelay_3.network.springfield.8sub.cypsa.projects.cptl-c.org", 
+      "cptlc:hasAliases": "cf47fd37-83f1-4ded-9339-bda45252af5c"
+    }, 
+    {
+      "rdfs:label": "Springfield Distance Relay 1", 
+      "rdfs:type": "snet:DistanceRelay", 
+      "cptlc:hasUUID": "161242af-b72f-4fc0-aa56-9715ac284a92", 
+      "enet:hasIPAddressValue": "10.38.1.201", 
+      "cptlc:hasURI": "http://DistanceRelay_1.network.springfield.8sub.cypsa.projects.cptl-c.org", 
+      "cptlc:hasAliases": "4c9abf68-11db-424f-a2dc-055e50c350cd"
+    }, 
+    {
+      "rdfs:label": "Shelbyville SEL 451 3", 
+      "rdfs:type": "snet-sel:451", 
+      "cptlc:hasUUID": "a9d2e23a-749a-4cd0-879e-f279be9aaa70", 
+      "enet:hasIPAddressValue": "10.36.1.103", 
+      "cptlc:hasURI": "http://SEL_451_3.network.shelbyville.8sub.cypsa.projects.cptl-c.org"
+    }, 
+    {
+      "rdfs:label": "Shelbyville SEL 451 2", 
+      "rdfs:type": "snet-sel:451", 
+      "cptlc:hasUUID": "43d4b592-7131-4940-8a23-2487682e00f5", 
+      "enet:hasIPAddressValue": "10.36.1.102", 
+      "cptlc:hasURI": "http://SEL_451_2.network.shelbyville.8sub.cypsa.projects.cptl-c.org"
+    }, 
+    {
+      "rdfs:label": "Shelbyville SEL 451 1", 
+      "rdfs:type": "snet-sel:451", 
+      "cptlc:hasUUID": "fcf89e43-74b4-404b-a350-e737f533fd83", 
+      "enet:hasIPAddressValue": "10.36.1.101", 
+      "cptlc:hasURI": "http://SEL_451_1.network.shelbyville.8sub.cypsa.projects.cptl-c.org"
+    }, 
+    {
+      "rdfs:label": "Shelbyville SEL 451 5", 
+      "rdfs:type": "snet-sel:451", 
+      "cptlc:hasUUID": "a1dd879f-8285-4a81-ac8b-62e8fdf6fa80", 
+      "enet:hasIPAddressValue": "10.36.1.105", 
+      "cptlc:hasURI": "http://SEL_451_5.network.shelbyville.8sub.cypsa.projects.cptl-c.org"
+    }, 
+    {
+      "rdfs:label": "Shelbyville SEL 451 4", 
+      "rdfs:type": "snet-sel:451", 
+      "cptlc:hasUUID": "b6b8db05-c60b-41f0-92a8-a460b1633952", 
+      "enet:hasIPAddressValue": "10.36.1.104", 
+      "cptlc:hasURI": "http://SEL_451_4.network.shelbyville.8sub.cypsa.projects.cptl-c.org"
+    }, 
+    {
+      "rdfs:label": "Capital City Distance Relay 1", 
+      "rdfs:type": "snet:DistanceRelay", 
+      "cptlc:hasUUID": "c07148cb-aaeb-49b6-bad0-ffc8d054bd1f", 
+      "enet:hasIPAddressValue": "10.37.1.201", 
+      "cptlc:hasURI": "http://DistanceRelay_1.network.capital-city.8sub.cypsa.projects.cptl-c.org", 
+      "cptlc:hasAliases": "2753c46f-0a3c-4213-8f3c-41dc16e8a60a"
+    }, 
+    {
+      "rdfs:label": "Paris SEL 421 3", 
+      "rdfs:type": "snet-sel:421", 
+      "cptlc:hasUUID": "9fe628df-b617-4d7b-a144-d9a9c0c17205", 
+      "enet:hasIPAddressValue": "10.35.1.203", 
+      "cptlc:hasURI": "http://SEL_421_3.network.paris.8sub.cypsa.projects.cptl-c.org", 
+      "cptlc:hasAliases": "1bb97ffa-984d-4e2f-9522-a4200dd92089"
+    }, 
+    {
+      "rdfs:label": "Cypress Creek SEL 451 1", 
+      "rdfs:type": "snet-sel:451", 
+      "cptlc:hasUUID": "7941ce0f-4e6c-49da-aeda-a9b2ad526f13", 
+      "enet:hasIPAddressValue": "10.31.1.101", 
+      "cptlc:hasURI": "http://SEL_451_1.network.cypress-creek.8sub.cypsa.projects.cptl-c.org"
+    }, 
+    {
+      "rdfs:label": "Cypress Creek SEL 451 2", 
+      "rdfs:type": "snet-sel:451", 
+      "cptlc:hasUUID": "9cf12279-ecdd-426f-9a59-b0d79ca11718", 
+      "enet:hasIPAddressValue": "10.31.1.102", 
+      "cptlc:hasURI": "http://SEL_451_2.network.cypress-creek.8sub.cypsa.projects.cptl-c.org"
+    }, 
+    {
+      "rdfs:label": "Cypress Creek SEL 451 3", 
+      "rdfs:type": "snet-sel:451", 
+      "cptlc:hasUUID": "070bc84a-21d0-4415-a1d1-86a180d12794", 
+      "enet:hasIPAddressValue": "10.31.1.103", 
+      "cptlc:hasURI": "http://SEL_451_3.network.cypress-creek.8sub.cypsa.projects.cptl-c.org"
+    }, 
+    {
+      "rdfs:label": "Capital City Overcurrent Relay 2", 
+      "rdfs:type": "snet:OvercurrentRelay", 
+      "cptlc:hasUUID": "439a58ac-e7b2-45ce-a341-d33889b8a7ff", 
+      "enet:hasIPAddressValue": "10.37.1.102", 
+      "cptlc:hasURI": "http://OvercurrentRelay_2.network.capital-city.8sub.cypsa.projects.cptl-c.org"
+    }, 
+    {
+      "rdfs:label": "Odgenville SEL 451 3", 
+      "rdfs:type": "snet-sel:451", 
+      "cptlc:hasUUID": "afbe4c7c-ca25-404b-a56d-554a96e31928", 
+      "enet:hasIPAddressValue": "10.34.1.103", 
+      "cptlc:hasURI": "http://SEL_451_3.network.odgenville.8sub.cypsa.projects.cptl-c.org"
+    }, 
+    {
+      "rdfs:label": "Capital City Overcurrent Relay 1", 
+      "rdfs:type": "snet:OvercurrentRelay", 
+      "cptlc:hasUUID": "5132181c-be87-4ced-b3a9-b7140e5ff39c", 
+      "enet:hasIPAddressValue": "10.37.1.101", 
+      "cptlc:hasURI": "http://OvercurrentRelay_1.network.capital-city.8sub.cypsa.projects.cptl-c.org"
+    }, 
+    {
+      "rdfs:label": "North Haverbrook Distance Relay 1", 
+      "rdfs:type": "snet:DistanceRelay", 
+      "cptlc:hasUUID": "ed9c5caf-1309-40b2-81a3-72f1ab68d683", 
+      "enet:hasIPAddressValue": "10.33.1.201", 
+      "cptlc:hasURI": "http://DistanceRelay_1.network.north-haverbrook.8sub.cypsa.projects.cptl-c.org", 
+      "cptlc:hasAliases": "64fafacf-03fe-4877-80fb-46531ca2bdaf"
+    }, 
+    {
+      "rdfs:label": "North Haverbrook Distance Relay 3", 
+      "rdfs:type": "snet:DistanceRelay", 
+      "cptlc:hasUUID": "8cc7974c-c37b-4986-a6b4-eb8785b72979", 
+      "enet:hasIPAddressValue": "10.33.1.203", 
+      "cptlc:hasURI": "http://DistanceRelay_3.network.north-haverbrook.8sub.cypsa.projects.cptl-c.org", 
+      "cptlc:hasAliases": "0f762aee-deed-4c16-9f4b-cc7501e94607"
+    }, 
+    {
+      "rdfs:label": "North Haverbrook Distance Relay 2", 
+      "rdfs:type": "snet:DistanceRelay", 
+      "cptlc:hasUUID": "59748548-734f-4b54-bad0-71ca8cc63caf", 
+      "enet:hasIPAddressValue": "10.33.1.202", 
+      "cptlc:hasURI": "http://DistanceRelay_2.network.north-haverbrook.8sub.cypsa.projects.cptl-c.org", 
+      "cptlc:hasAliases": "e06d008d-f286-4f46-bd2f-bf913aaecc49"
+    }, 
+    {
+      "rdfs:label": "Odgenville SEL 421 2", 
+      "rdfs:type": "snet-sel:421", 
+      "cptlc:hasUUID": "bdda7db1-1d59-4b99-a015-008b57cec064", 
+      "enet:hasIPAddressValue": "10.34.1.202", 
+      "cptlc:hasURI": "http://SEL_421_2.network.odgenville.8sub.cypsa.projects.cptl-c.org", 
+      "cptlc:hasAliases": "d89719b9-31fb-4231-ac49-74af9116487d"
+    }, 
+    {
+      "rdfs:label": "Paris SEL 421 2", 
+      "rdfs:type": "snet-sel:421", 
+      "cptlc:hasUUID": "ad04ff88-d11e-4b96-8f37-bf63f0403deb", 
+      "enet:hasIPAddressValue": "10.35.1.202", 
+      "cptlc:hasURI": "http://SEL_421_2.network.paris.8sub.cypsa.projects.cptl-c.org", 
+      "cptlc:hasAliases": "fed35c48-3b7b-4614-895d-4980a91fb3b6"
+    }, 
+    {
+      "rdfs:label": "Paris SEL 421 1", 
+      "rdfs:type": "snet-sel:421", 
+      "cptlc:hasUUID": "a9a84b0b-5757-4139-8a82-4fa77105fbf7", 
+      "enet:hasIPAddressValue": "10.35.1.201", 
+      "cptlc:hasURI": "http://SEL_421_1.network.paris.8sub.cypsa.projects.cptl-c.org", 
+      "cptlc:hasAliases": "9b9eb3ec-90a5-4fbb-ac18-80fd21c08208"
+    }, 
+    {
+      "rdfs:label": "Odgenville SEL 421 1", 
+      "rdfs:type": "snet-sel:421", 
+      "cptlc:hasUUID": "a1cc5d34-9d45-4729-8361-c06a90df9ace", 
+      "enet:hasIPAddressValue": "10.34.1.201", 
+      "cptlc:hasURI": "http://SEL_421_1.network.odgenville.8sub.cypsa.projects.cptl-c.org", 
+      "cptlc:hasAliases": "bb2c3b34-8299-437f-a162-f79a6e72640d"
+    }, 
+    {
+      "rdfs:label": "Cypress Creek SEL 451 4", 
+      "rdfs:type": "snet-sel:451", 
+      "cptlc:hasUUID": "530748f2-af9a-4da4-aeb3-ef7a35108dc3", 
+      "enet:hasIPAddressValue": "10.31.1.104", 
+      "cptlc:hasURI": "http://SEL_451_4.network.cypress-creek.8sub.cypsa.projects.cptl-c.org"
+    }, 
+    {
+      "rdfs:label": "Cypress Creek SEL 451 5", 
+      "rdfs:type": "snet-sel:451", 
+      "cptlc:hasUUID": "7380eecd-a2b3-4969-9083-21a3d18f10b8", 
+      "enet:hasIPAddressValue": "10.31.1.105", 
+      "cptlc:hasURI": "http://SEL_451_5.network.cypress-creek.8sub.cypsa.projects.cptl-c.org"
+    }, 
+    {
+      "rdfs:label": "North Haverbrook Overcurrent Relay 6", 
+      "rdfs:type": "snet:OvercurrentRelay", 
+      "cptlc:hasUUID": "4b30a284-ab49-4253-be6b-5e95b574f408", 
+      "enet:hasIPAddressValue": "10.33.1.106", 
+      "cptlc:hasURI": "http://OvercurrentRelay_6.network.north-haverbrook.8sub.cypsa.projects.cptl-c.org"
+    }, 
+    {
+      "rdfs:label": "North Haverbrook Overcurrent Relay 7", 
+      "rdfs:type": "snet:OvercurrentRelay", 
+      "cptlc:hasUUID": "e69e0a5d-135d-4ece-a01c-deefcfbb9701", 
+      "enet:hasIPAddressValue": "10.33.1.107", 
+      "cptlc:hasURI": "http://OvercurrentRelay_7.network.north-haverbrook.8sub.cypsa.projects.cptl-c.org"
+    }, 
+    {
+      "rdfs:label": "North Haverbrook Overcurrent Relay 4", 
+      "rdfs:type": "snet:OvercurrentRelay", 
+      "cptlc:hasUUID": "81a375b7-62cc-4d72-bded-d59974a7cea3", 
+      "enet:hasIPAddressValue": "10.33.1.104", 
+      "cptlc:hasURI": "http://OvercurrentRelay_4.network.north-haverbrook.8sub.cypsa.projects.cptl-c.org"
+    }, 
+    {
+      "rdfs:label": "North Haverbrook Overcurrent Relay 5", 
+      "rdfs:type": "snet:OvercurrentRelay", 
+      "cptlc:hasUUID": "a090cc41-df51-4dd8-9007-77c8f5cb86da", 
+      "enet:hasIPAddressValue": "10.33.1.105", 
+      "cptlc:hasURI": "http://OvercurrentRelay_5.network.north-haverbrook.8sub.cypsa.projects.cptl-c.org"
+    }, 
+    {
+      "rdfs:label": "North Haverbrook Overcurrent Relay 2", 
+      "rdfs:type": "snet:OvercurrentRelay", 
+      "cptlc:hasUUID": "67c266a7-43d3-40f7-9f87-189a2fcd2ee7", 
+      "enet:hasIPAddressValue": "10.33.1.102", 
+      "cptlc:hasURI": "http://OvercurrentRelay_2.network.north-haverbrook.8sub.cypsa.projects.cptl-c.org"
+    }, 
+    {
+      "rdfs:label": "North Haverbrook Overcurrent Relay 3", 
+      "rdfs:type": "snet:OvercurrentRelay", 
+      "cptlc:hasUUID": "43b53562-dc7b-41a4-9ad0-debae65b0538", 
+      "enet:hasIPAddressValue": "10.33.1.103", 
+      "cptlc:hasURI": "http://OvercurrentRelay_3.network.north-haverbrook.8sub.cypsa.projects.cptl-c.org"
+    }, 
+    {
+      "rdfs:label": "North Haverbrook Overcurrent Relay 1", 
+      "rdfs:type": "snet:OvercurrentRelay", 
+      "cptlc:hasUUID": "0d61ae49-16d2-4caa-85ca-c0522bd9e8b2", 
+      "enet:hasIPAddressValue": "10.33.1.101", 
+      "cptlc:hasURI": "http://OvercurrentRelay_1.network.north-haverbrook.8sub.cypsa.projects.cptl-c.org"
+    }, 
+    {
+      "rdfs:label": "Cypress Creek SEL 421 7", 
+      "rdfs:type": "snet-sel:421", 
+      "cptlc:hasUUID": "d5f19e38-e00a-404f-9c6b-123ae4eebde2", 
+      "enet:hasIPAddressValue": "10.31.1.207", 
+      "cptlc:hasURI": "http://SEL_421_7.network.cypress-creek.8sub.cypsa.projects.cptl-c.org", 
+      "cptlc:hasAliases": "c5a1f3fe-dd10-4e9a-a025-68f91fe748c9"
+    }, 
+    {
+      "rdfs:label": "Cypress Creek SEL 421 6", 
+      "rdfs:type": "snet-sel:421", 
+      "cptlc:hasUUID": "a0922f69-e9f2-4c42-ba70-bda13444194b", 
+      "enet:hasIPAddressValue": "10.31.1.206", 
+      "cptlc:hasURI": "http://SEL_421_6.network.cypress-creek.8sub.cypsa.projects.cptl-c.org", 
+      "cptlc:hasAliases": "02b71caa-d730-4577-91dd-e960c78d869b"
+    }, 
+    {
+      "rdfs:label": "Cypress Creek SEL 421 5", 
+      "rdfs:type": "snet-sel:421", 
+      "cptlc:hasUUID": "56a1d018-c973-403f-826b-309292e1af4f", 
+      "enet:hasIPAddressValue": "10.31.1.205", 
+      "cptlc:hasURI": "http://SEL_421_5.network.cypress-creek.8sub.cypsa.projects.cptl-c.org", 
+      "cptlc:hasAliases": "5b8800b5-ac08-4819-bba9-6b7b60f64cae"
+    }, 
+    {
+      "rdfs:label": "Cypress Creek SEL 421 4", 
+      "rdfs:type": "snet-sel:421", 
+      "cptlc:hasUUID": "7fb091cc-163c-4dfd-8f55-7aceda9aaee2", 
+      "enet:hasIPAddressValue": "10.31.1.204", 
+      "cptlc:hasURI": "http://SEL_421_4.network.cypress-creek.8sub.cypsa.projects.cptl-c.org", 
+      "cptlc:hasAliases": "05bf5cb2-0492-4b6b-88ff-f73eef19302f"
+    }, 
+    {
+      "rdfs:label": "Cypress Creek SEL 421 3", 
+      "rdfs:type": "snet-sel:421", 
+      "cptlc:hasUUID": "c56d1e83-8ccc-44fd-93a9-25f50ddb703f", 
+      "enet:hasIPAddressValue": "10.31.1.203", 
+      "cptlc:hasURI": "http://SEL_421_3.network.cypress-creek.8sub.cypsa.projects.cptl-c.org", 
+      "cptlc:hasAliases": "adcbd54d-8f75-48ba-a99e-1d3d08e23141"
+    }, 
+    {
+      "rdfs:label": "Cypress Creek SEL 421 2", 
+      "rdfs:type": "snet-sel:421", 
+      "cptlc:hasUUID": "7f336b00-f54f-4cc9-87bb-21251a1f2dd2", 
+      "enet:hasIPAddressValue": "10.31.1.202", 
+      "cptlc:hasURI": "http://SEL_421_2.network.cypress-creek.8sub.cypsa.projects.cptl-c.org"
+    }, 
+    {
+      "rdfs:label": "Cypress Creek SEL 421 1", 
+      "rdfs:type": "snet-sel:421", 
+      "cptlc:hasUUID": "73cd5af8-60b7-4563-bf38-c6cec7594d00", 
+      "enet:hasIPAddressValue": "10.31.1.201", 
+      "cptlc:hasURI": "http://SEL_421_1.network.cypress-creek.8sub.cypsa.projects.cptl-c.org", 
+      "cptlc:hasAliases": "2a42a23c-e908-49cd-a8b0-f5eecb4f602f"
+    }, 
+    {
+      "rdfs:label": "Springfield Overcurrent Relay 5", 
+      "rdfs:type": "snet:OvercurrentRelay", 
+      "cptlc:hasUUID": "705cf996-d5d0-424d-bacd-545a1e0eb226", 
+      "enet:hasIPAddressValue": "10.38.1.105", 
+      "cptlc:hasURI": "http://OvercurrentRelay_5.network.springfield.8sub.cypsa.projects.cptl-c.org"
+    }, 
+    {
+      "rdfs:label": "Odgenville SEL 451 2", 
+      "rdfs:type": "snet-sel:451", 
+      "cptlc:hasUUID": "28b2617f-3245-467b-a2e5-1b0e149589b2", 
+      "enet:hasIPAddressValue": "10.34.1.102", 
+      "cptlc:hasURI": "http://SEL_451_2.network.odgenville.8sub.cypsa.projects.cptl-c.org"
+    }, 
+    {
+      "rdfs:label": "Springfield Overcurrent Relay 1", 
+      "rdfs:type": "snet:OvercurrentRelay", 
+      "cptlc:hasUUID": "4394cdf3-bda5-471f-8ef3-f8c61aabb57e", 
+      "enet:hasIPAddressValue": "10.38.1.101", 
+      "cptlc:hasURI": "http://OvercurrentRelay_1.network.springfield.8sub.cypsa.projects.cptl-c.org"
+    }, 
+    {
+      "rdfs:label": "Springfield Overcurrent Relay 3", 
+      "rdfs:type": "snet:OvercurrentRelay", 
+      "cptlc:hasUUID": "7d4aa12a-b202-4bdd-b7f5-96484841eeb9", 
+      "enet:hasIPAddressValue": "10.38.1.103", 
+      "cptlc:hasURI": "http://OvercurrentRelay_3.network.springfield.8sub.cypsa.projects.cptl-c.org"
+    }, 
+    {
+      "rdfs:label": "Springfield Overcurrent Relay 2", 
+      "rdfs:type": "snet:OvercurrentRelay", 
+      "cptlc:hasUUID": "88dba10a-7e77-41b1-9373-733a65f650f5", 
+      "enet:hasIPAddressValue": "10.38.1.102", 
+      "cptlc:hasURI": "http://OvercurrentRelay_2.network.springfield.8sub.cypsa.projects.cptl-c.org"
+    }, 
+    {
+      "rdfs:label": "Odgenville SEL 451 1", 
+      "rdfs:type": "snet-sel:451", 
+      "cptlc:hasUUID": "cf98e3de-4318-46fe-8645-b39fb26f2627", 
+      "enet:hasIPAddressValue": "10.34.1.101", 
+      "cptlc:hasURI": "http://SEL_451_1.network.odgenville.8sub.cypsa.projects.cptl-c.org"
+    }, 
+    {
+      "rdfs:label": "Springfield Overcurrent Relay 4", 
+      "rdfs:type": "snet:OvercurrentRelay", 
+      "cptlc:hasUUID": "9930e062-0261-4b74-b3c0-32ff3316b7a4", 
+      "enet:hasIPAddressValue": "10.38.1.104", 
+      "cptlc:hasURI": "http://OvercurrentRelay_4.network.springfield.8sub.cypsa.projects.cptl-c.org"
+    }, 
+    {
+      "rdfs:label": "Paris SEL 451 1", 
+      "rdfs:type": "snet-sel:451", 
+      "cptlc:hasUUID": "94aee359-b937-4a8c-b17c-2a7f775aa9cb", 
+      "enet:hasIPAddressValue": "10.35.1.101", 
+      "cptlc:hasURI": "http://SEL_451_1.network.paris.8sub.cypsa.projects.cptl-c.org"
+    }, 
+    {
+      "rdfs:label": "Paris SEL 451 2", 
+      "rdfs:type": "snet-sel:451", 
+      "cptlc:hasUUID": "c296d972-6246-47bb-a1eb-637cfb6211d6", 
+      "enet:hasIPAddressValue": "10.35.1.102", 
+      "cptlc:hasURI": "http://SEL_451_2.network.paris.8sub.cypsa.projects.cptl-c.org"
+    }, 
+    {
+      "rdfs:label": "Paris SEL 451 3", 
+      "rdfs:type": "snet-sel:451", 
+      "cptlc:hasUUID": "024c3c4b-8f3b-4c66-9293-20a52fe8eb03", 
+      "enet:hasIPAddressValue": "10.35.1.103", 
+      "cptlc:hasURI": "http://SEL_451_3.network.paris.8sub.cypsa.projects.cptl-c.org"
+    }, 
+    {
+      "rdfs:label": "Paris SEL 451 4", 
+      "rdfs:type": "snet-sel:451", 
+      "cptlc:hasUUID": "993826f0-be8d-4bf0-89f0-44d518650e0e", 
+      "enet:hasIPAddressValue": "10.35.1.104", 
+      "cptlc:hasURI": "http://SEL_451_4.network.paris.8sub.cypsa.projects.cptl-c.org"
+    }, 
+    {
+      "rdfs:label": "NPV_IFACE_1919", 
+      "rdfs:type": "enet:NIC", 
+      "enet:hasIPAddressValue": "10.33.1.103", 
+      "cptlc:hasUUID": "861a4706-6a88-4944-bbb3-097f9c0d8306"
+    }, 
+    {
+      "rdfs:label": "NPV_IFACE_1921", 
+      "rdfs:type": "enet:NIC", 
+      "enet:hasIPAddressValue": "10.33.1.104", 
+      "cptlc:hasUUID": "a8f330b3-4355-4de3-b12a-bd916914c185"
+    }, 
+    {
+      "rdfs:label": "NPV_IFACE_1923", 
+      "rdfs:type": "enet:NIC", 
+      "enet:hasIPAddressValue": "10.33.1.105", 
+      "cptlc:hasUUID": "1e36e626-d499-494e-aba6-3cea95fcc114"
+    }, 
+    {
+      "rdfs:label": "NPV_IFACE_1925", 
+      "rdfs:type": "enet:NIC", 
+      "enet:hasIPAddressValue": "10.33.1.106", 
+      "cptlc:hasUUID": "4a38c47e-59b4-4dcc-a1f6-a24484803038"
+    }, 
+    {
+      "rdfs:label": "NPV_IFACE_1927", 
+      "rdfs:type": "enet:NIC", 
+      "enet:hasIPAddressValue": "10.33.1.107", 
+      "cptlc:hasUUID": "2d0e0823-7551-4529-acfd-ae5237550de1"
+    }, 
+    {
+      "rdfs:label": "10.33.1.250", 
+      "rdfs:type": "enet:Host", 
+      "cptlc:hasUUID": "e6b19c5d-f4ff-425c-aadf-33acd8963070"
+    }, 
+    {
+      "rdfs:label": "NPV_IFACE_1929", 
+      "rdfs:type": "enet:NIC", 
+      "enet:hasIPAddressValue": "10.33.1.250", 
+      "cptlc:hasUUID": "bb2f0407-e79d-4aea-b4f3-f1892c06fe41"
+    }, 
+    {
+      "rdfs:label": "10.34.1.250", 
+      "rdfs:type": "enet:Host", 
+      "cptlc:hasUUID": "1376bcad-d573-43a6-9e78-30dda7529c53"
+    }, 
+    {
+      "rdfs:label": "NPV_IFACE_1931", 
+      "rdfs:type": "enet:NIC", 
+      "enet:hasIPAddressValue": "10.34.1.250", 
+      "cptlc:hasUUID": "5c37821b-ba6a-4ce4-8ff9-51ec259b4ac3"
+    }, 
+    {
+      "rdfs:label": "NPV_IFACE_1933", 
+      "rdfs:type": "enet:NIC", 
+      "enet:hasIPAddressValue": "10.34.1.201", 
+      "cptlc:hasUUID": "0f76b8ad-cdc7-478f-b511-f80514c7fa9a"
+    }, 
+    {
+      "rdfs:label": "NPV_IFACE_1935", 
+      "rdfs:type": "enet:NIC", 
+      "enet:hasIPAddressValue": "10.34.1.202", 
+      "cptlc:hasUUID": "9447c4c6-a48c-40a6-8935-c5b2d6d1f443"
+    }, 
+    {
+      "rdfs:label": "NPV_IFACE_1937", 
+      "rdfs:type": "enet:NIC", 
+      "enet:hasIPAddressValue": "10.34.1.101", 
+      "cptlc:hasUUID": "39857355-81f2-457a-ae9a-73252d85e9f9"
+    }, 
+    {
+      "rdfs:label": "NPV_IFACE_1939", 
+      "rdfs:type": "enet:NIC", 
+      "enet:hasIPAddressValue": "10.34.1.102", 
+      "cptlc:hasUUID": "1141f6d2-e95b-4160-bfba-270c0e4f513d"
+    }, 
+    {
+      "rdfs:label": "NPV_IFACE_1941", 
+      "rdfs:type": "enet:NIC", 
+      "enet:hasIPAddressValue": "10.34.1.103", 
+      "cptlc:hasUUID": "12fb1c38-7338-461f-9018-16084f233878"
+    }, 
+    {
+      "rdfs:label": "10.35.1.250", 
+      "rdfs:type": "enet:Host", 
+      "cptlc:hasUUID": "1749e012-9569-455c-9143-e964c6768254"
+    }, 
+    {
+      "rdfs:label": "NPV_IFACE_1943", 
+      "rdfs:type": "enet:NIC", 
+      "enet:hasIPAddressValue": "10.35.1.250", 
+      "cptlc:hasUUID": "21366994-cddd-4aca-a752-95f5df1f7c1c"
+    }, 
+    {
+      "rdfs:label": "NPV_IFACE_1945", 
+      "rdfs:type": "enet:NIC", 
+      "enet:hasIPAddressValue": "10.35.1.201", 
+      "cptlc:hasUUID": "ac7a2473-b60b-4cd0-a3ee-56ffca75c454"
+    }, 
+    {
+      "rdfs:label": "NPV_IFACE_1947", 
+      "rdfs:type": "enet:NIC", 
+      "enet:hasIPAddressValue": "10.35.1.202", 
+      "cptlc:hasUUID": "fe5c9576-4e44-4961-bede-de3d2b4395c9"
+    }, 
+    {
+      "rdfs:label": "NPV_IFACE_1949", 
+      "rdfs:type": "enet:NIC", 
+      "enet:hasIPAddressValue": "10.35.1.203", 
+      "cptlc:hasUUID": "a619422b-58f0-42bc-89a9-2e2fddce2965"
+    }, 
+    {
+      "rdfs:label": "NPV_IFACE_1951", 
+      "rdfs:type": "enet:NIC", 
+      "enet:hasIPAddressValue": "10.35.1.101", 
+      "cptlc:hasUUID": "aef4b0d0-b07f-420e-ba88-635add6c31e0"
+    }, 
+    {
+      "rdfs:label": "NPV_IFACE_1953", 
+      "rdfs:type": "enet:NIC", 
+      "enet:hasIPAddressValue": "10.35.1.102", 
+      "cptlc:hasUUID": "ac81b0ef-2d14-4b70-aee7-c1da2709a1c3"
+    }, 
+    {
+      "rdfs:label": "NPV_IFACE_1955", 
+      "rdfs:type": "enet:NIC", 
+      "enet:hasIPAddressValue": "10.35.1.103", 
+      "cptlc:hasUUID": "bdb6ea7b-44b2-430d-bf4a-249a32e15a08"
+    }, 
+    {
+      "rdfs:label": "NPV_IFACE_1957", 
+      "rdfs:type": "enet:NIC", 
+      "enet:hasIPAddressValue": "10.35.1.104", 
+      "cptlc:hasUUID": "1020b8a5-705b-45a9-a91e-4a1d2bfa0b1e"
+    }, 
+    {
+      "rdfs:label": "10.36.1.250", 
+      "rdfs:type": "enet:Host", 
+      "cptlc:hasUUID": "8a451ed6-a846-4a76-9a19-303d8359180c"
+    }, 
+    {
+      "rdfs:label": "NPV_IFACE_1959", 
+      "rdfs:type": "enet:NIC", 
+      "enet:hasIPAddressValue": "10.36.1.250", 
+      "cptlc:hasUUID": "71cd459f-0715-49c1-aad1-f815000bd3ab"
+    }, 
+    {
+      "rdfs:label": "NPV_IFACE_2011", 
+      "rdfs:type": "enet:NIC", 
+      "enet:hasIPAddressValue": "10.31.1.101", 
+      "cptlc:hasUUID": "032953d2-fd9d-457c-a7af-3248132e6e72"
+    }, 
+    {
+      "rdfs:label": "NPV_IFACE_1961", 
+      "rdfs:type": "enet:NIC", 
+      "enet:hasIPAddressValue": "10.36.1.201", 
+      "cptlc:hasUUID": "f180ea33-d63b-47a2-bdef-855486b34529"
+    }, 
+    {
+      "rdfs:label": "NPV_IFACE_1963", 
+      "rdfs:type": "enet:NIC", 
+      "enet:hasIPAddressValue": "10.36.1.202", 
+      "cptlc:hasUUID": "6285f875-08c3-4ba1-8756-58253cfa87b6"
+    }, 
+    {
+      "rdfs:label": "NPV_IFACE_1965", 
+      "rdfs:type": "enet:NIC", 
+      "enet:hasIPAddressValue": "10.36.1.203", 
+      "cptlc:hasUUID": "cd475306-25bf-4fdb-b22a-14870d711102"
+    }, 
+    {
+      "rdfs:label": "NPV_IFACE_1967", 
+      "rdfs:type": "enet:NIC", 
+      "enet:hasIPAddressValue": "10.36.1.101", 
+      "cptlc:hasUUID": "dee6d85e-2ee3-4552-a1e9-dab475869680"
+    }, 
+    {
+      "rdfs:label": "NPV_IFACE_1969", 
+      "rdfs:type": "enet:NIC", 
+      "enet:hasIPAddressValue": "10.36.1.102", 
+      "cptlc:hasUUID": "865c6a52-99f9-46da-94c6-7bc3c25069f0"
+    }, 
+    {
+      "rdfs:label": "NPV_IFACE_1971", 
+      "rdfs:type": "enet:NIC", 
+      "enet:hasIPAddressValue": "10.36.1.103", 
+      "cptlc:hasUUID": "3f2fa63a-b98f-4b51-9f73-0da03faf9028"
+    }, 
+    {
+      "rdfs:label": "NPV_IFACE_2013", 
+      "rdfs:type": "enet:NIC", 
+      "enet:hasIPAddressValue": "10.31.1.102", 
+      "cptlc:hasUUID": "8ddda7a2-336b-4880-9d8c-23ad7d9e90be"
+    }, 
+    {
+      "rdfs:label": "NPV_IFACE_1973", 
+      "rdfs:type": "enet:NIC", 
+      "enet:hasIPAddressValue": "10.36.1.104", 
+      "cptlc:hasUUID": "971121eb-f1df-4b43-a64f-115c39be152d"
+    }, 
+    {
+      "rdfs:label": "NPV_IFACE_1975", 
+      "rdfs:type": "enet:NIC", 
+      "enet:hasIPAddressValue": "10.36.1.105", 
+      "cptlc:hasUUID": "ffaabb37-3019-426b-b5c8-78e628745efb"
+    }, 
+    {
+      "rdfs:label": "NPV_IFACE_1977", 
+      "rdfs:type": "enet:NIC", 
+      "enet:hasIPAddressValue": "10.38.1.201", 
+      "cptlc:hasUUID": "383991d3-c629-4fa9-87a1-bed5313278a8"
+    }, 
+    {
+      "rdfs:label": "NPV_IFACE_1979", 
+      "rdfs:type": "enet:NIC", 
+      "enet:hasIPAddressValue": "10.38.1.202", 
+      "cptlc:hasUUID": "f869e4aa-34e5-4c55-8bad-e3937e021794"
+    }, 
+    {
+      "rdfs:label": "NPV_IFACE_1981", 
+      "rdfs:type": "enet:NIC", 
+      "enet:hasIPAddressValue": "10.38.1.203", 
+      "cptlc:hasUUID": "ccf8abcd-24e8-410c-9d36-aeb10c06e6d6"
+    }, 
+    {
+      "rdfs:label": "NPV_IFACE_1983", 
+      "rdfs:type": "enet:NIC", 
+      "enet:hasIPAddressValue": "10.38.1.101", 
+      "cptlc:hasUUID": "e6c5edc9-51ff-4f90-9fca-3703b4755aed"
+    }, 
+    {
+      "rdfs:label": "NPV_IFACE_2015", 
+      "rdfs:type": "enet:NIC", 
+      "enet:hasIPAddressValue": "10.31.1.103", 
+      "cptlc:hasUUID": "08012000-4c0a-4a35-b752-08e0181348e9"
+    }, 
+    {
+      "rdfs:label": "NPV_IFACE_1985", 
+      "rdfs:type": "enet:NIC", 
+      "enet:hasIPAddressValue": "10.38.1.102", 
+      "cptlc:hasUUID": "ae2493cb-a684-4b02-926b-a14962811dc2"
+    }, 
+    {
+      "rdfs:label": "NPV_IFACE_1987", 
+      "rdfs:type": "enet:NIC", 
+      "enet:hasIPAddressValue": "10.38.1.103", 
+      "cptlc:hasUUID": "fb370e27-cdd2-4cac-921f-aa8056f8b479"
+    }, 
+    {
+      "rdfs:label": "NPV_IFACE_1989", 
+      "rdfs:type": "enet:NIC", 
+      "enet:hasIPAddressValue": "10.38.1.104", 
+      "cptlc:hasUUID": "7d1fba41-4a05-4336-b34b-6769ee436f0b"
+    }, 
+    {
+      "rdfs:label": "NPV_IFACE_1991", 
+      "rdfs:type": "enet:NIC", 
+      "enet:hasIPAddressValue": "10.38.1.105", 
+      "cptlc:hasUUID": "d1eb703a-7b53-4a57-99fd-75613d581a89"
+    }, 
+    {
+      "rdfs:label": "10.38.1.250", 
+      "rdfs:type": "enet:Host", 
+      "cptlc:hasUUID": "670a6181-1a84-434c-9582-536278c1f0a3"
+    }, 
+    {
+      "rdfs:label": "NPV_IFACE_1993", 
+      "rdfs:type": "enet:NIC", 
+      "enet:hasIPAddressValue": "10.38.1.250", 
+      "cptlc:hasUUID": "946f7865-cf3a-4e3c-abcd-8df82e649da3"
+    }, 
+    {
+      "rdfs:label": "10.31.1.250", 
+      "rdfs:type": "enet:Host", 
+      "cptlc:hasUUID": "f5601445-f091-4a91-8a31-e24a6233805f"
+    }, 
+    {
+      "rdfs:label": "NPV_IFACE_1995", 
+      "rdfs:type": "enet:NIC", 
+      "enet:hasIPAddressValue": "10.31.1.250", 
+      "cptlc:hasUUID": "64f7a4b2-8f15-4e4f-9794-8b513452367d"
+    }, 
+    {
+      "rdfs:label": "NPV_IFACE_2017", 
+      "rdfs:type": "enet:NIC", 
+      "enet:hasIPAddressValue": "10.31.1.104", 
+      "cptlc:hasUUID": "1c99c8c6-ecca-45dd-8ad0-7e7d16702359"
+    }, 
+    {
+      "rdfs:label": "NPV_IFACE_1997", 
+      "rdfs:type": "enet:NIC", 
+      "enet:hasIPAddressValue": "10.31.1.201", 
+      "cptlc:hasUUID": "4bec3d7b-72a6-4e64-ab72-1c43090f7b9f"
+    }, 
+    {
+      "rdfs:label": "NPV_IFACE_1999", 
+      "rdfs:type": "enet:NIC", 
+      "enet:hasIPAddressValue": "10.31.1.202", 
+      "cptlc:hasUUID": "336cd687-1b6c-44d0-8bd1-0b8424149b2a"
+    }, 
+    {
+      "rdfs:label": "NPV_IFACE_2001", 
+      "rdfs:type": "enet:NIC", 
+      "enet:hasIPAddressValue": "10.31.1.203", 
+      "cptlc:hasUUID": "9c274459-4bd0-4046-96d6-2aa047ee9892"
+    }, 
+    {
+      "rdfs:label": "NPV_IFACE_2003", 
+      "rdfs:type": "enet:NIC", 
+      "enet:hasIPAddressValue": "10.31.1.204", 
+      "cptlc:hasUUID": "9ef6340c-c6cb-4f59-ac77-2253a90a3efc"
+    }, 
+    {
+      "rdfs:label": "NPV_IFACE_2005", 
+      "rdfs:type": "enet:NIC", 
+      "enet:hasIPAddressValue": "10.31.1.205", 
+      "cptlc:hasUUID": "235623c1-6587-4c58-85fd-05bcd6b3725e"
+    }, 
+    {
+      "rdfs:label": "NPV_IFACE_2007", 
+      "rdfs:type": "enet:NIC", 
+      "enet:hasIPAddressValue": "10.31.1.206", 
+      "cptlc:hasUUID": "54c88cd1-42bf-4665-b8b4-aaac75408f99"
+    }, 
+    {
+      "rdfs:label": "NPV_IFACE_2019", 
+      "rdfs:type": "enet:NIC", 
+      "enet:hasIPAddressValue": "10.31.1.105", 
+      "cptlc:hasUUID": "e3f92938-6cd3-42e6-9ff0-50af24d090ec"
+    }, 
+    {
+      "rdfs:label": "NPV_IFACE_2009", 
+      "rdfs:type": "enet:NIC", 
+      "enet:hasIPAddressValue": "10.31.1.207", 
+      "cptlc:hasUUID": "cc0190e0-fc40-48a2-a7ad-9fa4a951ebe1"
+    }, 
+    {
+      "rdfs:label": "10.37.1.250", 
+      "rdfs:type": "enet:Host", 
+      "cptlc:hasUUID": "a978bbcf-c314-46ee-bb1f-536d535425be"
+    }, 
+    {
+      "rdfs:label": "NPV_IFACE_1883", 
+      "rdfs:type": "enet:NIC", 
+      "enet:hasIPAddressValue": "10.37.1.250", 
+      "cptlc:hasUUID": "54123611-5cd4-4896-b76f-2109a0d48ee7"
+    }, 
+    {
+      "rdfs:label": "NPV_IFACE_1885", 
+      "rdfs:type": "enet:NIC", 
+      "enet:hasIPAddressValue": "10.37.1.201", 
+      "cptlc:hasUUID": "11d05d03-c14e-426c-9626-d23e3f2fc9f2"
+    }, 
+    {
+      "rdfs:label": "NPV_IFACE_1887", 
+      "rdfs:type": "enet:NIC", 
+      "enet:hasIPAddressValue": "10.37.1.101", 
+      "cptlc:hasUUID": "3767dbe9-de5c-451a-a2ad-d19daf16f9e5"
+    }, 
+    {
+      "rdfs:label": "NPV_IFACE_1889", 
+      "rdfs:type": "enet:NIC", 
+      "enet:hasIPAddressValue": "10.37.1.102", 
+      "cptlc:hasUUID": "ddb078e7-0c41-4961-8f1e-50837e4befe9"
+    }, 
+    {
+      "rdfs:label": "72.36.82.194", 
+      "rdfs:type": "enet:Host", 
+      "cptlc:hasUUID": "d19ad4e5-6227-43f5-8b04-ed02ca4784fa"
+    }, 
+    {
+      "rdfs:label": "NPV_IFACE_1891", 
+      "rdfs:type": "enet:NIC", 
+      "enet:hasIPAddressValue": "72.36.82.194", 
+      "cptlc:hasUUID": "c6531f4f-d8c1-46eb-9cbe-1f76f4ec8628"
+    }, 
+    {
+      "rdfs:label": "10.32.1.250", 
+      "rdfs:type": "enet:Host", 
+      "cptlc:hasUUID": "58da33ee-d7dd-442d-8577-7826502fcccc"
+    }, 
+    {
+      "rdfs:label": "NPV_IFACE_2021", 
+      "rdfs:type": "enet:NIC", 
+      "enet:hasIPAddressValue": "10.32.1.250", 
+      "cptlc:hasUUID": "eca27a82-a511-48d4-a5dd-63047b6763eb"
+    }, 
+    {
+      "rdfs:label": "72.36.82.195", 
+      "rdfs:type": "enet:Host", 
+      "cptlc:hasUUID": "5c53ff42-ffe3-4c48-9786-8433fea176e1"
+    }, 
+    {
+      "rdfs:label": "NPV_IFACE_1893", 
+      "rdfs:type": "enet:NIC", 
+      "enet:hasIPAddressValue": "72.36.82.195", 
+      "cptlc:hasUUID": "bee4ac73-8a0f-4bd0-970a-e843abf7c357"
+    }, 
+    {
+      "rdfs:label": "10.39.1.22", 
+      "rdfs:type": "enet:Host", 
+      "cptlc:hasUUID": "48bfa380-3e5b-4525-83b2-b43c3ed46d4e"
+    }, 
+    {
+      "rdfs:label": "NPV_IFACE_1895", 
+      "rdfs:type": "enet:NIC", 
+      "enet:hasIPAddressValue": "10.39.1.22", 
+      "cptlc:hasUUID": "d22bd5de-217b-4632-8e61-3e3dfac38d34"
+    }, 
+    {
+      "rdfs:label": "192.17.102.102", 
+      "rdfs:type": "enet:Host", 
+      "cptlc:hasUUID": "aefca014-d163-4d47-aed4-cab55e8a1f9e"
+    }, 
+    {
+      "rdfs:label": "NPV_IFACE_1897", 
+      "rdfs:type": "enet:NIC", 
+      "enet:hasIPAddressValue": "192.17.102.102", 
+      "cptlc:hasUUID": "e1d696ef-18a5-41dd-9f0f-9d1312285176"
+    }, 
+    {
+      "rdfs:label": "192.17.102.103", 
+      "rdfs:type": "enet:Host", 
+      "cptlc:hasUUID": "5ef2137c-ebc7-4a9f-ba27-019d3e14d918"
+    }, 
+    {
+      "rdfs:label": "NPV_IFACE_1899", 
+      "rdfs:type": "enet:NIC", 
+      "enet:hasIPAddressValue": "192.17.102.103", 
+      "cptlc:hasUUID": "d2f4eea7-8556-463f-ad7a-dc5e87da26d1"
+    }, 
+    {
+      "rdfs:label": "192.17.102.104", 
+      "rdfs:type": "enet:Host", 
+      "cptlc:hasUUID": "c0b6fe63-0b3e-4694-89d2-ae1dc7b95e3c"
+    }, 
+    {
+      "rdfs:label": "NPV_IFACE_1901", 
+      "rdfs:type": "enet:NIC", 
+      "enet:hasIPAddressValue": "192.17.102.104", 
+      "cptlc:hasUUID": "c4596b71-031a-4675-be38-22d4bb6973e2"
+    }, 
+    {
+      "rdfs:label": "70.32.128.22", 
+      "rdfs:type": "enet:Host", 
+      "cptlc:hasUUID": "ca413e56-becf-448f-b503-dde1dddad567"
+    }, 
+    {
+      "rdfs:label": "NPV_IFACE_1903", 
+      "rdfs:type": "enet:NIC", 
+      "enet:hasIPAddressValue": "70.32.128.22", 
+      "cptlc:hasUUID": "6f59b56e-9a3d-4ab0-aa2a-fa1275a1c792"
+    }, 
+    {
+      "rdfs:label": "NPV_IFACE_2023", 
+      "rdfs:type": "enet:NIC", 
+      "enet:hasIPAddressValue": "10.32.1.201", 
+      "cptlc:hasUUID": "a617aa43-6dc0-41c6-ae28-f9065075a707"
+    }, 
+    {
+      "rdfs:label": "70.32.128.74", 
+      "rdfs:type": "enet:Host", 
+      "cptlc:hasUUID": "d7e017c7-824a-41ed-9f16-8eb7ef4362a2"
+    }, 
+    {
+      "rdfs:label": "NPV_IFACE_1905", 
+      "rdfs:type": "enet:NIC", 
+      "enet:hasIPAddressValue": "70.32.128.74", 
+      "cptlc:hasUUID": "60d306b9-25b5-41eb-b3f4-c9fa5b4d298d"
+    }, 
+    {
+      "rdfs:label": "70.32.128.171", 
+      "rdfs:type": "enet:Host", 
+      "cptlc:hasUUID": "9d3e8f25-96d1-4b72-a062-4af85293df14"
+    }, 
+    {
+      "rdfs:label": "NPV_IFACE_1907", 
+      "rdfs:type": "enet:NIC", 
+      "enet:hasIPAddressValue": "70.32.128.171", 
+      "cptlc:hasUUID": "556b380d-397b-470b-9fb0-78709d2c0973"
+    }, 
+    {
+      "rdfs:label": "NPV_IFACE_1909", 
+      "rdfs:type": "enet:NIC", 
+      "enet:hasIPAddressValue": "10.33.1.201", 
+      "cptlc:hasUUID": "c77c738d-5cf5-4d72-bdbb-119fa194ef48"
+    }, 
+    {
+      "rdfs:label": "NPV_IFACE_1911", 
+      "rdfs:type": "enet:NIC", 
+      "enet:hasIPAddressValue": "10.33.1.202", 
+      "cptlc:hasUUID": "dd064c78-bf8c-416b-9fdc-28cb145fe876"
+    }, 
+    {
+      "rdfs:label": "NPV_IFACE_1913", 
+      "rdfs:type": "enet:NIC", 
+      "enet:hasIPAddressValue": "10.33.1.203", 
+      "cptlc:hasUUID": "d91f8c6f-9ff8-4817-9e7c-b772e09e9c5d"
+    }, 
+    {
+      "rdfs:label": "NPV_IFACE_1915", 
+      "rdfs:type": "enet:NIC", 
+      "enet:hasIPAddressValue": "10.33.1.101", 
+      "cptlc:hasUUID": "3c2e68e3-c319-4ba3-b046-eba9587bc571"
+    }, 
+    {
+      "rdfs:label": "72.36.82.196", 
+      "rdfs:type": "enet:Host", 
+      "cptlc:hasUUID": "c726e5f8-ba92-4196-81cf-a361907ac966"
+    }, 
+    {
+      "rdfs:label": "NPV_IFACE_2025", 
+      "rdfs:type": "enet:NIC", 
+      "enet:hasIPAddressValue": "72.36.82.196", 
+      "cptlc:hasUUID": "0290d0e5-562f-4159-af58-90436ac6cf0c"
+    }, 
+    {
+      "rdfs:label": "NPV_IFACE_1917", 
+      "rdfs:type": "enet:NIC", 
+      "enet:hasIPAddressValue": "10.33.1.102", 
+      "cptlc:hasUUID": "d7f08bad-cc05-4b24-87c5-5b11927bb9f9"
+    }, 
+    {
+      "rdfs:label": "Paris", 
+      "rdfs:type": "enet:Firewall", 
+      "cptlc:hasUUID": "9e969ec3-e9e8-49a2-ab72-f9b3ae5ec17f"
+    }, 
+    {
+      "rdfs:label": "outside", 
+      "rdfs:type": "enet:NIC", 
+      "enet:hasIPAddressValue": "10.1.1.5", 
+      "cptlc:hasUUID": "67417627-7997-4184-915c-591a2d96e313"
+    }, 
+    {
+      "rdfs:label": "inside", 
+      "rdfs:type": "enet:NIC", 
+      "enet:hasIPAddressValue": "10.35.1.1", 
+      "cptlc:hasUUID": "1008034f-879e-496a-9340-3208ab990243"
+    }, 
+    {
+      "rdfs:label": "Ethernet0/2", 
+      "rdfs:type": "enet:NIC", 
+      "cptlc:hasUUID": "4d66a53c-3434-49a2-92bd-9e87a6fc5d1b"
+    }, 
+    {
+      "rdfs:label": "Ethernet0/3", 
+      "rdfs:type": "enet:NIC", 
+      "cptlc:hasUUID": "e184e8a7-8887-429b-a4cd-14bb325eb34c"
+    }, 
+    {
+      "rdfs:label": "Management0/0", 
+      "rdfs:type": "enet:NIC", 
+      "cptlc:hasUUID": "083d3bdc-858f-4b6a-b98f-b131a497896b"
+    }, 
+    {
+      "rdfs:label": "GigabitEthernet1/0", 
+      "rdfs:type": "enet:NIC", 
+      "cptlc:hasUUID": "f70d2847-b1ad-4076-ad7f-de9fb517b40f"
+    }, 
+    {
+      "rdfs:label": "GigabitEthernet1/1", 
+      "rdfs:type": "enet:NIC", 
+      "cptlc:hasUUID": "b769c43d-00f7-44d9-b95f-4be7cfbc1a85"
+    }, 
+    {
+      "rdfs:label": "GigabitEthernet1/2", 
+      "rdfs:type": "enet:NIC", 
+      "cptlc:hasUUID": "b6bcd7aa-db1f-4252-9277-1d5839ed539f"
+    }, 
+    {
+      "rdfs:label": "GigabitEthernet1/3", 
+      "rdfs:type": "enet:NIC", 
+      "cptlc:hasUUID": "4b2e3684-5b1a-4f6b-a484-b17ef3206395"
+    }, 
+    {
+      "rdfs:label": "cypress-creek", 
+      "rdfs:type": "enet:Firewall", 
+      "cptlc:hasUUID": "92e20ccf-65ad-49c5-81dc-7fea19061217"
+    }, 
+    {
+      "rdfs:label": "inside", 
+      "rdfs:type": "enet:NIC", 
+      "enet:hasIPAddressValue": "10.31.1.1", 
+      "cptlc:hasUUID": "b2b0186e-ee13-4653-b97e-7951c99e358a"
+    }, 
+    {
+      "rdfs:label": "outside", 
+      "rdfs:type": "enet:NIC", 
+      "enet:hasIPAddressValue": "10.1.1.9", 
+      "cptlc:hasUUID": "2339a7ca-bc5b-4fe4-be5c-683177e2d398"
+    }, 
+    {
+      "rdfs:label": "Ethernet0/2", 
+      "rdfs:type": "enet:NIC", 
+      "cptlc:hasUUID": "b69d1d07-c77a-4c76-83dc-6351bd021509"
+    }, 
+    {
+      "rdfs:label": "Ethernet0/3", 
+      "rdfs:type": "enet:NIC", 
+      "cptlc:hasUUID": "ab1b2040-c035-4582-b970-0a94ae46087e"
+    }, 
+    {
+      "rdfs:label": "Ethernet0/4", 
+      "rdfs:type": "enet:NIC", 
+      "cptlc:hasUUID": "c732757b-871d-4c9c-abbb-24b04a71447a"
+    }, 
+    {
+      "rdfs:label": "Ethernet0/5", 
+      "rdfs:type": "enet:NIC", 
+      "cptlc:hasUUID": "36dbb6b2-ce43-47c4-bc32-b08a21874be8"
+    }, 
+    {
+      "rdfs:label": "Ethernet0/6", 
+      "rdfs:type": "enet:NIC", 
+      "cptlc:hasUUID": "bbd4943c-a364-474c-a1e2-1848343ffeac"
+    }, 
+    {
+      "rdfs:label": "Ethernet0/7", 
+      "rdfs:type": "enet:NIC", 
+      "cptlc:hasUUID": "d948bd88-285b-4707-9612-0275c98e383e"
+    }, 
+    {
+      "rdfs:label": "Vlan1", 
+      "rdfs:type": "enet:NIC", 
+      "cptlc:hasUUID": "00085977-42ac-40ae-8a36-47f69e89afa1"
+    }, 
+    {
+      "rdfs:label": "Vlan2", 
+      "rdfs:type": "enet:NIC", 
+      "cptlc:hasUUID": "25adc925-b32e-4494-bc6e-0c657e2978ce"
+    }, 
+    {
+      "rdfs:label": "haverbrook", 
+      "rdfs:type": "enet:Firewall", 
+      "cptlc:hasUUID": "8d8573af-1bad-4d09-a105-0c953dbfe900"
+    }, 
+    {
+      "rdfs:label": "inside", 
+      "rdfs:type": "enet:NIC", 
+      "enet:hasIPAddressValue": "10.32.1.1", 
+      "cptlc:hasUUID": "95988879-4b91-4314-b48f-35956a4243c7"
+    }, 
+    {
+      "rdfs:label": "outside", 
+      "rdfs:type": "enet:NIC", 
+      "enet:hasIPAddressValue": "10.1.1.2", 
+      "cptlc:hasUUID": "a40a1523-14c9-4439-9f31-ea38dd1600f3"
+    }, 
+    {
+      "rdfs:label": "Ethernet0/2", 
+      "rdfs:type": "enet:NIC", 
+      "cptlc:hasUUID": "acafae30-314b-4f60-84c5-4c1098d4c7ae"
+    }, 
+    {
+      "rdfs:label": "Ethernet0/3", 
+      "rdfs:type": "enet:NIC", 
+      "cptlc:hasUUID": "61f77099-8a83-4644-8f61-519f23ba0a76"
+    }, 
+    {
+      "rdfs:label": "Ethernet0/4", 
+      "rdfs:type": "enet:NIC", 
+      "cptlc:hasUUID": "d5cc8944-4f68-4937-a79f-d862275585c8"
+    }, 
+    {
+      "rdfs:label": "Ethernet0/5", 
+      "rdfs:type": "enet:NIC", 
+      "cptlc:hasUUID": "d0b868e4-5baf-4bbc-a058-3bd604cf199c"
+    }, 
+    {
+      "rdfs:label": "Ethernet0/6", 
+      "rdfs:type": "enet:NIC", 
+      "cptlc:hasUUID": "b5c22b94-6391-4d7d-b3d3-ad16645a907e"
+    }, 
+    {
+      "rdfs:label": "Ethernet0/7", 
+      "rdfs:type": "enet:NIC", 
+      "cptlc:hasUUID": "8fd9b338-7cc6-4c13-b642-7e8a5978457f"
+    }, 
+    {
+      "rdfs:label": "Vlan1", 
+      "rdfs:type": "enet:NIC", 
+      "cptlc:hasUUID": "7b8dc58e-a9ba-421b-8ab9-70663133cc18"
+    }, 
+    {
+      "rdfs:label": "Vlan2", 
+      "rdfs:type": "enet:NIC", 
+      "cptlc:hasUUID": "4179de3e-d5a9-4502-b65d-06274b456134"
+    }, 
+    {
+      "rdfs:label": "Springfield", 
+      "rdfs:type": "enet:Firewall", 
+      "cptlc:hasUUID": "7883cf14-abb0-44c1-aba5-8f9a389ad0ae"
+    }, 
+    {
+      "rdfs:label": "outside", 
+      "rdfs:type": "enet:NIC", 
+      "enet:hasIPAddressValue": "10.1.1.8", 
+      "cptlc:hasUUID": "f0b267c4-ca4a-456c-8546-98d8e629d68d"
+    }, 
+    {
+      "rdfs:label": "inside", 
+      "rdfs:type": "enet:NIC", 
+      "enet:hasIPAddressValue": "10.38.1.1", 
+      "cptlc:hasUUID": "2350e4e8-7951-4288-ad77-f8383ea9e874"
+    }, 
+    {
+      "rdfs:label": "Ethernet0/2", 
+      "rdfs:type": "enet:NIC", 
+      "cptlc:hasUUID": "11c2cc61-01fe-4424-8723-1043e9740855"
+    }, 
+    {
+      "rdfs:label": "Ethernet0/3", 
+      "rdfs:type": "enet:NIC", 
+      "cptlc:hasUUID": "7a6ad2f0-7ce5-4d86-944d-b0e1beeb46b5"
+    }, 
+    {
+      "rdfs:label": "Management0/0", 
+      "rdfs:type": "enet:NIC", 
+      "cptlc:hasUUID": "c4c9ab95-98e9-4803-a01c-f8d2d1cc934d"
+    }, 
+    {
+      "rdfs:label": "GigabitEthernet1/0", 
+      "rdfs:type": "enet:NIC", 
+      "cptlc:hasUUID": "38e9e0c2-d8b2-49df-bbdc-12ee07de4116"
+    }, 
+    {
+      "rdfs:label": "GigabitEthernet1/1", 
+      "rdfs:type": "enet:NIC", 
+      "cptlc:hasUUID": "f38a35bb-324e-42e6-8775-0416abd5812d"
+    }, 
+    {
+      "rdfs:label": "GigabitEthernet1/2", 
+      "rdfs:type": "enet:NIC", 
+      "cptlc:hasUUID": "a11a61a0-ae4f-44db-8788-afaeda03f343"
+    }, 
+    {
+      "rdfs:label": "GigabitEthernet1/3", 
+      "rdfs:type": "enet:NIC", 
+      "cptlc:hasUUID": "4027f8a6-0671-402b-8a44-e3c405e0678f"
+    }, 
+    {
+      "rdfs:label": "ciscoasa", 
+      "rdfs:type": "enet:Firewall", 
+      "cptlc:hasUUID": "fd2c5fa4-2ec7-4ac6-82ce-a51dfcd6f95a"
+    }, 
+    {
+      "rdfs:label": "outside", 
+      "rdfs:type": "enet:NIC", 
+      "enet:hasIPAddressValue": "72.36.82.50", 
+      "cptlc:hasUUID": "84b96cc1-22d1-4ae2-85ed-ad2a3528889c"
+    }, 
+    {
+      "rdfs:label": "inside", 
+      "rdfs:type": "enet:NIC", 
+      "enet:hasIPAddressValue": "10.1.1.1", 
+      "cptlc:hasUUID": "fa30b400-f23e-44b5-84e7-0bc6050dea55"
+    }, 
+    {
+      "rdfs:label": "dmz", 
+      "rdfs:type": "enet:NIC", 
+      "enet:hasIPAddressValue": "10.39.1.1", 
+      "cptlc:hasUUID": "a1f07e46-6239-42c6-9c50-5956e0776e86"
+    }, 
+    {
+      "rdfs:label": "Ethernet0/3", 
+      "rdfs:type": "enet:NIC", 
+      "cptlc:hasUUID": "2264230f-0885-44ac-82f6-37b2d0f72df7"
+    }, 
+    {
+      "rdfs:label": "Management0/0", 
+      "rdfs:type": "enet:NIC", 
+      "cptlc:hasUUID": "715dd0f0-0a59-4225-8ba7-f1b44e021ec3"
+    }, 
+    {
+      "rdfs:label": "NorthHaverbrook", 
+      "rdfs:type": "enet:Firewall", 
+      "cptlc:hasUUID": "84b5f336-90fe-45ce-bea4-998d8e58c29d"
+    }, 
+    {
+      "rdfs:label": "outside", 
+      "rdfs:type": "enet:NIC", 
+      "enet:hasIPAddressValue": "10.1.1.3", 
+      "cptlc:hasUUID": "79736744-0ff4-4b7a-8d42-204a7d74a80e"
+    }, 
+    {
+      "rdfs:label": "inside", 
+      "rdfs:type": "enet:NIC", 
+      "enet:hasIPAddressValue": "10.33.1.1", 
+      "cptlc:hasUUID": "c7e6cb29-8bb1-4a70-8537-de6b8872cff3"
+    }, 
+    {
+      "rdfs:label": "Ethernet0/2", 
+      "rdfs:type": "enet:NIC", 
+      "cptlc:hasUUID": "01e3620e-f5bf-4e0d-bf32-032a27d833f7"
+    }, 
+    {
+      "rdfs:label": "Ethernet0/3", 
+      "rdfs:type": "enet:NIC", 
+      "cptlc:hasUUID": "d6e5789a-3a46-4279-a2cd-8a298bfcc85a"
+    }, 
+    {
+      "rdfs:label": "Management0/0", 
+      "rdfs:type": "enet:NIC", 
+      "cptlc:hasUUID": "fbd08cad-1a56-44fc-b5b8-0b57a5e32787"
+    }, 
+    {
+      "rdfs:label": "GigabitEthernet1/0", 
+      "rdfs:type": "enet:NIC", 
+      "cptlc:hasUUID": "18b363d4-81a2-4c14-b945-6dfe3c7cda08"
+    }, 
+    {
+      "rdfs:label": "GigabitEthernet1/1", 
+      "rdfs:type": "enet:NIC", 
+      "cptlc:hasUUID": "0e2d7c4e-cbfb-409d-bf65-03974e441ddf"
+    }, 
+    {
+      "rdfs:label": "GigabitEthernet1/2", 
+      "rdfs:type": "enet:NIC", 
+      "cptlc:hasUUID": "6f3df12e-2be0-4be4-93f5-5280d346443f"
+    }, 
+    {
+      "rdfs:label": "GigabitEthernet1/3", 
+      "rdfs:type": "enet:NIC", 
+      "cptlc:hasUUID": "18bfdb1d-29b1-4b32-99d1-06ebe7068e7b"
+    }, 
+    {
+      "rdfs:label": "Ogdenville", 
+      "rdfs:type": "enet:Firewall", 
+      "cptlc:hasUUID": "e05c7229-c49c-4674-8859-826009187f99"
+    }, 
+    {
+      "rdfs:label": "outside", 
+      "rdfs:type": "enet:NIC", 
+      "enet:hasIPAddressValue": "10.1.1.4", 
+      "cptlc:hasUUID": "6db54c79-9614-4dd0-ad64-4cc9e87f34fc"
+    }, 
+    {
+      "rdfs:label": "inside", 
+      "rdfs:type": "enet:NIC", 
+      "enet:hasIPAddressValue": "10.34.1.1", 
+      "cptlc:hasUUID": "de37689d-dc1d-4379-b722-4e3f78f154a4"
+    }, 
+    {
+      "rdfs:label": "Ethernet0/2", 
+      "rdfs:type": "enet:NIC", 
+      "cptlc:hasUUID": "9a1a57c3-2a76-4800-80db-2bad3e179b4c"
+    }, 
+    {
+      "rdfs:label": "Ethernet0/3", 
+      "rdfs:type": "enet:NIC", 
+      "cptlc:hasUUID": "63840acc-7211-4770-8602-ea33373351b8"
+    }, 
+    {
+      "rdfs:label": "Management0/0", 
+      "rdfs:type": "enet:NIC", 
+      "cptlc:hasUUID": "2203efd3-069b-45b3-b0b0-2ddf5abae8e0"
+    }, 
+    {
+      "rdfs:label": "GigabitEthernet1/0", 
+      "rdfs:type": "enet:NIC", 
+      "cptlc:hasUUID": "ed7b9658-26de-47b0-82a3-0243365ad565"
+    }, 
+    {
+      "rdfs:label": "GigabitEthernet1/1", 
+      "rdfs:type": "enet:NIC", 
+      "cptlc:hasUUID": "3f8dccfa-9921-4429-ba47-6b6844270da0"
+    }, 
+    {
+      "rdfs:label": "GigabitEthernet1/2", 
+      "rdfs:type": "enet:NIC", 
+      "cptlc:hasUUID": "71169652-fda0-4b4b-aef2-5a86219d796f"
+    }, 
+    {
+      "rdfs:label": "GigabitEthernet1/3", 
+      "rdfs:type": "enet:NIC", 
+      "cptlc:hasUUID": "ba4ff897-82e8-4814-ac09-5efa4ed3a24c"
+    }, 
+    {
+      "rdfs:label": "Shelbyville", 
+      "rdfs:type": "enet:Firewall", 
+      "cptlc:hasUUID": "fdea7748-842e-4db8-97e5-38539b6e8b35"
+    }, 
+    {
+      "rdfs:label": "outside", 
+      "rdfs:type": "enet:NIC", 
+      "enet:hasIPAddressValue": "10.1.1.6", 
+      "cptlc:hasUUID": "2d519708-5bbc-4e35-b95c-d7cc4b31239b"
+    }, 
+    {
+      "rdfs:label": "inside", 
+      "rdfs:type": "enet:NIC", 
+      "enet:hasIPAddressValue": "10.36.1.1", 
+      "cptlc:hasUUID": "abe2e453-4907-4280-b2d9-19208c2b3055"
+    }, 
+    {
+      "rdfs:label": "Ethernet0/2", 
+      "rdfs:type": "enet:NIC", 
+      "cptlc:hasUUID": "b8cb3111-ce20-48be-a4c8-04566a954857"
+    }, 
+    {
+      "rdfs:label": "Ethernet0/3", 
+      "rdfs:type": "enet:NIC", 
+      "cptlc:hasUUID": "db5d0d76-e33a-4e25-b7e3-0d81b833848b"
+    }, 
+    {
+      "rdfs:label": "Management0/0", 
+      "rdfs:type": "enet:NIC", 
+      "cptlc:hasUUID": "80e61782-cc4f-439b-9aa1-ef32591f9bfc"
+    }, 
+    {
+      "rdfs:label": "GigabitEthernet1/0", 
+      "rdfs:type": "enet:NIC", 
+      "cptlc:hasUUID": "8adbb18d-17bd-44de-b0d3-142e406baf39"
+    }, 
+    {
+      "rdfs:label": "GigabitEthernet1/1", 
+      "rdfs:type": "enet:NIC", 
+      "cptlc:hasUUID": "dc19acf3-2759-4cc2-b8e2-0ccf9249a592"
+    }, 
+    {
+      "rdfs:label": "GigabitEthernet1/2", 
+      "rdfs:type": "enet:NIC", 
+      "cptlc:hasUUID": "bef37444-ad4d-44e0-b231-0d90b6e12af2"
+    }, 
+    {
+      "rdfs:label": "GigabitEthernet1/3", 
+      "rdfs:type": "enet:NIC", 
+      "cptlc:hasUUID": "6484ab74-45c9-4dde-8d23-a5177f5b9242"
+    }, 
+    {
+      "rdfs:label": "CapitalCity", 
+      "rdfs:type": "enet:Firewall", 
+      "cptlc:hasUUID": "33337c89-2a8e-46cd-8acd-49a534acbe3f"
+    }, 
+    {
+      "rdfs:label": "outside", 
+      "rdfs:type": "enet:NIC", 
+      "enet:hasIPAddressValue": "10.1.1.7", 
+      "cptlc:hasUUID": "dbda1c13-2af9-414f-b985-97cd78b74533"
+    }, 
+    {
+      "rdfs:label": "inside", 
+      "rdfs:type": "enet:NIC", 
+      "enet:hasIPAddressValue": "10.37.1.1", 
+      "cptlc:hasUUID": "e091d48b-9b09-4961-a659-f968c40cc0df"
+    }, 
+    {
+      "rdfs:label": "Ethernet0/2", 
+      "rdfs:type": "enet:NIC", 
+      "cptlc:hasUUID": "9f198cab-5e3c-4fd9-9e9e-0f8ed93eefab"
+    }, 
+    {
+      "rdfs:label": "Ethernet0/3", 
+      "rdfs:type": "enet:NIC", 
+      "cptlc:hasUUID": "f90bbb35-c2b5-4320-afda-947397d94add"
+    }, 
+    {
+      "rdfs:label": "Management0/0", 
+      "rdfs:type": "enet:NIC", 
+      "cptlc:hasUUID": "1090e64d-c279-43b2-b674-82541707f6d8"
+    }, 
+    {
+      "rdfs:label": "GigabitEthernet1/0", 
+      "rdfs:type": "enet:NIC", 
+      "cptlc:hasUUID": "a4bf1883-2013-46c5-9d51-f7e32ceb8563"
+    }, 
+    {
+      "rdfs:label": "GigabitEthernet1/1", 
+      "rdfs:type": "enet:NIC", 
+      "cptlc:hasUUID": "279066fb-2607-42a4-b7d8-3696776a05e0"
+    }, 
+    {
+      "rdfs:label": "GigabitEthernet1/2", 
+      "rdfs:type": "enet:NIC", 
+      "cptlc:hasUUID": "2318a722-e74a-4d3b-91c4-1c3147bc9343"
+    }, 
+    {
+      "rdfs:label": "GigabitEthernet1/3", 
+      "rdfs:type": "enet:NIC", 
+      "cptlc:hasUUID": "752af86e-5045-4588-8338-8ef3bd059193"
+    }, 
+    {
+      "rdfs:label": "Unmapped", 
+      "rdfs:type": "enet:Gateway", 
+      "cptlc:hasUUID": "f151103a-0700-4c97-b7d9-b03bc15daafd"
+    }, 
+    {
+      "rdfs:label": "NPV_IFACE_1879", 
+      "rdfs:type": "enet:NIC", 
+      "enet:hasIPAddressValue": "0.0.0.0", 
+      "cptlc:hasUUID": "6f139294-c723-4e25-85dc-11f2d8e6f6c0"
+    }, 
+    {
+      "rdfs:label": "72.36.82.1", 
+      "rdfs:type": "enet:Gateway", 
+      "cptlc:hasUUID": "4d9def7f-5389-4db8-a2c1-7a65996ad693"
+    }, 
+    {
+      "rdfs:label": "NPV_IFACE_2027", 
+      "rdfs:type": "enet:NIC", 
+      "enet:hasIPAddressValue": "72.36.82.1", 
+      "cptlc:hasUUID": "a037b508-6644-40ff-9004-b046856111a9"
+    }, 
+    {
+      "rdfs:label": "10.32.1.0/24", 
+      "rdfs:type": "enet:Network", 
+      "cptlc:hasUUID": "018c377f-7582-4bc2-913d-931d0a975dc1", 
+      "enet:hasNetworkMask": "255.255.255.0", 
+      "enet:hasNetworkAddress": "10.32.1.0"
+    }, 
+    {
+      "rdfs:label": "72.36.82.0/24", 
+      "rdfs:type": "enet:Network", 
+      "cptlc:hasUUID": "4b19a028-de82-44dd-acf8-fd4b75a51ac1", 
+      "enet:hasNetworkMask": "255.255.255.0", 
+      "enet:hasNetworkAddress": "72.36.82.0"
+    }, 
+    {
+      "rdfs:label": "10.31.1.0/24", 
+      "rdfs:type": "enet:Network", 
+      "cptlc:hasUUID": "a09cf4f7-b99d-475c-a43a-66a9972e4d8e", 
+      "enet:hasNetworkMask": "255.255.255.0", 
+      "enet:hasNetworkAddress": "10.31.1.0"
+    }, 
+    {
+      "rdfs:label": "10.34.1.0/24", 
+      "rdfs:type": "enet:Network", 
+      "cptlc:hasUUID": "fc2d39da-9db4-4f18-9a11-ed850772e490", 
+      "enet:hasNetworkMask": "255.255.255.0", 
+      "enet:hasNetworkAddress": "10.34.1.0"
+    }, 
+    {
+      "rdfs:label": "10.36.1.0/24", 
+      "rdfs:type": "enet:Network", 
+      "cptlc:hasUUID": "0f30f891-5e76-48c5-abc5-af9a3fcd374d", 
+      "enet:hasNetworkMask": "255.255.255.0", 
+      "enet:hasNetworkAddress": "10.36.1.0"
+    }, 
+    {
+      "rdfs:label": "10.35.1.0/24", 
+      "rdfs:type": "enet:Network", 
+      "cptlc:hasUUID": "c62c5495-824e-46d6-bae8-b8bc77acc173", 
+      "enet:hasNetworkMask": "255.255.255.0", 
+      "enet:hasNetworkAddress": "10.35.1.0"
+    }, 
+    {
+      "rdfs:label": "10.1.1.0/24", 
+      "rdfs:type": "enet:Network", 
+      "cptlc:hasUUID": "e2ca11c5-5718-4a5d-87c6-aaa050f4754a", 
+      "enet:hasNetworkMask": "255.255.255.0", 
+      "enet:hasNetworkAddress": "10.1.1.0"
+    }, 
+    {
+      "rdfs:label": "10.37.1.0/24", 
+      "rdfs:type": "enet:Network", 
+      "cptlc:hasUUID": "0a6d5418-608d-4b91-a9ae-920c36a255b6", 
+      "enet:hasNetworkMask": "255.255.255.0", 
+      "enet:hasNetworkAddress": "10.37.1.0"
+    }, 
+    {
+      "rdfs:label": "72.0.0.0/8", 
+      "rdfs:type": "enet:Network", 
+      "cptlc:hasUUID": "77b4ba61-257f-4f49-a738-3bf8864aa3d3", 
+      "enet:hasNetworkMask": "255.0.0.0", 
+      "enet:hasNetworkAddress": "72.0.0.0"
+    }, 
+    {
+      "rdfs:label": "10.33.1.0/24", 
+      "rdfs:type": "enet:Network", 
+      "cptlc:hasUUID": "6a0f93a7-ee1e-4ba4-add8-f0b347f06a97", 
+      "enet:hasNetworkMask": "255.255.255.0", 
+      "enet:hasNetworkAddress": "10.33.1.0"
+    }, 
+    {
+      "rdfs:label": "Internet", 
+      "rdfs:type": "enet:Network", 
+      "cptlc:hasUUID": "7b97db6e-1454-488d-9b1d-87b89353eeee", 
+      "enet:hasNetworkMask": "0.0.0.0", 
+      "enet:hasNetworkAddress": "0.0.0.0"
+    }, 
+    {
+      "rdfs:label": "unmapped", 
+      "rdfs:type": "enet:Network", 
+      "cptlc:hasUUID": "6677e7ed-bc29-4920-9d64-9085a1df2362", 
+      "enet:hasNetworkMask": "0.0.0.0", 
+      "enet:hasNetworkAddress": "0.0.0.0"
+    }, 
+    {
+      "rdfs:label": "10.38.1.0/24", 
+      "rdfs:type": "enet:Network", 
+      "cptlc:hasUUID": "48af3a3a-13ba-48d7-8886-75b7ef99398a", 
+      "enet:hasNetworkMask": "255.255.255.0", 
+      "enet:hasNetworkAddress": "10.38.1.0"
+    }, 
+    {
+      "rdfs:label": "192.17.0.0/16", 
+      "rdfs:type": "enet:Network", 
+      "cptlc:hasUUID": "89105627-fc5e-4b6c-ab58-62cf31ed4dc9", 
+      "enet:hasNetworkMask": "255.255.0.0", 
+      "enet:hasNetworkAddress": "192.17.0.0"
+    }, 
+    {
+      "rdfs:label": "10.39.1.0/24", 
+      "rdfs:type": "enet:Network", 
+      "cptlc:hasUUID": "f604bace-b84d-4215-9d8f-4d1fa6e9a0a8", 
+      "enet:hasNetworkMask": "255.255.255.0", 
+      "enet:hasNetworkAddress": "10.39.1.0"
+    }, 
+    {
+      "rdfs:label": "Springfield ND 40", 
+      "rdfs:type": "cptlc:Asset,syard:Node", 
+      "cptlc:hasUUID": "57000a54-4e79-4167-a9ef-a0da847fe814", 
+      "cptlc:hasURI": "http://Springfield-ND-40.yard.springfield.8sub.cypsa.projects.cptl-c.org", 
+      "cptlc:hasAliases": "1977bb6d-cd4f-45ed-b4be-945822773cff"
+    }, 
+    {
+      "rdfs:label": "Springfield ND 39", 
+      "rdfs:type": "cptlc:Asset,syard:Node", 
+      "cptlc:hasUUID": "7783e89d-06ed-480e-a682-2a270bf6c979", 
+      "cptlc:hasURI": "http://Springfield-ND-39.yard.springfield.8sub.cypsa.projects.cptl-c.org", 
+      "cptlc:hasAliases": "fab8510a-d64e-481b-aeba-274db23ae766"
+    }, 
+    {
+      "rdfs:label": "Springfield ND 42", 
+      "rdfs:type": "cptlc:Asset,syard:Node", 
+      "cptlc:hasUUID": "2cdd062a-b1fd-4e00-9d9c-3f31ab506715", 
+      "cptlc:hasURI": "http://Springfield-ND-42.yard.springfield.8sub.cypsa.projects.cptl-c.org", 
+      "cptlc:hasAliases": "35db8ebd-731a-4217-bf46-8e37a4d8b6db"
+    }, 
+    {
+      "rdfs:label": "Haverbrook ND 38", 
+      "rdfs:type": "syard:Node,cptlc:Asset", 
+      "cptlc:hasUUID": "33df492c-261e-4814-81bf-54f6f1d98bcb", 
+      "cptlc:hasURI": "http://Haverbrook-ND-38.yard.haverbrook.8sub.cypsa.projects.cptl-c.org", 
+      "cptlc:hasAliases": "cf32ab76-3c29-4d07-8782-b7d946183a15"
+    }, 
+    {
+      "rdfs:label": "Haverbrook ND 37", 
+      "rdfs:type": "syard:Node,cptlc:Asset", 
+      "cptlc:hasUUID": "aec929cb-d172-415a-bfa6-dfe5ffc5520b", 
+      "cptlc:hasURI": "http://Haverbrook-ND-37.yard.haverbrook.8sub.cypsa.projects.cptl-c.org", 
+      "cptlc:hasAliases": "6f8a780f-4566-434f-a017-b0c424869899"
+    }, 
+    {
+      "rdfs:label": "Haverbrook Distance Relay 3", 
+      "rdfs:type": "snet:DistanceRelay", 
+      "cptlc:hasUUID": "8ddcf80c-79d0-4d07-830b-450fd16a8933", 
+      "cptlc:hasURI": "http://DistanceRelay_3.network.haverbrook.8sub.cypsa.projects.cptl-c.org", 
+      "cptlc:hasAliases": "88c4d925-8661-425f-add3-b012aa369264"
+    }, 
+    {
+      "rdfs:label": "Paris ND 51", 
+      "rdfs:type": "syard:Node,cptlc:Asset", 
+      "cptlc:hasUUID": "8bc60736-ee1c-42b3-a894-8113340a3262", 
+      "cptlc:hasURI": "http://Paris-ND-51.yard.paris.8sub.cypsa.projects.cptl-c.org", 
+      "cptlc:hasAliases": "46d6a8f2-7b44-4f7b-b3f7-446cca40a69e"
+    }, 
+    {
+      "rdfs:label": "North Haverbrook ND 14", 
+      "rdfs:type": "syard:Node,cptlc:Asset", 
+      "cptlc:hasUUID": "452c1b6d-45a9-47a8-85d8-a0148673c16b", 
+      "cptlc:hasURI": "http://North_Haverbrook-ND-14.yard.north-haverbrook.8sub.cypsa.projects.cptl-c.org", 
+      "cptlc:hasAliases": "e6b1a681-857c-4471-bab1-7a48920a87b1"
+    }, 
+    {
+      "rdfs:label": "Shelbyville ND 28", 
+      "rdfs:type": "cptlc:Asset,syard:Node", 
+      "cptlc:hasUUID": "4e8f781c-4371-46a9-a781-a8bb34c39927", 
+      "cptlc:hasURI": "http://Shelbyville-ND-28.yard.shelbyville.8sub.cypsa.projects.cptl-c.org", 
+      "cptlc:hasAliases": "74d4399a-3fcc-49f2-a105-b14afde02529"
+    }, 
+    {
+      "rdfs:label": "Shelbyville ND 26", 
+      "rdfs:type": "cptlc:Asset,syard:Node", 
+      "cptlc:hasUUID": "3862ee64-8380-4ced-a344-f01e798e7457", 
+      "cptlc:hasURI": "http://Shelbyville-ND-26.yard.shelbyville.8sub.cypsa.projects.cptl-c.org", 
+      "cptlc:hasAliases": "ed93ca10-cc53-41c1-93c0-d59c9a71535f"
+    }, 
+    {
+      "rdfs:label": "Cypress Creek ND 22", 
+      "rdfs:type": "syard:Node,cptlc:Asset", 
+      "cptlc:hasUUID": "099927f3-79f8-40ae-8518-ceccbeddc0b2", 
+      "cptlc:hasURI": "http://Cypress_Creek-ND-22.yard.cypress-creek.8sub.cypsa.projects.cptl-c.org", 
+      "cptlc:hasAliases": "d35c96db-2afa-49fe-8bbd-fa31aafd3a31"
+    }, 
+    {
+      "rdfs:label": "Cypress Creek ND 24", 
+      "rdfs:type": "syard:Node,cptlc:Asset", 
+      "cptlc:hasUUID": "1fdf2552-3cb4-4901-b42b-56f9d57f4e48", 
+      "cptlc:hasURI": "http://Cypress_Creek-ND-24.yard.cypress-creek.8sub.cypsa.projects.cptl-c.org", 
+      "cptlc:hasAliases": "bb32aa93-9724-4bd4-8643-240cf06e3df2"
+    }, 
+    {
+      "rdfs:label": "Paris ND 48", 
+      "rdfs:type": "cptlc:Asset,syard:Node", 
+      "cptlc:hasUUID": "75b6daa1-73b4-4198-bcf9-52490de851b1", 
+      "cptlc:hasURI": "http://Paris-ND-48.yard.paris.8sub.cypsa.projects.cptl-c.org", 
+      "cptlc:hasAliases": "78e37d70-c601-489d-a189-9d6aaadbcf41"
+    }, 
+    {
+      "rdfs:label": "Odgenville ND 3", 
+      "rdfs:type": "cptlc:Asset,syard:Node", 
+      "cptlc:hasUUID": "86c3ff63-f28e-4797-84b3-11f059527038", 
+      "cptlc:hasURI": "http://Odgenville-ND-3.yard.odgenville.8sub.cypsa.projects.cptl-c.org", 
+      "cptlc:hasAliases": "638b4fd5-83e0-46ee-950d-acb4bbdbac49"
+    }, 
+    {
+      "rdfs:label": "Odgenville ND 6", 
+      "rdfs:type": "cptlc:Asset,syard:Node", 
+      "cptlc:hasUUID": "4e2ec78f-4c72-46e2-8047-01bd51c2521d", 
+      "cptlc:hasURI": "http://Odgenville-ND-6.yard.odgenville.8sub.cypsa.projects.cptl-c.org", 
+      "cptlc:hasAliases": "ec8f9af2-491a-45c4-8c1d-965dbcf57f43"
+    }, 
+    {
+      "rdfs:label": "Cypress Creek ND 21", 
+      "rdfs:type": "syard:Node,cptlc:Asset", 
+      "cptlc:hasUUID": "513899d7-8143-4922-99b7-68547cca2ba0", 
+      "cptlc:hasURI": "http://Cypress_Creek-ND-21.yard.cypress-creek.8sub.cypsa.projects.cptl-c.org", 
+      "cptlc:hasAliases": "2aa9b34c-2114-4f62-9ad1-fc0fa1856c2a"
+    }, 
+    {
+      "rdfs:label": "North Haverbrook ND 11", 
+      "rdfs:type": "cptlc:Asset,syard:Node", 
+      "cptlc:hasUUID": "2f34d163-ecdc-47b5-b148-e685dd4eca8d", 
+      "cptlc:hasURI": "http://North_Haverbrook-ND-11.yard.north-haverbrook.8sub.cypsa.projects.cptl-c.org", 
+      "cptlc:hasAliases": "66f2e3e0-097f-413b-bc34-936d5643551a"
+    }, 
+    {
+      "rdfs:label": "Cypress Creek ND 18", 
+      "rdfs:type": "syard:Node,cptlc:Asset", 
+      "cptlc:hasUUID": "843e8890-ce0e-438b-a998-1eb3b8190bdd", 
+      "cptlc:hasURI": "http://Cypress_Creek-ND-18.yard.cypress-creek.8sub.cypsa.projects.cptl-c.org", 
+      "cptlc:hasAliases": "fae8d46a-169a-426c-8d57-c1055f2c8a7c"
+    }, 
+    {
+      "rdfs:label": "Haverbrook ND 36", 
+      "rdfs:type": "cptlc:Asset,syard:Node", 
+      "cptlc:hasUUID": "014aa122-014c-4e38-b074-c70d7f28457f", 
+      "cptlc:hasURI": "http://Haverbrook-ND-36.yard.haverbrook.8sub.cypsa.projects.cptl-c.org", 
+      "cptlc:hasAliases": "02f6bdf5-42aa-4b0a-82ba-81730efbe695"
+    }, 
+    {
+      "rdfs:label": "Haverbrook Distance Relay 2", 
+      "rdfs:type": "snet:DistanceRelay", 
+      "cptlc:hasUUID": "a4b8c67d-bbc3-4ecf-b289-7782cef8d807", 
+      "cptlc:hasURI": "http://DistanceRelay_2.network.haverbrook.8sub.cypsa.projects.cptl-c.org", 
+      "cptlc:hasAliases": "8dcf32ef-a580-43b6-822a-7c8f5159ae75"
+    }, 
+    {
+      "rdfs:label": "Cypress Creek TX 4545", 
+      "rdfs:type": "syard:Transformer", 
+      "cptlc:hasUUID": "2eea5e6e-240e-4f4e-b3e3-846155aed8cd", 
+      "cptlc:hasURI": "http://Cypress_Creek-TX-4545.yard.cypress-creek.8sub.cypsa.projects.cptl-c.org", 
+      "cptlc:hasAliases": "c9617361-167a-4b47-abdb-1c532df675a7"
+    }, 
+    {
+      "rdfs:label": "Capital City BRK 4647", 
+      "rdfs:type": "syard:Breaker", 
+      "cptlc:hasUUID": "c49f979c-12a3-406d-aa2d-03d0066ea33f", 
+      "cptlc:hasURI": "http://Capital_City-BRK-4647.yard.capital-city.8sub.cypsa.projects.cptl-c.org", 
+      "cptlc:hasAliases": "2fb45dfb-2024-4e9b-be90-aeaa791df54b"
+    }, 
+    {
+      "rdfs:label": "Capital City BRK 4546", 
+      "rdfs:type": "syard:Breaker", 
+      "cptlc:hasUUID": "379e20aa-da69-452e-b176-01333515e4f4", 
+      "cptlc:hasURI": "http://Capital_City-BRK-4546.yard.capital-city.8sub.cypsa.projects.cptl-c.org", 
+      "cptlc:hasAliases": "62e9bea6-a84c-484c-b5c9-6496d3ac8a1a"
+    }, 
+    {
+      "rdfs:label": "Capital City ND 45", 
+      "rdfs:type": "syard:Node", 
+      "cptlc:hasURI": "http://Capital_City-ND-45.yard.capital-city.8sub.cypsa.projects.cptl-c.org", 
+      "cptlc:hasUUID": "be7338e9-28f7-4421-a16f-027094cf8fe8"
+    }, 
+    {
+      "rdfs:label": "Capital City ND 46", 
+      "rdfs:type": "syard:Bus", 
+      "cptlc:hasURI": "http://Capital_City-ND-46.yard.capital-city.8sub.cypsa.projects.cptl-c.org", 
+      "cptlc:hasUUID": "f6372823-8c2c-4786-9d5a-19c288ea6eda"
+    }, 
+    {
+      "rdfs:label": "Capital City ND 47", 
+      "rdfs:type": "syard:Node", 
+      "cptlc:hasURI": "http://Capital_City-ND-47.yard.capital-city.8sub.cypsa.projects.cptl-c.org", 
+      "cptlc:hasUUID": "3271cedd-d5d6-4756-825a-18d11902bb19"
+    }, 
+    {
+      "rdfs:label": "Capital City Switch 1", 
+      "rdfs:type": "snet:Switch", 
+      "cptlc:hasUUID": "77f78ca0-3f59-4d28-b098-f6d67e581623", 
+      "enet:hasIPAddressValue": "192.168.7.200", 
+      "cptlc:hasURI": "http://Switch_1.network.capital-city.8sub.cypsa.projects.cptl-c.org"
+    }, 
+    {
+      "rdfs:label": "Cypress Creek BRK 1925", 
+      "rdfs:type": "syard:Breaker", 
+      "cptlc:hasUUID": "2a2d110d-9951-4fc3-a61c-f072caf8513d", 
+      "cptlc:hasURI": "http://Cypress_Creek-BRK-1925.yard.cypress-creek.8sub.cypsa.projects.cptl-c.org", 
+      "cptlc:hasAliases": "ba190399-73f3-4c4b-bc91-4ac1625cefed"
+    }, 
+    {
+      "rdfs:label": "Cypress Creek BRK 2019", 
+      "rdfs:type": "syard:Breaker", 
+      "cptlc:hasUUID": "f63e8aaf-0ad1-4099-a616-b153ebb568d1", 
+      "cptlc:hasURI": "http://Cypress_Creek-BRK-2019.yard.cypress-creek.8sub.cypsa.projects.cptl-c.org", 
+      "cptlc:hasAliases": "a4b7cafd-153e-40e5-880b-3c4d6dde8392"
+    }, 
+    {
+      "rdfs:label": "Cypress Creek BRK 1715", 
+      "rdfs:type": "syard:Breaker", 
+      "cptlc:hasUUID": "9e40dffb-768a-4769-9667-97f945e7a2d1", 
+      "cptlc:hasURI": "http://Cypress_Creek-BRK-1715.yard.cypress-creek.8sub.cypsa.projects.cptl-c.org", 
+      "cptlc:hasAliases": "b73a8665-fc3c-45dc-b6da-1f875fe5b8a3"
+    }, 
+    {
+      "rdfs:label": "Cypress Creek BRK 1815", 
+      "rdfs:type": "syard:Breaker", 
+      "cptlc:hasUUID": "91c14f8b-6585-4dd1-88b0-862f4abbb9ac", 
+      "cptlc:hasURI": "http://Cypress_Creek-BRK-1815.yard.cypress-creek.8sub.cypsa.projects.cptl-c.org", 
+      "cptlc:hasAliases": "33b20414-1393-4415-9ea6-15730203c777"
+    }, 
+    {
+      "rdfs:label": "Cypress Creek BRK 1519", 
+      "rdfs:type": "syard:Breaker", 
+      "cptlc:hasUUID": "43b2b910-588e-4285-9b05-e1f195777fcd", 
+      "cptlc:hasURI": "http://Cypress_Creek-BRK-1519.yard.cypress-creek.8sub.cypsa.projects.cptl-c.org", 
+      "cptlc:hasAliases": "c85043d2-1a1d-4c7a-ab8e-69cb353576ff"
+    }, 
+    {
+      "rdfs:label": "Cypress Creek BRK 1615", 
+      "rdfs:type": "syard:Breaker", 
+      "cptlc:hasUUID": "d3692701-fe5e-4b1c-8635-f8bb2147bfb6", 
+      "cptlc:hasURI": "http://Cypress_Creek-BRK-1615.yard.cypress-creek.8sub.cypsa.projects.cptl-c.org", 
+      "cptlc:hasAliases": "a870faa5-02ef-40f9-ac4b-6418f3e9c241"
+    }, 
+    {
+      "rdfs:label": "Cypress Creek BRK 2325", 
+      "rdfs:type": "syard:Breaker", 
+      "cptlc:hasUUID": "90777d70-4a66-4f6e-9870-4b8d0b3e1e7c", 
+      "cptlc:hasURI": "http://Cypress_Creek-BRK-2325.yard.cypress-creek.8sub.cypsa.projects.cptl-c.org", 
+      "cptlc:hasAliases": "9fe04795-2ae4-47be-9dae-d60808bb84f1"
+    }, 
+    {
+      "rdfs:label": "Cypress Creek BRK 2425", 
+      "rdfs:type": "syard:Breaker", 
+      "cptlc:hasUUID": "dd7505ae-411b-4ec9-9221-3fd1aad01b50", 
+      "cptlc:hasURI": "http://Cypress_Creek-BRK-2425.yard.cypress-creek.8sub.cypsa.projects.cptl-c.org", 
+      "cptlc:hasAliases": "10ff7c21-ec7c-4bc7-a06b-007e8731f675"
+    }, 
+    {
+      "rdfs:label": "Cypress Creek BRK 2125", 
+      "rdfs:type": "syard:Breaker", 
+      "cptlc:hasUUID": "9a4ed777-d628-4136-8460-e1e73718cded", 
+      "cptlc:hasURI": "http://Cypress_Creek-BRK-2125.yard.cypress-creek.8sub.cypsa.projects.cptl-c.org", 
+      "cptlc:hasAliases": "2154a90c-8ccb-4faa-85b7-a531513a0c6d"
+    }, 
+    {
+      "rdfs:label": "Cypress Creek BRK 2225", 
+      "rdfs:type": "syard:Breaker", 
+      "cptlc:hasUUID": "6a412caa-9f48-4587-9984-8be96f5a2b3a", 
+      "cptlc:hasURI": "http://Cypress_Creek-BRK-2225.yard.cypress-creek.8sub.cypsa.projects.cptl-c.org", 
+      "cptlc:hasAliases": "a74effb7-2e56-4c1d-86be-e55edae3854f"
+    }, 
+    {
+      "rdfs:label": "Cypress Creek BRK 1719", 
+      "rdfs:type": "syard:Breaker", 
+      "cptlc:hasUUID": "f415bc05-3b2e-4f23-bbcd-a5e579bc4510", 
+      "cptlc:hasURI": "http://Cypress_Creek-BRK-1719.yard.cypress-creek.8sub.cypsa.projects.cptl-c.org", 
+      "cptlc:hasAliases": "82e11c11-3759-4f6b-b4bf-61d448836634"
+    }, 
+    {
+      "rdfs:label": "Cypress Creek ND 16", 
+      "rdfs:type": "syard:Node", 
+      "cptlc:hasURI": "http://Cypress_Creek-ND-16.yard.cypress-creek.8sub.cypsa.projects.cptl-c.org", 
+      "cptlc:hasUUID": "85ae31c9-2dc1-470b-a9b9-b1799052ad34"
+    }, 
+    {
+      "rdfs:label": "Cypress Creek ND 15", 
+      "rdfs:type": "syard:Bus", 
+      "cptlc:hasURI": "http://Cypress_Creek-ND-15.yard.cypress-creek.8sub.cypsa.projects.cptl-c.org", 
+      "cptlc:hasUUID": "3ac12698-34d6-43f5-ad37-403b321d05c6"
+    }, 
+    {
+      "rdfs:label": "Cypress Creek ND 17", 
+      "rdfs:type": "syard:Node", 
+      "cptlc:hasURI": "http://Cypress_Creek-ND-17.yard.cypress-creek.8sub.cypsa.projects.cptl-c.org", 
+      "cptlc:hasUUID": "74988e38-e9b1-4be6-b3ff-303332a5f1fe"
+    }, 
+    {
+      "rdfs:label": "Cypress Creek ND 19", 
+      "rdfs:type": "syard:Bus", 
+      "cptlc:hasURI": "http://Cypress_Creek-ND-19.yard.cypress-creek.8sub.cypsa.projects.cptl-c.org", 
+      "cptlc:hasUUID": "d7a6a8ba-ca6d-4c49-8e1f-2eff716891d0"
+    }, 
+    {
+      "rdfs:label": "Cypress Creek ND 20", 
+      "rdfs:type": "syard:Node", 
+      "cptlc:hasURI": "http://Cypress_Creek-ND-20.yard.cypress-creek.8sub.cypsa.projects.cptl-c.org", 
+      "cptlc:hasUUID": "cf1c7737-67e2-4429-93b9-61f2d9cf1f73"
+    }, 
+    {
+      "rdfs:label": "Cypress Creek ND 25", 
+      "rdfs:type": "syard:Bus", 
+      "cptlc:hasURI": "http://Cypress_Creek-ND-25.yard.cypress-creek.8sub.cypsa.projects.cptl-c.org", 
+      "cptlc:hasUUID": "843abf18-47e8-4e42-9eb0-622f4d5b0b54"
+    }, 
+    {
+      "rdfs:label": "Cypress Creek ND 23", 
+      "rdfs:type": "syard:Node", 
+      "cptlc:hasURI": "http://Cypress_Creek-ND-23.yard.cypress-creek.8sub.cypsa.projects.cptl-c.org", 
+      "cptlc:hasUUID": "b48f3c65-dfc8-4f52-a98d-829d190feae0"
+    }, 
+    {
+      "rdfs:label": "Cypress Creek UN Gen2", 
+      "rdfs:type": "syard:Generator", 
+      "cptlc:hasURI": "http://Cypress_Creek-UN-Gen2.yard.cypress-creek.8sub.cypsa.projects.cptl-c.org", 
+      "cptlc:hasUUID": "a916dc94-c63c-4ab7-871b-7537107794cc"
+    }, 
+    {
+      "rdfs:label": "Cypress Creek SEL 3620", 
+      "rdfs:type": "snet-sel:3620", 
+      "cptlc:hasUUID": "36185780-2ec8-434e-b9ff-d23ea6e96193", 
+      "enet:hasIPAddressValue": "192.168.1.200", 
+      "cptlc:hasURI": "http://SEL_3620.network.cypress-creek.8sub.cypsa.projects.cptl-c.org"
+    }, 
+    {
+      "rdfs:label": "Haverbrook BRK 3435", 
+      "rdfs:type": "syard:Breaker", 
+      "cptlc:hasUUID": "f4b7af45-277f-4875-8c20-2f9d326b68f2", 
+      "cptlc:hasURI": "http://Haverbrook-BRK-3435.yard.haverbrook.8sub.cypsa.projects.cptl-c.org", 
+      "cptlc:hasAliases": "71d8bd25-2d80-4bb4-bf7b-ce532990132f"
+    }, 
+    {
+      "rdfs:label": "Haverbrook BRK 3735", 
+      "rdfs:type": "syard:Breaker", 
+      "cptlc:hasUUID": "2f4afa24-3702-42e5-a407-910381c11c2e", 
+      "cptlc:hasURI": "http://Haverbrook-BRK-3735.yard.haverbrook.8sub.cypsa.projects.cptl-c.org", 
+      "cptlc:hasAliases": "de11e9cd-f731-4069-9ce8-175c609c9cd0"
+    }, 
+    {
+      "rdfs:label": "Haverbrook BRK 3635", 
+      "rdfs:type": "syard:Breaker", 
+      "cptlc:hasUUID": "31086c66-7ca0-4d98-a45c-7b62058a73a6", 
+      "cptlc:hasURI": "http://Haverbrook-BRK-3635.yard.haverbrook.8sub.cypsa.projects.cptl-c.org", 
+      "cptlc:hasAliases": "efd35e8d-91be-4d8d-8b14-a9e6bde1a6d8"
+    }, 
+    {
+      "rdfs:label": "Haverbrook BRK 3835", 
+      "rdfs:type": "syard:Breaker", 
+      "cptlc:hasUUID": "0ac3e3cb-5965-490a-b817-5e28154e26ae", 
+      "cptlc:hasURI": "http://Haverbrook-BRK-3835.yard.haverbrook.8sub.cypsa.projects.cptl-c.org", 
+      "cptlc:hasAliases": "57e4d4da-dee3-4412-8230-e035b4b6f31d"
+    }, 
+    {
+      "rdfs:label": "Haverbrook BRK 3335", 
+      "rdfs:type": "syard:Breaker", 
+      "cptlc:hasUUID": "f951264d-6252-4a92-8f4f-8a61ca27626e", 
+      "cptlc:hasURI": "http://Haverbrook-BRK-3335.yard.haverbrook.8sub.cypsa.projects.cptl-c.org", 
+      "cptlc:hasAliases": "059a825e-eee2-4197-bb40-2be5e46fd685"
+    }, 
+    {
+      "rdfs:label": "Haverbrook UN Gen4", 
+      "rdfs:type": "syard:Generator", 
+      "cptlc:hasURI": "http://Haverbrook-UN-Gen4.yard.haverbrook.8sub.cypsa.projects.cptl-c.org", 
+      "cptlc:hasUUID": "5ab58f4e-8bfc-4ded-a7a8-1d1378575d9e"
+    }, 
+    {
+      "rdfs:label": "Haverbrook ND 33", 
+      "rdfs:type": "syard:Node", 
+      "cptlc:hasURI": "http://Haverbrook-ND-33.yard.haverbrook.8sub.cypsa.projects.cptl-c.org", 
+      "cptlc:hasUUID": "d5abe7eb-cb95-4cad-916f-bb8be0046c0f"
+    }, 
+    {
+      "rdfs:label": "Haverbrook ND 35", 
+      "rdfs:type": "syard:Bus", 
+      "cptlc:hasURI": "http://Haverbrook-ND-35.yard.haverbrook.8sub.cypsa.projects.cptl-c.org", 
+      "cptlc:hasUUID": "7868381b-6642-4673-8866-5d5ffea54d37"
+    }, 
+    {
+      "rdfs:label": "Haverbrook ND 34", 
+      "rdfs:type": "syard:Node", 
+      "cptlc:hasURI": "http://Haverbrook-ND-34.yard.haverbrook.8sub.cypsa.projects.cptl-c.org", 
+      "cptlc:hasUUID": "08ca8f34-7d9e-4508-b79c-fda561561495"
+    }, 
+    {
+      "rdfs:label": "Haverbrook Switch 1", 
+      "rdfs:type": "snet:Switch", 
+      "cptlc:hasUUID": "f87c939b-b570-44bb-8766-6cc7f967bafc", 
+      "enet:hasIPAddressValue": "192.168.2.200", 
+      "cptlc:hasURI": "http://Switch_1.network.haverbrook.8sub.cypsa.projects.cptl-c.org"
+    }, 
+    {
+      "rdfs:label": "Haverbrook Reverse Power Relay 1", 
+      "rdfs:type": "snet:ReversePowerRelay", 
+      "cptlc:hasURI": "http://ReversePowerRelay_1.network.haverbrook.8sub.cypsa.projects.cptl-c.org", 
+      "cptlc:hasUUID": "fe2ce6bc-3d39-46db-aa44-b5cdfa729fd4"
+    }, 
+    {
+      "rdfs:label": "Haverbrook Overcurrent Relay 1", 
+      "rdfs:type": "snet:OvercurrentRelay", 
+      "cptlc:hasURI": "http://OvercurrentRelay_1.network.haverbrook.8sub.cypsa.projects.cptl-c.org", 
+      "cptlc:hasUUID": "b9eea5ea-401b-45d5-adf9-220722889d23"
+    }, 
+    {
+      "rdfs:label": "Haverbrook Overcurrent Relay 2", 
+      "rdfs:type": "snet:OvercurrentRelay", 
+      "cptlc:hasURI": "http://OvercurrentRelay_2.network.haverbrook.8sub.cypsa.projects.cptl-c.org", 
+      "cptlc:hasUUID": "5a8bab0c-21de-47e5-b2d5-989f6c51a25f"
+    }, 
+    {
+      "rdfs:label": "Haverbrook Overcurrent Relay 3", 
+      "rdfs:type": "snet:OvercurrentRelay", 
+      "cptlc:hasURI": "http://OvercurrentRelay_3.network.haverbrook.8sub.cypsa.projects.cptl-c.org", 
+      "cptlc:hasUUID": "c6a141a2-e2e3-490c-915f-a79a06b92dbe"
+    }, 
+    {
+      "rdfs:label": "Haverbrook Overcurrent Relay 4", 
+      "rdfs:type": "snet:OvercurrentRelay", 
+      "cptlc:hasURI": "http://OvercurrentRelay_4.network.haverbrook.8sub.cypsa.projects.cptl-c.org", 
+      "cptlc:hasUUID": "f26d8f43-0eff-4088-9792-65c77844cdb2"
+    }, 
+    {
+      "rdfs:label": "Haverbrook Overcurrent Relay 5", 
+      "rdfs:type": "snet:OvercurrentRelay", 
+      "cptlc:hasURI": "http://OvercurrentRelay_5.network.haverbrook.8sub.cypsa.projects.cptl-c.org", 
+      "cptlc:hasUUID": "6121b36d-f1b4-4f77-8edf-cb6b13e6b133"
+    }, 
+    {
+      "rdfs:label": "North Haverbrook BRK 1413", 
+      "rdfs:type": "syard:Breaker", 
+      "cptlc:hasUUID": "1defdcaa-b1ba-45f7-a074-97745b98a417", 
+      "cptlc:hasURI": "http://North_Haverbrook-BRK-1413.yard.north-haverbrook.8sub.cypsa.projects.cptl-c.org", 
+      "cptlc:hasAliases": "d685e81f-b2b5-4f0f-92ca-1e8ad0a3fe7e"
+    }, 
+    {
+      "rdfs:label": "North Haverbrook BRK 78", 
+      "rdfs:type": "syard:Breaker", 
+      "cptlc:hasUUID": "7ba56574-6d0e-456d-9452-13ee38e8ba35", 
+      "cptlc:hasURI": "http://North_Haverbrook-BRK-78.yard.north-haverbrook.8sub.cypsa.projects.cptl-c.org", 
+      "cptlc:hasAliases": "1507bce5-0be6-4994-8f0d-545e68f37a31"
+    }, 
+    {
+      "rdfs:label": "North Haverbrook BRK 812", 
+      "rdfs:type": "syard:Breaker", 
+      "cptlc:hasUUID": "d697baa5-4c3c-4541-83f9-debf0903520b", 
+      "cptlc:hasURI": "http://North_Haverbrook-BRK-812.yard.north-haverbrook.8sub.cypsa.projects.cptl-c.org", 
+      "cptlc:hasAliases": "aa586974-137d-4c44-9d28-f10e7adabd8f"
+    }, 
+    {
+      "rdfs:label": "North Haverbrook BRK 910", 
+      "rdfs:type": "syard:Breaker", 
+      "cptlc:hasUUID": "ac2d210d-4ae1-43f1-8874-f0e5ce017834", 
+      "cptlc:hasURI": "http://North_Haverbrook-BRK-910.yard.north-haverbrook.8sub.cypsa.projects.cptl-c.org", 
+      "cptlc:hasAliases": "527be059-68d3-4da2-a1d2-cbaa4688b242"
+    }, 
+    {
+      "rdfs:label": "North Haverbrook BRK 89", 
+      "rdfs:type": "syard:Breaker", 
+      "cptlc:hasUUID": "7f9f51df-1053-42a0-aac2-496ceead1f5f", 
+      "cptlc:hasURI": "http://North_Haverbrook-BRK-89.yard.north-haverbrook.8sub.cypsa.projects.cptl-c.org", 
+      "cptlc:hasAliases": "a4bdfe51-352a-45cc-af53-51b4886f617a"
+    }, 
+    {
+      "rdfs:label": "North Haverbrook BRK 1112", 
+      "rdfs:type": "syard:Breaker", 
+      "cptlc:hasUUID": "69846f54-74f1-4f2e-ba42-979a9f20109e", 
+      "cptlc:hasURI": "http://North_Haverbrook-BRK-1112.yard.north-haverbrook.8sub.cypsa.projects.cptl-c.org", 
+      "cptlc:hasAliases": "5822ef48-5a85-4bdc-b3b5-3b6589ee601e"
+    }, 
+    {
+      "rdfs:label": "North Haverbrook BRK 913", 
+      "rdfs:type": "syard:Breaker", 
+      "cptlc:hasUUID": "c5ec99ad-8d32-4dd5-b6f2-c5429da32988", 
+      "cptlc:hasURI": "http://North_Haverbrook-BRK-913.yard.north-haverbrook.8sub.cypsa.projects.cptl-c.org", 
+      "cptlc:hasAliases": "1a50dd04-27aa-4e5b-91f0-399df1b9c4d1"
+    }, 
+    {
+      "rdfs:label": "North Haverbrook ND 7", 
+      "rdfs:type": "syard:Node", 
+      "cptlc:hasURI": "http://North_Haverbrook-ND-7.yard.north-haverbrook.8sub.cypsa.projects.cptl-c.org", 
+      "cptlc:hasUUID": "ac293529-9659-4e4b-b5b9-b9647b02705d"
+    }, 
+    {
+      "rdfs:label": "North Haverbrook ND 8", 
+      "rdfs:type": "syard:Bus", 
+      "cptlc:hasURI": "http://North_Haverbrook-ND-8.yard.north-haverbrook.8sub.cypsa.projects.cptl-c.org", 
+      "cptlc:hasUUID": "36ea6f73-9e50-415c-8d38-76e89b0e6f43"
+    }, 
+    {
+      "rdfs:label": "North Haverbrook ND 12", 
+      "rdfs:type": "syard:Bus", 
+      "cptlc:hasURI": "http://North_Haverbrook-ND-12.yard.north-haverbrook.8sub.cypsa.projects.cptl-c.org", 
+      "cptlc:hasUUID": "c28c4447-108d-4cc9-a989-0e666bf2b80c"
+    }, 
+    {
+      "rdfs:label": "North Haverbrook BRK 1213", 
+      "rdfs:type": "syard:Breaker", 
+      "cptlc:hasURI": "http://North_Haverbrook-BRK-1213.yard.north-haverbrook.8sub.cypsa.projects.cptl-c.org", 
+      "cptlc:hasUUID": "584bc7b5-e0f2-4d2b-8bc3-5c59c7585205"
+    }, 
+    {
+      "rdfs:label": "North Haverbrook ND 13", 
+      "rdfs:type": "syard:Bus", 
+      "cptlc:hasURI": "http://North_Haverbrook-ND-13.yard.north-haverbrook.8sub.cypsa.projects.cptl-c.org", 
+      "cptlc:hasUUID": "2b749c40-2688-43bc-b321-6eecd55b4046"
+    }, 
+    {
+      "rdfs:label": "North Haverbrook ND 59", 
+      "rdfs:type": "syard:Bus", 
+      "cptlc:hasURI": "http://North_Haverbrook-ND-59.yard.north-haverbrook.8sub.cypsa.projects.cptl-c.org", 
+      "cptlc:hasUUID": "939b0b97-049f-4a07-9b0d-dc2a58832502"
+    }, 
+    {
+      "rdfs:label": "North Haverbrook ND 10", 
+      "rdfs:type": "syard:Node", 
+      "cptlc:hasURI": "http://North_Haverbrook-ND-10.yard.north-haverbrook.8sub.cypsa.projects.cptl-c.org", 
+      "cptlc:hasUUID": "174450cb-4ae2-42a5-837f-e0bcf93ba1f2"
+    }, 
+    {
+      "rdfs:label": "North Haverbrook Switch 1", 
+      "rdfs:type": "snet:Switch", 
+      "cptlc:hasUUID": "13bce4b8-3364-4126-8368-63fe251864a4", 
+      "enet:hasIPAddressValue": "192.168.3.200", 
+      "cptlc:hasURI": "http://Switch_1.network.north-haverbrook.8sub.cypsa.projects.cptl-c.org"
+    }, 
+    {
+      "rdfs:label": "Odgenville BRK 62", 
+      "rdfs:type": "syard:Breaker", 
+      "cptlc:hasUUID": "af8aa8da-7f9d-454d-85e8-1cb4678fa7d7", 
+      "cptlc:hasURI": "http://Odgenville-BRK-62.yard.odgenville.8sub.cypsa.projects.cptl-c.org", 
+      "cptlc:hasAliases": "88df51b5-6dbb-4844-9a65-9d88f441d0d1"
+    }, 
+    {
+      "rdfs:label": "Odgenville BRK 12", 
+      "rdfs:type": "syard:Breaker", 
+      "cptlc:hasUUID": "27f0e259-2fc8-48eb-98d0-5855eb9dab30", 
+      "cptlc:hasURI": "http://Odgenville-BRK-12.yard.odgenville.8sub.cypsa.projects.cptl-c.org", 
+      "cptlc:hasAliases": "5be74b36-a578-409a-b355-e51533fe5e79"
+    }, 
+    {
+      "rdfs:label": "Odgenville BRK 25", 
+      "rdfs:type": "syard:Breaker", 
+      "cptlc:hasUUID": "7c37443e-a221-41ec-bcd9-9b2480e32ab1", 
+      "cptlc:hasURI": "http://Odgenville-BRK-25.yard.odgenville.8sub.cypsa.projects.cptl-c.org", 
+      "cptlc:hasAliases": "70b6ae3d-b0b9-4ecb-87e4-cc3a29a31062"
+    }, 
+    {
+      "rdfs:label": "Odgenville BRK 34", 
+      "rdfs:type": "syard:Breaker", 
+      "cptlc:hasUUID": "cd4bf17d-75a0-40f0-83cf-5fe390aa9148", 
+      "cptlc:hasURI": "http://Odgenville-BRK-34.yard.odgenville.8sub.cypsa.projects.cptl-c.org", 
+      "cptlc:hasAliases": "c49558e3-a38c-4314-9d7a-64a4fb74823d"
+    }, 
+    {
+      "rdfs:label": "Odgenville BRK 42", 
+      "rdfs:type": "syard:Breaker", 
+      "cptlc:hasUUID": "4a96d2ea-ecf4-4171-a5ee-e1958c8103ee", 
+      "cptlc:hasURI": "http://Odgenville-BRK-42.yard.odgenville.8sub.cypsa.projects.cptl-c.org", 
+      "cptlc:hasAliases": "66763827-6b0a-462a-be68-56b12ef46399"
+    }, 
+    {
+      "rdfs:label": "Odgenville BRK 14", 
+      "rdfs:type": "syard:Breaker", 
+      "cptlc:hasUUID": "f631b4ca-11f8-463a-b2b0-dde53089aa20", 
+      "cptlc:hasURI": "http://Odgenville-BRK-14.yard.odgenville.8sub.cypsa.projects.cptl-c.org", 
+      "cptlc:hasAliases": "0529e661-acc9-449f-aa55-9195fd4d84e6"
+    }, 
+    {
+      "rdfs:label": "Odgenville BRK 23", 
+      "rdfs:type": "syard:Breaker", 
+      "cptlc:hasUUID": "b13aafed-99af-4fc0-b53f-e273802a1ea7", 
+      "cptlc:hasURI": "http://Odgenville-BRK-23.yard.odgenville.8sub.cypsa.projects.cptl-c.org", 
+      "cptlc:hasAliases": "b42a69b0-a20f-41e5-92ac-2726f58fae5b"
+    }, 
+    {
+      "rdfs:label": "Odgenville BRK 56", 
+      "rdfs:type": "syard:Breaker", 
+      "cptlc:hasUUID": "c81b71fc-8677-4887-974b-a9cba0939904", 
+      "cptlc:hasURI": "http://Odgenville-BRK-56.yard.odgenville.8sub.cypsa.projects.cptl-c.org", 
+      "cptlc:hasAliases": "806c6126-ada2-445f-8c93-1de33ae8eb63"
+    }, 
+    {
+      "rdfs:label": "Odgenville UN Gen1", 
+      "rdfs:type": "syard:Generator", 
+      "cptlc:hasURI": "http://Odgenville-UN-Gen1.yard.odgenville.8sub.cypsa.projects.cptl-c.org", 
+      "cptlc:hasUUID": "f46f0289-b824-47c3-905d-85dc4f45cb69"
+    }, 
+    {
+      "rdfs:label": "Odgenville ND 1", 
+      "rdfs:type": "syard:Node", 
+      "cptlc:hasURI": "http://Odgenville-ND-1.yard.odgenville.8sub.cypsa.projects.cptl-c.org", 
+      "cptlc:hasUUID": "f7cc29e6-4d96-47e5-af7f-89634551e5c9"
+    }, 
+    {
+      "rdfs:label": "Odgenville ND 2", 
+      "rdfs:type": "syard:Bus", 
+      "cptlc:hasURI": "http://Odgenville-ND-2.yard.odgenville.8sub.cypsa.projects.cptl-c.org", 
+      "cptlc:hasUUID": "1fcc2b5a-b47f-4875-8df1-e6df70a929a9"
+    }, 
+    {
+      "rdfs:label": "Odgenville ND 4", 
+      "rdfs:type": "syard:Bus", 
+      "cptlc:hasURI": "http://Odgenville-ND-4.yard.odgenville.8sub.cypsa.projects.cptl-c.org", 
+      "cptlc:hasUUID": "81c73eb6-420a-454f-8338-472371ce3534"
+    }, 
+    {
+      "rdfs:label": "Odgenville ND 5", 
+      "rdfs:type": "syard:Bus", 
+      "cptlc:hasURI": "http://Odgenville-ND-5.yard.odgenville.8sub.cypsa.projects.cptl-c.org", 
+      "cptlc:hasUUID": "f1d4601a-4caf-44dc-9b08-e04b22cae1d5"
+    }, 
+    {
+      "rdfs:label": "Odgenville SEL 3620", 
+      "rdfs:type": "snet-sel:3620", 
+      "cptlc:hasUUID": "aba37a93-1e83-4a65-8598-1a865d99a6ad", 
+      "enet:hasIPAddressValue": "192.168.4.200", 
+      "cptlc:hasURI": "http://SEL_3620.network.odgenville.8sub.cypsa.projects.cptl-c.org"
+    }, 
+    {
+      "rdfs:label": "Paris BRK 4950", 
+      "rdfs:type": "syard:Breaker", 
+      "cptlc:hasUUID": "5da6776a-d434-4b18-9e3f-b2a76018d8a5", 
+      "cptlc:hasURI": "http://Paris-BRK-4950.yard.paris.8sub.cypsa.projects.cptl-c.org", 
+      "cptlc:hasAliases": "cd32123c-03b4-4cc9-b51b-744a8a8b86b6"
+    }, 
+    {
+      "rdfs:label": "Paris BRK 4850", 
+      "rdfs:type": "syard:Breaker", 
+      "cptlc:hasUUID": "178cf804-cd47-4806-b551-d375af4a684f", 
+      "cptlc:hasURI": "http://Paris-BRK-4850.yard.paris.8sub.cypsa.projects.cptl-c.org", 
+      "cptlc:hasAliases": "0ad6fa27-783c-44bf-ab03-d74f6f238767"
+    }, 
+    {
+      "rdfs:label": "Paris BRK 5051", 
+      "rdfs:type": "syard:Breaker", 
+      "cptlc:hasUUID": "5f92ebe3-7b6e-4abf-a435-2c3979293023", 
+      "cptlc:hasURI": "http://Paris-BRK-5051.yard.paris.8sub.cypsa.projects.cptl-c.org", 
+      "cptlc:hasAliases": "de1f6aa1-7eeb-4562-be5c-10efa8f894ee"
+    }, 
+    {
+      "rdfs:label": "Paris BRK 5052", 
+      "rdfs:type": "syard:Breaker", 
+      "cptlc:hasUUID": "f30b6853-85cc-44b0-a2fa-cb0f2e2e6724", 
+      "cptlc:hasURI": "http://Paris-BRK-5052.yard.paris.8sub.cypsa.projects.cptl-c.org", 
+      "cptlc:hasAliases": "2d3afb4b-dd6c-4995-a2bc-30e617c06d17"
+    }, 
+    {
+      "rdfs:label": "Paris ND 49", 
+      "rdfs:type": "syard:Node", 
+      "cptlc:hasURI": "http://Paris-ND-49.yard.paris.8sub.cypsa.projects.cptl-c.org", 
+      "cptlc:hasUUID": "e7bc0aba-e865-4ab9-b150-049620c2d659"
+    }, 
+    {
+      "rdfs:label": "Paris ND 50", 
+      "rdfs:type": "syard:Bus", 
+      "cptlc:hasURI": "http://Paris-ND-50.yard.paris.8sub.cypsa.projects.cptl-c.org", 
+      "cptlc:hasUUID": "f4a23a49-2c39-4ff2-9f1f-11c10ad93f0e"
+    }, 
+    {
+      "rdfs:label": "Paris ND 52", 
+      "rdfs:type": "syard:Node", 
+      "cptlc:hasURI": "http://Paris-ND-52.yard.paris.8sub.cypsa.projects.cptl-c.org", 
+      "cptlc:hasUUID": "619d4f87-55bb-4162-96f3-7da8b7958246"
+    }, 
+    {
+      "rdfs:label": "Paris SEL 3620", 
+      "rdfs:type": "snet-sel:3620", 
+      "cptlc:hasUUID": "41f088ba-2e6e-4b7f-93ff-2b001e640dbc", 
+      "enet:hasIPAddressValue": "192.168.5.200", 
+      "cptlc:hasURI": "http://SEL_3620.network.paris.8sub.cypsa.projects.cptl-c.org"
+    }, 
+    {
+      "rdfs:label": "Shelbyville BRK 3132", 
+      "rdfs:type": "syard:Breaker", 
+      "cptlc:hasUUID": "54ecec38-a50e-4f94-b39b-715511627744", 
+      "cptlc:hasURI": "http://Shelbyville-BRK-3132.yard.shelbyville.8sub.cypsa.projects.cptl-c.org", 
+      "cptlc:hasAliases": "9e51260d-8401-46e9-b454-f432a2ad8674"
+    }, 
+    {
+      "rdfs:label": "Shelbyville BRK 3031", 
+      "rdfs:type": "syard:Breaker", 
+      "cptlc:hasUUID": "56eaf44a-bb18-443d-80a1-935a0e64d6f2", 
+      "cptlc:hasURI": "http://Shelbyville-BRK-3031.yard.shelbyville.8sub.cypsa.projects.cptl-c.org", 
+      "cptlc:hasAliases": "2916c10a-5a57-453a-990b-f2c1109af80e"
+    }, 
+    {
+      "rdfs:label": "Shelbyville BRK 2928", 
+      "rdfs:type": "syard:Breaker", 
+      "cptlc:hasUUID": "9aeb97d8-15db-42c4-9d9f-f7d271c2cd54", 
+      "cptlc:hasURI": "http://Shelbyville-BRK-2928.yard.shelbyville.8sub.cypsa.projects.cptl-c.org", 
+      "cptlc:hasAliases": "5c1cb0b2-1a24-4f8d-9da0-4841a794a03f"
+    }, 
+    {
+      "rdfs:label": "Shelbyville BRK 2629", 
+      "rdfs:type": "syard:Breaker", 
+      "cptlc:hasUUID": "328060c7-c9b0-489a-a339-1b01305faf02", 
+      "cptlc:hasURI": "http://Shelbyville-BRK-2629.yard.shelbyville.8sub.cypsa.projects.cptl-c.org", 
+      "cptlc:hasAliases": "54f75a1c-7a2b-4bec-8aa5-0823610da2d2"
+    }, 
+    {
+      "rdfs:label": "Shelbyville BRK 2729", 
+      "rdfs:type": "syard:Breaker", 
+      "cptlc:hasUUID": "14684f21-1650-4b0c-a577-5fd1904612d3", 
+      "cptlc:hasURI": "http://Shelbyville-BRK-2729.yard.shelbyville.8sub.cypsa.projects.cptl-c.org", 
+      "cptlc:hasAliases": "1623aae2-4705-4d45-92a3-23849a6cfdaa"
+    }, 
+    {
+      "rdfs:label": "Shelbyville BRK 2931", 
+      "rdfs:type": "syard:Breaker", 
+      "cptlc:hasUUID": "5336c1b1-2d7c-44a1-99dc-f7de11240877", 
+      "cptlc:hasURI": "http://Shelbyville-BRK-2931.yard.shelbyville.8sub.cypsa.projects.cptl-c.org", 
+      "cptlc:hasAliases": "b0145628-c7c1-4412-b5d5-30abd0957461"
+    }, 
+    {
+      "rdfs:label": "Shelbyville ND 32", 
+      "rdfs:type": "syard:Node", 
+      "cptlc:hasURI": "http://Shelbyville-ND-32.yard.shelbyville.8sub.cypsa.projects.cptl-c.org", 
+      "cptlc:hasUUID": "113facb3-df90-42fe-9740-eb783f885147"
+    }, 
+    {
+      "rdfs:label": "Shelbyville ND 31", 
+      "rdfs:type": "syard:Bus", 
+      "cptlc:hasURI": "http://Shelbyville-ND-31.yard.shelbyville.8sub.cypsa.projects.cptl-c.org", 
+      "cptlc:hasUUID": "2b1cc7e6-8e39-4132-b3e8-7e7e79164457"
+    }, 
+    {
+      "rdfs:label": "Shelbyville ND 30", 
+      "rdfs:type": "syard:Node", 
+      "cptlc:hasURI": "http://Shelbyville-ND-30.yard.shelbyville.8sub.cypsa.projects.cptl-c.org", 
+      "cptlc:hasUUID": "c1a8b7c9-f471-46d1-a86c-1458cb36e176"
+    }, 
+    {
+      "rdfs:label": "Shelbyville UN Gen3", 
+      "rdfs:type": "syard:Generator", 
+      "cptlc:hasURI": "http://Shelbyville-UN-Gen3.yard.shelbyville.8sub.cypsa.projects.cptl-c.org", 
+      "cptlc:hasUUID": "834c21b2-0c57-40cc-bb15-ea70201efea9"
+    }, 
+    {
+      "rdfs:label": "Shelbyville ND 29", 
+      "rdfs:type": "syard:Bus", 
+      "cptlc:hasURI": "http://Shelbyville-ND-29.yard.shelbyville.8sub.cypsa.projects.cptl-c.org", 
+      "cptlc:hasUUID": "f254e8a8-2d78-497c-bd2a-4a9976c3f863"
+    }, 
+    {
+      "rdfs:label": "Shelbyville ND 27", 
+      "rdfs:type": "syard:Node", 
+      "cptlc:hasURI": "http://Shelbyville-ND-27.yard.shelbyville.8sub.cypsa.projects.cptl-c.org", 
+      "cptlc:hasUUID": "3d898e3d-af5d-4693-940a-7e0451dd30b7"
+    }, 
+    {
+      "rdfs:label": "Shelbyville SEL 3620", 
+      "rdfs:type": "snet-sel:3620", 
+      "cptlc:hasUUID": "65986695-cc11-463e-ae2f-83a3df1258c4", 
+      "enet:hasIPAddressValue": "192.168.6.200", 
+      "cptlc:hasURI": "http://SEL_3620.network.shelbyville.8sub.cypsa.projects.cptl-c.org"
+    }, 
+    {
+      "rdfs:label": "Shelbyville SEL 451 6", 
+      "rdfs:type": "snet-sel:451", 
+      "cptlc:hasUUID": "efac9fae-64a2-4211-a5cf-49a2e5016ffb", 
+      "enet:hasIPAddressValue": "10.36.1.106", 
+      "cptlc:hasURI": "http://SEL_451_6.network.shelbyville.8sub.cypsa.projects.cptl-c.org"
+    }, 
+    {
+      "rdfs:label": "Springfield BRK 4142", 
+      "rdfs:type": "syard:Breaker", 
+      "cptlc:hasUUID": "9766a375-19b1-45dd-8891-8ebf7b8ce9e4", 
+      "cptlc:hasURI": "http://Springfield-BRK-4142.yard.springfield.8sub.cypsa.projects.cptl-c.org", 
+      "cptlc:hasAliases": "66685ae1-a031-4e59-955b-7a297e41c1fa"
+    }, 
+    {
+      "rdfs:label": "Springfield BRK 4041", 
+      "rdfs:type": "syard:Breaker", 
+      "cptlc:hasUUID": "97838e82-f3f6-46b2-82ac-48778c61df13", 
+      "cptlc:hasURI": "http://Springfield-BRK-4041.yard.springfield.8sub.cypsa.projects.cptl-c.org", 
+      "cptlc:hasAliases": "934dc8b6-41f0-4968-adbc-5045cf218585"
+    }, 
+    {
+      "rdfs:label": "Springfield BRK 3941", 
+      "rdfs:type": "syard:Breaker", 
+      "cptlc:hasUUID": "a3a7b489-8c9c-47a7-8e5a-617786f166aa", 
+      "cptlc:hasURI": "http://Springfield-BRK-3941.yard.springfield.8sub.cypsa.projects.cptl-c.org", 
+      "cptlc:hasAliases": "95d62569-eff7-4b01-aa55-a90a44678384"
+    }, 
+    {
+      "rdfs:label": "Springfield BRK 4441", 
+      "rdfs:type": "syard:Breaker", 
+      "cptlc:hasUUID": "80535f3d-13b2-406f-9798-23f6ab8027da", 
+      "cptlc:hasURI": "http://Springfield-BRK-4441.yard.springfield.8sub.cypsa.projects.cptl-c.org", 
+      "cptlc:hasAliases": "9f4e632c-c0d2-40a0-94e1-31738c571ef2"
+    }, 
+    {
+      "rdfs:label": "Springfield BRK 4341", 
+      "rdfs:type": "syard:Breaker", 
+      "cptlc:hasUUID": "f39a7ddf-3908-4daf-8e29-e281cd876c0c", 
+      "cptlc:hasURI": "http://Springfield-BRK-4341.yard.springfield.8sub.cypsa.projects.cptl-c.org", 
+      "cptlc:hasAliases": "018fc1be-76c0-439b-9f82-ecaa79d5f1b3"
+    }, 
+    {
+      "rdfs:label": "Springfield UN Gen5", 
+      "rdfs:type": "syard:Generator", 
+      "cptlc:hasURI": "http://Springfield-UN-Gen5.yard.springfield.8sub.cypsa.projects.cptl-c.org", 
+      "cptlc:hasUUID": "4e213ea2-35ca-4302-ac40-2e6fb489aaa3"
+    }, 
+    {
+      "rdfs:label": "Springfield ND 43", 
+      "rdfs:type": "syard:Node", 
+      "cptlc:hasURI": "http://Springfield-ND-43.yard.springfield.8sub.cypsa.projects.cptl-c.org", 
+      "cptlc:hasUUID": "2316dbec-6fb4-4a7a-a99b-0a8a0a4a0929"
+    }, 
+    {
+      "rdfs:label": "Springfield ND 41", 
+      "rdfs:type": "syard:Bus", 
+      "cptlc:hasURI": "http://Springfield-ND-41.yard.springfield.8sub.cypsa.projects.cptl-c.org", 
+      "cptlc:hasUUID": "2b68bfec-35df-4e6e-b694-6469e4504d5e"
+    }, 
+    {
+      "rdfs:label": "Springfield ND 44", 
+      "rdfs:type": "syard:Node", 
+      "cptlc:hasURI": "http://Springfield-ND-44.yard.springfield.8sub.cypsa.projects.cptl-c.org", 
+      "cptlc:hasUUID": "3ca757dc-7c1e-4aa3-ba6c-57c5e8e6a6fa"
+    }, 
+    {
+      "rdfs:label": "Springfield Switch 1", 
+      "rdfs:type": "snet:Switch", 
+      "cptlc:hasUUID": "a040abf9-95da-48dc-a133-ab302a4d9671", 
+      "enet:hasIPAddressValue": "192.168.8.200", 
+      "cptlc:hasURI": "http://Switch_1.network.springfield.8sub.cypsa.projects.cptl-c.org"
+    }, 
+    {
+      "rdfs:label": "Springfield Reverse Power Relay 1", 
+      "rdfs:type": "snet:ReversePowerRelay", 
+      "cptlc:hasURI": "http://ReversePowerRelay_1.network.springfield.8sub.cypsa.projects.cptl-c.org", 
+      "cptlc:hasUUID": "af21a363-d391-4ec0-a1ed-0c82e283b8ae"
+    }
+  ], 
+  "links": [
+    {
+      "source": "f8486fb3-83fd-4401-a6f4-f93f7c088e87", 
+      "relation": "cptlc:hasComponent", 
+      "target": "f180ea33-d63b-47a2-bdef-855486b34529"
+    }, 
+    {
+      "source": "f8486fb3-83fd-4401-a6f4-f93f7c088e87", 
+      "relation": "cptlc:hasEthernetLink", 
+      "target": "65986695-cc11-463e-ae2f-83a3df1258c4"
+    }, 
+    {
+      "source": "f8486fb3-83fd-4401-a6f4-f93f7c088e87", 
+      "relation": "cptlc:hasFiberEthernetLink", 
+      "target": "59748548-734f-4b54-bad0-71ca8cc63caf"
+    }, 
+    {
+      "source": "fdbc4b0e-0a55-48a0-b37b-b18c347c9956", 
+      "relation": "cptlc:hasComponent", 
+      "target": "6285f875-08c3-4ba1-8756-58253cfa87b6"
+    }, 
+    {
+      "source": "fdbc4b0e-0a55-48a0-b37b-b18c347c9956", 
+      "relation": "cptlc:hasEthernetLink", 
+      "target": "65986695-cc11-463e-ae2f-83a3df1258c4"
+    }, 
+    {
+      "source": "fdbc4b0e-0a55-48a0-b37b-b18c347c9956", 
+      "relation": "cptlc:hasFiberEthernetLink", 
+      "target": "7fb091cc-163c-4dfd-8f55-7aceda9aaee2"
+    }, 
+    {
+      "source": "67e354a9-07ed-453d-9da3-10f5f775f3e1", 
+      "relation": "cptlc:hasFiberEthernetLink", 
+      "target": "a9a84b0b-5757-4139-8a82-4fa77105fbf7"
+    }, 
+    {
+      "source": "67e354a9-07ed-453d-9da3-10f5f775f3e1", 
+      "relation": "cptlc:hasComponent", 
+      "target": "cd475306-25bf-4fdb-b22a-14870d711102"
+    }, 
+    {
+      "source": "67e354a9-07ed-453d-9da3-10f5f775f3e1", 
+      "relation": "cptlc:hasEthernetLink", 
+      "target": "65986695-cc11-463e-ae2f-83a3df1258c4"
+    }, 
+    {
+      "source": "01d24675-dcf7-4792-8041-e9ce3b1ede7a", 
+      "relation": "snet:hasBreakerConnections", 
+      "target": "2f4afa24-3702-42e5-a407-910381c11c2e"
+    }, 
+    {
+      "source": "01d24675-dcf7-4792-8041-e9ce3b1ede7a", 
+      "relation": "cptlc:hasComponent", 
+      "target": "a617aa43-6dc0-41c6-ae28-f9065075a707"
+    }, 
+    {
+      "source": "01d24675-dcf7-4792-8041-e9ce3b1ede7a", 
+      "relation": "cptlc:hasFiberEthernetLink", 
+      "target": "6ff28069-25fa-44c7-ab33-22a819628615"
+    }, 
+    {
+      "source": "742b4f3c-9514-4986-bdd1-b228a2f65585", 
+      "relation": "cptlc:hasComponent", 
+      "target": "f869e4aa-34e5-4c55-8bad-e3937e021794"
+    }, 
+    {
+      "source": "742b4f3c-9514-4986-bdd1-b228a2f65585", 
+      "relation": "snet:hasBreakerConnections", 
+      "target": "9766a375-19b1-45dd-8891-8ebf7b8ce9e4"
+    }, 
+    {
+      "source": "742b4f3c-9514-4986-bdd1-b228a2f65585", 
+      "relation": "cptlc:hasFiberEthernetLink", 
+      "target": "9fe628df-b617-4d7b-a144-d9a9c0c17205"
+    }, 
+    {
+      "source": "742b4f3c-9514-4986-bdd1-b228a2f65585", 
+      "relation": "cptlc:hasSerialLink", 
+      "target": "161242af-b72f-4fc0-aa56-9715ac284a92"
+    }, 
+    {
+      "source": "742b4f3c-9514-4986-bdd1-b228a2f65585", 
+      "relation": "cptlc:hasSerialLink", 
+      "target": "88dba10a-7e77-41b1-9373-733a65f650f5"
+    }, 
+    {
+      "source": "6ff28069-25fa-44c7-ab33-22a819628615", 
+      "relation": "cptlc:hasSerialLink", 
+      "target": "705cf996-d5d0-424d-bacd-545a1e0eb226"
+    }, 
+    {
+      "source": "6ff28069-25fa-44c7-ab33-22a819628615", 
+      "relation": "cptlc:hasFiberEthernetLink", 
+      "target": "a4b8c67d-bbc3-4ecf-b289-7782cef8d807"
+    }, 
+    {
+      "source": "6ff28069-25fa-44c7-ab33-22a819628615", 
+      "relation": "snet:hasBreakerConnections", 
+      "target": "a3a7b489-8c9c-47a7-8e5a-617786f166aa"
+    }, 
+    {
+      "source": "6ff28069-25fa-44c7-ab33-22a819628615", 
+      "relation": "cptlc:hasSerialLink", 
+      "target": "9930e062-0261-4b74-b3c0-32ff3316b7a4"
+    }, 
+    {
+      "source": "6ff28069-25fa-44c7-ab33-22a819628615", 
+      "relation": "cptlc:hasComponent", 
+      "target": "ccf8abcd-24e8-410c-9d36-aeb10c06e6d6"
+    }, 
+    {
+      "source": "161242af-b72f-4fc0-aa56-9715ac284a92", 
+      "relation": "cptlc:hasFiberEthernetLink", 
+      "target": "8ddcf80c-79d0-4d07-830b-450fd16a8933"
+    }, 
+    {
+      "source": "161242af-b72f-4fc0-aa56-9715ac284a92", 
+      "relation": "cptlc:hasComponent", 
+      "target": "383991d3-c629-4fa9-87a1-bed5313278a8"
+    }, 
+    {
+      "source": "161242af-b72f-4fc0-aa56-9715ac284a92", 
+      "relation": "cptlc:hasSerialLink", 
+      "target": "4394cdf3-bda5-471f-8ef3-f8c61aabb57e"
+    }, 
+    {
+      "source": "161242af-b72f-4fc0-aa56-9715ac284a92", 
+      "relation": "snet:hasBreakerConnections", 
+      "target": "97838e82-f3f6-46b2-82ac-48778c61df13"
+    }, 
+    {
+      "source": "a9d2e23a-749a-4cd0-879e-f279be9aaa70", 
+      "relation": "cptlc:hasEthernetLink", 
+      "target": "65986695-cc11-463e-ae2f-83a3df1258c4"
+    }, 
+    {
+      "source": "a9d2e23a-749a-4cd0-879e-f279be9aaa70", 
+      "relation": "cptlc:hasComponent", 
+      "target": "3f2fa63a-b98f-4b51-9f73-0da03faf9028"
+    }, 
+    {
+      "source": "a9d2e23a-749a-4cd0-879e-f279be9aaa70", 
+      "relation": "snet:hasBreakerConnections", 
+      "target": "54ecec38-a50e-4f94-b39b-715511627744"
+    }, 
+    {
+      "source": "43d4b592-7131-4940-8a23-2487682e00f5", 
+      "relation": "snet:hasBreakerConnections", 
+      "target": "9aeb97d8-15db-42c4-9d9f-f7d271c2cd54"
+    }, 
+    {
+      "source": "43d4b592-7131-4940-8a23-2487682e00f5", 
+      "relation": "cptlc:hasEthernetLink", 
+      "target": "65986695-cc11-463e-ae2f-83a3df1258c4"
+    }, 
+    {
+      "source": "43d4b592-7131-4940-8a23-2487682e00f5", 
+      "relation": "cptlc:hasComponent", 
+      "target": "865c6a52-99f9-46da-94c6-7bc3c25069f0"
+    }, 
+    {
+      "source": "fcf89e43-74b4-404b-a350-e737f533fd83", 
+      "relation": "cptlc:hasComponent", 
+      "target": "dee6d85e-2ee3-4552-a1e9-dab475869680"
+    }, 
+    {
+      "source": "fcf89e43-74b4-404b-a350-e737f533fd83", 
+      "relation": "snet:hasBreakerConnections", 
+      "target": "328060c7-c9b0-489a-a339-1b01305faf02"
+    }, 
+    {
+      "source": "fcf89e43-74b4-404b-a350-e737f533fd83", 
+      "relation": "cptlc:hasEthernetLink", 
+      "target": "65986695-cc11-463e-ae2f-83a3df1258c4"
+    }, 
+    {
+      "source": "a1dd879f-8285-4a81-ac8b-62e8fdf6fa80", 
+      "relation": "snet:hasBreakerConnections", 
+      "target": "14684f21-1650-4b0c-a577-5fd1904612d3"
+    }, 
+    {
+      "source": "a1dd879f-8285-4a81-ac8b-62e8fdf6fa80", 
+      "relation": "cptlc:hasComponent", 
+      "target": "ffaabb37-3019-426b-b5c8-78e628745efb"
+    }, 
+    {
+      "source": "a1dd879f-8285-4a81-ac8b-62e8fdf6fa80", 
+      "relation": "cptlc:hasEthernetLink", 
+      "target": "65986695-cc11-463e-ae2f-83a3df1258c4"
+    }, 
+    {
+      "source": "b6b8db05-c60b-41f0-92a8-a460b1633952", 
+      "relation": "snet:hasBreakerConnections", 
+      "target": "56eaf44a-bb18-443d-80a1-935a0e64d6f2"
+    }, 
+    {
+      "source": "b6b8db05-c60b-41f0-92a8-a460b1633952", 
+      "relation": "cptlc:hasEthernetLink", 
+      "target": "65986695-cc11-463e-ae2f-83a3df1258c4"
+    }, 
+    {
+      "source": "b6b8db05-c60b-41f0-92a8-a460b1633952", 
+      "relation": "cptlc:hasComponent", 
+      "target": "971121eb-f1df-4b43-a64f-115c39be152d"
+    }, 
+    {
+      "source": "c07148cb-aaeb-49b6-bad0-ffc8d054bd1f", 
+      "relation": "cptlc:hasSerialLink", 
+      "target": "439a58ac-e7b2-45ce-a341-d33889b8a7ff"
+    }, 
+    {
+      "source": "c07148cb-aaeb-49b6-bad0-ffc8d054bd1f", 
+      "relation": "cptlc:hasSerialLink", 
+      "target": "5132181c-be87-4ced-b3a9-b7140e5ff39c"
+    }, 
+    {
+      "source": "c07148cb-aaeb-49b6-bad0-ffc8d054bd1f", 
+      "relation": "cptlc:hasFiberEthernetLink", 
+      "target": "d5f19e38-e00a-404f-9c6b-123ae4eebde2"
+    }, 
+    {
+      "source": "c07148cb-aaeb-49b6-bad0-ffc8d054bd1f", 
+      "relation": "cptlc:hasComponent", 
+      "target": "11d05d03-c14e-426c-9626-d23e3f2fc9f2"
+    }, 
+    {
+      "source": "c07148cb-aaeb-49b6-bad0-ffc8d054bd1f", 
+      "relation": "snet:hasBreakerConnections", 
+      "target": "379e20aa-da69-452e-b176-01333515e4f4"
+    }, 
+    {
+      "source": "9fe628df-b617-4d7b-a144-d9a9c0c17205", 
+      "relation": "cptlc:hasComponent", 
+      "target": "a619422b-58f0-42bc-89a9-2e2fddce2965"
+    }, 
+    {
+      "source": "9fe628df-b617-4d7b-a144-d9a9c0c17205", 
+      "relation": "cptlc:hasEthernetLink", 
+      "target": "41f088ba-2e6e-4b7f-93ff-2b001e640dbc"
+    }, 
+    {
+      "source": "7941ce0f-4e6c-49da-aeda-a9b2ad526f13", 
+      "relation": "cptlc:hasEthernetLink", 
+      "target": "36185780-2ec8-434e-b9ff-d23ea6e96193"
+    }, 
+    {
+      "source": "7941ce0f-4e6c-49da-aeda-a9b2ad526f13", 
+      "relation": "snet:hasBreakerConnections", 
+      "target": "dd7505ae-411b-4ec9-9221-3fd1aad01b50"
+    }, 
+    {
+      "source": "7941ce0f-4e6c-49da-aeda-a9b2ad526f13", 
+      "relation": "cptlc:hasComponent", 
+      "target": "032953d2-fd9d-457c-a7af-3248132e6e72"
+    }, 
+    {
+      "source": "9cf12279-ecdd-426f-9a59-b0d79ca11718", 
+      "relation": "cptlc:hasEthernetLink", 
+      "target": "36185780-2ec8-434e-b9ff-d23ea6e96193"
+    }, 
+    {
+      "source": "9cf12279-ecdd-426f-9a59-b0d79ca11718", 
+      "relation": "cptlc:hasComponent", 
+      "target": "8ddda7a2-336b-4880-9d8c-23ad7d9e90be"
+    }, 
+    {
+      "source": "9cf12279-ecdd-426f-9a59-b0d79ca11718", 
+      "relation": "snet:hasBreakerConnections", 
+      "target": "9e40dffb-768a-4769-9667-97f945e7a2d1"
+    }, 
+    {
+      "source": "9cf12279-ecdd-426f-9a59-b0d79ca11718", 
+      "relation": "snet:hasBreakerConnections", 
+      "target": "91c14f8b-6585-4dd1-88b0-862f4abbb9ac"
+    }, 
+    {
+      "source": "9cf12279-ecdd-426f-9a59-b0d79ca11718", 
+      "relation": "snet:hasBreakerConnections", 
+      "target": "43b2b910-588e-4285-9b05-e1f195777fcd"
+    }, 
+    {
+      "source": "9cf12279-ecdd-426f-9a59-b0d79ca11718", 
+      "relation": "snet:hasBreakerConnections", 
+      "target": "d3692701-fe5e-4b1c-8635-f8bb2147bfb6"
+    }, 
+    {
+      "source": "070bc84a-21d0-4415-a1d1-86a180d12794", 
+      "relation": "snet:hasBreakerConnections", 
+      "target": "f415bc05-3b2e-4f23-bbcd-a5e579bc4510"
+    }, 
+    {
+      "source": "070bc84a-21d0-4415-a1d1-86a180d12794", 
+      "relation": "cptlc:hasEthernetLink", 
+      "target": "36185780-2ec8-434e-b9ff-d23ea6e96193"
+    }, 
+    {
+      "source": "070bc84a-21d0-4415-a1d1-86a180d12794", 
+      "relation": "cptlc:hasComponent", 
+      "target": "08012000-4c0a-4a35-b752-08e0181348e9"
+    }, 
+    {
+      "source": "070bc84a-21d0-4415-a1d1-86a180d12794", 
+      "relation": "snet:hasBreakerConnections", 
+      "target": "2a2d110d-9951-4fc3-a61c-f072caf8513d"
+    }, 
+    {
+      "source": "070bc84a-21d0-4415-a1d1-86a180d12794", 
+      "relation": "snet:hasBreakerConnections", 
+      "target": "f63e8aaf-0ad1-4099-a616-b153ebb568d1"
+    }, 
+    {
+      "source": "439a58ac-e7b2-45ce-a341-d33889b8a7ff", 
+      "relation": "snet:hasBreakerConnections", 
+      "target": "c49f979c-12a3-406d-aa2d-03d0066ea33f"
+    }, 
+    {
+      "source": "439a58ac-e7b2-45ce-a341-d33889b8a7ff", 
+      "relation": "cptlc:hasComponent", 
+      "target": "ddb078e7-0c41-4961-8f1e-50837e4befe9"
+    }, 
+    {
+      "source": "afbe4c7c-ca25-404b-a56d-554a96e31928", 
+      "relation": "snet:hasBreakerConnections", 
+      "target": "c81b71fc-8677-4887-974b-a9cba0939904"
+    }, 
+    {
+      "source": "afbe4c7c-ca25-404b-a56d-554a96e31928", 
+      "relation": "snet:hasBreakerConnections", 
+      "target": "af8aa8da-7f9d-454d-85e8-1cb4678fa7d7"
+    }, 
+    {
+      "source": "afbe4c7c-ca25-404b-a56d-554a96e31928", 
+      "relation": "cptlc:hasComponent", 
+      "target": "12fb1c38-7338-461f-9018-16084f233878"
+    }, 
+    {
+      "source": "afbe4c7c-ca25-404b-a56d-554a96e31928", 
+      "relation": "snet:hasBreakerConnections", 
+      "target": "7c37443e-a221-41ec-bcd9-9b2480e32ab1"
+    }, 
+    {
+      "source": "afbe4c7c-ca25-404b-a56d-554a96e31928", 
+      "relation": "cptlc:hasEthernetLink", 
+      "target": "aba37a93-1e83-4a65-8598-1a865d99a6ad"
+    }, 
+    {
+      "source": "5132181c-be87-4ced-b3a9-b7140e5ff39c", 
+      "relation": "snet:hasBreakerConnections", 
+      "target": "379e20aa-da69-452e-b176-01333515e4f4"
+    }, 
+    {
+      "source": "5132181c-be87-4ced-b3a9-b7140e5ff39c", 
+      "relation": "cptlc:hasComponent", 
+      "target": "3767dbe9-de5c-451a-a2ad-d19daf16f9e5"
+    }, 
+    {
+      "source": "5132181c-be87-4ced-b3a9-b7140e5ff39c", 
+      "relation": "cptlc:hasEthernetLink", 
+      "target": "77f78ca0-3f59-4d28-b098-f6d67e581623"
+    }, 
+    {
+      "source": "ed9c5caf-1309-40b2-81a3-72f1ab68d683", 
+      "relation": "cptlc:hasComponent", 
+      "target": "c77c738d-5cf5-4d72-bdbb-119fa194ef48"
+    }, 
+    {
+      "source": "ed9c5caf-1309-40b2-81a3-72f1ab68d683", 
+      "relation": "cptlc:hasSerialLink", 
+      "target": "67c266a7-43d3-40f7-9f87-189a2fcd2ee7"
+    }, 
+    {
+      "source": "ed9c5caf-1309-40b2-81a3-72f1ab68d683", 
+      "relation": "cptlc:hasSerialLink", 
+      "target": "0d61ae49-16d2-4caa-85ca-c0522bd9e8b2"
+    }, 
+    {
+      "source": "ed9c5caf-1309-40b2-81a3-72f1ab68d683", 
+      "relation": "snet:hasBreakerConnections", 
+      "target": "7ba56574-6d0e-456d-9452-13ee38e8ba35"
+    }, 
+    {
+      "source": "ed9c5caf-1309-40b2-81a3-72f1ab68d683", 
+      "relation": "cptlc:hasFiberEthernetLink", 
+      "target": "bdda7db1-1d59-4b99-a015-008b57cec064"
+    }, 
+    {
+      "source": "8cc7974c-c37b-4986-a6b4-eb8785b72979", 
+      "relation": "cptlc:hasFiberEthernetLink", 
+      "target": "c56d1e83-8ccc-44fd-93a9-25f50ddb703f"
+    }, 
+    {
+      "source": "8cc7974c-c37b-4986-a6b4-eb8785b72979", 
+      "relation": "cptlc:hasComponent", 
+      "target": "d91f8c6f-9ff8-4817-9e7c-b772e09e9c5d"
+    }, 
+    {
+      "source": "8cc7974c-c37b-4986-a6b4-eb8785b72979", 
+      "relation": "cptlc:hasSerialLink", 
+      "target": "e69e0a5d-135d-4ece-a01c-deefcfbb9701"
+    }, 
+    {
+      "source": "8cc7974c-c37b-4986-a6b4-eb8785b72979", 
+      "relation": "snet:hasBreakerConnections", 
+      "target": "69846f54-74f1-4f2e-ba42-979a9f20109e"
+    }, 
+    {
+      "source": "59748548-734f-4b54-bad0-71ca8cc63caf", 
+      "relation": "snet:hasBreakerConnections", 
+      "target": "1defdcaa-b1ba-45f7-a074-97745b98a417"
+    }, 
+    {
+      "source": "59748548-734f-4b54-bad0-71ca8cc63caf", 
+      "relation": "cptlc:hasSerialLink", 
+      "target": "4b30a284-ab49-4253-be6b-5e95b574f408"
+    }, 
+    {
+      "source": "59748548-734f-4b54-bad0-71ca8cc63caf", 
+      "relation": "cptlc:hasSerialLink", 
+      "target": "e69e0a5d-135d-4ece-a01c-deefcfbb9701"
+    }, 
+    {
+      "source": "59748548-734f-4b54-bad0-71ca8cc63caf", 
+      "relation": "cptlc:hasComponent", 
+      "target": "dd064c78-bf8c-416b-9fdc-28cb145fe876"
+    }, 
+    {
+      "source": "bdda7db1-1d59-4b99-a015-008b57cec064", 
+      "relation": "cptlc:hasComponent", 
+      "target": "9447c4c6-a48c-40a6-8935-c5b2d6d1f443"
+    }, 
+    {
+      "source": "bdda7db1-1d59-4b99-a015-008b57cec064", 
+      "relation": "cptlc:hasEthernetLink", 
+      "target": "aba37a93-1e83-4a65-8598-1a865d99a6ad"
+    }, 
+    {
+      "source": "ad04ff88-d11e-4b96-8f37-bf63f0403deb", 
+      "relation": "cptlc:hasFiberEthernetLink", 
+      "target": "73cd5af8-60b7-4563-bf38-c6cec7594d00"
+    }, 
+    {
+      "source": "ad04ff88-d11e-4b96-8f37-bf63f0403deb", 
+      "relation": "cptlc:hasEthernetLink", 
+      "target": "41f088ba-2e6e-4b7f-93ff-2b001e640dbc"
+    }, 
+    {
+      "source": "ad04ff88-d11e-4b96-8f37-bf63f0403deb", 
+      "relation": "cptlc:hasComponent", 
+      "target": "fe5c9576-4e44-4961-bede-de3d2b4395c9"
+    }, 
+    {
+      "source": "a9a84b0b-5757-4139-8a82-4fa77105fbf7", 
+      "relation": "cptlc:hasComponent", 
+      "target": "ac7a2473-b60b-4cd0-a3ee-56ffca75c454"
+    }, 
+    {
+      "source": "a9a84b0b-5757-4139-8a82-4fa77105fbf7", 
+      "relation": "cptlc:hasEthernetLink", 
+      "target": "41f088ba-2e6e-4b7f-93ff-2b001e640dbc"
+    }, 
+    {
+      "source": "a1cc5d34-9d45-4729-8361-c06a90df9ace", 
+      "relation": "cptlc:hasFiberEthernetLink", 
+      "target": "a0922f69-e9f2-4c42-ba70-bda13444194b"
+    }, 
+    {
+      "source": "a1cc5d34-9d45-4729-8361-c06a90df9ace", 
+      "relation": "cptlc:hasEthernetLink", 
+      "target": "aba37a93-1e83-4a65-8598-1a865d99a6ad"
+    }, 
+    {
+      "source": "a1cc5d34-9d45-4729-8361-c06a90df9ace", 
+      "relation": "cptlc:hasComponent", 
+      "target": "0f76b8ad-cdc7-478f-b511-f80514c7fa9a"
+    }, 
+    {
+      "source": "530748f2-af9a-4da4-aeb3-ef7a35108dc3", 
+      "relation": "cptlc:hasEthernetLink", 
+      "target": "36185780-2ec8-434e-b9ff-d23ea6e96193"
+    }, 
+    {
+      "source": "530748f2-af9a-4da4-aeb3-ef7a35108dc3", 
+      "relation": "snet:hasBreakerConnections", 
+      "target": "90777d70-4a66-4f6e-9870-4b8d0b3e1e7c"
+    }, 
+    {
+      "source": "530748f2-af9a-4da4-aeb3-ef7a35108dc3", 
+      "relation": "cptlc:hasComponent", 
+      "target": "1c99c8c6-ecca-45dd-8ad0-7e7d16702359"
+    }, 
+    {
+      "source": "7380eecd-a2b3-4969-9083-21a3d18f10b8", 
+      "relation": "cptlc:hasEthernetLink", 
+      "target": "36185780-2ec8-434e-b9ff-d23ea6e96193"
+    }, 
+    {
+      "source": "7380eecd-a2b3-4969-9083-21a3d18f10b8", 
+      "relation": "cptlc:hasComponent", 
+      "target": "e3f92938-6cd3-42e6-9ff0-50af24d090ec"
+    }, 
+    {
+      "source": "7380eecd-a2b3-4969-9083-21a3d18f10b8", 
+      "relation": "snet:hasBreakerConnections", 
+      "target": "9a4ed777-d628-4136-8460-e1e73718cded"
+    }, 
+    {
+      "source": "7380eecd-a2b3-4969-9083-21a3d18f10b8", 
+      "relation": "snet:hasBreakerConnections", 
+      "target": "6a412caa-9f48-4587-9984-8be96f5a2b3a"
+    }, 
+    {
+      "source": "4b30a284-ab49-4253-be6b-5e95b574f408", 
+      "relation": "cptlc:hasSerialLink", 
+      "target": "a090cc41-df51-4dd8-9007-77c8f5cb86da"
+    }, 
+    {
+      "source": "4b30a284-ab49-4253-be6b-5e95b574f408", 
+      "relation": "cptlc:hasComponent", 
+      "target": "4a38c47e-59b4-4dcc-a1f6-a24484803038"
+    }, 
+    {
+      "source": "4b30a284-ab49-4253-be6b-5e95b574f408", 
+      "relation": "snet:hasBreakerConnections", 
+      "target": "1defdcaa-b1ba-45f7-a074-97745b98a417"
+    }, 
+    {
+      "source": "e69e0a5d-135d-4ece-a01c-deefcfbb9701", 
+      "relation": "cptlc:hasComponent", 
+      "target": "2d0e0823-7551-4529-acfd-ae5237550de1"
+    }, 
+    {
+      "source": "e69e0a5d-135d-4ece-a01c-deefcfbb9701", 
+      "relation": "snet:hasBreakerConnections", 
+      "target": "69846f54-74f1-4f2e-ba42-979a9f20109e"
+    }, 
+    {
+      "source": "81a375b7-62cc-4d72-bded-d59974a7cea3", 
+      "relation": "cptlc:hasSerialLink", 
+      "target": "a090cc41-df51-4dd8-9007-77c8f5cb86da"
+    }, 
+    {
+      "source": "81a375b7-62cc-4d72-bded-d59974a7cea3", 
+      "relation": "cptlc:hasSerialLink", 
+      "target": "43b53562-dc7b-41a4-9ad0-debae65b0538"
+    }, 
+    {
+      "source": "81a375b7-62cc-4d72-bded-d59974a7cea3", 
+      "relation": "snet:hasBreakerConnections", 
+      "target": "7f9f51df-1053-42a0-aac2-496ceead1f5f"
+    }, 
+    {
+      "source": "81a375b7-62cc-4d72-bded-d59974a7cea3", 
+      "relation": "cptlc:hasComponent", 
+      "target": "a8f330b3-4355-4de3-b12a-bd916914c185"
+    }, 
+    {
+      "source": "a090cc41-df51-4dd8-9007-77c8f5cb86da", 
+      "relation": "cptlc:hasComponent", 
+      "target": "1e36e626-d499-494e-aba6-3cea95fcc114"
+    }, 
+    {
+      "source": "a090cc41-df51-4dd8-9007-77c8f5cb86da", 
+      "relation": "snet:hasBreakerConnections", 
+      "target": "d697baa5-4c3c-4541-83f9-debf0903520b"
+    }, 
+    {
+      "source": "67c266a7-43d3-40f7-9f87-189a2fcd2ee7", 
+      "relation": "cptlc:hasSerialLink", 
+      "target": "43b53562-dc7b-41a4-9ad0-debae65b0538"
+    }, 
+    {
+      "source": "67c266a7-43d3-40f7-9f87-189a2fcd2ee7", 
+      "relation": "snet:hasBreakerConnections", 
+      "target": "ac2d210d-4ae1-43f1-8874-f0e5ce017834"
+    }, 
+    {
+      "source": "67c266a7-43d3-40f7-9f87-189a2fcd2ee7", 
+      "relation": "cptlc:hasComponent", 
+      "target": "d7f08bad-cc05-4b24-87c5-5b11927bb9f9"
+    }, 
+    {
+      "source": "43b53562-dc7b-41a4-9ad0-debae65b0538", 
+      "relation": "snet:hasBreakerConnections", 
+      "target": "c5ec99ad-8d32-4dd5-b6f2-c5429da32988"
+    }, 
+    {
+      "source": "43b53562-dc7b-41a4-9ad0-debae65b0538", 
+      "relation": "cptlc:hasComponent", 
+      "target": "861a4706-6a88-4944-bbb3-097f9c0d8306"
+    }, 
+    {
+      "source": "0d61ae49-16d2-4caa-85ca-c0522bd9e8b2", 
+      "relation": "cptlc:hasEthernetLink", 
+      "target": "13bce4b8-3364-4126-8368-63fe251864a4"
+    }, 
+    {
+      "source": "0d61ae49-16d2-4caa-85ca-c0522bd9e8b2", 
+      "relation": "cptlc:hasComponent", 
+      "target": "3c2e68e3-c319-4ba3-b046-eba9587bc571"
+    }, 
+    {
+      "source": "0d61ae49-16d2-4caa-85ca-c0522bd9e8b2", 
+      "relation": "snet:hasBreakerConnections", 
+      "target": "7ba56574-6d0e-456d-9452-13ee38e8ba35"
+    }, 
+    {
+      "source": "d5f19e38-e00a-404f-9c6b-123ae4eebde2", 
+      "relation": "cptlc:hasEthernetLink", 
+      "target": "36185780-2ec8-434e-b9ff-d23ea6e96193"
+    }, 
+    {
+      "source": "d5f19e38-e00a-404f-9c6b-123ae4eebde2", 
+      "relation": "cptlc:hasComponent", 
+      "target": "cc0190e0-fc40-48a2-a7ad-9fa4a951ebe1"
+    }, 
+    {
+      "source": "a0922f69-e9f2-4c42-ba70-bda13444194b", 
+      "relation": "cptlc:hasEthernetLink", 
+      "target": "36185780-2ec8-434e-b9ff-d23ea6e96193"
+    }, 
+    {
+      "source": "a0922f69-e9f2-4c42-ba70-bda13444194b", 
+      "relation": "cptlc:hasComponent", 
+      "target": "54c88cd1-42bf-4665-b8b4-aaac75408f99"
+    }, 
+    {
+      "source": "56a1d018-c973-403f-826b-309292e1af4f", 
+      "relation": "cptlc:hasEthernetLink", 
+      "target": "36185780-2ec8-434e-b9ff-d23ea6e96193"
+    }, 
+    {
+      "source": "56a1d018-c973-403f-826b-309292e1af4f", 
+      "relation": "cptlc:hasComponent", 
+      "target": "235623c1-6587-4c58-85fd-05bcd6b3725e"
+    }, 
+    {
+      "source": "56a1d018-c973-403f-826b-309292e1af4f", 
+      "relation": "cptlc:hasFiberEthernetLink", 
+      "target": "a4b8c67d-bbc3-4ecf-b289-7782cef8d807"
+    }, 
+    {
+      "source": "7fb091cc-163c-4dfd-8f55-7aceda9aaee2", 
+      "relation": "cptlc:hasComponent", 
+      "target": "9ef6340c-c6cb-4f59-ac77-2253a90a3efc"
+    }, 
+    {
+      "source": "7fb091cc-163c-4dfd-8f55-7aceda9aaee2", 
+      "relation": "cptlc:hasEthernetLink", 
+      "target": "36185780-2ec8-434e-b9ff-d23ea6e96193"
+    }, 
+    {
+      "source": "c56d1e83-8ccc-44fd-93a9-25f50ddb703f", 
+      "relation": "cptlc:hasEthernetLink", 
+      "target": "36185780-2ec8-434e-b9ff-d23ea6e96193"
+    }, 
+    {
+      "source": "c56d1e83-8ccc-44fd-93a9-25f50ddb703f", 
+      "relation": "cptlc:hasComponent", 
+      "target": "9c274459-4bd0-4046-96d6-2aa047ee9892"
+    }, 
+    {
+      "source": "7f336b00-f54f-4cc9-87bb-21251a1f2dd2", 
+      "relation": "cptlc:hasComponent", 
+      "target": "336cd687-1b6c-44d0-8bd1-0b8424149b2a"
+    }, 
+    {
+      "source": "7f336b00-f54f-4cc9-87bb-21251a1f2dd2", 
+      "relation": "cptlc:hasEthernetLink", 
+      "target": "36185780-2ec8-434e-b9ff-d23ea6e96193"
+    }, 
+    {
+      "source": "73cd5af8-60b7-4563-bf38-c6cec7594d00", 
+      "relation": "cptlc:hasEthernetLink", 
+      "target": "36185780-2ec8-434e-b9ff-d23ea6e96193"
+    }, 
+    {
+      "source": "73cd5af8-60b7-4563-bf38-c6cec7594d00", 
+      "relation": "cptlc:hasComponent", 
+      "target": "4bec3d7b-72a6-4e64-ab72-1c43090f7b9f"
+    }, 
+    {
+      "source": "705cf996-d5d0-424d-bacd-545a1e0eb226", 
+      "relation": "cptlc:hasComponent", 
+      "target": "d1eb703a-7b53-4a57-99fd-75613d581a89"
+    }, 
+    {
+      "source": "705cf996-d5d0-424d-bacd-545a1e0eb226", 
+      "relation": "snet:hasBreakerConnections", 
+      "target": "a3a7b489-8c9c-47a7-8e5a-617786f166aa"
+    }, 
+    {
+      "source": "28b2617f-3245-467b-a2e5-1b0e149589b2", 
+      "relation": "cptlc:hasComponent", 
+      "target": "1141f6d2-e95b-4160-bfba-270c0e4f513d"
+    }, 
+    {
+      "source": "28b2617f-3245-467b-a2e5-1b0e149589b2", 
+      "relation": "snet:hasBreakerConnections", 
+      "target": "27f0e259-2fc8-48eb-98d0-5855eb9dab30"
+    }, 
+    {
+      "source": "28b2617f-3245-467b-a2e5-1b0e149589b2", 
+      "relation": "snet:hasBreakerConnections", 
+      "target": "cd4bf17d-75a0-40f0-83cf-5fe390aa9148"
+    }, 
+    {
+      "source": "28b2617f-3245-467b-a2e5-1b0e149589b2", 
+      "relation": "snet:hasBreakerConnections", 
+      "target": "4a96d2ea-ecf4-4171-a5ee-e1958c8103ee"
+    }, 
+    {
+      "source": "28b2617f-3245-467b-a2e5-1b0e149589b2", 
+      "relation": "snet:hasBreakerConnections", 
+      "target": "f631b4ca-11f8-463a-b2b0-dde53089aa20"
+    }, 
+    {
+      "source": "28b2617f-3245-467b-a2e5-1b0e149589b2", 
+      "relation": "snet:hasBreakerConnections", 
+      "target": "b13aafed-99af-4fc0-b53f-e273802a1ea7"
+    }, 
+    {
+      "source": "28b2617f-3245-467b-a2e5-1b0e149589b2", 
+      "relation": "cptlc:hasEthernetLink", 
+      "target": "aba37a93-1e83-4a65-8598-1a865d99a6ad"
+    }, 
+    {
+      "source": "4394cdf3-bda5-471f-8ef3-f8c61aabb57e", 
+      "relation": "snet:hasBreakerConnections", 
+      "target": "97838e82-f3f6-46b2-82ac-48778c61df13"
+    }, 
+    {
+      "source": "4394cdf3-bda5-471f-8ef3-f8c61aabb57e", 
+      "relation": "cptlc:hasComponent", 
+      "target": "e6c5edc9-51ff-4f90-9fca-3703b4755aed"
+    }, 
+    {
+      "source": "4394cdf3-bda5-471f-8ef3-f8c61aabb57e", 
+      "relation": "cptlc:hasEthernetLink", 
+      "target": "a040abf9-95da-48dc-a133-ab302a4d9671"
+    }, 
+    {
+      "source": "7d4aa12a-b202-4bdd-b7f5-96484841eeb9", 
+      "relation": "snet:hasBreakerConnections", 
+      "target": "f39a7ddf-3908-4daf-8e29-e281cd876c0c"
+    }, 
+    {
+      "source": "7d4aa12a-b202-4bdd-b7f5-96484841eeb9", 
+      "relation": "cptlc:hasComponent", 
+      "target": "fb370e27-cdd2-4cac-921f-aa8056f8b479"
+    }, 
+    {
+      "source": "7d4aa12a-b202-4bdd-b7f5-96484841eeb9", 
+      "relation": "cptlc:hasSerialLink", 
+      "target": "af21a363-d391-4ec0-a1ed-0c82e283b8ae"
+    }, 
+    {
+      "source": "7d4aa12a-b202-4bdd-b7f5-96484841eeb9", 
+      "relation": "cptlc:hasSerialLink", 
+      "target": "9930e062-0261-4b74-b3c0-32ff3316b7a4"
+    }, 
+    {
+      "source": "88dba10a-7e77-41b1-9373-733a65f650f5", 
+      "relation": "snet:hasBreakerConnections", 
+      "target": "9766a375-19b1-45dd-8891-8ebf7b8ce9e4"
+    }, 
+    {
+      "source": "88dba10a-7e77-41b1-9373-733a65f650f5", 
+      "relation": "cptlc:hasComponent", 
+      "target": "ae2493cb-a684-4b02-926b-a14962811dc2"
+    }, 
+    {
+      "source": "88dba10a-7e77-41b1-9373-733a65f650f5", 
+      "relation": "cptlc:hasSerialLink", 
+      "target": "af21a363-d391-4ec0-a1ed-0c82e283b8ae"
+    }, 
+    {
+      "source": "cf98e3de-4318-46fe-8645-b39fb26f2627", 
+      "relation": "cptlc:hasComponent", 
+      "target": "39857355-81f2-457a-ae9a-73252d85e9f9"
+    }, 
+    {
+      "source": "cf98e3de-4318-46fe-8645-b39fb26f2627", 
+      "relation": "snet:hasBreakerConnections", 
+      "target": "27f0e259-2fc8-48eb-98d0-5855eb9dab30"
+    }, 
+    {
+      "source": "cf98e3de-4318-46fe-8645-b39fb26f2627", 
+      "relation": "snet:hasBreakerConnections", 
+      "target": "f631b4ca-11f8-463a-b2b0-dde53089aa20"
+    }, 
+    {
+      "source": "cf98e3de-4318-46fe-8645-b39fb26f2627", 
+      "relation": "cptlc:hasEthernetLink", 
+      "target": "aba37a93-1e83-4a65-8598-1a865d99a6ad"
+    }, 
+    {
+      "source": "9930e062-0261-4b74-b3c0-32ff3316b7a4", 
+      "relation": "snet:hasBreakerConnections", 
+      "target": "80535f3d-13b2-406f-9798-23f6ab8027da"
+    }, 
+    {
+      "source": "9930e062-0261-4b74-b3c0-32ff3316b7a4", 
+      "relation": "cptlc:hasComponent", 
+      "target": "7d1fba41-4a05-4336-b34b-6769ee436f0b"
+    }, 
+    {
+      "source": "94aee359-b937-4a8c-b17c-2a7f775aa9cb", 
+      "relation": "cptlc:hasComponent", 
+      "target": "aef4b0d0-b07f-420e-ba88-635add6c31e0"
+    }, 
+    {
+      "source": "94aee359-b937-4a8c-b17c-2a7f775aa9cb", 
+      "relation": "snet:hasBreakerConnections", 
+      "target": "f30b6853-85cc-44b0-a2fa-cb0f2e2e6724"
+    }, 
+    {
+      "source": "94aee359-b937-4a8c-b17c-2a7f775aa9cb", 
+      "relation": "cptlc:hasEthernetLink", 
+      "target": "41f088ba-2e6e-4b7f-93ff-2b001e640dbc"
+    }, 
+    {
+      "source": "c296d972-6246-47bb-a1eb-637cfb6211d6", 
+      "relation": "cptlc:hasComponent", 
+      "target": "ac81b0ef-2d14-4b70-aee7-c1da2709a1c3"
+    }, 
+    {
+      "source": "c296d972-6246-47bb-a1eb-637cfb6211d6", 
+      "relation": "cptlc:hasEthernetLink", 
+      "target": "41f088ba-2e6e-4b7f-93ff-2b001e640dbc"
+    }, 
+    {
+      "source": "c296d972-6246-47bb-a1eb-637cfb6211d6", 
+      "relation": "snet:hasBreakerConnections", 
+      "target": "5da6776a-d434-4b18-9e3f-b2a76018d8a5"
+    }, 
+    {
+      "source": "024c3c4b-8f3b-4c66-9293-20a52fe8eb03", 
+      "relation": "snet:hasBreakerConnections", 
+      "target": "178cf804-cd47-4806-b551-d375af4a684f"
+    }, 
+    {
+      "source": "024c3c4b-8f3b-4c66-9293-20a52fe8eb03", 
+      "relation": "cptlc:hasComponent", 
+      "target": "bdb6ea7b-44b2-430d-bf4a-249a32e15a08"
+    }, 
+    {
+      "source": "024c3c4b-8f3b-4c66-9293-20a52fe8eb03", 
+      "relation": "cptlc:hasEthernetLink", 
+      "target": "41f088ba-2e6e-4b7f-93ff-2b001e640dbc"
+    }, 
+    {
+      "source": "993826f0-be8d-4bf0-89f0-44d518650e0e", 
+      "relation": "snet:hasBreakerConnections", 
+      "target": "5f92ebe3-7b6e-4abf-a435-2c3979293023"
+    }, 
+    {
+      "source": "993826f0-be8d-4bf0-89f0-44d518650e0e", 
+      "relation": "cptlc:hasComponent", 
+      "target": "1020b8a5-705b-45a9-a91e-4a1d2bfa0b1e"
+    }, 
+    {
+      "source": "993826f0-be8d-4bf0-89f0-44d518650e0e", 
+      "relation": "cptlc:hasEthernetLink", 
+      "target": "41f088ba-2e6e-4b7f-93ff-2b001e640dbc"
+    }, 
+    {
+      "source": "861a4706-6a88-4944-bbb3-097f9c0d8306", 
+      "relation": "enet:hasHost", 
+      "target": "6a0f93a7-ee1e-4ba4-add8-f0b347f06a97"
+    }, 
+    {
+      "source": "a8f330b3-4355-4de3-b12a-bd916914c185", 
+      "relation": "enet:hasHost", 
+      "target": "6a0f93a7-ee1e-4ba4-add8-f0b347f06a97"
+    }, 
+    {
+      "source": "1e36e626-d499-494e-aba6-3cea95fcc114", 
+      "relation": "enet:hasHost", 
+      "target": "6a0f93a7-ee1e-4ba4-add8-f0b347f06a97"
+    }, 
+    {
+      "source": "4a38c47e-59b4-4dcc-a1f6-a24484803038", 
+      "relation": "enet:hasHost", 
+      "target": "6a0f93a7-ee1e-4ba4-add8-f0b347f06a97"
+    }, 
+    {
+      "source": "2d0e0823-7551-4529-acfd-ae5237550de1", 
+      "relation": "enet:hasHost", 
+      "target": "6a0f93a7-ee1e-4ba4-add8-f0b347f06a97"
+    }, 
+    {
+      "source": "e6b19c5d-f4ff-425c-aadf-33acd8963070", 
+      "relation": "cptlc:hasComponent", 
+      "target": "bb2f0407-e79d-4aea-b4f3-f1892c06fe41"
+    }, 
+    {
+      "source": "bb2f0407-e79d-4aea-b4f3-f1892c06fe41", 
+      "relation": "enet:hasHost", 
+      "target": "6a0f93a7-ee1e-4ba4-add8-f0b347f06a97"
+    }, 
+    {
+      "source": "1376bcad-d573-43a6-9e78-30dda7529c53", 
+      "relation": "cptlc:hasComponent", 
+      "target": "5c37821b-ba6a-4ce4-8ff9-51ec259b4ac3"
+    }, 
+    {
+      "source": "5c37821b-ba6a-4ce4-8ff9-51ec259b4ac3", 
+      "relation": "enet:hasHost", 
+      "target": "fc2d39da-9db4-4f18-9a11-ed850772e490"
+    }, 
+    {
+      "source": "0f76b8ad-cdc7-478f-b511-f80514c7fa9a", 
+      "relation": "enet:hasHost", 
+      "target": "fc2d39da-9db4-4f18-9a11-ed850772e490"
+    }, 
+    {
+      "source": "9447c4c6-a48c-40a6-8935-c5b2d6d1f443", 
+      "relation": "enet:hasHost", 
+      "target": "fc2d39da-9db4-4f18-9a11-ed850772e490"
+    }, 
+    {
+      "source": "39857355-81f2-457a-ae9a-73252d85e9f9", 
+      "relation": "enet:hasHost", 
+      "target": "fc2d39da-9db4-4f18-9a11-ed850772e490"
+    }, 
+    {
+      "source": "1141f6d2-e95b-4160-bfba-270c0e4f513d", 
+      "relation": "enet:hasHost", 
+      "target": "fc2d39da-9db4-4f18-9a11-ed850772e490"
+    }, 
+    {
+      "source": "12fb1c38-7338-461f-9018-16084f233878", 
+      "relation": "enet:hasHost", 
+      "target": "fc2d39da-9db4-4f18-9a11-ed850772e490"
+    }, 
+    {
+      "source": "1749e012-9569-455c-9143-e964c6768254", 
+      "relation": "cptlc:hasComponent", 
+      "target": "21366994-cddd-4aca-a752-95f5df1f7c1c"
+    }, 
+    {
+      "source": "21366994-cddd-4aca-a752-95f5df1f7c1c", 
+      "relation": "enet:hasHost", 
+      "target": "c62c5495-824e-46d6-bae8-b8bc77acc173"
+    }, 
+    {
+      "source": "ac7a2473-b60b-4cd0-a3ee-56ffca75c454", 
+      "relation": "enet:hasHost", 
+      "target": "c62c5495-824e-46d6-bae8-b8bc77acc173"
+    }, 
+    {
+      "source": "fe5c9576-4e44-4961-bede-de3d2b4395c9", 
+      "relation": "enet:hasHost", 
+      "target": "c62c5495-824e-46d6-bae8-b8bc77acc173"
+    }, 
+    {
+      "source": "a619422b-58f0-42bc-89a9-2e2fddce2965", 
+      "relation": "enet:hasHost", 
+      "target": "c62c5495-824e-46d6-bae8-b8bc77acc173"
+    }, 
+    {
+      "source": "aef4b0d0-b07f-420e-ba88-635add6c31e0", 
+      "relation": "enet:hasHost", 
+      "target": "c62c5495-824e-46d6-bae8-b8bc77acc173"
+    }, 
+    {
+      "source": "ac81b0ef-2d14-4b70-aee7-c1da2709a1c3", 
+      "relation": "enet:hasHost", 
+      "target": "c62c5495-824e-46d6-bae8-b8bc77acc173"
+    }, 
+    {
+      "source": "bdb6ea7b-44b2-430d-bf4a-249a32e15a08", 
+      "relation": "enet:hasHost", 
+      "target": "c62c5495-824e-46d6-bae8-b8bc77acc173"
+    }, 
+    {
+      "source": "1020b8a5-705b-45a9-a91e-4a1d2bfa0b1e", 
+      "relation": "enet:hasHost", 
+      "target": "c62c5495-824e-46d6-bae8-b8bc77acc173"
+    }, 
+    {
+      "source": "8a451ed6-a846-4a76-9a19-303d8359180c", 
+      "relation": "cptlc:hasComponent", 
+      "target": "71cd459f-0715-49c1-aad1-f815000bd3ab"
+    }, 
+    {
+      "source": "71cd459f-0715-49c1-aad1-f815000bd3ab", 
+      "relation": "enet:hasHost", 
+      "target": "0f30f891-5e76-48c5-abc5-af9a3fcd374d"
+    }, 
+    {
+      "source": "032953d2-fd9d-457c-a7af-3248132e6e72", 
+      "relation": "enet:hasHost", 
+      "target": "a09cf4f7-b99d-475c-a43a-66a9972e4d8e"
+    }, 
+    {
+      "source": "f180ea33-d63b-47a2-bdef-855486b34529", 
+      "relation": "enet:hasHost", 
+      "target": "0f30f891-5e76-48c5-abc5-af9a3fcd374d"
+    }, 
+    {
+      "source": "6285f875-08c3-4ba1-8756-58253cfa87b6", 
+      "relation": "enet:hasHost", 
+      "target": "0f30f891-5e76-48c5-abc5-af9a3fcd374d"
+    }, 
+    {
+      "source": "cd475306-25bf-4fdb-b22a-14870d711102", 
+      "relation": "enet:hasHost", 
+      "target": "0f30f891-5e76-48c5-abc5-af9a3fcd374d"
+    }, 
+    {
+      "source": "dee6d85e-2ee3-4552-a1e9-dab475869680", 
+      "relation": "enet:hasHost", 
+      "target": "0f30f891-5e76-48c5-abc5-af9a3fcd374d"
+    }, 
+    {
+      "source": "865c6a52-99f9-46da-94c6-7bc3c25069f0", 
+      "relation": "enet:hasHost", 
+      "target": "0f30f891-5e76-48c5-abc5-af9a3fcd374d"
+    }, 
+    {
+      "source": "3f2fa63a-b98f-4b51-9f73-0da03faf9028", 
+      "relation": "enet:hasHost", 
+      "target": "0f30f891-5e76-48c5-abc5-af9a3fcd374d"
+    }, 
+    {
+      "source": "8ddda7a2-336b-4880-9d8c-23ad7d9e90be", 
+      "relation": "enet:hasHost", 
+      "target": "a09cf4f7-b99d-475c-a43a-66a9972e4d8e"
+    }, 
+    {
+      "source": "971121eb-f1df-4b43-a64f-115c39be152d", 
+      "relation": "enet:hasHost", 
+      "target": "0f30f891-5e76-48c5-abc5-af9a3fcd374d"
+    }, 
+    {
+      "source": "ffaabb37-3019-426b-b5c8-78e628745efb", 
+      "relation": "enet:hasHost", 
+      "target": "0f30f891-5e76-48c5-abc5-af9a3fcd374d"
+    }, 
+    {
+      "source": "383991d3-c629-4fa9-87a1-bed5313278a8", 
+      "relation": "enet:hasHost", 
+      "target": "48af3a3a-13ba-48d7-8886-75b7ef99398a"
+    }, 
+    {
+      "source": "f869e4aa-34e5-4c55-8bad-e3937e021794", 
+      "relation": "enet:hasHost", 
+      "target": "48af3a3a-13ba-48d7-8886-75b7ef99398a"
+    }, 
+    {
+      "source": "ccf8abcd-24e8-410c-9d36-aeb10c06e6d6", 
+      "relation": "enet:hasHost", 
+      "target": "48af3a3a-13ba-48d7-8886-75b7ef99398a"
+    }, 
+    {
+      "source": "e6c5edc9-51ff-4f90-9fca-3703b4755aed", 
+      "relation": "enet:hasHost", 
+      "target": "48af3a3a-13ba-48d7-8886-75b7ef99398a"
+    }, 
+    {
+      "source": "08012000-4c0a-4a35-b752-08e0181348e9", 
+      "relation": "enet:hasHost", 
+      "target": "a09cf4f7-b99d-475c-a43a-66a9972e4d8e"
+    }, 
+    {
+      "source": "ae2493cb-a684-4b02-926b-a14962811dc2", 
+      "relation": "enet:hasHost", 
+      "target": "48af3a3a-13ba-48d7-8886-75b7ef99398a"
+    }, 
+    {
+      "source": "fb370e27-cdd2-4cac-921f-aa8056f8b479", 
+      "relation": "enet:hasHost", 
+      "target": "48af3a3a-13ba-48d7-8886-75b7ef99398a"
+    }, 
+    {
+      "source": "7d1fba41-4a05-4336-b34b-6769ee436f0b", 
+      "relation": "enet:hasHost", 
+      "target": "48af3a3a-13ba-48d7-8886-75b7ef99398a"
+    }, 
+    {
+      "source": "d1eb703a-7b53-4a57-99fd-75613d581a89", 
+      "relation": "enet:hasHost", 
+      "target": "48af3a3a-13ba-48d7-8886-75b7ef99398a"
+    }, 
+    {
+      "source": "670a6181-1a84-434c-9582-536278c1f0a3", 
+      "relation": "cptlc:hasComponent", 
+      "target": "946f7865-cf3a-4e3c-abcd-8df82e649da3"
+    }, 
+    {
+      "source": "946f7865-cf3a-4e3c-abcd-8df82e649da3", 
+      "relation": "enet:hasHost", 
+      "target": "48af3a3a-13ba-48d7-8886-75b7ef99398a"
+    }, 
+    {
+      "source": "f5601445-f091-4a91-8a31-e24a6233805f", 
+      "relation": "cptlc:hasComponent", 
+      "target": "64f7a4b2-8f15-4e4f-9794-8b513452367d"
+    }, 
+    {
+      "source": "64f7a4b2-8f15-4e4f-9794-8b513452367d", 
+      "relation": "enet:hasHost", 
+      "target": "a09cf4f7-b99d-475c-a43a-66a9972e4d8e"
+    }, 
+    {
+      "source": "1c99c8c6-ecca-45dd-8ad0-7e7d16702359", 
+      "relation": "enet:hasHost", 
+      "target": "a09cf4f7-b99d-475c-a43a-66a9972e4d8e"
+    }, 
+    {
+      "source": "4bec3d7b-72a6-4e64-ab72-1c43090f7b9f", 
+      "relation": "enet:hasHost", 
+      "target": "a09cf4f7-b99d-475c-a43a-66a9972e4d8e"
+    }, 
+    {
+      "source": "336cd687-1b6c-44d0-8bd1-0b8424149b2a", 
+      "relation": "enet:hasHost", 
+      "target": "a09cf4f7-b99d-475c-a43a-66a9972e4d8e"
+    }, 
+    {
+      "source": "9c274459-4bd0-4046-96d6-2aa047ee9892", 
+      "relation": "enet:hasHost", 
+      "target": "a09cf4f7-b99d-475c-a43a-66a9972e4d8e"
+    }, 
+    {
+      "source": "9ef6340c-c6cb-4f59-ac77-2253a90a3efc", 
+      "relation": "enet:hasHost", 
+      "target": "a09cf4f7-b99d-475c-a43a-66a9972e4d8e"
+    }, 
+    {
+      "source": "235623c1-6587-4c58-85fd-05bcd6b3725e", 
+      "relation": "enet:hasHost", 
+      "target": "a09cf4f7-b99d-475c-a43a-66a9972e4d8e"
+    }, 
+    {
+      "source": "54c88cd1-42bf-4665-b8b4-aaac75408f99", 
+      "relation": "enet:hasHost", 
+      "target": "a09cf4f7-b99d-475c-a43a-66a9972e4d8e"
+    }, 
+    {
+      "source": "e3f92938-6cd3-42e6-9ff0-50af24d090ec", 
+      "relation": "enet:hasHost", 
+      "target": "a09cf4f7-b99d-475c-a43a-66a9972e4d8e"
+    }, 
+    {
+      "source": "cc0190e0-fc40-48a2-a7ad-9fa4a951ebe1", 
+      "relation": "enet:hasHost", 
+      "target": "a09cf4f7-b99d-475c-a43a-66a9972e4d8e"
+    }, 
+    {
+      "source": "a978bbcf-c314-46ee-bb1f-536d535425be", 
+      "relation": "cptlc:hasComponent", 
+      "target": "54123611-5cd4-4896-b76f-2109a0d48ee7"
+    }, 
+    {
+      "source": "54123611-5cd4-4896-b76f-2109a0d48ee7", 
+      "relation": "enet:hasHost", 
+      "target": "0a6d5418-608d-4b91-a9ae-920c36a255b6"
+    }, 
+    {
+      "source": "11d05d03-c14e-426c-9626-d23e3f2fc9f2", 
+      "relation": "enet:hasHost", 
+      "target": "0a6d5418-608d-4b91-a9ae-920c36a255b6"
+    }, 
+    {
+      "source": "3767dbe9-de5c-451a-a2ad-d19daf16f9e5", 
+      "relation": "enet:hasHost", 
+      "target": "0a6d5418-608d-4b91-a9ae-920c36a255b6"
+    }, 
+    {
+      "source": "ddb078e7-0c41-4961-8f1e-50837e4befe9", 
+      "relation": "enet:hasHost", 
+      "target": "0a6d5418-608d-4b91-a9ae-920c36a255b6"
+    }, 
+    {
+      "source": "d19ad4e5-6227-43f5-8b04-ed02ca4784fa", 
+      "relation": "cptlc:hasComponent", 
+      "target": "c6531f4f-d8c1-46eb-9cbe-1f76f4ec8628"
+    }, 
+    {
+      "source": "c6531f4f-d8c1-46eb-9cbe-1f76f4ec8628", 
+      "relation": "enet:hasHost", 
+      "target": "4b19a028-de82-44dd-acf8-fd4b75a51ac1"
+    }, 
+    {
+      "source": "58da33ee-d7dd-442d-8577-7826502fcccc", 
+      "relation": "cptlc:hasComponent", 
+      "target": "eca27a82-a511-48d4-a5dd-63047b6763eb"
+    }, 
+    {
+      "source": "eca27a82-a511-48d4-a5dd-63047b6763eb", 
+      "relation": "enet:hasHost", 
+      "target": "018c377f-7582-4bc2-913d-931d0a975dc1"
+    }, 
+    {
+      "source": "5c53ff42-ffe3-4c48-9786-8433fea176e1", 
+      "relation": "cptlc:hasComponent", 
+      "target": "bee4ac73-8a0f-4bd0-970a-e843abf7c357"
+    }, 
+    {
+      "source": "bee4ac73-8a0f-4bd0-970a-e843abf7c357", 
+      "relation": "enet:hasHost", 
+      "target": "4b19a028-de82-44dd-acf8-fd4b75a51ac1"
+    }, 
+    {
+      "source": "48bfa380-3e5b-4525-83b2-b43c3ed46d4e", 
+      "relation": "cptlc:hasComponent", 
+      "target": "d22bd5de-217b-4632-8e61-3e3dfac38d34"
+    }, 
+    {
+      "source": "d22bd5de-217b-4632-8e61-3e3dfac38d34", 
+      "relation": "enet:hasHost", 
+      "target": "f604bace-b84d-4215-9d8f-4d1fa6e9a0a8"
+    }, 
+    {
+      "source": "aefca014-d163-4d47-aed4-cab55e8a1f9e", 
+      "relation": "cptlc:hasComponent", 
+      "target": "e1d696ef-18a5-41dd-9f0f-9d1312285176"
+    }, 
+    {
+      "source": "e1d696ef-18a5-41dd-9f0f-9d1312285176", 
+      "relation": "enet:hasHost", 
+      "target": "89105627-fc5e-4b6c-ab58-62cf31ed4dc9"
+    }, 
+    {
+      "source": "5ef2137c-ebc7-4a9f-ba27-019d3e14d918", 
+      "relation": "cptlc:hasComponent", 
+      "target": "d2f4eea7-8556-463f-ad7a-dc5e87da26d1"
+    }, 
+    {
+      "source": "d2f4eea7-8556-463f-ad7a-dc5e87da26d1", 
+      "relation": "enet:hasHost", 
+      "target": "89105627-fc5e-4b6c-ab58-62cf31ed4dc9"
+    }, 
+    {
+      "source": "c0b6fe63-0b3e-4694-89d2-ae1dc7b95e3c", 
+      "relation": "cptlc:hasComponent", 
+      "target": "c4596b71-031a-4675-be38-22d4bb6973e2"
+    }, 
+    {
+      "source": "c4596b71-031a-4675-be38-22d4bb6973e2", 
+      "relation": "enet:hasHost", 
+      "target": "89105627-fc5e-4b6c-ab58-62cf31ed4dc9"
+    }, 
+    {
+      "source": "ca413e56-becf-448f-b503-dde1dddad567", 
+      "relation": "cptlc:hasComponent", 
+      "target": "6f59b56e-9a3d-4ab0-aa2a-fa1275a1c792"
+    }, 
+    {
+      "source": "a617aa43-6dc0-41c6-ae28-f9065075a707", 
+      "relation": "enet:hasHost", 
+      "target": "018c377f-7582-4bc2-913d-931d0a975dc1"
+    }, 
+    {
+      "source": "d7e017c7-824a-41ed-9f16-8eb7ef4362a2", 
+      "relation": "cptlc:hasComponent", 
+      "target": "60d306b9-25b5-41eb-b3f4-c9fa5b4d298d"
+    }, 
+    {
+      "source": "9d3e8f25-96d1-4b72-a062-4af85293df14", 
+      "relation": "cptlc:hasComponent", 
+      "target": "556b380d-397b-470b-9fb0-78709d2c0973"
+    }, 
+    {
+      "source": "c77c738d-5cf5-4d72-bdbb-119fa194ef48", 
+      "relation": "enet:hasHost", 
+      "target": "6a0f93a7-ee1e-4ba4-add8-f0b347f06a97"
+    }, 
+    {
+      "source": "dd064c78-bf8c-416b-9fdc-28cb145fe876", 
+      "relation": "enet:hasHost", 
+      "target": "6a0f93a7-ee1e-4ba4-add8-f0b347f06a97"
+    }, 
+    {
+      "source": "d91f8c6f-9ff8-4817-9e7c-b772e09e9c5d", 
+      "relation": "enet:hasHost", 
+      "target": "6a0f93a7-ee1e-4ba4-add8-f0b347f06a97"
+    }, 
+    {
+      "source": "3c2e68e3-c319-4ba3-b046-eba9587bc571", 
+      "relation": "enet:hasHost", 
+      "target": "6a0f93a7-ee1e-4ba4-add8-f0b347f06a97"
+    }, 
+    {
+      "source": "c726e5f8-ba92-4196-81cf-a361907ac966", 
+      "relation": "cptlc:hasComponent", 
+      "target": "0290d0e5-562f-4159-af58-90436ac6cf0c"
+    }, 
+    {
+      "source": "0290d0e5-562f-4159-af58-90436ac6cf0c", 
+      "relation": "enet:hasHost", 
+      "target": "4b19a028-de82-44dd-acf8-fd4b75a51ac1"
+    }, 
+    {
+      "source": "d7f08bad-cc05-4b24-87c5-5b11927bb9f9", 
+      "relation": "enet:hasHost", 
+      "target": "6a0f93a7-ee1e-4ba4-add8-f0b347f06a97"
+    }, 
+    {
+      "source": "9e969ec3-e9e8-49a2-ab72-f9b3ae5ec17f", 
+      "relation": "cptlc:hasComponent", 
+      "target": "67417627-7997-4184-915c-591a2d96e313"
+    }, 
+    {
+      "source": "9e969ec3-e9e8-49a2-ab72-f9b3ae5ec17f", 
+      "relation": "cptlc:hasComponent", 
+      "target": "1008034f-879e-496a-9340-3208ab990243"
+    }, 
+    {
+      "source": "9e969ec3-e9e8-49a2-ab72-f9b3ae5ec17f", 
+      "relation": "cptlc:hasComponent", 
+      "target": "4d66a53c-3434-49a2-92bd-9e87a6fc5d1b"
+    }, 
+    {
+      "source": "9e969ec3-e9e8-49a2-ab72-f9b3ae5ec17f", 
+      "relation": "cptlc:hasComponent", 
+      "target": "e184e8a7-8887-429b-a4cd-14bb325eb34c"
+    }, 
+    {
+      "source": "9e969ec3-e9e8-49a2-ab72-f9b3ae5ec17f", 
+      "relation": "cptlc:hasComponent", 
+      "target": "083d3bdc-858f-4b6a-b98f-b131a497896b"
+    }, 
+    {
+      "source": "9e969ec3-e9e8-49a2-ab72-f9b3ae5ec17f", 
+      "relation": "cptlc:hasComponent", 
+      "target": "f70d2847-b1ad-4076-ad7f-de9fb517b40f"
+    }, 
+    {
+      "source": "9e969ec3-e9e8-49a2-ab72-f9b3ae5ec17f", 
+      "relation": "cptlc:hasComponent", 
+      "target": "b769c43d-00f7-44d9-b95f-4be7cfbc1a85"
+    }, 
+    {
+      "source": "9e969ec3-e9e8-49a2-ab72-f9b3ae5ec17f", 
+      "relation": "cptlc:hasComponent", 
+      "target": "b6bcd7aa-db1f-4252-9277-1d5839ed539f"
+    }, 
+    {
+      "source": "9e969ec3-e9e8-49a2-ab72-f9b3ae5ec17f", 
+      "relation": "cptlc:hasComponent", 
+      "target": "4b2e3684-5b1a-4f6b-a484-b17ef3206395"
+    }, 
+    {
+      "source": "67417627-7997-4184-915c-591a2d96e313", 
+      "relation": "enet:hasHost", 
+      "target": "e2ca11c5-5718-4a5d-87c6-aaa050f4754a"
+    }, 
+    {
+      "source": "1008034f-879e-496a-9340-3208ab990243", 
+      "relation": "enet:hasHost", 
+      "target": "c62c5495-824e-46d6-bae8-b8bc77acc173"
+    }, 
+    {
+      "source": "92e20ccf-65ad-49c5-81dc-7fea19061217", 
+      "relation": "cptlc:hasComponent", 
+      "target": "36dbb6b2-ce43-47c4-bc32-b08a21874be8"
+    }, 
+    {
+      "source": "92e20ccf-65ad-49c5-81dc-7fea19061217", 
+      "relation": "cptlc:hasComponent", 
+      "target": "bbd4943c-a364-474c-a1e2-1848343ffeac"
+    }, 
+    {
+      "source": "92e20ccf-65ad-49c5-81dc-7fea19061217", 
+      "relation": "cptlc:hasComponent", 
+      "target": "d948bd88-285b-4707-9612-0275c98e383e"
+    }, 
+    {
+      "source": "92e20ccf-65ad-49c5-81dc-7fea19061217", 
+      "relation": "cptlc:hasComponent", 
+      "target": "00085977-42ac-40ae-8a36-47f69e89afa1"
+    }, 
+    {
+      "source": "92e20ccf-65ad-49c5-81dc-7fea19061217", 
+      "relation": "cptlc:hasComponent", 
+      "target": "25adc925-b32e-4494-bc6e-0c657e2978ce"
+    }, 
+    {
+      "source": "92e20ccf-65ad-49c5-81dc-7fea19061217", 
+      "relation": "cptlc:hasComponent", 
+      "target": "b2b0186e-ee13-4653-b97e-7951c99e358a"
+    }, 
+    {
+      "source": "92e20ccf-65ad-49c5-81dc-7fea19061217", 
+      "relation": "cptlc:hasComponent", 
+      "target": "2339a7ca-bc5b-4fe4-be5c-683177e2d398"
+    }, 
+    {
+      "source": "92e20ccf-65ad-49c5-81dc-7fea19061217", 
+      "relation": "cptlc:hasComponent", 
+      "target": "b69d1d07-c77a-4c76-83dc-6351bd021509"
+    }, 
+    {
+      "source": "92e20ccf-65ad-49c5-81dc-7fea19061217", 
+      "relation": "cptlc:hasComponent", 
+      "target": "ab1b2040-c035-4582-b970-0a94ae46087e"
+    }, 
+    {
+      "source": "92e20ccf-65ad-49c5-81dc-7fea19061217", 
+      "relation": "cptlc:hasComponent", 
+      "target": "c732757b-871d-4c9c-abbb-24b04a71447a"
+    }, 
+    {
+      "source": "b2b0186e-ee13-4653-b97e-7951c99e358a", 
+      "relation": "enet:hasHost", 
+      "target": "a09cf4f7-b99d-475c-a43a-66a9972e4d8e"
+    }, 
+    {
+      "source": "2339a7ca-bc5b-4fe4-be5c-683177e2d398", 
+      "relation": "enet:hasHost", 
+      "target": "e2ca11c5-5718-4a5d-87c6-aaa050f4754a"
+    }, 
+    {
+      "source": "8d8573af-1bad-4d09-a105-0c953dbfe900", 
+      "relation": "cptlc:hasComponent", 
+      "target": "95988879-4b91-4314-b48f-35956a4243c7"
+    }, 
+    {
+      "source": "8d8573af-1bad-4d09-a105-0c953dbfe900", 
+      "relation": "cptlc:hasComponent", 
+      "target": "a40a1523-14c9-4439-9f31-ea38dd1600f3"
+    }, 
+    {
+      "source": "8d8573af-1bad-4d09-a105-0c953dbfe900", 
+      "relation": "cptlc:hasComponent", 
+      "target": "acafae30-314b-4f60-84c5-4c1098d4c7ae"
+    }, 
+    {
+      "source": "8d8573af-1bad-4d09-a105-0c953dbfe900", 
+      "relation": "cptlc:hasComponent", 
+      "target": "61f77099-8a83-4644-8f61-519f23ba0a76"
+    }, 
+    {
+      "source": "8d8573af-1bad-4d09-a105-0c953dbfe900", 
+      "relation": "cptlc:hasComponent", 
+      "target": "d5cc8944-4f68-4937-a79f-d862275585c8"
+    }, 
+    {
+      "source": "8d8573af-1bad-4d09-a105-0c953dbfe900", 
+      "relation": "cptlc:hasComponent", 
+      "target": "d0b868e4-5baf-4bbc-a058-3bd604cf199c"
+    }, 
+    {
+      "source": "8d8573af-1bad-4d09-a105-0c953dbfe900", 
+      "relation": "cptlc:hasComponent", 
+      "target": "b5c22b94-6391-4d7d-b3d3-ad16645a907e"
+    }, 
+    {
+      "source": "8d8573af-1bad-4d09-a105-0c953dbfe900", 
+      "relation": "cptlc:hasComponent", 
+      "target": "8fd9b338-7cc6-4c13-b642-7e8a5978457f"
+    }, 
+    {
+      "source": "8d8573af-1bad-4d09-a105-0c953dbfe900", 
+      "relation": "cptlc:hasComponent", 
+      "target": "7b8dc58e-a9ba-421b-8ab9-70663133cc18"
+    }, 
+    {
+      "source": "8d8573af-1bad-4d09-a105-0c953dbfe900", 
+      "relation": "cptlc:hasComponent", 
+      "target": "4179de3e-d5a9-4502-b65d-06274b456134"
+    }, 
+    {
+      "source": "95988879-4b91-4314-b48f-35956a4243c7", 
+      "relation": "enet:hasHost", 
+      "target": "018c377f-7582-4bc2-913d-931d0a975dc1"
+    }, 
+    {
+      "source": "a40a1523-14c9-4439-9f31-ea38dd1600f3", 
+      "relation": "enet:hasHost", 
+      "target": "e2ca11c5-5718-4a5d-87c6-aaa050f4754a"
+    }, 
+    {
+      "source": "7883cf14-abb0-44c1-aba5-8f9a389ad0ae", 
+      "relation": "cptlc:hasComponent", 
+      "target": "f0b267c4-ca4a-456c-8546-98d8e629d68d"
+    }, 
+    {
+      "source": "7883cf14-abb0-44c1-aba5-8f9a389ad0ae", 
+      "relation": "cptlc:hasComponent", 
+      "target": "2350e4e8-7951-4288-ad77-f8383ea9e874"
+    }, 
+    {
+      "source": "7883cf14-abb0-44c1-aba5-8f9a389ad0ae", 
+      "relation": "cptlc:hasComponent", 
+      "target": "11c2cc61-01fe-4424-8723-1043e9740855"
+    }, 
+    {
+      "source": "7883cf14-abb0-44c1-aba5-8f9a389ad0ae", 
+      "relation": "cptlc:hasComponent", 
+      "target": "7a6ad2f0-7ce5-4d86-944d-b0e1beeb46b5"
+    }, 
+    {
+      "source": "7883cf14-abb0-44c1-aba5-8f9a389ad0ae", 
+      "relation": "cptlc:hasComponent", 
+      "target": "c4c9ab95-98e9-4803-a01c-f8d2d1cc934d"
+    }, 
+    {
+      "source": "7883cf14-abb0-44c1-aba5-8f9a389ad0ae", 
+      "relation": "cptlc:hasComponent", 
+      "target": "38e9e0c2-d8b2-49df-bbdc-12ee07de4116"
+    }, 
+    {
+      "source": "7883cf14-abb0-44c1-aba5-8f9a389ad0ae", 
+      "relation": "cptlc:hasComponent", 
+      "target": "f38a35bb-324e-42e6-8775-0416abd5812d"
+    }, 
+    {
+      "source": "7883cf14-abb0-44c1-aba5-8f9a389ad0ae", 
+      "relation": "cptlc:hasComponent", 
+      "target": "a11a61a0-ae4f-44db-8788-afaeda03f343"
+    }, 
+    {
+      "source": "7883cf14-abb0-44c1-aba5-8f9a389ad0ae", 
+      "relation": "cptlc:hasComponent", 
+      "target": "4027f8a6-0671-402b-8a44-e3c405e0678f"
+    }, 
+    {
+      "source": "f0b267c4-ca4a-456c-8546-98d8e629d68d", 
+      "relation": "enet:hasHost", 
+      "target": "e2ca11c5-5718-4a5d-87c6-aaa050f4754a"
+    }, 
+    {
+      "source": "2350e4e8-7951-4288-ad77-f8383ea9e874", 
+      "relation": "enet:hasHost", 
+      "target": "48af3a3a-13ba-48d7-8886-75b7ef99398a"
+    }, 
+    {
+      "source": "fd2c5fa4-2ec7-4ac6-82ce-a51dfcd6f95a", 
+      "relation": "cptlc:hasComponent", 
+      "target": "84b96cc1-22d1-4ae2-85ed-ad2a3528889c"
+    }, 
+    {
+      "source": "fd2c5fa4-2ec7-4ac6-82ce-a51dfcd6f95a", 
+      "relation": "cptlc:hasComponent", 
+      "target": "fa30b400-f23e-44b5-84e7-0bc6050dea55"
+    }, 
+    {
+      "source": "fd2c5fa4-2ec7-4ac6-82ce-a51dfcd6f95a", 
+      "relation": "cptlc:hasComponent", 
+      "target": "a1f07e46-6239-42c6-9c50-5956e0776e86"
+    }, 
+    {
+      "source": "fd2c5fa4-2ec7-4ac6-82ce-a51dfcd6f95a", 
+      "relation": "cptlc:hasComponent", 
+      "target": "2264230f-0885-44ac-82f6-37b2d0f72df7"
+    }, 
+    {
+      "source": "fd2c5fa4-2ec7-4ac6-82ce-a51dfcd6f95a", 
+      "relation": "cptlc:hasComponent", 
+      "target": "715dd0f0-0a59-4225-8ba7-f1b44e021ec3"
+    }, 
+    {
+      "source": "84b96cc1-22d1-4ae2-85ed-ad2a3528889c", 
+      "relation": "enet:hasHost", 
+      "target": "4b19a028-de82-44dd-acf8-fd4b75a51ac1"
+    }, 
+    {
+      "source": "fa30b400-f23e-44b5-84e7-0bc6050dea55", 
+      "relation": "enet:hasHost", 
+      "target": "e2ca11c5-5718-4a5d-87c6-aaa050f4754a"
+    }, 
+    {
+      "source": "a1f07e46-6239-42c6-9c50-5956e0776e86", 
+      "relation": "enet:hasHost", 
+      "target": "f604bace-b84d-4215-9d8f-4d1fa6e9a0a8"
+    }, 
+    {
+      "source": "84b5f336-90fe-45ce-bea4-998d8e58c29d", 
+      "relation": "cptlc:hasComponent", 
+      "target": "79736744-0ff4-4b7a-8d42-204a7d74a80e"
+    }, 
+    {
+      "source": "84b5f336-90fe-45ce-bea4-998d8e58c29d", 
+      "relation": "cptlc:hasComponent", 
+      "target": "c7e6cb29-8bb1-4a70-8537-de6b8872cff3"
+    }, 
+    {
+      "source": "84b5f336-90fe-45ce-bea4-998d8e58c29d", 
+      "relation": "cptlc:hasComponent", 
+      "target": "01e3620e-f5bf-4e0d-bf32-032a27d833f7"
+    }, 
+    {
+      "source": "84b5f336-90fe-45ce-bea4-998d8e58c29d", 
+      "relation": "cptlc:hasComponent", 
+      "target": "d6e5789a-3a46-4279-a2cd-8a298bfcc85a"
+    }, 
+    {
+      "source": "84b5f336-90fe-45ce-bea4-998d8e58c29d", 
+      "relation": "cptlc:hasComponent", 
+      "target": "fbd08cad-1a56-44fc-b5b8-0b57a5e32787"
+    }, 
+    {
+      "source": "84b5f336-90fe-45ce-bea4-998d8e58c29d", 
+      "relation": "cptlc:hasComponent", 
+      "target": "18b363d4-81a2-4c14-b945-6dfe3c7cda08"
+    }, 
+    {
+      "source": "84b5f336-90fe-45ce-bea4-998d8e58c29d", 
+      "relation": "cptlc:hasComponent", 
+      "target": "0e2d7c4e-cbfb-409d-bf65-03974e441ddf"
+    }, 
+    {
+      "source": "84b5f336-90fe-45ce-bea4-998d8e58c29d", 
+      "relation": "cptlc:hasComponent", 
+      "target": "6f3df12e-2be0-4be4-93f5-5280d346443f"
+    }, 
+    {
+      "source": "84b5f336-90fe-45ce-bea4-998d8e58c29d", 
+      "relation": "cptlc:hasComponent", 
+      "target": "18bfdb1d-29b1-4b32-99d1-06ebe7068e7b"
+    }, 
+    {
+      "source": "79736744-0ff4-4b7a-8d42-204a7d74a80e", 
+      "relation": "enet:hasHost", 
+      "target": "e2ca11c5-5718-4a5d-87c6-aaa050f4754a"
+    }, 
+    {
+      "source": "c7e6cb29-8bb1-4a70-8537-de6b8872cff3", 
+      "relation": "enet:hasHost", 
+      "target": "6a0f93a7-ee1e-4ba4-add8-f0b347f06a97"
+    }, 
+    {
+      "source": "e05c7229-c49c-4674-8859-826009187f99", 
+      "relation": "cptlc:hasComponent", 
+      "target": "6db54c79-9614-4dd0-ad64-4cc9e87f34fc"
+    }, 
+    {
+      "source": "e05c7229-c49c-4674-8859-826009187f99", 
+      "relation": "cptlc:hasComponent", 
+      "target": "de37689d-dc1d-4379-b722-4e3f78f154a4"
+    }, 
+    {
+      "source": "e05c7229-c49c-4674-8859-826009187f99", 
+      "relation": "cptlc:hasComponent", 
+      "target": "9a1a57c3-2a76-4800-80db-2bad3e179b4c"
+    }, 
+    {
+      "source": "e05c7229-c49c-4674-8859-826009187f99", 
+      "relation": "cptlc:hasComponent", 
+      "target": "63840acc-7211-4770-8602-ea33373351b8"
+    }, 
+    {
+      "source": "e05c7229-c49c-4674-8859-826009187f99", 
+      "relation": "cptlc:hasComponent", 
+      "target": "2203efd3-069b-45b3-b0b0-2ddf5abae8e0"
+    }, 
+    {
+      "source": "e05c7229-c49c-4674-8859-826009187f99", 
+      "relation": "cptlc:hasComponent", 
+      "target": "ed7b9658-26de-47b0-82a3-0243365ad565"
+    }, 
+    {
+      "source": "e05c7229-c49c-4674-8859-826009187f99", 
+      "relation": "cptlc:hasComponent", 
+      "target": "3f8dccfa-9921-4429-ba47-6b6844270da0"
+    }, 
+    {
+      "source": "e05c7229-c49c-4674-8859-826009187f99", 
+      "relation": "cptlc:hasComponent", 
+      "target": "71169652-fda0-4b4b-aef2-5a86219d796f"
+    }, 
+    {
+      "source": "e05c7229-c49c-4674-8859-826009187f99", 
+      "relation": "cptlc:hasComponent", 
+      "target": "ba4ff897-82e8-4814-ac09-5efa4ed3a24c"
+    }, 
+    {
+      "source": "6db54c79-9614-4dd0-ad64-4cc9e87f34fc", 
+      "relation": "enet:hasHost", 
+      "target": "e2ca11c5-5718-4a5d-87c6-aaa050f4754a"
+    }, 
+    {
+      "source": "de37689d-dc1d-4379-b722-4e3f78f154a4", 
+      "relation": "enet:hasHost", 
+      "target": "fc2d39da-9db4-4f18-9a11-ed850772e490"
+    }, 
+    {
+      "source": "fdea7748-842e-4db8-97e5-38539b6e8b35", 
+      "relation": "cptlc:hasComponent", 
+      "target": "2d519708-5bbc-4e35-b95c-d7cc4b31239b"
+    }, 
+    {
+      "source": "fdea7748-842e-4db8-97e5-38539b6e8b35", 
+      "relation": "cptlc:hasComponent", 
+      "target": "abe2e453-4907-4280-b2d9-19208c2b3055"
+    }, 
+    {
+      "source": "fdea7748-842e-4db8-97e5-38539b6e8b35", 
+      "relation": "cptlc:hasComponent", 
+      "target": "b8cb3111-ce20-48be-a4c8-04566a954857"
+    }, 
+    {
+      "source": "fdea7748-842e-4db8-97e5-38539b6e8b35", 
+      "relation": "cptlc:hasComponent", 
+      "target": "db5d0d76-e33a-4e25-b7e3-0d81b833848b"
+    }, 
+    {
+      "source": "fdea7748-842e-4db8-97e5-38539b6e8b35", 
+      "relation": "cptlc:hasComponent", 
+      "target": "80e61782-cc4f-439b-9aa1-ef32591f9bfc"
+    }, 
+    {
+      "source": "fdea7748-842e-4db8-97e5-38539b6e8b35", 
+      "relation": "cptlc:hasComponent", 
+      "target": "8adbb18d-17bd-44de-b0d3-142e406baf39"
+    }, 
+    {
+      "source": "fdea7748-842e-4db8-97e5-38539b6e8b35", 
+      "relation": "cptlc:hasComponent", 
+      "target": "dc19acf3-2759-4cc2-b8e2-0ccf9249a592"
+    }, 
+    {
+      "source": "fdea7748-842e-4db8-97e5-38539b6e8b35", 
+      "relation": "cptlc:hasComponent", 
+      "target": "bef37444-ad4d-44e0-b231-0d90b6e12af2"
+    }, 
+    {
+      "source": "fdea7748-842e-4db8-97e5-38539b6e8b35", 
+      "relation": "cptlc:hasComponent", 
+      "target": "6484ab74-45c9-4dde-8d23-a5177f5b9242"
+    }, 
+    {
+      "source": "2d519708-5bbc-4e35-b95c-d7cc4b31239b", 
+      "relation": "enet:hasHost", 
+      "target": "e2ca11c5-5718-4a5d-87c6-aaa050f4754a"
+    }, 
+    {
+      "source": "abe2e453-4907-4280-b2d9-19208c2b3055", 
+      "relation": "enet:hasHost", 
+      "target": "0f30f891-5e76-48c5-abc5-af9a3fcd374d"
+    }, 
+    {
+      "source": "33337c89-2a8e-46cd-8acd-49a534acbe3f", 
+      "relation": "cptlc:hasComponent", 
+      "target": "e091d48b-9b09-4961-a659-f968c40cc0df"
+    }, 
+    {
+      "source": "33337c89-2a8e-46cd-8acd-49a534acbe3f", 
+      "relation": "cptlc:hasComponent", 
+      "target": "9f198cab-5e3c-4fd9-9e9e-0f8ed93eefab"
+    }, 
+    {
+      "source": "33337c89-2a8e-46cd-8acd-49a534acbe3f", 
+      "relation": "cptlc:hasComponent", 
+      "target": "f90bbb35-c2b5-4320-afda-947397d94add"
+    }, 
+    {
+      "source": "33337c89-2a8e-46cd-8acd-49a534acbe3f", 
+      "relation": "cptlc:hasComponent", 
+      "target": "1090e64d-c279-43b2-b674-82541707f6d8"
+    }, 
+    {
+      "source": "33337c89-2a8e-46cd-8acd-49a534acbe3f", 
+      "relation": "cptlc:hasComponent", 
+      "target": "a4bf1883-2013-46c5-9d51-f7e32ceb8563"
+    }, 
+    {
+      "source": "33337c89-2a8e-46cd-8acd-49a534acbe3f", 
+      "relation": "cptlc:hasComponent", 
+      "target": "279066fb-2607-42a4-b7d8-3696776a05e0"
+    }, 
+    {
+      "source": "33337c89-2a8e-46cd-8acd-49a534acbe3f", 
+      "relation": "cptlc:hasComponent", 
+      "target": "2318a722-e74a-4d3b-91c4-1c3147bc9343"
+    }, 
+    {
+      "source": "33337c89-2a8e-46cd-8acd-49a534acbe3f", 
+      "relation": "cptlc:hasComponent", 
+      "target": "752af86e-5045-4588-8338-8ef3bd059193"
+    }, 
+    {
+      "source": "33337c89-2a8e-46cd-8acd-49a534acbe3f", 
+      "relation": "cptlc:hasComponent", 
+      "target": "dbda1c13-2af9-414f-b985-97cd78b74533"
+    }, 
+    {
+      "source": "dbda1c13-2af9-414f-b985-97cd78b74533", 
+      "relation": "enet:hasHost", 
+      "target": "e2ca11c5-5718-4a5d-87c6-aaa050f4754a"
+    }, 
+    {
+      "source": "e091d48b-9b09-4961-a659-f968c40cc0df", 
+      "relation": "enet:hasHost", 
+      "target": "0a6d5418-608d-4b91-a9ae-920c36a255b6"
+    }, 
+    {
+      "source": "f151103a-0700-4c97-b7d9-b03bc15daafd", 
+      "relation": "cptlc:hasComponent", 
+      "target": "6f139294-c723-4e25-85dc-11f2d8e6f6c0"
+    }, 
+    {
+      "source": "4d9def7f-5389-4db8-a2c1-7a65996ad693", 
+      "relation": "cptlc:hasComponent", 
+      "target": "a037b508-6644-40ff-9004-b046856111a9"
+    }, 
+    {
+      "source": "a037b508-6644-40ff-9004-b046856111a9", 
+      "relation": "enet:hasHost", 
+      "target": "4b19a028-de82-44dd-acf8-fd4b75a51ac1"
+    }, 
+    {
+      "source": "57000a54-4e79-4167-a9ef-a0da847fe814", 
+      "relation": "syard:hasLine", 
+      "target": "33df492c-261e-4814-81bf-54f6f1d98bcb"
+    }, 
+    {
+      "source": "57000a54-4e79-4167-a9ef-a0da847fe814", 
+      "relation": "syard:hasLine", 
+      "target": "97838e82-f3f6-46b2-82ac-48778c61df13"
+    }, 
+    {
+      "source": "7783e89d-06ed-480e-a682-2a270bf6c979", 
+      "relation": "syard:hasLine", 
+      "target": "a3a7b489-8c9c-47a7-8e5a-617786f166aa"
+    }, 
+    {
+      "source": "7783e89d-06ed-480e-a682-2a270bf6c979", 
+      "relation": "syard:hasLine", 
+      "target": "aec929cb-d172-415a-bfa6-dfe5ffc5520b"
+    }, 
+    {
+      "source": "2cdd062a-b1fd-4e00-9d9c-3f31ab506715", 
+      "relation": "syard:hasLine", 
+      "target": "8bc60736-ee1c-42b3-a894-8113340a3262"
+    }, 
+    {
+      "source": "2cdd062a-b1fd-4e00-9d9c-3f31ab506715", 
+      "relation": "syard:hasLine", 
+      "target": "9766a375-19b1-45dd-8891-8ebf7b8ce9e4"
+    }, 
+    {
+      "source": "33df492c-261e-4814-81bf-54f6f1d98bcb", 
+      "relation": "syard:hasLine", 
+      "target": "0ac3e3cb-5965-490a-b817-5e28154e26ae"
+    }, 
+    {
+      "source": "aec929cb-d172-415a-bfa6-dfe5ffc5520b", 
+      "relation": "syard:hasLine", 
+      "target": "2f4afa24-3702-42e5-a407-910381c11c2e"
+    }, 
+    {
+      "source": "8ddcf80c-79d0-4d07-830b-450fd16a8933", 
+      "relation": "cptlc:hasSerialLink", 
+      "target": "f26d8f43-0eff-4088-9792-65c77844cdb2"
+    }, 
+    {
+      "source": "8ddcf80c-79d0-4d07-830b-450fd16a8933", 
+      "relation": "cptlc:hasSerialLink", 
+      "target": "6121b36d-f1b4-4f77-8edf-cb6b13e6b133"
+    }, 
+    {
+      "source": "8ddcf80c-79d0-4d07-830b-450fd16a8933", 
+      "relation": "cptlc:hasSerialLink", 
+      "target": "fe2ce6bc-3d39-46db-aa44-b5cdfa729fd4"
+    }, 
+    {
+      "source": "8ddcf80c-79d0-4d07-830b-450fd16a8933", 
+      "relation": "snet:hasBreakerConnections", 
+      "target": "0ac3e3cb-5965-490a-b817-5e28154e26ae"
+    }, 
+    {
+      "source": "8bc60736-ee1c-42b3-a894-8113340a3262", 
+      "relation": "syard:hasLine", 
+      "target": "5f92ebe3-7b6e-4abf-a435-2c3979293023"
+    }, 
+    {
+      "source": "452c1b6d-45a9-47a8-85d8-a0148673c16b", 
+      "relation": "syard:hasLine", 
+      "target": "1defdcaa-b1ba-45f7-a074-97745b98a417"
+    }, 
+    {
+      "source": "452c1b6d-45a9-47a8-85d8-a0148673c16b", 
+      "relation": "syard:hasLine", 
+      "target": "3862ee64-8380-4ced-a344-f01e798e7457"
+    }, 
+    {
+      "source": "4e8f781c-4371-46a9-a781-a8bb34c39927", 
+      "relation": "syard:hasLine", 
+      "target": "9aeb97d8-15db-42c4-9d9f-f7d271c2cd54"
+    }, 
+    {
+      "source": "4e8f781c-4371-46a9-a781-a8bb34c39927", 
+      "relation": "syard:hasLine", 
+      "target": "099927f3-79f8-40ae-8518-ceccbeddc0b2"
+    }, 
+    {
+      "source": "3862ee64-8380-4ced-a344-f01e798e7457", 
+      "relation": "syard:hasLine", 
+      "target": "328060c7-c9b0-489a-a339-1b01305faf02"
+    }, 
+    {
+      "source": "099927f3-79f8-40ae-8518-ceccbeddc0b2", 
+      "relation": "syard:hasLine", 
+      "target": "6a412caa-9f48-4587-9984-8be96f5a2b3a"
+    }, 
+    {
+      "source": "1fdf2552-3cb4-4901-b42b-56f9d57f4e48", 
+      "relation": "syard:hasLine", 
+      "target": "dd7505ae-411b-4ec9-9221-3fd1aad01b50"
+    }, 
+    {
+      "source": "1fdf2552-3cb4-4901-b42b-56f9d57f4e48", 
+      "relation": "syard:hasLine", 
+      "target": "75b6daa1-73b4-4198-bcf9-52490de851b1"
+    }, 
+    {
+      "source": "75b6daa1-73b4-4198-bcf9-52490de851b1", 
+      "relation": "syard:hasLine", 
+      "target": "178cf804-cd47-4806-b551-d375af4a684f"
+    }, 
+    {
+      "source": "86c3ff63-f28e-4797-84b3-11f059527038", 
+      "relation": "syard:hasLine", 
+      "target": "ac293529-9659-4e4b-b5b9-b9647b02705d"
+    }, 
+    {
+      "source": "86c3ff63-f28e-4797-84b3-11f059527038", 
+      "relation": "syard:hasLine", 
+      "target": "cd4bf17d-75a0-40f0-83cf-5fe390aa9148"
+    }, 
+    {
+      "source": "86c3ff63-f28e-4797-84b3-11f059527038", 
+      "relation": "syard:hasLine", 
+      "target": "b13aafed-99af-4fc0-b53f-e273802a1ea7"
+    }, 
+    {
+      "source": "4e2ec78f-4c72-46e2-8047-01bd51c2521d", 
+      "relation": "syard:hasLine", 
+      "target": "c81b71fc-8677-4887-974b-a9cba0939904"
+    }, 
+    {
+      "source": "4e2ec78f-4c72-46e2-8047-01bd51c2521d", 
+      "relation": "syard:hasLine", 
+      "target": "af8aa8da-7f9d-454d-85e8-1cb4678fa7d7"
+    }, 
+    {
+      "source": "4e2ec78f-4c72-46e2-8047-01bd51c2521d", 
+      "relation": "syard:hasLine", 
+      "target": "74988e38-e9b1-4be6-b3ff-303332a5f1fe"
+    }, 
+    {
+      "source": "513899d7-8143-4922-99b7-68547cca2ba0", 
+      "relation": "syard:hasLine", 
+      "target": "2f34d163-ecdc-47b5-b148-e685dd4eca8d"
+    }, 
+    {
+      "source": "513899d7-8143-4922-99b7-68547cca2ba0", 
+      "relation": "syard:hasLine", 
+      "target": "9a4ed777-d628-4136-8460-e1e73718cded"
+    }, 
+    {
+      "source": "2f34d163-ecdc-47b5-b148-e685dd4eca8d", 
+      "relation": "syard:hasLine", 
+      "target": "69846f54-74f1-4f2e-ba42-979a9f20109e"
+    }, 
+    {
+      "source": "843e8890-ce0e-438b-a998-1eb3b8190bdd", 
+      "relation": "syard:hasLine", 
+      "target": "91c14f8b-6585-4dd1-88b0-862f4abbb9ac"
+    }, 
+    {
+      "source": "843e8890-ce0e-438b-a998-1eb3b8190bdd", 
+      "relation": "syard:hasLine", 
+      "target": "014aa122-014c-4e38-b074-c70d7f28457f"
+    }, 
+    {
+      "source": "014aa122-014c-4e38-b074-c70d7f28457f", 
+      "relation": "syard:hasLine", 
+      "target": "31086c66-7ca0-4d98-a45c-7b62058a73a6"
+    }, 
+    {
+      "source": "a4b8c67d-bbc3-4ecf-b289-7782cef8d807", 
+      "relation": "cptlc:hasSerialLink", 
+      "target": "5a8bab0c-21de-47e5-b2d5-989f6c51a25f"
+    }, 
+    {
+      "source": "a4b8c67d-bbc3-4ecf-b289-7782cef8d807", 
+      "relation": "snet:hasBreakerConnections", 
+      "target": "31086c66-7ca0-4d98-a45c-7b62058a73a6"
+    }, 
+    {
+      "source": "a4b8c67d-bbc3-4ecf-b289-7782cef8d807", 
+      "relation": "cptlc:hasSerialLink", 
+      "target": "c6a141a2-e2e3-490c-915f-a79a06b92dbe"
+    }, 
+    {
+      "source": "2eea5e6e-240e-4f4e-b3e3-846155aed8cd", 
+      "relation": "syard:hasLine", 
+      "target": "85ae31c9-2dc1-470b-a9b9-b1799052ad34"
+    }, 
+    {
+      "source": "2eea5e6e-240e-4f4e-b3e3-846155aed8cd", 
+      "relation": "syard:hasLine", 
+      "target": "be7338e9-28f7-4421-a16f-027094cf8fe8"
+    }, 
+    {
+      "source": "c49f979c-12a3-406d-aa2d-03d0066ea33f", 
+      "relation": "syard:hasLine", 
+      "target": "f6372823-8c2c-4786-9d5a-19c288ea6eda"
+    }, 
+    {
+      "source": "c49f979c-12a3-406d-aa2d-03d0066ea33f", 
+      "relation": "syard:hasLine", 
+      "target": "3271cedd-d5d6-4756-825a-18d11902bb19"
+    }, 
+    {
+      "source": "379e20aa-da69-452e-b176-01333515e4f4", 
+      "relation": "syard:hasLine", 
+      "target": "f6372823-8c2c-4786-9d5a-19c288ea6eda"
+    }, 
+    {
+      "source": "379e20aa-da69-452e-b176-01333515e4f4", 
+      "relation": "syard:hasLine", 
+      "target": "be7338e9-28f7-4421-a16f-027094cf8fe8"
+    }, 
+    {
+      "source": "2a2d110d-9951-4fc3-a61c-f072caf8513d", 
+      "relation": "syard:hasLine", 
+      "target": "843abf18-47e8-4e42-9eb0-622f4d5b0b54"
+    }, 
+    {
+      "source": "f63e8aaf-0ad1-4099-a616-b153ebb568d1", 
+      "relation": "syard:hasLine", 
+      "target": "d7a6a8ba-ca6d-4c49-8e1f-2eff716891d0"
+    }, 
+    {
+      "source": "f63e8aaf-0ad1-4099-a616-b153ebb568d1", 
+      "relation": "syard:hasLine", 
+      "target": "cf1c7737-67e2-4429-93b9-61f2d9cf1f73"
+    }, 
+    {
+      "source": "9e40dffb-768a-4769-9667-97f945e7a2d1", 
+      "relation": "syard:hasLine", 
+      "target": "3ac12698-34d6-43f5-ad37-403b321d05c6"
+    }, 
+    {
+      "source": "9e40dffb-768a-4769-9667-97f945e7a2d1", 
+      "relation": "syard:hasLine", 
+      "target": "74988e38-e9b1-4be6-b3ff-303332a5f1fe"
+    }, 
+    {
+      "source": "91c14f8b-6585-4dd1-88b0-862f4abbb9ac", 
+      "relation": "syard:hasLine", 
+      "target": "3ac12698-34d6-43f5-ad37-403b321d05c6"
+    }, 
+    {
+      "source": "43b2b910-588e-4285-9b05-e1f195777fcd", 
+      "relation": "syard:hasLine", 
+      "target": "3ac12698-34d6-43f5-ad37-403b321d05c6"
+    }, 
+    {
+      "source": "43b2b910-588e-4285-9b05-e1f195777fcd", 
+      "relation": "syard:hasLine", 
+      "target": "d7a6a8ba-ca6d-4c49-8e1f-2eff716891d0"
+    }, 
+    {
+      "source": "d3692701-fe5e-4b1c-8635-f8bb2147bfb6", 
+      "relation": "syard:hasLine", 
+      "target": "85ae31c9-2dc1-470b-a9b9-b1799052ad34"
+    }, 
+    {
+      "source": "d3692701-fe5e-4b1c-8635-f8bb2147bfb6", 
+      "relation": "syard:hasLine", 
+      "target": "3ac12698-34d6-43f5-ad37-403b321d05c6"
+    }, 
+    {
+      "source": "90777d70-4a66-4f6e-9870-4b8d0b3e1e7c", 
+      "relation": "syard:hasLine", 
+      "target": "843abf18-47e8-4e42-9eb0-622f4d5b0b54"
+    }, 
+    {
+      "source": "90777d70-4a66-4f6e-9870-4b8d0b3e1e7c", 
+      "relation": "syard:hasLine", 
+      "target": "b48f3c65-dfc8-4f52-a98d-829d190feae0"
+    }, 
+    {
+      "source": "dd7505ae-411b-4ec9-9221-3fd1aad01b50", 
+      "relation": "syard:hasLine", 
+      "target": "843abf18-47e8-4e42-9eb0-622f4d5b0b54"
+    }, 
+    {
+      "source": "9a4ed777-d628-4136-8460-e1e73718cded", 
+      "relation": "syard:hasLine", 
+      "target": "843abf18-47e8-4e42-9eb0-622f4d5b0b54"
+    }, 
+    {
+      "source": "6a412caa-9f48-4587-9984-8be96f5a2b3a", 
+      "relation": "syard:hasLine", 
+      "target": "843abf18-47e8-4e42-9eb0-622f4d5b0b54"
+    }, 
+    {
+      "source": "f415bc05-3b2e-4f23-bbcd-a5e579bc4510", 
+      "relation": "syard:hasLine", 
+      "target": "74988e38-e9b1-4be6-b3ff-303332a5f1fe"
+    }, 
+    {
+      "source": "f415bc05-3b2e-4f23-bbcd-a5e579bc4510", 
+      "relation": "syard:hasLine", 
+      "target": "d7a6a8ba-ca6d-4c49-8e1f-2eff716891d0"
+    }, 
+    {
+      "source": "cf1c7737-67e2-4429-93b9-61f2d9cf1f73", 
+      "relation": "syard:hasLine", 
+      "target": "a916dc94-c63c-4ab7-871b-7537107794cc"
+    }, 
+    {
+      "source": "f4b7af45-277f-4875-8c20-2f9d326b68f2", 
+      "relation": "syard:hasLine", 
+      "target": "7868381b-6642-4673-8866-5d5ffea54d37"
+    }, 
+    {
+      "source": "f4b7af45-277f-4875-8c20-2f9d326b68f2", 
+      "relation": "syard:hasLine", 
+      "target": "08ca8f34-7d9e-4508-b79c-fda561561495"
+    }, 
+    {
+      "source": "f4b7af45-277f-4875-8c20-2f9d326b68f2", 
+      "relation": "snet:hasBreakerConnections", 
+      "target": "5a8bab0c-21de-47e5-b2d5-989f6c51a25f"
+    }, 
+    {
+      "source": "2f4afa24-3702-42e5-a407-910381c11c2e", 
+      "relation": "snet:hasBreakerConnections", 
+      "target": "f26d8f43-0eff-4088-9792-65c77844cdb2"
+    }, 
+    {
+      "source": "2f4afa24-3702-42e5-a407-910381c11c2e", 
+      "relation": "syard:hasLine", 
+      "target": "7868381b-6642-4673-8866-5d5ffea54d37"
+    }, 
+    {
+      "source": "31086c66-7ca0-4d98-a45c-7b62058a73a6", 
+      "relation": "syard:hasLine", 
+      "target": "7868381b-6642-4673-8866-5d5ffea54d37"
+    }, 
+    {
+      "source": "31086c66-7ca0-4d98-a45c-7b62058a73a6", 
+      "relation": "snet:hasBreakerConnections", 
+      "target": "c6a141a2-e2e3-490c-915f-a79a06b92dbe"
+    }, 
+    {
+      "source": "0ac3e3cb-5965-490a-b817-5e28154e26ae", 
+      "relation": "snet:hasBreakerConnections", 
+      "target": "6121b36d-f1b4-4f77-8edf-cb6b13e6b133"
+    }, 
+    {
+      "source": "0ac3e3cb-5965-490a-b817-5e28154e26ae", 
+      "relation": "syard:hasLine", 
+      "target": "7868381b-6642-4673-8866-5d5ffea54d37"
+    }, 
+    {
+      "source": "f951264d-6252-4a92-8f4f-8a61ca27626e", 
+      "relation": "syard:hasLine", 
+      "target": "d5abe7eb-cb95-4cad-916f-bb8be0046c0f"
+    }, 
+    {
+      "source": "f951264d-6252-4a92-8f4f-8a61ca27626e", 
+      "relation": "syard:hasLine", 
+      "target": "7868381b-6642-4673-8866-5d5ffea54d37"
+    }, 
+    {
+      "source": "f951264d-6252-4a92-8f4f-8a61ca27626e", 
+      "relation": "snet:hasBreakerConnections", 
+      "target": "fe2ce6bc-3d39-46db-aa44-b5cdfa729fd4"
+    }, 
+    {
+      "source": "f951264d-6252-4a92-8f4f-8a61ca27626e", 
+      "relation": "snet:hasBreakerConnections", 
+      "target": "b9eea5ea-401b-45d5-adf9-220722889d23"
+    }, 
+    {
+      "source": "5ab58f4e-8bfc-4ded-a7a8-1d1378575d9e", 
+      "relation": "syard:hasLine", 
+      "target": "d5abe7eb-cb95-4cad-916f-bb8be0046c0f"
+    }, 
+    {
+      "source": "f87c939b-b570-44bb-8766-6cc7f967bafc", 
+      "relation": "cptlc:hasEthernetLink", 
+      "target": "b9eea5ea-401b-45d5-adf9-220722889d23"
+    }, 
+    {
+      "source": "fe2ce6bc-3d39-46db-aa44-b5cdfa729fd4", 
+      "relation": "cptlc:hasSerialLink", 
+      "target": "5a8bab0c-21de-47e5-b2d5-989f6c51a25f"
+    }, 
+    {
+      "source": "b9eea5ea-401b-45d5-adf9-220722889d23", 
+      "relation": "cptlc:hasSerialLink", 
+      "target": "f26d8f43-0eff-4088-9792-65c77844cdb2"
+    }, 
+    {
+      "source": "f26d8f43-0eff-4088-9792-65c77844cdb2", 
+      "relation": "cptlc:hasSerialLink", 
+      "target": "6121b36d-f1b4-4f77-8edf-cb6b13e6b133"
+    }, 
+    {
+      "source": "1defdcaa-b1ba-45f7-a074-97745b98a417", 
+      "relation": "syard:hasLine", 
+      "target": "2b749c40-2688-43bc-b321-6eecd55b4046"
+    }, 
+    {
+      "source": "7ba56574-6d0e-456d-9452-13ee38e8ba35", 
+      "relation": "syard:hasLine", 
+      "target": "ac293529-9659-4e4b-b5b9-b9647b02705d"
+    }, 
+    {
+      "source": "7ba56574-6d0e-456d-9452-13ee38e8ba35", 
+      "relation": "syard:hasLine", 
+      "target": "36ea6f73-9e50-415c-8d38-76e89b0e6f43"
+    }, 
+    {
+      "source": "d697baa5-4c3c-4541-83f9-debf0903520b", 
+      "relation": "syard:hasLine", 
+      "target": "36ea6f73-9e50-415c-8d38-76e89b0e6f43"
+    }, 
+    {
+      "source": "d697baa5-4c3c-4541-83f9-debf0903520b", 
+      "relation": "syard:hasLine", 
+      "target": "c28c4447-108d-4cc9-a989-0e666bf2b80c"
+    }, 
+    {
+      "source": "ac2d210d-4ae1-43f1-8874-f0e5ce017834", 
+      "relation": "syard:hasLine", 
+      "target": "939b0b97-049f-4a07-9b0d-dc2a58832502"
+    }, 
+    {
+      "source": "ac2d210d-4ae1-43f1-8874-f0e5ce017834", 
+      "relation": "syard:hasLine", 
+      "target": "174450cb-4ae2-42a5-837f-e0bcf93ba1f2"
+    }, 
+    {
+      "source": "7f9f51df-1053-42a0-aac2-496ceead1f5f", 
+      "relation": "syard:hasLine", 
+      "target": "36ea6f73-9e50-415c-8d38-76e89b0e6f43"
+    }, 
+    {
+      "source": "7f9f51df-1053-42a0-aac2-496ceead1f5f", 
+      "relation": "syard:hasLine", 
+      "target": "939b0b97-049f-4a07-9b0d-dc2a58832502"
+    }, 
+    {
+      "source": "69846f54-74f1-4f2e-ba42-979a9f20109e", 
+      "relation": "syard:hasLine", 
+      "target": "c28c4447-108d-4cc9-a989-0e666bf2b80c"
+    }, 
+    {
+      "source": "c5ec99ad-8d32-4dd5-b6f2-c5429da32988", 
+      "relation": "syard:hasLine", 
+      "target": "2b749c40-2688-43bc-b321-6eecd55b4046"
+    }, 
+    {
+      "source": "c5ec99ad-8d32-4dd5-b6f2-c5429da32988", 
+      "relation": "syard:hasLine", 
+      "target": "939b0b97-049f-4a07-9b0d-dc2a58832502"
+    }, 
+    {
+      "source": "c28c4447-108d-4cc9-a989-0e666bf2b80c", 
+      "relation": "syard:hasLine", 
+      "target": "584bc7b5-e0f2-4d2b-8bc3-5c59c7585205"
+    }, 
+    {
+      "source": "584bc7b5-e0f2-4d2b-8bc3-5c59c7585205", 
+      "relation": "syard:hasLine", 
+      "target": "2b749c40-2688-43bc-b321-6eecd55b4046"
+    }, 
+    {
+      "source": "af8aa8da-7f9d-454d-85e8-1cb4678fa7d7", 
+      "relation": "syard:hasLine", 
+      "target": "1fcc2b5a-b47f-4875-8df1-e6df70a929a9"
+    }, 
+    {
+      "source": "27f0e259-2fc8-48eb-98d0-5855eb9dab30", 
+      "relation": "syard:hasLine", 
+      "target": "f7cc29e6-4d96-47e5-af7f-89634551e5c9"
+    }, 
+    {
+      "source": "27f0e259-2fc8-48eb-98d0-5855eb9dab30", 
+      "relation": "syard:hasLine", 
+      "target": "1fcc2b5a-b47f-4875-8df1-e6df70a929a9"
+    }, 
+    {
+      "source": "7c37443e-a221-41ec-bcd9-9b2480e32ab1", 
+      "relation": "syard:hasLine", 
+      "target": "1fcc2b5a-b47f-4875-8df1-e6df70a929a9"
+    }, 
+    {
+      "source": "7c37443e-a221-41ec-bcd9-9b2480e32ab1", 
+      "relation": "syard:hasLine", 
+      "target": "f1d4601a-4caf-44dc-9b08-e04b22cae1d5"
+    }, 
+    {
+      "source": "cd4bf17d-75a0-40f0-83cf-5fe390aa9148", 
+      "relation": "syard:hasLine", 
+      "target": "81c73eb6-420a-454f-8338-472371ce3534"
+    }, 
+    {
+      "source": "4a96d2ea-ecf4-4171-a5ee-e1958c8103ee", 
+      "relation": "syard:hasLine", 
+      "target": "81c73eb6-420a-454f-8338-472371ce3534"
+    }, 
+    {
+      "source": "4a96d2ea-ecf4-4171-a5ee-e1958c8103ee", 
+      "relation": "syard:hasLine", 
+      "target": "1fcc2b5a-b47f-4875-8df1-e6df70a929a9"
+    }, 
+    {
+      "source": "f631b4ca-11f8-463a-b2b0-dde53089aa20", 
+      "relation": "syard:hasLine", 
+      "target": "81c73eb6-420a-454f-8338-472371ce3534"
+    }, 
+    {
+      "source": "f631b4ca-11f8-463a-b2b0-dde53089aa20", 
+      "relation": "syard:hasLine", 
+      "target": "f7cc29e6-4d96-47e5-af7f-89634551e5c9"
+    }, 
+    {
+      "source": "b13aafed-99af-4fc0-b53f-e273802a1ea7", 
+      "relation": "syard:hasLine", 
+      "target": "1fcc2b5a-b47f-4875-8df1-e6df70a929a9"
+    }, 
+    {
+      "source": "c81b71fc-8677-4887-974b-a9cba0939904", 
+      "relation": "syard:hasLine", 
+      "target": "f1d4601a-4caf-44dc-9b08-e04b22cae1d5"
+    }, 
+    {
+      "source": "f46f0289-b824-47c3-905d-85dc4f45cb69", 
+      "relation": "syard:hasLine", 
+      "target": "f7cc29e6-4d96-47e5-af7f-89634551e5c9"
+    }, 
+    {
+      "source": "5da6776a-d434-4b18-9e3f-b2a76018d8a5", 
+      "relation": "syard:hasLine", 
+      "target": "e7bc0aba-e865-4ab9-b150-049620c2d659"
+    }, 
+    {
+      "source": "5da6776a-d434-4b18-9e3f-b2a76018d8a5", 
+      "relation": "syard:hasLine", 
+      "target": "f4a23a49-2c39-4ff2-9f1f-11c10ad93f0e"
+    }, 
+    {
+      "source": "178cf804-cd47-4806-b551-d375af4a684f", 
+      "relation": "syard:hasLine", 
+      "target": "f4a23a49-2c39-4ff2-9f1f-11c10ad93f0e"
+    }, 
+    {
+      "source": "5f92ebe3-7b6e-4abf-a435-2c3979293023", 
+      "relation": "syard:hasLine", 
+      "target": "f4a23a49-2c39-4ff2-9f1f-11c10ad93f0e"
+    }, 
+    {
+      "source": "f30b6853-85cc-44b0-a2fa-cb0f2e2e6724", 
+      "relation": "syard:hasLine", 
+      "target": "f4a23a49-2c39-4ff2-9f1f-11c10ad93f0e"
+    }, 
+    {
+      "source": "f30b6853-85cc-44b0-a2fa-cb0f2e2e6724", 
+      "relation": "syard:hasLine", 
+      "target": "619d4f87-55bb-4162-96f3-7da8b7958246"
+    }, 
+    {
+      "source": "54ecec38-a50e-4f94-b39b-715511627744", 
+      "relation": "syard:hasLine", 
+      "target": "113facb3-df90-42fe-9740-eb783f885147"
+    }, 
+    {
+      "source": "54ecec38-a50e-4f94-b39b-715511627744", 
+      "relation": "syard:hasLine", 
+      "target": "2b1cc7e6-8e39-4132-b3e8-7e7e79164457"
+    }, 
+    {
+      "source": "56eaf44a-bb18-443d-80a1-935a0e64d6f2", 
+      "relation": "syard:hasLine", 
+      "target": "2b1cc7e6-8e39-4132-b3e8-7e7e79164457"
+    }, 
+    {
+      "source": "56eaf44a-bb18-443d-80a1-935a0e64d6f2", 
+      "relation": "syard:hasLine", 
+      "target": "c1a8b7c9-f471-46d1-a86c-1458cb36e176"
+    }, 
+    {
+      "source": "9aeb97d8-15db-42c4-9d9f-f7d271c2cd54", 
+      "relation": "syard:hasLine", 
+      "target": "f254e8a8-2d78-497c-bd2a-4a9976c3f863"
+    }, 
+    {
+      "source": "328060c7-c9b0-489a-a339-1b01305faf02", 
+      "relation": "syard:hasLine", 
+      "target": "f254e8a8-2d78-497c-bd2a-4a9976c3f863"
+    }, 
+    {
+      "source": "14684f21-1650-4b0c-a577-5fd1904612d3", 
+      "relation": "syard:hasLine", 
+      "target": "f254e8a8-2d78-497c-bd2a-4a9976c3f863"
+    }, 
+    {
+      "source": "14684f21-1650-4b0c-a577-5fd1904612d3", 
+      "relation": "syard:hasLine", 
+      "target": "3d898e3d-af5d-4693-940a-7e0451dd30b7"
+    }, 
+    {
+      "source": "5336c1b1-2d7c-44a1-99dc-f7de11240877", 
+      "relation": "syard:hasLine", 
+      "target": "f254e8a8-2d78-497c-bd2a-4a9976c3f863"
+    }, 
+    {
+      "source": "5336c1b1-2d7c-44a1-99dc-f7de11240877", 
+      "relation": "snet:hasBreakerConnections", 
+      "target": "efac9fae-64a2-4211-a5cf-49a2e5016ffb"
+    }, 
+    {
+      "source": "5336c1b1-2d7c-44a1-99dc-f7de11240877", 
+      "relation": "syard:hasLine", 
+      "target": "2b1cc7e6-8e39-4132-b3e8-7e7e79164457"
+    }, 
+    {
+      "source": "c1a8b7c9-f471-46d1-a86c-1458cb36e176", 
+      "relation": "syard:hasLine", 
+      "target": "834c21b2-0c57-40cc-bb15-ea70201efea9"
+    }, 
+    {
+      "source": "65986695-cc11-463e-ae2f-83a3df1258c4", 
+      "relation": "cptlc:hasEthernetLink", 
+      "target": "efac9fae-64a2-4211-a5cf-49a2e5016ffb"
+    }, 
+    {
+      "source": "9766a375-19b1-45dd-8891-8ebf7b8ce9e4", 
+      "relation": "syard:hasLine", 
+      "target": "2b68bfec-35df-4e6e-b694-6469e4504d5e"
+    }, 
+    {
+      "source": "97838e82-f3f6-46b2-82ac-48778c61df13", 
+      "relation": "syard:hasLine", 
+      "target": "2b68bfec-35df-4e6e-b694-6469e4504d5e"
+    }, 
+    {
+      "source": "a3a7b489-8c9c-47a7-8e5a-617786f166aa", 
+      "relation": "syard:hasLine", 
+      "target": "2b68bfec-35df-4e6e-b694-6469e4504d5e"
+    }, 
+    {
+      "source": "80535f3d-13b2-406f-9798-23f6ab8027da", 
+      "relation": "syard:hasLine", 
+      "target": "2b68bfec-35df-4e6e-b694-6469e4504d5e"
+    }, 
+    {
+      "source": "80535f3d-13b2-406f-9798-23f6ab8027da", 
+      "relation": "syard:hasLine", 
+      "target": "3ca757dc-7c1e-4aa3-ba6c-57c5e8e6a6fa"
+    }, 
+    {
+      "source": "f39a7ddf-3908-4daf-8e29-e281cd876c0c", 
+      "relation": "syard:hasLine", 
+      "target": "2316dbec-6fb4-4a7a-a99b-0a8a0a4a0929"
+    }, 
+    {
+      "source": "f39a7ddf-3908-4daf-8e29-e281cd876c0c", 
+      "relation": "syard:hasLine", 
+      "target": "2b68bfec-35df-4e6e-b694-6469e4504d5e"
+    }, 
+    {
+      "source": "f39a7ddf-3908-4daf-8e29-e281cd876c0c", 
+      "relation": "snet:hasBreakerConnections", 
+      "target": "af21a363-d391-4ec0-a1ed-0c82e283b8ae"
+    }, 
+    {
+      "source": "4e213ea2-35ca-4302-ac40-2e6fb489aaa3", 
+      "relation": "syard:hasLine", 
+      "target": "2316dbec-6fb4-4a7a-a99b-0a8a0a4a0929"
+    }
+  ]
+}

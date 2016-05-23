@@ -1,0 +1,177 @@
+{
+  "nodes": [
+    {
+      "rdfs:label": "Shelbyville ND 32", 
+      "rdfs:type": "syard:Node", 
+      "cptlc:hasURI": "http://Shelbyville-ND-32.yard.shelbyville.8sub.cypsa.projects.cptl-c.org", 
+      "cptlc:hasUUID": "113facb3-df90-42fe-9740-eb783f885147"
+    }, 
+    {
+      "rdfs:label": "Shelbyville BRK 3132", 
+      "rdfs:type": "syard:Breaker", 
+      "cptlc:hasURI": "http://Shelbyville-BRK-3132.yard.shelbyville.8sub.cypsa.projects.cptl-c.org", 
+      "cptlc:hasUUID": "54ecec38-a50e-4f94-b39b-715511627744"
+    }, 
+    {
+      "rdfs:label": "Shelbyville ND 31", 
+      "rdfs:type": "syard:Bus", 
+      "cptlc:hasURI": "http://Shelbyville-ND-31.yard.shelbyville.8sub.cypsa.projects.cptl-c.org", 
+      "cptlc:hasUUID": "2b1cc7e6-8e39-4132-b3e8-7e7e79164457"
+    }, 
+    {
+      "rdfs:label": "Shelbyville BRK 3031", 
+      "rdfs:type": "syard:Breaker", 
+      "cptlc:hasURI": "http://Shelbyville-BRK-3031.yard.shelbyville.8sub.cypsa.projects.cptl-c.org", 
+      "cptlc:hasUUID": "2916c10a-5a57-453a-990b-f2c1109af80e"
+    }, 
+    {
+      "rdfs:label": "Shelbyville ND 30", 
+      "rdfs:type": "syard:Node", 
+      "cptlc:hasURI": "http://Shelbyville-ND-30.yard.shelbyville.8sub.cypsa.projects.cptl-c.org", 
+      "cptlc:hasUUID": "c1a8b7c9-f471-46d1-a86c-1458cb36e176"
+    }, 
+    {
+      "rdfs:label": "Shelbyville UN Gen3", 
+      "rdfs:type": "syard:Generator", 
+      "cptlc:hasURI": "http://Shelbyville-UN-Gen3.yard.shelbyville.8sub.cypsa.projects.cptl-c.org", 
+      "cptlc:hasUUID": "834c21b2-0c57-40cc-bb15-ea70201efea9"
+    }, 
+    {
+      "rdfs:label": "Shelbyville BRK 2931", 
+      "rdfs:type": "syard:Breaker", 
+      "cptlc:hasURI": "http://Shelbyville-BRK-2931.yard.shelbyville.8sub.cypsa.projects.cptl-c.org", 
+      "cptlc:hasUUID": "b0145628-c7c1-4412-b5d5-30abd0957461"
+    }, 
+    {
+      "rdfs:label": "Shelbyville ND 29", 
+      "rdfs:type": "syard:Bus", 
+      "cptlc:hasURI": "http://Shelbyville-ND-29.yard.shelbyville.8sub.cypsa.projects.cptl-c.org", 
+      "cptlc:hasUUID": "f254e8a8-2d78-497c-bd2a-4a9976c3f863"
+    }, 
+    {
+      "rdfs:label": "Shelbyville BRK 2729", 
+      "rdfs:type": "syard:Breaker", 
+      "cptlc:hasURI": "http://Shelbyville-BRK-2729.yard.shelbyville.8sub.cypsa.projects.cptl-c.org", 
+      "cptlc:hasUUID": "1623aae2-4705-4d45-92a3-23849a6cfdaa"
+    }, 
+    {
+      "rdfs:label": "Shelbyville ND 27", 
+      "rdfs:type": "syard:Node", 
+      "cptlc:hasURI": "http://Shelbyville-ND-27.yard.shelbyville.8sub.cypsa.projects.cptl-c.org", 
+      "cptlc:hasUUID": "3d898e3d-af5d-4693-940a-7e0451dd30b7"
+    }, 
+    {
+      "rdfs:label": "Shelbyville BRK 2629", 
+      "rdfs:type": "syard:Breaker", 
+      "cptlc:hasURI": "http://Shelbyville-BRK-2629.yard.shelbyville.8sub.cypsa.projects.cptl-c.org", 
+      "cptlc:hasUUID": "328060c7-c9b0-489a-a339-1b01305faf02"
+    }, 
+    {
+      "rdfs:label": "Shelbyville ND 26", 
+      "rdfs:type": "syard:Node", 
+      "cptlc:hasURI": "http://Shelbyville-ND-26.yard.shelbyville.8sub.cypsa.projects.cptl-c.org", 
+      "cptlc:hasUUID": "3862ee64-8380-4ced-a344-f01e798e7457"
+    }, 
+    {
+      "rdfs:label": "Shelbyville BRK 2928", 
+      "rdfs:type": "syard:Breaker", 
+      "cptlc:hasURI": "http://Shelbyville-BRK-2928.yard.shelbyville.8sub.cypsa.projects.cptl-c.org", 
+      "cptlc:hasUUID": "9aeb97d8-15db-42c4-9d9f-f7d271c2cd54"
+    }, 
+    {
+      "rdfs:label": "Shelbyville ND 28", 
+      "rdfs:type": "syard:Node", 
+      "cptlc:hasURI": "http://Shelbyville-ND-28.yard.shelbyville.8sub.cypsa.projects.cptl-c.org", 
+      "cptlc:hasUUID": "4e8f781c-4371-46a9-a781-a8bb34c39927"
+    }, 
+    {
+      "rdfs:label": "North Haverbrook ND 14", 
+      "rdfs:type": "cptlc:Asset", 
+      "cptlc:hasURI": "http://North_Haverbrook-ND-14.yard.north-haverbrook.8sub.cypsa.projects.cptl-c.org", 
+      "cptlc:hasUUID": "452c1b6d-45a9-47a8-85d8-a0148673c16b"
+    }, 
+    {
+      "rdfs:label": "Cypress Creek ND 22", 
+      "rdfs:type": "cptlc:Asset", 
+      "cptlc:hasURI": "http://Cypress_Creek-ND-22.yard.cypress-creek.8sub.cypsa.projects.cptl-c.org", 
+      "cptlc:hasUUID": "d35c96db-2afa-49fe-8bbd-fa31aafd3a31"
+    }
+  ], 
+  "links": [
+    {
+      "source": "113facb3-df90-42fe-9740-eb783f885147", 
+      "relation": "syard:hasLine", 
+      "target": "54ecec38-a50e-4f94-b39b-715511627744"
+    }, 
+    {
+      "source": "54ecec38-a50e-4f94-b39b-715511627744", 
+      "relation": "syard:hasLine", 
+      "target": "2b1cc7e6-8e39-4132-b3e8-7e7e79164457"
+    }, 
+    {
+      "source": "2b1cc7e6-8e39-4132-b3e8-7e7e79164457", 
+      "relation": "syard:hasLine", 
+      "target": "b0145628-c7c1-4412-b5d5-30abd0957461"
+    }, 
+    {
+      "source": "2b1cc7e6-8e39-4132-b3e8-7e7e79164457", 
+      "relation": "syard:hasLine", 
+      "target": "2916c10a-5a57-453a-990b-f2c1109af80e"
+    }, 
+    {
+      "source": "2916c10a-5a57-453a-990b-f2c1109af80e", 
+      "relation": "syard:hasLine", 
+      "target": "c1a8b7c9-f471-46d1-a86c-1458cb36e176"
+    }, 
+    {
+      "source": "c1a8b7c9-f471-46d1-a86c-1458cb36e176", 
+      "relation": "syard:hasLine", 
+      "target": "834c21b2-0c57-40cc-bb15-ea70201efea9"
+    }, 
+    {
+      "source": "b0145628-c7c1-4412-b5d5-30abd0957461", 
+      "relation": "syard:hasLine", 
+      "target": "f254e8a8-2d78-497c-bd2a-4a9976c3f863"
+    }, 
+    {
+      "source": "f254e8a8-2d78-497c-bd2a-4a9976c3f863", 
+      "relation": "syard:hasLine", 
+      "target": "1623aae2-4705-4d45-92a3-23849a6cfdaa"
+    }, 
+    {
+      "source": "f254e8a8-2d78-497c-bd2a-4a9976c3f863", 
+      "relation": "syard:hasLine", 
+      "target": "328060c7-c9b0-489a-a339-1b01305faf02"
+    }, 
+    {
+      "source": "f254e8a8-2d78-497c-bd2a-4a9976c3f863", 
+      "relation": "syard:hasLine", 
+      "target": "9aeb97d8-15db-42c4-9d9f-f7d271c2cd54"
+    }, 
+    {
+      "source": "1623aae2-4705-4d45-92a3-23849a6cfdaa", 
+      "relation": "syard:hasLine", 
+      "target": "3d898e3d-af5d-4693-940a-7e0451dd30b7"
+    }, 
+    {
+      "source": "328060c7-c9b0-489a-a339-1b01305faf02", 
+      "relation": "syard:hasLine", 
+      "target": "3862ee64-8380-4ced-a344-f01e798e7457"
+    }, 
+    {
+      "source": "3862ee64-8380-4ced-a344-f01e798e7457", 
+      "relation": "syard:hasLine", 
+      "target": "452c1b6d-45a9-47a8-85d8-a0148673c16b"
+    }, 
+    {
+      "source": "9aeb97d8-15db-42c4-9d9f-f7d271c2cd54", 
+      "relation": "syard:hasLine", 
+      "target": "4e8f781c-4371-46a9-a781-a8bb34c39927"
+    }, 
+    {
+      "source": "4e8f781c-4371-46a9-a781-a8bb34c39927", 
+      "relation": "syard:hasLine", 
+      "target": "d35c96db-2afa-49fe-8bbd-fa31aafd3a31"
+    }
+  ]
+}

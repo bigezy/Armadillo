@@ -1,0 +1,138 @@
+{
+  "nodes": [
+    {
+      "rdfs:label": "Capital City BRK 4647", 
+      "rdfs:type": "syard:Breaker", 
+      "cptlc:hasUUID": "c49f979c-12a3-406d-aa2d-03d0066ea33f", 
+      "cptlc:hasURI": "http://Capital_City-BRK-4647.yard.capital-city.8sub.cypsa.projects.cptl-c.org", 
+      "cptlc:hasAliases": "2fb45dfb-2024-4e9b-be90-aeaa791df54b"
+    }, 
+    {
+      "rdfs:label": "Capital City BRK 4546", 
+      "rdfs:type": "syard:Breaker", 
+      "cptlc:hasUUID": "379e20aa-da69-452e-b176-01333515e4f4", 
+      "cptlc:hasURI": "http://Capital_City-BRK-4546.yard.capital-city.8sub.cypsa.projects.cptl-c.org", 
+      "cptlc:hasAliases": "62e9bea6-a84c-484c-b5c9-6496d3ac8a1a"
+    }, 
+    {
+      "rdfs:label": "Capital City ND 45", 
+      "rdfs:type": "syard:Node", 
+      "cptlc:hasURI": "http://Capital_City-ND-45.yard.capital-city.8sub.cypsa.projects.cptl-c.org", 
+      "cptlc:hasUUID": "be7338e9-28f7-4421-a16f-027094cf8fe8"
+    }, 
+    {
+      "rdfs:label": "Capital City ND 46", 
+      "rdfs:type": "syard:Bus", 
+      "cptlc:hasURI": "http://Capital_City-ND-46.yard.capital-city.8sub.cypsa.projects.cptl-c.org", 
+      "cptlc:hasUUID": "f6372823-8c2c-4786-9d5a-19c288ea6eda"
+    }, 
+    {
+      "rdfs:label": "Capital City ND 47", 
+      "rdfs:type": "syard:Node", 
+      "cptlc:hasURI": "http://Capital_City-ND-47.yard.capital-city.8sub.cypsa.projects.cptl-c.org", 
+      "cptlc:hasUUID": "3271cedd-d5d6-4756-825a-18d11902bb19"
+    }, 
+    {
+      "rdfs:label": "Cypress Creek TX 4545", 
+      "rdfs:type": "syard:Transformer", 
+      "cptlc:hasURI": "http://Cypress_Creek-TX-4545.yard.cypress-creek.8sub.cypsa.projects.cptl-c.org", 
+      "cptlc:hasUUID": "2eea5e6e-240e-4f4e-b3e3-846155aed8cd"
+    }, 
+    {
+      "rdfs:label": "Capital City Switch 1", 
+      "rdfs:type": "snet:Switch", 
+      "cptlc:hasUUID": "77f78ca0-3f59-4d28-b098-f6d67e581623", 
+      "enet:hasIPAddressValue": "192.168.7.200", 
+      "cptlc:hasURI": "http://Switch_1.network.capital-city.8sub.cypsa.projects.cptl-c.org"
+    }, 
+    {
+      "rdfs:label": "Capital City Distance Relay 1", 
+      "rdfs:type": "snet:DistanceRelay", 
+      "cptlc:hasUUID": "2753c46f-0a3c-4213-8f3c-41dc16e8a60a", 
+      "enet:hasIPAddressValue": "10.37.1.201", 
+      "cptlc:hasURI": "http://DistanceRelay_1.network.capital-city.8sub.cypsa.projects.cptl-c.org"
+    }, 
+    {
+      "rdfs:label": "Capital City Overcurrent Relay 1", 
+      "rdfs:type": "snet:OvercurrentRelay", 
+      "cptlc:hasUUID": "5132181c-be87-4ced-b3a9-b7140e5ff39c", 
+      "enet:hasIPAddressValue": "10.37.1.101", 
+      "cptlc:hasURI": "http://OvercurrentRelay_1.network.capital-city.8sub.cypsa.projects.cptl-c.org"
+    }, 
+    {
+      "rdfs:label": "Capital City Overcurrent Relay 2", 
+      "rdfs:type": "snet:OvercurrentRelay", 
+      "cptlc:hasUUID": "439a58ac-e7b2-45ce-a341-d33889b8a7ff", 
+      "enet:hasIPAddressValue": "10.37.1.102", 
+      "cptlc:hasURI": "http://OvercurrentRelay_2.network.capital-city.8sub.cypsa.projects.cptl-c.org"
+    }, 
+    {
+      "rdfs:label": "Cypress Creek SEL 421 7", 
+      "rdfs:type": "snet-sel:421", 
+      "cptlc:hasURI": "http://SEL_421_7.network.cypress-creek.8sub.cypsa.projects.cptl-c.org", 
+      "cptlc:hasUUID": "d5f19e38-e00a-404f-9c6b-123ae4eebde2"
+    }
+  ], 
+  "links": [
+    {
+      "source": "c49f979c-12a3-406d-aa2d-03d0066ea33f", 
+      "relation": "snet:hasBreakerConnections", 
+      "target": "439a58ac-e7b2-45ce-a341-d33889b8a7ff"
+    }, 
+    {
+      "source": "c49f979c-12a3-406d-aa2d-03d0066ea33f", 
+      "relation": "syard:hasLine", 
+      "target": "f6372823-8c2c-4786-9d5a-19c288ea6eda"
+    }, 
+    {
+      "source": "c49f979c-12a3-406d-aa2d-03d0066ea33f", 
+      "relation": "syard:hasLine", 
+      "target": "3271cedd-d5d6-4756-825a-18d11902bb19"
+    }, 
+    {
+      "source": "379e20aa-da69-452e-b176-01333515e4f4", 
+      "relation": "snet:hasBreakerConnections", 
+      "target": "5132181c-be87-4ced-b3a9-b7140e5ff39c"
+    }, 
+    {
+      "source": "379e20aa-da69-452e-b176-01333515e4f4", 
+      "relation": "syard:hasLine", 
+      "target": "be7338e9-28f7-4421-a16f-027094cf8fe8"
+    }, 
+    {
+      "source": "379e20aa-da69-452e-b176-01333515e4f4", 
+      "relation": "syard:hasLine", 
+      "target": "f6372823-8c2c-4786-9d5a-19c288ea6eda"
+    }, 
+    {
+      "source": "379e20aa-da69-452e-b176-01333515e4f4", 
+      "relation": "snet:hasBreakerConnections", 
+      "target": "2753c46f-0a3c-4213-8f3c-41dc16e8a60a"
+    }, 
+    {
+      "source": "be7338e9-28f7-4421-a16f-027094cf8fe8", 
+      "relation": "syard:hasLine", 
+      "target": "2eea5e6e-240e-4f4e-b3e3-846155aed8cd"
+    }, 
+    {
+      "source": "77f78ca0-3f59-4d28-b098-f6d67e581623", 
+      "relation": "cptlc:hasEthernetLink", 
+      "target": "5132181c-be87-4ced-b3a9-b7140e5ff39c"
+    }, 
+    {
+      "source": "2753c46f-0a3c-4213-8f3c-41dc16e8a60a", 
+      "relation": "cptlc:hasSerialLink", 
+      "target": "5132181c-be87-4ced-b3a9-b7140e5ff39c"
+    }, 
+    {
+      "source": "2753c46f-0a3c-4213-8f3c-41dc16e8a60a", 
+      "relation": "cptlc:hasFiberEthernetLink", 
+      "target": "d5f19e38-e00a-404f-9c6b-123ae4eebde2"
+    }, 
+    {
+      "source": "2753c46f-0a3c-4213-8f3c-41dc16e8a60a", 
+      "relation": "cptlc:hasSerialLink", 
+      "target": "439a58ac-e7b2-45ce-a341-d33889b8a7ff"
+    }
+  ]
+}

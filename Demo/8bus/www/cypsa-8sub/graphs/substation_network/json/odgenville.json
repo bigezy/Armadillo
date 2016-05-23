@@ -1,0 +1,193 @@
+{
+  "nodes": [
+    {
+      "rdfs:label": "Odgenville SEL 3620", 
+      "rdfs:type": "snet-sel:3620", 
+      "cptlc:hasURI": "http://SEL_3620.network.odgenville.8sub.cypsa.projects.cptl-c.org", 
+      "enet:hasIPAddressValue": "192.168.4.200", 
+      "cptlc:hasUUID": "aba37a93-1e83-4a65-8598-1a865d99a6ad"
+    }, 
+    {
+      "rdfs:label": "Odgenville SEL 421 1", 
+      "rdfs:type": "snet-sel:421", 
+      "cptlc:hasURI": "http://SEL_421_1.network.odgenville.8sub.cypsa.projects.cptl-c.org", 
+      "enet:hasIPAddressValue": "10.34.1.201", 
+      "cptlc:hasUUID": "bb2c3b34-8299-437f-a162-f79a6e72640d"
+    }, 
+    {
+      "rdfs:label": "Odgenville SEL 421 2", 
+      "rdfs:type": "snet-sel:421", 
+      "cptlc:hasURI": "http://SEL_421_2.network.odgenville.8sub.cypsa.projects.cptl-c.org", 
+      "enet:hasIPAddressValue": "10.34.1.202", 
+      "cptlc:hasUUID": "bdda7db1-1d59-4b99-a015-008b57cec064"
+    }, 
+    {
+      "rdfs:label": "Odgenville SEL 451 1", 
+      "rdfs:type": "snet-sel:451", 
+      "cptlc:hasURI": "http://SEL_451_1.network.odgenville.8sub.cypsa.projects.cptl-c.org", 
+      "enet:hasIPAddressValue": "10.34.1.101", 
+      "cptlc:hasUUID": "cf98e3de-4318-46fe-8645-b39fb26f2627"
+    }, 
+    {
+      "rdfs:label": "Odgenville SEL 451 2", 
+      "rdfs:type": "snet-sel:451", 
+      "cptlc:hasURI": "http://SEL_451_2.network.odgenville.8sub.cypsa.projects.cptl-c.org", 
+      "enet:hasIPAddressValue": "10.34.1.102", 
+      "cptlc:hasUUID": "28b2617f-3245-467b-a2e5-1b0e149589b2"
+    }, 
+    {
+      "rdfs:label": "Odgenville SEL 451 3", 
+      "rdfs:type": "snet-sel:451", 
+      "cptlc:hasURI": "http://SEL_451_3.network.odgenville.8sub.cypsa.projects.cptl-c.org", 
+      "enet:hasIPAddressValue": "10.34.1.103", 
+      "cptlc:hasUUID": "afbe4c7c-ca25-404b-a56d-554a96e31928"
+    }, 
+    {
+      "rdfs:label": "Cypress Creek SEL 421 6", 
+      "rdfs:type": "snet-sel:421", 
+      "cptlc:hasURI": "http://SEL_421_6.network.cypress-creek.8sub.cypsa.projects.cptl-c.org", 
+      "cptlc:hasUUID": "02b71caa-d730-4577-91dd-e960c78d869b"
+    }, 
+    {
+      "rdfs:label": "North Haverbrook Distance Relay 1", 
+      "rdfs:type": "snet:DistanceRelay", 
+      "cptlc:hasURI": "http://DistanceRelay_1.network.north-haverbrook.8sub.cypsa.projects.cptl-c.org", 
+      "cptlc:hasUUID": "ed9c5caf-1309-40b2-81a3-72f1ab68d683"
+    }, 
+    {
+      "rdfs:label": "Odgenville BRK 14", 
+      "rdfs:type": "syard:Breaker", 
+      "cptlc:hasURI": "http://Odgenville-BRK-14.yard.odgenville.8sub.cypsa.projects.cptl-c.org", 
+      "cptlc:hasUUID": "0529e661-acc9-449f-aa55-9195fd4d84e6"
+    }, 
+    {
+      "rdfs:label": "Odgenville BRK 12", 
+      "rdfs:type": "syard:Breaker", 
+      "cptlc:hasURI": "http://Odgenville-BRK-12.yard.odgenville.8sub.cypsa.projects.cptl-c.org", 
+      "cptlc:hasUUID": "5be74b36-a578-409a-b355-e51533fe5e79"
+    }, 
+    {
+      "rdfs:label": "Odgenville BRK 42", 
+      "rdfs:type": "syard:Breaker", 
+      "cptlc:hasURI": "http://Odgenville-BRK-42.yard.odgenville.8sub.cypsa.projects.cptl-c.org", 
+      "cptlc:hasUUID": "4a96d2ea-ecf4-4171-a5ee-e1958c8103ee"
+    }, 
+    {
+      "rdfs:label": "Odgenville BRK 23", 
+      "rdfs:type": "syard:Breaker", 
+      "cptlc:hasURI": "http://Odgenville-BRK-23.yard.odgenville.8sub.cypsa.projects.cptl-c.org", 
+      "cptlc:hasUUID": "b13aafed-99af-4fc0-b53f-e273802a1ea7"
+    }, 
+    {
+      "rdfs:label": "Odgenville BRK 34", 
+      "rdfs:type": "syard:Breaker", 
+      "cptlc:hasURI": "http://Odgenville-BRK-34.yard.odgenville.8sub.cypsa.projects.cptl-c.org", 
+      "cptlc:hasUUID": "c49558e3-a38c-4314-9d7a-64a4fb74823d"
+    }, 
+    {
+      "rdfs:label": "Odgenville BRK 25", 
+      "rdfs:type": "syard:Breaker", 
+      "cptlc:hasURI": "http://Odgenville-BRK-25.yard.odgenville.8sub.cypsa.projects.cptl-c.org", 
+      "cptlc:hasUUID": "7c37443e-a221-41ec-bcd9-9b2480e32ab1"
+    }, 
+    {
+      "rdfs:label": "Odgenville BRK 56", 
+      "rdfs:type": "syard:Breaker", 
+      "cptlc:hasURI": "http://Odgenville-BRK-56.yard.odgenville.8sub.cypsa.projects.cptl-c.org", 
+      "cptlc:hasUUID": "c81b71fc-8677-4887-974b-a9cba0939904"
+    }, 
+    {
+      "rdfs:label": "Odgenville BRK 62", 
+      "rdfs:type": "syard:Breaker", 
+      "cptlc:hasURI": "http://Odgenville-BRK-62.yard.odgenville.8sub.cypsa.projects.cptl-c.org", 
+      "cptlc:hasUUID": "af8aa8da-7f9d-454d-85e8-1cb4678fa7d7"
+    }
+  ], 
+  "links": [
+    {
+      "source": "aba37a93-1e83-4a65-8598-1a865d99a6ad", 
+      "relation": "cptlc:hasEthernetLink", 
+      "target": "bb2c3b34-8299-437f-a162-f79a6e72640d"
+    }, 
+    {
+      "source": "aba37a93-1e83-4a65-8598-1a865d99a6ad", 
+      "relation": "cptlc:hasEthernetLink", 
+      "target": "bdda7db1-1d59-4b99-a015-008b57cec064"
+    }, 
+    {
+      "source": "aba37a93-1e83-4a65-8598-1a865d99a6ad", 
+      "relation": "cptlc:hasEthernetLink", 
+      "target": "cf98e3de-4318-46fe-8645-b39fb26f2627"
+    }, 
+    {
+      "source": "aba37a93-1e83-4a65-8598-1a865d99a6ad", 
+      "relation": "cptlc:hasEthernetLink", 
+      "target": "28b2617f-3245-467b-a2e5-1b0e149589b2"
+    }, 
+    {
+      "source": "aba37a93-1e83-4a65-8598-1a865d99a6ad", 
+      "relation": "cptlc:hasEthernetLink", 
+      "target": "afbe4c7c-ca25-404b-a56d-554a96e31928"
+    }, 
+    {
+      "source": "bb2c3b34-8299-437f-a162-f79a6e72640d", 
+      "relation": "cptlc:hasFiberEthernetLink", 
+      "target": "02b71caa-d730-4577-91dd-e960c78d869b"
+    }, 
+    {
+      "source": "bdda7db1-1d59-4b99-a015-008b57cec064", 
+      "relation": "cptlc:hasFiberEthernetLink", 
+      "target": "ed9c5caf-1309-40b2-81a3-72f1ab68d683"
+    }, 
+    {
+      "source": "cf98e3de-4318-46fe-8645-b39fb26f2627", 
+      "relation": "snet:hasBreakerConnections", 
+      "target": "0529e661-acc9-449f-aa55-9195fd4d84e6"
+    }, 
+    {
+      "source": "cf98e3de-4318-46fe-8645-b39fb26f2627", 
+      "relation": "snet:hasBreakerConnections", 
+      "target": "5be74b36-a578-409a-b355-e51533fe5e79"
+    }, 
+    {
+      "source": "28b2617f-3245-467b-a2e5-1b0e149589b2", 
+      "relation": "snet:hasBreakerConnections", 
+      "target": "0529e661-acc9-449f-aa55-9195fd4d84e6"
+    }, 
+    {
+      "source": "28b2617f-3245-467b-a2e5-1b0e149589b2", 
+      "relation": "snet:hasBreakerConnections", 
+      "target": "4a96d2ea-ecf4-4171-a5ee-e1958c8103ee"
+    }, 
+    {
+      "source": "28b2617f-3245-467b-a2e5-1b0e149589b2", 
+      "relation": "snet:hasBreakerConnections", 
+      "target": "b13aafed-99af-4fc0-b53f-e273802a1ea7"
+    }, 
+    {
+      "source": "28b2617f-3245-467b-a2e5-1b0e149589b2", 
+      "relation": "snet:hasBreakerConnections", 
+      "target": "c49558e3-a38c-4314-9d7a-64a4fb74823d"
+    }, 
+    {
+      "source": "28b2617f-3245-467b-a2e5-1b0e149589b2", 
+      "relation": "snet:hasBreakerConnections", 
+      "target": "5be74b36-a578-409a-b355-e51533fe5e79"
+    }, 
+    {
+      "source": "afbe4c7c-ca25-404b-a56d-554a96e31928", 
+      "relation": "snet:hasBreakerConnections", 
+      "target": "7c37443e-a221-41ec-bcd9-9b2480e32ab1"
+    }, 
+    {
+      "source": "afbe4c7c-ca25-404b-a56d-554a96e31928", 
+      "relation": "snet:hasBreakerConnections", 
+      "target": "c81b71fc-8677-4887-974b-a9cba0939904"
+    }, 
+    {
+      "source": "afbe4c7c-ca25-404b-a56d-554a96e31928", 
+      "relation": "snet:hasBreakerConnections", 
+      "target": "af8aa8da-7f9d-454d-85e8-1cb4678fa7d7"
+    }
+  ]
+}

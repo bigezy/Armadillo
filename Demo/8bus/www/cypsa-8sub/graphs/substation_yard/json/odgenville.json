@@ -1,0 +1,181 @@
+{
+  "nodes": [
+    {
+      "rdfs:label": "Odgenville UN Gen1", 
+      "rdfs:type": "syard:Generator", 
+      "cptlc:hasURI": "http://Odgenville-UN-Gen1.yard.odgenville.8sub.cypsa.projects.cptl-c.org", 
+      "cptlc:hasUUID": "f46f0289-b824-47c3-905d-85dc4f45cb69"
+    }, 
+    {
+      "rdfs:label": "Odgenville ND 1", 
+      "rdfs:type": "syard:Node", 
+      "cptlc:hasURI": "http://Odgenville-ND-1.yard.odgenville.8sub.cypsa.projects.cptl-c.org", 
+      "cptlc:hasUUID": "f7cc29e6-4d96-47e5-af7f-89634551e5c9"
+    }, 
+    {
+      "rdfs:label": "Odgenville BRK 14", 
+      "rdfs:type": "syard:Breaker", 
+      "cptlc:hasURI": "http://Odgenville-BRK-14.yard.odgenville.8sub.cypsa.projects.cptl-c.org", 
+      "cptlc:hasUUID": "f631b4ca-11f8-463a-b2b0-dde53089aa20"
+    }, 
+    {
+      "rdfs:label": "Odgenville BRK 12", 
+      "rdfs:type": "syard:Breaker", 
+      "cptlc:hasURI": "http://Odgenville-BRK-12.yard.odgenville.8sub.cypsa.projects.cptl-c.org", 
+      "cptlc:hasUUID": "27f0e259-2fc8-48eb-98d0-5855eb9dab30"
+    }, 
+    {
+      "rdfs:label": "Odgenville ND 2", 
+      "rdfs:type": "syard:Bus", 
+      "cptlc:hasURI": "http://Odgenville-ND-2.yard.odgenville.8sub.cypsa.projects.cptl-c.org", 
+      "cptlc:hasUUID": "1fcc2b5a-b47f-4875-8df1-e6df70a929a9"
+    }, 
+    {
+      "rdfs:label": "Odgenville BRK 42", 
+      "rdfs:type": "syard:Breaker", 
+      "cptlc:hasURI": "http://Odgenville-BRK-42.yard.odgenville.8sub.cypsa.projects.cptl-c.org", 
+      "cptlc:hasUUID": "66763827-6b0a-462a-be68-56b12ef46399"
+    }, 
+    {
+      "rdfs:label": "Odgenville ND 4", 
+      "rdfs:type": "syard:Bus", 
+      "cptlc:hasURI": "http://Odgenville-ND-4.yard.odgenville.8sub.cypsa.projects.cptl-c.org", 
+      "cptlc:hasUUID": "81c73eb6-420a-454f-8338-472371ce3534"
+    }, 
+    {
+      "rdfs:label": "Odgenville BRK 34", 
+      "rdfs:type": "syard:Breaker", 
+      "cptlc:hasURI": "http://Odgenville-BRK-34.yard.odgenville.8sub.cypsa.projects.cptl-c.org", 
+      "cptlc:hasUUID": "cd4bf17d-75a0-40f0-83cf-5fe390aa9148"
+    }, 
+    {
+      "rdfs:label": "Odgenville ND 3", 
+      "rdfs:type": "syard:Node", 
+      "cptlc:hasURI": "http://Odgenville-ND-3.yard.odgenville.8sub.cypsa.projects.cptl-c.org", 
+      "cptlc:hasUUID": "86c3ff63-f28e-4797-84b3-11f059527038"
+    }, 
+    {
+      "rdfs:label": "Odgenville BRK 23", 
+      "rdfs:type": "syard:Breaker", 
+      "cptlc:hasURI": "http://Odgenville-BRK-23.yard.odgenville.8sub.cypsa.projects.cptl-c.org", 
+      "cptlc:hasUUID": "b42a69b0-a20f-41e5-92ac-2726f58fae5b"
+    }, 
+    {
+      "rdfs:label": "Odgenville BRK 25", 
+      "rdfs:type": "syard:Breaker", 
+      "cptlc:hasURI": "http://Odgenville-BRK-25.yard.odgenville.8sub.cypsa.projects.cptl-c.org", 
+      "cptlc:hasUUID": "70b6ae3d-b0b9-4ecb-87e4-cc3a29a31062"
+    }, 
+    {
+      "rdfs:label": "Odgenville ND 5", 
+      "rdfs:type": "syard:Bus", 
+      "cptlc:hasURI": "http://Odgenville-ND-5.yard.odgenville.8sub.cypsa.projects.cptl-c.org", 
+      "cptlc:hasUUID": "f1d4601a-4caf-44dc-9b08-e04b22cae1d5"
+    }, 
+    {
+      "rdfs:label": "Odgenville BRK 56", 
+      "rdfs:type": "syard:Breaker", 
+      "cptlc:hasURI": "http://Odgenville-BRK-56.yard.odgenville.8sub.cypsa.projects.cptl-c.org", 
+      "cptlc:hasUUID": "806c6126-ada2-445f-8c93-1de33ae8eb63"
+    }, 
+    {
+      "rdfs:label": "Odgenville ND 6", 
+      "rdfs:type": "syard:Node", 
+      "cptlc:hasURI": "http://Odgenville-ND-6.yard.odgenville.8sub.cypsa.projects.cptl-c.org", 
+      "cptlc:hasUUID": "4e2ec78f-4c72-46e2-8047-01bd51c2521d"
+    }, 
+    {
+      "rdfs:label": "Odgenville BRK 62", 
+      "rdfs:type": "syard:Breaker", 
+      "cptlc:hasURI": "http://Odgenville-BRK-62.yard.odgenville.8sub.cypsa.projects.cptl-c.org", 
+      "cptlc:hasUUID": "88df51b5-6dbb-4844-9a65-9d88f441d0d1"
+    }
+  ], 
+  "links": [
+    {
+      "source": "f46f0289-b824-47c3-905d-85dc4f45cb69", 
+      "relation": "syard:hasLine", 
+      "target": "f7cc29e6-4d96-47e5-af7f-89634551e5c9"
+    }, 
+    {
+      "source": "f7cc29e6-4d96-47e5-af7f-89634551e5c9", 
+      "relation": "syard:hasLine", 
+      "target": "27f0e259-2fc8-48eb-98d0-5855eb9dab30"
+    }, 
+    {
+      "source": "f7cc29e6-4d96-47e5-af7f-89634551e5c9", 
+      "relation": "syard:hasLine", 
+      "target": "f631b4ca-11f8-463a-b2b0-dde53089aa20"
+    }, 
+    {
+      "source": "27f0e259-2fc8-48eb-98d0-5855eb9dab30", 
+      "relation": "syard:hasLine", 
+      "target": "1fcc2b5a-b47f-4875-8df1-e6df70a929a9"
+    }, 
+    {
+      "source": "66763827-6b0a-462a-be68-56b12ef46399", 
+      "relation": "syard:hasLine", 
+      "target": "81c73eb6-420a-454f-8338-472371ce3534"
+    }, 
+    {
+      "source": "81c73eb6-420a-454f-8338-472371ce3534", 
+      "relation": "syard:hasLine", 
+      "target": "f631b4ca-11f8-463a-b2b0-dde53089aa20"
+    }, 
+    {
+      "source": "81c73eb6-420a-454f-8338-472371ce3534", 
+      "relation": "syard:hasLine", 
+      "target": "cd4bf17d-75a0-40f0-83cf-5fe390aa9148"
+    }, 
+    {
+      "source": "cd4bf17d-75a0-40f0-83cf-5fe390aa9148", 
+      "relation": "syard:hasLine", 
+      "target": "86c3ff63-f28e-4797-84b3-11f059527038"
+    }, 
+    {
+      "source": "86c3ff63-f28e-4797-84b3-11f059527038", 
+      "relation": "syard:hasLine", 
+      "target": "b42a69b0-a20f-41e5-92ac-2726f58fae5b"
+    }, 
+    {
+      "source": "b42a69b0-a20f-41e5-92ac-2726f58fae5b", 
+      "relation": "syard:hasLine", 
+      "target": "1fcc2b5a-b47f-4875-8df1-e6df70a929a9"
+    }, 
+    {
+      "source": "1fcc2b5a-b47f-4875-8df1-e6df70a929a9", 
+      "relation": "syard:hasLine", 
+      "target": "66763827-6b0a-462a-be68-56b12ef46399"
+    }, 
+    {
+      "source": "1fcc2b5a-b47f-4875-8df1-e6df70a929a9", 
+      "relation": "syard:hasLine", 
+      "target": "70b6ae3d-b0b9-4ecb-87e4-cc3a29a31062"
+    }, 
+    {
+      "source": "1fcc2b5a-b47f-4875-8df1-e6df70a929a9", 
+      "relation": "syard:hasLine", 
+      "target": "88df51b5-6dbb-4844-9a65-9d88f441d0d1"
+    }, 
+    {
+      "source": "70b6ae3d-b0b9-4ecb-87e4-cc3a29a31062", 
+      "relation": "syard:hasLine", 
+      "target": "f1d4601a-4caf-44dc-9b08-e04b22cae1d5"
+    }, 
+    {
+      "source": "f1d4601a-4caf-44dc-9b08-e04b22cae1d5", 
+      "relation": "syard:hasLine", 
+      "target": "806c6126-ada2-445f-8c93-1de33ae8eb63"
+    }, 
+    {
+      "source": "806c6126-ada2-445f-8c93-1de33ae8eb63", 
+      "relation": "syard:hasLine", 
+      "target": "4e2ec78f-4c72-46e2-8047-01bd51c2521d"
+    }, 
+    {
+      "source": "4e2ec78f-4c72-46e2-8047-01bd51c2521d", 
+      "relation": "syard:hasLine", 
+      "target": "88df51b5-6dbb-4844-9a65-9d88f441d0d1"
+    }
+  ]
+}
