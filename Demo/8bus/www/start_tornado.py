@@ -45,7 +45,7 @@ class MyHandler(FileSystemEventHandler):
 
     def runCypsa(self, projectPath):
         project=projectPath.split("\\")
-        batFileCmd = CypsaEnginePath+" " + project[len(project)-2] +" " + "10.1.31.101"
+        batFileCmd = CypsaEnginePath+" " + project[len(project)-2] +" " + "10.1.31.101"+" " + "offline"
         print batFileCmd
         #from subprocess import Popen
         #p = Popen(batFileCmd, cwd=CypsaEngineRoot)
