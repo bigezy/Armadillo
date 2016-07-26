@@ -45,7 +45,7 @@ class MyHandler(FileSystemEventHandler):
 
     def runCypsa(self, projectPath):
         project=projectPath.split("\\")
-        batFileCmd = CypsaEnginePath+" " + project[len(project)-2] +" " + "10.1.31.101"+" " + "offline"
+        batFileCmd = CypsaEnginePath+" " + project[len(project)-2] +" " + "10.1.31.101"
         print batFileCmd
         #from subprocess import Popen
         #p = Popen(batFileCmd, cwd=CypsaEngineRoot)
@@ -312,7 +312,7 @@ class CypsaAnalysisWebSocketHandler(tornado.websocket.WebSocketHandler):
         projectinfo=(message.split(","))
         project=projectinfo[0].split("/")
         reply="This is Cypsa analysis project: "+projectinfo[0]
-        batFileCmd = CypsaEnginePath+" " + project[len(project)-2] +" " + projectinfo[1]
+        batFileCmd = CypsaEnginePath+" " + project[len(project)-2] +" " + projectinfo[1]+" " + "offline"
         print "Compromised process:"+batFileCmd
         cwdir=os.getcwd()
         os.chdir(CypsaEngineRoot)
