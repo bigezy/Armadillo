@@ -8,7 +8,7 @@ TIMEOUT /T 2
 
 cd /d "C:\armadillo\Demo\8bus\www"
 
-start C:\armadillo\Demo\8bus\www\start_tornado.exe 
+start C:\armadillo\Demo\8bus\www\start_tornado.exe C:\armadillo\Demo\8bus\projects\8bus\npv
 REM C:\armadillo\Demo\8bus\projects\8bus\npv
 
 TIMEOUT /T 2
