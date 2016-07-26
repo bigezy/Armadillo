@@ -3,15 +3,17 @@ CLS
 
 
 REM ECHO "START CYPSA Tool"
-REM -- @TODO Check that project name is passed as argument and exists	
+REM -- @TODO Check that project name is passed as argument and exists
+	
 IF "%1" == "" (
-	ECHO "<USAGE> %0 [project_name] [entry node IP]"
+	ECHO "<USAGE> %0 [project_name] [entry node IP] <offline>"
     EXIT /B
 )
 IF "%2" == "" (
-	ECHO "<USAGE> %0 [project_name] [entry node IP]"
+	ECHO "<USAGE> %0 [project_name] [entry node IP] [-offline]"
     EXIT /B
 )
+
 SET PROJECT_PATH=%cd%\..
 SET PROJECT_NAME=%1
 REM for 8bus, use 10.31.1.201
@@ -27,6 +29,7 @@ REM start /d "path" file.exe
 
 SET PROJECT_FOLDER= %PROJECT_PATH%\projects\%project_name%
 SET NPV_GRAPH_ARGS=-d -c %PROJECT_FOLDER%\npv\connectivity.csv -s -t %PROJECT_FOLDER%\npv\topology-dict.json -a %PROJECT_FOLDER%\\critical-assets.txt -i %PROJECT_FOLDER%\\npv\\compromised.csv -p %PROJECT_FOLDER%\\npv\\patched.csv -n %PROJECT_FOLDER% -e %ENTRY_NODE%
+SET CYPSA_ENGINE_ARGS=online
 SET PW_PATH=PW\CPPW.exe
 SET SOCCA_PATH=CyPsaEngine\CYPSA_Engine.exe
 SET NPV_GRAPH_FILE=NPVGraph\np_vgraph.py
@@ -91,16 +94,19 @@ ping 127.0.0.1 -n 4 > nul
 REM ---------------------------->
 REM
 REM Start SOCCA Server
+IF not "%3" == "" (
+	SET CYPSA_ENGINE_ARGS=offline
+	ECHO offline!
+)
 IF EXIST %AUTOCONNECT_FILE% (
 	ECHO "Start SOCCA Server"
-	call launchProc.bat "%cd%\%SOCCA_PATH%" "%cd%\%PID_FILE%"
+	call launchProc.bat "%cd%\%SOCCA_PATH% %CYPSA_ENGINE_ARGS%" "%cd%\%PID_FILE%"
 )
 
 REM ---------------------------->
 REM
 REM Run PowerWorld CP-Trainer and autoconnect
-IF EXIST PW (
+IF EXIST PW IF "%3"=="" (
 	ECHO "START PowerWorld"
 	call launchProc.bat "%cd%\%PW_PATH% %cd%\%AUTOCONNECT_FILE%" "%cd%\%PID_FILE%"
 )
-

@@ -7,3 +7,5 @@ CRITICAL_ASSETS_FILE,C:\armadillo\Demo\8bus\projects\8bus\critical-assets.txt
 PW_CASE_FILE_NAME,case.pwb
 PW_CASE_FILE_DIR,C:\armadillo\Demo\8bus\projects\8bus\powerworld\
 ATTACK_GRAPH_XML_PATH,C:\armadillo\Demo\8bus\projects\8bus\attack_graph
+HOST_IPS_FILE,C:\armadillo\Demo\8bus\projects\8bus\npv\host_ips.csv
+CP_GEN_OUTPUT_FILE,C:\armadillo\Demo\8bus\projects\8bus\CPGenOutput.csv
